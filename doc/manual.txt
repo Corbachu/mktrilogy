@@ -1,0 +1,75 @@
+Mortal Kombat Trilogy Design Team
+Ed Boon
+John Tobias
+Tony Goskie
+Dan Forden
+Dave Michicich
+Steve Beran
+John Vogel
+
+Williams Entertainment MK Trilogy Team
+
+Lead Programmer
+David Schwartz
+
+Tools Programmer
+Mark Guidarelli
+
+Artist
+Greg Miller
+Mark May
+
+Sound and Music
+Rob Atesalp
+
+Game Testers
+WILL SHEN
+WILLIAM SUTJIADI
+J.R. SALAZAR
+MARSELLE WASHINGTON
+MIKE TURNER
+STEVE KRAMER
+JOHN UBALDE
+EDDIE FERRIER
+MIKE VINIKOUR
+
+Special Thanks
+Steve Ranck
+Detmar Peterke
+
+Print Design & Production
+Debbie Austin
+Steve High
+Shawn Murphy
+Dave Young
+------------------------------------------------------------------------
+Page 3 Menu Menu
+
+5.	Press Start to get to the Mode of Play Screen.  You have four choices:
+
+Mortal Kombat
+4 Player 2 On 2 Kombat
+6 Player 3 On 3 Kombat
+8 Player Tournament Kombat
+
+Press the Control Pad Left/Right To Move the flashing cursor. Press the Start Button 
+to select.  To get to the options menu press Up on the control panel and press the Start Button.
+------------------------------------------------------------------------
+Page 6 Fighting Summary
+
+Aggressor Mode
+At the lower part of the screen an Aggressor Meter will build up as you lay more and more hits
+onto your opponenet.  Watch out as the meter will grow faster if you block attacks.  When the 
+meter is fully showing Aggressor you will be extra strong and inflict more damage onto your
+opponent.
+------------------------------------------------------------------------
+Page 7 Kontrol Konfigure
+Use the Control Pad Up/Down to highlight the contrl you want to change and cycle
+through the available options using the Pad Left/Right
+
+------------------------------------------------------------------------
+Page 8 Game Konfigure
+
+Center Screen:	If your screen does not appear centerd on you monitor you can
+use this option to center the screen.  Use the control pad UP/DOWN/LEFT/RIGHT
+to move the screen and press a button when the screen appears centered.

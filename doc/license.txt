@@ -1,0 +1,126 @@
+END USER LICENSE AGREEMENT
+
+PLEASE READ THIS LICENSE CAREFULLY BEFORE USING THE SOFTWARE.  BY USING THE
+SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE TERMS OF THIS LICENSE.  IF YOU
+DO NOT AGREE TO THE TERMS OF THIS LICENSE, PROMPTLY RETURN THE UNUSED SOFTWARE
+TO THE PLACE WHERE YOU OBTAINED IT AND YOUR MONEY WILL BE REFUNDED.
+
+1.	License.  The application, demonstration, system and other software 
+accompanying this License, whether on disk, in read only memory, or on any 
+other media (the "Software") and the related documentation are licensed, not 
+sold, to you by Williams Entertainment Inc. ("Williams") and are subject to this 
+License.  You own the disk on which the Software is recorded but Williams 
+and/or Williams’s licensors retain title to the Software and related 
+documentation.  This License allows you to use the Software on a single 
+computer only with Microsoft operating system products and make one copy of 
+the Software in machine-readable form for backup purposes only (that copy is 
+also subject to this License).  You must reproduce on such copy the copyright 
+notices and any other proprietary legends that were on the original copy of the 
+Software.  You may also transfer all your license rights in the Software, the 
+backup copy of the Software, the related documentation and a copy of this 
+License to another party, provided the other party reads and agrees to accept 
+the terms and conditions of this License.
+
+2.	Restrictions.  The Software contains copyrighted material, trade secrets 
+and other proprietary material.  In order to protect them, you may not decompile, 
+reverse engineer, disassemble or otherwise reduce the Software to a human-
+perceivable form.  You may not modify, network, rent, lease, loan, sublicense, 
+distribute or create derivative works based upon the Software in whole or in part.  
+You may not electronically transmit the Software from one computer to another 
+or over a network.
+
+3.	Termination.  This License is effective until terminated.  You may 
+terminate this License at any time by destroying the Software and related 
+documentation and all copies thereof.  This License will terminate immediately 
+without notice from Williams if you fail to comply with any provision of this 
+License.  Upon termination you must destroy the Software and related 
+documentation and all copies thereof.
+
+4.	Export Law Assurances.  You agree and certify that neither the Software 
+nor any other technical data received from Williams, nor the direct product 
+thereof (whether a process or service or otherwise), will be directly or indirectly 
+exported or transmitted outside the United States except as authorized and as 
+permitted by the laws and regulations of the United States, and in particular 
+where such export or transmission is restricted by any applicable U.S. regulation 
+or statute, you will not do so without the prior, written consent, if required, of the 
+Bureau of Export Administration of the U.S. Department of Commerce, or such 
+other governmental entity as may have jurisdiction over such export or 
+transmission.  If the Software has been rightfully obtained by you outside of the 
+United States, you agree that you will not re-export or transmit, directly or 
+indirectly, the Software nor any other technical data received from Williams, nor 
+the direct product thereof (whether a process or service or otherwise), except as 
+authorized by the laws and regulations of the United States (and in particular 
+where such re-export or transmission is restricted by any applicable U.S. 
+regulation or statute, you will not do so without the prior, written consent, if 
+required, of the Bureau of Export Administration of the U.S. Department of 
+Commerce, or such other governmental entity as may have jurisdiction over such 
+export or transmission) and the laws and regulations of the jurisdiction in which 
+you obtained the Software.
+
+5.	Government End Users.  If you are acquiring the Software on behalf of 
+any unit or agency of the United States Government, the following provisions 
+apply.  The Government agrees:
+(i) if the Software is supplied to the Department of Defense (DoD), the 
+Software is classified as "Commercial Computer Software" and the Government 
+is acquiring only "restricted rights" in the Software and its documentation as that 
+term is defined in Clause 252.227-7013(c)(1) of the DFARS; and
+(ii) if the Software is supplied to any unit or agency of the United States 
+Government other than DoD, the Government’s rights in the Software and its 
+documentation will be as defined in Clause 52.277-19(c)(2) of the FAR or, in the 
+case of NASA, in Clause 18-52.227-896(d) of the NASA Supplement to the FAR.
+
+6.	Disclaimer Of Warranty on Software.  You expressly acknowledge and 
+agree that use of the Software and the media on which it is recorded is at your 
+sole risk.  The Software, related documentation and the media are provided "AS 
+IS" and without warranty of any kind and Williams and Williams’ licensor(s) (for 
+the purposes of provisions 6 and 7, Williams and Williams’ licensor(s) shall be 
+collectively referred to as "Williams") EXPRESSLY DISCLAIM ALL 
+WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, 
+THE IMPLIED WARRANTIES OF MERCHANT ABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE.  WILLIAMS DOES NOT WARRANT THAT THE 
+FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET YOUR 
+REQUIREMENTS, OR THAT THE OPERATION OF THE SOFTWARE WILL BE 
+UNINTERUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE SOFTWARE 
+OR THE MEDIA WILL BE CORRECTED.  FURTHERMORE, WILLIAMS DOES 
+NOT WARRANT OR MAKE ANY REPRESNTATIONS REGARDING THE USE 
+OR THE RESULTS OF THE USE OF THE SOFTWARE OR RELATED 
+DOCUMENTION OR IN TERMS OF THEIR CORRECTNESS, ACCURACY, 
+RELIABILITY, OR OTHERWISE.  NO ORAL OR WRITTEN INFORMATION OR 
+ADVICE GIVEN BY WILLIAMS OR A WILLIAMS AUTHORIZED 
+REPRESENTATIVE SHALL CREATE A WARRANTY OR IN ANY WAY 
+INCREASE THE SCOPE OF THIS WARRANTY.  SHOULD THE SOFTWARE 
+OR MEDIA PROVE DEFECTIVE, YOU (AND NOT WILLIAMS OR A WILLIAMS 
+AUTHORIZED REPRESENTATIVE) ASSUME THE ENTIRE COST OF ALL 
+NECESSARY SERVICING, REPAIR OR CORRECTION.  THE FEES FOR THE 
+SOFTWARE REFLECT THIS ALLOCATION OF RISK.  SOME JURISDICTIONS 
+DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO THE 
+ABOVE EXCLUSION MAY NOT APPLY TO YOU.
+
+7.	Limitation of Liability.  UNDER NO CIRCUMSTANCES INCLUDING 
+NEGLIGENCE, SHALL WILLIAMS BE LIABLE FOR ANY INCIDENTAL, 
+SPECIAL OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE 
+OR INABILITY TO USE THE SOFTWARE OR RELATED DOCUMENTATION, 
+EVEN IF WILLIAMS OR A WILLIAMS AUTHORIZED REPRESENTATIVE HAS 
+BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  SOME 
+JURISDICITONS DO NOT ALLOW THE LIMITATION OR EXCLUSION OF 
+LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES SO THE 
+ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.  In no event 
+shall Williams’ total liability to you for all damages, losses, and causes of action 
+(whether in contract, tort (including negligence) or otherwise) exceed the amount 
+paid by you for the Software.
+
+8.	Controlling Law and Severability.  This License shall be governed by 
+and construed in accordance with the laws of the United States and the State of 
+Illinois, as applied to agreements entered into and to be performed entirely 
+within Illinois between Illinois residents.  If for any reason a court of competent 
+jurisdiction finds any provision of this License, or a portion thereof, to be 
+unenforceable, that provision of the License shall be enforced to the maximum 
+extent permissible so as to effect the intent of the parties, and the remainder of 
+this License shall continue in full force and effect.
+
+9.	Complete Agreement.  This License constitutes the entire agreement 
+between the parties with respect to the use of the Software and the related 
+documentation, and supersedes all prior or contemporaneous understandings or 
+agreements, written or oral, regarding such subject matter.  No amendment to or 
+modification of this License will be binding unless in writing and signed by a duly 
+authorized representative of Williams.

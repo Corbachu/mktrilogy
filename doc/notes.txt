@@ -1,0 +1,73 @@
+do_normal_ending		
+do_space_game			
+do_fight_ermac			
+do_fight_noob			
+do_random_prize		
+do_fatality_tour_1		
+do_fatality_tour_2		
+do_fatality_tour_7
+do_fight_noob_ermac	
+do_fight_osz_osm		
+do_mega_endurance		
+do_fight_rd_sa_cage
+
+do_pong_game			
+do_fight_mninja
+do_animality_tour_1	
+do_fatality_tour_6		
+do_friend_tour_1,		
+do_baby_tour_1,			
+do_fight_kamel			
+do_fatality_tour_4		
+do_animality_tour_2	
+do_fight_fninja
+do_all_fatals			
+do_space_invade		
+do_clue_giveaway		
+
+
+random_prize
+do_mega_endurance		
+do_pong_game			
+do_fight_rd_sa_cage
+do_fight_kamel			
+do_baby_tour_1,			// 17
+do_animality_tour_3	
+do_fatality_tour_3		
+do_fatality_tour_6		
+do_fatality_tour_5		
+
+-------------------------------------
+
+do_normal_ending				// 0
+do_space_game					// 1
+do_fight_ermac					// 2
+do_fight_noob					// 3
+do_random_prize					// 4
+do_fatality_tour_1				// 5
+do_fatality_tour_2				// 6
+do_fatality_tour_7				// 7
+do_fight_noob_ermac				// 8
+do_fight_osz_osm				// 9 
+do_mega_endurance,				// 10
+do_all_fatals					// 11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

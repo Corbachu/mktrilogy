@@ -1,0 +1,1772 @@
+	.asciiz	"KREDITS %d"
+	.asciiz	"TWO ON TWO\nKOMBAT"
+
+	.align 2
+	.globl	txt_3_on_3
+txt_3_on_3:
+	.asciiz	"THREE ON THREE\nKOMBAT"
+
+	.align 2
+	.globl	txt_p1_ic
+txt_p1_ic:
+	.asciiz	"PLAYER 1\nJOIN IN"
+
+	.align 2
+	.globl	txt_p1_ps
+txt_p1_ps:
+	.asciiz	"PLAYER 1\nPLAYS FREE"
+
+	.align 2
+	.globl	txt_p2_ic
+txt_p2_ic:
+	.asciiz	"PLAYER 2\nJOIN IN"
+
+	.align 2
+	.globl	txt_p2_ps
+txt_p2_ps:
+	.asciiz	"PLAYER 2\nPLAYS FREE"
+
+/* ;SK treasures */
+	.align 2
+	.globl	txt_pick1
+txt_pick1:
+	.ascii	"YOU HAVE DISCOVERED THE LOST TREASURES\n"
+	.ascii	"OF SHAO KAHN\n"
+	.asciiz	"CHOOSE YOUR REWARD WISELY!"
+ 
+	.align 2
+	.globl	txt_kitana_bio
+txt_kitana_bio:
+	.asciiz "KITANA\n"
+	.asciiz "KITANA IS ACCUSED OF\n"
+	.asciiz "TREASON BY THE HIGH\n"
+	.asciiz "COURTS OF THE OUTWORLD\n"
+	.asciiz "AFTER MURDERING HER EVIL\n"
+	.asciiz "TWIN MILEENA. SHAO KAHN\n"
+	.asciiz "APPOINTS A GROUP OF\n"
+	.asciiz "WARRIORS SPECIFICALLY TO\n"
+	.asciiz "CATCH HIS DAUGHTER AND\n"
+	.asciiz "BRING HER BACK ALIVE. BUT\n"
+	.asciiz "KITANA MUST FIND A WAY TO\n"
+	.asciiz "REACH THE NEWLY CROWNED\n"
+	.asciiz "QUEEN SINDEL FIRST AND\n"
+	.asciiz	"WARN HER OF THEIR TRUE\n"
+	.asciiz "PAST.\n"
+	.byte	-1
+
+	.align 2
+	.globl	txt_jade_bio
+txt_jade_bio:
+	.asciiz "JADE\n"
+	.asciiz "WHEN THE RENEGADE\n"
+	.asciiz "PRINCESS KITANA MAKES\n"
+	.asciiz "HER ESCAPE INTO THE\n"
+	.asciiz "UNKNOWN REGIONS OF\n"
+	.asciiz	"EARTH, JADE IS APPOINTED\n"
+	.asciiz "BY SHAO KAHN TO BRING\n"
+	.asciiz "HER BACK ALIVE. ONCE A\n"
+	.asciiz "CLOSE FRIEND OF THE\n"
+	.asciiz "PRINCESS, SHE IS FACED\n"
+	.asciiz "WITH THE CHOICE OF\n"
+	.asciiz	"BETRAYING HER FRIEND\n"
+	.asciiz "OR DISOBEYING HER\n"
+	.asciiz	"EMPEROR.\n"
+	.byte	-1
+
+	.align 2
+	.globl	txt_scorpion_bio
+txt_scorpion_bio:
+	.asciiz "SCORPION\n"
+	.asciiz "WHEN SHAO KAHN MAKES\n"
+	.asciiz "A FAILED ATTEMPT AT\n"
+	.asciiz "STEALING THE SOULS\n"
+	.asciiz "WHICH OCCUPY EARTH'S\n"
+	.asciiz "HELL, SCORPION IS ABLE\n"
+	.asciiz "TO ESCAPE FROM THE\n"
+	.asciiz "NETHER REGION. FREE TO\n"
+	.asciiz "ROAM THE EARTH ONCE\n"
+	.asciiz "MORE, SCORPION HOLDS\n"
+	.asciiz "ALLEGIANCE WITH NO\n"
+	.asciiz "ONE. HE'S A WILD CARD\n"
+	.asciiz	"IN EARTH'S STRUGGLE\n"
+	.asciiz	"AGAINST THE OUTWORLD.\n"
+	.byte	-1
+
+	.align 2
+	.globl	txt_reptile_bio
+txt_reptile_bio:
+	.asciiz "REPTILE\n"
+	.asciiz "ALWAYS A RELIABLE\n"
+	.asciiz "SERVANT TO SHAO KAHN,\n"
+	.asciiz "REPTILE IS CHOSEN TO\n"
+	.asciiz "ASSIST JADE IN THE\n"
+	.asciiz "CAPTURE OF KITANA. IN\n"
+	.asciiz "CONTRAST TO JADE'S\n"
+	.asciiz "INSTRUCTIONS, REPTILE\n"
+	.asciiz	"IS ORDERED TO STOP THE\n"
+	.asciiz "RENEGADE PRINCESS AT\n"
+	.asciiz	"ALL COSTS...\n\n"
+	.asciiz	"EVEN IF IT MEANS HER\n"
+	.asciiz	"DEATH."
+	.byte	-1
+	
+	.align 2
+	.globl txt_kano_bio
+txt_kano_bio:
+	.asciiz "KANO\n"
+	.asciiz "KANO IS THOUGHT TO HAVE\n"
+	.asciiz "BEEN KILLED IN THE FIRST\n"
+	.asciiz "TOURNAMENT. INSTEAD, HE'S\n"
+	.asciiz "FOUND ALIVE IN THE OUT-\n"
+	.asciiz "WORLD WHERE HE ONCE AGAIN\n"
+	.asciiz "ESCAPES CAPTURE BY SONYA.\n"
+	.asciiz "BEFORE THE ACTUAL OUT-\n"
+	.asciiz "WORLD INVASION, KANO\n"
+	.asciiz "CONVINCES SHAO KAHN TO\n"
+	.asciiz "SPARE HIS SOUL. KAHN\n"
+	.asciiz "NEEDS SOMEONE TO TEACH\n"
+	.asciiz "HIS WARRIORS HOW TO USE\n"
+	.asciiz "EARTH'S WEAPONS. KANO IS\n"
+	.asciiz "THE MAN TO DO IT.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_sonya_bio
+txt_sonya_bio:
+	.asciiz "LT. SONYA BLADE\n"
+	.asciiz "SONYA DISAPPEARED AFTER\n"
+	.asciiz "THE FIRST TOURNAMENT BUT\n"
+	.asciiz "WAS LATER RESCUED FROM\n"
+	.asciiz "THE OUTWORLD BY JAX.\n"
+	.asciiz "AFTER RETURNING TO EARTH,\n"
+	.asciiz "SHE AND JAX TRY TO WARN\n"
+	.asciiz "THE U.S. GOVERNMENT OF\n"
+	.asciiz "THE LOOMING OUTWORLD\n"
+	.asciiz "MENACE. LACKING PROOF,\n"
+	.asciiz "THEY WATCH HELPLESSLY\n"
+	.asciiz "AS SHAO KAHN BEGINS HIS\n"
+	.asciiz "INVASION."
+	.byte	-1
+
+	.align 2
+	.globl txt_jax_bio
+txt_jax_bio:
+	.asciiz "MAJ. JAX BRIGGS\n"
+	.asciiz "AFTER FAILING TO CONVINCE\n"
+	.asciiz "HIS SUPERIORS OF THE\n"
+	.asciiz "COMING OUTWORLD MENACE,\n"
+	.asciiz "JAX BEGINS TO COVERTLY\n"
+	.asciiz "PREPARE FOR FUTURE BATTLE\n"
+	.asciiz "WITH KAHN'S MINIONS. HE\n"
+	.asciiz "OUTFITS BOTH ARMS WITH \n"
+	.asciiz "INDESTRUCTIBLE BIONIC\n"
+	.asciiz "IMPLANTS. THIS IS A WAR\n"
+	.asciiz "JAX IS PREPARED TO WIN.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_ind_bio
+txt_ind_bio:
+	.asciiz "NIGHTWOLF\n"
+	.asciiz "WORKS AS A HISTORIAN AND\n"
+	.asciiz "PRESERVER OF HIS PEOPLE'S\n"
+	.asciiz "CULTURE. WHEN KAHN'S\n"
+	.asciiz "PORTAL OPENS OVER NORTH\n"
+	.asciiz "AMERICA, NIGHTWOLF USES\n"
+	.asciiz "THE MAGICS OF HIS SHAMEN\n"
+	.asciiz "TO PROTECT HIS TRIBE'S\n"
+	.asciiz "SACRED LAND. THIS AREA\n"
+	.asciiz "BECOMES A VITAL THREAT TO\n"
+	.asciiz "KAHN'S OCCUPATION OF THE\n"
+	.asciiz "EARTH.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_jc_bio
+txt_jc_bio:
+	.asciiz "JOHNNY CAGE\n"
+	.asciiz "KILLED IN BATTLE WITH AN\n"
+	.asciiz "OUTWORLD EXTERMINATION\n"
+	.asciiz "SQUAD, JOHNNY CAGE'S LIFE\n" 
+	.asciiz "CAME TO A TRAGIC END. BUT\n" 
+	.asciiz "THE CELLUOID SUPERSTAR\n" 
+	.asciiz "MANAGES TO CHEAT DEATH\n" 
+	.asciiz "WHEN HIS PATH TO THE AFTER\n"
+	.asciiz "LIFE IS BLOCKED BY THE MERG-\n" 
+	.asciiz "ER OF EARTH AND THE OUT-\n"
+	.asciiz "WORLD.  HIS SOUL TAKES\n"
+	.asciiz "POSSESSION OF ITS BODY ONCE\n" 
+	.asciiz "AGAIN AND ENABLES CAGE TO\n" 
+	.asciiz "REJOIN HIS FRIENDS TO\n" 
+	.asciiz "BATTLE FOR EARTH'S SURVIVAL.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_swat_bio
+txt_swat_bio:
+	.asciiz "STRYKER\n"
+	.asciiz "WHEN THE OUTWORLD PORTAL\n"
+	.asciiz "OPENS OVER A LARGE CITY IN\n"
+	.asciiz "NORTH AMERICA, PANIC AND\n"
+	.asciiz "CHAOS RAGE OUT OF CONTROL.\n"
+	.asciiz "KURTIS STRYKER WAS THE\n"
+	.asciiz "LEADER OF A RIOT CONTROL\n"
+	.asciiz "BRIGADE WHEN SHAO KAHN\n"
+	.asciiz "BEGAN TAKING SOULS. HE\n"
+	.asciiz "FINDS HIMSELF THE LONE\n"
+	.asciiz "SURVIVOR OF A CITY ONCE\n"
+	.asciiz "POPULATED BY MILLIONS.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_sektor_bio
+txt_sektor_bio:
+	.asciiz "SEKTOR\n"
+	.asciiz "SEKTOR IS ACTUALLY THE\n"
+	.asciiz "CODE NAME FOR UNIT LK-9T9.\n"
+	.asciiz "HE WAS THE FIRST OF THREE\n"
+	.asciiz "PROTOTYPE CYBERNETIC\n"
+	.asciiz "NINJAS BUILT BY THE LIN\n"
+	.asciiz "KUEI. SEKTOR WAS ONCE A\n"
+	.asciiz "HUMAN ASSASSIN TRAINED BY\n"
+	.asciiz "THE LIN KUEI. HE VOLUN-\n"
+	.asciiz "TEERED FOR AUTOMATION BE-\n"
+	.asciiz "CAUSE OF HIS LOYALTY FOR\n"
+	.asciiz "THE CLAN. SEKTOR SURVIVES\n"
+	.asciiz "THE OUTWORLD INVASION - HE\n"
+	.asciiz "HAS NO SOUL TO TAKE.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_cyrax_bio
+txt_cyrax_bio:
+	.asciiz "CYRAX\n"
+	.asciiz "CYRAX IS UNIT LK-4D4.\n"
+	.asciiz "THE 2ND OF THREE PROTO-\n"
+	.asciiz "TYPE CYBERNETIC NINJAS\n"
+	.asciiz "BUILT BY THE LIN KUEI.\n"
+	.asciiz "LIKE HIS COUNTERPARTS\n"
+	.asciiz "HIS LAST PROGRAMMED COM-\n"
+	.asciiz "MAND IS TO FIND AND TER-\n"
+	.asciiz "MINATE THE ROGUE NINJA,\n"
+	.asciiz "SUB-ZERO. WITHOUT A SOUL,\n"
+	.asciiz "CYRAX GOES UNDETECTED BY\n"
+	.asciiz "SHAO KAHN AND REMAINS A\n"
+	.asciiz "POSSIBLE THREAT AGAINST\n"
+	.asciiz "HIS OCCUPATION OF EARTH.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_lao_bio
+txt_lao_bio:
+	.asciiz "KUNG LAO\n" 
+	.asciiz "KUNG LAO'S PLAN TO REFORM\n"
+	.asciiz "THE WHITE LOTUS SOCIETY\n"
+	.asciiz "COMES TO A HALT WHEN SHAO\n"
+	.asciiz "KAHN'S INVASION TAKES THE\n"
+	.asciiz "EARTH BY STORM. AS A\n"
+	.asciiz "CHOSEN WARRIOR, KUNG LAO\n"
+	.asciiz "MUST USE HIS GREATEST\n"
+	.asciiz "FIGHTING SKILLS TO BRING\n"
+	.asciiz "DOWN SHAO KAHN'S REIGN\n"
+	.asciiz "OF TERROR.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_kabal_bio
+txt_kabal_bio:
+	.asciiz "KABAL\n"
+	.asciiz "AS A CHOSEN WARRIOR, HIS\n"
+	.asciiz "IDENTITY IS A MYSTERY TO\n"
+	.asciiz "ALL. IT'S BELIEVED THAT\n"
+	.asciiz "HE IS THE SURVIVOR OF AN\n"
+	.asciiz "ATTACK BY SHAO KAHN'S EX-\n"
+	.asciiz "TERMINATION SQUADS. AS A\n"
+	.asciiz "RESULT, HE IS VICIOUSLY\n"
+	.asciiz "SCARRED AND KEPT ALIVE\n"
+	.asciiz "ONLY BY ARTIFICIAL RESPIR-\n"
+	.asciiz "ATORS AND A RAGE FOR END-\n"
+	.asciiz "ING SHAO KAHN'S CONQUEST.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_sg_bio
+txt_sg_bio:
+	.asciiz "SHEEVA\n"
+	.asciiz "SHE WAS HAND PICKED BY\n"
+	.asciiz "SHAO KAHN TO SERVE AS \n"
+	.asciiz "SINDEL'S PERSONAL\n"
+	.asciiz "PROTECTOR. SHE BECOMES\n"
+	.asciiz "SUSPICIOUS OF SHAO KAHN'S\n"
+	.asciiz "LOYALTY TOWARDS HER RACE\n"
+	.asciiz "OF SHOKAN WHEN HE PLACES\n"
+	.asciiz "MOTARO AS THE LEADER OF\n"
+	.asciiz "HIS EXTERMINATION SQUADS.\n"
+	.asciiz "ON THE OUTWORLD, MOTARO'S\n"
+	.asciiz "RACE OF CENTAURIANS ARE\n"
+	.asciiz "THE NATURAL ENEMY OF\n"
+	.asciiz "SHOKAN.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_st_bio
+txt_st_bio:
+	.asciiz "SHANG TSUNG\n"
+	.asciiz "TSUNG IS SHAO KAHN'S LEAD\n"
+	.asciiz "SORCEROR. HE ONCE FELL\n"
+	.asciiz "OUT OF FAVOR WITH HIS\n"
+	.asciiz "EMPEROR AFTER FAILING TO\n"
+	.asciiz "WIN THE EARTH REALM\n"
+	.asciiz "THROUGH TOURNAMENT BATTLE.\n"
+ 	.asciiz "BUT THE EVER SCHEMING\n"
+ 	.asciiz "SHANG TSUNG IS INSTRUMENT-\n"
+ 	.asciiz "AL IN KAHN'S CONQUEST OF\n"
+ 	.asciiz "EARTH HE HAS NOW BEEN\n"
+ 	.asciiz "GRANTED MORE POWER THAN\n"
+	.asciiz "EVER.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_lk_bio
+txt_lk_bio:
+	.asciiz "LIU KANG\n"
+	.asciiz "AFTER THE OUTWORLD\n"
+	.asciiz "INVASION, LIU KANG FINDS\n"
+	.asciiz "HIMSELF THE PRIME TARGET\n"
+	.asciiz "OF KAHN'S EXTERMINATION\n"
+	.asciiz "SQUADS. HE IS THE SHAOLIN\n"
+	.asciiz "CHAMPION AND HAS THWATED\n"
+	.asciiz "KAHN'S SCHEMES IN THE\n"
+	.asciiz "PAST. OF ALL THE HUMANS,\n"
+	.asciiz "KANG POSES THE GREATEST\n"
+	.asciiz "THREAT TO SHAO KAHN'S\n"
+	.asciiz "RULE.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_sindel_bio
+txt_sindel_bio:
+	.asciiz "SINDEL\n"
+	.asciiz "SHE ONCE RULED THE OUT-\n"
+	.asciiz "WORLD AT SHAO KAHN'S SIDE\n"
+	.asciiz "AS HIS QUEEN. NOW 10,000\n"
+	.asciiz "YEARS AFTER HER UNTIMELY\n"
+	.asciiz "DEATH, SHE IS REBORN ON\n"
+	.asciiz "EARTH. HER EVIL INTENT IS\n"
+	.asciiz "EVERY MATCH FOR SHAO\n"
+	.asciiz "KAHN'S TYRANNY. SHE IS\n"
+	.asciiz "THE KEY TO HIS OCCUPATION\n"
+	.asciiz "OF EARTH.\n"
+	.byte	-1
+	
+	.align 2
+	.globl txt_smoke_bio
+txt_smoke_bio:
+	.asciiz "SMOKE\n"
+	.asciiz "FINDS HIMSELF BROUGHT BACK AS\n"	
+	.asciiz "ONE OF THE LIN KUEI'S MOST\n" 
+	.asciiz "DANGEROUS ASSASSINS, SMOKE\n" 
+	.asciiz "FALLS VICTIM TO THEIR\n" 
+	.asciiz "AUTOMATION PROCESS. HE'S\n" 
+	.asciiz "TRANSFORMED INTO A CYBER-\n"
+	.asciiz "NETIC NINJA AGAINST HIS\n" 
+	.asciiz "WILL. HIS NEW MISSION IS\n" 
+	.asciiz "TO FIND AND ASSASSINATE\n" 
+	.asciiz "HIS FORMER FRIEND AND ALLY,\n" 
+	.asciiz "SUB-ZERO.\n"
+	.byte	-1
+	
+	.align 2
+	.globl txt_mileena_bio
+txt_mileena_bio:
+	.asciiz "MILEENA\n"
+	.asciiz "MURDERED BY HER TWIN\n" 
+	.asciiz "SISTER KITANA, MILEENA\n" 
+	.asciiz "FINDS HERSELF BROUGHT BACK\n" 
+	.asciiz "TO LIFE BY SHAO KAHN HIM-\n"
+	.asciiz "SELF. HER SKILLS AS A\n" 
+	.asciiz "VICIOUS FIGHTER WILL BE\n" 
+	.asciiz "NEEDED TO DEFEAT EARTH'S\n" 
+	.asciiz "CHOSEN WARRIORS. HER\n" 
+	.asciiz "ABILITY TO READ THE\n" 
+	.asciiz "THOUGHTS OF HER TWIN\n" 
+	.asciiz "SISTER WILL ENABLE KAHN\n" 
+	.asciiz "TO STAY ONE STEP AHEAD\n"
+	.asciiz "OF THEM."
+	.byte	-1
+	
+	.align 2
+	.globl txt_ermac_bio
+txt_ermac_bio:
+	.asciiz "ERMAC\n"
+	.asciiz "AN ENIGMA TO ALL WHO\n"
+	.asciiz "COME INTO CONTACT WITH\n"
+	.asciiz "HIM, ERMAC'S PAST RE-\n"
+	.asciiz "MAINS SHROUDED IN\n"
+	.asciiz "MYSTERY. IT'S BELIEVED\n"
+	.asciiz "THAT HE EXISTS AS A\n"
+	.asciiz "LIFE FORCE BROUGHT TO-\n"
+	.asciiz "GETHER BY THE SOULS OF\n"
+	.asciiz "EXTINGUISHED OUTWORLD\n"
+	.asciiz "WARRIORS. SHAO KAHN HAS\n"
+	.asciiz "MANAGED TO TAKE POSS-\n" 
+	.asciiz "ESSION OF THESE SOULS AND\n" 
+	.asciiz "USE THEM TO FIGHT ON THE\n"
+	.asciiz "SIDE OF TYRANNY.\n"
+	.byte	-1
+
+	
+	.align 2
+	.globl txt_oldsz_bio
+txt_oldsz_bio:
+	.asciiz "SUBZERO\n"
+	.asciiz "HE WAS BETRAYED\n"
+	.asciiz "BY HIS OWN NINJA CLAN-\n"
+	.asciiz "THE LIN KUEI. HE BROKE\n"
+	.asciiz "SACRED CODES OF HONOR BY\n"
+	.asciiz "LEAVING THE CLAN AND IS\n"
+	.asciiz "MARKED FOR DEATH. BUT UN-\n"
+	.asciiz "LIKE THE NINJA OF OLD, HIS\n"
+	.asciiz "PURSUERS COME AS MACHINES.\n"
+	.asciiz "HE MUST NOT ONLY DEFEND\n"
+	.asciiz "AGAINST THE OUTWORLD MEN-\n"
+	.asciiz "ACE BUT MUST ALSO ELUDE\n"
+	.asciiz	"HIS SOULLESS ASSASSINS.\n"
+	.byte	-1
+	
+	
+	.align 2
+	.globl txt_oldsmoke_bio
+txt_oldsmoke_bio:
+	.asciiz "HUMAN SMOKE\n"
+	.asciiz "IN HIS HUMAN FORM, SMOKE\n" 
+	.asciiz "WAS A LETHAL ASSASSIN\n" 
+	.asciiz "WORKING FOR THE LIN KUEI.\n" 
+	.asciiz "BUT WHEN THEY DECIDE TO\n" 
+	.asciiz "AUTOMATE THEIR NINJAS,\n" 
+	.asciiz "SMOKE IS CAUGHT IN THE\n" 
+	.asciiz "MIDDLE. HE BECOMES A\n" 
+	.asciiz "CYBORG ASSASSIN. FROM THAT\n"
+	.asciiz "DAY FORWARD, HIS HUMAN\n" 
+	.asciiz "FORM WOULD EXIST AS ONLY A\n" 
+	.asciiz "MEMORY.\n" 
+	.byte	-1
+	
+	
+	.align 2
+	.globl txt_noob_bio
+txt_noob_bio:
+	.asciiz "NOOB SAIBOT\n"
+	.asciiz "NOOB SAIBOT EMERGES FROM\n"
+	.asciiz "THE DARKEST REGION OF\n"
+	.asciiz "REALITY; A REGION KNOWN\n"
+	.asciiz "AS THE NETHEREALM. HE\n"
+	.asciiz "BELONGS TO A GROUP CALLED\n"
+	.asciiz "THE BROTHERS OF THE\n"
+	.asciiz "SHADOW, AND WORSHIPS AN\n"
+	.asciiz "EVIL AND MYSTERIOUS FALLEN\n"
+	.asciiz "ELDER GOD. HIS MISSION IS\n"
+	.asciiz "TO SPY ON THE EVENTS\n"
+	.asciiz "TAKING PLACE IN THE BATTLE\n"
+	.asciiz "BETWEEN THE REALMS, AND\n"
+	.asciiz "REPORT BACK TO HIS\n"
+	.asciiz "ENIGMATIC LEADERS.\n"
+	.byte	-1
+	
+	.align 2
+	.globl txt_rain_bio
+txt_rain_bio:
+	.asciiz "RAIN\n"
+	.asciiz "BORN IN KITANA'S FORMER\n"
+	.asciiz "WORLD OF EDENIA, RAIN\n"
+	.asciiz "WAS SMUGGLED AWAY FROM\n" 
+	.asciiz "THE REALM AS A SMALL\n" 
+	.asciiz "CHILD SHORTLY AFTER SHAO\n"
+	.asciiz "KAHN'S TAKE OVER. THOU-\n"
+	.asciiz "SANDS OF YEARS LATER HE\n" 
+	.asciiz "RESURFACED, HIS ALLEGIANCE\n"
+	.asciiz "BELONGING TO KAHN. HE\n"
+	.asciiz "CHOSE TO BETRAY HIS HOME-\n"
+	.asciiz "LAND RATHER THAN SUFFER\n" 
+	.asciiz "AT THE HANDS OF KAHN'S\n" 
+	.asciiz "EXTERMINATION SQUADS.\n"  
+	.byte	-1
+
+	.align 2
+	.globl txt_rayden_bio
+txt_rayden_bio:
+	.asciiz "RAYDEN\n"
+	.asciiz "AS EARTH'S SWORN PRO-\n"
+	.asciiz "TECTOR, RAYDEN FINDS\n"
+	.asciiz "HIMSELF BANISHED IN THE\n" 
+	.asciiz "EARTH-OUTWORLD MERGER.\n" 
+	.asciiz "WHEN THE ELDER GODS REFUSE\n"
+	.asciiz "TO ASSIST HIM IN AIDING\n"
+	.asciiz "EARTH, THE THUNDER GOD\n"
+	.asciiz "TAKES MATTERS INTO HIS OWN\n"
+	.asciiz "HANDS. HE TRANSFORMS INTO\n"
+	.asciiz "A MORTAL SO HE CAN EXIST\n"
+	.asciiz "ONCE AGAIN ON EARTH AND\n"
+	.asciiz "FIGHT WITH HIS HUMAN\n"
+	.asciiz "COMRADES; THIS TIME RISK-\n"
+	.asciiz "ING HIS PLACE IN THE PAN-\n"
+	.asciiz "THEON OF GODS, AND HIS OWN\n"
+	.asciiz "IMMORTALITY.\n"
+	.byte	-1
+
+	.align 2
+	.globl txt_baraka_bio
+txt_baraka_bio:
+	.asciiz "BARAKA\n"
+	.asciiz "BARAKA WAS SENT TO QUELL\n"
+	.asciiz "THE UPRISING OF A RENE-\n"
+	.asciiz "GADE RACE IN OUTWORLD'S\n"
+	.asciiz "LOWER REGIONS. AFTER A\n"
+	.asciiz "VICTORIOUS BATTLE, THE\n" 
+	.asciiz "NOMADIC WARRIOR RETURNS\n"
+	.asciiz "TO FIGHT ON THE SIDE OF\n"
+	.asciiz "VILLAINY. UNDER THE GUID-\n"
+	.asciiz "ANCE OF SHAO KAHN, BARAKA\n"
+	.asciiz "WILL ONCE AGAIN POSE A\n" 
+	.asciiz "FORMIDABLE THREAT TO HIS\n"
+	.asciiz "EARTHEN COUNTERPARTS.\n"
+	.byte	-1
+	
+	
+	.align 2
+	.globl txt_kamel_bio
+txt_kamel_bio:
+	.asciiz	"KHAMELEON\n"
+	.asciiz "REPTILE WAS ONCE THOUGHT TO\n"
+	.asciiz "BE THE LAST MEMBER OF AN EX-\n"
+	.asciiz "TINCT RACE OF REPTILIAN\n"
+	.asciiz "CREATURES, UNTIL THE APPEARANCE\n"
+	.asciiz "OF KHAMELEON. SHE ALONE KNOWS THE\n"
+	.asciiz "TRUTH ABOUT THEIR HISTORY AND\n"
+	.asciiz "CHOOSES TO FIGHT ON THE SIDE OF\n"
+	.asciiz "EARTH, MAKING THE LAST SURVIVORS\n"
+	.asciiz "OF THEIR RACE LETHAL ENEMIES.\n"
+	.byte -1
+
+/*
+;*************************************************
+;buyin text, mkbuyin.c
+;*************************************************
+*/
+	.asciiz	"KREDITS %d"
+	.asciiz	"PLAYER 1"
+	.asciiz	"PLAYER 2"
+
+	.align 2
+	.globl	txt_prepare
+txt_prepare:
+	.ascii	"PREPARE\n"
+	.ascii	"FOR YOUR\n"
+	.ascii	"NEXT\n"
+	.asciiz	"CHALLENGE"
+
+	.align 2
+	.globl	txt_start_to_continue
+txt_start_to_continue:
+	.ascii	"PRESS START\n"
+	.asciiz	"TO KONTINUE"
+
+	.align 2
+	.globl	txt_press_join
+txt_press_join:
+	.ascii	"PRESS START\n"
+	.ascii	"TO\n"
+	.asciiz	"JOIN IN"
+
+	.align 2
+	.globl	txt_insert_start
+txt_insert_start:
+	.asciiz	"\nGAME OVER\n"
+
+	.asciiz	"PRESS UP AND START FOR OPTIONS"
+
+	.asciiz "ROUND %d"
+
+	.asciiz "RANDOM\nSELECT"
+	.asciiz	"PLAYER 1 HAS ENTERED\nTHE TOURNAMENT !"
+	.asciiz	"PLAYER 2 HAS ENTERED\nTHE TOURNAMENT !"
+
+	.align 2
+	.globl	txt_invade_game_intro
+txt_invade_game_intro:
+	.ascii	"YOU HAVE BEEN TRANSPORTED\n"
+	.ascii	"TO ANOTHER REALM\n\n"
+	.ascii	"A REALM WHERE NEITHER\n"
+	.ascii	"THE EARTH WARRIORS\n"
+	.ascii	"NOR SHAO KAHN HAVE ANY CONTROL\n\n"
+	.ascii	"BEWARE THE REALM OF\n"
+	.asciiz	"YRREK DIVAD"
+
+	.align 2
+	.globl	txt_space_game_intro
+txt_space_game_intro:
+	.ascii	"YOU HAVE BEEN TRANSPORTED\n"
+	.ascii	"TO ANOTHER REALM\n\n"
+	.ascii	"A REALM WHERE NEITHER\n"
+	.ascii	"THE EARTH WARRIORS\n"
+	.ascii	"NOR SHAO KAHN HAVE ANY CONTROL\n\n"
+	.ascii	"BEWARE THE REALM OF\n"
+	.asciiz	"RELLIM OHCANEP"
+
+	.align 2
+	.globl	txt_pong_game_intro
+txt_pong_game_intro:
+	.ascii	"YOU HAVE REACHED THE OUTER LIMITS\n\n"
+	.ascii	"OF THE TOURNAMENT. NOW YOU BOTH MUST\n\n"
+	.asciiz	"FACE A CHALLENGE FROM YOUR PAST..."
+
+	.align 2
+	.globl cheat_message
+cheat_message:
+	.ascii	"KNOWLEDEGE IS POWER\n"
+	.ascii	"TO THOSE WHO EARN IT!\n"
+	.ascii	"DISABLE ONE HITS AND\n"
+	.ascii	"DIFFICULTY MUST BE AT\n"
+	.ascii	"LEAST NORMAL IN ORDER\n"
+	.ascii	"TO GAIN INNERMOST\n"
+	.asciiz	"KNOWLEDGE.\n"
+
+	.align 2
+txt_found_1:
+	.asciiz "CONGRATULATIONS !!"
+
+	.align 2
+txt_found_2:			  
+	.ascii	"YOU HAVE FOUND THE\nPASSAGE\n"
+	.asciiz	"TO THE OUTLAND."
+
+	.align 2
+txt_found_3:
+	.ascii	"NOW YOU MUST BATTLE WITH\n"
+	.ascii	"AN UNDISCOVERED WARRIOR\n"
+	.asciiz	"FROM MORTAL KOMBAT"
+
+	.align 2
+txt_found_4:
+	.asciiz	"PREPARE YOURSELF !!"
+
+	.align 2
+txt_found_5:
+	.asciiz	"TO RETURN TO THE FOREST"
+
+	.align 2
+	.globl	txt_victory1
+txt_victory1:
+	.asciiz "SHAO KAHN IS NO MORE"
+
+	.align 2
+	.globl	txt_victory2
+txt_victory2:
+	.ascii	"YOU ARE THE\n"
+	.asciiz	"MK TRILOGY CHAMPION"
+
+	.align 2
+	.globl	ochar_endings1
+ochar_endings1:
+#if 1
+	.word	txt_kano_ending
+	.word	txt_sonya_ending
+	.word	txt_jax_ending
+	.word	txt_nightwolf_ending
+	.word	txt_jc_ending
+	.word	txt_stryker_ending
+	.word	txt_sindel_ending
+	.word	txt_sektor_ending
+	.word	txt_cyrax_ending
+	.word	txt_lao_ending
+	.word	txt_kabal_ending
+	.word	txt_sheeva_ending
+	.word	txt_st_ending
+	.word	txt_lk_ending
+	.word	txt_smoke_ending
+
+	.word	txt_kitana_ending
+	.word	txt_jade_ending
+	.word	txt_mileena_ending
+
+	.word	txt_scorpion_ending
+	.word	txt_reptile_ending
+	.word	txt_ermac_ending
+	.word	txt_oldsz_ending
+	.word	txt_oldsmoke_ending
+
+	.word	txt_noob_ending
+	.word	txt_rayden_ending	
+	.word	txt_baraka_ending	
+	.word	txt_rain_ending	
+	.word	txt_kamel_ending	
+	.word	txt_oldsmoke_ending	
+	.word	txt_oldsmoke_ending	
+	.word	txt_oldsmoke_ending	
+	.word	txt_oldsmoke_ending	
+	.word	txt_oldsmoke_ending	
+#endif	
+
+pause_stop	= -2
+pause		= -3
+
+	.align 2
+txt_kano_ending:
+	.asciiz "WHEN SHAO KAHN LETS KANO"
+	.asciiz	"LIVE, HE FAILS TO REALIZE THE"
+	.asciiz "RESOURCEFULNESS OF THE"
+	.asciiz "SCHEMING HUMAN. KANO LURES"
+	.asciiz "KAHN'S ARMY AWAY ON A"
+	.asciiz "FALSE MISSION; THEN NUKES THEM"
+	.asciiz "USING A STOLEN WEAPON. HE"
+	.asciiz "FIGHTS THE REMAINING WARRIORS"
+	.asciiz	"AND FINALLY DEFEATS KAHN HIMSELF."
+	.byte	pause_stop
+	.asciiz "KANO'S TRUE INTENTION IS TO TAKE"
+	.asciiz "OVER THE SOULS WHICH KAHN ONCE"
+	.asciiz "POSSESSED. BUT KANO IS UNABLE TO"
+	.asciiz "CONTROL THE SPIRITS AS THEY ESCAPE"
+	.asciiz "AND ATTACK HIM. RUMORED TO HAVE"
+	.asciiz "SUFFERED A VIOLENT DEATH, KANO"
+	.asciiz	"WAS IGNORANT OF THE FACT THAT"
+	.asciiz	"HE SAVED THE WORLD HE TRIED"
+	.asciiz	"TO CONQUER."
+	.byte	pause_stop
+	.byte	-1
+#if 1
+	.align 2
+txt_sonya_ending:
+	.asciiz "SONYA DEFEATS HER ARCH"
+	.asciiz "ENEMY KANO HIGH ATOP A"
+	.asciiz "SKYSCRAPER NEAR SHAO KAHN'S"
+	.asciiz	"FORTRESS. SHE THEN COMES FACE"
+	.asciiz "TO FACE WITH THE EMPEROR"
+	.asciiz "HIMSELF. IN AN INCREDIBLE"
+	.asciiz	"DISPLAY OF COURAGE, SONYA WINS."
+	.asciiz "WHEN THE WORLD RETURNS TO ITS"
+	.asciiz "NORMAL STATE, SONYA HAS NO"
+	.byte	pause_stop
+	.asciiz "TROUBLE CONVINCING HER"
+	.asciiz "SUPERIORS TO FORM THE OUTER"
+	.asciiz "WORLD INVESTIGATION AGENCY;"
+	.asciiz	"DEVOTED TO PROTECTING THE"
+	.asciiz	"EARTH AGAINST POSSIBLE FUTURE"
+	.asciiz	"INVASIONS FROM OTHER REALMS."
+	.byte	pause_stop
+	.byte	-1
+
+	.align 2
+txt_jax_ending:
+	.asciiz "THE SECOND TIME JAX BATTLES"
+	.asciiz "THE FORCES OF SHAO KAHN, HE"
+	.asciiz "COMES PREPARED. THOUGHT TO BE"
+	.asciiz "THE STRONGEST MAN ON EARTH HE"
+	.asciiz "HAS NO PROBLEM PROVING IT;"
+	.asciiz	"FIRST BY BEATING KAHN'S ARMIES"
+	.asciiz "THEN BY DEFEATING THE EMPEROR"
+	.asciiz	"HIMSELF. WHEN THE WORLD REVERTS"
+	.asciiz "BACK TO NORMAL, JAX AND SONYA"
+	.byte	pause_stop
+	.asciiz "START THE OUTER WORLD"
+	.asciiz	"INVESTIGATION AGENCY. JAX RUNS"
+	.asciiz	"THE EXPLORATORY DIVISION WHICH"
+	.asciiz	"LEARNS TO OPEN PORTALS THROUGH"
+	.asciiz "SCIENCE RATHER THAN MAGIC."
+	.asciiz "HE LEADS THE FIRST EXPEDITION"
+	.asciiz	"INTO A MYSTERIOUS NEW REALM."
+	.byte	pause_stop
+	.byte	-1
+
+
+	.align 2
+txt_nightwolf_ending:
+	.asciiz	"NIGHTWOLF HELPS OTHER EARTH"
+	.asciiz "WARRIORS ESCAPE TO HIS SACRED"
+	.asciiz "LAND. ONCE THERE, THEY REGROUP"
+	.asciiz "AND FORM A PLAN OF ATTACK"
+	.asciiz "AGAINST SHAO KAHN'S INVASION."
+	.asciiz "NIGHTWOLF HAS TRAINED"
+	.asciiz "HARD FOR THIS BATTLE;"
+	.asciiz "FINALLY HE FACES SHAO KAHN"
+	.asciiz	"AND EMERGES VICTORIOUS."
+	.byte	pause_stop
+	.asciiz	"WHEN THE EARTH RETURNS TO"
+	.asciiz "ITS NORMAL STATE, NIGHTWOLF"
+	.asciiz	"PEACEFULLY REGAINS THE"
+	.asciiz "LANDS HIS NATIVE-AMERICAN"
+	.asciiz "PEOPLE LOST OVER MANY YEARS."
+	.asciiz "THEY ESTABLISH THEIR OWN"
+	.asciiz	"PROUD NATION AND SOON BECOME"
+	.asciiz	"THE GREAT LEADERS OF EARTH."
+	.byte	pause_stop
+	.byte	-1
+
+	.align 2
+txt_sindel_ending:
+	.asciiz	"SINDEL RECEIVES VISIONS OF"
+	.asciiz	"HER TRUE PAST AND TURNS AGAINST"
+	.asciiz	"SHAO KAHN. SHE DISCOVERS THAT"
+	.asciiz	"HER TRUE KING WAS NAMED JERROD."
+	.asciiz	"THEY ONCE HAD A DAUGHTER NAMED"
+	.asciiz	"KITANA AND RULED A REALM CALLED"
+	.asciiz	"EDENIA; BEFORE KAHN TOOK IT"
+	.asciiz	"AWAY IN THEIR OWN MORTAL KOMBAT."
+	.asciiz	"HE USED SINDEL AS A PAWN IN HIS"
+	.byte	pause_stop
+	.asciiz	"QUEST FOR EARTH AND TOOK"
+	.asciiz	"KITANA AS HIS OWN DAUGHTER."
+	.asciiz	"BUT IN DEFEATING SHAO KAHN,"
+	.asciiz	"SINDEL FREES THE EARTH. IN"
+	.asciiz	"DOING SO, SHE ALSO LIBERATES"
+	.asciiz	"EDENIA AND INSURES A REUNION"
+	.asciiz	"WITH HER 1000 YEAR OLD"
+	.asciiz	"DAUGHTER- KITANA."
+	.byte	pause_stop
+	.byte	-1
+
+
+	.align 2
+txt_kamel_ending:
+	.asciiz	"KHAMELEON'S FORMER RACE WERE\n"
+	.asciiz	"KNOWN AS RAPTORS, THEY EVOLVED\n"
+	.asciiz	"MILLIONS OF YEARS AGO ON EARTH\n"
+	.asciiz	"INTO INTELLIGENT CREATURES BUT\n"
+	.asciiz	"FLED THE REALM WHEN IT WAS\n"
+	.asciiz	"DESTROYED IN A BATTLE BETWEEN\n"
+	.asciiz	"THE GODS. THEY REPOPULATED A\n"
+	.asciiz	"NEW REALM KNOWN AS ZATERRA ONLY\n"
+	.byte	pause_stop
+	.asciiz	"TO BE DRIVEN TO EXTINCTION BY\n"
+	.asciiz	"SHAO KAHN WHEN THEY LOST TO\n"
+	.asciiz	"OUTWORLD IN MORTAL KOMBAT.\n"
+	.asciiz	"WITH SHAO KAHN NEAR VICTORY\n"
+	.asciiz	"AGAINST EARTH, KHAMELEON CONTACTS\n"
+	.asciiz	"REPTILE AND SHARES THE TRUTH ABOUT\n"
+	.asciiz	"THEIR RACE WITH HIM. THIS TURNS\n" 
+	.asciiz	"HIM AGAINST KAHN, ALLOWING\n"
+	.asciiz	"KHAMELEON TO LEAD A SNEAK ATTACK\n"
+	.byte	pause_stop
+	.asciiz	"AGAINST THE EMPEROR. THIS LAST\n"
+	.asciiz	"BATTLE RESULTS IN THE END OF SHAO\n"
+	.asciiz	"KAHN AND UNIFICATION OF EARTH,\n"
+	.asciiz	"GIVING REPTILE AND KHAMELEON THE\n"
+	.asciiz	"CHANCE TO BEGET A NEW GENERATION\n"
+	.asciiz	" OF RAPTORS.\n"
+	.byte	pause_stop
+	.byte	-1
+
+	.align 2
+txt_jc_ending:
+	.asciiz	"WITH HIS NEARLY DECEASED SOUL" 
+	.asciiz	"RESTORED, JOHNNY CAGE FINDS"  
+	.asciiz	"HIMSELF FIGHTING ALONGSIDE HIS"  
+	.asciiz	"FRIENDS ONCE AGAIN. THIS TIME HE"  
+	.asciiz	"SEEKS REVENGE AGAINST THE EXTERM-" 
+	.asciiz	"INATION SQUAD THAT TOOK HIS LIFE."  
+	.asciiz	"BUT DURING THEIR BATTLE, CAGE"  
+	.asciiz	"LEARNS THAT IF THEY WIN AGAINST"  
+	.byte	pause_stop
+	.asciiz	"KAHN, HIS SOUL WILL AGAIN BE"  
+	.asciiz	"DECEASED WHEN EARTH REVERTS BACK"  
+	.asciiz	"TO NORMAL. KNOWING THIS, THE MOVIE"
+	.asciiz	"STAR EMBARKS ON A ONE WAY MISSION"  
+	.asciiz	"TO DESTROY SHAO KAHN. HIS DETER-" 
+	.asciiz	"MINATION FUELS HIS FELLOW"  
+	.asciiz	"WARRIORS AS THEY EMBARK ON ONE"  
+	.byte	pause_stop
+	.asciiz	"FINAL ONSLAUGHT AGAINST THE EVIL"  
+	.asciiz	"EMPEROR."
+	.asciiz "THE EARTH WARRIORS EMERGE"  
+	.asciiz	"VICTORIOUS AND WHEN THE" 
+	.asciiz	"REALMS REVERT TO THEIR NORMAL" 
+	.asciiz	"STATE, CAGE BIDS FAREWELL TO HIS" 
+	.asciiz	"COMRADES AS HIS SOUL LEAVES" 
+	.asciiz	"TO A HIGHER PLACE." 
+	.byte	pause_stop
+	.byte	-1
+
+
+	.align 2
+txt_sektor_ending:
+	.asciiz	"AFTER EVENTUALLY TERMINATING"
+	.asciiz	"SUB-ZERO, SEKTOR IS ATTACKED"
+	.asciiz	"BY SHAO KAHN'S ARMY. UNFAMILIAR"
+	.asciiz	"WITH THE OUTWORLD WARRIORS,"
+	.asciiz	"SEKTOR FIGHTS BACK. HE TARGETS"
+	.asciiz	"KAHN AND ALL OUTWORLD BEINGS"
+	.asciiz	"AS THREATS TO THE LIN KUEI."
+	.asciiz	"KAHN'S MINIONS ARE NO MATCH"
+	.asciiz	"FOR SEKTOR WHO FIGHTS HIS WAY"
+	.byte	pause_stop
+	.asciiz	"INTO THE FORTRESS. ONCE INSIDE"
+	.asciiz	"SEKTOR INITIATES HIS SELF"
+	.asciiz	"DESTRUCT SEQUENCE. THE RESULTING"
+	.asciiz	"EXPLOSION IS SO MASSIVE THAT IT"
+	.asciiz	"CLOSES THE PORTAL AND RETURNS"
+	.asciiz	"EARTH BACK TO NORMAL."
+	.byte	pause_stop
+	.byte	-1
+
+	.align 2
+txt_cyrax_ending:
+	.asciiz	"CYRAX IS CAPTURED BY SUB-ZERO"
+	.asciiz	"AND REPROGRAMMED WITH NEW"
+	.asciiz	"ORDERS; DESTROY SHAO KAHN."
+	.asciiz	"WITH KAHN UNABLE TO DETECT"
+	.asciiz	"THE ASSASSIN'S SOULLESS"
+	.asciiz	"PRESENCE, CYRAX DELIVERS A"
+	.asciiz	"SUCCESSFUL SNEAK ATTACK. BUT"
+	.asciiz	"AFTER ELIMINATING KAHN AND"
+	.asciiz	"SAVING EARTH, CYRAX AWAITS NEW"
+	.byte	pause_stop
+	.asciiz	"ORDERS FROM HIS LIN KUEI"
+	.asciiz	"HEADQUARTERS. THE ORDERS NEVER"
+	.asciiz	"COME AND CYRAX MALFUNCTIONS."
+	.asciiz	"HE ENDS UP STRANDED IN THE MIDDLE"
+	.asciiz	"OF A VAST DESERT, BLINDLY"
+	.asciiz	"HEADING TOWARDS HIS BASE."
+	.byte	pause_stop
+	.byte	-1
+
+	.align 2
+txt_sheeva_ending:
+	.asciiz	"WHILE SHEEVA SERVES HER"
+	.asciiz	"MASTER ON EARTH, HER RACE OF"
+	.asciiz	"SHOKAN ARE BEING PUNISHED"
+	.asciiz	"ON THE OUTWORLD. KAHN NOW"
+	.asciiz	"FAVORS MOTARO'S RACE OF CENTAURS"
+	.asciiz	"AND AIDS THEM IN DEFEATING THE"
+	.asciiz	"SHOKAN. AFTER LEARNING OF"
+	.asciiz	"THESE EVENTS SHEEVA TURNS ON"
+	.asciiz	"HER MASTER, SHE DEFEATS MOTARO,"
+	.byte	pause_stop
+	.asciiz	"AND IN A RAGE BRINGS DOWN KAHN."
+	.asciiz	"IN FREEING THE EARTH SHE ALSO"
+	.asciiz	"FREES THE OUTWORLD. SHE THEN"
+	.asciiz	"RETURNS HOME AND WORKS TO"
+	.asciiz	"RESTORE THE PRIDE AND RESPECT"
+	.asciiz	"OF HER RACE."
+	.byte	pause_stop
+	.byte	-1
+
+
+	.align 2
+txt_kabal_ending:
+	.asciiz	"AFTER RETURNING FROM NEAR DEATH,"
+	.asciiz	"KABAL SWEARS REVENGE AGAINST HIS"
+	.asciiz	"ATTACKERS. HE FIGHTS ALONGSIDE"
+	.asciiz	"THE OTHER EARTH WARRIORS. WHEN"
+	.asciiz	"HE DEFEATS MOTARO AND THE MIGHTY"
+	.asciiz	"SHAO KAHN, HE PROVES THAT HE"
+	.asciiz	"TRULY IS THE CHOSEN ONE."
+	.asciiz	"BEFORE THE INVASION, KABAL"
+	.asciiz	"LIVED A LIFE OF CRIME. HE WAS"
+	.byte	pause_stop
+	.asciiz	"ONCE A MEMBER OF THE BLACK"
+	.asciiz	"DRAGON ALONG WITH KANO. NOW"
+	.asciiz	"KABAL DEVOTES HIS LIFE TO"
+	.asciiz	"FIGHTING INJUSTICE; HE WILL GIVE"
+	.asciiz	"CRIMES' INNER CIRCLES A NEW"
+	.asciiz	"REASON TO FEAR."
+	.byte	pause_stop
+	.byte	-1
+ 
+
+	.align 2
+txt_stryker_ending:
+	.asciiz	"IGNORANT OF WHY HIS SOUL WAS"
+	.asciiz	"SPARED FROM THE OUTWORLD"
+	.asciiz	"INVASION, STRYKER RECEIVES A"
+	.asciiz	"VISION FROM RAIDEN. HE IS"
+	.asciiz	"INSTRUCTED TO TRAVEL WEST."
+	.asciiz	"HE EVENTUALLY MEETS THE REST"
+	.asciiz	"OF EARTH'S WARRIORS AND LEARNS"
+	.asciiz	"THE TRUE MEANING OF HIS SURVIVAL."
+	.asciiz	"HE TRAVELS BACK TO THE CITY"
+	.byte	pause_stop
+	.asciiz	"HE SWORE TO PROTECT. KAHN IS"
+	.asciiz	"UNFAMILIAR WITH THIS NEW"
+	.asciiz	"KOMBATANT AND IS CAUGHT OFF"
+	.asciiz	"GUARD. STRYKER DEFEATS THE"
+	.asciiz	"WARLORD AND SAVES THE ENTIRE"
+	.asciiz	"PLANET. THE CHAOS THAT CONSUMED"
+	.asciiz	"THE CITY IN THE HOURS BEFORE"
+	.asciiz	"THE INVASION ARE GONE."
+	.byte	pause_stop
+	.byte	-1
+
+
+	.align 2
+txt_lao_ending:
+	.asciiz	"WHEN KAHN INVADES EARTH, KUNG"
+	.asciiz	"LAO MUST SCRAP HIS PLANS OF"
+	.asciiz	"REUNITING THE WHITE LOTUS SOCIETY."
+	.asciiz	"HE INSTEAD MUST FOCUS ON THE NEW"
+	.asciiz	"TOURNAMENT. HE SEEKS LIU KANG"
+	.asciiz	"AND TOGETHER THEY BATTLE"
+	.asciiz	"KAHN'S FORCES FEARLESSLY. USING"
+	.asciiz	"THE KNOWLEDGE HE OBTAINED AS A"
+	.asciiz	"SHAOLIN MONK, HE FIGHTS IN THE"
+	.byte	pause_stop
+	.asciiz	"NAME OF HIS GREAT ANCESTOR-"
+	.asciiz	"THE ORIGINAL KUNG LAO. HE"
+	.asciiz	"EMERGES VICTORIOUS BUT SUFFERS"
+	.asciiz	"FROM INJURIES DURING THE BATTLE"
+	.asciiz	"WITH KAHN. BELIEVED TO HAVE"
+	.asciiz	"PASSED AWAY, KUNG LAO JOINS"
+	.asciiz	"HIS ANCESTOR IN A NEW LIFE"
+	.byte	pause_stop
+	.byte	-1
+
+																																																				
+	.align 2
+txt_st_ending:
+	.asciiz	"WHEN SHAO KAHN OVERTAKES THE"
+	.asciiz	"EARTH, HE NEEDS SHANG TSUNG TO"
+	.asciiz	"HELP LOCATE THE SURVIVING HUMANS."
+	.asciiz	"GRANTED NEW POWERS, HE SOON"
+	.asciiz	"DISCOVERS HIS DARK EMPEROR'S"
+	.asciiz	"TRUE PLAN; AS SOON AS THE"
+	.asciiz	"REMAINING WARRIORS ARE DISPOSED"
+	.asciiz	"OF, KAHN WILL TAKE TSUNG'S OWN"
+	.asciiz	"SOUL. AFTER LEARNING OF THIS,"
+	.byte	pause_stop
+	.asciiz	"TSUNG TURNS ON HIS MASTER. HE"
+	.asciiz	"CATCHES MOTARO OFF GUARD AND"
+	.asciiz	"THEN DEFEATS SHAO KAHN. BUT"
+	.asciiz	"BEFORE THE EARTH CAN RETURN"
+	.asciiz	"TO NORMAL TSUNG TAKES ALL THE"
+	.asciiz	"SOULS AS HIS OWN. HE WILL"
+	.asciiz	"FOREVER RULE EARTH WITH HIS"
+	.asciiz	"OWN BRAND OF EVIL."
+	.byte	pause_stop
+	.byte	-1
+
+
+	.align 2
+txt_lk_ending:
+	.asciiz	"AFTER THWARTING SHAO KAHN IN"
+	.asciiz	"THE PAST, LIU KANG FINDS HIMSELF"
+	.asciiz	"THE MAIN TARGET OF KAHN'S"
+	.asciiz	"EXTERMINATION SQUADS. BUT KANG"
+	.asciiz	"IS THE REIGNING MORTAL KOMBAT"
+	.asciiz	"CHAMPION AND PROVES IT BY EASILY"
+	.asciiz	"DEFEATING KAHN'S MINIONS."
+	.asciiz	"BUT IT'S THE APPARENT DEATH"
+	.asciiz	"OF HIS FRIEND KUNG LAO THAT"
+	.byte	pause_stop
+	.asciiz	"ENRAGES KANG AND ENABLES HIM"
+	.asciiz	"TO FIND THE STRENGTH TO DEFEAT"
+	.asciiz	"SHAO KAHN. THEN BEFORE THE"
+	.asciiz	"PORTAL CLOSES, LIU KANG IS"
+	.asciiz	"GREETED BY PRINCESS KITANA AND"
+	.asciiz	"THANKED FOR SAVING THE EARTH"
+	.asciiz	"AND THE OUTWORLD."
+	.byte	pause_stop
+	.byte	-1
+
+
+	.align 2
+txt_mileena_ending:
+	.asciiz	"WHEN MILEENA IS MURDERED," 
+	.asciiz	"SHE FINDS HER SOUL REBORN" 
+	.asciiz	"IN AN EVIL PLACE CALLED" 
+	.asciiz	"THE NETHEREALM. HERE, SHE" 
+	.asciiz	"ACCEPTS SERVITUDE TO AN" 
+	.asciiz	"ALL MIGHTY GOD KNOWN AS" 
+	.asciiz	"SHINNOK. IT IS SHINNOK" 
+	.asciiz	"WHO ALLOWS HER SOUL TO BE" 
+	.asciiz	"REBORN ON THE OUTWORLD." 
+	.asciiz	"HER LOYALTY TO SHAO KAHN" 
+	.asciiz	"IS REPLACED BY HER" 
+	.byte	pause_stop
+	.asciiz	"FEAR OF SHINNOK."
+	.asciiz	"MILEENA PLOTS TO OVERTHROW" 
+	.asciiz	"HER OWN FATHER.  THE"
+	.asciiz	"ABILITY TO READ KITANA'S" 
+	.asciiz	"MIND AND PREDICT THE EARTH" 
+	.asciiz	"WARRIORS' MOTIVES, ENABLES" 
+	.asciiz	"MILEENA TO SET UP HER" 
+	.asciiz	"FATHERS DOWNFALL. WHEN" 
+	.byte	pause_stop
+	.asciiz	"KAHN IS WEAKENED BY THE" 
+	.asciiz	"ONSLAUGHT OF ATTACKS," 
+	.asciiz	"MILEENA TAKES THE" 
+	.asciiz	"OPPORTUNITY TO DESTROY HER" 
+	.asciiz	"FATHER AND ALLOW SHINNOK" 
+	.asciiz	"TO STEP FORWARD AND TAKE" 
+	.asciiz	"BOTH REALMS FOR HIS OWN" 
+	.asciiz	"SINISTER PURPOSES."
+	.byte	pause_stop
+	.byte	-1
+
+
+	.align 2
+txt_oldsz_ending:
+	.asciiz	"HAVING BEEN KILLED IN"
+	.asciiz	"THE FIRST TOURNAMENT"
+	.asciiz	"SUB-ZERO SOMEHOW SEEMS"
+	.asciiz	"TO HAVE EMERGED TO WIN"
+	.asciiz	"THE THIRD TOURNAMENT."
+	.asciiz	"HOWEVER, UPON REMOVING"
+	.asciiz	"HIS MASK BOTH THE"
+	.asciiz	"OUTWORLD AND THE"
+	.asciiz	"EARTH-BORN WARRIORS. . ."
+	.byte	pause_stop
+	.asciiz	"ARE SHOCKED TO DISCOVER"
+	.asciiz	"THE TRUE IDENTITY OF"
+	.asciiz	"THIS WARRIOR. A WARRIOR"
+	.asciiz	"WHO HAS LONG BEEN"
+	.asciiz	"MISSING FROM A PREVIOUS"
+	.asciiz	"MORTAL KOMBAT, AND ONE"
+	.asciiz	"WHO WILL RETURN IN THE"
+	.asciiz	"FOURTH TOURNAMENT."
+	.byte	pause_stop
+	.byte	-1
+
+
+	.align 2
+txt_ermac_ending:
+	.asciiz	"WHEN KAHN FINALLY ELIMINATES HIS" 
+	.asciiz	"OPPOSITION, HE FINDS A NEW AND"
+	.asciiz	"SURPRISING FOE IN ERMAC.  THE" 
+	.asciiz	"OUTWORLD SOULS THAT GIVE LIFE TO" 
+	.asciiz	"THE WARRIOR DID NOT TRUST THEIR" 
+	.asciiz	"TYRANNICAL LEADER WHO PLANNED TO" 
+	.asciiz	"CONSUME THE POWERFUL LIFE FORCE" 
+	.asciiz	"FOR HIS OWN POWER."
+	.byte	pause_stop
+	.asciiz	"EVEN SHAO KAHN'S POWER WAS NO" 
+	.asciiz	"MATCH FOR THE OVERWHELMING" 
+	.asciiz	"STRENGTH OF THE LEGIONS OF DECEASED" 
+	.asciiz	"OUTWORLD WARRIORS. THEY DESTROYED" 
+	.asciiz	"THEIR MASTER IN BATTLE THAT" 
+	.asciiz	"DEVASTATED THE ENTIRE REALM. ERMAC" 
+	.asciiz	"WAS LEFT BEHIND TO RULE IT WITH" 
+	.asciiz	"HIS OWN BRAND OF OPPRESSION."
+	.byte	pause_stop
+	.byte	-1
+
+	.align 2 
+txt_rain_ending:
+	.asciiz	"RAIN FIGHTS VALIANTLY FOR THE" 
+	.asciiz	"EMPEROR SHAO KAHN. BUT IT WOULD" 
+	.asciiz	"BE KAHN'S OWN STEP DAUGHTER, THE" 
+	.asciiz	"PRINCESS KITANA, WHO TURNS RAIN" 
+	.asciiz	"AGAINST HIM. LIKE KITANA, RAIN'S" 
+	.asciiz	"ORIGINS ALSO COME FROM THEIR" 
+	.asciiz	"FORMER REALM OF EDENIA. HE LEARNS"
+	.byte	pause_stop
+	.asciiz	"THAT HIS FATHER WAS ONCE A"
+	.asciiz	"GENERAL IN EDENIA'S ARMY AND DIED"
+	.asciiz	"AT THE HANDS OF SHAO KAHN HIMSELF."
+	.asciiz	"ENRAGED AT THE TRUTH ABOUT HIS" 
+	.asciiz	"HISTORY, HE JOINS KITANA IN"
+	.asciiz	"ALLYING WITH THE EARTH REALM"
+	.byte	pause_stop
+	.asciiz	"WARRIORS. BUT HIS ALLEGIANCE COMES"
+	.asciiz	"UNDER QUESTION WHEN HE MYSTERIOUSLY" 
+	.asciiz	"DISAPPEARS DURING AN EXTERMINATION" 
+	.asciiz	"SQUAD ATTACK. TO PROVE HIS LOYALTY"
+	.asciiz	"HE EMBARKED ON A SUICIDE MISSION TO"
+	.asciiz	"DESTROY SHAO KAHN AND END THE"
+	.asciiz	"MENACE ONCE AND FOR ALL."
+	.byte	pause_stop
+	.byte	-1
+
+	.align 2 
+txt_noob_ending:
+	.asciiz	"AT FIRST A PASSIVE OBSERVER, NOOB" 
+	.asciiz	"SAIBOT WOULD SOON RECEIVE ORDERS" 
+	.asciiz	"TO SIDE WITH THE EVIL EMPEROR" 
+	.asciiz	"SHAO KAHN. SAIBOT'S LEADERS IN THE" 
+	.asciiz	"NETHEREALM WANT HIM TO JOIN KAHN'S" 
+	.asciiz	"BATTLE TO GAIN HIS TRUST AND TO" 
+	.asciiz	"GAIN ENTRANCE INTO THE EARTH REALM."
+	.byte	pause_stop
+	.asciiz	"WHEN KAHN DROPS HIS GUARD, NOOB" 
+	.asciiz	"SAIBOT IS ORDERED TO ATTACK. WITH"
+	.asciiz	"BOTH THE EARTH REALM AND THE" 
+	.asciiz	"OUTWORLD'S EMPEROR DEFEATED, THE"
+	.asciiz	"FALLEN ELDER GOD KNOWN AS SHINNOK" 
+	.asciiz	"CAN TAKE BOTH REALMS AND GAIN THE" 
+	.asciiz	"POWER HE NEEDS TO STRIKE BACK AT" 
+	.asciiz	"THE ELDER GOD'S WHO BANISHED" 
+	.asciiz	"HIM INTO THE NETHEREALM."
+	.byte	pause_stop
+	.byte	-1
+#endif
+
+	.align 2 
+txt_rayden_ending:
+	.asciiz	"WHEN OUTWORLD AND EARTH MERGE," 
+	.asciiz	"RAYDEN FINDS HIMSELF BATTLING SHAO" 
+	.asciiz	"KAHN WITHOUT THE ASSISTANCE OF THE" 
+	.asciiz	"ELDER GODS. THE THUNDER GOD MUST" 
+	.asciiz	"TRANSFORM INTO A MORTAL IN ORDER" 
+	.asciiz	"EXIST IN THE COMBINED REALMS. WHEN" 
+	.asciiz	"HE DOES THIS, HE PUTS HIS OWN"
+	.asciiz	"IMMORTALITY AT RISK."
+	.byte	pause_stop
+	.asciiz	"BUT RAYDEN HAS ALWAYS FOUND WAYS OF" 
+	.asciiz	"FOULING KAHN'S PLOTS. HE GUIDES THE" 
+	.asciiz	"CHOSEN EARTH WARRIORS INTO BATTLE" 
+	.asciiz	"AGAINST THE OUTWORLD EMPEROR'S ARMIES," 
+	.asciiz	"THEN FINALLY FACES KAHN HIMSELF. THE" 
+	.asciiz	"POWERFUL BEINGS FIGHT UNTIL THE VERY" 
+	.asciiz	"CORE OF THE EARTH IS SHAKEN, AND" 
+	.asciiz	"RAYDEN EMERGES VICTORIOUS."
+	.byte	pause_stop
+	.byte	-1
+
+	.align 2 
+txt_baraka_ending:
+	.asciiz	"WHEN BARAKA'S FAILURE TO APPREHEND"
+	.asciiz	"SEVERAL EARTH WARRIORS NEARLY"
+	.asciiz	"RESULTS IN  SHAO KAHN'S DEMISE," 
+	.asciiz	"THE NOMAD FINDS HIMSELF FEARING" 
+	.asciiz	"FOR HIS OWN LIFE. HE FALLS OUT OF" 
+	.asciiz	"FAVOR WITH HIS EMPEROR, AND"
+	.asciiz	"REALIZES THAT IT'S ONLY A MATTER" 
+	.asciiz	"OF TIME BEFORE KAHN ENACTS REVENGE."
+	.byte	pause_stop
+	.asciiz	"BARAKA REMAINS LOYAL UNTIL THE"
+	.asciiz	"OPPOSITION FROM THE EARTH REALM HAS" 
+	.asciiz	"BEEN DEFEATED. WITH KAHN IN A"
+	.asciiz	"WEAKENED STATE FROM HIS BATTLE WITH" 
+	.asciiz	"RAYDEN, BARAKA STRIKES. THE" 
+	.asciiz	"DESPONDENT EMPEROR IS NO MATCH FOR"
+	.asciiz	"BARAKA'S ATTACK. THEN, FEARING"
+	.asciiz	"REPRISAL FROM THOSE LOYAL TO KAHN,"
+	.asciiz	"BARAKA ESCAPES BACK INTO THE NOMADIC"
+	.asciiz	"RUINS FROM WHICH HE CAME."
+	.byte	pause_stop
+	.byte	-1
+
+	
+	.align 2
+txt_oldsmoke_ending:
+	.asciiz "BEFORE HIS TRANSFORMATION INTO A"
+	.asciiz "CYBERNETIC ASSASSIN, SMOKE WAS" 
+	.asciiz "ONE OF THE LIN KUEI'S FINEST" 
+	.asciiz "NINJAS. IT WAS DURING THIS TIME"
+	.asciiz "THAT HE CAME TO KNOW HIS GREATEST" 
+	.asciiz "ALLY- SUB-ZERO. WHEN THE LIN KUEI" 
+	.asciiz "DECIDE TO AUTOMATE THEIR WARRIORS," 
+	.asciiz "THE TWO ATTEMPT TO ESCAPE."
+	.byte	pause_stop
+	.asciiz "WHILE SUB-ZERO SUCCESSFULLY ELUDED" 
+	.asciiz "CAPTURE, SMOKE DID NOT. HE WOULD"
+	.asciiz "BECOME A ROBOTIC NIGHTMARE, HIS"
+	.asciiz "SOUL TRAPPED INSIDE A LIVING"
+	.asciiz "MACHINE. IN HIS HUMAN FORM, SMOKE"
+	.asciiz "WAS A FIERCE WARRIOR, IN HIS MECH-"
+	.asciiz "ANICAL BODY, HE IS EVEN MORE LETHAL." 
+	.asciiz "BUT, HIS TRUE FORM IS THAT OF A"
+	.asciiz "HUMAN, ONE HE'LL KNOW AGAIN ONLY"
+	.asciiz "IN DREAMS."
+	.byte	pause_stop
+	.byte	-1
+
+	.align 2
+txt_kitana_ending:
+	.asciiz	"KITANA EVADES THE EVIL"
+	.asciiz	"CLUTCHES OF SHAO KAHN"
+	.asciiz	"AND ESCAPES INTO THE"
+	.asciiz	"UNKNOWN  REGIONS OF EARTH."
+	.asciiz	"SHE SURVIVES AN ASSASSINATION"
+	.asciiz	"ATTEMPT BY THE VILE CREATURE"
+	.asciiz	"REPTILE, AND ALLIES HERSELF"
+	.asciiz	"WITH HER ONE TIME"
+	.asciiz	"COMRADE - JADE"
+	.byte	pause_stop
+	.asciiz	"TOGETHER, WITH THE HELP"
+	.asciiz	"OF EARTH'S WARRIORS,"
+	.asciiz	"KITANA REACHES SINDEL AND"
+	.asciiz	"TURNS THE QUEEN AGAINST HER"
+	.asciiz	"EMPEROR. WITH SHAO KAHN DEFEATED,"
+	.asciiz	"THE EARTH IS CHANGED BACK TO"
+	.asciiz	"ITS ORIGINAL STATE, AS IS"
+	.asciiz	"KITANA'S REALM OF EDENIA."
+	.byte	pause_stop
+	.asciiz	"SHE WILL BE FOREVER IN DEBT"
+	.asciiz	"TO HER FRIENDS FROM EARTH AS"
+	.asciiz	"SHE RULES THE NEW REALM OF"
+	.asciiz	"EDENIA AT QUEEN SINDEL'S"
+	.asciiz	"SIDE."
+	.byte	pause_stop
+	.byte	-1
+
+	.align 2
+txt_jade_ending:
+	.asciiz	"JADE MAKES THE DECISION TO"
+	.asciiz	"ASSIST HER LONGTIME FRIEND,"
+	.asciiz	"KITANA. SHE THWARTS AN"
+	.asciiz	"ASSASSINATION  ATTEMPT BY"
+	.asciiz	"REPTILE AGAINST THE PRINCESS"
+	.asciiz	"AND FENDS OFF THEIR OTHER"
+	.asciiz	"OUTWORLD ENEMIES."
+	.asciiz	"THIS CLEARS THE PATH FOR"
+	.asciiz	"KITANA TO TURN SINDEL"
+	.byte	pause_stop
+	.asciiz	"AGAINST THE EMPEROR"
+	.asciiz	"SHAO KAHN. WITH SINDEL"
+	.asciiz	"REMOVED AS AN ENEMY,"
+	.asciiz	"JADE FINDS HERSELF"
+	.asciiz	"FACING THE  EMPEROR IN"
+	.asciiz	"KOMBAT. SHE DEFEATS HIM"
+	.asciiz	"AND BOTH EARTH AND HER"
+	.asciiz	"FORMER HOMELAND OF EDENIA"
+	.asciiz	"ARE TRANSFORMED"
+	.byte	pause_stop
+	.asciiz	"TO THEIR ORIGINAL"
+	.asciiz "STATES. JADE HAS EARNED"
+	.asciiz	"HERSELF A PLACE"
+	.asciiz	"ALONGSIDE THE GREAT"
+	.asciiz	"HEROES OF"
+	.asciiz	"MORTAL KOMBAT."
+	.byte	pause_stop
+	.byte	-1
+
+
+	.align 2
+txt_reptile_ending:
+	.asciiz	"REPTILE IS ORDERED BY SHAO"
+	.asciiz	"KAHN FIND AND KILL"
+	.asciiz	"KITANA. HE IS SUCCESSFUL IN"
+	.asciiz	"COMPLETING HIS TASK, BUT"
+	.asciiz	"UPON RETURNING, FINDS HIMSELF"
+	.asciiz	"SHUNNED BY THE EMPEROR. SHAO"
+	.asciiz	"KAHN PROMISED REPTILE THAT IF"
+	.asciiz	"HE WAS SUCCESSFUL THAT HE WOULD"
+	.asciiz	"RESURRECT REPTILE'S RACE."
+	.byte	pause_stop
+	.asciiz	"SHAO KAHN NEVER HAD ANY"
+	.asciiz	"INTENTION OF FULFILLING HIS"
+	.asciiz	"PROMISE. ENRAGED, REPTILE"
+	.asciiz	"TURNS AGAINST HIS MASTER AND"
+	.asciiz	"DEFEATS HIM IN BATTLE BUT BY"
+	.asciiz	"KILLING HIS MASTER, REPTILE"
+	.asciiz	"DESTROYS THE ONE CHANCE"
+	.asciiz	"TO EVER KNOW HIS TRUE RACE.  "
+	.byte	pause_stop
+	.byte	-1
+
+	.align 2
+txt_scorpion_ending:
+	.asciiz	"SCORPION IS INADVERTENTLY"
+	.asciiz	"RELEASED FROM HIS DAMNATION"
+	.asciiz	"IN HELL WHEN KAHN'S PLAN TO"
+	.asciiz	"OVERTAKE THAT REALM GOES"
+	.asciiz	"AWRY. FREE TO ROAM EARTH,"
+	.asciiz	"SCORPION IS ENLISTED BY"
+	.asciiz	"THE EMPEROR TO AID HIM IN HIS"
+	.asciiz	"QUEST TO DESTROY THE"
+	.asciiz	"CHOSEN WARRIORS. "
+	.byte	pause_stop
+	.asciiz	"BUT, HIS ALLEGIANCE TO SHAO KAHN"
+	.asciiz	"FALTERS WHEN HE DISCOVERS ONE"
+	.asciiz	"OF THE CHOSEN WARRIORS TO"
+	.asciiz	"BE SUB-ZERO."
+	.asciiz	"SCORPION HAS VOWED TO PROTECT"
+	.asciiz	"THE FORMER NINJA AS RESTITUTION"
+	.asciiz	"FOR KILLING HIS BROTHER."
+	.asciiz	"SHAO KAHN FINDS HIMSELF"
+	.asciiz	"THE VICTIM OF HIS OWN"
+	.byte	pause_stop
+	.asciiz	"SCHEME AS SCORPION IS"
+	.asciiz	"FORCED TO TURN AGAINST HIM"
+	.asciiz	"HE DESTROYS THE EMPEROR"
+	.asciiz	"AND THE EARTH IS RETURNED"
+	.asciiz	"TO NORMAL. SCORPION FINDS"
+	.asciiz	"HIMSELF ONCE AGAIN ROAMING"
+	.asciiz	"THE PITS OF HELL, ONLY TO"
+	.asciiz	"ONE DAY RISE AGAIN. "
+	.byte	pause_stop
+	.byte	-1
+
+	.align 2
+txt_smoke_ending:
+	.asciiz	"SMOKE WAS ONCE A FRIEND"
+	.asciiz	"AND ALLY OF SUB-ZERO WHEN"
+	.asciiz	"THEY BOTH TRIED TO ESCAPE FROM"
+	.asciiz	"BEING TURNED INTO MACHINES"
+	.asciiz	"BY THEIR NINJA CLAN. BUT,"
+	.asciiz	"SMOKE IS CAPTURED AND"
+	.asciiz	"TRANSFORMED INTO A CYBORG"
+	.asciiz	"WITH A MISSION TO FIND AND"
+	.asciiz	"KILL HIS OLD PARTNER."
+	.byte	pause_stop
+	.asciiz	"BUT SMOKE SOON FINDS HIMSELF"
+	.asciiz	"BEING PURSUED BY SHAO KAHN'S"
+	.asciiz	"MINIONS. HE LEARNS THAT HE"
+	.asciiz	"STILL HAS A SOUL AND HIS"
+	.asciiz	"TRUE MISSION IS THE"
+	.asciiz	"DESTRUCTION OF THE OUTWORLD"
+	.asciiz	"INVADERS. HE DEFEATS"
+	.asciiz	"KAHN AND SAVES THE WORLD"
+	.asciiz	"BUT IS FOREVER TRAPPED"
+	.asciiz	"IN HIS ARTIFICIAL BODY."
+	.byte	pause_stop
+	.byte	-1
+
+/* ;********************************* */
+	.align 2
+	.globl	txt_thanx_alot
+txt_thanx_alot:
+	.ascii	"MANY THANKS GO TO\n\n"
+	.ascii	"STEVE RANCK\n"
+	.ascii	"SCOTT PATTERSON\n"
+	.ascii	"MIKE CUEVAS\n"
+	.asciiz	"DETMAR PETERKE\n"
+	.asciiz	"KERRY\n\n"
+
+	.align 2
+	.globl	txt_testers
+txt_testers:
+	.ascii	"UNBEATABLE KOMBAT MASTERS\n(GAME TESTERS)\n\n"
+	.ascii	"WILL SHEN\n"
+	.ascii	"WILLIAM SUTJIADI\n"
+	.ascii	"J.R. SALAZAR\n"
+	.ascii	"MARSELLE WASHINGTON\n"
+	.ascii	"MIKE TURNER\n"
+	.ascii	"TOAN NGO\n"
+	.ascii	"STEVE KRAMER\n"
+	.ascii	"JOHN UBALDE\n"
+	.ascii	"BRIAN JOHNSON\n"
+	.ascii	"EDDIE FERRIER\n"
+	.ascii	"MIKE VINIKOUR\n"
+
+	.align 2
+	.globl	txt_production
+txt_production:
+	.ascii	"PRINT DESIGN AND PRODUCTION\n\n"
+	.ascii	"DEBBIE AUSTIN\n"
+	.ascii	"STEVE HIGH\n"
+	.ascii	"SHAWN MURPHY\n"
+	.asciiz	"DAVE YOUNG\n"
+
+	.align 2
+	.globl	txt_mktril
+txt_mktril:
+	.ascii	"WILLIAMS ENTERTAINMENT\nMK TRILOGY TEAM\n\n"
+	.ascii	"DAVID SCHWARTZ\n"
+	.ascii	"MARK GUIDARELLI\n"
+	.ascii	"GREG MILLER\n"
+	.ascii	"MARK MAY\n"
+	.asciiz	"ROB ATESALP\n"
+ 
+	.align 2
+	.globl	txt_mk3_design
+txt_mk3_design:
+	.ascii	"MORTAL KOMBAT TRILOGY\nDESIGN TEAM\n\n"
+	.ascii	"ED BOON\n"
+	.ascii	"JOHN TOBIAS\n"
+	.ascii	"TONY GOSKIE\n"
+	.ascii	"DAN FORDEN\n"
+	.ascii	"DAVE MICHICICH\n"
+	.ascii	"STEVE BERAN\n"
+	.asciiz	"JOHN VOGEL\n\n"
+
+/* high score stuff (mkhstd.h) */
+	.align 2
+	.globl	txt_p1_enter
+txt_p1_enter:
+	.asciiz	"PLAYER 1\nINCREDIBLE WINNING STREAK"
+
+	.align 2
+	.globl	txt_p2_enter
+txt_p2_enter:
+	.asciiz	"PLAYER 2\nINCREDIBLE WINNING STREAK"
+
+	.align 2
+	.globl	txt_enter_your
+txt_enter_your:
+	.asciiz	"ENTER YOUR INITIALS\nTO BECOME IMMORTALIZED"
+
+	.align 2
+	.globl	txt_rank_wiar
+txt_rank_wiar:
+	.asciiz	"%d  WINS IN A ROW\n"
+	.align 2
+	.globl txt_legals
+txt_legals:
+	.ascii	"MORTAL KOMBAT[ TRILOGY\n"
+	.ascii	"]1996 MIDWAY MANUFACTURING COMPANY\n"
+	.ascii	"ALL RIGHTS RESERVED.\n"
+	.ascii	"MIDWAY, MORTAL KOMBAT, THE DRAGON\n"
+	.ascii	"DESIGN AND ALL THE CHARACTER NAMES\n"
+	.ascii	"ARE TRADEMARKS OF\n"
+	.ascii	"MIDWAY MANUFACTURING COMPANY.\n"
+	.ascii	"DISTRIBUTED UNDER LICENSE BY\nWILLIAMS ENTERTAINMENT INC.\n"
+	.ascii	"WILLIAMS[ IS A REGISTERED TRADEMARK\n"
+	.ascii	"OF WILLIAMS ELECTRONICS GAMES, INC.\nUSED BY PERMISSION.\n"
+	.asciiz	"LICENSED BY NINTENDO\n"
+
+		   
+char txt_clues[]="YOUR REWARD IS SECRETS\nFROM THE OUTLAND\n";
+char txt_demo_all[]="SUPREME DEMONSTRATION";
+char txt_yr_demo_all[]=" ";
+char txt_brutdemo1[]="BRUTALITY DEMONSTRATION ONE";
+char txt_brutdemo2[]="BRUTALITY DEMONSTRATION TWO";
+char txt_brutdemo3[]="BRUTALITY DEMONSTRATION THREE";
+char txt_brutdemo4[]="BRUTALITY DEMONSTRATION FOUR";
+char txt_fatdemo1[]="FATALITY DEMONSTRATION ONE";
+char txt_fatdemo2[]="FATALITY DEMONSTRATION TWO";
+char txt_fatdemo3[]="FATALITY DEMONSTRATION THREE";
+char txt_fatdemo4[]="FATALITY DEMONSTRATION FOUR";
+char txt_fatdemo5[]="FATALITY DEMONSTRATION FIVE";
+char txt_fatdemo6[]="FATALITY DEMONSTRATION SIX";
+char txt_fatdemo7[]="FATALITY DEMONSTRATION SEVEN";
+char txt_anidemo1[]="ANIMALITY DEMONSTRATION ONE";
+char txt_anidemo2[]="ANIMALITY DEMONSTRATION TWO";
+char txt_anidemo3[]="ANIMALITY DEMONSTRATION THREE";
+char txt_babdemo1[]="BABALITY DEMONSTRATION ONE";
+char txt_fredemo1[]="FRIENDSHIP DEMONSTRATION ONE";
+char txt_yr_brutal[]="WITNESS THE BARBARISM\nWITHIN ALL WARRIORS.";
+char txt_yr_fatal[]="YOUR REWARD IS THE OPPORTUNITY\nTO WITNESS THE MANY WAYS TO\nDEFEAT YOUR OPPONENTS.";
+char txt_yr_animal[]="YOUR REWARD IS THE OPPORTUNITY\nTO WITNESS THE INNER ANIMAL\nALL WARRIORS POSSES.";
+char txt_yr_baby[]="YOUR REWARD IS THE OPPORTUNITY\nTO WITNESS THE CHILD\nIN ALL OF US.";
+char txt_yr_friend[]="WITNESS THE KIND\nSPIRIT WITHIN ALL WARRIORS.";
+char txt_hidden_intro[]="YOUR REWARD IS THE OPPORTUNITY\nTO FACE ONE OF SHAO KAHN'S\nDEADLIEST WARRIORS.";
+char txt_normal_ending[]="TOURNAMENT OUTCOME";
+char txt_space_game[]="RELLIM OHCANEP";
+char txt_pong_game[]="PAST HISTORY";
+char txt_fight_ermac[]="BATTLE WITH ERMAC";
+char txt_fight_old_school[]="OLD SCHOOL KOMBAT";
+char txt_fight_noob[]="BATTLE WITH NOOB SAIBOT";
+char txt_fight_mninja[]="MALE NINJA KOMBAT";
+char txt_fight_fninja[]="FEMALE NINJA KOMBAT";
+char txt_fight_kamel[]="BATTLE WITH KAMELEON";
+char txt_fight_noob_ermac[]="NOOB SAIBOT / ERMAC ENDURANCE";
+char txt_fight_osz_osm[]="MK2 CLASSIC ENDURANCE KOMBAT";
+char txt_mega_endurance[]="MEGA ENDURANCE KOMBAT";
+char txt_random_prize[]="RANDOM PRIZE";
+char txt_space_invade[]="INVADERS FROM SPACE";
+char txt_clue_giveaway[]="SECRETS OF TRILOGY";
+
+char *opt_screen_list[]=
+{
+	"GAME KONFIGURE",
+	"SOUND AND MUSIC",
+	"KONTROL KONFIGURE",
+	"KONTROL KONFIGURE",
+	"MISCELLANEOUS KOMBAT",
+	"MORE KOMBAT",
+	"KOMBAT CHEATS",
+	"UNDER CONSTRUCTION",
+};
+char opt_txt_bloody[]="BLOODY KOMBAT";
+char opt_txt_agress[]="AGGRESSOR MODE";
+char opt_txt_center[]="CENTER SCREEN";
+char opt_txt_on[]="ON";
+char opt_txt_off[]="OFF";
+char opt_txt_diff[]="DIFFICULTY";
+char opt_txt_blood[]="BLOOD";
+char opt_txt_clock[]="TIMER";
+//char opt_txt_stereo[]="STEREO";
+char opt_txt_pan[]="PAN CONTROL";
+char opt_txt_sound[]="SOUND";
+char opt_txt_music[]="MUSIC";
+char opt_txt_musict[]="MUSIC TEST";
+char opt_txt_free[]="FREE PLAY";
+char opt_txt_fatal[]="FATALITY TIME";
+char opt_txt_level[]="LEVEL SELECT";
+char opt_txt_1round[]="1 ROUND MATCHES";
+char opt_txt_1hit[]="1 HIT DEATHS";
+char opt_txt_enable[]="ENABLED";
+char opt_txt_disable[]="DISABLED";
+char opt_txt_veasy[]="VERY EASY";
+char opt_txt_easy[]="EASY";
+char opt_txt_med[]="MEDIUM";
+char opt_txt_hard[]="HARD";
+char opt_txt_vhard[]="VERY HARD";
+char opt_txt_lr[]="L/R";
+char opt_txt_rl[]="R/L";
+char opt_txt_exit[]="EXIT";
+char opt_txt_mileena[]="MILEENA";
+char opt_txt_ermac[]="ERMAC";
+char opt_txt_osz[]="CLASSIC SUB-ZERO";
+char opt_txt_hk[]="HIGH KICK";
+char opt_txt_lk[]="LOW KICK";
+char opt_txt_hp[]="HIGH PUNCH";
+char opt_txt_lp[]="LOW PUNCH";
+char opt_txt_run[]="RUN";
+char opt_txt_block[]="BLOCK";
+char opt_txt_unass[]="UNASSIGNED";
+char opt_txt_coll[]="COLLISION BOXES";
+char opt_txt_combo1[]="PLAYER 1 KOMBOS";
+char opt_txt_combo2[]="PLAYER 2 KOMBOS";
+char opt_txt_auto[]="AUTO";
+char opt_txt_throws[]="THROWING";
+char opt_txt_runs[]="UNLIMITED RUNS";
+char txt_centered[]="USE THE CONTROL PAD TO\nCENTER SCREEN. PRESS ANY\nBUTTON WHEN FINISHED";
+char txt_tie[]="DRAW";
+char txt_single_flawless[]="FLAWLESS VICTORY";
+char txt_kano_wins[]="KANO WINS";
+char txt_sonya_wins[]="SONYA WINS";
+char txt_jax_wins[]="JAX WINS";
+char txt_sal_wins[]="NIGHTWOLF WINS";
+char txt_sz_wins[]="SUB-ZERO WINS";
+char txt_jc_wins[]="JOHNNY CAGE WINS";
+char txt_swat_wins[]="STRYKER WINS";
+char txt_lia_wins[]="SINDEL WINS";
+char txt_robo1_wins[]="SEKTOR WINS";
+char txt_robo2_wins[]="CYRAX WINS";
+char txt_lao_wins[]="KUNG LAO WINS";
+char txt_tusk_name_wins[]="KABAL WINS";
+char txt_sg_name_wins[]="SHEEVA WINS";
+char txt_st_name_wins[]="SHANG TSUNG WINS";
+char txt_lk_name_wins[]="LIU KANG WINS";
+char txt_smoke_wins[]="SMOKE WINS";
+char txt_kitana_wins[]="KITANA WINS";
+char txt_jade_wins[]="JADE WINS";
+char txt_mileena_wins[]="MILEENA WINS";
+char txt_scorpion_wins[]="SCORPION WINS";
+char txt_rain_wins[]="RAIN WINS";
+char txt_reptile_wins[]="REPTILE WINS";
+char txt_ermac_wins[]="ERMAC WINS";
+char txt_motaro_wins[]="MOTARO WINS";
+char txt_shao_kahn_wins[]="SHAO KAHN WINS";
+char txt_noob_wins[]="NOOB SAIBOT WINS";
+char txt_rayden_wins[]="RAYDEN WINS";
+char txt_baraka_wins[]="BARAKA WINS";
+char txt_kamel_wins[]="KHAMELEON WINS";
+char txt_boon_w[]="BOON WINS";
+char txt_jc_t[]="KINTARO TRANSFORMATION ACTIVATED";
+char txt_bj_t[]="GORO TRANSFORMATION ACTIVATED";
+char txt_hyperf[]="HYPER FATAILITY";
+char txt_intro_message[]="THERE IS NO KNOWLEDGE THAT IS NOT POWER";
+char txt_psycho_kombat[]="PSYCHO KOMBAT";
+char txt_uppercut_recovery[]="FAST UPPERCUT RECOVERY ENABLED";
+char txt_unlim_run[]="UNLIMITED RUN";
+char txt_no_special_moves[]="SPECIAL MOVES DISABLED";
+char txt_p1_half_damage[]="PLAYER 1 INFLICTS HALF DAMAGE";
+char txt_p2_half_damage[]="PLAYER 2 INFLICTS HALF DAMAGE";
+char txt_p1p2_half_damage[]="INFLICT HALF DAMAGE";
+char txt_wf_smoke[]="WINNER OF THIS ROUND BATTLES SMOKE";
+char txt_wf_noob[]="WINNER OF THIS ROUND BATTLES NOOB SAIBOT";
+char txt_wf_shao[]="WINNER OF THIS ROUND BATTLES SHAO KAHN";
+char txt_wf_kamel[]="WINNER OF THIS ROUND BATTLES KAMELEON";
+char txt_wf_motaro[]="WINNER OF THIS ROUND BATTLES MOTARO";
+char txt_rellim[]="YOU ARE ENTERING THE LAND OF RELLIM";
+char txt_pong[]="YOU ARE ENTERING THE OUTER LIMITS";
+char txt_no_powerbars[]="NO POWERBARS";
+char txt_nofear_clue[]="NO FEAR = EB BUTTON, SKYDIVE, MAX COUNTDOWN";
+char txt_jackbot[]="HOLD FLIPPERS DURING CASINO RUN";
+char txt_switcheroo[]="RANDPER KOMBAT";
+char txt_regenerate[]="REGENERATING POWERBARS";
+char txt_super_endur[]="SUPER ENDURANCE";
+char txt_real_kombat[]="REAL KOMBAT";
+char txt_dark_fighting[]="DARK KOMBAT";
+char txt_no_blocks[]="BLOCKING DISABLED";
+char txt_no_throws[]="THROWING DISABLED";
+char txt_super_jumps[]="SUPER RUN JUMPS";
+char txt_no_combos[]="COMBO SYSTEM DISABLED";
+char txt_p1_handicap[]="PLAYER 1 HALF POWER";
+char txt_p1_supercap[]="PLAYER 1 QUARTER POWER";
+char txt_p2_handicap[]="PLAYER 2 HALF POWER";
+char txt_p2_supercap[]="PLAYER 2 QUARTER POWER";
+char txt_boon_quote[]="WHATCHA GUN DO ? - E.B.";
+char txt_vinikour_quote[]="DON'T JUMP AT ME - MXV";
+char txt_ferrier_quote[]="SKUNKY !! - E.F.";
+char txt_bs_klue1[]="RAIN CAN BE FOUND IN THE GRAVEYARD";
+char txt_see_da_tour[]="PLAY UMK3 WAVENET AT A LOCAL ARCADE";
+char txt_curback_subway[]="KOMBAT ZONE: SUBWAY";
+char txt_curback_street[]="KOMBAT ZONE: STREET";
+char txt_curback_ktower[]="KOMBAT ZONE: KAHNS TOWER";
+char txt_curback_bridge[]="KOMBAT ZONE: THE BRIDGE";
+char txt_curback_soul[]="KOMBAT ZONE: SOUL CHAMBER";
+char txt_curback_bell[]="KOMBAT ZONE: BELL TOWER";
+char txt_curback_temple[]="KOMBAT ZONE: KOMBAT TEMPLE";
+char txt_curback_grave[]="KOMBAT ZONE: THE GRAVEYARD";
+char txt_curback_pit3[]="KOMBAT ZONE: THE PIT 3";
+char txt_curback_river[]="KOMBAT ZONE: RIVER KOMBAT";
+char txt_curback_hell[]="KOMBAT ZONE: SCORPIONS LAIR";
+char txt_curback_lost[]="KOMBAT ZONE: LOST BRIDGE";
+char txt_curback_mk2pit[]="KOMBAT ZONE: THE PIT II";
+char txt_curback_mk2pitstar[]="KOMBAT ZONE: THE STAR BRIDGE";
+char txt_curback_kkave[]="KOMBAT ZONE: KAHNS KAVE";
+char txt_curback_desert[]="KOMBAT ZONE: JADES DESERT";
+char txt_curback_hidden[]="KOMBAT ZONE: THE HIDDEN PORTAL";
+char txt_curback_deadpool[]="KOMBAT ZONE: THE DEADPOOL";
+char txt_curback_battle[]="KOMBAT ZONE: WASTELAND";
+char txt_curback_city[]="KOMBAT ZONE: THE ROOFTOP";
+char txt_curback_armory[]="KOMBAT ZONE: THE ARMORY";
+char txt_curback_forest[]="KOMBAT ZONE: LIVING FOREST";
+char txt_curback_tower[]="KOMBAT ZONE: THE TOWER";
+char txt_curback_monk[]="KOMBAT ZONE: THE PORTAL";
+char txt_curback_lair[]="KOMBAT ZONE: THE LAIR";
+char txt_curback_tomb[]="KOMBAT ZONE: THE TOMB";
+char txt_curback_kung2[]="KOMBAT ZONE: THE COURTYARD";
+char txt_curback_kung5[]="KOMBAT ZONE: THE PIT";
+char txt_curback_kung5bot[]="KOMBAT ZONE: THE PIT BOTTOM";
+char txt_curback_subzero[]="KOMBAT ZONE: SCISLAC BUSOREZ";
+char txt_curback_noob[]="KOMBAT ZONE: NOOB SAIBOT DORFEN";
+char txt_silent_message[]="SILENT KOMBAT";
+char txt_p12_nopower[]="UNIKORIV REFERRI: SANS POWER";
+char rom_name[]="NINTENDO REV 2.0";
+char txt_yes_throws[]="THROWING ENCOURAGED";
+char txt_ex2on2[]="EXPLOSIVE KOMBAT";
+char txt_explode_no_throw[]="EXPLOSIVE KOMBAT AND THROWING DISABLED";
+char txt_bloody[]="BLOODY KOMBAT";
+char txt_auto_combo[]="AUTOMATIC KOMBOS";
+char txt_baby_clue[]="BABALITIES ARE REVERSABLE!";
+char txt_mk_clue[]="PREPARE FOR MORTAL KOMBAT IV";
+char txt_willy_kombat[]="WILLY WEST KOMBAT";
+char txt_freeplay[]="FREEPLAY";
+char txt_outstanding[]="OUTSTANDING THROW !";
+char txt_superb[]="SUPERB THROW !";
+char txt_excellent[]="EXCELLENT THROW !";
+char txt_welldone[]="WELL DONE THROW !";
+char txt_yes[]="YES !";
+char txt_ready_player[]="PLAYER %d GET READY!\n";
+char txt_paused[]="PAUSED";
+char txt_quit[]="QUIT";
+char txt_cont[]="CONTINUE";
+char txt_yess[]="YES";
+char txt_no[]="NO";
+char txt_sure[]="ARE YOU SURE?";
+char txt_p1_intro[]="PLAYER ONE\nGET READY !!";
+
+char txt_p2_intro[]="PLAYER TWO\nGET READY !!";
+char txt_secret_return[]="NOW, YOU MUST RETURN\nTO KOMBAT";
+char n_kano[]="KANO";
+char n_sonya[]=	"SONYA";
+char n_jax[]="JAX";
+char n_ind[]="NIGHTWOLF";
+char n_sz[]="SUBZERO";
+char n_swat[]="STRYKER";
+char n_lia[]="SINDEL";
+char n_robo1[]="SEKTOR";
+char n_robo2[]="CYRAX";
+char n_lao[]="KUNG LAO";
+char n_tusk[]="KABAL";
+char n_sg[]="SHEEVA";
+char n_st[]="SHANG";
+char n_lk[]="LIU KANG";
+char n_smoke[]=	"SMOKE";
+char n_kitana[]="KITANA";
+char n_jade[]="JADE";
+char n_mileena[]="MILEENA";
+char n_scorpion[]="SCORPION";
+char n_reptile[]="REPTILE";
+char n_ermac[]="ERMAC";
+char n_noob[]="NOOB";
+char n_rain[]="RAIN";
+char n_rayden[]="RAYDEN";
+char n_baraka[]="BARAKA";
+char n_jc[]="CAGE";
+char n_kamel[]="KHAMELON";
+
+	"THERE ARE NO CONTROLLERS\n ATTACHED TO\n"
+	"THE NINTENDO 64.\n\nPOWER OFF THE NINTENDO 64 AND\n"
+	"CONNECT 1 OR 2 CONTROLLERS.\n";
+
+	"THERE IS ONLY 1 CONTROLLER\nATTACHED TO THE NINTENDO 64.\n"
+	"\nIF YOU WOULD LIKE TO PLAY\n"
+	"A 2-PLAYER GAME, POWER\nOFF THE NINTENDO 64 AND\n"
+	"CONNECT A 2ND CONTROLLER\nOR\nPRESS START TO CONTINUE.\n";
+
+char txt_import[]="IMPORTANT:";
+
