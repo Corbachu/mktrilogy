@@ -1,0 +1,95 @@
+	.align 2
+	.globl DESERT1BMOD
+DESERT1BMOD:
+	.half   846,   111
+	.word     7, DESERT1_BLK, MKDESERT_HDR, MKDESERT_CLT
+
+	.align 2
+	.globl DESERT1_BLK
+DESERT1_BLK:
+	.half    22,    69,    64, 0x0300,     0
+	.half    69,    29,    64, 0x0300,     5
+	.half   228,    74,    64, 0x0300,     8
+	.half   390,    85,    64, 0x0300,    12
+	.half   537,    78,    64, 0x0300,    14
+	.half   671,    66,    64, 0x0300,    16
+	.half   785,    69,    64, 0x0310,     0
+
+	.align 2
+	.globl DESERT2BMOD
+DESERT2BMOD:
+	.half   676,   128
+	.word     4, DESERT2_BLK, MKDESERT_HDR, MKDESERT_CLT
+
+	.align 2
+	.globl DESERT2_BLK
+DESERT2_BLK:
+	.half    24,    78,    64, 0x0200,     3
+	.half   206,    78,    64, 0x0200,     9
+	.half   343,    45,    64, 0x0200,    11
+	.half   521,    33,    64, 0x0200,    15
+
+	.align 2
+	.globl DESERT3BMOD
+DESERT3BMOD:
+	.half   506,   147
+	.word     5, DESERT3_BLK, MKDESERT_HDR, MKDESERT_CLT
+
+	.align 2
+	.globl DESERT3_BLK
+DESERT3_BLK:
+	.half    14,    52,    64, 0x0100,     2
+	.half    22,    57,    65, 0x0400,     4
+	.half   136,    68,    64, 0x0100,     6
+	.half   254,    69,    64, 0x0100,    10
+	.half   378,    79,    64, 0x0100,    13
+
+	.align 2
+	.globl DESERT4BMOD
+DESERT4BMOD:
+	.half   340,    76
+	.word     2, DESERT4_BLK, MKDESERT_HDR, MKDESERT_CLT
+
+	.align 2
+	.globl DESERT4_BLK
+DESERT4_BLK:
+	.half    12,    18,    64, 0x0000,     1
+	.half   175,    20,    64, 0x0000,     7
+
+	.align 2
+	.globl MKDESERT_HDR
+MKDESERT_HDR:
+	.half    48,    25
+	.word     0
+	.half   164,    51
+	.word  1200
+	.half   124,    88
+	.word  9568
+	.half   184,    41
+	.word 20480
+	.half   104,    63
+	.word 28024
+	.half   160,    65
+	.word 34576
+	.half   120,    72
+	.word 44976
+	.half   160,    49
+	.word 53616
+	.half   164,    20
+	.word 61456
+	.half   140,    41
+	.word 64736
+	.half   124,    71
+	.word 70480
+	.half   180,    74
+	.word 79288
+	.half   148,     9
+	.word 92608
+	.half   120,    61
+	.word 93944
+	.half   136,    16
+	.word 101264
+	.half   144,    86
+	.word 103440
+	.half   116,    28
+	.word 115824

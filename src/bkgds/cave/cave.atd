@@ -1,0 +1,124 @@
+cave_anims:
+	.word a_hell_flames
+	.word a_hell_hit
+	.word a_cave_sky
+	.word a_cave_sky_f
+a_hell_flames:
+	.word HELLFLAME01
+	.word HELLFLAME02
+	.word HELLFLAME03
+	.word HELLFLAME04
+	.word HELLFLAME05
+	.word HELLFLAME06
+	.word 0
+a_hell_hit:
+	.word HELLHIT1
+	.word HELLHIT2
+	.word HELLHIT3
+	.word HELLHIT4
+	.word HELLHIT5
+	.word HELLHIT6
+	.word HELLHIT7
+	.word HELLHIT8
+	.word 0
+a_cave_sky:
+	.word CAVESKY1
+	.word CAVESKY2
+	.word CAVESKY3
+	.word CAVESKY4
+	.word CAVESKY5
+	.word CAVESKY6
+	.word CAVESKY7
+	.word CAVESKY8
+	.word CAVESKY9
+	.word CAVESKY10
+	.word CAVESKY11
+	.word 0
+a_cave_sky_f:
+	.word CAVESKY11
+	.word CAVESKY10
+	.word CAVESKY9
+	.word CAVESKY8
+	.word CAVESKY7
+	.word CAVESKY6
+	.word CAVESKY5
+	.word CAVESKY4
+	.word CAVESKY3
+	.word CAVESKY2
+	.word CAVESKY1
+	.word 0
+HELLFLAME01:
+	.word HELLFLAME01_IMG
+	.half 26, 31, 0, 0
+HELLFLAME02:
+	.word HELLFLAME02_IMG
+	.half 26, 31, 0, 0
+HELLFLAME03:
+	.word HELLFLAME03_IMG
+	.half 26, 31, 0, 0
+HELLFLAME04:
+	.word HELLFLAME04_IMG
+	.half 26, 31, 0, 0
+HELLFLAME05:
+	.word HELLFLAME05_IMG
+	.half 26, 31, 0, 0
+HELLFLAME06:
+	.word HELLFLAME06_IMG
+	.half 26, 31, 0, 0
+HELLHIT1:
+	.word HELLHIT1_IMG
+	.half 16, 8, 7, 6
+HELLHIT2:
+	.word HELLHIT2_IMG
+	.half 27, 14, 14, 11
+HELLHIT3:
+	.word HELLHIT3_IMG
+	.half 48, 22, 22, 20
+HELLHIT4:
+	.word HELLHIT4_IMG
+	.half 56, 26, 28, 23
+HELLHIT5:
+	.word HELLHIT5_IMG
+	.half 61, 23, 30, 19
+HELLHIT6:
+	.word HELLHIT6_IMG
+	.half 62, 19, 31, 14
+HELLHIT7:
+	.word HELLHIT7_IMG
+	.half 49, 13, 26, 8
+HELLHIT8:
+	.word HELLHIT8_IMG
+	.half 52, 6, 28, 2
+CAVESKY1:
+	.word CAVESKY1_IMG
+	.half 15, 43, 0, 0
+CAVESKY2:
+	.word CAVESKY2_IMG
+	.half 15, 43, 0, 0
+CAVESKY3:
+	.word CAVESKY3_IMG
+	.half 15, 43, 0, 0
+CAVESKY4:
+	.word CAVESKY4_IMG
+	.half 15, 43, 0, 0
+CAVESKY5:
+	.word CAVESKY5_IMG
+	.half 15, 43, 0, 0
+CAVESKY6:
+	.word CAVESKY6_IMG
+	.half 15, 43, 0, 0
+CAVESKY7:
+	.word CAVESKY7_IMG
+	.half 15, 43, 0, 0
+CAVESKY8:
+	.word CAVESKY8_IMG
+	.half 15, 43, 0, 0
+CAVESKY9:
+	.word CAVESKY9_IMG
+	.half 15, 43, 0, 0
+CAVESKY10:
+	.word CAVESKY10_IMG
+	.half 15, 43, 0, 0
+CAVESKY11:
+	.word CAVESKY11_IMG
+	.half 15, 43, 0, 0

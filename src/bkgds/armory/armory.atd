@@ -1,0 +1,64 @@
+armory_anims:
+	.word a_spikes
+	.word a_lava
+a_lava:
+	.word LAVA1
+	.word LAVA2
+	.word LAVA3
+	.word LAVA4
+	.word LAVA5
+	.word LAVA6
+	.word LAVA7
+	.word LAVA8
+	.word LAVA9
+	.word LAVA10
+	.word LAVA11
+	.word LAVA12
+	.word 0
+a_spikes:
+	.word spikes
+	.word 0
+	.word spikeroof2
+	.word 0
+spikes:
+	.word spikes_IMG
+	.half 60, 47, 0, 0
+spikeroof2:
+	.word spikeroof2_IMG
+	.half 53, 56, 0, 0
+LAVA1:
+	.word LAVA1_IMG
+	.half 72, 10, 0, 0
+LAVA2:
+	.word LAVA2_IMG
+	.half 72, 10, 0, 0
+LAVA3:
+	.word LAVA3_IMG
+	.half 72, 10, 0, 0
+LAVA4:
+	.word LAVA4_IMG
+	.half 72, 10, 0, 0
+LAVA5:
+	.word LAVA5_IMG
+	.half 72, 10, 0, 0
+LAVA6:
+	.word LAVA6_IMG
+	.half 72, 10, 0, 0
+LAVA7:
+	.word LAVA7_IMG
+	.half 72, 10, 0, 0
+LAVA8:
+	.word LAVA8_IMG
+	.half 72, 10, 0, 0
+LAVA9:
+	.word LAVA9_IMG
+	.half 72, 10, 0, 0
+LAVA10:
+	.word LAVA10_IMG
+	.half 72, 10, 0, 0
+LAVA11:
+	.word LAVA11_IMG
+	.half 72, 10, 0, 0
+LAVA12:
+	.word LAVA12_IMG
+	.half 72, 10, 0, 0

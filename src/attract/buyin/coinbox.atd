@@ -1,0 +1,8 @@
+select_anims:
+	.word a_BIGRED
+a_BIGRED:
+	.word BIGRED
+	.word 0
+BIGRED:
+	.word BIGRED_IMG
+	.half 130, 90, 0, 0

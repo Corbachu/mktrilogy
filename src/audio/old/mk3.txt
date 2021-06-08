@@ -1,0 +1,10209 @@
+[OUTPUT_FILENAME]
+mktril.wmd
+
+[NUMBER_OF_PATCH_TYPES]
+1
+
+[PATCH_ID_NAME]
+N64_ID
+
+[PATCH_DEFINITIONS]
+
+;THE INSTRUMENTS
+pat_kick1 	1   map_kick1
+pat_snare1 	1   map_snare1
+pat_hat1 	4   map_hat1
+pat_ktoms 	1   map_ktoms
+pat_tom1 	1   map_tom1
+pat_crash1 	2   map_crash1
+pat_cymroll 	1   map_cymroll
+pat_revcym	1   map_revcym
+pat_mkgong	1   map_mkgong
+pat_mkrack	1   map_mkrack
+pat_bigdrum 	1   map_bigdrum
+pat_kbig	1   map_kbig
+pat_clik 	1   map_clik
+pat_timbale     1   map_timbale
+pat_timpani	1   map_timpani
+pat_heavy	1   map_heavy
+pat_kbass	1   map_kbass
+pat_moguebas	1   map_moguebas
+pat_ostbass	1   map_ostbass
+pat_prowiden	1   map_prowiden
+pat_twibass	1   map_twibass
+pat_spacep  	1   map_spacep	
+pat_khits	1   map_dummy
+pat_morch	1   map_morch
+pat_prohits	1   map_prohits
+pat_ohits	1   map_ohits
+pat_organ	1   map_organ
+pat_piano	1   map_piano
+pat_choir2	1   map_choir2
+pat_droogpia	1   map_droogpia
+pat_bigvox	1   map_bigvox
+pat_proharp	1   map_proharp
+pat_shaku	1   map_shaku
+pat_trainmel	1   map_trainmel
+pat_protrpt	1   map_protrpt
+pat_trombtrp	1   map_trombtrp
+pat_oww		1   map_oww
+pat_yuh		1   map_yuh
+pat_fair	1   map_fair
+pat_mkbars	1   map_mkbars
+pat_wood1 	5   map_wood1
+pat_kvox	1   map_kvox
+
+;THE REMAINING INSTRUMENTS
+
+pat_perc1a 	9   map_perc1a
+
+;THE SFX
+pat_srock       1   map_srock
+pat_swhoosh     1   map_swhoosh
+pat_sknoob      1   map_sknoob
+pat_bell        1   map_bell
+pat_pbcycle     1   map_pbcycle
+pat_hairthrw    1   map_hairthrw
+pat_scrmtrp2    1   map_scrmtrp2
+pat_flying1     1   map_flying1
+pat_rhouse      1   map_rhouse
+pat_doorslid    1   map_doorslid
+pat_newdoor     1   map_newdoor
+pat_windloop    1   map_windloop
+pat_whoosh1     1   map_whoosh1
+pat_whoosh3     1   map_whoosh3
+pat_oooh        1   map_oooh
+pat_ncurs1      1   map_ncurs1
+pat_ncurs2      1   map_ncurs2
+pat_picked1     1   map_picked1
+pat_picked2     1   map_picked2
+pat_timeout1    1   map_timeout1
+pat_foot3       1   map_foot3
+pat_mrtlwhsh    1   map_mrtlwhsh
+pat_dftosty     1   map_dftosty
+pat_dfrosty     1   map_dfrosty
+pat_dfcrispy    1   map_dfcrispy
+pat_kanlasrl    1   map_kanlasrl
+pat_mfirebal    1   map_mfirebal
+pat_ignite      1   map_ignite
+pat_bones       1   map_bones
+
+pat_lkdeath     1   map_lkdeath
+pat_lkrun       1   map_lkrun
+pat_lktrip      1   map_lktrip
+pat_lkface1     1   map_lkface1
+pat_lkface2     1   map_lkface2
+pat_lkatt1      1   map_lkatt1
+pat_lkatt2      1   map_lkatt2
+pat_lkjump      1   map_lkjump
+pat_lkgrab      1   map_lkgrab
+pat_lkthrow     1   map_lkthrow
+pat_lkwast1     1   map_lkwast1
+
+pat_lkfball     1   map_lkfball
+pat_axhit       1   map_axhit
+pat_sonyafly    1   map_sonyafly
+pat_lkcycle     1   map_lkcycle
+pat_lkflyink    1   map_lkflyink
+
+pat_jhdeath     1   map_jhdeath
+pat_robtalk5    1   map_robtalk5
+pat_dftrip      1   map_dftrip
+pat_robshk2     1   map_robshk2
+pat_dfatt1      1   map_dfatt1
+pat_dfatt2      1   map_dfatt2
+pat_dfjump      1   map_dfjump
+pat_robtalk2    1   map_robtalk2
+pat_robtalk3    1   map_robtalk3
+pat_robtalk4    1   map_robtalk4
+
+pat_netthrow    1   map_netthrow
+pat_robball1    1   map_robball1
+pat_robball2    1   map_robball2
+pat_robxplod    1   map_robxplod
+pat_robclik     1   map_robclik
+pat_robowarn    1   map_robowarn
+pat_robxpld2    1   map_robxpld2
+pat_robimpld    1   map_robimpld
+pat_robshk1     1   map_robshk1
+pat_robshk3     1   map_robshk3
+pat_robtalk1    1   map_robtalk1
+pat_netblk      1   map_netblk
+
+pat_vpdeath     1   map_vpdeath
+pat_vpnotbut    1   map_vpnotbut
+pat_vprun       1   map_vprun
+pat_vpgrab      1   map_vpgrab
+pat_vpface1     1   map_vpface1
+pat_vpface2     1   map_vpface2
+pat_vpatt1      1   map_vpatt1
+pat_vpatt2      1   map_vpatt2
+pat_vpjump      1   map_vpjump
+pat_vpthrow     1   map_vpthrow
+pat_vpwast1     1   map_vpwast1
+pat_vpwast2     1   map_vpwast2
+
+pat_fballhit    1   map_fballhit
+pat_cabalgun    1   map_cabalgun
+pat_hicwhsh     1   map_hicwhsh
+pat_locwhsh     1   map_locwhsh
+
+pat_pbdeath     1   map_pbdeath
+pat_pbwast2     1   map_pbwast2
+pat_pbrun       1   map_pbrun
+pat_pbtrip      1   map_pbtrip
+pat_pbface1     1   map_pbface1
+pat_pbface2     1   map_pbface2
+pat_pbatt1      1   map_pbatt1
+pat_pbatt2      1   map_pbatt2
+pat_pbjump      1   map_pbjump
+pat_pbgrab      1   map_pbgrab
+pat_pbthrow     1   map_pbthrow
+pat_pbwast1     1   map_pbwast1
+
+pat_shevtele    1   map_shevtele
+pat_bigbslam    1   map_bigbslam
+pat_forcehit    1   map_forcehit
+pat_robtele     1   map_robtele
+
+pat_ebshook     1   map_ebshook
+pat_jhrun       1   map_jhrun
+pat_jhtrip      1   map_jhtrip
+pat_jhface2     1   map_jhface2
+pat_jhatt1      1   map_jhatt1
+pat_jhjump      1   map_jhjump
+pat_jhgrab      1   map_jhgrab
+pat_jhthrow     1   map_jhthrow
+pat_jhwast2     1   map_jhwast2
+
+pat_bappear     1   map_bappear
+pat_barrow2     1   map_barrow2
+pat_fireloop    1   map_fireloop
+pat_arrowhit    1   map_arrowhit
+pat_kanoax      1   map_kanoax
+pat_crunch2     1   map_crunch2
+pat_salrflc2    1   map_salrflc2
+pat_salrush     1   map_salrush
+pat_faxhit      1   map_faxhit
+pat_litestrt    1   map_litestrt
+pat_liteloop    1   map_liteloop
+pat_liteend     1   map_liteend
+pat_strtboom    1   map_strtboom
+pat_strtbum2    1   map_strtbum2
+
+pat_foot1       1   map_foot1
+pat_foot2       1   map_foot2
+pat_foot4       1   map_foot4
+pat_gudblock    1   map_gudblock
+pat_block1      1   map_block1
+pat_gudhit1     1   map_gudhit1
+pat_newbig1     1   map_newbig1
+pat_newbig3     1   map_newbig3
+pat_newbig4     1   map_newbig4
+pat_roldbig1    1   map_roldbig1
+pat_roldbig2    1   map_roldbig2
+pat_rock1       1   map_rock1
+pat_rock2       1   map_rock2
+pat_rocks1      1   map_rocks1
+pat_rocks2      1   map_rocks2
+pat_rocks3      1   map_rocks3
+
+pat_body1       1   map_body1
+pat_body2       1   map_body2
+pat_gudfall1    1   map_gudfall1
+pat_gudfall2    1   map_gudfall2
+pat_gudfall3    1   map_gudfall3
+pat_gudfall4    1   map_gudfall4
+pat_whoosh2     1   map_whoosh2
+pat_bwhoosh2    1   map_bwhoosh2
+pat_bwhoosh1    1   map_bwhoosh1
+pat_bwhoosh3    1   map_bwhoosh3
+
+pat_jhface1     1   map_jhface1
+pat_jhatt2      1   map_jhatt2
+pat_jhwast1     1   map_jhwast1
+
+pat_jaxcann     1   map_jaxcann
+pat_stfireup    1   map_stfireup
+pat_sonforce    1   map_sonforce
+pat_stmorph     1   map_stmorph
+
+pat_rockhit     1   map_rockhit
+
+pat_jaxrush     1   map_jaxrush
+pat_jaxhitg     1   map_jaxhitg
+
+pat_skfinhim    1   map_skfinhim
+pat_skfinher    1   map_skfinher
+
+pat_skkano      1   map_skkano
+pat_sksonya     1   map_sksonya
+pat_skjax       1   map_skjax
+pat_sknitwlf    1   map_sknitwlf
+pat_sksubz      1   map_sksubz
+pat_skstrkr2    1   map_skstrkr2
+pat_sksindel    1   map_sksindel
+pat_sksector    1   map_sksector
+pat_skcyrax     1   map_skcyrax
+pat_skknglao    1   map_skknglao
+pat_skcabal     1   map_skcabal
+pat_sksheeva    1   map_sksheeva
+pat_skshang     1   map_skshang
+pat_skliukng    1   map_skliukng
+pat_skmotaro    1   map_skmotaro
+pat_sksmoke     1   map_sksmoke
+
+;new shit
+
+pat_skflawls    1   map_skflawls
+pat_skfatal     1   map_skfatal
+pat_skanimal    1   map_skanimal
+pat_skbabal     1   map_skbabal
+pat_skcrispy    1   map_skcrispy
+pat_skfrost     1   map_skfrost
+pat_skfrend1    1   map_skfrend1
+pat_skfrend2    1   map_skfrend2
+pat_skagain     1   map_skagain
+pat_sktoasth    1   map_sktoasth
+pat_sktoastl    1   map_sktoastl
+pat_skohmaw     1   map_skohmaw
+
+pat_sksuperb    1   map_sksuperb
+pat_skweldon    1   map_skweldon
+pat_skwins1    	1   map_skwins1
+pat_skshomcy    1   map_skshomcy
+pat_skiwin    	1   map_skiwin
+
+pat_kitana  	1   map_kitana  
+pat_jade    	1   map_jade    
+pat_malena  	1   map_malena  
+pat_scorpion	1   map_scorpion
+pat_reptile 	1   map_reptile 
+pat_skermac 	1   map_skermac 
+pat_skrain 	1   map_skrain 
+pat_skbaraka 	1   map_skbaraka 
+pat_skraiden 	1   map_skraiden 
+
+pat_skrndone    1   map_skrndone
+pat_sktwo       1   map_sktwo   
+pat_skthree     1   map_skthree 
+pat_skfour      1   map_skfour  
+pat_skfite4     1   map_skfite4 
+
+pat_sklaff1     1   map_sklaff1
+pat_sklaff2     1   map_sklaff2
+pat_sklaff3     1   map_sklaff3
+pat_sklaff4     1   map_sklaff4
+pat_sklaff5     1   map_sklaff5
+
+pat_skexelnt    1   map_skexelnt
+pat_sknvrwin    1   map_sknvrwin
+pat_skoutstd    1   map_skoutstd
+
+pat_eblface2    1   map_eblface2
+
+pat_sziceup     1   map_sziceup
+pat_szicedwn    1   map_szicedwn
+pat_icehit      1   map_icehit
+pat_subzturd    1   map_subzturd
+pat_szifrz      1   map_szifrz
+pat_szslide     1   map_szslide
+
+pat_dfdeath     1   map_dfdeath
+pat_dfrun       1   map_dfrun
+pat_dfface1     1   map_dfface1
+pat_dfface2     1   map_dfface2
+pat_dfgrab      1   map_dfgrab
+pat_dfthrow     1   map_dfthrow
+pat_dfwast1     1   map_dfwast1
+pat_dfwast2     1   map_dfwast2
+
+pat_kanoknif    1   map_kanoknif
+pat_newstab2    1   map_newstab2
+
+pat_kanoball    1   map_kanoball
+pat_storb       1   map_storb
+pat_kanlasr1    1   map_kanlasr1
+
+pat_centaur1    1   map_centaur1
+pat_centaur2    1   map_centaur2
+pat_hboss1      1   map_hboss1
+pat_hhit1       1   map_hhit1
+pat_hhit2       1   map_hhit2
+
+pat_ebldeath    1   map_ebldeath
+pat_eblrun      1   map_eblrun
+pat_ebtrip      1   map_ebtrip
+pat_eblface1    1   map_eblface1
+pat_eblatt1     1   map_eblatt1
+pat_ebljump     1   map_ebljump
+pat_eblgrab     1   map_eblgrab
+pat_eblthrow    1   map_eblthrow
+pat_eblwast1    1   map_eblwast1
+pat_eblwast2    1   map_eblwast2
+
+pat_lkflykck    1   map_lkflykck
+pat_kungthrw    1   map_kungthrw
+
+pat_sawhit      1   map_sawhit
+pat_dfklthro    1   map_dfklthro
+
+pat_strkgren    1   map_strkgren
+pat_strklung    1   map_strklung
+pat_sonbike     1   map_sonbike
+pat_strkthro    1   map_strkthro
+
+pat_roboout     1   map_roboout
+pat_robothrw    1   map_robothrw
+pat_roboin      1   map_roboin
+pat_robrock1    1   map_robrock1
+pat_robrock2    1   map_robrock2
+
+;new
+pat_amdeath     1   map_amdeath
+pat_amrun       1   map_amrun
+pat_amtrip      1   map_amtrip
+pat_ambody2     1   map_ambody2
+pat_amface1     1   map_amface1
+pat_amface2     1   map_amface2
+pat_skreact1    1   map_skreact1
+pat_skreact2    1   map_skreact2
+pat_skreact3    1   map_skreact3
+pat_amatt1      1   map_amatt1
+pat_amatt2      1   map_amatt2
+pat_amjump      1   map_amjump
+pat_skatt1      1   map_skatt1
+pat_skatt2      1   map_skatt2
+pat_amgrab      1   map_amgrab
+pat_amthrow     1   map_amthrow
+pat_lkwast2     1   map_lkwast2
+pat_amwast1     1   map_amwast1
+pat_amwast2     1   map_amwast2
+pat_skwast1     1   map_skwast1
+pat_skwast2     1   map_skwast2
+pat_splish1     1   map_splish1
+pat_splish2     1   map_splish2
+pat_splish3     1   map_splish3
+pat_stab1       1   map_stab1
+pat_bigstab1    1   map_bigstab1
+pat_bigstab2    1   map_bigstab2
+pat_bigstab3    1   map_bigstab3
+pat_jaxgotch    1   map_jaxgotch
+pat_crunch1     1   map_crunch1
+pat_whistle     1   map_whistle
+pat_pbfun       1   map_pbfun
+pat_robpres1    1   map_robpres1
+pat_robpres2    1   map_robpres2
+pat_bodsmsh1    1   map_bodsmsh1
+pat_scorthr1    1   map_scorthr1
+pat_beep1       1   map_beep1
+pat_compfx1     1   map_compfx1
+pat_roblaff     1   map_roblaff
+pat_bird        1   map_bird
+pat_slide       1   map_slide
+pat_horn        1   map_horn
+pat_quake1      1   map_quake1
+pat_bubble1     1   map_bubble1
+pat_headgrow    1   map_headgrow
+pat_cblscrm     1   map_cblscrm
+pat_whirl1      1   map_whirl1
+pat_swords      1   map_swords
+pat_stcloud1    1   map_stcloud1
+pat_flmorph     1   map_flmorph
+pat_mhit1       1   map_mhit1
+pat_mhit2       1   map_mhit2
+pat_skpathet    1   map_skpathet
+pat_sktrying    1   map_sktrying
+pat_skdntlaf    1   map_skdntlaf
+pat_machmix     1   map_machmix  ;new
+pat_kneebrk     1   map_kneebrk  ;new
+pat_hissmix     1   map_hissmix  ;new
+pat_maul        1   map_maul     ;new
+pat_skdestin    1   map_skdestin ;new
+pat_mercyhit    1   map_mercyhit ;new
+pat_spinerip    1   map_spinerip ;new
+pat_attrct2a    1   map_attrct2a ;new
+pat_subway4     1   map_subway4  ;new
+pat_subway2     1   map_subway2  ;new
+pat_subway3     1   map_subway3  ;new
+pat_skdiemix    1   map_skdiemix ;new
+pat_dogyip      1   map_dogyip   ;new
+pat_dogwhine    1   map_dogwhine ;new
+pat_baby1       1   map_baby1    ;new
+pat_danger      1   map_danger   ;new
+pat_skyousuk    1   map_skyousuk ;new
+pat_anmlroar    1   map_anmlroar ;new
+pat_dummy2    	1   map_dummy ;new
+pat_wagon       1   map_wagon    ;new
+pat_dummy3     	1   map_dummy   ;new
+pat_dummy4    	1   map_dummy ;new
+;************************************************************************
+;new umk3
+
+pat_smokwhsh	1   map_smokwhsh
+pat_scorcome	1   map_scorcome
+pat_scorget 	1   map_scorget 
+pat_blcrnch2	1   map_blcrnch2
+pat_scormask	1   map_scormask
+pat_reptproj	1   map_reptproj
+pat_robsprk9	1   map_robsprk9
+pat_n1thrfan	1   map_n1thrfan
+pat_nfanhit 	1   map_nfanhit 
+pat_girlshrt	1   map_girlshrt
+pat_jadekck 	1   map_jadekck 
+pat_throtsai	1   map_throtsai
+pat_jadeflck	1   map_jadeflck
+pat_bldcrnch	1   map_bldcrnch
+pat_kiss    	1   map_kiss    
+pat_treeroar	1   map_treeroar
+pat_splash  	1   map_splash  
+pat_bubble  	1   map_bubble  
+pat_vsprk1  	1   map_vsprk1  
+pat_vsprk2  	1   map_vsprk2  
+pat_lkreact1	1   map_dummy
+pat_lkreact2	1   map_dummy
+;pat_bigstab1 	1   map_bigstab1    
+pat_bigboom 	1   map_bigboom    
+pat_reporb41	1   map_reporb41   
+pat_ohmaw   	1   map_ohmaw   
+;pat_lksping  K	1   map_lksping 
+
+;************************************************************************
+
+pat_knifejec 	1   map_knifejec
+pat_knifplng 	1   map_knifplng
+pat_barthrow 	1   map_barthrow
+			
+pat_raidkill 	1   map_raidkill
+pat_sprkthro 	1   map_sprkthro
+pat_rtele    	1   map_rtele   
+pat_rgetup   	1   map_rgetup  
+pat_rdive    	1   map_rdive   
+pat_gib1     	1   map_gib1    
+pat_gib2     	1   map_gib2    
+pat_gib3     	1   map_gib3    
+pat_gib4     	1   map_gib4    
+pat_rsmak    	1   map_rsmak   
+pat_lightng  	1   map_lightng 
+pat_rsprkstr  	1   map_rsprkstr 
+pat_rspark1  	1   map_rspark1 
+pat_rsprkend  	1   map_rsprkend 
+
+;final cage and sfx additions
+pat_cagekck1  	1   map_cagekck1 
+pat_cagekck2  	1   map_cagekck2 
+pat_cagekiss  	1   map_cagekiss 
+pat_snotup  	1   map_snotup   
+pat_snothit  	1   map_snothit  
+pat_joncage  	1   map_joncage  
+pat_skteam  	1   map_skteam   
+pat_skbrute  	1   map_skbrute  
+pat_skcham  	1   map_skcham   
+pat_screenfl  	1   map_screenfl 
+pat_screenin  	1   map_screenin 
+pat_aggresor  	1   map_aggresor 
+pat_skone  	1   map_skone 
+pat_frog  	1   map_frog 
+
+
+;************************************************************************
+
+[PATCHMAP_DEFINITIONS]
+map_frog
+sample_id= vag_frog
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skone
+sample_id= vag_skone
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_cagekck1
+sample_id= vag_cagekck1
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_cagekck2
+sample_id= vag_cagekck2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_cagekiss
+sample_id= vag_cagekiss
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_snotup
+sample_id= vag_snotup
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_snothit
+sample_id= vag_snothit
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_joncage
+sample_id= vag_joncage
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_skteam
+sample_id= vag_skteam
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_skbrute
+sample_id= vag_skbrute
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_skcham
+sample_id= vag_skcham
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_screenfl
+sample_id= vag_screenfl
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_screenin
+sample_id= vag_screenin
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_aggresor
+sample_id= vag_aggresor
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rsprkstr
+sample_id= vag_rsprkstr
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_rspark1
+sample_id= vag_rspark1
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rsprkend
+sample_id= vag_rsprkend
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_knifejec
+sample_id= vag_knifejec
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_knifplng
+sample_id= vag_knifplng
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_barthrow
+sample_id= vag_barthrow
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_raidkill
+sample_id= vag_raidkill
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sprkthro
+sample_id= vag_sprkthro
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rtele
+sample_id= vag_rtele
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rgetup
+sample_id= vag_rgetup
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rdive
+sample_id= vag_rdive
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_gib1
+sample_id= vag_gib1
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_gib2
+sample_id= vag_gib2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_gib3
+sample_id= vag_gib3
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_gib4
+sample_id= vag_gib4
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rsmak
+sample_id= vag_rsmak
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lightng
+sample_id= vag_lightng
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dummy
+sample_id= vag_whoosh1
+priority= 100
+reverb= 0
+vol= 0
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+;The Drum Maps
+
+map_kick1
+sample_id= vag_kick1
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 36
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 127
+attack_level= 127
+decay_level= 127
+
+map_snare1
+sample_id= vag_snare1
+priority= 100
+reverb= 0
+vol= 124
+pan= 64
+root_key= 36
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 127
+attack_level= 127
+decay_level= 127
+
+map_hat1
+sample_id= vag_hat1
+priority= 100
+reverb= 0
+vol= 124
+pan= 64
+root_key= 36
+fine_adj= 0
+note_min= 42
+note_max= 42
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 127
+attack_level= 127
+decay_level= 127
+
+map_hat2
+sample_id= vag_hat2
+priority= 100
+reverb= 0
+vol= 124
+pan= 64
+root_key= 34
+fine_adj= 0
+note_min= 44
+note_max= 44
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 127
+attack_level= 127
+decay_level= 127
+
+map_hat3
+sample_id= vag_hat3
+priority= 100
+reverb= 0
+vol= 124
+pan= 64
+root_key= 36
+fine_adj= 0
+note_min= 46
+note_max= 46
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 127
+attack_level= 127
+decay_level= 127
+
+map_hat4
+sample_id= vag_hat4
+priority= 100
+reverb= 0
+vol= 65
+pan= 64
+root_key= 36
+fine_adj= 0
+note_min= 51
+note_max= 51
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 127
+attack_level= 127
+decay_level= 127
+
+map_ktoms
+sample_id= vag_ktoms
+priority= 100
+reverb= 0
+vol= 124
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 30
+note_max= 127 
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 127
+attack_level= 127
+decay_level= 127
+
+map_tom1
+sample_id= vag_tom1
+priority= 100
+reverb= 0
+vol= 124
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 30
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 127
+attack_level= 127
+decay_level= 127
+
+map_crash1
+sample_id= vag_crash1
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 50
+fine_adj= 0
+note_min= 49
+note_max= 49
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 127
+attack_level= 127
+decay_level= 127
+
+map_crash2
+sample_id= vag_crash2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 50
+fine_adj= 0
+note_min= 52
+note_max= 52
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 127
+attack_level= 127
+decay_level= 127
+
+map_clik
+sample_id= vag_clik
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_clik2
+sample_id= vag_clik2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_clik3
+sample_id= vag_clik3
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_wood1
+sample_id= vag_wood1
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 48
+fine_adj= 0
+note_min= 52
+note_max= 52
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_wood2
+sample_id= vag_wood2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 48
+fine_adj= 0
+note_min= 46
+note_max= 46
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_wood3
+sample_id= vag_wood3
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 48
+fine_adj= 0
+note_min= 49
+note_max= 49
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_wood4
+sample_id= vag_wood4
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 48
+fine_adj= 0
+note_min= 44
+note_max= 44
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_wood5
+sample_id= vag_wood5
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 48
+fine_adj= 0
+note_min= 54
+note_max= 54
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_perc1a
+sample_id= vag_perc1a
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 53
+note_max= 53
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_perc1b
+sample_id= vag_perc1b
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 54
+note_max= 54
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_perc1c
+sample_id= vag_perc1c
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 57
+note_max= 57
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_perc1d
+sample_id= vag_perc1d
+priority= 100
+reverb= 0
+vol= 71
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 59
+note_max= 59
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_perc1e
+sample_id= vag_perc1e
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 60
+note_max= 60
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_perc2a
+sample_id= vag_perc2a
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 51
+note_max= 51
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_perc2b
+sample_id= vag_perc2b
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 49
+note_max= 49
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_perc2c
+sample_id= vag_perc2c
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 48
+note_max= 48
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_perc2d
+sample_id= vag_perc2d
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 52
+note_max= 52
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bigdrum
+sample_id= vag_bigdrum
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_cymroll
+sample_id= vag_cymroll
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 50
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+;the instrument	maps
+
+map_bigvox
+sample_id= vag_bigvox
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 2
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_choir2
+sample_id= vag_choir2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_droogpia
+sample_id= vag_droogpia
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_fair
+sample_id= vag_fair
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_heavy
+sample_id= vag_heavy
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_kbass
+sample_id= vag_kbass
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_kbig
+sample_id= vag_kbig
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+;map_khits
+;sample_id= vag_khits
+;priority= 100
+;reverb= 0
+;vol= 127
+;pan= 64
+;root_key= 60
+;fine_adj= 0
+;note_min= 0
+;note_max= 127
+;pitchstep_min= 0
+;pitchstep_max= 0
+;attack_time= 1
+;decay_time= 32000
+;release_time= 10
+;attack_level= 127
+;decay_level= 127
+
+map_kvox
+sample_id= vag_kvox
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_mkbars
+sample_id= vag_mkbars
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_mkgong
+sample_id= vag_mkgong
+priority= 100
+reverb= 0
+vol= 123
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_mkrack
+sample_id= vag_mkrack
+priority= 100
+reverb= 0
+vol= 120
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_moguebas
+sample_id= vag_moguebas
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_morch
+sample_id= vag_morch
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_ohits
+sample_id= vag_ohits
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_ostbass
+sample_id= vag_ostbass
+priority= 100
+reverb= 0
+vol= 124
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_oww
+sample_id= vag_oww
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_proharp
+sample_id= vag_proharp
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_prohits
+sample_id= vag_prohits
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_protrpt
+sample_id= vag_protrpt
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_prowiden
+sample_id= vag_prowiden
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_revcym
+sample_id= vag_revcym
+priority= 100
+reverb= 0
+vol= 124
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_shaku
+sample_id= vag_shaku
+priority= 100
+reverb= 0
+vol= 114
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 2
+pitchstep_max= 2
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_timpani
+sample_id= vag_timpani
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_trainmel
+sample_id= vag_trainmel
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_trombtrp
+sample_id= vag_trombtrp
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_twibass
+sample_id= vag_twibass
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_spacep
+sample_id= vag_spacep
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_yuh
+sample_id= vag_yuh
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+;map_zawinul
+;sample_id= vag_zawinul
+;priority= 100
+;reverb= 0
+;vol= 127
+;pan= 64
+;root_key= 60
+;fine_adj= 0
+;note_min= 0
+;note_max= 127
+;pitchstep_min= 0
+;pitchstep_max= 0
+;attack_time= 1
+;decay_time= 32000
+;release_time= 10
+;attack_level= 127
+;decay_level= 127
+
+map_timbale
+sample_id= vag_timbale
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_piano
+sample_id= vag_piano
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_organ
+sample_id= vag_organ
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+;The sfx Maps
+
+map_srock
+sample_id= vag_srock
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_swhoosh
+sample_id= vag_swhoosh
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bell
+sample_id= vag_bell
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbcycle
+sample_id= vag_pbcycle
+priority= 100
+reverb= 0
+vol= 120
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_hairthrw
+sample_id= vag_hairthrw
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_scrmtrp2
+sample_id= vag_scrmtrp2
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_flying1
+sample_id= vag_flying1
+priority= 100
+reverb= 0
+vol= 80
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rhouse
+sample_id= vag_rhouse
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_doorslid
+sample_id= vag_doorslid
+priority= 100
+reverb= 0
+vol= 120
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_newdoor
+sample_id= vag_newdoor
+priority= 100
+reverb= 0
+vol= 125
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_windloop
+sample_id= vag_windloop
+priority= 100
+reverb= 0
+vol= 50
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_whoosh1
+sample_id= vag_whoosh1
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_whoosh3
+sample_id= vag_whoosh3
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_oooh
+sample_id= vag_oooh
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_ncurs1
+sample_id= vag_ncurs1
+priority= 100
+reverb= 0
+vol= 75
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_ncurs2
+sample_id= vag_ncurs2
+priority= 100
+reverb= 0
+vol= 75
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_picked1
+sample_id= vag_picked1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_picked2
+sample_id= vag_picked2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_timeout1
+sample_id= vag_timeout1
+priority= 100
+reverb= 0
+vol= 90
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_foot3
+sample_id= vag_foot3
+priority= 100
+reverb= 0
+vol= 112
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_mrtlwhsh
+sample_id= vag_mrtlwhsh
+priority= 100
+reverb= 0
+vol= 80
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dftosty
+sample_id= vag_dftosty
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfrosty
+sample_id= vag_dfrosty
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfcrispy
+sample_id= vag_dfcrispy
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_kanlasrl
+sample_id= vag_kanlasr1
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_mfirebal
+sample_id= vag_mfirebal
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_ignite
+sample_id= vag_ignite
+priority= 100
+reverb= 0
+vol= 120
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bones
+sample_id= vag_bones
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkdeath
+sample_id= vag_lkdeath
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkrun
+sample_id= vag_lkrun
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lktrip
+sample_id= vag_lktrip
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkface1
+sample_id= vag_lkface1
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkface2
+sample_id= vag_lkface2
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkatt1
+sample_id= vag_lkatt1
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkatt2
+sample_id= vag_lkatt2
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkjump
+sample_id= vag_lkjump
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkgrab
+sample_id= vag_lkgrab
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkthrow
+sample_id= vag_lkthrow
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkwast1
+sample_id= vag_lkwast1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkfball
+sample_id= vag_lkfball
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_axhit
+sample_id= vag_axhit
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sonyafly
+sample_id= vag_sonyafly
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkcycle
+sample_id= vag_lkcycle
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkflyink
+sample_id= vag_lkflyink
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jhdeath
+sample_id= vag_jhdeath
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robtalk5
+sample_id= vag_robtalk5
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dftrip
+sample_id= vag_dftrip
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robshk2
+sample_id= vag_robshk2
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfatt1
+sample_id= vag_dfatt1
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfatt2
+sample_id= vag_dfatt2
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfjump
+sample_id= vag_dfjump
+priority= 100
+reverb= 0
+vol= 95
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robtalk2
+sample_id= vag_robtalk2
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robtalk3
+sample_id= vag_robtalk3
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robtalk4
+sample_id= vag_robtalk4
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_netthrow
+sample_id= vag_netthrow
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robball1
+sample_id= vag_robball1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robball2
+sample_id= vag_robball2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robxplod
+sample_id= vag_robxplod
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robclik
+sample_id= vag_robclik
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robowarn
+sample_id= vag_robowarn
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robxpld2
+sample_id= vag_robxpld2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robimpld
+sample_id= vag_robimpld
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robshk1
+sample_id= vag_robshk1
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robshk3
+sample_id= vag_robshk3
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robtalk1
+sample_id= vag_robtalk1
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_netblk
+sample_id= vag_netblk
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vpdeath
+sample_id= vag_vpdeath
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vpnotbut
+sample_id= vag_vpnotbut
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vprun
+sample_id= vag_vprun
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vpgrab
+sample_id= vag_vpgrab
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vpface1
+sample_id= vag_vpface1
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vpface2
+sample_id= vag_vpface2
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vpatt1
+sample_id= vag_vpatt1
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vpatt2
+sample_id= vag_vpatt2
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vpjump
+sample_id= vag_vpjump
+priority= 100
+reverb= 0
+vol= 95
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vpthrow
+sample_id= vag_vpthrow
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vpwast1
+sample_id= vag_vpwast1
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vpwast2
+sample_id= vag_vpwast2
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_fballhit
+sample_id= vag_fballhit
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_cabalgun
+sample_id= vag_cabalgun
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_hicwhsh
+sample_id= vag_hicwhsh
+priority= 100
+reverb= 0
+vol= 95
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_locwhsh
+sample_id= vag_locwhsh
+priority= 100
+reverb= 0
+vol= 95
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbdeath
+sample_id= vag_pbdeath
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbwast2
+sample_id= vag_pbwast2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbrun
+sample_id= vag_pbrun
+priority= 100
+reverb= 0
+vol= 120
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbtrip
+sample_id= vag_pbtrip
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbface1
+sample_id= vag_pbface1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbface2
+sample_id= vag_pbface2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbatt1
+sample_id= vag_pbatt1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbatt2
+sample_id= vag_pbatt2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbjump
+sample_id= vag_pbjump
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbgrab
+sample_id= vag_pbgrab
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbthrow
+sample_id= vag_pbthrow
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbwast1
+sample_id= vag_pbwast1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_shevtele
+sample_id= vag_shevtele
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bigbslam
+sample_id= vag_bigbslam
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_forcehit
+sample_id= vag_forcehit
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robtele
+sample_id= vag_robtele
+priority= 100
+reverb= 0
+vol= 95
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_ebshook
+sample_id= vag_ebshook
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jhrun
+sample_id= vag_jhrun
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jhtrip
+sample_id= vag_jhtrip
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jhface2
+sample_id= vag_jhface2
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jhatt1
+sample_id= vag_jhatt1
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jhjump
+sample_id= vag_jhjump
+priority= 100
+reverb= 0
+vol= 95
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jhgrab
+sample_id= vag_jhgrab
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jhthrow
+sample_id= vag_jhthrow
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jhwast2
+sample_id= vag_jhwast2
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bappear
+sample_id= vag_bappear
+priority= 100
+reverb= 0
+vol= 90
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_barrow2
+sample_id= vag_barrow2
+priority= 100
+reverb= 0
+vol= 95
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_fireloop
+sample_id= vag_fireloop
+priority= 100
+reverb= 0
+vol= 90
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_arrowhit
+sample_id= vag_arrowhit
+priority= 100
+reverb= 0
+vol= 125
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_kanoax
+sample_id= vag_kanoax
+priority= 100
+reverb= 0
+vol= 120
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_crunch2
+sample_id= vag_crunch2
+priority= 100
+reverb= 0
+vol= 95
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_salrflc2
+sample_id= vag_salrflc2
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_salrush
+sample_id= vag_salrush
+priority= 100
+reverb= 0
+vol= 125
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_faxhit
+sample_id= vag_faxhit
+priority= 100
+reverb= 0
+vol= 125
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_litestrt
+sample_id= vag_litestrt
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_liteloop
+sample_id= vag_liteloop
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_liteend
+sample_id= vag_liteend
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_strtboom
+sample_id= vag_strtboom
+priority= 100
+reverb= 0
+vol= 126
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_strtbum2
+sample_id= vag_strtbum2
+priority= 100
+reverb= 0
+vol= 125
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_foot1
+sample_id= vag_foot1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_foot2
+sample_id= vag_foot2
+priority= 100
+reverb= 0
+vol= 112
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_foot4
+sample_id= vag_foot4
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_gudblock
+sample_id= vag_gudblock
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_block1
+sample_id= vag_block1
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_gudhit1
+sample_id= vag_gudhit1
+priority= 100
+reverb= 0
+vol= 95
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_newbig1
+sample_id= vag_newbig3
+priority= 100
+reverb= 0
+vol= 125
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_newbig3
+sample_id= vag_newbig3
+priority= 100
+reverb= 0
+vol= 125
+pan= 64
+root_key= 61
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_newbig4
+sample_id= vag_newbig3
+priority= 100
+reverb= 0
+vol= 125
+pan= 64
+root_key= 62
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_roldbig1
+sample_id= vag_roldbig1
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_roldbig2
+sample_id= vag_roldbig1
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 61
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rock1
+sample_id= vag_rock1
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rock2
+sample_id= vag_rock2
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rocks1
+sample_id= vag_rocks1
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rocks2
+sample_id= vag_rocks2
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rocks3
+sample_id= vag_rocks3
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_body1
+sample_id= vag_body1
+priority= 100
+reverb= 0
+vol= 80
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_body2
+sample_id= vag_body2
+priority= 100
+reverb= 0
+vol= 90
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_gudfall1
+sample_id= vag_gudfall1
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_gudfall2
+sample_id= vag_gudfall2
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_gudfall3
+sample_id= vag_gudfall3
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_gudfall4
+sample_id= vag_gudfall4
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_whoosh2
+sample_id= vag_whoosh3
+priority= 100
+reverb= 0
+vol= 95
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bwhoosh2
+sample_id= vag_whoosh3
+priority= 100
+reverb= 0
+vol= 95
+pan= 64
+root_key= 61
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bwhoosh1
+sample_id= vag_whoosh1
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bwhoosh3
+sample_id= vag_whoosh1
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 61
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jhface1
+sample_id= vag_jhface1
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jhatt2
+sample_id= vag_jhatt2
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jhwast1
+sample_id= vag_jhwast1
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jaxcann
+sample_id= vag_jaxcann
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_stfireup
+sample_id= vag_stfireup
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sonforce
+sample_id= vag_sonforce
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_stmorph
+sample_id= vag_stmorph
+priority= 100
+reverb= 0
+vol= 90
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_rockhit
+sample_id= vag_rockhit
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jaxrush
+sample_id= vag_jaxrush
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jaxhitg
+sample_id= vag_jaxhitg
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skfinhim
+sample_id= vag_skfinhim
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skfinher
+sample_id= vag_skfinher
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skkano
+sample_id= vag_skkano
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sksonya
+sample_id= vag_sksonya
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skjax
+sample_id= vag_skjax
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sknitwlf
+sample_id= vag_sknitwlf
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sksubz
+sample_id= vag_sksubz
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skstrkr2
+sample_id= vag_skstrkr2
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sksindel
+sample_id= vag_sksindel
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sksector
+sample_id= vag_sksector
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skcyrax
+sample_id= vag_skcyrax
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skknglao
+sample_id= vag_skknglao
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skcabal
+sample_id= vag_skcabal
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sksheeva
+sample_id= vag_sksheeva
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skshang
+sample_id= vag_skshang
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skliukng
+sample_id= vag_skliukng
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skmotaro
+sample_id= vag_skmotaro
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sksmoke
+sample_id= vag_sksmoke
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skflawls
+sample_id= vag_skflawls
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skfatal
+sample_id= vag_skfatal
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skanimal
+sample_id= vag_skanimal
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skbabal
+sample_id= vag_skbabal
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skcrispy
+sample_id= vag_skcrispy
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skfrost
+sample_id= vag_skfrost
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skfrend1
+sample_id= vag_skfrend1
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skfrend2
+sample_id= vag_skfrend2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skagain
+sample_id= vag_skagain
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sktoasth
+sample_id= vag_sktoastl	;rob use to be _sktoasth
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sktoastl
+sample_id= vag_sktoastl
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skohmaw
+sample_id= vag_skohmaw
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sksuperb
+sample_id= vag_sksuperb
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skweldon
+sample_id= vag_skweldon
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skwins1
+sample_id= vag_skwins1
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skshomcy
+sample_id= vag_skshomcy
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skiwin
+sample_id= vag_skiwin
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skrndone
+sample_id= vag_skrndone
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sktwo
+sample_id= vag_sktwo
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skthree
+sample_id= vag_skthree
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skfour
+sample_id= vag_skfour
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skfite4
+sample_id= vag_skfite4
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+
+map_sklaff1
+sample_id= vag_sklaff2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sklaff2
+sample_id= vag_sklaff2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sklaff3
+sample_id= vag_sklaff2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sklaff4
+sample_id= vag_sklaff2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 61
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sklaff5
+sample_id= vag_sklaff2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 62
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skexelnt
+sample_id= vag_skexelnt
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sknvrwin
+sample_id= vag_sknvrwin
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skoutstd
+sample_id= vag_skoutstd
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_eblface2
+sample_id= vag_eblface2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sziceup
+sample_id= vag_sziceup
+priority= 100
+reverb= 0
+vol= 90
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_szicedwn
+sample_id= vag_szicedwn
+priority= 100
+reverb= 0
+vol= 90
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_icehit
+sample_id= vag_icehit
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_subzturd
+sample_id= vag_subzturd
+priority= 100
+reverb= 0
+vol= 120
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_szifrz
+sample_id= vag_szifrz
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_szslide
+sample_id= vag_szslide
+priority= 100
+reverb= 0
+vol= 90
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfdeath
+sample_id= vag_dfdeath
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfrun
+sample_id= vag_dfrun
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfface1
+sample_id= vag_dfface1
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfface2
+sample_id= vag_dfface2
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfgrab
+sample_id= vag_dfgrab
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfthrow
+sample_id= vag_dfthrow
+priority= 100
+reverb= 0
+vol= 123
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfwast1
+sample_id= vag_dfwast1
+priority= 100
+reverb= 0
+vol= 120
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfwast2
+sample_id= vag_dfwast2
+priority= 100
+reverb= 0
+vol= 120
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_kanoknif
+sample_id= vag_kanoknif
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_newstab2
+sample_id= vag_newstab2
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_kanoball
+sample_id= vag_kanoball
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_storb
+sample_id= vag_storb
+priority= 100
+reverb= 0
+vol= 80
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_kanlasr1
+sample_id= vag_kanlasr1
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_centaur1
+sample_id= vag_centaur1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_centaur2
+sample_id= vag_centaur2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_hboss1
+sample_id= vag_hboss1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_hhit1
+sample_id= vag_hhit1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_hhit2
+sample_id= vag_hhit2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_ebldeath
+sample_id= vag_ebldeath
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_eblrun
+sample_id= vag_eblrun
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_ebtrip
+sample_id= vag_ebtrip
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_eblface1
+sample_id= vag_eblface1
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_eblatt1
+sample_id= vag_eblatt1
+priority= 100
+reverb= 0
+vol= 118
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_ebljump
+sample_id= vag_ebljump
+priority= 100
+reverb= 0
+vol= 85
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_eblgrab
+sample_id= vag_eblgrab
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_eblthrow
+sample_id= vag_eblthrow
+priority= 100
+reverb= 0
+vol= 120
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_eblwast1
+sample_id= vag_eblwast1
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_eblwast2
+sample_id= vag_eblwast2
+priority= 100
+reverb= 0
+vol= 115
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkflykck
+sample_id= vag_lkflykck
+priority= 100
+reverb= 0
+vol= 90
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_kungthrw
+sample_id= vag_kungthrw
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sawhit
+sample_id= vag_sawhit
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dfklthro
+sample_id= vag_dfklthro
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_strkgren
+sample_id= vag_strkgren
+priority= 100
+reverb= 0
+vol= 85
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_strklung
+sample_id= vag_strklung
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sonbike
+sample_id= vag_sonbike
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_strkthro
+sample_id= vag_strkthro
+priority= 100
+reverb= 0
+vol= 105
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_roboout
+sample_id= vag_roboout
+priority= 100
+reverb= 0
+vol= 90
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robothrw
+sample_id= vag_robothrw
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_roboin
+sample_id= vag_roboin
+priority= 100
+reverb= 0
+vol= 80
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robrock1
+sample_id= vag_robrock1
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robrock2
+sample_id= vag_robrock2
+priority= 100
+reverb= 0
+vol= 100
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+;new
+
+map_amdeath
+sample_id= vag_amdeath
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_amrun
+sample_id= vag_amrun
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_amtrip
+sample_id= vag_amtrip
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_ambody2
+sample_id= vag_ambody2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_amface1
+sample_id= vag_amface1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_amface2
+sample_id= vag_amface2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skreact1
+sample_id= vag_skreact1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skreact2
+sample_id= vag_skreact2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skreact3
+sample_id= vag_skreact3
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_amatt1
+sample_id= vag_amatt1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_amatt2
+sample_id= vag_amatt2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_amjump
+sample_id= vag_amjump
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skatt1
+sample_id= vag_skatt1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skatt2
+sample_id= vag_skatt2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_amgrab
+sample_id= vag_amgrab
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_amthrow
+sample_id= vag_amthrow
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_lkwast2
+sample_id= vag_lkwast2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_amwast1
+sample_id= vag_amwast1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_amwast2
+sample_id= vag_amwast1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 61
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skwast1
+sample_id= vag_skwast1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skwast2
+sample_id= vag_skwast2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_splish1
+sample_id= vag_splish1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_splish2
+sample_id= vag_splish2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_splish3
+sample_id= vag_splish3
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_stab1
+sample_id= vag_stab1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bigstab1
+sample_id= vag_bigstab1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bigstab2
+sample_id= vag_bigstab2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bigstab3
+sample_id= vag_bigstab3
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jaxgotch
+sample_id= vag_jaxgotch
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_crunch1
+sample_id= vag_crunch1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_whistle
+sample_id= vag_whistle
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_pbfun
+sample_id= vag_pbfun
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robpres1
+sample_id= vag_robpres1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robpres2
+sample_id= vag_robpres2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bodsmsh1
+sample_id= vag_bodsmsh1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_scorthr1
+sample_id= vag_scorthr1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_beep1
+sample_id= vag_beep1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_compfx1
+sample_id= vag_compfx1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_roblaff
+sample_id= vag_roblaff
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bird
+sample_id= vag_bird
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_slide
+sample_id= vag_slide
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_horn
+sample_id= vag_horn
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_quake1
+sample_id= vag_quake1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bubble1
+sample_id= vag_bubble1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_headgrow
+sample_id= vag_headgrow
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_cblscrm
+sample_id= vag_cblscrm
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_whirl1
+sample_id= vag_whirl1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_swords
+sample_id= vag_swords
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_stcloud1
+sample_id= vag_stcloud1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_flmorph
+sample_id= vag_flmorph
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_mhit1
+sample_id= vag_mhit1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_mhit2
+sample_id= vag_mhit2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skpathet
+sample_id= vag_skpathet
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sktrying
+sample_id= vag_sktrying
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skdntlaf
+sample_id= vag_skdntlaf
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_machmix
+sample_id= vag_machmix
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_kneebrk
+sample_id= vag_kneebrk
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_hissmix
+sample_id= vag_hissmix
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_maul
+sample_id= vag_maul
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skdestin
+sample_id= vag_skdestin
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_mercyhit
+sample_id= vag_mercyhit
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_spinerip
+sample_id= vag_spinerip
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_attrct2a
+sample_id= vag_attrct2a
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_subway4
+sample_id= vag_subway4
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_subway2
+sample_id= vag_subway2
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_subway3
+sample_id= vag_subway3
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skdiemix
+sample_id= vag_skdiemix
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dogyip
+sample_id= vag_dogyip
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_dogwhine
+sample_id= vag_dogwhine
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_baby1
+sample_id= vag_baby1
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_danger
+sample_id= vag_danger
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skyousuk
+sample_id= vag_skyousuk
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_anmlroar
+sample_id= vag_anmlroar
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+;map_winstone
+;sample_id= vag_winstone
+;priority= 100
+;reverb= 0
+;vol= 127
+;pan= 64
+;root_key= 60
+;fine_adj= 0
+;note_min= 0
+;note_max= 127
+;pitchstep_min= 0
+;pitchstep_max= 0
+;attack_time= 1
+;decay_time= 32000
+;release_time= 10
+;attack_level= 127
+;decay_level= 127
+
+map_wagon
+sample_id= vag_wagon
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+;map_fstart
+;sample_id= vag_fstart
+;priority= 100
+;reverb= 0
+;vol= 127
+;pan= 64
+;root_key= 60
+;fine_adj= 0
+;note_min= 0
+;note_max= 127
+;pitchstep_min= 0
+;pitchstep_max= 0
+;attack_time= 1
+;decay_time= 32000
+;release_time= 10
+;attack_level= 127
+;decay_level= 127
+
+;map_mrtlsans
+;map_mrtlsans
+;sample_id= vag_mrtlsans
+;priority= 100
+;reverb= 0
+;vol= 127
+;pan= 64
+;root_key= 60
+;fine_adj= 0
+;note_min= 0
+;note_max= 127
+;pitchstep_min= 0
+;pitchstep_max= 0
+;attack_time= 1
+;decay_time= 32000
+;release_time= 10
+;attack_level= 127
+;decay_level= 127
+;************************************************************************
+;new umk3 shit
+
+map_smokwhsh
+sample_id= vag_smokwhsh
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_scorcome
+sample_id= vag_scorcome
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_scorget
+sample_id= vag_scorget
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_blcrnch2
+sample_id= vag_blcrnch2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+;map_bigstab
+;sample_id= vag_bigstab
+;priority= 100
+;reverb= 0
+;vol= 127
+;pan= 64
+;root_key= 60
+;fine_adj= 0
+;note_min= 0
+;note_max= 127
+;pitchstep_min= 0
+;pitchstep_max= 0
+;attack_time= 1
+;decay_time= 32000
+;release_time= 10
+;attack_level= 127
+;decay_level= 127
+
+map_scormask
+sample_id= vag_scormask
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bigboom
+sample_id= vag_bigboom
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_reptproj
+sample_id= vag_reptproj
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_robsprk9
+sample_id= vag_robsprk9
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_reporb41
+sample_id= vag_reporb41
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_n1thrfan
+sample_id= vag_n1thrfan
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_nfanhit
+sample_id= vag_nfanhit
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_girlshrt
+sample_id= vag_girlshrt
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jadekck
+sample_id= vag_jadekck
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_throtsai
+sample_id= vag_throtsai
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jadeflck
+sample_id= vag_jadeflck
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_kitana
+sample_id= vag_kitana
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_jade
+sample_id= vag_jade
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_malena
+sample_id= vag_malena
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_scorpion
+sample_id= vag_scorpion
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_reptile
+sample_id= vag_reptile
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skermac
+sample_id= vag_skermac
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skrain
+sample_id= vag_skrain
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_sknoob
+sample_id= vag_sknoob
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_skbaraka
+sample_id= vag_baraka
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_skraiden
+sample_id= vag_raiden
+priority= 120
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+
+map_bldcrnch
+sample_id= vag_bldcrnch
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_kiss
+sample_id= vag_kiss
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_treeroar
+sample_id= vag_treeroar
+priority= 100
+reverb= 0
+vol= 110
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_splash
+sample_id= vag_splash
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_bubble
+sample_id= vag_bubble
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_ohmaw
+sample_id= vag_ohmaw
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vsprk1
+sample_id= vag_vsprk1
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+map_vsprk2
+sample_id= vag_vsprk2
+priority= 100
+reverb= 0
+vol= 127
+pan= 64
+root_key= 60
+fine_adj= 0
+note_min= 0
+note_max= 127
+pitchstep_min= 0
+pitchstep_max= 0
+attack_time= 1
+decay_time= 32000
+release_time= 10
+attack_level= 127
+decay_level= 127
+
+;map_lksping
+;sample_id= vag_lksping
+;priority= 100
+;reverb= 0
+;vol= 127
+;pan= 64
+;root_key= 60
+;fine_adj= 0
+;note_min= 0
+;note_max= 127
+;pitchstep_min= 0
+;pitchstep_max= 0
+;attack_time= 1
+;decay_time= 32000
+;release_time= 10
+;attack_level= 127
+;decay_level= 127
+
+;map_lkreact1
+;sample_id= vag_lkreact1
+;priority= 100
+;reverb= 0
+;vol= 127
+;pan= 64
+;root_key= 60
+;fine_adj= 0
+;note_min= 0
+;note_max= 127
+;pitchstep_min= 0
+;pitchstep_max= 0
+;attack_time= 1
+;decay_time= 32000
+;release_time= 10
+;attack_level= 127
+;decay_level= 127
+
+;map_lkreact2
+;sample_id= vag_lkreact2
+;priority= 100
+;reverb= 0
+;vol= 127
+;pan= 64
+;root_key= 60
+;fine_adj= 0
+;note_min= 0
+;note_max= 127
+;pitchstep_min= 0
+;pitchstep_max= 0
+;attack_time= 1
+;decay_time= 32000
+;release_time= 10
+;attack_level= 127
+;decay_level= 127
+;************************************************************************
+[PATCHINFO_DEFINITIONS]
+;************************************************************************
+vag_kick1		../aif22/kick1.aifc	
+vag_snare1		../aif22/snare1.aifc	
+
+vag_hat1		../aif22/hat1.aifc	
+vag_hat2		../aif22/hat2.aifc	
+vag_hat3		../aif22/hat3.aifc	
+vag_hat4		../aif22/hat4.aifc	
+vag_ktoms		../aif22/ktoms.aifc	
+vag_tom1		../aif22/tom1.aifc	
+vag_crash1		../aif22/crash1.aifc	
+vag_crash2		../aif22/crash2.aifc	
+
+vag_clik		../inst/clik.aifc	
+vag_clik2		../inst/clik2.aifc	
+vag_clik3		../inst/clik3.aifc	
+vag_wood1		../inst22/wood1.aifc	
+vag_wood2		../inst22/wood2.aifc	
+vag_wood3		../inst22/wood3.aifc	
+vag_wood4		../inst22/wood4.aifc	
+vag_wood5		../inst22/wood5.aifc	
+
+vag_perc1a		../inst22/perc1a.aifc	
+vag_perc1b		../inst22/perc1b.aifc	
+vag_perc1c		../inst22/perc1c.aifc	
+vag_perc1d		../inst22/perc1d.aifc	
+vag_perc1e		../inst22/perc1e.aifc	
+vag_perc2a		../inst22/perc2a.aifc	
+vag_perc2b		../inst22/perc2b.aifc	
+vag_perc2c		../inst22/perc2c.aifc	
+vag_perc2d		../inst22/perc2d.aifc	
+vag_bigdrum		../aif22/bigdrum.aifc	
+vag_cymroll		../aif22/cymroll.aifc	
+
+;THE INSTRUM		       
+vag_choir2		../inst/choir2.aifc	
+vag_bigvox		../inst/bigvox.aifc	
+vag_droogpia		../inst/droogpia.aifc
+vag_fair		../inst/fair.aifc	
+vag_heavy		../inst/heavy.aifc	
+vag_kbass		../inst/kbass.aifc	
+vag_kbig		../inst/kbig.aifc	
+;vag_khits		../inst/khits.aifc	
+vag_kvox		../inst/kvox.aifc	
+vag_mkbars		../inst/mkbars.aifc	
+vag_mkgong		../aif22/mkgong.aifc	
+vag_mkrack		../aif22/mkrack.aifc	
+vag_moguebas		../inst/moguebas.aifc
+vag_morch		../inst/morch.aifc
+vag_ohits		../inst/ohits.aifc	
+vag_ostbass		../aif22/ostbass.aifc	
+vag_oww			../inst/oww.aifc		
+vag_proharp		../inst/proharp.aifc	
+vag_prohits		../inst/prohits.aifc	
+vag_protrpt		../inst/protrpt.aifc	
+vag_prowiden		../inst/prowiden.aifc
+vag_revcym		../aif22/revcym.aifc	
+vag_shaku		../aif22/shaku.aifc	
+vag_timpani		../inst/timpani.aifc	
+vag_trainmel		../inst/trainmel.aifc
+vag_trombtrp		../inst/trombtrp.aifc
+vag_twibass		../inst/twibass.aifc	
+vag_spacep		../inst/spacep.aifc
+vag_yuh			../inst/yuh.aifc		
+vag_timbale		../inst/timbale.aifc		
+vag_piano		../inst/piano.aifc		
+vag_organ		../inst/organ.aifc		
+;**************************************************************************
+;                           INTRO AND SELECT SCREENS
+;************************************************************************
+vag_srock       ../aiff/srock.aifc       ; New for select
+vag_swhoosh     ../aiff/swhoosh.aifc     ; New for select
+
+vag_rhouse      ../aiff/rhouse.aifc      ; 2 - roundhouse whoosh
+vag_doorslid    ../aiff/doorslid.aifc    ; 3 - big door closing
+vag_newdoor     ../aiff/newdoor.aifc     ; 4 - big door slam shut
+vag_windloop    ../aiff/windloop.aifc    ; 5 - wind
+vag_whoosh1     ../aiff/whoosh1.aifc     ; 6 - whoosh #1
+vag_whoosh3     ../aiff/whoosh3.aifc     ; 7 - whoosh #3
+vag_oooh        ../aiff/oooh.aifc        ; b - crowd: "Ooooo"
+vag_bell        ../aiff/bell.aifc        ;SSP
+vag_ncurs1      ../aiff/ncurs1.aifc      ; c - p1 cursor
+vag_ncurs2      ../aiff/ncurs2.aifc      ; d - p2 cursor
+vag_picked1     ../aiff/picked1.aifc     ; e - p1 picked
+vag_picked2     ../aiff/picked2.aifc     ; f - p2 picked
+vag_timeout1    ../aiff/timeout1.aifc    ; 17 - clock time down tik !!
+vag_foot3       ../aiff/foot3.aifc       ; *18 - players feet landing on ground
+vag_mrtlwhsh    ../aiff/mrtlwhsh.aifc    ; 19 - 1 player map zoom sound
+vag_dftosty     ../aiff/dftosty.aifc     ; 1b - DF: toasty
+vag_dfrosty     ../aiff/dfrosty.aifc     ; 1c - DF: frosty
+vag_dfcrispy    ../aiff/dfcrispy.aifc    ; 1d - DF: crispy
+vag_kanlasrl    ../aiff/kanlasr1.aifc    ; 1e - shock sound !!
+vag_mfirebal    ../aiff/mfirebal.aifc    ; 1f - flame throw
+vag_ignite      ../aiff/ignite.aifc      ; 20 - burning flames!!
+vag_bones       ../aiff/bones.aifc       ; 21 - bones fall
+;**************************************************************************
+;    GENERAL SOUND EFFECTS    102,240
+;**************************************************************************
+vag_foot1       ../aiff/foot1.aifc       ; 5 - foot step #1
+vag_foot2       ../aiff/foot2.aifc       ; 6 - foot step #2
+;DUPvag_foot3       ../aiff/foot3.aifc       ; 7 - foot step #3
+vag_foot4       ../aiff/foot4.aifc       ; 8 - foot step #4
+vag_gudblock    ../aiff/gudblock.aifc    ; block a Major hit
+vag_block1      ../aiff/block1.aifc      ; block
+vag_gudhit1     ../aiff/gudhit1.aifc     ; 14 - face hit #2
+;vag_newbig1     ../aiff/newbig1.aifc    ;SSP replaced by pitch shift
+vag_newbig3     ../aiff/newbig3.aifc
+;vag_newbig4     ../aiff/newbig4.aifc    ;SSP replaced by pitch shift
+vag_roldbig1    ../aiff/roldbig1.aifc    ; 2 - Old big hit #1
+;vag_roldbig2    ../aiff/roldbig2.aifc   ;SSP replaced by pitch shift
+vag_rock1       ../aiff/rock1.aifc       ;      Rock #1
+vag_rock2       ../aiff/rock2.aifc       ;      Rock #2
+vag_rocks1      ../aiff/rocks1.aifc      ;      Rocks #1
+vag_rocks2      ../aiff/rocks2.aifc      ;      Rocks #2
+vag_rocks3      ../aiff/rocks3.aifc      ;      Rocks #3
+
+;**************************************************************************
+;    girl
+;
+;    SHEEVA
+;    SONYA
+;    SINDEL
+;**************************************************************************
+
+;**************************************************************************
+;    male1
+;
+;    STRYKER
+;    KABAL
+;**************************************************************************
+
+;**************************************************************************
+;    male2
+;
+;    JAX
+;    MOTARO ;SSP just for now...
+;**************************************************************************
+
+;**************************************************************************
+;    male3
+;
+;    NIGHT WOLF
+;    SHANG TSUNG
+;    KANO
+;**************************************************************************
+
+;**************************************************************************
+;    male4
+;
+;    SUBZERO
+;    KUNG LAO
+;**************************************************************************
+
+;**************************************************************************
+;    robo
+;
+;    CYRAX
+;    SEKTOR
+;**************************************************************************
+
+;**************************************************************************
+;    kang
+;
+;    LIU KANG
+;**************************************************************************
+
+vag_pbcycle     ../aiff/pbcycle.aifc     ;SSP
+vag_hairthrw    ../aiff/hairthrw.aifc    ;SSP
+vag_scrmtrp2    ../aiff/scrmtrp2.aifc    ;SSP
+vag_fballhit    ../aiff/fballhit.aifc    ;SSP
+vag_flying1     ../aiff/flying1.aifc     ;SSP
+
+vag_pbdeath     ../aiff/pbdeath.aifc
+vag_pbwast2     ../aiff/pbwast2.aifc
+vag_pbrun       ../aiff/pbrun.aifc
+vag_pbtrip      ../aiff/pbtrip.aifc
+vag_pbface1     ../aiff/pbface1.aifc
+vag_pbface2     ../aiff/pbface2.aifc
+vag_pbatt1      ../aiff/pbatt1.aifc
+vag_pbatt2      ../aiff/pbatt2.aifc
+vag_pbjump      ../aiff/pbjump.aifc
+vag_pbgrab      ../aiff/pbgrab.aifc
+vag_pbthrow     ../aiff/pbthrow.aifc
+vag_pbwast1     ../aiff/pbwast1.aifc
+
+vag_vpdeath     ../aiff/vpdeath.aifc
+vag_vpnotbut    ../aiff/vpnotbut.aifc
+vag_vprun       ../aiff/vprun.aifc
+vag_vpgrab      ../aiff/vpgrab.aifc
+vag_vpface1     ../aiff/vpface1.aifc
+vag_vpface2     ../aiff/vpface2.aifc
+vag_vpatt1      ../aiff/vpatt1.aifc
+vag_vpatt2      ../aiff/vpatt2.aifc
+vag_vpjump      ../aiff/vpjump.aifc
+vag_vpthrow     ../aiff/vpthrow.aifc
+vag_vpwast1     ../aiff/vpwast1.aifc
+vag_vpwast2     ../aiff/vpwast2.aifc
+
+vag_dfdeath     ../aiff/dfdeath.aifc
+vag_dfrun       ../aiff/dfrun.aifc
+vag_dftrip      ../aiff/dftrip.aifc
+vag_dfface1     ../aiff/dfface1.aifc
+vag_dfface2     ../aiff/dfface2.aifc
+vag_dfatt1      ../aiff/dfatt1.aifc
+vag_dfatt2      ../aiff/dfatt2.aifc
+vag_dfjump      ../aiff/dfjump.aifc
+vag_dfgrab      ../aiff/dfgrab.aifc
+vag_dfthrow     ../aiff/dfthrow.aifc
+vag_dfwast1     ../aiff/dfwast1.aifc
+vag_dfwast2     ../aiff/dfwast2.aifc
+vag_dfklthro    ../aiff/dfklthro.aifc
+
+vag_ebldeath    ../aiff/ebldeath.aifc
+vag_ebshook     ../aiff/ebshook.aifc
+vag_eblrun      ../aiff/eblrun.aifc
+vag_ebtrip      ../aiff/ebtrip.aifc
+vag_eblface1    ../aiff/eblface1.aifc
+vag_eblface2    ../aiff/eblface2.aifc
+vag_eblatt1     ../aiff/eblatt1.aifc
+vag_ebljump     ../aiff/ebljump.aifc
+vag_eblgrab     ../aiff/eblgrab.aifc
+vag_eblthrow    ../aiff/eblthrow.aifc
+vag_eblwast1    ../aiff/eblwast1.aifc
+vag_eblwast2    ../aiff/eblwast2.aifc
+
+vag_jhdeath     ../aiff/jhdeath.aifc
+vag_jhrun       ../aiff/jhrun.aifc
+vag_jhtrip      ../aiff/jhtrip.aifc
+vag_jhface1     ../aiff/jhface1.aifc
+vag_jhface2     ../aiff/jhface2.aifc
+vag_jhatt1      ../aiff/jhatt1.aifc
+vag_jhatt2      ../aiff/jhatt2.aifc
+vag_jhjump      ../aiff/jhjump.aifc
+vag_jhgrab      ../aiff/jhgrab.aifc
+vag_jhthrow     ../aiff/jhthrow.aifc
+vag_jhwast1     ../aiff/jhwast1.aifc
+vag_jhwast2     ../aiff/jhwast2.aifc
+
+vag_robtalk2    ../aiff/robtalk2.aifc
+vag_robtalk3    ../aiff/robtalk3.aifc
+vag_robtalk4    ../aiff/robtalk4.aifc
+vag_netthrow    ../aiff/netthrow.aifc
+vag_robball1    ../aiff/robball1.aifc
+vag_robball2    ../aiff/robball2.aifc
+vag_robxplod    ../aiff/robxplod.aifc
+vag_robclik     ../aiff/robclik.aifc
+vag_robowarn    ../aiff/robowarn.aifc
+vag_robxpld2    ../aiff/robxpld2.aifc
+vag_robimpld    ../aiff/robimpld.aifc
+vag_robshk1     ../aiff/robshk1.aifc
+vag_robshk3     ../aiff/robshk3.aifc
+vag_robtalk1    ../aiff/robtalk1.aifc
+vag_netblk      ../aiff/netblk.aifc
+vag_robtalk5    ../aiff/robtalk5.aifc
+vag_robshk2     ../aiff/robshk2.aifc
+vag_robtele     ../aiff/robtele.aifc
+vag_roboout     ../aiff/roboout.aifc
+vag_robothrw    ../aiff/robothrw.aifc
+vag_roboin      ../aiff/roboin.aifc
+vag_robrock1    ../aiff/robrock1.aifc
+vag_robrock2    ../aiff/robrock2.aifc
+
+vag_lkdeath     ../aiff/lkdeath.aifc
+vag_lkrun       ../aiff/lkrun.aifc
+vag_lktrip      ../aiff/lktrip.aifc
+vag_lkface1     ../aiff/lkface1.aifc
+vag_lkface2     ../aiff/lkface2.aifc
+vag_lkatt1      ../aiff/lkatt1.aifc
+vag_lkatt2      ../aiff/lkatt2.aifc
+vag_lkjump      ../aiff/lkjump.aifc
+vag_lkgrab      ../aiff/lkgrab.aifc
+vag_lkthrow     ../aiff/lkthrow.aifc
+vag_lkwast1     ../aiff/lkwast1.aifc
+vag_lkfball     ../aiff/lkfball.aifc
+vag_lkcycle     ../aiff/lkcycle.aifc
+vag_lkflyink    ../aiff/lkflyink.aifc
+vag_lkflykck    ../aiff/lkflykck.aifc
+
+vag_axhit       ../aiff/axhit.aifc
+vag_sonyafly    ../aiff/sonyafly.aifc
+;vag_fballhit    ../aiff/fballhit.aifc already in list above - SSP
+vag_cabalgun    ../aiff/cabalgun.aifc
+vag_hicwhsh     ../aiff/hicwhsh.aifc
+vag_locwhsh     ../aiff/locwhsh.aifc
+vag_shevtele    ../aiff/shevtele.aifc
+vag_bigbslam    ../aiff/bigbslam.aifc
+vag_forcehit    ../aiff/forcehit.aifc
+vag_bappear     ../aiff/bappear.aifc
+vag_barrow2     ../aiff/barrow2.aifc
+vag_fireloop    ../aiff/fireloop.aifc
+vag_arrowhit    ../aiff/arrowhit.aifc
+vag_kanoax      ../aiff/kanoax.aifc
+vag_crunch2     ../aiff/crunch2.aifc
+vag_salrflc2    ../aiff/salrflc2.aifc
+vag_salrush     ../aiff/salrush.aifc
+vag_faxhit      ../aiff/faxhit.aifc
+vag_litestrt    ../aiff/litestrt.aifc
+vag_liteloop    ../aiff/liteloop.aifc
+vag_liteend     ../aiff/liteend.aifc
+vag_strtboom    ../aiff/strtboom.aifc
+vag_strtbum2    ../aiff/strtbum2.aifc
+vag_body1       ../aiff/body1.aifc
+vag_body2       ../aiff/body2.aifc
+vag_gudfall1    ../aiff/gudfall1.aifc
+vag_gudfall2    ../aiff/gudfall2.aifc
+vag_gudfall3    ../aiff/gudfall3.aifc
+vag_gudfall4    ../aiff/gudfall4.aifc
+;vag_whoosh2     ../aiff/whoosh2.aifc  ;SSP replaced by pitch shift
+;vag_bwhoosh2    ../aiff/bwhoosh2.aifc ;SSP replaced by pitch shift
+;vag_bwhoosh1    ../aiff/bwhoosh1.aifc ;SSP replaced by pitch shift
+;vag_bwhoosh3    ../aiff/bwhoosh3.aifc ;SSP replaced by pitch shift
+vag_jaxcann     ../aiff/jaxcann.aifc
+vag_stfireup    ../aiff/stfireup.aifc
+vag_sonforce    ../aiff/sonforce.aifc
+vag_stmorph     ../aiff/stmorph.aifc
+vag_rockhit     ../aiff/rockhit.aifc
+vag_jaxrush     ../aiff/jaxrush.aifc
+vag_jaxhitg     ../aiff/jaxhitg.aifc
+vag_skfinhim    ../aiff/skfinhim.aifc
+vag_skfinher    ../aiff/skfinher.aifc
+
+;Character names
+
+vag_skkano      ../names/skkano.aifc
+vag_sksonya     ../names/sksonya.aifc
+vag_skjax       ../names/skjax.aifc
+vag_sknitwlf    ../names/sknitwlf.aifc
+vag_sksubz      ../names/sksubz.aifc
+vag_skstrkr2    ../names/skstrkr2.aifc
+vag_sksindel    ../names/sksindel.aifc
+vag_sksector    ../names/sksector.aifc
+vag_skcyrax     ../names/skcyrax.aifc
+vag_skknglao    ../names/skknglao.aifc
+vag_skcabal     ../names/skcabal.aifc
+vag_sksheeva    ../names/sksheeva.aifc
+vag_skshang     ../names/skshang.aifc
+vag_skliukng    ../names/skliukng.aifc
+vag_skmotaro    ../names/skmotaro.aifc
+vag_sksmoke     ../names/sksmoke.aifc
+vag_kitana  	../names/kitana.aifc  
+vag_jade    	../names/jade.aifc    
+vag_malena  	../names/malena.aifc  
+vag_scorpion	../names/scorpion.aifc
+vag_reptile 	../names/reptile.aifc 
+vag_skermac 	../names/skermac.aifc 
+vag_skrain 	../names/skrain.aifc 
+vag_sknoob 	../names/sknoob.aifc 
+vag_baraka 	../names/baraka.aifc 
+vag_raiden 	../names/raiden.aifc 
+vag_skwins1     ../names/skwins1.aifc
+vag_skshomcy    ../names/skshomcy.aifc
+
+vag_skflawls    ../aiff/skflawls.aifc
+vag_skfatal     ../aiff/skfatal.aifc
+vag_skanimal    ../aiff/skanimal.aifc
+vag_skbabal     ../aiff/skbabal.aifc
+vag_skcrispy    ../aiff/skcrispy.aifc
+vag_skfrost     ../aiff/skfrost.aifc
+vag_skfrend1    ../aiff/skfrend1.aifc
+vag_skfrend2    ../aiff/skfrend2.aifc
+vag_skagain     ../aiff/skagain.aifc
+;vag_sktoasth    ../aiff/sktoasth.aifc    ;SSP 6b - Shao Kahn: Toasty High
+vag_sktoastl    ../aiff/sktoastl.aifc
+vag_skohmaw     ../aiff/skohmaw.aifc
+vag_sksuperb    ../aiff/sksuperb.aifc
+vag_skweldon    ../aiff/skweldon.aifc
+vag_skiwin      ../aiff2/skiwin.aifc
+vag_skrndone    ../aiff/skrndone.aifc
+vag_sktwo       ../aiff/sktwo.aifc
+vag_skthree     ../aiff/skthree.aifc
+vag_skfour      ../aiff/skfour.aifc
+vag_skfite4     ../aiff/skfite4.aifc
+;vag_sklaff1     ../aiff/sklaff1.aifc
+vag_sklaff2     ../aiff/sklaff2.aifc
+;vag_sklaff3     ../aiff/sklaff3.aifc
+vag_skexelnt    ../aiff/skexelnt.aifc
+vag_sknvrwin    ../aiff/sknvrwin.aifc
+vag_skoutstd    ../aiff/skoutstd.aifc
+vag_sziceup     ../aiff/sziceup.aifc
+vag_szicedwn    ../aiff/szicedwn.aifc
+vag_icehit      ../aiff/icehit.aifc
+vag_subzturd    ../aiff/subzturd.aifc
+vag_szifrz      ../aiff/szifrz.aifc
+vag_szslide     ../aiff/szslide.aifc
+vag_kanoknif    ../aiff/kanoknif.aifc
+vag_newstab2    ../aiff/newstab2.aifc
+vag_kanoball    ../aiff/kanoball.aifc
+vag_storb       ../aiff/storb.aifc
+vag_kanlasr1    ../aiff/kanlasr1.aifc
+vag_centaur1    ../aiff/centaur1.aifc
+vag_centaur2    ../aiff/centaur2.aifc
+vag_hboss1      ../aiff/hboss1.aifc
+vag_hhit1       ../aiff/hhit1.aifc
+vag_hhit2       ../aiff/hhit2.aifc
+vag_kungthrw    ../aiff/kungthrw.aifc
+vag_sawhit      ../aiff/sawhit.aifc
+vag_strkgren    ../aiff/strkgren.aifc
+vag_strklung    ../aiff/strklung.aifc
+vag_sonbike     ../aiff/sonbike.aifc
+vag_strkthro    ../aiff/strkthro.aifc
+
+;new sounds
+
+vag_amdeath    ../aiff/amdeath.aifc
+vag_amrun      ../aiff/amrun.aifc
+vag_amtrip     ../aiff/amtrip.aifc
+vag_ambody2    ../aiff/ambody2.aifc
+vag_amface1    ../aiff/amface1.aifc
+vag_amface2    ../aiff/amface2.aifc
+vag_skreact1   ../aiff/skreact1.aifc
+vag_skreact2   ../aiff/skreact2.aifc
+vag_skreact3   ../aiff/skreact3.aifc
+vag_amatt1     ../aiff/amatt1.aifc
+vag_amatt2     ../aiff/amatt2.aifc
+vag_amjump     ../aiff/amjump.aifc
+vag_skatt1     ../aiff/skatt1.aifc
+vag_skatt2     ../aiff/skatt2.aifc
+vag_amgrab     ../aiff/amgrab.aifc
+vag_amthrow    ../aiff/amthrow.aifc
+vag_lkwast2    ../aiff/lkwast2.aifc
+vag_amwast1    ../aiff/amwast1.aifc
+;vag_amwast2    ../aiff/amwast2.aifc
+vag_skwast1    ../aiff/skwast1.aifc
+vag_skwast2    ../aiff/skwast2.aifc
+vag_splish1    ../aiff/splish1.aifc
+vag_splish2    ../aiff/splish2.aifc
+vag_splish3   ../aiff/splish3.aifc
+vag_stab1      ../aiff/stab1.aifc
+vag_bigstab1   ../aiff/bigstab1.aifc
+vag_bigstab2   ../aiff/bigstab2.aifc
+vag_bigstab3  ../aiff/bigstab3.aifc
+vag_jaxgotch   ../aiff/jaxgotch.aifc
+vag_crunch1    ../aiff/crunch1.aifc
+vag_whistle    ../aiff/whistle.aifc
+vag_pbfun      ../aiff/pbfun.aifc
+vag_robpres1   ../aiff/robpres1.aifc
+vag_robpres2   ../aiff/robpres2.aifc
+vag_bodsmsh1   ../aiff/bodsmsh1.aifc
+vag_scorthr1   ../aiff/scorthr1.aifc
+vag_beep1      ../aiff/beep1.aifc
+vag_compfx1    ../aiff/compfx1.aifc
+vag_roblaff    ../aiff/roblaff.aifc
+vag_bird       ../aiff/bird.aifc
+vag_slide      ../aiff/slide.aifc
+vag_horn       ../aiff/horn.aifc
+vag_quake1     ../aiff/quake1.aifc
+vag_bubble1    ../aiff/bubble1.aifc
+vag_headgrow   ../aiff/headgrow.aifc
+vag_cblscrm    ../aiff/cblscrm.aifc
+vag_whirl1     ../aiff/whirl1.aifc
+vag_swords     ../aiff/swords.aifc
+vag_stcloud1   ../aiff/stcloud1.aifc
+vag_flmorph    ../aiff/flmorph.aifc
+vag_mhit1      ../aiff/mhit1.aifc
+vag_mhit2      ../aiff/mhit2.aifc
+vag_skpathet   ../aiff/skpathet.aifc
+vag_sktrying   ../aiff/sktrying.aifc
+vag_skdntlaf   ../aiff/skdntlaf.aifc
+
+vag_machmix    ../aiff/machmix.aifc  ;new
+vag_kneebrk    ../aiff/kneebrk.aifc  ;new
+vag_hissmix    ../aiff/hissmix.aifc  ;new
+vag_maul       ../aiff/maul.aifc     ;new
+vag_skdestin   ../aiff/skdestin.aifc ;new
+vag_mercyhit   ../aiff/mercyhit.aifc ;new
+vag_spinerip   ../aiff/spinerip.aifc ;new
+vag_attrct2a   ../aiff/attrct2a.aifc ;new
+vag_subway4    ../aiff/subway4.aifc  ;new
+vag_subway2    ../aiff/subway2.aifc  ;new
+vag_subway3    ../aiff/subway3.aifc  ;new
+vag_skdiemix   ../aiff/skdiemix.aifc ;new
+vag_dogyip     ../aiff/dogyip.aifc   ;new
+vag_dogwhine   ../aiff/dogwhine.aifc ;new
+vag_baby1      ../aiff/baby1.aifc    ;new
+vag_danger     ../aiff/danger.aifc   ;new
+vag_skyousuk   ../aiff/skyousuk.aifc ;new
+vag_anmlroar   ../aiff/anmlroar.aifc ;new
+;vag_winstone   ../aiff/fatal2.aifc   ;new
+vag_wagon      ../aiff/wagon.aifc    ;new
+;vag_fstart     ../aiff/fatal12.aifc   ;new
+vag_mrtlsans   ../aiff/mrtlsans.aifc  ;new
+;vag_mrtlsans   ../aiff/mrtlsans.aifc  ;new
+;new umk3 shit
+vag_smokwhsh	../aiff2/smokwhsh.aifc
+vag_scorcome	../aiff2/scorcome.aifc
+vag_scorget 	../aiff2/scorget.aifc 
+vag_blcrnch2	../aiff2/blcrnch2.aifc
+;vag_bigstab 	../aiff2/bigstab.aifc 
+vag_scormask	../aiff2/scormask.aifc
+vag_bigboom 	../aiff/bigboom.aifc 
+vag_reptproj	../aiff2/reptproj.aifc
+vag_robsprk9	../aiff2/robsprk9.aifc
+vag_reporb41	../aiff2/reporb41.aifc
+vag_n1thrfan	../aiff2/n1thrfan.aifc
+vag_nfanhit 	../aiff2/nfanhit.aifc 
+vag_girlshrt	../aiff2/girlshrt.aifc
+vag_jadekck 	../aiff2/jadekck.aifc 
+vag_throtsai	../aiff2/throtsai.aifc
+vag_jadeflck	../aiff2/jadeflck.aifc
+
+vag_bldcrnch	../aiff2/bldcrnch.aifc
+vag_kiss    	../aiff2/kiss.aifc    
+vag_treeroar	../aiff2/treeroar.aifc
+vag_splash  	../aiff2/splash.aifc  
+vag_bubble  	../aiff2/bubble.aifc  
+vag_ohmaw   	../aiff2/dfohmaw.aifc   
+vag_vsprk1  	../aiff2/vsprk1.aifc  
+vag_vsprk2  	../aiff2/vsprk2.aifc  
+;vag_lksping 	../aiff2/lksping.aifc 
+;vag_lkreact1	../aiff2/lkreact1.aifc
+;vag_lkreact2	../aiff2/lkreact2.aifc
+
+vag_knifejec	../aiff3/knifejec.aifc
+vag_knifplng	../aiff3/knifplng.aifc
+vag_barthrow	../aiff3/barthrow.aifc
+vag_raidkill	../aiff3/raidkill.aifc
+vag_sprkthro	../aiff3/sprkthro.aifc
+vag_rtele   	../aiff3/rtele.aifc   
+vag_rgetup  	../aiff3/rgetup.aifc  
+vag_rdive   	../aiff3/rdive.aifc   
+vag_gib1    	../aiff3/gib1.aifc    
+vag_gib2    	../aiff3/gib2.aifc    
+vag_gib3    	../aiff3/gib3.aifc    
+vag_gib4    	../aiff3/gib4.aifc    
+vag_rsmak   	../aiff3/rsmak.aifc   
+vag_lightng 	../aiff3/lightng.aifc 
+vag_rsprkstr 	../aiff3/rsprkstr.aifc 
+vag_rspark1 	../aiff3/rspark1.aifc 
+vag_rsprkend 	../aiff3/rsprkend.aifc 
+vag_cagekck1  	../aiff4/cagekck1.aifc
+vag_cagekck2  	../aiff4/cagekck2.aifc
+vag_cagekiss  	../aiff4/cagekiss.aifc
+vag_snotup    	../aiff4/snotup.aifc
+vag_snothit   	../aiff4/snothit.aifc
+vag_joncage   	../aiff4/joncage.aifc
+vag_skteam    	../aiff4/skteam.aifc
+vag_skbrute   	../aiff4/skbrute.aifc
+vag_skcham    	../aiff4/skcham.aifc
+vag_screenfl  	../aiff4/screenfl.aifc
+vag_screenin  	../aiff4/screen3.aifc
+vag_aggresor  	../aiff4/aggresor.aifc
+vag_skone  	../aiff4/skone.aifc
+vag_frog  	../aiff4/frog6k.aifc
+;************************************************************************
+[NUMBER_OF_DRUMMAPS]
+0
+[DRUMMAP_DEFINITIONS]
+[EXTRA_DATA_DEFINITIONS]
+[SEQUENCE_DEFINITIONS]
+;final cage stuff
+ST_JC_KISS	MAKE_SEQ pat_cagekiss  SFX
+ST_JC_KICK	MAKE_SEQ pat_cagekck1  SFX
+ST_JC_SNOT_HIT  MAKE_SEQ pat_snothit   SFX
+ST_JC_SNOT_BLK  MAKE_SEQ pat_snothit   SFX
+ST_JC_SELBOW    MAKE_SEQ pat_cagekck2  SFX
+TS_JOHNCAGE     MAKE_SEQ pat_joncage   SFX
+TS_SKBRUTE  	MAKE_SEQ pat_skbrute   SFX
+TS_SKCHAM   	MAKE_SEQ pat_skcham    SFX
+TS_SCREENFL 	MAKE_SEQ pat_screenfl  SFX
+TS_SCREENIN 	MAKE_SEQ pat_screenin  SFX
+TS_AGGRESOR 	MAKE_SEQ pat_aggresor  SFX
+TS_FROG 	MAKE_SEQ pat_frog      SFX
+ 
+
+;gs_death
+GS_DEATH_GIRL   MAKE_SEQ pat_pbdeath   SFX
+GS_DEATH_VP     MAKE_SEQ pat_vpdeath   SFX
+GS_DEATH_DF     MAKE_SEQ pat_dfdeath   SFX
+GS_DEATH_EB     MAKE_SEQ pat_jhdeath   SFX
+GS_DEATH_JH     MAKE_SEQ pat_ebldeath  SFX
+GS_DEATH_ROBO   MAKE_SEQ pat_jhdeath   SFX
+GS_DEATH_KANG   MAKE_SEQ pat_lkdeath   SFX
+GS_DEATH_SG     MAKE_SEQ pat_amdeath   SFX ;new
+GS_DEATH_SK     MAKE_SEQ pat_skwast2   SFX ;new
+
+;gs_shook
+GS_SHOOK_GIRL   MAKE_SEQ pat_pbwast1   SFX ;SSP pbwast2
+GS_SHOOK_VP     MAKE_SEQ pat_vpnotbut  SFX
+GS_SHOOK_DF     MAKE_SEQ pat_vpnotbut  SFX
+GS_SHOOK_EB     MAKE_SEQ pat_ebshook   SFX
+GS_SHOOK_JH     MAKE_SEQ pat_ebshook   SFX
+GS_SHOOK_ROBO   MAKE_SEQ pat_robtalk5  SFX
+GS_SHOOK_KANG   MAKE_SEQ pat_lkrun     SFX
+GS_SHOOK_SG     MAKE_SEQ pat_amwast1   SFX ;new
+GS_SHOOK_SK     MAKE_SEQ pat_skwast1   SFX ;new
+
+;gs_run
+GS_RUN_GIRL     MAKE_SEQ pat_pbrun     SFX
+GS_RUN_VP       MAKE_SEQ pat_vprun     SFX
+GS_RUN_DF       MAKE_SEQ pat_dfrun     SFX
+GS_RUN_EB       MAKE_SEQ pat_eblrun    SFX
+GS_RUN_JH       MAKE_SEQ pat_jhrun     SFX
+GS_RUN_ROBO     MAKE_SEQ pat_robtalk5  SFX
+GS_RUN_KANG     MAKE_SEQ pat_lkrun     SFX
+GS_RUN_SG       MAKE_SEQ pat_amrun     SFX ;new
+GS_RUN_SK       MAKE_SEQ pat_amrun     SFX ;new
+
+;gs_tripped_voice
+GS_TV_GIRL      MAKE_SEQ pat_pbtrip    SFX
+GS_TV_VP        MAKE_SEQ pat_vpgrab    SFX
+GS_TV_DF        MAKE_SEQ pat_dftrip    SFX
+GS_TV_EB        MAKE_SEQ pat_ebtrip    SFX
+GS_TV_JH        MAKE_SEQ pat_jhtrip    SFX
+;NOT CALLED GS_TV_ROBO      MAKE_SEQ pat_jhtrip SFX ;fake
+GS_TV_KANG      MAKE_SEQ pat_lktrip    SFX
+GS_TV_SG        MAKE_SEQ pat_amtrip    SFX ;new
+GS_TV_SK        MAKE_SEQ pat_skreact1  SFX ;new
+
+;gs_face_hit_voice
+GS_FHV_GIRL1    MAKE_SEQ pat_pbface1   SFX
+GS_FHV_GIRL2    MAKE_SEQ pat_pbface2   SFX
+GS_FHV_GIRL3    MAKE_SEQ pat_pbface2   SFX
+GS_FHV_VP1      MAKE_SEQ pat_vpface1   SFX
+GS_FHV_VP2      MAKE_SEQ pat_vpface1   SFX
+GS_FHV_VP3      MAKE_SEQ pat_vpface2   SFX
+GS_FHV_DF1      MAKE_SEQ pat_dfface1   SFX
+GS_FHV_DF2      MAKE_SEQ pat_dfface1   SFX
+GS_FHV_DF3      MAKE_SEQ pat_dfface2   SFX
+GS_FHV_EB1      MAKE_SEQ pat_eblface1  SFX
+GS_FHV_EB2      MAKE_SEQ pat_eblface2  SFX
+GS_FHV_EB3      MAKE_SEQ pat_eblface2  SFX
+GS_FHV_JH1      MAKE_SEQ pat_jhface1   SFX
+GS_FHV_JH2      MAKE_SEQ pat_jhface1   SFX ;SSP pat_jhface2
+GS_FHV_JH3      MAKE_SEQ pat_jhface1   SFX
+GS_FHV_ROBO1    MAKE_SEQ pat_robshk2   SFX
+GS_FHV_ROBO2    MAKE_SEQ pat_robshk2   SFX
+GS_FHV_ROBO3    MAKE_SEQ pat_robshk3   SFX
+GS_FHV_KANG1    MAKE_SEQ pat_lkface1   SFX
+GS_FHV_KANG2    MAKE_SEQ pat_lkface1   SFX
+GS_FHV_KANG3    MAKE_SEQ pat_lkface2   SFX
+GS_FHV_SG1      MAKE_SEQ pat_amface1   SFX ;new
+GS_FHV_SG2      MAKE_SEQ pat_ambody2   SFX ;new
+GS_FHV_SG3      MAKE_SEQ pat_amface2   SFX ;new
+GS_FHV_SK1      MAKE_SEQ pat_skreact1  SFX ;new
+GS_FHV_SK2      MAKE_SEQ pat_skreact2  SFX ;new
+GS_FHV_SK3      MAKE_SEQ pat_skreact3  SFX ;new
+
+;gs_attack
+GS_ATK_GIRL1    MAKE_SEQ pat_pbatt1    SFX
+GS_ATK_GIRL2    MAKE_SEQ pat_pbatt2    SFX
+GS_ATK_VP1      MAKE_SEQ pat_vpatt1    SFX
+GS_ATK_VP2      MAKE_SEQ pat_vpatt2    SFX
+GS_ATK_DF1      MAKE_SEQ pat_dfatt1    SFX
+GS_ATK_DF2      MAKE_SEQ pat_dfatt2    SFX
+GS_ATK_EB1      MAKE_SEQ pat_eblatt1   SFX
+GS_ATK_EB2      MAKE_SEQ pat_eblatt1   SFX
+GS_ATK_JH1      MAKE_SEQ pat_jhatt1    SFX
+GS_ATK_JH2      MAKE_SEQ pat_jhatt2    SFX
+;NOT CALLED GS_ATK_ROBO1    MAKE_SEQ pat_jhatt1 SFX ;fake
+;NOT CALLED GS_ATK_ROBO2    MAKE_SEQ pat_jhatt2 SFX ;fake
+GS_ATK_KANG1    MAKE_SEQ pat_lkatt1    SFX
+GS_ATK_KANG2    MAKE_SEQ pat_lkatt2    SFX
+GS_ATK_SG1      MAKE_SEQ pat_amatt1    SFX ;new
+GS_ATK_SG2      MAKE_SEQ pat_amatt2    SFX ;new
+GS_ATK_SK1      MAKE_SEQ pat_skatt1    SFX ;new
+GS_ATK_SK2      MAKE_SEQ pat_skatt2    SFX ;new
+
+;gs_jump
+GS_JUMP_GIRL    MAKE_SEQ pat_pbjump    SFX
+GS_JUMP_VP      MAKE_SEQ pat_vpjump    SFX
+GS_JUMP_DF      MAKE_SEQ pat_dfjump    SFX
+GS_JUMP_EB      MAKE_SEQ pat_ebljump   SFX
+GS_JUMP_JH      MAKE_SEQ pat_jhjump    SFX
+;NOT CALLED GS_JUMP_ROBO    MAKE_SEQ pat_jhjump SFX ;fake
+GS_JUMP_KANG    MAKE_SEQ pat_lkjump    SFX
+GS_JUMP_SG      MAKE_SEQ pat_amjump    SFX ;new
+GS_JUMP_SK      MAKE_SEQ pat_skatt2    SFX ;new
+
+;gs_grab
+GS_GRAB_GIRL    MAKE_SEQ pat_pbgrab    SFX
+GS_GRAB_VP      MAKE_SEQ pat_vpgrab    SFX
+GS_GRAB_DF      MAKE_SEQ pat_dfgrab    SFX
+GS_GRAB_EB      MAKE_SEQ pat_eblgrab   SFX
+GS_GRAB_JH      MAKE_SEQ pat_jhgrab    SFX
+GS_GRAB_ROBO    MAKE_SEQ pat_robtalk2  SFX
+GS_GRAB_KANG    MAKE_SEQ pat_lkgrab    SFX
+GS_GRAB_SG      MAKE_SEQ pat_amgrab    SFX ;new
+GS_GRAB_SK      MAKE_SEQ pat_skatt1    SFX ;new
+
+;gs_slam
+GS_SLAM_GIRL    MAKE_SEQ pat_pbthrow   SFX
+GS_SLAM_VP      MAKE_SEQ pat_vpthrow   SFX
+GS_SLAM_DF      MAKE_SEQ pat_dfthrow   SFX
+GS_SLAM_EB      MAKE_SEQ pat_eblthrow  SFX
+GS_SLAM_JH      MAKE_SEQ pat_jhthrow   SFX
+GS_SLAM_ROBO    MAKE_SEQ pat_robtalk1  SFX
+GS_SLAM_KANG    MAKE_SEQ pat_lkthrow   SFX
+GS_SLAM_SG      MAKE_SEQ pat_amthrow   SFX ;new
+GS_SLAM_SK      MAKE_SEQ pat_skatt1    SFX ;new
+
+;gs_wasteed
+GS_WST_GIRL1    MAKE_SEQ pat_pbwast1   SFX
+GS_WST_GIRL2    MAKE_SEQ pat_pbwast1   SFX ;SSP pbwast2
+GS_WST_VP1      MAKE_SEQ pat_vpwast2   SFX ;SSP vpwast1
+GS_WST_VP2      MAKE_SEQ pat_vpwast2   SFX
+GS_WST_DF1      MAKE_SEQ pat_dfwast2   SFX ;SSP dfwast1
+GS_WST_DF2      MAKE_SEQ pat_dfwast2   SFX
+GS_WST_EB1      MAKE_SEQ pat_eblwast1  SFX
+GS_WST_EB2      MAKE_SEQ pat_eblwast2  SFX
+GS_WST_JH1      MAKE_SEQ pat_jhwast1   SFX
+GS_WST_JH2      MAKE_SEQ pat_jhwast2   SFX
+GS_WST_ROBO1    MAKE_SEQ pat_robtalk1  SFX
+GS_WST_ROBO2    MAKE_SEQ pat_robtalk4  SFX
+GS_WST_KANG1    MAKE_SEQ pat_lkwast1   SFX
+GS_WST_KANG2    MAKE_SEQ pat_lkwast2   SFX ;new
+GS_WST_SG1      MAKE_SEQ pat_amwast1   SFX ;new
+GS_WST_SG2      MAKE_SEQ pat_amwast2   SFX ;new
+GS_WST_SK1      MAKE_SEQ pat_skwast1   SFX ;new
+GS_WST_SK2      MAKE_SEQ pat_skwast2   SFX ;new
+
+;rsnd_enemy_boom
+RSND_EBOOM1     MAKE_SEQ pat_fballhit  SFX
+RSND_EBOOM2     MAKE_SEQ pat_robxplod  SFX
+RSND_EBOOM3     MAKE_SEQ pat_jaxcann   SFX
+
+;rsnd_splish
+RSND_SPLISH1    MAKE_SEQ pat_splish1   SFX ;new
+RSND_SPLISH2    MAKE_SEQ pat_splish2   SFX ;new
+RSND_SPLISH3    MAKE_SEQ pat_splish2   SFX ;SSP splish3  ;new
+
+;rsnd_stab
+RSND_STAB1      MAKE_SEQ pat_stab1     SFX ;new
+RSND_STAB2      MAKE_SEQ pat_bigstab1  SFX ;new
+RSND_STAB3      MAKE_SEQ pat_stab1     SFX ;SSP bigstab2 ;new
+RSND_STAB4      MAKE_SEQ pat_bigstab1  SFX ;SSP bigstab3 ;new
+
+;rsnd_footstep
+RSND_FS1        MAKE_SEQ pat_foot1     SFX
+RSND_FS2        MAKE_SEQ pat_foot2     SFX
+RSND_FS3        MAKE_SEQ pat_foot3     SFX
+RSND_FS4        MAKE_SEQ pat_foot4     SFX
+
+;rsnd_big_block
+RSND_BB1        MAKE_SEQ pat_gudblock  SFX
+RSND_BB2        MAKE_SEQ pat_gudblock  SFX
+
+;rsnd_small_block
+RSND_SB1        MAKE_SEQ pat_block1    SFX
+RSND_SB2        MAKE_SEQ pat_block1    SFX
+
+;rsnd_smack
+RSND_SM1        MAKE_SEQ pat_gudhit1   SFX
+RSND_SM2        MAKE_SEQ pat_gudhit1   SFX
+
+;rsnd_med_smack
+RSND_MSM1       MAKE_SEQ pat_newbig1   SFX
+RSND_MSM2       MAKE_SEQ pat_newbig3   SFX
+RSND_MSM3       MAKE_SEQ pat_newbig3   SFX
+RSND_MSM4       MAKE_SEQ pat_newbig4   SFX
+
+;rsnd_klang
+RSND_KLANG1     MAKE_SEQ pat_mhit1     SFX ;new
+RSND_KLANG2     MAKE_SEQ pat_mhit2     SFX ;new
+
+;rsnd_big_smack
+RSND_BSM1       MAKE_SEQ pat_roldbig1  SFX
+RSND_BSM2       MAKE_SEQ pat_roldbig2  SFX
+
+;rsnd_rocks
+RSND_ROCK1      MAKE_SEQ pat_rock1     SFX
+RSND_ROCK2      MAKE_SEQ pat_rock2     SFX
+RSND_ROCK3      MAKE_SEQ pat_rock2     SFX ;SSP rocks1
+RSND_ROCK4      MAKE_SEQ pat_rocks3    SFX ;SSP rocks2
+RSND_ROCK5      MAKE_SEQ pat_rocks3    SFX
+
+;rsnd_body_hit
+RSND_BHT1       MAKE_SEQ pat_body1     SFX
+RSND_BHT2       MAKE_SEQ pat_body2     SFX
+
+;rsnd_ground
+RSND_GND1       MAKE_SEQ pat_gudfall2  SFX ;SSP gudfall1
+RSND_GND2       MAKE_SEQ pat_gudfall2  SFX
+RSND_GND3       MAKE_SEQ pat_gudfall4  SFX ;SSP gudfall3
+RSND_GND4       MAKE_SEQ pat_gudfall4  SFX
+
+;rsnd_whoosh
+RSND_WHSH1      MAKE_SEQ pat_whoosh1   SFX
+RSND_WHSH2      MAKE_SEQ pat_whoosh2   SFX
+RSND_WHSH3      MAKE_SEQ pat_whoosh3   SFX
+RSND_WHSH4      MAKE_SEQ pat_bwhoosh2  SFX
+
+;rsnd_big_whoosh
+RSND_BWHSH1     MAKE_SEQ pat_bwhoosh1  SFX
+RSND_BWHSH2     MAKE_SEQ pat_bwhoosh3  SFX
+
+;st_kano
+ST_KANO_AX             MAKE_SEQ pat_kanoax    SFX
+ST_KANO_SKNIFE         MAKE_SEQ pat_kanoknif  SFX
+ST_KANO_SKNIFE_HIT     MAKE_SEQ pat_newstab2  SFX
+ST_KANO_SKNIFE_BLK     MAKE_SEQ pat_newstab2  SFX
+ST_KANO_BALL           MAKE_SEQ pat_kanoball  SFX
+
+;fatal_kano
+FT_KANO_LASER          MAKE_SEQ pat_storb     SFX
+FT_KANO_LASER_BURN     MAKE_SEQ pat_kanlasr1  SFX
+FT_KANO_SKELETON_RIP   MAKE_SEQ pat_crunch2   SFX
+FT_KANO_SKIN_FALL      MAKE_SEQ pat_gudfall4  SFX
+
+;st_sonya
+ST_SONYA_RINGS         MAKE_SEQ pat_sonforce  SFX
+ST_SONYA_RINGS_HIT     MAKE_SEQ pat_forcehit  SFX
+ST_SONYA_RINGS_BLK     MAKE_SEQ pat_forcehit  SFX
+ST_SONYA_BIKE          MAKE_SEQ pat_sonbike   SFX
+ST_SONYA_FLY           MAKE_SEQ pat_sonyafly  SFX
+ST_SONYA_BIKE_VOICE    MAKE_SEQ pat_pbcycle   SFX
+
+;fatal_sonya
+FT_SONYA_BLOW_KISS     MAKE_SEQ pat_mfirebal  SFX
+FT_SONYA_QUAKE         MAKE_SEQ pat_quake1    SFX ;new
+
+;st_jax
+ST_JAX_CANNON          MAKE_SEQ pat_jaxcann   SFX
+ST_JAX_ZAP_HIT         MAKE_SEQ pat_rockhit   SFX
+ST_JAX_ZAP_BLK         MAKE_SEQ pat_rockhit   SFX
+ST_JAX_BLURR           MAKE_SEQ pat_jaxrush   SFX
+ST_JAX_GROUND          MAKE_SEQ pat_jaxhitg   SFX
+ST_JAX_SLAM            MAKE_SEQ pat_bigbslam  SFX
+ST_JAX_GOTCHA          MAKE_SEQ pat_jaxgotch  SFX ;new
+ST_JAX_BREAK           MAKE_SEQ pat_crunch2   SFX ;new
+TS_KLANG1              MAKE_SEQ pat_mhit1     SFX ;new
+
+;fatal_jax
+FT_JAX_ARM_MORPH       MAKE_SEQ pat_stmorph   SFX
+FT_JAX_CRUNCH1         MAKE_SEQ pat_crunch1   SFX ;new
+FT_JAX_CRUNCH2         MAKE_SEQ pat_crunch2   SFX
+FT_JAX_QUAKE           MAKE_SEQ pat_quake1    SFX ;new
+
+;st_subzero
+ST_SZ_ICE_UP           MAKE_SEQ pat_sziceup   SFX
+ST_SZ_ICE_DOWN         MAKE_SEQ pat_szicedwn  SFX
+ST_SZ_ICE_HIT          MAKE_SEQ pat_icehit    SFX
+ST_SZ_ICE_BLOCK        MAKE_SEQ pat_icehit    SFX
+ST_SZ_ICE_HIT2         MAKE_SEQ pat_subzturd  SFX
+ST_SZ_ICE_DECOY        MAKE_SEQ pat_szifrz    SFX
+ST_SZ_SLIDE            MAKE_SEQ pat_szslide   SFX
+
+;fatal_subzero
+FT_SZ_BLOW             MAKE_SEQ pat_mfirebal  SFX
+FT_SZ_FROZE            MAKE_SEQ pat_robpres2  SFX ;new
+
+;st_swat
+ST_SWAT_BOMB_EXP       MAKE_SEQ pat_robxplod  SFX
+ST_SWAT_BOMB_THROW     MAKE_SEQ pat_strkgren  SFX
+ST_SWAT_ZOOM           MAKE_SEQ pat_strklung  SFX
+ST_SWAT_STICK          MAKE_SEQ pat_sonbike   SFX
+ST_SWAT_ZOOM_THROW     MAKE_SEQ pat_strkthro  SFX
+ST_SWAT_BANG           MAKE_SEQ pat_block1    SFX
+
+;fatal_swat
+FT_SWAT_TASER          MAKE_SEQ pat_kanlasrl  SFX
+FT_SWAT_TASER_FIRE     MAKE_SEQ pat_robxpld2  SFX
+FT_SWAT_WHISTLE        MAKE_SEQ pat_whistle   SFX ;new
+FT_SWAT_WAGON          MAKE_SEQ pat_wagon     SFX ;new
+
+;st_indian
+ST_IND_ARROW_APPEAR    MAKE_SEQ pat_bappear   SFX
+ST_IND_ARROW_FIRE      MAKE_SEQ pat_barrow2   SFX
+ST_IND_BURN_AXE        MAKE_SEQ pat_fireloop  SFX
+ST_IND_ARROW_HIT       MAKE_SEQ pat_arrowhit  SFX
+ST_IND_ARROW_BLK       MAKE_SEQ pat_arrowhit  SFX
+ST_IND_AXE_UP          MAKE_SEQ pat_kanoax    SFX
+ST_IND_KNEE_BREAK      MAKE_SEQ pat_crunch2   SFX
+ST_IND_REFLECT         MAKE_SEQ pat_salrflc2  SFX
+ST_IND_SHADOW_SHLD     MAKE_SEQ pat_salrush   SFX
+ST_IND_AXE_HIT         MAKE_SEQ pat_faxhit    SFX
+
+;fatal_indian
+FT_IND_LIGHT_START     MAKE_SEQ pat_litestrt  SFX
+FT_IND_LIGHT_LOOP      MAKE_SEQ pat_liteloop  SFX
+FT_IND_LIGHT_END       MAKE_SEQ pat_liteend   SFX
+FT_IND_LIGHT_HIT_AXE   MAKE_SEQ pat_strtboom  SFX
+FT_IND_LIGHT_HIT_HIM   MAKE_SEQ pat_strtbum2  SFX
+
+;st_lia
+ST_LIA_HAIR            MAKE_SEQ pat_hairthrw  SFX
+ST_LIA_SCREAM          MAKE_SEQ pat_scrmtrp2  SFX
+ST_LIA_FIREBALL        MAKE_SEQ pat_mfirebal  SFX
+ST_LIA_FIREBALL_HIT    MAKE_SEQ pat_fballhit  SFX
+ST_LIA_FIREBALL_BLOCK  MAKE_SEQ pat_fballhit  SFX
+ST_LIA_FLY_UP          MAKE_SEQ pat_flying1   SFX
+ST_LIA_FLY_ACROSS      MAKE_SEQ pat_flying1   SFX ;fake
+
+;fatal_lia
+FT_LIA_HAIR            MAKE_SEQ pat_whirl1    SFX ;new
+FT_LIA_QUAKE           MAKE_SEQ pat_quake1    SFX ;new
+FT_LIA_TWFUN           MAKE_SEQ pat_pbfun     SFX ;new
+
+;st_robo
+ST_ROBO_ARM_OUT        MAKE_SEQ pat_roboout   SFX
+ST_ROBO_ARM_THROW      MAKE_SEQ pat_robothrw  SFX
+ST_ROBO_ARM_IN         MAKE_SEQ pat_roboin    SFX
+ST_ROBO_FAST_ROCKET    MAKE_SEQ pat_robrock1  SFX
+ST_ROBO_CRUISE_ROCKET  MAKE_SEQ pat_robrock2  SFX
+ST_ROBO_NET            MAKE_SEQ pat_netthrow  SFX
+ST_ROBO_ZAP_HIT        MAKE_SEQ pat_rockhit   SFX
+ST_ROBO_DROP           MAKE_SEQ pat_robtele   SFX
+ST_ROBO_CLANG1         MAKE_SEQ pat_robball1  SFX
+ST_ROBO_CLANG2         MAKE_SEQ pat_robball2  SFX
+ST_ROBO_BALL_BOOM      MAKE_SEQ pat_robxplod  SFX
+ST_ROBO_CHEST_OPEN     MAKE_SEQ pat_robclik   SFX
+ST_ROBO_TARGET         MAKE_SEQ pat_robowarn  SFX
+ST_ROBO_EXPLODE        MAKE_SEQ pat_robxpld2  SFX
+ST_ROBO_IMPLODE        MAKE_SEQ pat_robimpld  SFX
+ST_ROBO_SPARK1         MAKE_SEQ pat_robshk1   SFX
+ST_ROBO_SPARK2         MAKE_SEQ pat_robshk2   SFX
+ST_ROBO_SPARK3         MAKE_SEQ pat_robshk3   SFX
+ST_ROBO_SPEECH1        MAKE_SEQ pat_robtalk1  SFX
+ST_ROBO_SPEECH2        MAKE_SEQ pat_robtalk2  SFX
+ST_ROBO_SPEECH3        MAKE_SEQ pat_robtalk1  SFX
+ST_ROBO_SPEECH4        MAKE_SEQ pat_netblk    SFX
+ST_ROBO_SPEAR          MAKE_SEQ pat_bigstab2  SFX
+ST_ROBO_CRSH_SMOOSH2   MAKE_SEQ pat_scorthr1  SFX ;new
+
+;fatal_robo
+FT_ROBO_CRSH_OUT       MAKE_SEQ pat_robpres1  SFX ;new
+FT_ROBO_CRSH_DOWN      MAKE_SEQ pat_robpres2  SFX ;new
+FT_ROBO_CRSH_SMOOSH1   MAKE_SEQ pat_bodsmsh1  SFX ;new
+FT_ROBO_CRSH_SMOOSH2   MAKE_SEQ pat_scorthr1  SFX ;new
+FT_ROBO_BEEP           MAKE_SEQ pat_beep1     SFX ;new
+FT_ROBO_SELF_DESTRUCT  MAKE_SEQ pat_compfx1   SFX ;new
+FT_ROBO_DESTRUCT_LAFF  MAKE_SEQ pat_roblaff   SFX ;new
+FT_ROBO_WHIRL          MAKE_SEQ pat_whirl1    SFX ;new
+FT_ROBO_QUAKE          MAKE_SEQ pat_quake1    SFX ;new
+FT_ROBO_BAT            MAKE_SEQ pat_bird      SFX ;new
+FT_ROBO_SLIDE          MAKE_SEQ pat_slide     SFX ;new
+FT_ROBO_HORN           MAKE_SEQ pat_horn      SFX ;new
+
+;st_lao
+ST_LAO_ANGLE           MAKE_SEQ pat_lkflykck  SFX
+ST_LAO_HAT_THROW       MAKE_SEQ pat_kungthrw  SFX
+ST_LAO_HAT_HIT         MAKE_SEQ pat_sawhit    SFX
+ST_LAO_HAT_BLK         MAKE_SEQ pat_sawhit    SFX
+ST_LAO_TELE            MAKE_SEQ pat_robtele   SFX
+ST_LAO_THROW           MAKE_SEQ pat_dfklthro  SFX
+
+;fatal_lao
+FT_LAO_TORNADO         MAKE_SEQ pat_whirl1    SFX ;new
+FT_LAO_QUAKE           MAKE_SEQ pat_quake1    SFX ;new
+FT_LAO_TORNADO_HIT     MAKE_SEQ pat_sawhit    SFX
+
+;st_tusk
+ST_TUSK_ZAP            MAKE_SEQ pat_fballhit  SFX
+ST_TUSK_CANNON         MAKE_SEQ pat_cabalgun  SFX
+ST_TUSK_BLURR          MAKE_SEQ pat_eblrun    SFX ;cblrush  ;fake
+ST_TUSK_FLIP1          MAKE_SEQ pat_hicwhsh   SFX
+ST_TUSK_FLIP2          MAKE_SEQ pat_locwhsh   SFX
+ST_TUSK_SAW            MAKE_SEQ pat_sawhit    SFX
+ST_TUSK_REFLECT        MAKE_SEQ pat_salrflc2  SFX
+
+;fatal_tusk
+FT_TUSK_BUBBLE         MAKE_SEQ pat_bubble1   SFX ;new
+FT_TUSK_GROW           MAKE_SEQ pat_headgrow  SFX ;new
+FT_TUSK_HEAD_SCREAM    MAKE_SEQ pat_cblscrm   SFX ;new
+FT_TUSK_BURN           MAKE_SEQ pat_fireloop  SFX
+
+;st_sg
+ST_SG_TELE             MAKE_SEQ pat_shevtele  SFX
+ST_SG_POUNCE           MAKE_SEQ pat_bigbslam  SFX
+ST_SG_ZAP_HIT          MAKE_SEQ pat_forcehit  SFX
+ST_SG_ZAP              MAKE_SEQ pat_sonyafly  SFX
+ST_SG_ZAP_START        MAKE_SEQ pat_robtele   SFX
+
+;fatal_sg
+FT_SG_KLANG            MAKE_SEQ pat_mhit2     SFX ;new
+FT_SG_SPIN             MAKE_SEQ pat_whirl1    SFX ;new
+
+;st_shang
+ST_ST_CANNON           MAKE_SEQ pat_jaxcann   SFX
+ST_ST_SUMMON           MAKE_SEQ pat_stfireup  SFX
+ST_ST_FIRE_HIT         MAKE_SEQ pat_fballhit  SFX
+ST_ST_SKULL            MAKE_SEQ pat_sonforce  SFX
+ST_ST_MORPH            MAKE_SEQ pat_stmorph   SFX
+ST_ST_FLIP             MAKE_SEQ pat_gudfall4  SFX
+ST_ST_FIRE_BLK         MAKE_SEQ pat_fballhit  SFX
+
+;fatal_shang
+FT_ST_SWORD            MAKE_SEQ pat_swords    SFX ;new
+FT_ST_CLOUD            MAKE_SEQ pat_stcloud1  SFX ;new;multi with stcloud2 & 3
+FT_ST_BONES            MAKE_SEQ pat_bones     SFX
+
+;st_lk
+ST_LK_FIRE             MAKE_SEQ pat_lkfball   SFX
+ST_LK_FIRE_HIT         MAKE_SEQ pat_axhit     SFX
+ST_LK_SUPER_KICK       MAKE_SEQ pat_sonyafly  SFX
+ST_LK_FIRE_BLK         MAKE_SEQ pat_axhit     SFX
+ST_LK_BIKE             MAKE_SEQ pat_lkcycle   SFX
+ST_LK_FLY_YELL         MAKE_SEQ pat_lkflyink  SFX
+
+;fatal_lk
+FT_LK_FLAME_MORPH      MAKE_SEQ pat_flmorph   SFX ;new
+FT_LK_RUN              MAKE_SEQ pat_lkrun     SFX
+FT_LK_SLAM             MAKE_SEQ pat_bigbslam  SFX
+
+;st_motaro
+ST_MOT_EFF1            MAKE_SEQ pat_centaur1  SFX
+ST_MOT_EFF2            MAKE_SEQ pat_centaur2  SFX
+ST_MOT_EFF3            MAKE_SEQ pat_hboss1    SFX
+ST_MOT_HIT1            MAKE_SEQ pat_hhit1     SFX
+ST_MOT_HIT2            MAKE_SEQ pat_hhit2     SFX
+ST_MOT_FIRE            MAKE_SEQ pat_cabalgun  SFX
+
+;st_sk
+ST_SK_SHOULDER         MAKE_SEQ pat_salrush   SFX
+ST_SK_PHOTON           MAKE_SEQ pat_cabalgun  SFX
+ST_SK_KLANG1           MAKE_SEQ pat_mhit1     SFX ;new
+ST_SK_KLANG2           MAKE_SEQ pat_mhit2     SFX ;new
+ST_SK_LAUGH1           MAKE_SEQ pat_sklaff3   SFX
+ST_SK_LAUGH2           MAKE_SEQ pat_sklaff4   SFX
+ST_SK_LAUGH3           MAKE_SEQ pat_sklaff5   SFX
+ST_SK_PATHETIC         MAKE_SEQ pat_skpathet  SFX ;new
+ST_SK_NEVER_WIN        MAKE_SEQ pat_sknvrwin  SFX
+ST_SK_STILL_TRYING     MAKE_SEQ pat_sktrying  SFX ;new
+ST_SK_DONT_LAUGH       MAKE_SEQ pat_skdntlaf  SFX ;new
+
+
+;During Fight
+TS_DF_TOASTY           MAKE_SEQ pat_dftosty   SFX
+TS_CROWD_OOO           MAKE_SEQ pat_oooh      SFX
+TS_SK_SUBERB           MAKE_SEQ pat_sksuperb  SFX
+TS_SK_WELL_DONE        MAKE_SEQ pat_skweldon  SFX
+TS_SK_FIN_HIM          MAKE_SEQ pat_skfinhim  SFX
+TS_SK_FIN_HER          MAKE_SEQ pat_skfinher  SFX
+TS_RNDHOUSE            MAKE_SEQ pat_rhouse    SFX
+TS_CLOCK_TICK          MAKE_SEQ pat_timeout1  SFX
+;Subway Background
+;Fight Intro
+;Swat
+TS_EXP_ST1             MAKE_SEQ pat_strtboom  SFX
+;Subway Background
+;Swat
+TS_EXP_ST2             MAKE_SEQ pat_strtboom  SFX ;SSP strtbum2
+
+
+;Ladder (1 Player select) Screen
+;Player Select Screen
+TS_ROCK_MOVE           MAKE_SEQ pat_srock     SFX
+TS_DRAGON_SPIN         MAKE_SEQ pat_swhoosh   SFX
+TS_CHURCH_BELL         MAKE_SEQ pat_bell      SFX
+
+;Buyin Attract Mode Screen
+TS_BIGDOOR_CLOSE       MAKE_SEQ pat_doorslid  SFX
+TS_BIGDOOR_SLAM        MAKE_SEQ pat_newdoor   SFX
+
+TS_P1_CURS             MAKE_SEQ pat_ncurs1    SFX
+TS_P2_CURS             MAKE_SEQ pat_ncurs2    SFX
+TS_P1_PICKED           MAKE_SEQ pat_picked1   SFX
+TS_P2_PICKED           MAKE_SEQ pat_picked2   SFX
+
+TS_SK_KANO             MAKE_SEQ pat_skkano    SFX
+TS_SK_SONYA            MAKE_SEQ pat_sksonya   SFX
+TS_SK_JAX              MAKE_SEQ pat_skjax     SFX
+TS_SK_NIGHTWOLF        MAKE_SEQ pat_sknitwlf  SFX
+TS_SK_SUBZERO          MAKE_SEQ pat_sksubz    SFX
+TS_SK_STRYKER          MAKE_SEQ pat_skstrkr2  SFX
+TS_SK_SINDEL           MAKE_SEQ pat_sksindel  SFX
+TS_SK_SEKTOR           MAKE_SEQ pat_sksector  SFX
+TS_SK_CYRAX            MAKE_SEQ pat_skcyrax   SFX
+TS_SK_LAO              MAKE_SEQ pat_skknglao  SFX
+TS_SK_KABAL            MAKE_SEQ pat_skcabal   SFX
+TS_SK_SHEEVA           MAKE_SEQ pat_sksheeva  SFX
+TS_SK_ST               MAKE_SEQ pat_skshang   SFX
+TS_SK_LKANG            MAKE_SEQ pat_skliukng  SFX
+TS_SK_MOTARO           MAKE_SEQ pat_skmotaro  SFX
+TS_SK_SMOKE            MAKE_SEQ pat_sksmoke   SFX
+
+TS_MAP_ZOOM            MAKE_SEQ pat_mrtlwhsh  SFX
+TS_SK_EXCELLENT        MAKE_SEQ pat_skexelnt  SFX
+TS_SK_NEVER_WIN        MAKE_SEQ pat_sknvrwin  SFX
+TS_SK_OUTSTANDING      MAKE_SEQ pat_skoutstd  SFX
+
+
+;triple_sndtab
+TS_COIN_SND            MAKE_SEQ pat_skoutstd  SFX
+TS_DF_CRISPY           MAKE_SEQ pat_dfcrispy  SFX
+TS_SHOCK               MAKE_SEQ pat_kanlasrl  SFX
+TS_FLAME               MAKE_SEQ pat_mfirebal  SFX
+TS_BURNING             MAKE_SEQ pat_ignite    SFX
+TS_BONES               MAKE_SEQ pat_bones     SFX
+TS_SK_ITS_OFFICIAL     MAKE_SEQ pat_skyousuk  SFX ;new
+
+;Initials
+TS_DF_FROSTY           MAKE_SEQ pat_dfrosty   SFX
+
+;After Fight
+TS_SK_FLAWLESS         MAKE_SEQ pat_skflawls  SFX
+TS_SK_FATALITY         MAKE_SEQ pat_skfatal   SFX
+TS_SK_ANIMALITY        MAKE_SEQ pat_skanimal  SFX
+TS_SK_BABALITY         MAKE_SEQ pat_skbabal   SFX
+TS_SK_CRISPY           MAKE_SEQ pat_skcrispy  SFX
+TS_SK_FROSTY           MAKE_SEQ pat_skfrost   SFX
+TS_SK_FRIEND           MAKE_SEQ pat_skfrend1  SFX
+TS_SK_FRIEND1          MAKE_SEQ pat_skfrend2  SFX
+TS_SK_AGAIN            MAKE_SEQ pat_skagain   SFX
+TS_SK_TOASTYH          MAKE_SEQ pat_sktoasth  SFX
+TS_SK_TOASTYL          MAKE_SEQ pat_sktoastl  SFX
+TS_SK_OMAW             MAKE_SEQ pat_skohmaw   SFX
+TS_SK_LAUGH1           MAKE_SEQ pat_sklaff1   SFX
+TS_SK_LAUGH2           MAKE_SEQ pat_sklaff2   SFX
+TS_SK_LAUGH3           MAKE_SEQ pat_sklaff3   SFX
+TS_DANGER              MAKE_SEQ pat_danger    SFX
+
+;Street Background
+;Bridge Background
+TS_WIND                MAKE_SEQ pat_windloop  SFX
+
+;unknown so we put in an alert me sound
+TS_WHOOSH1             MAKE_SEQ pat_whoosh1   SFX
+TS_WHOOSH3             MAKE_SEQ pat_whoosh3   SFX
+
+TS_PIT_MACH1           MAKE_SEQ pat_machmix   SFX ;new
+TS_PIT_MACH2           MAKE_SEQ pat_bodsmsh1  SFX ;new
+TS_CRUNCH1             MAKE_SEQ pat_crunch1   SFX
+TS_CRUNCH2             MAKE_SEQ pat_kneebrk   SFX ;new
+
+TS_ANIM_SIZZLE         MAKE_SEQ pat_hissmix   SFX ;new
+TS_ANIM_SIZZLE1        MAKE_SEQ pat_maul      SFX ;new
+TS_ANIM_MORPH          MAKE_SEQ pat_stmorph   SFX
+TS_ANIM_BONUS          MAKE_SEQ pat_maul      SFX ;new
+
+TS_ANIM_ROAR           MAKE_SEQ pat_anmlroar  SFX ;new
+
+TS_SK_CHOOSE           MAKE_SEQ pat_skdestin  SFX ;new
+;TS_PLAY_BUY            MAKE_SEQ pat_cooltend  SFX ;new
+
+TS_MUSIC_MERCY         MAKE_SEQ pat_mercyhit  SFX ;new
+
+TS_NASTY_GOO           MAKE_SEQ pat_spinerip  SFX ;new
+TS_FLAWLESS_TONE       MAKE_SEQ pat_attrct2a  SFX ;new
+
+TS_SK_LAST_HIT         MAKE_SEQ pat_roldbig1  SFX
+
+TS_HGAME_FIRE          MAKE_SEQ pat_cabalgun  SFX
+
+TS_SUB_APPROACH        MAKE_SEQ pat_subway4   SFX ;new
+TS_SUB_STEADY          MAKE_SEQ pat_subway2   SFX ;new
+TS_SUB_GOING           MAKE_SEQ pat_subway3   SFX ;new
+
+TS_FINAL_DEATH         MAKE_SEQ pat_quake1    SFX
+TS_SK_DEATH            MAKE_SEQ pat_skdiemix  SFX ;new
+TS_DEATH_QUAKE         MAKE_SEQ pat_quake1    SFX
+
+TS_DOG                 MAKE_SEQ pat_dogyip    SFX ;new
+TS_DOG_OUCH            MAKE_SEQ pat_dogwhine  SFX ;new
+TS_BABY_POOF           MAKE_SEQ pat_robxplod  SFX
+TS_BABY_CRY            MAKE_SEQ pat_baby1     SFX ;new
+
+;*******************************************************************
+;new umk3 shit
+
+;ST_ROBO_SPEAR		MAKE_SEQ pat_scorthr1  SFX		
+ST_ROBO_PROPELL		MAKE_SEQ pat_smokwhsh  SFX
+ST_SCORP_COME		MAKE_SEQ pat_scorcome  SFX
+ST_SCORP_GET		MAKE_SEQ pat_scorget   SFX
+ST_SCORP_SPEAR		MAKE_SEQ pat_scorthr1  SFX
+ST_SCORP_TELE		MAKE_SEQ pat_shevtele  SFX
+ST_SCORP_STAB		MAKE_SEQ pat_bigstab1  SFX
+ST_SCORP_MASK		MAKE_SEQ pat_scormask  SFX
+ST_OSZ_IBLOCK		MAKE_SEQ pat_icehit    SFX
+ST_OSZ_ICEHIT		MAKE_SEQ pat_subzturd  SFX
+ST_REP_EXP		MAKE_SEQ pat_bigboom   SFX
+ST_REP_SLIDE		MAKE_SEQ pat_szslide   SFX
+ST_REP_INVISO		MAKE_SEQ pat_robxpld2  SFX
+ST_REP_SPIT	   	MAKE_SEQ pat_reptproj  SFX
+ST_ERMAC_POOF		MAKE_SEQ pat_robxplod  SFX
+ST_OSZ_ICEUP		MAKE_SEQ pat_sziceup   SFX
+ST_ERMAC_HIT		MAKE_SEQ pat_forcehit  SFX
+ST_OSZ_FLOOR		MAKE_SEQ pat_szicedwn  SFX
+ST_ERMAC_FLOOR		MAKE_SEQ pat_quake1    SFX
+ST_REP_SIZZLE		MAKE_SEQ pat_robsprk9  SFX
+ST_REP_ORB    		MAKE_SEQ pat_reporb41  SFX
+ST_REP_VOMIT		MAKE_SEQ pat_stfireup  SFX
+ST_KIT_THROW		MAKE_SEQ pat_n1thrfan  SFX
+ST_KIT_FANH		MAKE_SEQ pat_nfanhit   SFX
+ST_KIT_FANL		MAKE_SEQ pat_girlshrt  SFX
+ST_KIT_KISS		MAKE_SEQ pat_mfirebal  SFX
+ST_JADE_ARROW		MAKE_SEQ pat_bappear   SFX
+ST_JADE_ZAP		MAKE_SEQ pat_faxhit    SFX
+ST_JADE_PROP		MAKE_SEQ pat_jadekck   SFX
+ST_JADE_TELE		MAKE_SEQ pat_shevtele  SFX
+ST_MIL_SAI		MAKE_SEQ pat_throtsai  SFX
+ST_MIL_HIT		MAKE_SEQ pat_forcehit  SFX
+ST_MIL_ROLL		MAKE_SEQ pat_lkfball   SFX
+ST_MIL_CLOUD		MAKE_SEQ pat_stcloud1  SFX
+ST_JADE_FLASH		MAKE_SEQ pat_jadeflck  SFX
+					       
+TS_SK_KITANA		MAKE_SEQ pat_kitana    SFX
+TS_SK_JADE		MAKE_SEQ pat_jade      SFX
+TS_SK_MILEENA		MAKE_SEQ pat_malena    SFX
+TS_SK_SCORP		MAKE_SEQ pat_scorpion  SFX
+TS_SK_REPTILE		MAKE_SEQ pat_reptile   SFX
+TS_SK_ERMAC		MAKE_SEQ pat_skermac   SFX
+TS_SK_RAIN		MAKE_SEQ pat_skrain    SFX
+TS_SK_NOOB		MAKE_SEQ pat_sknoob    SFX
+TS_SK_RAIDEN		MAKE_SEQ pat_skraiden  SFX
+TS_SK_BARAKA		MAKE_SEQ pat_skbaraka  SFX
+					       
+TS_BURNING_FLAMES	MAKE_SEQ pat_bldcrnch  SFX
+TS_LAVA_SIZZLE		MAKE_SEQ pat_robsprk9  SFX
+TS_KISS			MAKE_SEQ pat_kiss      SFX
+TS_CURSOR_MOVE		MAKE_SEQ pat_crunch2   SFX
+TS_CURSOR_PICK		MAKE_SEQ pat_bigbslam  SFX
+;TS_COIN_SND		MAKE_SEQ pat_dftosty   SFX
+;TS_MONKEY		MAKE_SEQ pat_	       SFX
+;TS_FROG		MAKE_SEQ pat_	       SFX
+;TS_TABLET_MOVE	new	MAKE_SEQ pat_	       SFX
+
+TS_TREE_ROAR		MAKE_SEQ pat_treeroar  SFX
+TS_SPLASH		MAKE_SEQ pat_splash    SFX
+TS_BUBBLE		MAKE_SEQ pat_bubble    SFX
+TS_OH_MAW		MAKE_SEQ pat_ohmaw     SFX
+TS_VORTEX1		MAKE_SEQ pat_vsprk1    SFX
+TS_VORTEX2		MAKE_SEQ pat_vsprk2    SFX
+;TS_PONG_SCORED		MAKE_SEQ pat_lkspink   SFX
+;TS_PONG_BALL		MAKE_SEQ pat_lkreact1  SFX
+;TS_PONG_PADDLE		MAKE_SEQ pat_lkreact2  SFX
+;*******************************************************************
+
+TS_SWORD_EJECT		MAKE_SEQ pat_knifejec  SFX		
+ST_SA_SWORD		MAKE_SEQ pat_knifplng  SFX		
+ST_SA_SPARK		MAKE_SEQ pat_barthrow  SFX		
+ST_SA_SPARKH		MAKE_SEQ pat_bigstab3  SFX		
+ST_SA_SPARKB		MAKE_SEQ pat_bigstab3  SFX		
+
+FT_RD_DEATH_ZAP		MAKE_SEQ pat_raidkill  SFX		
+ST_RD_THROW_LIGHT	MAKE_SEQ pat_sprkthro  SFX		
+ST_RD_TELEPORT		MAKE_SEQ pat_rtele     SFX		
+ST_RD_GETUP		MAKE_SEQ pat_rgetup    SFX		
+ST_RD_DIVE		MAKE_SEQ pat_rdive     SFX		
+ST_RD_BBB		MAKE_SEQ pat_gib1      SFX		
+ST_RD_SSS		MAKE_SEQ pat_gib2      SFX		
+ST_RD_TTT		MAKE_SEQ pat_gib3      SFX		
+ST_RD_NGBAS		MAKE_SEQ pat_gib4      SFX		
+ST_RD_SWALL		MAKE_SEQ pat_rsmak     SFX		
+ST_RD_KIDD		MAKE_SEQ pat_lightng   SFX		
+
+;*******************************************************************
+
+ST_RD_LIGHT_HIT		READ_MIDI ../mid2/sparkh.mid
+ST_RD_LIGHT_BLOCKED	READ_MIDI ../mid2/sparkbl.mid
+ST_RD_FRY		READ_MIDI ../mid2/holdfry.mid
+;*******************************************************************
+TEAM1_W		       READ_MIDI ../mid2/team1_w.mid
+TEAM2_W		       READ_MIDI ../mid2/team2_w.mid
+JCAGE_S		       READ_MIDI ../mid2/jcag_s.mid
+JCAGE_W		       READ_MIDI ../mid2/jcag_w.mid
+KAMEL_S		       READ_MIDI ../mid2/kam_s.mid
+KAMEL_W		       READ_MIDI ../mid2/kam_w.mid
+BARAKA_S 	       READ_MIDI ../mid2/baraka_s.mid
+BARAKA_W 	       READ_MIDI ../mid2/baraka_w.mid
+CABAL_S  	       READ_MIDI ../mid2/cabal_s.mid 
+CABAL_W  	       READ_MIDI ../mid2/cabal_w.mid 
+CYRAX_S  	       READ_MIDI ../mid2/cyrax_s.mid 
+CYRAX_W  	       READ_MIDI ../mid2/cyrax_w.mid 
+ERMAC_S  	       READ_MIDI ../mid2/ermac_s.mid 
+ERMAC_W  	       READ_MIDI ../mid2/ermac_w.mid 
+JADE_S   	       READ_MIDI ../mid2/jade_s.mid  
+JADE_W   	       READ_MIDI ../mid2/jade_w.mid  
+JAX_S    	       READ_MIDI ../mid2/jax_s.mid   
+JAX_W    	       READ_MIDI ../mid2/jax_w.mid   
+MOTAR_S  	       READ_MIDI ../mid2/motar_s.mid 
+MOTAR_W  	       READ_MIDI ../mid2/motar_w.mid 
+NITWLF_S 	       READ_MIDI ../mid2/nitwlf_s.mid
+NITWLF_W 	       READ_MIDI ../mid2/nitwlf_w.mid
+RAIDEN_S 	       READ_MIDI ../mid2/raiden_s.mid
+RAIDEN_W 	       READ_MIDI ../mid2/raiden_w.mid
+RAIN_S   	       READ_MIDI ../mid2/rain_s.mid  
+RAIN_W   	       READ_MIDI ../mid2/rain_w.mid  
+REPT_S   	       READ_MIDI ../mid2/rept_s.mid  
+REPT_W   	       READ_MIDI ../mid2/rept_w.mid  
+SCORP_S  	       READ_MIDI ../mid2/scorp_s.mid 
+SCORP_W  	       READ_MIDI ../mid2/scorp_w.mid 
+SECTOR_S 	       READ_MIDI ../mid2/sector_s.mid
+SECTOR_W 	       READ_MIDI ../mid2/sector_w.mid
+SHANG_S  	       READ_MIDI ../mid2/shang_s.mid 
+SHANG_W  	       READ_MIDI ../mid2/shang_w.mid 
+SHEEV_S  	       READ_MIDI ../mid2/sheev_s.mid 
+SHEEV_W  	       READ_MIDI ../mid2/sheev_w.mid 
+SINDEL_S 	       READ_MIDI ../mid2/sindel_s.mid
+SINDEL_W 	       READ_MIDI ../mid2/sindel_w.mid
+SMOKE_S  	       READ_MIDI ../mid2/smoke_s.mid 
+SMOKE_W  	       READ_MIDI ../mid2/smoke_w.mid 
+KANO_S   	       READ_MIDI ../mid2/kano_s.mid  
+KANO_W   	       READ_MIDI ../mid2/kano_w.mid  
+KITANA_S 	       READ_MIDI ../mid2/kitana_s.mid
+KITANA_W 	       READ_MIDI ../mid2/kitana_w.mid
+KUNG_S   	       READ_MIDI ../mid2/kung_s.mid  
+KUNG_W   	       READ_MIDI ../mid2/kung_w.mid  
+LIUK_S   	       READ_MIDI ../mid2/liuk_s.mid  
+LIUK_W   	       READ_MIDI ../mid2/liuk_w.mid  
+MALENA_S 	       READ_MIDI ../mid2/malena_s.mid
+MALENA_W 	       READ_MIDI ../mid2/malena_w.mid
+NOOB_S 	       	       READ_MIDI ../mid2/noob_s.mid
+NOOB_W 	       	       READ_MIDI ../mid2/noob_w.mid
+SONYA_S  	       READ_MIDI ../mid2/sonya_s.mid 
+SONYA_W  	       READ_MIDI ../mid2/sonya_w.mid 
+STRYK_S  	       READ_MIDI ../mid2/stryk_s.mid 
+STRYK_W  	       READ_MIDI ../mid2/stryk_w.mid 
+SUBZ_S   	       READ_MIDI ../mid2/subz_s.mid  
+SUBZ_W   	       READ_MIDI ../mid2/subz_w.mid  
+ 
+RND1		       READ_MIDI ../mid2/rnd1.mid
+RND2		       READ_MIDI ../mid2/rnd2.mid
+RND3		       READ_MIDI ../mid2/rnd3.mid
+RND4		       READ_MIDI ../mid2/rnd4.mid
+RNDFIGHT	       READ_MIDI ../mid2/rndfight.mid
+
+;*******************************************************************
+TS_WINS_TONE           READ_MIDI ../mid/fatal2.mid
+
+TS_FATAL_START         READ_MIDI ../mid/fatal1.mid
+
+TUNE_VERSUS            READ_MIDI ../mid/versussc.mid    
+
+;TUNE_TRAIN             READ_MIDI ../mid/traintun.mid
+
+MUSIC_ANIMALIT 	       READ_MIDI ../mid/animalit.mid
+MUSIC_ANIMEND  	       READ_MIDI ../mid/animend.mid
+MUSIC_BABALITY 	       READ_MIDI ../mid/babality.mid
+MUSIC_FATALITY 	       READ_MIDI ../mid/fatality.mid
+MUSIC_FRIENDSH 	       READ_MIDI ../mid/friendsh.mid
+MUSIC_YOUWINTU 	       READ_MIDI ../mid/youwintu.mid
+
+MUSIC_SELECTSC 	       READ_MIDI ../mid/selectsc.mid
+MUSIC_VERSUSSC 	       READ_MIDI ../mid/versussc.mid
+MUSIC_ONEPLAYE 	       READ_MIDI ../mid/oneplaye.mid
+MUSIC_ENDONEPL 	       READ_MIDI ../mid/endonepl.mid
+
+MUSIC_FASTATTR 	       READ_MIDI ../mid/fastattr.mid
+MUSIC_FASTATT0 	       READ_MIDI ../mid/fastatt0.mid
+
+MUSIC_BANK     	       READ_MIDI ../mid/bank.mid
+MUSIC_BANKEND  	       READ_MIDI ../mid/bankend.mid
+MUSIC_BANKFINI 	       READ_MIDI ../mid/bankfini.mid
+
+MUSIC_BRIDGE   	       READ_MIDI ../mid/bridge.mid
+MUSIC_BRIDGEEN 	       READ_MIDI ../mid/bridgeen.mid
+MUSIC_BRIDGEFI 	       READ_MIDI ../mid/bridgefi.mid
+
+MUSIC_CHURCH   	       READ_MIDI ../mid/church.mid
+MUSIC_CHURCHEN 	       READ_MIDI ../mid/churchen.mid
+MUSIC_CHURCHFI 	       READ_MIDI ../mid/churchfi.mid
+
+MUSIC_GRAVE    	       READ_MIDI ../mid/grave.mid
+MUSIC_GRAVEEND 	       READ_MIDI ../mid/graveend.mid
+MUSIC_GRAVEFIN 	       READ_MIDI ../mid/gravefin.mid
+
+MUSIC_GREEN    	       READ_MIDI ../mid/green.mid
+MUSIC_GREENEND 	       READ_MIDI ../mid/greenend.mid
+MUSIC_GREENFIN 	       READ_MIDI ../mid/greenfin.mid
+
+MUSIC_PIT      	       READ_MIDI ../mid/pit.mid
+MUSIC_PITEND   	       READ_MIDI ../mid/pitend.mid
+MUSIC_PITFINIS 	       READ_MIDI ../mid/pitfinis.mid
+
+MUSIC_ROOF     	       READ_MIDI ../mid/roof.mid
+MUSIC_ROOFEND  	       READ_MIDI ../mid/roofend.mid
+MUSIC_ROOFFINI 	       READ_MIDI ../mid/rooffini.mid
+
+MUSIC_SPECIAL  	       READ_MIDI ../mid/special.mid
+MUSIC_SPECIALE 	       READ_MIDI ../mid/speciale.mid
+MUSIC_SPECIALF 	       READ_MIDI ../mid/specialf.mid
+
+MUSIC_STREET   	       READ_MIDI ../mid/street.mid
+MUSIC_STREETEN 	       READ_MIDI ../mid/streeten.mid
+MUSIC_STREETFI 	       READ_MIDI ../mid/streetfi.mid
+
+MUSIC_TRAINTUE 	       READ_MIDI ../mid/traintu0.mid
+MUSIC_TRAINTUF 	       READ_MIDI ../mid/traintu1.mid
+MUSIC_TRAINTUN 	       READ_MIDI ../mid/traintun.mid
+
+MUSIC_BUYIN	       READ_MIDI ../mid/buyin.mid	

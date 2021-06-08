@@ -1,0 +1,28 @@
+	.align 2
+	.globl ladmod1BMOD
+ladmod1BMOD:
+	.half   511,   399
+	.word     5, mod1_BLK, nuladz_HDR, nuladz_CLT
+
+	.align 2
+	.globl mod1_BLK
+mod1_BLK:
+	.half   100,   100,    64, 0x0000,     0
+	.half   100,   220,    64, 0x0000,     1
+	.half   100,   340,    64, 0x0000,     2
+	.half   260,   100,    64, 0x0000,     3
+	.half   260,   220,    64, 0x0000,     4
+
+	.align 2
+	.globl nuladz_HDR
+nuladz_HDR:
+	.half   160,   120
+	.word     0
+	.half   160,   120
+	.word 19200
+	.half   160,    12
+	.word 38400
+	.half   160,   120
+	.word 40320
+	.half   160,   120
+	.word 59520

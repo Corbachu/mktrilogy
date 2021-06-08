@@ -1,0 +1,1 @@
+cc -xansi -I/usr/include/PR -I/usr/proj/cusa/develop/include -O2 -c -g -mips2 -fullwarn -prototypes -Xcpluscomm -non_shared -G 0 -DREDWOOD -nostdinc -I/usr/include -O -MDupdate Makedepend -woff 515,608,658,799,803,1009,1048,1068,1110,1116,1174,1209,1233,1499,1505 -S -c $1

@@ -1,0 +1,307 @@
+	.align 2
+	.globl mk2stars2BMOD
+mk2stars2BMOD:
+	.half  1263,   137
+	.word     8, stars2_BLK, MK2BRIDGE1_HDR, MK2BRIDGE1_CLT
+
+	.align 2
+	.globl stars2_BLK
+stars2_BLK:
+	.half     8,     4,    64, 0x0A20,     1
+	.half   167,     2,    64, 0x0A20,     1
+	.half   325,     2,    64, 0x0A00,     1
+	.half   477,     4,    64, 0x0A30,     1
+	.half   617,     3,    64, 0x0A10,     1
+	.half   775,     2,    64, 0x0A30,     1
+	.half   929,     5,    64, 0x0A30,     1
+	.half  1093,     9,    64, 0x0A30,     1
+
+	.align 2
+	.globl mk2stars1BMOD
+mk2stars1BMOD:
+	.half  1276,   133
+	.word     8, stars1_BLK, MK2BRIDGE1_HDR, MK2BRIDGE1_CLT
+
+	.align 2
+	.globl stars1_BLK
+stars1_BLK:
+	.half     5,     4,    64, 0x0900,     0
+	.half   169,     4,    64, 0x0920,     0
+	.half   334,     4,    64, 0x0910,     0
+	.half   483,     5,    64, 0x0930,     0
+	.half   636,     7,    64, 0x0930,     0
+	.half   803,     7,    64, 0x0910,     0
+	.half   955,     7,    64, 0x0930,     0
+	.half  1108,     7,    64, 0x0910,     0
+
+	.align 2
+	.globl MK2BRIDGE0BMOD
+MK2BRIDGE0BMOD:
+	.half  1297,   782
+	.word    81, MK2BRIDGE0_BLK, MK2BRIDGE1_HDR, MK2BRIDGE1_CLT
+
+	.align 2
+	.globl MK2BRIDGE0_BLK
+MK2BRIDGE0_BLK:
+	.half    27,   128,    64, 0x0600,     2
+	.half    27,   182,    64, 0x0600,     2
+	.half    27,   236,    64, 0x0600,     2
+	.half    27,   290,    64, 0x0600,     2
+	.half    27,   344,    64, 0x0600,     2
+	.half    27,   398,    64, 0x0600,     2
+	.half    27,   452,    64, 0x0600,     2
+	.half    27,   506,    64, 0x0600,     2
+	.half    27,   560,    64, 0x0600,     2
+	.half    27,   614,    64, 0x0600,     2
+	.half    27,   668,    64, 0x0600,     2
+	.half    27,   722,    64, 0x0600,     2
+	.half    28,    74,    64, 0x0600,     3
+	.half    48,    17,    64, 0x0610,     5
+	.half    94,    19,    67, 0x0210,     7
+	.half   199,    19,    67, 0x0210,     7
+	.half   307,    17,    64, 0x0600,     5
+	.half   328,   128,    64, 0x0600,     2
+	.half   328,   182,    64, 0x0600,     2
+	.half   328,   236,    64, 0x0600,     2
+	.half   328,   290,    64, 0x0600,     2
+	.half   328,   344,    64, 0x0600,     2
+	.half   328,   398,    64, 0x0600,     2
+	.half   328,   452,    64, 0x0600,     2
+	.half   328,   506,    64, 0x0600,     2
+	.half   328,   560,    64, 0x0600,     2
+	.half   328,   614,    64, 0x0600,     2
+	.half   328,   668,    64, 0x0600,     2
+	.half   328,   722,    64, 0x0600,     2
+	.half   329,    74,    64, 0x0600,     3
+	.half   349,    17,    64, 0x0610,     5
+	.half   395,    19,    67, 0x0210,     7
+	.half   500,    19,    67, 0x0210,     7
+	.half   608,    17,    64, 0x0600,     5
+	.half   629,   128,    64, 0x0600,     2
+	.half   629,   182,    64, 0x0600,     2
+	.half   629,   236,    64, 0x0600,     2
+	.half   629,   290,    64, 0x0600,     2
+	.half   629,   344,    64, 0x0600,     2
+	.half   629,   398,    64, 0x0600,     2
+	.half   629,   452,    64, 0x0600,     2
+	.half   629,   506,    64, 0x0600,     2
+	.half   629,   560,    64, 0x0600,     2
+	.half   629,   614,    64, 0x0600,     2
+	.half   629,   668,    64, 0x0600,     2
+	.half   629,   722,    64, 0x0600,     2
+	.half   630,    74,    64, 0x0600,     3
+	.half   650,    17,    64, 0x0610,     5
+	.half   698,    19,    67, 0x0200,     7
+	.half   804,    19,    67, 0x0200,     7
+	.half   910,    17,    64, 0x0600,     5
+	.half   931,   128,    64, 0x0600,     2
+	.half   931,   182,    64, 0x0600,     2
+	.half   931,   236,    64, 0x0600,     2
+	.half   931,   290,    64, 0x0600,     2
+	.half   931,   344,    64, 0x0600,     2
+	.half   931,   398,    64, 0x0600,     2
+	.half   931,   452,    64, 0x0600,     2
+	.half   931,   506,    64, 0x0600,     2
+	.half   931,   560,    64, 0x0600,     2
+	.half   931,   614,    64, 0x0600,     2
+	.half   931,   668,    64, 0x0600,     2
+	.half   931,   722,    64, 0x0600,     2
+	.half   932,    74,    64, 0x0600,     3
+	.half   952,    17,    64, 0x0610,     5
+	.half  1000,    19,    67, 0x0200,     7
+	.half  1106,    19,    67, 0x0200,     7
+	.half  1212,    17,    64, 0x0600,     5
+	.half  1233,   128,    64, 0x0600,     2
+	.half  1233,   182,    64, 0x0600,     2
+	.half  1233,   236,    64, 0x0600,     2
+	.half  1233,   290,    64, 0x0600,     2
+	.half  1233,   344,    64, 0x0600,     2
+	.half  1233,   398,    64, 0x0600,     2
+	.half  1233,   452,    64, 0x0600,     2
+	.half  1233,   506,    64, 0x0600,     2
+	.half  1233,   560,    64, 0x0600,     2
+	.half  1233,   614,    64, 0x0600,     2
+	.half  1233,   668,    64, 0x0600,     2
+	.half  1233,   722,    64, 0x0600,     2
+	.half  1234,    74,    64, 0x0600,     3
+
+	.align 2
+	.globl MK2BRIDGE6BMOD
+MK2BRIDGE6BMOD:
+	.half   377,   103
+	.word     4, MK2BRIDGE6_BLK, MK2BRIDGE1_HDR, MK2BRIDGE1_CLT
+
+	.align 2
+	.globl MK2BRIDGE6_BLK
+MK2BRIDGE6_BLK:
+	.half    16,    55,    60, 0x0500,    17
+	.half   154,    72,    60, 0x0500,    23
+	.half   222,     3,    64, 0x0700,    24
+	.half   262,    72,    60, 0x0510,    23
+
+	.align 2
+	.globl MK2BRIDGE5BMOD
+MK2BRIDGE5BMOD:
+	.half   468,    16
+	.word     4, MK2BRIDGE5_BLK, MK2BRIDGE1_HDR, MK2BRIDGE1_CLT
+
+	.align 2
+	.globl MK2BRIDGE5_BLK
+MK2BRIDGE5_BLK:
+	.half     5,     4,    61, 0x0500,    15
+	.half   120,     4,    61, 0x0500,    15
+	.half   235,     4,    61, 0x0500,    15
+	.half   350,     4,    61, 0x0500,    15
+
+	.align 2
+	.globl MK2BRIDGE4BMOD
+MK2BRIDGE4BMOD:
+	.half   576,    22
+	.word     4, MK2BRIDGE4_BLK, MK2BRIDGE1_HDR, MK2BRIDGE1_CLT
+
+	.align 2
+	.globl MK2BRIDGE4_BLK
+MK2BRIDGE4_BLK:
+	.half    12,     8,    64, 0x0400,    13
+	.half   148,     8,    64, 0x0410,    13
+	.half   284,     8,    64, 0x0400,    13
+	.half   420,     8,    64, 0x0410,    13
+
+	.align 2
+	.globl MK2BRIDGE3BMOD
+MK2BRIDGE3BMOD:
+	.half   422,   175
+	.word    12, MK2BRIDGE3_BLK, MK2BRIDGE1_HDR, MK2BRIDGE1_CLT
+
+	.align 2
+	.globl MK2BRIDGE3_BLK
+MK2BRIDGE3_BLK:
+	.half    16,     8,    64, 0x0800,    16
+	.half    75,    69,    64, 0x0800,    18
+	.half   113,    99,    64, 0x0300,    20
+	.half   139,    95,    64, 0x0300,    21
+	.half   163,   113,    64, 0x0300,    22
+	.half   191,    95,    64, 0x0300,    21
+	.half   215,   113,    64, 0x0300,    22
+	.half   243,    95,    64, 0x0300,    21
+	.half   267,   113,    64, 0x0300,    22
+	.half   293,    99,    64, 0x0310,    20
+	.half   315,    69,    64, 0x0810,    18
+	.half   358,     8,    64, 0x0810,    16
+
+	.align 2
+	.globl MK2BRIDGE2BMOD
+MK2BRIDGE2BMOD:
+	.half   886,    32
+	.word    11, MK2BRIDGE2_BLK, MK2BRIDGE1_HDR, MK2BRIDGE1_CLT
+
+	.align 2
+	.globl MK2BRIDGE2_BLK
+MK2BRIDGE2_BLK:
+	.half     9,     9,    64, 0x0400,    10
+	.half    87,     6,    64, 0x0400,    11
+	.half   178,    10,    64, 0x0400,    12
+	.half   260,    11,    64, 0x0400,    14
+	.half   388,     9,    64, 0x0400,    19
+	.half   443,     6,    64, 0x0400,    12
+	.half   503,    15,    64, 0x0400,    14
+	.half   569,    15,    64, 0x0400,    11
+	.half   699,    17,    64, 0x0400,    12
+	.half   766,     9,    64, 0x0400,    19
+	.half   827,    19,    64, 0x0400,    14
+
+	.align 2
+	.globl MK2BRIDGE1BMOD
+MK2BRIDGE1BMOD:
+	.half  1210,   107
+	.word    32, MK2BRIDGE1_BLK, MK2BRIDGE1_HDR, MK2BRIDGE1_CLT
+
+	.align 2
+	.globl MK2BRIDGE1_BLK
+MK2BRIDGE1_BLK:
+	.half     5,     7,    65, 0x0010,     4
+	.half     7,    39,    65, 0x0000,     6
+	.half    85,    25,    65, 0x0110,     9
+	.half    85,    39,    65, 0x0100,     8
+	.half   157,    25,    65, 0x0100,     9
+	.half   157,    39,    65, 0x0110,     8
+	.half   226,    39,    65, 0x0010,     6
+	.half   229,     7,    65, 0x0000,     4
+	.half   304,     7,    65, 0x0010,     4
+	.half   306,    39,    65, 0x0000,     6
+	.half   384,    25,    65, 0x0110,     9
+	.half   384,    39,    65, 0x0100,     8
+	.half   456,    25,    65, 0x0100,     9
+	.half   456,    39,    65, 0x0110,     8
+	.half   525,    39,    65, 0x0010,     6
+	.half   528,     7,    65, 0x0000,     4
+	.half   603,     7,    65, 0x0010,     4
+	.half   605,    39,    65, 0x0000,     6
+	.half   683,    25,    65, 0x0110,     9
+	.half   683,    39,    65, 0x0100,     8
+	.half   755,    25,    65, 0x0100,     9
+	.half   755,    39,    65, 0x0110,     8
+	.half   825,    39,    65, 0x0010,     6
+	.half   827,     7,    65, 0x0000,     4
+	.half   902,     7,    65, 0x0010,     4
+	.half   905,    39,    65, 0x0000,     6
+	.half   982,    25,    65, 0x0110,     9
+	.half   983,    39,    65, 0x0100,     8
+	.half  1054,    25,    65, 0x0100,     9
+	.half  1055,    39,    65, 0x0110,     8
+	.half  1124,    39,    65, 0x0010,     6
+	.half  1126,     7,    65, 0x0000,     4
+
+	.align 2
+	.globl MK2BRIDGE1_HDR
+MK2BRIDGE1_HDR:
+	.half   160,   120
+	.word     0
+	.half   160,   120
+	.word 19200
+	.half    48,    54
+	.word 38400
+	.half    48,    54
+	.word 40992
+	.half    80,    32
+	.word 43584
+	.half    48,    57
+	.word 46144
+	.half    80,    20
+	.word 48880
+	.half   108,    36
+	.word 50480
+	.half    72,    20
+	.word 54368
+	.half    72,    14
+	.word 55808
+	.half    72,    12
+	.word 56816
+	.half   104,    13
+	.word 57680
+	.half    88,    11
+	.word 59032
+	.half   136,    12
+	.word 60000
+	.half    56,     7
+	.word 61632
+	.half   116,    10
+	.word 62024
+	.half    60,   161
+	.word 63184
+	.half   140,    44
+	.word 72848
+	.half    44,   100
+	.word 79008
+	.half    72,    14
+	.word 83408
+	.half    28,    10
+	.word 84416
+	.half    52,    18
+	.word 84696
+	.half     4,    56
+	.word 85632
+	.half   112,    28
+	.word 85856
+	.half    52,    43
+	.word 88992

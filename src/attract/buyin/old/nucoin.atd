@@ -1,0 +1,20 @@
+coin_anims:
+	.word a_coin
+a_coin:
+	.word CP_MK1
+	.word CP_MK2
+	.word CP_MK3
+	.word CP_UMK3
+	.word 0
+CP_MK1:
+	.word CP_MK1_IMG
+	.half 43, 66, -11, -89
+CP_MK2:
+	.word CP_MK2_IMG
+	.half 29, 62, -89, -96
+CP_MK3:
+	.word CP_MK3_IMG
+	.half 61, 65, -166, -85
+CP_UMK3:
+	.word CP_UMK3_IMG
+	.half 69, 64, -242, -79

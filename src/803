@@ -1,0 +1,1699 @@
+		LINK EDITOR MEMORY MAP
+
+
+output		input		virtual
+section		section		address		size
+
+.kernel.text                    80001050           86ec0
+		.text           80001050           84b90 seggamecode.o
+		.text           80085be0              d0 /usr/lib/PR/rspboot.o
+		.text           80085cb0            1400 /usr/lib/PR/gspFast3D.o
+		.text           800870b0             e60 /usr/lib/PR/aspMain.o
+
+.kernel.data                    80087f10           59330
+		.data           80087f10           568e0 seggamecode.o
+		.rodata         800de7f0            17d0 seggamecode.o
+		.data           800dffc0               0 /usr/lib/PR/rspboot.o
+		.data           800dffc0             fc0 /usr/lib/PR/gspFast3D.o
+		.data           800e0f80             2c0 /usr/lib/PR/aspMain.o
+
+.kernel.sdata                   800e1240               0
+
+.kernel.sbss                    800e1240               0
+
+.kernel.bss                     800e1240          150750
+		.bss            800e1240          150750 seggamecode.o
+
+.dstack.text                    802319c0               0
+
+.dstack.data                    802319c0               0
+
+.dstack.sdata                   802319c0               0
+
+.dstack.sbss                    802319c0               0
+
+.dstack.bss                     802319c0             400
+		.bss            802319c0             400 dstack.o
+
+.pheap.text                     80231dc0               0
+
+.pheap.data                     80231dc0               0
+
+.pheap.sdata                    80231dc0               0
+
+.pheap.sbss                     80231dc0               0
+
+.pheap.bss                      80231dc0          1247b0
+		.bss            80231dc0          1247b0 playerheap.o
+
+.framebuffer.text               80356580               0
+
+.framebuffer.data               80356580               0
+
+.framebuffer.sdata              80356580               0
+
+.framebuffer.sbss               80356580               0
+
+.framebuffer.bss                80356580           4b000
+		.bss            80356580           4b000 framebufs.o
+
+.arenacod.text                  803b2f70             5e0
+		.text           803b2f70             5e0 arenacod.o
+
+.arenacod.data                  803b3550            7f40
+		.data           803b3550            7f40 arenacod.o
+
+.arenacod.sdata                 803bb490               0
+
+.arenacod.sbss                  803bb490               0
+
+.arenacod.bss                   803bb490              10
+		.bss            803bb490              10 arenacod.o
+
+.arenatxt.text                         0               0
+
+.arenatxt.data                         0            4140
+		.data                  0            4140 arenatxt.o
+
+.arenatxt.sdata                     4140               0
+
+.arenatxt.sbss                      4140               0
+
+.arenatxt.bss                       4140               0
+
+.arenaflr.text                         0               0
+
+.arenaflr.data                         0            6f20
+		.data                  0            6f20 arenaflr.o
+
+.arenaflr.sdata                     6f20               0
+
+.arenaflr.sbss                      6f20               0
+
+.arenaflr.bss                       6f20               0
+
+.armorcod.text                  803b2f70             880
+		.text           803b2f70             880 armorcod.o
+
+.armorcod.data                  803b37f0            46c0
+		.data           803b37f0            46c0 armorcod.o
+
+.armorcod.sdata                 803b7eb0               0
+
+.armorcod.sbss                  803b7eb0               0
+
+.armorcod.bss                   803b7eb0              10
+		.bss            803b7eb0              10 armorcod.o
+
+.armortxt.text                         0               0
+
+.armortxt.data                         0           122b0
+		.data                  0           122b0 armortxt.o
+
+.armortxt.sdata                    122b0               0
+
+.armortxt.sbss                     122b0               0
+
+.armortxt.bss                      122b0               0
+
+.armorflr.text                         0               0
+
+.armorflr.data                         0            a190
+		.data                  0            a190 armorflr.o
+
+.armorflr.sdata                     a190               0
+
+.armorflr.sbss                      a190               0
+
+.armorflr.bss                       a190               0
+
+.tombflr.text                          0               0
+
+.tombflr.data                          0            91d0
+		.data                  0            91d0 tombflr.o
+
+.tombflr.sdata                      91d0               0
+
+.tombflr.sbss                       91d0               0
+
+.tombflr.bss                        91d0               0
+
+.battlecod.text                 803b2f70              80
+		.text           803b2f70              80 battlecod.o
+
+.battlecod.data                 803b2ff0             3a0
+		.data           803b2ff0             3a0 battlecod.o
+
+.battlecod.sdata                803b3390               0
+
+.battlecod.sbss                 803b3390               0
+
+.battlecod.bss                  803b3390              10
+		.bss            803b3390              10 battlecod.o
+
+.battletxt.text                        0               0
+
+.battletxt.data                        0            5b90
+		.data                  0            5b90 battletxt.o
+
+.battletxt.sdata                    5b90               0
+
+.battletxt.sbss                     5b90               0
+
+.battletxt.bss                      5b90               0
+
+.battleflr.text                        0               0
+
+.battleflr.data                        0            7690
+		.data                  0            7690 battleflr.o
+
+.battleflr.sdata                    7690               0
+
+.battleflr.sbss                     7690               0
+
+.battleflr.bss                      7690               0
+
+.bellcod.text                   803b2f70             b20
+		.text           803b2f70             b20 bellcod.o
+
+.bellcod.data                   803b3a90            24b0
+		.data           803b3a90            24b0 bellcod.o
+
+.bellcod.sdata                  803b5f40               0
+
+.bellcod.sbss                   803b5f40               0
+
+.bellcod.bss                    803b5f40              10
+		.bss            803b5f40              10 bellcod.o
+
+.belltxt.text                          0               0
+
+.belltxt.data                          0           19060
+		.data                  0           19060 belltxt.o
+
+.belltxt.sdata                     19060               0
+
+.belltxt.sbss                      19060               0
+
+.belltxt.bss                       19060               0
+
+.bellflr.text                          0               0
+
+.bellflr.data                          0            a0d0
+		.data                  0            a0d0 bellflr.o
+
+.bellflr.sdata                      a0d0               0
+
+.bellflr.sbss                       a0d0               0
+
+.bellflr.bss                        a0d0               0
+
+.bridgecod.text                 803b2f70              30
+		.text           803b2f70              30 bridgecod.o
+
+.bridgecod.data                 803b2fa0             3d0
+		.data           803b2fa0             3d0 bridgecod.o
+
+.bridgecod.sdata                803b3370               0
+
+.bridgecod.sbss                 803b3370               0
+
+.bridgecod.bss                  803b3370              10
+		.bss            803b3370              10 bridgecod.o
+
+.bridgetxt.text                        0               0
+
+.bridgetxt.data                        0            cd90
+		.data                  0            cd90 bridgetxt.o
+
+.bridgetxt.sdata                    cd90               0
+
+.bridgetxt.sbss                     cd90               0
+
+.bridgetxt.bss                      cd90               0
+
+.bridgeflr.text                        0               0
+
+.bridgeflr.data                        0            7090
+		.data                  0            7090 bridgeflr.o
+
+.bridgeflr.sdata                    7090               0
+
+.bridgeflr.sbss                     7090               0
+
+.bridgeflr.bss                      7090               0
+
+.cavecod.text                   803b2f70             4f0
+		.text           803b2f70             4f0 cavecod.o
+
+.cavecod.data                   803b3460            2bb0
+		.data           803b3460            2bb0 cavecod.o
+
+.cavecod.sdata                  803b6010               0
+
+.cavecod.sbss                   803b6010               0
+
+.cavecod.bss                    803b6010              10
+		.bss            803b6010              10 cavecod.o
+
+.cavetxt.text                          0               0
+
+.cavetxt.data                          0           11070
+		.data                  0           11070 cavetxt.o
+
+.cavetxt.sdata                     11070               0
+
+.cavetxt.sbss                      11070               0
+
+.cavetxt.bss                       11070               0
+
+.caveflr.text                          0               0
+
+.caveflr.data                          0            8800
+		.data                  0            8800 caveflr.o
+
+.caveflr.sdata                      8800               0
+
+.caveflr.sbss                       8800               0
+
+.caveflr.bss                        8800               0
+
+.hellflr.text                          0               0
+
+.hellflr.data                          0            5400
+		.data                  0            5400 hellflr.o
+
+.hellflr.sdata                      5400               0
+
+.hellflr.sbss                       5400               0
+
+.hellflr.bss                        5400               0
+
+.citycod.text                   803b2f70              50
+		.text           803b2f70              50 citycod.o
+
+.citycod.data                   803b2fc0            1770
+		.data           803b2fc0            1770 citycod.o
+
+.citycod.sdata                  803b4730               0
+
+.citycod.sbss                   803b4730               0
+
+.citycod.bss                    803b4730              10
+		.bss            803b4730              10 citycod.o
+
+.citytxt.text                          0               0
+
+.citytxt.data                          0           16050
+		.data                  0           16050 citytxt.o
+
+.citytxt.sdata                     16050               0
+
+.citytxt.sbss                      16050               0
+
+.citytxt.bss                       16050               0
+
+.cityflr.text                          0               0
+
+.cityflr.data                          0            6f70
+		.data                  0            6f70 cityflr.o
+
+.cityflr.sdata                      6f70               0
+
+.cityflr.sbss                       6f70               0
+
+.cityflr.bss                        6f70               0
+
+.deadcod.text                   803b2f70             430
+		.text           803b2f70             430 deadcod.o
+
+.deadcod.data                   803b33a0            3f60
+		.data           803b33a0            3f60 deadcod.o
+
+.deadcod.sdata                  803b7300               0
+
+.deadcod.sbss                   803b7300               0
+
+.deadcod.bss                    803b7300              10
+		.bss            803b7300              10 deadcod.o
+
+.deadtxt.text                          0               0
+
+.deadtxt.data                          0            fa00
+		.data                  0            fa00 deadtxt.o
+
+.deadtxt.sdata                      fa00               0
+
+.deadtxt.sbss                       fa00               0
+
+.deadtxt.bss                        fa00               0
+
+.desertcod.text                 803b2f70              30
+		.text           803b2f70              30 desertcod.o
+
+.desertcod.data                 803b2fa0             de0
+		.data           803b2fa0             de0 desertcod.o
+
+.desertcod.sdata                803b3d80               0
+
+.desertcod.sbss                 803b3d80               0
+
+.desertcod.bss                  803b3d80              10
+		.bss            803b3d80              10 desertcod.o
+
+.deserttxt.text                        0               0
+
+.deserttxt.data                        0            a9e0
+		.data                  0            a9e0 deserttxt.o
+
+.deserttxt.sdata                    a9e0               0
+
+.deserttxt.sbss                     a9e0               0
+
+.deserttxt.bss                      a9e0               0
+
+.desertflr.text                        0               0
+
+.desertflr.data                        0            5940
+		.data                  0            5940 desertflr.o
+
+.desertflr.sdata                    5940               0
+
+.desertflr.sbss                     5940               0
+
+.desertflr.bss                      5940               0
+
+.gravecod.text                  803b2f70             2a0
+		.text           803b2f70             2a0 gravecod.o
+
+.gravecod.data                  803b3210            b390
+		.data           803b3210            b390 gravecod.o
+
+.gravecod.sdata                 803be5a0               0
+
+.gravecod.sbss                  803be5a0               0
+
+.gravecod.bss                   803be5a0              10
+		.bss            803be5a0              10 gravecod.o
+
+.gravetxt.text                         0               0
+
+.gravetxt.data                         0            b920
+		.data                  0            b920 gravetxt.o
+
+.gravetxt.sdata                     b920               0
+
+.gravetxt.sbss                      b920               0
+
+.gravetxt.bss                       b920               0
+
+.graveflr.text                         0               0
+
+.graveflr.data                         0            7590
+		.data                  0            7590 graveflr.o
+
+.graveflr.sdata                     7590               0
+
+.graveflr.sbss                      7590               0
+
+.graveflr.bss                       7590               0
+
+.hportcod.text                  803b2f70             140
+		.text           803b2f70             140 hportcod.o
+
+.hportcod.data                  803b30b0             e80
+		.data           803b30b0             e80 hportcod.o
+
+.hportcod.sdata                 803b3f30               0
+
+.hportcod.sbss                  803b3f30               0
+
+.hportcod.bss                   803b3f30              10
+		.bss            803b3f30              10 hportcod.o
+
+.hporttxt.text                         0               0
+
+.hporttxt.data                         0            75f0
+		.data                  0            75f0 hporttxt.o
+
+.hporttxt.sdata                     75f0               0
+
+.hporttxt.sbss                      75f0               0
+
+.hporttxt.bss                       75f0               0
+
+.lostcod.text                   803b2f70              40
+		.text           803b2f70              40 lostcod.o
+
+.lostcod.data                   803b2fb0             b30
+		.data           803b2fb0             b30 lostcod.o
+
+.lostcod.sdata                  803b3ae0               0
+
+.lostcod.sbss                   803b3ae0               0
+
+.lostcod.bss                    803b3ae0              10
+		.bss            803b3ae0              10 lostcod.o
+
+.losttxt.text                          0               0
+
+.losttxt.data                          0            9ed0
+		.data                  0            9ed0 losttxt.o
+
+.losttxt.sdata                      9ed0               0
+
+.losttxt.sbss                       9ed0               0
+
+.losttxt.bss                        9ed0               0
+
+.mk2pitcod.text                 803b2f70              30
+		.text           803b2f70              30 mk2pitcod.o
+
+.mk2pitcod.data                 803b2fa0            1190
+		.data           803b2fa0            1190 mk2pitcod.o
+
+.mk2pitcod.sdata                803b4130               0
+
+.mk2pitcod.sbss                 803b4130               0
+
+.mk2pitcod.bss                  803b4130              10
+		.bss            803b4130              10 mk2pitcod.o
+
+.mk2pittxt.text                        0               0
+
+.mk2pittxt.data                        0            4cf0
+		.data                  0            4cf0 mk2pittxt.o
+
+.mk2pittxt.sdata                    4cf0               0
+
+.mk2pittxt.sbss                     4cf0               0
+
+.mk2pittxt.bss                      4cf0               0
+
+.monkcod.text                   803b2f70             390
+		.text           803b2f70             390 monkcod.o
+
+.monkcod.data                   803b3300            1030
+		.data           803b3300            1030 monkcod.o
+
+.monkcod.sdata                  803b4330               0
+
+.monkcod.sbss                   803b4330               0
+
+.monkcod.bss                    803b4330              10
+		.bss            803b4330              10 monkcod.o
+
+.monktxt.text                          0               0
+
+.monktxt.data                          0            52b0
+		.data                  0            52b0 monktxt.o
+
+.monktxt.sdata                      52b0               0
+
+.monktxt.sbss                       52b0               0
+
+.monktxt.bss                        52b0               0
+
+.monkflr.text                          0               0
+
+.monkflr.data                          0            78b0
+		.data                  0            78b0 monkflr.o
+
+.monkflr.sdata                      78b0               0
+
+.monkflr.sbss                       78b0               0
+
+.monkflr.bss                        78b0               0
+
+.pitcod.text                    803b2f70             a30
+		.text           803b2f70             a30 pitcod.o
+
+.pitcod.data                    803b39a0            43f0
+		.data           803b39a0            43f0 pitcod.o
+
+.pitcod.sdata                   803b7d90               0
+
+.pitcod.sbss                    803b7d90               0
+
+.pitcod.bss                     803b7d90            f010
+		.bss            803b7d90            f010 pitcod.o
+
+.pittxt.text                           0               0
+
+.pittxt.data                           0           1dfa0
+		.data                  0           1dfa0 pittxt.o
+
+.pittxt.sdata                      1dfa0               0
+
+.pittxt.sbss                       1dfa0               0
+
+.pittxt.bss                        1dfa0               0
+
+.sbstcod.text                   803b2f70             c70
+		.text           803b2f70             c70 sbstcod.o
+
+.sbstcod.data                   803b3be0            61f0
+		.data           803b3be0            61f0 sbstcod.o
+
+.sbstcod.sdata                  803b9dd0               0
+
+.sbstcod.sbss                   803b9dd0               0
+
+.sbstcod.bss                    803b9dd0              10
+		.bss            803b9dd0              10 sbstcod.o
+
+.sbsttxt.text                          0               0
+
+.sbsttxt.data                          0           12be0
+		.data                  0           12be0 sbsttxt.o
+
+.sbsttxt.sdata                     12be0               0
+
+.sbsttxt.sbss                      12be0               0
+
+.sbsttxt.bss                       12be0               0
+
+.subflr.text                           0               0
+
+.subflr.data                           0            b850
+		.data                  0            b850 subflr.o
+
+.subflr.sdata                       b850               0
+
+.subflr.sbss                        b850               0
+
+.subflr.bss                         b850               0
+
+.streetflr.text                        0               0
+
+.streetflr.data                        0            7120
+		.data                  0            7120 streetflr.o
+
+.streetflr.sdata                    7120               0
+
+.streetflr.sbss                     7120               0
+
+.streetflr.bss                      7120               0
+
+.soulcod.text                   803b2f70             130
+		.text           803b2f70             130 soulcod.o
+
+.soulcod.data                   803b30a0            80d0
+		.data           803b30a0            80d0 soulcod.o
+
+.soulcod.sdata                  803bb170               0
+
+.soulcod.sbss                   803bb170               0
+
+.soulcod.bss                    803bb170              10
+		.bss            803bb170              10 soulcod.o
+
+.soultxt.text                          0               0
+
+.soultxt.data                          0           16520
+		.data                  0           16520 soultxt.o
+
+.soultxt.sdata                     16520               0
+
+.soultxt.sbss                      16520               0
+
+.soultxt.bss                       16520               0
+
+.soulflr.text                          0               0
+
+.soulflr.data                          0            67a0
+		.data                  0            67a0 soulflr.o
+
+.soulflr.sdata                      67a0               0
+
+.soulflr.sbss                       67a0               0
+
+.soulflr.bss                        67a0               0
+
+.balcflr.text                          0               0
+
+.balcflr.data                          0            88a0
+		.data                  0            88a0 balcflr.o
+
+.balcflr.sdata                      88a0               0
+
+.balcflr.sbss                       88a0               0
+
+.balcflr.bss                        88a0               0
+
+.templecod.text                 803b2f70             280
+		.text           803b2f70             280 tempcod.o
+
+.templecod.data                 803b31f0            17d0
+		.data           803b31f0            17d0 tempcod.o
+
+.templecod.sdata                803b49c0               0
+
+.templecod.sbss                 803b49c0               0
+
+.templecod.bss                  803b49c0              10
+		.bss            803b49c0              10 tempcod.o
+
+.templetxt.text                        0               0
+
+.templetxt.data                        0            a4f0
+		.data                  0            a4f0 temptxt.o
+
+.templetxt.sdata                    a4f0               0
+
+.templetxt.sbss                     a4f0               0
+
+.templetxt.bss                      a4f0               0
+
+.templeflr.text                        0               0
+
+.templeflr.data                        0            a0e0
+		.data                  0            a0e0 tempflr.o
+
+.templeflr.sdata                    a0e0               0
+
+.templeflr.sbss                     a0e0               0
+
+.templeflr.bss                      a0e0               0
+
+.towercod.text                  803b2f70             5e0
+		.text           803b2f70             5e0 towercod.o
+
+.towercod.data                  803b3550            26d0
+		.data           803b3550            26d0 towercod.o
+
+.towercod.sdata                 803b5c20               0
+
+.towercod.sbss                  803b5c20               0
+
+.towercod.bss                   803b5c20              10
+		.bss            803b5c20              10 towercod.o
+
+.towertxt.text                         0               0
+
+.towertxt.data                         0            3f80
+		.data                  0            3f80 towertxt.o
+
+.towertxt.sdata                     3f80               0
+
+.towertxt.sbss                      3f80               0
+
+.towertxt.bss                       3f80               0
+
+.towerflr.text                         0               0
+
+.towerflr.data                         0            b7b0
+		.data                  0            b7b0 towerflr.o
+
+.towerflr.sdata                     b7b0               0
+
+.towerflr.sbss                      b7b0               0
+
+.towerflr.bss                       b7b0               0
+
+.treecod.text                   803b2f70            5790
+		.text           803b2f70            5790 treecod.o
+
+.treecod.data                   803b8700               0
+
+.treecod.sdata                  803b8700               0
+
+.treecod.sbss                   803b8700               0
+
+.treecod.bss                    803b8700              10
+		.bss            803b8700              10 treecod.o
+
+.treetxt.text                          0               0
+
+.treetxt.data                          0            9a10
+		.data                  0            9a10 treetxt.o
+
+.treetxt.sdata                      9a10               0
+
+.treetxt.sbss                       9a10               0
+
+.treetxt.bss                        9a10               0
+
+.treeflr.text                          0               0
+
+.treeflr.data                          0            6560
+		.data                  0            6560 treeflr.o
+
+.treeflr.sdata                      6560               0
+
+.treeflr.sbss                       6560               0
+
+.treeflr.bss                        6560               0
+
+.watercod.text                  803b2f70            b5a0
+		.text           803b2f70            b5a0 watercod.o
+
+.watercod.data                  803be510               0
+
+.watercod.sdata                 803be510               0
+
+.watercod.sbss                  803be510               0
+
+.watercod.bss                   803be510              10
+		.bss            803be510              10 watercod.o
+
+.watertxt.text                         0            7640
+		.text                  0            7640 watertxt.o
+
+.watertxt.data                      7640               0
+
+.watertxt.sdata                     7640               0
+
+.watertxt.sbss                      7640               0
+
+.watertxt.bss                       7640               0
+
+.waterflr.text                         0            5c20
+		.text                  0            5c20 waterflr.o
+
+.waterflr.data                      5c20               0
+
+.waterflr.sdata                     5c20               0
+
+.waterflr.sbss                      5c20               0
+
+.waterflr.bss                       5c20               0
+
+.buyincod.text                  803b2f70               0
+
+.buyincod.data                  803b2f70             6a0
+		.data           803b2f70             6a0 buyincod.o
+
+.buyincod.sdata                 803b3610               0
+
+.buyincod.sbss                  803b3610               0
+
+.buyincod.bss                   803b3610              10
+		.bss            803b3610              10 buyincod.o
+
+.buyintxt.text                         0               0
+
+.buyintxt.data                         0           198f0
+		.data                  0           198f0 buyintxt.o
+
+.buyintxt.sdata                    198f0               0
+
+.buyintxt.sbss                     198f0               0
+
+.buyintxt.bss                      198f0               0
+
+.gradcod.text                   803b2f70               0
+
+.gradcod.data                   803b2f70             c10
+		.data           803b2f70             c10 gradcod.o
+
+.gradcod.sdata                  803b3b80               0
+
+.gradcod.sbss                   803b3b80               0
+
+.gradcod.bss                    803b3b80              10
+		.bss            803b3b80              10 gradcod.o
+
+.gradtxt.text                          0               0
+
+.gradtxt.data                          0              60
+		.data                  0              60 gradtxt.o
+
+.gradtxt.sdata                        60               0
+
+.gradtxt.sbss                         60               0
+
+.gradtxt.bss                          60               0
+
+.optioncod.text                 803b2f70               0
+
+.optioncod.data                 803b2f70            87f0
+		.data           803b2f70            87f0 optioncod.o
+
+.optioncod.sdata                803bb760               0
+
+.optioncod.sbss                 803bb760               0
+
+.optioncod.bss                  803bb760              10
+		.bss            803bb760              10 optioncod.o
+
+.optiontxt.text                        0            7370
+		.text                  0            7370 optiontxt.o
+
+.optiontxt.data                     7370               0
+
+.optiontxt.sdata                    7370               0
+
+.optiontxt.sbss                     7370               0
+
+.optiontxt.bss                      7370               0
+
+.selectcod.text                 803b2f70               0
+
+.selectcod.data                 803b2f70            9650
+		.data           803b2f70            9650 selectcod.o
+
+.selectcod.sdata                803bc5c0               0
+
+.selectcod.sbss                 803bc5c0               0
+
+.selectcod.bss                  803bc5c0              10
+		.bss            803bc5c0              10 selectcod.o
+
+.selecttxt.text                        0               0
+
+.selecttxt.data                        0           10680
+		.data                  0           10680 selecttxt.o
+
+.selecttxt.sdata                   10680               0
+
+.selecttxt.sbss                    10680               0
+
+.selecttxt.bss                     10680               0
+
+.tourncod.text                  803b2f70               0
+
+.tourncod.data                  803b2f70             300
+		.data           803b2f70             300 tourncod.o
+
+.tourncod.sdata                 803b3270               0
+
+.tourncod.sbss                  803b3270               0
+
+.tourncod.bss                   803b3270              10
+		.bss            803b3270              10 tourncod.o
+
+.tourntxt.text                         0               0
+
+.tourntxt.data                         0           14d20
+		.data                  0           14d20 tourntxt.o
+
+.tourntxt.sdata                    14d20               0
+
+.tourntxt.sbss                     14d20               0
+
+.tourntxt.bss                      14d20               0
+
+.steelcod.text                  803b2f70               0
+
+.steelcod.data                  803b2f70            85a0
+		.data           803b2f70            85a0 steelcod.o
+
+.steelcod.sdata                 803bb510               0
+
+.steelcod.sbss                  803bb510               0
+
+.steelcod.bss                   803bb510              10
+		.bss            803bb510              10 steelcod.o
+
+.steeltxt.text                         0               0
+
+.steeltxt.data                         0            15a0
+		.data                  0            15a0 steeltxt.o
+
+.steeltxt.sdata                     15a0               0
+
+.steeltxt.sbss                      15a0               0
+
+.steeltxt.bss                       15a0               0
+
+.titlecod.text                  803b2f70               0
+
+.titlecod.data                  803b2f70             7a0
+		.data           803b2f70             7a0 titlecod.o
+
+.titlecod.sdata                 803b3710               0
+
+.titlecod.sbss                  803b3710               0
+
+.titlecod.bss                   803b3710              10
+		.bss            803b3710              10 titlecod.o
+
+.titletxt.text                         0               0
+
+.titletxt.data                         0            ff30
+		.data                  0            ff30 titletxt.o
+
+.titletxt.sdata                     ff30               0
+
+.titletxt.sbss                      ff30               0
+
+.titletxt.bss                       ff30               0
+
+.versecod.text                  803b2f70               0
+
+.versecod.data                  803b2f70               0
+
+.versecod.sdata                 803b2f70               0
+
+.versecod.sbss                  803b2f70               0
+
+.versecod.bss                   803b2f70               0
+
+.vsplaycod.text                 80231dc0               0
+
+.vsplaycod.data                 80231dc0           3dd90
+		.data           80231dc0           3dd90 versetxt.o
+
+.vsplaycod.sdata                8026fb50               0
+
+.vsplaycod.sbss                 8026fb50               0
+
+.vsplaycod.bss                  8026fb50              10
+		.bss            8026fb50              10 versetxt.o
+
+.animaltxt.text                 803a1580               0
+
+.animaltxt.data                 803a1580            8580
+		.data           803a1580            8580 animaltxt.o
+
+.animaltxt.sdata                803a9b00               0
+
+.animaltxt.sbss                 803a9b00               0
+
+.animaltxt.bss                  803a9b00               0
+
+.babytxt.text                   803a1580             f30
+		.text           803a1580             f30 babytxt.o
+
+.babytxt.data                   803a24b0               0
+
+.babytxt.sdata                  803a24b0               0
+
+.babytxt.sbss                   803a24b0               0
+
+.babytxt.bss                    803a24b0               0
+
+.friendtxt.text                 803a1580            5270
+		.text           803a1580            5270 friendtxt.o
+
+.friendtxt.data                 803a67f0               0
+
+.friendtxt.sdata                803a67f0               0
+
+.friendtxt.sbss                 803a67f0               0
+
+.friendtxt.bss                  803a67f0               0
+
+.fataltxt.text                  803a1580            5830
+		.text           803a1580            5830 fataltxt.o
+
+.fataltxt.data                  803a6db0               0
+
+.fataltxt.sdata                 803a6db0               0
+
+.fataltxt.sbss                  803a6db0               0
+
+.fataltxt.bss                   803a6db0               0
+
+.fighttxt.text                  803a1580            2120
+		.text           803a1580            2120 fighttxt.o
+
+.fighttxt.data                  803a36a0               0
+
+.fighttxt.sdata                 803a36a0               0
+
+.fighttxt.sbss                  803a36a0               0
+
+.fighttxt.bss                   803a36a0               0
+
+.finhimtxt.text                 803a1580            31f0
+		.text           803a1580            31f0 finhimtxt.o
+
+.finhimtxt.data                 803a4770               0
+
+.finhimtxt.sdata                803a4770               0
+
+.finhimtxt.sbss                 803a4770               0
+
+.finhimtxt.bss                  803a4770               0
+
+.finhertxt.text                 803a1580            3450
+		.text           803a1580            3450 finhertxt.o
+
+.finhertxt.data                 803a49d0               0
+
+.finhertxt.sdata                803a49d0               0
+
+.finhertxt.sbss                 803a49d0               0
+
+.finhertxt.bss                  803a49d0               0
+
+.mercytxt.text                  803a1580               0
+
+.mercytxt.data                  803a1580            a160
+		.data           803a1580            a160 mercytxt.o
+
+.mercytxt.sdata                 803ab6e0               0
+
+.mercytxt.sbss                  803ab6e0               0
+
+.mercytxt.bss                   803ab6e0               0
+
+.mugstxt.text                   803a1580               0
+
+.mugstxt.data                   803a1580           119f0
+		.data           803a1580           119f0 mugstxt.o
+
+.mugstxt.sdata                  803b2f70               0
+
+.mugstxt.sbss                   803b2f70               0
+
+.mugstxt.bss                    803b2f70               0
+
+.toptxt.text                    803ab6e0               0
+
+.toptxt.data                    803ab6e0            44f0
+		.data           803ab6e0            44f0 toptxt.o
+
+.toptxt.sdata                   803afbd0               0
+
+.toptxt.sbss                    803afbd0               0
+
+.toptxt.bss                     803afbd0               0
+
+.skeltxt.text                   803a6db0               0
+
+.skeltxt.data                   803a6db0            a7c0
+		.data           803a6db0            a7c0 skeltxt.o
+
+.skeltxt.sdata                  803b1570               0
+
+.skeltxt.sbss                   803b1570               0
+
+.skeltxt.bss                    803b1570               0
+
+.ripstxt.text                   803ab6e0               0
+
+.ripstxt.data                   803ab6e0            3900
+		.data           803ab6e0            3900 ripstxt.o
+
+.ripstxt.sdata                  803aefe0               0
+
+.ripstxt.sbss                   803aefe0               0
+
+.ripstxt.bss                    803aefe0               0
+
+.sonyatxt.text                         0               0
+
+.sonyatxt.data                         0           666d0
+		.data                  0           666d0 sonyatxt.o
+
+.sonyatxt.sdata                    666d0               0
+
+.sonyatxt.sbss                     666d0               0
+
+.sonyatxt.bss                      666d0               0
+
+.sonyadct.text                         0               0
+
+.sonyadct.data                         0             100
+		.data                  0             100 sonyadct.o
+
+.sonyadct.sdata                      100               0
+
+.sonyadct.sbss                       100               0
+
+.sonyadct.bss                        100               0
+
+.tusktxt.text                          0               0
+
+.tusktxt.data                          0           89900
+		.data                  0           89900 tusktxt.o
+
+.tusktxt.sdata                     89900               0
+
+.tusktxt.sbss                      89900               0
+
+.tusktxt.bss                       89900               0
+
+.tuskdct.text                          0               0
+
+.tuskdct.data                          0             100
+		.data                  0             100 tuskdct.o
+
+.tuskdct.sdata                       100               0
+
+.tuskdct.sbss                        100               0
+
+.tuskdct.bss                         100               0
+
+.swattxt.text                          0               0
+
+.swattxt.data                          0           7a4d0
+		.data                  0           7a4d0 swattxt.o
+
+.swattxt.sdata                     7a4d0               0
+
+.swattxt.sbss                      7a4d0               0
+
+.swattxt.bss                       7a4d0               0
+
+.swatdct.text                          0               0
+
+.swatdct.data                          0             100
+		.data                  0             100 swatdct.o
+
+.swatdct.sdata                       100               0
+
+.swatdct.sbss                        100               0
+
+.swatdct.bss                         100               0
+
+.sheevatxt.text                        0               0
+
+.sheevatxt.data                        0           777b0
+		.data                  0           777b0 sheevatxt.o
+
+.sheevatxt.sdata                   777b0               0
+
+.sheevatxt.sbss                    777b0               0
+
+.sheevatxt.bss                     777b0               0
+
+.sheevadct.text                        0               0
+
+.sheevadct.data                        0             100
+		.data                  0             100 sheevadct.o
+
+.sheevadct.sdata                     100               0
+
+.sheevadct.sbss                      100               0
+
+.sheevadct.bss                       100               0
+
+.subztxt.text                          0               0
+
+.subztxt.data                          0           80e20
+		.data                  0           80e20 subztxt.o
+
+.subztxt.sdata                     80e20               0
+
+.subztxt.sbss                      80e20               0
+
+.subztxt.bss                       80e20               0
+
+.subzdct.text                          0               0
+
+.subzdct.data                          0             100
+		.data                  0             100 subzdct.o
+
+.subzdct.sdata                       100               0
+
+.subzdct.sbss                        100               0
+
+.subzdct.bss                         100               0
+
+.lktxt.text                            0               0
+
+.lktxt.data                            0           6d090
+		.data                  0           6d090 lktxt.o
+
+.lktxt.sdata                       6d090               0
+
+.lktxt.sbss                        6d090               0
+
+.lktxt.bss                         6d090               0
+
+.lkdct.text                            0               0
+
+.lkdct.data                            0             100
+		.data                  0             100 lkdct.o
+
+.lkdct.sdata                         100               0
+
+.lkdct.sbss                          100               0
+
+.lkdct.bss                           100               0
+
+.liatxt.text                           0               0
+
+.liatxt.data                           0           7cc20
+		.data                  0           7cc20 liatxt.o
+
+.liatxt.sdata                      7cc20               0
+
+.liatxt.sbss                       7cc20               0
+
+.liatxt.bss                        7cc20               0
+
+.liadct.text                           0               0
+
+.liadct.data                           0             100
+		.data                  0             100 liadct.o
+
+.liadct.sdata                        100               0
+
+.liadct.sbss                         100               0
+
+.liadct.bss                          100               0
+
+.laotxt.text                           0               0
+
+.laotxt.data                           0           76150
+		.data                  0           76150 laotxt.o
+
+.laotxt.sdata                      76150               0
+
+.laotxt.sbss                       76150               0
+
+.laotxt.bss                        76150               0
+
+.laodct.text                           0               0
+
+.laodct.data                           0             100
+		.data                  0             100 laodct.o
+
+.laodct.sdata                        100               0
+
+.laodct.sbss                         100               0
+
+.laodct.bss                          100               0
+
+.kanotxt.text                          0               0
+
+.kanotxt.data                          0           71290
+		.data                  0           71290 kanotxt.o
+
+.kanotxt.sdata                     71290               0
+
+.kanotxt.sbss                      71290               0
+
+.kanotxt.bss                       71290               0
+
+.kanodct.text                          0               0
+
+.kanodct.data                          0             100
+		.data                  0             100 kanodct.o
+
+.kanodct.sdata                       100               0
+
+.kanodct.sbss                        100               0
+
+.kanodct.bss                         100               0
+
+.jaxtxt.text                           0               0
+
+.jaxtxt.data                           0           74980
+		.data                  0           74980 jaxtxt.o
+
+.jaxtxt.sdata                      74980               0
+
+.jaxtxt.sbss                       74980               0
+
+.jaxtxt.bss                        74980               0
+
+.jaxdct.text                           0               0
+
+.jaxdct.data                           0             100
+		.data                  0             100 jaxdct.o
+
+.jaxdct.sdata                        100               0
+
+.jaxdct.sbss                         100               0
+
+.jaxdct.bss                          100               0
+
+.indiantxt.text                        0               0
+
+.indiantxt.data                        0           8f440
+		.data                  0           8f440 indiantxt.o
+
+.indiantxt.sdata                   8f440               0
+
+.indiantxt.sbss                    8f440               0
+
+.indiantxt.bss                     8f440               0
+
+.indianatxt.text                       0               0
+
+.indianatxt.data                       0            53d0
+		.data                  0            53d0 indianatxt.o
+
+.indianatxt.sdata                   53d0               0
+
+.indianatxt.sbss                    53d0               0
+
+.indianatxt.bss                     53d0               0
+
+.indianftxt.text                       0               0
+
+.indianftxt.data                       0            6f90
+		.data                  0            6f90 indianftxt.o
+
+.indianftxt.sdata                   6f90               0
+
+.indianftxt.sbss                    6f90               0
+
+.indianftxt.bss                     6f90               0
+
+.indiandct.text                        0               0
+
+.indiandct.data                        0             100
+		.data                  0             100 indiandct.o
+
+.indiandct.sdata                     100               0
+
+.indiandct.sbss                      100               0
+
+.indiandct.bss                       100               0
+
+.satxt.text                            0               0
+
+.satxt.data                            0           3fcb0
+		.data                  0           3fcb0 satxt.o
+
+.satxt.sdata                       3fcb0               0
+
+.satxt.sbss                        3fcb0               0
+
+.satxt.bss                         3fcb0               0
+
+.sadct.text                            0               0
+
+.sadct.data                            0             100
+		.data                  0             100 sadct.o
+
+.sadct.sdata                         100               0
+
+.sadct.sbss                          100               0
+
+.sadct.bss                           100               0
+
+.rdtxt.text                            0               0
+
+.rdtxt.data                            0           52e20
+		.data                  0           52e20 rdtxt.o
+
+.rdtxt.sdata                       52e20               0
+
+.rdtxt.sbss                        52e20               0
+
+.rdtxt.bss                         52e20               0
+
+.rddct.text                            0               0
+
+.rddct.data                            0             100
+		.data                  0             100 rddct.o
+
+.rddct.sdata                         100               0
+
+.rddct.sbss                          100               0
+
+.rddct.bss                           100               0
+
+.mottxt.text                           0               0
+
+.mottxt.data                           0           71800
+		.data                  0           71800 mottxt.o
+
+.mottxt.sdata                      71800               0
+
+.mottxt.sbss                       71800               0
+
+.mottxt.bss                        71800               0
+
+.motdct.text                           0               0
+
+.motdct.data                           0             100
+		.data                  0             100 motdct.o
+
+.motdct.sdata                        100               0
+
+.motdct.sbss                         100               0
+
+.motdct.bss                          100               0
+
+.sttxt.text                            0               0
+
+.sttxt.data                            0           83170
+		.data                  0           83170 sttxt.o
+
+.sttxt.sdata                       83170               0
+
+.sttxt.sbss                        83170               0
+
+.sttxt.bss                         83170               0
+
+.stdct.text                            0               0
+
+.stdct.data                            0             100
+		.data                  0             100 stdct.o
+
+.stdct.sdata                         100               0
+
+.stdct.sbss                          100               0
+
+.stdct.bss                           100               0
+
+.sktxt.text                            0               0
+
+.sktxt.data                            0           45a60
+		.data                  0           45a60 sktxt.o
+
+.sktxt.sdata                       45a60               0
+
+.sktxt.sbss                        45a60               0
+
+.sktxt.bss                         45a60               0
+
+.skdct.text                            0               0
+
+.skdct.data                            0             100
+		.data                  0             100 skdct.o
+
+.skdct.sdata                         100               0
+
+.skdct.sbss                          100               0
+
+.skdct.bss                           100               0
+
+.fntxt.text                            0               0
+
+.fntxt.data                            0           8d140
+		.data                  0           8d140 fntxt.o
+
+.fntxt.sdata                       8d140               0
+
+.fntxt.sbss                        8d140               0
+
+.fntxt.bss                         8d140               0
+
+.fndct.text                            0               0
+
+.fndct.data                            0             100
+		.data                  0             100 fndct.o
+
+.fndct.sdata                         100               0
+
+.fndct.sbss                          100               0
+
+.fndct.bss                           100               0
+
+.njtxt.text                            0               0
+
+.njtxt.data                            0           8aa50
+		.data                  0           8aa50 njtxt.o
+
+.njtxt.sdata                       8aa50               0
+
+.njtxt.sbss                        8aa50               0
+
+.njtxt.bss                         8aa50               0
+
+.njatxt.text                           0               0
+
+.njatxt.data                           0            1c90
+		.data                  0            1c90 njatxt.o
+
+.njatxt.sdata                       1c90               0
+
+.njatxt.sbss                        1c90               0
+
+.njatxt.bss                         1c90               0
+
+.njftxt.text                           0               0
+
+.njftxt.data                           0            7050
+		.data                  0            7050 njftxt.o
+
+.njftxt.sdata                       7050               0
+
+.njftxt.sbss                        7050               0
+
+.njftxt.bss                         7050               0
+
+.njscf1txt.text                        0               0
+
+.njscf1txt.data                        0            bcf0
+		.data                  0            bcf0 njscf1txt.o
+
+.njscf1txt.sdata                    bcf0               0
+
+.njscf1txt.sbss                     bcf0               0
+
+.njscf1txt.bss                      bcf0               0
+
+.njdct.text                            0               0
+
+.njdct.data                            0             100
+		.data                  0             100 njdct.o
+
+.njdct.sdata                         100               0
+
+.njdct.sbss                          100               0
+
+.njdct.bss                           100               0
+
+.robotxt.text                          0               0
+
+.robotxt.data                          0           76100
+		.data                  0           76100 robotxt.o
+
+.robotxt.sdata                     76100               0
+
+.robotxt.sbss                      76100               0
+
+.robotxt.bss                       76100               0
+
+.roboftxt.text                         0               0
+
+.roboftxt.data                         0            a3f0
+		.data                  0            a3f0 roboftxt.o
+
+.roboftxt.sdata                     a3f0               0
+
+.roboftxt.sbss                      a3f0               0
+
+.roboftxt.bss                       a3f0               0
+
+.robo2atxt.text                        0               0
+
+.robo2atxt.data                        0            d290
+		.data                  0            d290 robo2atxt.o
+
+.robo2atxt.sdata                    d290               0
+
+.robo2atxt.sbss                     d290               0
+
+.robo2atxt.bss                      d290               0
+
+.robo3atxt.text                        0               0
+
+.robo3atxt.data                        0            6890
+		.data                  0            6890 robo3atxt.o
+
+.robo3atxt.sdata                    6890               0
+
+.robo3atxt.sbss                     6890               0
+
+.robo3atxt.bss                      6890               0
+
+.robo1atxt.text                        0               0
+
+.robo1atxt.data                        0            6910
+		.data                  0            6910 robo1atxt.o
+
+.robo1atxt.sdata                    6910               0
+
+.robo1atxt.sbss                     6910               0
+
+.robo1atxt.bss                      6910               0
+
+.robo1f1txt.text                       0               0
+
+.robo1f1txt.data                       0            76d0
+		.data                  0            76d0 robo1f1txt.o
+
+.robo1f1txt.sdata                   76d0               0
+
+.robo1f1txt.sbss                    76d0               0
+
+.robo1f1txt.bss                     76d0               0
+
+.robo1f2txt.text                       0               0
+
+.robo1f2txt.data                       0            2120
+		.data                  0            2120 robo1f2txt.o
+
+.robo1f2txt.sdata                   2120               0
+
+.robo1f2txt.sbss                    2120               0
+
+.robo1f2txt.bss                     2120               0
+
+.robo2f1txt.text                       0               0
+
+.robo2f1txt.data                       0            5040
+		.data                  0            5040 robo2f1txt.o
+
+.robo2f1txt.sdata                   5040               0
+
+.robo2f1txt.sbss                    5040               0
+
+.robo2f1txt.bss                     5040               0
+
+.robo2f2txt.text                       0               0
+
+.robo2f2txt.data                       0            c9b0
+		.data                  0            c9b0 robo2f2txt.o
+
+.robo2f2txt.sdata                   c9b0               0
+
+.robo2f2txt.sbss                    c9b0               0
+
+.robo2f2txt.bss                     c9b0               0
+
+.robo3f1txt.text                       0               0
+
+.robo3f1txt.data                       0            1990
+		.data                  0            1990 robo3f1txt.o
+
+.robo3f1txt.sdata                   1990               0
+
+.robo3f1txt.sbss                    1990               0
+
+.robo3f1txt.bss                     1990               0
+
+.robo3f2txt.text                       0               0
+
+.robo3f2txt.data                       0            1e20
+		.data                  0            1e20 robo3f2txt.o
+
+.robo3f2txt.sdata                   1e20               0
+
+.robo3f2txt.sbss                    1e20               0
+
+.robo3f2txt.bss                     1e20               0
+
+.robodct.text                          0               0
+
+.robodct.data                          0             100
+		.data                  0             100 robodct.o
+
+.robodct.sdata                       100               0
+
+.robodct.sbss                        100               0
+
+.robodct.bss                         100               0
+
+.compact_rel                           0           19484
+		.compact_rel           0           19484 *ld_internal*
+
+.mdebug                                0          2493b8
+		.mdebug                0          2493b8 *ld_internal*
+
+.symtab                                0           2efd0
+		.symtab                0           2efd0 *ld_internal*
+
+.strtab                                0           292ca
+		.strtab                0           292ca *ld_internal*
+
+.MIPS.options                          0              60
+		.MIPS.options          0              60 *ld_internal*
+
+.reginfo                               0              18
+		.reginfo               0              18 *ld_internal*
+
+.shstrtab                              0            29ff
+		.shstrtab              0            29ff *ld_internal*

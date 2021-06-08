@@ -1,0 +1,75 @@
+	.align 2
+	.globl nuselectBMOD
+nuselectBMOD:
+	.half   352,   254
+	.word    22, nuselect_BLK, trilsel_HDR, trilsel_CLT
+
+	.align 2
+	.globl nuselect_BLK
+nuselect_BLK:
+	.half     1,   125,    64, 0x0000,     0
+	.half     3,     3,    64, 0x0300,     1
+	.half    41,    88,    64, 0x0300,     2
+	.half    42,    40,    64, 0x0400,     3
+	.half    42,    88,    65, 0x0400,     4
+	.half    42,   135,    64, 0x0400,     4
+	.half    43,     3,    64, 0x0300,     5
+	.half    63,    40,    64, 0x0400,     6
+	.half    81,   229,    64, 0x0000,     7
+	.half   101,    40,    64, 0x0400,     8
+	.half   139,    40,    64, 0x0400,     9
+	.half   177,    40,    64, 0x0400,    10
+	.half   179,   229,    64, 0x0010,    11
+	.half   181,     3,    64, 0x0200,    12
+	.half   215,    40,    64, 0x0400,    13
+	.half   253,    40,    64, 0x0400,    14
+	.half   270,    89,    65, 0x0400,    15
+	.half   270,   136,    64, 0x0400,    15
+	.half   272,    90,    64, 0x0200,    16
+	.half   273,   125,    64, 0x0100,    17
+	.half   288,    40,    64, 0x0400,    18
+	.half   310,     3,    64, 0x0200,    19
+
+	.align 2
+	.globl trilsel_HDR
+trilsel_HDR:
+	.half    80,   127
+	.word 101416
+	.half    40,   122
+	.word 111576
+	.half    40,    37
+	.word 116456
+	.half    24,    50
+	.word 117936
+	.half    40,    47
+	.word 119136
+	.half   140,    37
+	.word 121016
+	.half    40,   190
+	.word 126200
+	.half   104,    23
+	.word 133800
+	.half    40,   190
+	.word 136192
+	.half    40,   190
+	.word 143792
+	.half    40,   190
+	.word 151392
+	.half   100,    22
+	.word 158992
+	.half   136,    37
+	.word 161192
+	.half    40,   190
+	.word 166224
+	.half    40,   190
+	.word 173824
+	.half    40,    47
+	.word 181424
+	.half    40,    37
+	.word 183304
+	.half    76,   127
+	.word 184784
+	.half    24,    50
+	.word 194440
+	.half    40,   122
+	.word 195640

@@ -1,0 +1,132 @@
+water_anims:
+	.word a_water1
+a_water1:
+	.word WATERA01
+	.word WATERC01
+	.word WATERD01
+	.word WATERB01
+	.word WATERA02
+	.word WATERC02
+	.word WATERD02
+	.word WATERB02
+	.word WATERA03
+	.word WATERC03
+	.word WATERD03
+	.word WATERB03
+	.word WATERA04
+	.word WATERC04
+	.word WATERD04
+	.word WATERB04
+	.word WATERA05
+	.word WATERC05
+	.word WATERD05
+	.word WATERB05
+	.word WATERA06
+	.word WATERC06
+	.word WATERD06
+	.word WATERB06
+	.word WATERA07
+	.word WATERC07
+	.word WATERD07
+	.word WATERB07
+	.word WATERA08
+	.word WATERC08
+	.word WATERD08
+	.word WATERB08
+	.word 0
+WATERA01:
+	.word WATERA01_IMG
+	.half 144, 34, 0, 0
+WATERC01:
+	.word WATERC01_IMG
+	.half 54, 34, 0, 0
+WATERD01:
+	.word WATERD01_IMG
+	.half 54, 18, 0, 0
+WATERB01:
+	.word WATERB01_IMG
+	.half 84, 18, 0, 0
+WATERA02:
+	.word WATERA02_IMG
+	.half 144, 34, 0, 0
+WATERC02:
+	.word WATERC02_IMG
+	.half 54, 34, 0, 0
+WATERD02:
+	.word WATERD02_IMG
+	.half 54, 18, 0, 0
+WATERB02:
+	.word WATERB02_IMG
+	.half 84, 18, 0, 0
+WATERA03:
+	.word WATERA03_IMG
+	.half 144, 34, 0, 0
+WATERC03:
+	.word WATERC03_IMG
+	.half 54, 34, 0, 0
+WATERD03:
+	.word WATERD03_IMG
+	.half 54, 18, 0, 0
+WATERB03:
+	.word WATERB03_IMG
+	.half 84, 18, 0, 0
+WATERA04:
+	.word WATERA04_IMG
+	.half 144, 34, 0, 0
+WATERC04:
+	.word WATERC04_IMG
+	.half 54, 34, 0, 0
+WATERD04:
+	.word WATERD04_IMG
+	.half 54, 18, 0, 0
+WATERB04:
+	.word WATERB04_IMG
+	.half 84, 18, 0, 0
+WATERA05:
+	.word WATERA05_IMG
+	.half 144, 34, 0, 0
+WATERC05:
+	.word WATERC05_IMG
+	.half 54, 34, 0, 0
+WATERD05:
+	.word WATERD05_IMG
+	.half 54, 18, 0, 0
+WATERB05:
+	.word WATERB05_IMG
+	.half 84, 18, 0, 0
+WATERA06:
+	.word WATERA06_IMG
+	.half 144, 34, 0, 0
+WATERC06:
+	.word WATERC06_IMG
+	.half 54, 34, 0, 0
+WATERD06:
+	.word WATERD06_IMG
+	.half 54, 18, 0, 0
+WATERB06:
+	.word WATERB06_IMG
+	.half 84, 18, 0, 0
+WATERA07:
+	.word WATERA07_IMG
+	.half 144, 34, 0, 0
+WATERC07:
+	.word WATERC07_IMG
+	.half 54, 34, 0, 0
+WATERD07:
+	.word WATERD07_IMG
+	.half 54, 18, 0, 0
+WATERB07:
+	.word WATERB07_IMG
+	.half 84, 18, 0, 0
+WATERA08:
+	.word WATERA08_IMG
+	.half 144, 34, 0, 0
+WATERC08:
+	.word WATERC08_IMG
+	.half 54, 34, 0, 0
+WATERD08:
+	.word WATERD08_IMG
+	.half 54, 18, 0, 0
+WATERB08:
+	.word WATERB08_IMG
+	.half 84, 18, 0, 0

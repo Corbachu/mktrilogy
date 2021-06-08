@@ -1,0 +1,4 @@
+File I:\proj\mktrilogy\seg\bkgds\city\bkgdcity.c:
+42         extern void *a_storm_city[];
+202        extern void *a_storm_city[];
+241        	current_proc->pa9=a_storm_city;

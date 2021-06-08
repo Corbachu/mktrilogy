@@ -1,0 +1,25 @@
+	.align 2
+	.globl titlemodBMOD
+titlemodBMOD:
+	.half   330,   248
+	.word     4, titlemod_BLK, nutitle_HDR, nutitle_CLT
+
+	.align 2
+	.globl titlemod_BLK
+titlemod_BLK:
+	.half     6,     5,    64, 0x0000,     0
+	.half     6,   124,    64, 0x0000,     1
+	.half   166,     5,    64, 0x0000,     2
+	.half   166,   124,    64, 0x0000,     3
+
+	.align 2
+	.globl nutitle_HDR
+nutitle_HDR:
+	.half   160,   120
+	.word 76800
+	.half   160,   120
+	.word 96000
+	.half   160,   120
+	.word 115200
+	.half   160,   120
+	.word 134400

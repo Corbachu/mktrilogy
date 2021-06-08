@@ -1,0 +1,66 @@
+monk_anims:
+	.word a_warplite
+	.word a_timemonk
+	.word a_timefloor
+a_warplite:
+	.word warplite1
+	.word warplite2
+	.word warplite3
+	.word warplite4
+	.word warplite5
+	.word warplite6
+	.word 0
+a_timemonk:
+	.word timemonk1
+	.word timemonk2
+	.word timemonk3
+	.word timemonk4
+	.word timemonk5
+	.word timemonk6
+	.word timemonk7
+	.word 0
+a_timefloor:
+	.word timefloor1
+	.word 0
+warplite1:
+	.word warplite1_IMG
+	.half 10, 11, 5, 4
+warplite2:
+	.word warplite2_IMG
+	.half 12, 14, 4, 3
+warplite3:
+	.word warplite3_IMG
+	.half 14, 15, 2, 4
+warplite4:
+	.word warplite4_IMG
+	.half 15, 15, 3, 4
+warplite5:
+	.word warplite5_IMG
+	.half 20, 7, 6, 0
+warplite6:
+	.word warplite6_IMG
+	.half 21, 9, 6, 1
+timemonk1:
+	.word timemonk1_IMG
+	.half 15, 27, 8, 11
+timemonk2:
+	.word timemonk2_IMG
+	.half 14, 27, 8, 11
+timemonk3:
+	.word timemonk3_IMG
+	.half 14, 27, 8, 11
+timemonk4:
+	.word timemonk4_IMG
+	.half 14, 26, 8, 11
+timemonk5:
+	.word timemonk5_IMG
+	.half 15, 27, 8, 11
+timemonk6:
+	.word timemonk6_IMG
+	.half 15, 27, 8, 11
+timemonk7:
+	.word timemonk7_IMG
+	.half 16, 27, 8, 11
+timefloor1:
+	.word timefloor1_IMG
+	.half 70, 43, 35, 0

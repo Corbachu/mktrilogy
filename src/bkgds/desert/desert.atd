@@ -1,0 +1,20 @@
+desert_anims:
+	.word a_cyrax_sand
+a_cyrax_sand:
+	.word CYRXSAND1
+	.word CYRXSAND2
+	.word CYRXSAND3
+	.word CYRXSAND4
+	.word 0
+CYRXSAND1:
+	.word CYRXSAND1_IMG
+	.half 44, 36, -1, 0
+CYRXSAND2:
+	.word CYRXSAND2_IMG
+	.half 46, 35, 0, 0
+CYRXSAND3:
+	.word CYRXSAND3_IMG
+	.half 46, 34, 0, -1
+CYRXSAND4:
+	.word CYRXSAND4_IMG
+	.half 46, 35, 0, 0

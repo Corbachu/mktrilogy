@@ -1,0 +1,164 @@
+	.align 2
+	.globl spiral1BMOD
+spiral1BMOD:
+	.half  1010,   194
+	.word    26, spiral1_BLK, spiral_HDR, spiral_CLT
+
+	.align 2
+	.globl spiral1_BLK
+spiral1_BLK:
+	.half    25,   171,    66, 0x0500,     0
+	.half    94,   170,    66, 0x0500,     1
+	.half    99,     6,    66, 0x0500,     2
+	.half    99,    88,    66, 0x0500,     2
+	.half   163,   171,    66, 0x0500,     0
+	.half   232,   170,    66, 0x0500,     1
+	.half   237,     6,    66, 0x0500,     2
+	.half   237,    88,    66, 0x0500,     2
+	.half   301,   171,    66, 0x0500,     0
+	.half   370,   170,    66, 0x0500,     1
+	.half   375,     6,    66, 0x0500,     2
+	.half   375,    88,    66, 0x0500,     2
+	.half   439,   171,    66, 0x0500,    21
+	.half   513,   171,    66, 0x0510,    21
+	.half   589,   170,    66, 0x0510,     1
+	.half   640,     6,    66, 0x0510,     2
+	.half   640,    88,    66, 0x0510,     2
+	.half   658,   171,    66, 0x0510,     0
+	.half   727,   170,    66, 0x0510,     1
+	.half   778,     6,    66, 0x0510,     2
+	.half   778,    88,    66, 0x0510,     2
+	.half   796,   171,    66, 0x0510,     0
+	.half   864,   170,    66, 0x0510,     1
+	.half   915,     6,    66, 0x0510,     2
+	.half   915,    88,    66, 0x0510,     2
+	.half   933,   171,    66, 0x0510,     0
+
+	.align 2
+	.globl spiral2BMOD
+spiral2BMOD:
+	.half   990,   160
+	.word    20, spiral2_BLK, spiral_HDR, spiral_CLT
+
+	.align 2
+	.globl spiral2_BLK
+spiral2_BLK:
+	.half    78,     7,    65, 0x0400,     3
+	.half    78,    76,    64, 0x0400,     4
+	.half    78,   136,    64, 0x0400,     5
+	.half    93,    76,    65, 0x0400,     6
+	.half   102,    11,    65, 0x0400,     7
+	.half   109,    76,    65, 0x0400,     8
+	.half   121,   136,    65, 0x0400,     9
+	.half   126,   107,    65, 0x0400,    10
+	.half   132,    49,    65, 0x0400,    11
+	.half   158,    76,    65, 0x0400,    13
+	.half   628,    49,    65, 0x0410,    11
+	.half   634,    76,    65, 0x0410,    13
+	.half   647,   136,    65, 0x0410,     9
+	.half   650,   107,    65, 0x0410,    10
+	.half   674,    11,    65, 0x0410,     7
+	.half   679,    76,    65, 0x0410,     8
+	.half   682,   136,    64, 0x0410,     5
+	.half   699,    76,    65, 0x0410,     6
+	.half   702,     7,    65, 0x0410,     3
+	.half   714,    76,    64, 0x0410,     4
+
+	.align 2
+	.globl spiral3BMOD
+spiral3BMOD:
+	.half   686,    23
+	.word     6, spiral3_BLK, spiral_HDR, spiral_CLT
+
+	.align 2
+	.globl spiral3_BLK
+spiral3_BLK:
+	.half     5,    10,    65, 0x0010,    12
+	.half    95,     3,    65, 0x0000,    14
+	.half   180,    10,    65, 0x0000,    12
+	.half   418,    10,    65, 0x0010,    12
+	.half   508,     3,    65, 0x0000,    14
+	.half   593,    10,    65, 0x0000,    12
+
+	.align 2
+	.globl spiral4BMOD
+spiral4BMOD:
+	.half   412,   195
+	.word    13, spiral4_BLK, spiral_HDR, spiral_CLT
+
+	.align 2
+	.globl spiral4_BLK
+spiral4_BLK:
+	.half    10,   115,    64, 0x0100,    15
+	.half    14,    78,    64, 0x0300,    16
+	.half    16,   155,    64, 0x0000,    17
+	.half    40,   150,    65, 0x0000,    18
+	.half    65,     4,    65, 0x0600,    19
+	.half   124,    77,    64, 0x0200,    20
+	.half   149,    66,    64, 0x0000,    22
+	.half   174,    63,    64, 0x0000,    23
+	.half   208,    59,    64, 0x0000,    24
+	.half   251,    76,    64, 0x0000,    25
+	.half   286,    76,    64, 0x0300,    27
+	.half   286,   115,    64, 0x0100,    15
+	.half   286,   155,    64, 0x0000,    26
+
+	.align 2
+	.globl spiral_HDR
+spiral_HDR:
+	.half    72,    20
+	.word     0
+	.half    72,    21
+	.word  1440
+	.half    16,    82
+	.word  2952
+	.half    28,    69
+	.word  4264
+	.half    16,    60
+	.word  6200
+	.half    48,    20
+	.word  7160
+	.half    16,    60
+	.word  8120
+	.half    32,    65
+	.word  9080
+	.half    20,    60
+	.word 11160
+	.half    40,    20
+	.word 12360
+	.half    32,    29
+	.word 13160
+	.half    48,    27
+	.word 14088
+	.half    92,    10
+	.word 15384
+	.half    16,    53
+	.word 16304
+	.half    88,    17
+	.word 17152
+	.half   116,    40
+	.word 18648
+	.half   112,    37
+	.word 23288
+	.half   112,    33
+	.word 27432
+	.half    24,     7
+	.word 31128
+	.half    76,    70
+	.word 31296
+	.half    28,   111
+	.word 36616
+	.half    80,    20
+	.word 39728
+	.half    28,   122
+	.word 41328
+	.half    36,   125
+	.word 44744
+	.half    48,   129
+	.word 49248
+	.half    36,   112
+	.word 55440
+	.half   112,    33
+	.word 59472
+	.half   116,    39
+	.word 63168

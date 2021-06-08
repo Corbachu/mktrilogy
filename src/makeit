@@ -1,0 +1,6 @@
+#
+# Makes programs in a specified directory
+#
+
+cd $1
+make

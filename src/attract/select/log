@@ -1,0 +1,13 @@
+ladbricka 135x72 9792 5480 55.964054 NH dict RLE 64
+ladbrickb 135x29 3944 2484 62.981743 NH dict RLE 64
+NSCURSOR 34x45 1620 180 11.111111 NH 8 color
+TXT_CHAMPION 51x8 416 211 50.721153 NH dict RLE 32 nonzero mini span
+TXT_MASTER 41x8 352 170 48.295456 NH dict RLE 32 nonzero mini span
+TXT_NOVICE 37x8 320 154 48.125000 NH dict RLE 32 nonzero mini span
+TXT_WARRIOR 46x8 384 189 49.218750 NH dict RLE 32 nonzero mini span
+scaled = 16828 RLEd + dict = 9124 52.697884
+RLE average bytes/frame 1303.428589
+max width = 135 ladbricka
+max height = 72 ladbricka
+min width = 34 NSCURSOR
+min height = 8 TXT_CHAMPION

@@ -1,0 +1,35 @@
+select_anims:
+	.word emh_images
+	.word a_stuff
+a_stuff:
+	.word UPEVILB
+	.word UPEVILA
+	.word MKBRICK2
+	.word MKBRICK
+	.word 0
+emh_images:
+	.word TXT_NOVICE
+	.word TXT_WARRIOR
+	.word TXT_MASTER
+	.word 0
+TXT_NOVICE:
+	.word TXT_NOVICE_IMG
+	.half 37, 8, 0, 0
+TXT_WARRIOR:
+	.word TXT_WARRIOR_IMG
+	.half 46, 8, 0, 0
+TXT_MASTER:
+	.word TXT_MASTER_IMG
+	.half 41, 8, 0, 0
+UPEVILB:
+	.word UPEVILB_IMG
+	.half 140, 82, 0, 0
+UPEVILA:
+	.word UPEVILA_IMG
+	.half 181, 88, 0, 0
+MKBRICK2:
+	.word MKBRICK2_IMG
+	.half 154, 90, 0, 0
+MKBRICK:
+	.word MKBRICK_IMG
+	.half 154, 82, -41, -17

@@ -1,0 +1,47 @@
+	.align 2
+	.globl botmodBMOD
+botmodBMOD:
+	.half   332,   143
+	.word     4, botmod_BLK, tridoor_HDR, tridoor_CLT
+
+	.align 2
+	.globl botmod_BLK
+botmod_BLK:
+	.half     6,     7,    64, 0x0000,     0
+	.half     7,     4,   100, 0x0000,     3
+	.half   166,     4,   100, 0x0000,     7
+	.half   166,     7,    64, 0x0000,     4
+
+	.align 2
+	.globl topmodBMOD
+topmodBMOD:
+	.half   328,   141
+	.word     4, topmod_BLK, tridoor_HDR, tridoor_CLT
+
+	.align 2
+	.globl topmod_BLK
+topmod_BLK:
+	.half     4,     4,    64, 0x0000,     1
+	.half     4,   111,   100, 0x0000,     2
+	.half   164,     4,    64, 0x0000,     5
+	.half   164,   111,   100, 0x0000,     6
+
+	.align 2
+	.globl tridoor_HDR
+tridoor_HDR:
+	.half   160,   132
+	.word 72960
+	.half   160,   131
+	.word 94080
+	.half   160,    27
+	.word 115040
+	.half   160,    26
+	.word 119360
+	.half   160,   132
+	.word 123520
+	.half   160,   131
+	.word 144640
+	.half   160,    27
+	.word 165600
+	.half   160,    26
+	.word 169920

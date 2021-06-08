@@ -1,0 +1,9 @@
+SAW2 151x79 12008 2249 18.729181 dict RLE 64
+SAW4 157x74 11840 2291 19.349663 dict RLE 64
+SAW6 154x78 12168 2323 19.091059 dict RLE 64
+scaled = 36016 RLEd + dict = 7119 19.055420
+RLE average bytes/frame 2373.000000
+max width = 157 SAW4
+max height = 79 SAW2
+min width = 151 SAW2
+min height = 74 SAW4

@@ -1,0 +1,50 @@
+#
+# Common makefile definitions for MK TRILOGY
+#
+
+
+
+######################################################################
+# SELECT ONLY ONE OF THESE:
+#
+#   ultra_d is the debugging version,
+#   ultra is the retail version.
+
+U64LIBNAME =		ultra_d
+#U64LIBNAME =		ultra_rom
+
+
+######################################################################
+# Path definitions
+######################################################################
+
+PATH_APP =			$(ROOT)/usr/proj/mktrilogy
+PATH_INC =			$(PATH_APP)/seg/gamecode
+PATH_SEG =			$(PATH_APP)/seg
+PATH_MAK =			$(PATH_APP)/make
+PATH_BIN =			$(PATH_APP)/bin
+PATH_BKGD =			$(PATH_SEG)/bkgds
+PATH_CHARS =		$(PATH_SEG)/chardata
+PATH_ATTRACT =		$(PATH_SEG)/attract
+PATH_COMMON =		$(PATH_SEG)/common
+
+PATH_PRINC =		$(ROOT)/usr/include/PR
+PATH_PRLIB =		$(ROOT)/usr/lib/PR
+PATH_LIB =			$(ROOT)/usr/lib
+
+U64LIBFULL = $(PATH_LIB)/lib$(U64LIBNAME).a
+
+
+
+######################################################################
+# Option flags:
+######################################################################
+
+LCOPTS =	-c -g3 -O2 -mips2 -fullwarn -prototypes -Xcpluscomm -Wab,-r4300_mul -non_shared -G 0 -woff 813,819,826,827,835,852,712,822,825,665
+#-wlint,-f 
+LCINCS =	-I$(PATH_PRINC) -I$(PATH_INC) 
+LDFLAGS =	-r -g -nostdlib 
+AROPTS =	rc
+ASFLAGS =	-Wab,-r4300_mul -non_shared -g -I$(PATH_PRINC) -I$(PATH_INC)
+#MRFLAGS	= -m -o -s96 -f0x00
+MRFLAGS	= -m -o -C 60850000

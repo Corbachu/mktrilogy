@@ -1,0 +1,14063 @@
+# 1 "u64main.c"
+ 
+
+
+
+
+
+
+
+
+
+ 
+# 1 "./u64main.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+# 1 "/usr/include/stdio.h"
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+typedef unsigned int 	size_t;
+
+
+
+
+
+
+typedef long	fpos_t;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef struct	 
+
+ 
+
+
+
+
+
+
+
+__file_s
+
+{
+
+	int		_cnt;	 
+
+
+
+
+	unsigned char	*_ptr;	 
+	unsigned char	*_base;	 
+
+	unsigned char	_flag;	 
+	unsigned char	_file;	 
+
+
+
+
+
+} FILE;
+
+extern FILE		__iob[100 ];	
+extern FILE		*_lastbuf;
+extern unsigned char 	*_bufendtab[];
+extern unsigned char	 _sibuf[], _sobuf[];
+
+extern int	remove(const char *);
+extern int	rename(const char *, const char *);
+extern FILE	*tmpfile(void);
+extern char	*tmpnam(char *);
+extern int	fclose(FILE *);
+extern int	fflush(FILE *);
+extern FILE	*fopen(const char *, const char *);
+extern FILE	*freopen(const char *, const char *, FILE *);
+extern void	setbuf(FILE *, char *);
+extern int	setvbuf(FILE *, char *, int, size_t);
+ 
+extern int	fprintf(FILE *, const char *, ...);
+ 
+extern int	fscanf(FILE *, const char *, ...);
+ 
+extern int	printf(const char *, ...);
+ 
+extern int	scanf(const char *, ...);
+ 
+extern int	sprintf(char *, const char *, ...);
+ 
+extern int	sscanf(const char *, const char *, ...);
+extern int	vfprintf(FILE *, const char *,   char *);
+extern int	vprintf(const char *,   char *);
+extern int	vsprintf(char *, const char *,   char *);
+extern int	fgetc(FILE *);
+extern char	*fgets(char *, int, FILE *); 
+extern int	fputc(int, FILE *);
+extern int	fputs(const char *, FILE *);
+extern int	getc(FILE *);
+extern int	getchar(void);
+extern char	*gets(char *);
+extern int	putc(int, FILE *);
+extern int	putchar(int);
+extern int	puts(const char *);
+extern int	ungetc(int, FILE *);
+extern size_t	fread(void *, size_t, size_t, FILE *);
+#pragma int_to_unsigned fread
+extern size_t	fwrite(const void *, size_t, size_t, FILE *);
+#pragma int_to_unsigned fwrite
+extern int	fgetpos(FILE *, fpos_t *);
+extern int	fseek(FILE *, long, int);
+extern int	fsetpos(FILE *, const fpos_t *);
+extern long	ftell(FILE *);
+extern void	rewind(FILE *);
+extern void	clearerr(FILE *);
+extern int	feof(FILE *);
+extern int	ferror(FILE *);
+extern void	perror(const char *);
+
+extern int	__filbuf(FILE *);	
+extern int	__flsbuf(int, FILE *);	
+
+
+	 
+extern FILE    *fdopen(int, const char *);
+extern char    *ctermid(char *);
+extern int	fileno(FILE *);
+
+
+
+	 
+extern FILE    *popen(const char *, const char *);
+extern int     pclose(FILE *);
+extern char    *cuserid(char *);
+extern char    *tempnam(const char *, const char *);
+extern int     getw(FILE *);
+extern int     putw(int, FILE *);
+extern int	system(const char *);  
+
+
+
+
+extern char	*mktemp(char *);
+extern int	mkstemp(char *);
+extern int	setbuffer(FILE *, char *, int);
+extern int	setlinebuf(FILE *);
+
+
+
+extern int	__semputc(int, FILE *);
+extern int	__semgetc(FILE *);
+extern int	__us_rsthread_stdio;
+
+
+
+char *ctermid_r(char *);
+void flockfile(FILE *);
+int ftrylockfile(FILE *);
+void funlockfile(FILE *);
+int getc_unlocked(FILE *);
+int putc_unlocked(int, FILE *);
+int getchar_unlocked(void);
+int putchar_unlocked(int);
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 16 "./u64main.h"
+# 1 "/usr/include/stdlib.h"
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+ 
+ 
+
+# 1 "/usr/include/sgidefs.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+		 
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+typedef int __int32_t;
+typedef unsigned  __uint32_t;
+
+
+
+
+
+
+
+
+
+
+typedef long long __int64_t;
+typedef unsigned long long  __uint64_t;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef __int32_t __psint_t;
+typedef __uint32_t __psunsigned_t;
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+typedef __int32_t __scint_t;
+typedef __uint32_t __scunsigned_t;
+
+
+
+
+
+
+
+
+
+
+# 32 "/usr/include/stdlib.h"
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef	struct {
+	 int	quot;
+	 int	rem;
+	} div_t;
+
+typedef struct {
+	 long	quot;
+	 long	rem;
+	} ldiv_t;
+
+
+typedef struct {
+	 long long	quot;
+	 long long	rem;
+	} lldiv_t;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef int	ssize_t;
+
+
+
+
+
+
+
+
+
+typedef long wchar_t;
+
+
+
+
+
+
+extern unsigned char 	__ctype[];	
+
+
+
+extern double atof(const char *);
+extern int atoi(const char *);
+extern long int atol(const char *);
+extern double strtod(const char *, char **);
+extern long int strtol(const char *, char **, int);
+extern unsigned long int strtoul(const char *, char **, int);
+
+extern long long int atoll(const char *);
+extern long long int strtoll(const char *, char **, int);
+extern unsigned long long int strtoull(const char *, char **, int);
+
+
+extern int rand(void);
+extern void srand(unsigned int);
+
+extern void *calloc(size_t, size_t);
+extern void free(void *);
+extern void *malloc(size_t);
+extern void *realloc(void *, size_t);
+
+extern void abort(void);
+extern int atexit(void (*)(void));
+extern void exit(int);
+extern char *getenv(const char *);
+extern int system(const char *);
+
+extern void *bsearch(const void *, const void *, size_t, size_t,
+	int (*)(const void *, const void *));
+extern void qsort(void *, size_t, size_t,
+	int (*)(const void *, const void *));
+
+
+
+
+
+
+
+extern int abs(int);
+
+
+extern div_t div(int, int);
+extern long int labs(long);
+extern ldiv_t ldiv(long, long);
+
+extern long long llabs(long long);
+extern lldiv_t lldiv(long long, long long);
+
+
+extern int mbtowc(wchar_t *, const char *, size_t);
+extern int mblen(const char *, size_t);
+extern int wctomb(char *, wchar_t);
+
+extern size_t mbstowcs(wchar_t *, const char *, size_t);
+extern size_t wcstombs(char *, const wchar_t *, size_t);
+
+
+
+extern long a64l(const char *);
+extern int dup2(int, int);
+extern char *ecvt(double, int, int *, int *);
+extern char *fcvt(double, int, int *, int *);
+extern char *getcwd(char *, size_t);
+extern char *getlogin(void);
+# 1 "/usr/include/getopt.h"
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+extern int	getopt(int, char *const *, const char *);
+extern int	getsubopt(char **, char *const *, char **);
+
+extern char	*optarg;
+extern int	opterr;
+extern int	optind;
+extern int	optopt;
+
+
+
+
+
+
+# 178 "/usr/include/stdlib.h"
+extern char *getpass(const char *);
+extern int getpw(int, char *);
+extern char *gcvt(double, int, char *);
+extern int isatty(int);
+extern void l3tol(long *, const char *, int);
+extern char *l64a(long);
+extern void ltol3(char *, const long *, int);
+extern void * memalign(size_t, size_t);
+extern char *mktemp(char *);
+extern int putenv(char *);
+extern char *realpath(const char *, char *);
+extern void swab(const char *, char *, int);
+extern char *ttyname(int);
+extern int ttyslot(void);
+extern void *valloc(size_t);
+
+extern double	drand48(void);
+extern double	erand48(unsigned short [3]);
+extern long	lrand48(void);
+extern long	nrand48(unsigned short [3]);
+extern long	mrand48(void);
+extern long	jrand48(unsigned short [3]);
+extern void	srand48(long);
+extern unsigned short * seed48(const unsigned short [3]);
+extern void	lcong48(const unsigned short [7]);
+
+
+
+
+extern int rand_r(unsigned int *);
+extern char *ttyname_r(int, char *, int);
+extern char *ecvt_r(double, int, int *, int *, char *);
+extern char *fcvt_r(double, int, int *, int *, char *);
+
+
+
+
+
+
+
+
+
+# 17 "./u64main.h"
+# 1 "/usr/include/string.h"
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern void *memcpy(void *, const void *, size_t);
+extern void *memmove(void *, const void *, size_t);
+extern char *strcpy(char *, const char *);
+
+extern char *strncpy(char *, const char *, size_t);
+
+extern char *strcat(char *, const char *);
+extern char *strncat(char *, const char *, size_t);
+
+extern int memcmp(const void *, const void *, size_t);
+extern int strcmp(const char *, const char *);
+extern int strcoll(const char *, const char *);
+extern int strncmp(const char *, const char *, size_t);
+extern size_t strxfrm(char *, const char *, size_t);
+
+extern void *memchr(const void *, int, size_t);
+extern char *strchr(const char *, int);
+extern size_t strcspn(const char *, const char *);
+#pragma int_to_unsigned strcspn
+extern char *strpbrk(const char *, const char *);
+extern char *strrchr(const char *, int);
+extern size_t strspn(const char *, const char *);
+#pragma int_to_unsigned strspn
+extern char *strstr(const char *, const char *);
+extern char *strtok(char *, const char *);
+
+extern void *memset(void *, int, size_t);
+extern char *strerror(int);
+extern size_t strlen(const char *);
+#pragma int_to_unsigned strlen
+
+
+
+extern void *memccpy(void *, const void *, int, size_t);
+
+
+
+
+extern char *strdup(const char *);
+extern int ffs(int);
+
+
+
+
+
+ 
+extern int	strcasecmp(const char *, const char *);
+extern int	strncasecmp(const char *, const char *, size_t);
+
+
+
+
+extern char *strtok_r(char *, const char *, char **);
+
+
+
+ 
+
+
+#pragma intrinsic (strcpy)
+
+
+
+
+
+
+# 18 "./u64main.h"
+# 1 "/usr/include/ultra64.h"
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/ultratypes.h"
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+typedef unsigned char			u8;	 
+typedef unsigned short			u16;	 
+typedef unsigned long			u32;	 
+typedef unsigned long long		u64;	 
+
+typedef signed char			s8;	 
+typedef short				s16;	 
+typedef long				s32;	 
+typedef long long			s64;	 
+
+typedef volatile unsigned char		vu8;	 
+typedef volatile unsigned short		vu16;	 
+typedef volatile unsigned long		vu32;	 
+typedef volatile unsigned long long	vu64;	 
+
+typedef volatile signed char		vs8;	 
+typedef volatile short			vs16;	 
+typedef volatile long			vs32;	 
+typedef volatile long long		vs64;	 
+
+typedef float				f32;	 
+typedef double				f64;	 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 19 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/rcp.h"
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/R4300.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/ultratypes.h"
+# 75 "/usr/include/PR/ultratypes.h"
+
+
+# 17 "/usr/include/PR/R4300.h"
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 30 "/usr/include/PR/rcp.h"
+# 1 "/usr/include/PR/ultratypes.h"
+# 75 "/usr/include/PR/ultratypes.h"
+
+
+# 31 "/usr/include/PR/rcp.h"
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+						
+ 
+
+
+ 
+ 
+
+
+ 
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+ 
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+# 20 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/os.h"
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/ultratypes.h"
+# 75 "/usr/include/PR/ultratypes.h"
+
+
+# 39 "/usr/include/PR/os.h"
+
+
+
+ 
+
+
+
+
+
+typedef s32	OSPri;
+typedef s32	OSId;
+typedef union	{ struct { f32 f_odd; f32 f_even; } f; f64 d; }	__OSfp;
+
+typedef struct {
+	u64	at, v0, v1, a0, a1, a2, a3;
+	u64	t0, t1, t2, t3, t4, t5, t6, t7;
+	u64	s0, s1, s2, s3, s4, s5, s6, s7;
+	u64	t8, t9,         gp, sp, s8, ra;
+	u64	lo, hi;
+	u32	sr, pc, cause, badvaddr, rcp;
+	u32	fpcsr;
+	__OSfp	 fp0,  fp2,  fp4,  fp6,  fp8, fp10, fp12, fp14;
+	__OSfp	fp16, fp18, fp20, fp22, fp24, fp26, fp28, fp30;
+} __OSThreadContext;
+
+typedef struct OSThread_s {
+	struct OSThread_s	*next;		 
+	OSPri			priority;	 
+	struct OSThread_s	**queue;	 
+	struct OSThread_s	*tlnext;	 
+	u16			state;		 
+	u16			flags;		 
+	OSId			id;		 
+	int			fp;		 
+	__OSThreadContext	context;	 
+} OSThread;
+
+typedef u32 OSEvent;
+typedef u32 OSIntMask;
+typedef u32 OSPageMask;
+
+ 
+
+
+typedef void *	OSMesg;
+
+ 
+
+
+typedef struct OSMesgQueue_s {
+	OSThread	*mtqueue;	 
+
+	OSThread	*fullqueue;	 
+
+	s32		validCount;	 
+	s32		first;		 
+	s32		msgCount;	 
+	OSMesg		*msg;		 
+} OSMesgQueue;
+
+ 
+
+
+typedef struct {
+        u16 		type;		 
+        u8 		pri;		 
+        u8		status;		 
+	OSMesgQueue	*retQueue;	 
+
+} OSIoMesgHdr;
+
+typedef struct {
+	OSIoMesgHdr	hdr;		 
+	void *		dramAddr;	 
+	u32		devAddr;	 
+	u32 		size;		 
+} OSIoMesg;
+
+ 
+
+
+typedef struct {
+        s32             active;		 
+	OSThread	*thread;	 
+        OSMesgQueue  	*cmdQueue;	 
+        OSMesgQueue  	*evtQueue;	 
+        OSMesgQueue  	*acsQueue;	 
+					 
+        s32             (*dma)(s32, u32, void *, u32);
+} OSDevMgr;
+
+
+ 
+
+
+typedef struct {
+    u32	ctrl;
+    u32	width;
+    u32	burst;
+    u32	vSync;
+    u32	hSync;
+    u32	leap;
+    u32	hStart;
+    u32	xScale;
+    u32	vCurrent;
+} OSViCommonRegs;
+
+
+ 
+
+
+typedef struct {
+    u32	origin;
+    u32	yScale;
+    u32	vStart;	
+    u32	vBurst;
+    u32	vIntr;
+} OSViFieldRegs;
+
+
+ 
+
+
+typedef struct {
+    u8			type;		 
+    OSViCommonRegs	comRegs;	 
+    OSViFieldRegs	fldRegs[2];	 
+} OSViMode;
+
+ 
+
+
+typedef u64	OSTime;
+
+ 
+
+
+typedef struct OSTimer_s {
+	struct OSTimer_s	*next;	 
+	struct OSTimer_s	*prev;	 
+	OSTime			interval;	 
+	OSTime			value;		 
+						 
+	OSMesgQueue		*mq;		 
+	OSMesg			msg;		 
+} OSTimer;
+
+ 
+
+
+
+typedef struct {
+	u16     type;                    
+	u8      status;                  
+	u8	errno;
+}OSContStatus;
+
+typedef struct {
+	u16     button;
+	s8      stick_x;		 
+	s8      stick_y;		 
+	u8	errno;
+} OSContPad;
+
+typedef struct {
+	void    *address;                
+	u8      databuffer[32];          
+        u8      addressCrc;              
+	u8      dataCrc;                 
+	u8	errno;
+} OSContRamIo;
+
+ 
+
+
+typedef struct {
+	u16	*histo_base;		 
+	u32	histo_size;		 
+	u32	*text_start;		 
+	u32	*text_end;		 
+} OSProf;
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+ 
+
+
+
+
+extern OSViMode	osViModeTable[];	 
+
+extern OSViMode	osViModeNtscLpn1;	 
+extern OSViMode	osViModeNtscLpf1;
+extern OSViMode	osViModeNtscLan1;
+extern OSViMode	osViModeNtscLaf1;
+extern OSViMode	osViModeNtscLpn2;
+extern OSViMode	osViModeNtscLpf2;
+extern OSViMode	osViModeNtscLan2;
+extern OSViMode	osViModeNtscLaf2;
+extern OSViMode	osViModeNtscHpn1;
+extern OSViMode	osViModeNtscHpf1;
+extern OSViMode	osViModeNtscHan1;
+extern OSViMode	osViModeNtscHaf1;
+extern OSViMode	osViModeNtscHpn2;
+extern OSViMode	osViModeNtscHpf2;
+
+extern OSViMode	osViModePalLpn1;	 
+extern OSViMode	osViModePalLpf1;
+extern OSViMode	osViModePalLan1;
+extern OSViMode	osViModePalLaf1;
+extern OSViMode	osViModePalLpn2;
+extern OSViMode	osViModePalLpf2;
+extern OSViMode	osViModePalLan2;
+extern OSViMode	osViModePalLaf2;
+extern OSViMode	osViModePalHpn1;
+extern OSViMode	osViModePalHpf1;
+extern OSViMode	osViModePalHan1;
+extern OSViMode	osViModePalHaf1;
+extern OSViMode	osViModePalHpn2;
+extern OSViMode	osViModePalHpf2;
+
+extern s32 	osRomType;	 
+extern void 	*osRomBase;	 
+extern s32 	osTvType;	 
+extern s32 	osResetType;	 
+extern s32 	osCicId;
+extern s32 	osVersion;
+extern u32	osMemSize;	 
+
+
+ 
+
+
+
+
+
+ 
+
+extern void		osCreateThread(OSThread *, OSId, void (*)(void *),
+				       void *, void *, OSPri);
+extern void		osDestroyThread(OSThread *);
+extern void		osYieldThread(void);
+extern void		osStartThread(OSThread *);
+extern void		osStopThread(OSThread *);
+extern OSId		osGetThreadId(OSThread *);
+extern void		osSetThreadPri(OSThread *, OSPri);
+extern OSPri		osGetThreadPri(OSThread *);
+
+ 
+
+extern void		osCreateMesgQueue(OSMesgQueue *, OSMesg *, s32);
+extern s32		osSendMesg(OSMesgQueue *, OSMesg, s32);
+extern s32		osJamMesg(OSMesgQueue *, OSMesg, s32);
+extern s32		osRecvMesg(OSMesgQueue *, OSMesg *, s32);
+
+ 
+
+extern void		osSetEventMesg(OSEvent, OSMesgQueue *, OSMesg);
+
+ 
+
+extern OSIntMask	osGetIntMask(void);
+extern OSIntMask	osSetIntMask(OSIntMask);
+
+ 
+
+extern void		osInvalDCache(void *, s32);
+extern void		osInvalICache(void *, s32);
+extern void		osWritebackDCache(void *, s32);
+extern void		osWritebackDCacheAll(void);
+
+
+
+
+ 
+
+extern void		osMapTLB(s32, OSPageMask, void *, u32, u32, s32);
+extern void		osMapTLBRdb(void);
+extern void		osUnmapTLB(s32);
+extern void		osUnmapTLBAll(void);
+extern void		osSetTLBASID(s32);
+
+ 
+
+extern u32		 osVirtualToPhysical(void *);
+extern void *		 osPhysicalToVirtual(u32);
+
+
+
+
+
+
+
+ 
+
+ 
+extern u32 		osAiGetStatus(void);
+extern u32 		osAiGetLength(void);
+extern s32		osAiSetFrequency(u32);
+extern s32		osAiSetNextBuffer(void *, u32);
+
+ 
+extern u32 		osDpGetStatus(void);
+extern void		osDpSetStatus(u32);
+extern void 		osDpGetCounters(u32 *);
+extern s32		osDpSetNextBuffer(void *, u64);
+
+ 
+extern u32 		osPiGetStatus(void);
+extern s32		osPiGetDeviceType(void);
+extern s32		osPiRawWriteIo(u32, u32);
+extern s32		osPiRawReadIo(u32, u32 *);
+extern s32		osPiRawStartDma(s32, u32, void *, u32);
+extern s32		osPiWriteIo(u32, u32);
+extern s32		osPiReadIo(u32, u32 *);
+extern s32		osPiStartDma(OSIoMesg *, s32, s32, u32, void *, u32,
+				     OSMesgQueue *);
+extern void		osCreatePiManager(OSPri, OSMesgQueue *, OSMesg *, s32);
+
+ 
+extern u32		osViGetStatus(void);
+extern u32		osViGetCurrentMode(void);
+extern u32		osViGetCurrentLine(void);
+extern u32		osViGetCurrentField(void);
+extern void		*osViGetCurrentFramebuffer(void);
+extern void		*osViGetNextFramebuffer(void);
+extern void		osViSetXScale(f32);
+extern void		osViSetYScale(f32);
+extern void		osViSetSpecialFeatures(u32);
+extern void		osViSetMode(OSViMode *);
+extern void		osViSetEvent(OSMesgQueue *, OSMesg, u32);
+extern void		osViSwapBuffer(void *);
+extern void		osViBlack(u8);
+extern void		osViFade(u8, u16);
+extern void		osRepeatLine(u8);
+extern void		osCreateViManager(OSPri);
+
+ 
+
+extern OSTime		osGetTime(void);
+extern void		osSetTime(OSTime);
+extern int		osSetTimer(OSTimer *, OSTime, OSTime,
+				   OSMesgQueue *, OSMesg);
+extern int		osStopTimer(OSTimer *);
+
+ 
+
+extern s32		osContInit(OSMesgQueue *, u8 *, OSContStatus *);
+extern s32		osContReset(OSMesgQueue *, OSContStatus *);
+extern s32		osContStartQuery(OSMesgQueue *);
+extern s32		osContStartReadData(OSMesgQueue *);
+extern s32		osContStartRamRead(OSMesgQueue *, OSContRamIo *);
+extern s32		osContStartRamWrite(OSMesgQueue *, OSContRamIo *);
+
+extern s32		osContSetCh(u8);
+
+extern void		osContGetQuery(OSContStatus *);
+extern void		osContGetReadData(OSContPad *);
+extern void		osContGetRamRead(OSContRamIo *);
+extern void		osContCheckRamWrite(OSContRamIo *);
+extern u8		osContAddressCrc(u8 *);
+extern u8		osContDataCrc(u8 *);
+
+ 
+
+extern void		osProfileInit(OSProf *, u32 profcnt);
+extern void		osProfileStart(u32);
+extern void		osProfileFlush(void);
+extern void		osProfileStop(void);
+
+ 
+
+extern s32		osTestHost(void);
+extern void		osReadHost(void *, s32);
+extern void		osWriteHost(void *, s32);
+
+ 
+
+extern void		osInitialize(void);
+extern u32		osGetCount(void);
+extern void		osExit(void);
+
+ 
+
+extern int		sprintf(char *s, const char *fmt, ...);
+extern void		osSyncPrintf(const char *fmt, ...);
+extern void		osAsyncPrintf(const char *fmt, ...);
+extern int		osSyncGetChars(char *buf);
+extern int		osAsyncGetChars(char *buf);
+
+
+
+
+
+
+
+
+# 21 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/region.h"
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/ultratypes.h"
+# 75 "/usr/include/PR/ultratypes.h"
+
+
+# 39 "/usr/include/PR/region.h"
+
+
+ 
+
+
+
+
+					 
+
+
+
+				 
+
+
+				 
+
+				 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+ 
+
+
+typedef struct _Region_s {
+	u8	*r_startBufferAddress;	 
+	u8	*r_endAddress;		 
+	s32	r_bufferSize;		 
+	s32	r_bufferCount;		 
+
+	u16 	r_freeList;		 
+
+	u16 	r_alignSize;		 
+} OSRegion;
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+extern void	*osCreateRegion(void *, u32, u32, u32);
+extern void 	*osMalloc(void *); 
+extern void	osFree(void *, void *); 
+extern s32	osGetRegionBufCount(void *); 
+extern s32	osGetRegionBufSize(void *); 
+
+
+
+
+
+
+
+
+
+
+# 22 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/rmon.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/ultratypes.h"
+# 75 "/usr/include/PR/ultratypes.h"
+
+
+# 21 "/usr/include/PR/rmon.h"
+
+
+
+extern void rmonMain( void * );
+extern void rmonPrintf( const char *, ... );
+
+
+
+
+
+
+# 23 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/sptask.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/ultratypes.h"
+# 75 "/usr/include/PR/ultratypes.h"
+
+
+# 21 "/usr/include/PR/sptask.h"
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef struct {
+	u32	type;
+	u32	flags;
+
+	u64	*ucode_boot;
+	u32	ucode_boot_size;
+
+	u64	*ucode;
+	u32	ucode_size;
+
+	u64	*ucode_data;
+	u32	ucode_data_size;
+
+	u64	*dram_stack;
+	u32	dram_stack_size;
+
+	u64	*output_buff;
+	u64	*output_buff_size;
+
+	u64	*data_ptr;
+	u32	data_size;
+
+	u64	*yield_data_ptr;
+	u32	yield_data_size;
+
+} OSTask_t;
+
+typedef union {
+    OSTask_t		t;
+    long long int	force_structure_alignment;
+} OSTask;
+
+typedef u32 OSYieldResult;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+extern void		osSpTaskLoad(OSTask *tp);
+extern void		osSpTaskStartGo(OSTask *tp);
+
+extern void		osSpTaskYield(void);
+extern OSYieldResult	osSpTaskYielded(OSTask *tp);
+
+
+
+
+
+
+
+
+# 24 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/mbi.h"
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+# 1 "/usr/include/PR/gbi.h"
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+	
+
+ 
+ 
+	
+
+ 
+ 
+	
+
+ 
+ 
+	
+
+ 
+ 
+	
+
+ 
+ 
+	
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+
+
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+typedef struct {
+	short		ob[3];	 
+	unsigned short	flag;
+	short		tc[2];	 
+	unsigned char	cn[4];	 
+} Vtx_t;
+
+ 
+
+
+typedef struct {
+	short		ob[3];	 
+	unsigned short	flag;
+	short		tc[2];	 
+	signed char	n[3];	 
+	unsigned char   a;       
+} Vtx_tn;
+
+typedef union {
+    Vtx_t		v;   
+    Vtx_tn              n;   
+    long long int	force_structure_alignment;
+} Vtx;
+
+ 
+
+
+typedef struct {
+	unsigned char	flag;
+	unsigned char	v[3];
+} Tri;
+
+ 
+
+
+
+
+typedef long	Mtx_t[4][4];
+
+typedef union {
+    Mtx_t		m;
+    long long int	force_structure_alignment;
+} Mtx;
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+typedef struct {
+	short	vscale[4];   
+	short	vtrans[4];   
+	 
+} Vp_t;
+
+typedef union {
+    Vp_t		vp;
+    long long int	force_structure_alignment;
+} Vp;
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+typedef struct {
+  unsigned char	col[3];		 
+  char 		pad1;
+  unsigned char	colc[3];	 
+  char 		pad2;
+  signed char	dir[3];		 
+  char 		pad3;
+} Light_t;
+
+typedef struct {
+  unsigned char	col[3];		 
+  char 		pad1;
+  unsigned char	colc[3];	 
+  char 		pad2;
+} Ambient_t;
+
+typedef struct {
+  int		x1,y1,x2,y2;	 
+} Hilite_t;
+
+typedef union {
+    Light_t	l;
+    long long int	force_structure_alignment[2];
+} Light;
+
+typedef union {
+    Ambient_t	l;
+    long long int	force_structure_alignment[1];
+} Ambient;
+
+typedef struct {
+    Ambient	a;
+    Light	l[7];
+} Lightsn;
+
+typedef struct {
+    Ambient	a;
+    Light	l[1];
+} Lights0;
+
+typedef struct {
+    Ambient	a;
+    Light	l[1];
+} Lights1;
+
+typedef struct {
+    Ambient	a;
+    Light	l[2];
+} Lights2;
+
+typedef struct {
+    Ambient	a;
+    Light	l[3];
+} Lights3;
+
+typedef struct {
+    Ambient	a;
+    Light	l[4];
+} Lights4;
+
+typedef struct {
+    Ambient	a;
+    Light	l[5];
+} Lights5;
+
+typedef struct {
+    Ambient	a;
+    Light	l[6];
+} Lights6;
+
+typedef struct {
+    Ambient	a;
+    Light	l[7];
+} Lights7;
+
+typedef struct {
+    Light	l[2];
+} LookAt;
+
+typedef union {
+    Hilite_t	h;
+    long int	force_structure_alignment[4];
+} Hilite;
+
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+ 
+
+ 
+
+
+typedef struct {
+	int		cmd:8;
+	unsigned int	par:8;
+	unsigned int	len:16;
+	unsigned int	addr;
+} Gdma;
+
+ 
+
+
+typedef struct {
+		int		cmd:8;
+		int		pad:24;
+		Tri		tri;
+} Gtri;
+
+typedef struct {
+		int		cmd:8;
+		int		pad1:24;
+		int             pad2:24;
+		unsigned char	param:8;
+} Gpopmtx;
+
+ 
+
+
+
+
+
+
+
+
+typedef struct {
+		int		cmd:8;
+		int		pad0:8;
+		int		mw_index:8;
+		int		number:8;
+		int		pad1:8;
+		int		base:24;
+} Gsegment;
+
+typedef struct {
+		int		cmd:8;
+		int		pad0:8;
+		int		sft:8;
+		int		len:8;
+		unsigned int	data:32;
+} GsetothermodeL;
+
+typedef struct {
+		int		cmd:8;
+		int		pad0:8;
+		int		sft:8;
+		int		len:8;
+		unsigned int	data:32;
+} GsetothermodeH;
+
+typedef struct {
+		unsigned char	cmd;
+		unsigned char	lodscale;
+		unsigned char	tile;
+		unsigned char	on;
+		unsigned short	s;
+		unsigned short	t;
+} Gtexture;
+
+typedef struct {
+		int		cmd:8;
+		int		pad:24;
+		Tri		line;
+} Gline3D;
+
+typedef struct {
+		int		cmd:8;
+		int		pad1:24;
+		short int	pad2;
+		short int       scale;
+} Gperspnorm;
+
+
+ 
+
+
+typedef struct {
+                int             cmd:8;
+                unsigned int    fmt:3;
+                unsigned int    siz:2;
+                unsigned int    pad:7;
+                unsigned int    wd:12;	 
+                unsigned int    dram;	 
+} Gsetimg;
+
+typedef struct {
+		int		cmd:8;
+		unsigned int	muxs0:24;
+		unsigned int	muxs1:32;
+} Gsetcombine;
+
+typedef struct {
+		int		cmd:8;
+		unsigned char	pad;
+		unsigned char	prim_min_level;
+		unsigned char	prim_level;
+		unsigned long	color;
+} Gsetcolor;
+
+typedef struct {
+		int		cmd:8;
+		int		x0:10;
+		int		x0frac:2;
+		int		y0:10;
+		int		y0frac:2;
+		unsigned int	pad:8;
+		int		x1:10;
+		int		x1frac:2;
+		int		y1:10;
+		int		y1frac:2;
+} Gfillrect;
+
+typedef struct {
+		int		cmd:8;
+		unsigned int	fmt:3;
+		unsigned int	siz:2;
+		unsigned int	pad0:1;
+		unsigned int	line:9;
+		unsigned int	tmem:9;
+		unsigned int	pad1:5;
+		unsigned int	tile:3;
+		unsigned int	palette:4;
+		unsigned int	ct:1;
+		unsigned int	mt:1;
+		unsigned int	maskt:4;
+		unsigned int	shiftt:4;
+		unsigned int	cs:1;
+		unsigned int	ms:1;
+		unsigned int	masks:4;
+		unsigned int	shifts:4;
+} Gsettile;
+
+typedef struct {
+		int		cmd:8;
+		unsigned int	sl:12;
+		unsigned int	tl:12;
+		int		pad:5;
+		unsigned int	tile:3;
+		unsigned int	sh:12;
+		unsigned int	th:12;
+} Gloadtile;
+
+typedef Gloadtile Gloadblock;
+
+typedef Gloadtile Gsettilesize;
+
+typedef Gloadtile Gloadtlut;
+
+typedef struct {
+		unsigned int	cmd:8;	 
+		unsigned int	xl:12;	 
+		unsigned int	yl:12;	 
+		unsigned int	pad1:5;	 
+		unsigned int	tile:3;	 
+		unsigned int	xh:12;	 
+		unsigned int	yh:12;	 
+		unsigned int	s:16;	 
+		unsigned int	t:16;	 
+		unsigned int	dsdx:16; 
+		unsigned int	dtdy:16; 
+} Gtexrect;
+
+
+ 
+
+ 
+
+	
+typedef struct {
+    unsigned long w0;
+    unsigned long w1;
+    unsigned long w2;
+    unsigned long w3;
+} TexRect;
+
+ 
+
+
+typedef struct {
+	unsigned int w0;
+	unsigned int w1;
+} Gwords;
+
+ 
+
+
+
+typedef union {
+	Gwords		words;
+	Gdma		dma;
+	Gtri		tri;
+	Gline3D		line;
+	Gpopmtx		popmtx;
+	Gsegment	segment;
+	GsetothermodeH	setothermodeH;
+	GsetothermodeL	setothermodeL;
+	Gtexture	texture;
+	Gperspnorm	perspnorm;
+	Gsetimg		setimg;
+	Gsetcombine	setcombine;
+	Gsetcolor	setcolor;
+	Gfillrect	fillrect;	 
+	Gsettile	settile;
+	Gloadtile	loadtile;	 
+	Gsettilesize	settilesize;
+	Gloadtlut	loadtlut;
+        long long int	force_structure_alignment;
+} Gfx;
+
+ 
+
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+ 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+ 
+
+ 
+ 
+
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+ 
+
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+
+
+ 
+
+
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 37 "/usr/include/PR/mbi.h"
+
+ 
+
+
+
+
+
+# 1 "/usr/include/PR/abi.h"
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	flags:8;
+	unsigned int	gain:16;
+	unsigned int	addr;
+} Aadpcm;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	flags:8;
+	unsigned int	gain:16;
+	unsigned int	addr;
+} Apolef;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	flags:8;
+	unsigned int	pad1:16;
+	unsigned int	addr;
+} Aenvelope;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	pad1:8;
+	unsigned int	dmem:16;
+	unsigned int	pad2:16;
+	unsigned int	count:16;
+} Aclearbuff;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	pad1:8;
+	unsigned int	pad2:16;
+	unsigned int	inL:16;
+        unsigned int    inR:16;
+} Ainterleave;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	pad1:24;
+	unsigned int	addr;
+} Aloadbuff;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	flags:8;
+	unsigned int	pad1:16;
+	unsigned int	addr;
+} Aenvmixer;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	flags:8;
+	unsigned int	gain:16;
+	unsigned int	dmemi:16;
+	unsigned int	dmemo:16;
+} Amixer;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	flags:8;
+	unsigned int	dmem2:16;
+	unsigned int	addr;
+} Apan;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	flags:8;
+	unsigned int	pitch:16;
+	unsigned int	addr;
+} Aresample;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	flags:8;
+	unsigned int	pad1:16;
+	unsigned int	addr;
+} Areverb;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	pad1:24;
+	unsigned int	addr;
+} Asavebuff;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	pad1:24;
+	unsigned int    pad2:2;
+	unsigned int    number:4;
+	unsigned int	base:24;
+} Asegment;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	flags:8;
+	unsigned int	dmemin:16;
+	unsigned int	dmemout:16;
+	unsigned int	count:16;
+} Asetbuff;
+
+typedef struct {
+  	unsigned int	cmd:8;
+	unsigned int	flags:8;
+	unsigned int	vol:16;
+	unsigned int	voltgt:16;
+	unsigned int	volrate:16;
+} Asetvol;
+
+typedef struct {
+    unsigned int        cmd:8;
+    unsigned int        pad1:8;
+    unsigned int        dmemin:16;
+    unsigned int        dmemout:16;
+    unsigned int        count:16;
+} Admemmove;
+
+typedef struct {
+    unsigned int        cmd:8;
+    unsigned int        pad1:8;
+    unsigned int        count:16;
+    unsigned int        addr;
+} Aloadadpcm;
+
+typedef struct {
+    unsigned int        cmd:8;
+    unsigned int        pad1:8;
+    unsigned int        pad2:16;
+    unsigned int        addr;
+} Asetloop;
+        
+ 
+
+
+
+typedef struct {
+	unsigned int w0;
+	unsigned int w1;
+} Awords;
+
+typedef union {
+	Awords		words;
+	Aadpcm		adpcm;
+        Apolef          polef;
+	Aclearbuff	clearbuff;
+	Aenvelope	envelope;
+        Ainterleave     interleave;
+	Aloadbuff	loadbuff;
+        Aenvmixer       envmixer;
+	Aresample	resample;
+	Areverb		reverb;
+	Asavebuff	savebuff;
+	Asegment	segment;
+	Asetbuff	setbuff;
+	Asetvol		setvol;
+        Admemmove       dmemmove;
+        Aloadadpcm	loadadpcm;
+        Amixer		mixer;
+        Asetloop        setloop;
+        long long int	force_union_align;	 
+} Acmd;
+
+ 
+
+
+
+
+typedef short ADPCM_STATE[16 ];
+
+ 
+
+
+typedef short POLEF_STATE[4];
+
+ 
+
+
+typedef short RESAMPLE_STATE[16];
+
+ 
+
+
+
+
+
+ 
+
+
+typedef short ENVMIX_STATE[40];
+
+ 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+    
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+# 45 "/usr/include/PR/mbi.h"
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 25 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/libaudio.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/ultratypes.h"
+# 75 "/usr/include/PR/ultratypes.h"
+
+
+# 29 "/usr/include/PR/libaudio.h"
+# 1 "/usr/include/PR/mbi.h"
+# 88 "/usr/include/PR/mbi.h"
+
+# 30 "/usr/include/PR/libaudio.h"
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+typedef s32     ALMicroTime;
+typedef u8      ALPan;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+ 
+
+
+typedef struct ALLink_s {
+    struct ALLink_s      *next;
+    struct ALLink_s      *prev;
+} ALLink;
+
+void    alUnlink(ALLink *element);
+void    alLink(ALLink *element, ALLink *after);
+
+typedef s32 (*ALDMAproc)(s32 addr, s32 len, void *state);
+typedef ALDMAproc (*ALDMANew)(void *state);
+
+void    alCopy(void *src, void *dest, s32 len);
+
+typedef struct {
+    u8          *base;
+    u8          *cur;
+    s32         len;
+    s32         count;
+} ALHeap;
+
+
+
+
+
+void    alHeapInit(ALHeap *hp, u8 *base, s32 len);
+void    *alHeapDBAlloc(u8 *file, s32 line, ALHeap *hp, s32 num, s32 size);
+s32     alHeapCheck(ALHeap *hp);
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+typedef u8      ALFxId;
+typedef void    *ALFxRef;
+
+ 
+
+
+
+
+
+ 
+enum    {AL_ADPCM_WAVE = 0,
+         AL_RAW16_WAVE};
+
+typedef struct {
+    s32 order;
+    s32 npredictors;
+    s16 book[1];         
+} ALADPCMBook;
+
+typedef struct {
+    u32         start;
+    u32         end;
+    u32         count;
+    ADPCM_STATE state;
+} ALADPCMloop;
+
+typedef struct {
+    u32         start;
+    u32         end;
+    u32         count;
+} ALRawLoop;
+
+typedef struct {
+    ALMicroTime attackTime;
+    ALMicroTime decayTime;
+    ALMicroTime releaseTime;
+    u8          attackVolume;
+    u8          decayVolume;
+} ALEnvelope;
+
+typedef struct {
+    u8          velocityMin;
+    u8          velocityMax;
+    u8          keyMin;
+    u8          keyMax;
+    u8          keyBase;
+    u8          detune;
+} ALKeyMap;
+
+typedef struct {
+    ALADPCMloop *loop;
+    ALADPCMBook *book;
+} ALADPCMWaveInfo;
+
+typedef struct {
+    ALRawLoop *loop;
+} ALRAWWaveInfo;
+
+typedef struct ALWaveTable_s {
+    u8          *base;           
+    s32         len;             
+    u8          type;            
+    u8          flags;           
+    union {
+        ALADPCMWaveInfo adpcmWave;
+        ALRAWWaveInfo   rawWave;
+    } waveInfo;
+} ALWaveTable;
+
+typedef struct ALSound_s {
+    ALEnvelope  *envelope;
+    ALKeyMap    *keyMap;
+    ALWaveTable *wavetable;      
+    ALPan       samplePan;
+    u8          sampleVolume;
+    u8          flags;
+} ALSound;
+
+typedef struct {
+    u8          volume;          
+    ALPan       pan;             
+    u8          priority;        
+    u8          flags;
+    u8          tremType;        
+    u8          tremRate;        
+    u8          tremDepth;       
+    u8          tremDelay;       
+    u8          vibType;         
+    u8          vibRate;         
+    u8          vibDepth;        
+    u8          vibDelay;        
+    s16         bendRange;       
+    s16         soundCount;      
+    ALSound     *soundArray[1];
+} ALInstrument;
+
+typedef struct ALBank_s {
+    s16                 instCount;       
+    u8                  flags;
+    u8                  pad;
+    s32                 sampleRate;      
+    ALInstrument        *percussion;     
+    ALInstrument        *instArray[1];   
+} ALBank;
+
+typedef struct {                 
+    s16         revision;        
+    s16         bankCount;       
+    ALBank      *bankArray[1];   
+} ALBankFile;
+
+void    alBnkfNew(ALBankFile *f, u8 *table);
+
+ 
+
+
+
+
+typedef struct {
+    u8          *offset;
+    s32         len;
+} ALSeqData;
+
+typedef struct {                 
+    s16         revision;        
+    s16         seqCount;        
+    ALSeqData   seqArray[1];     
+} ALSeqFile;
+
+void    alSeqFileNew(ALSeqFile *f, u8 *base);
+
+ 
+
+
+typedef ALMicroTime (*ALVoiceHandler)(void *);
+
+typedef struct {
+    s32                 maxVVoices;
+    s32                 maxPVoices;
+    s32                 maxUpdates;
+    s32                 maxFXbusses;
+    void                *dmaproc;
+    ALHeap              *heap;
+    s32                 outputRate;      
+    ALFxId              fxType;
+    s32                 *params;
+} ALSynConfig;
+
+typedef struct ALPlayer_s {
+    struct ALPlayer_s   *next;
+    void                *clientData;     
+    ALVoiceHandler      handler;         
+    ALMicroTime         callTime;        
+    ALMicroTime         timeLeft;        
+} ALPlayer;
+
+typedef struct ALVoice_s {
+    ALLink              node;
+    struct PVoice_s     *pvoice;
+    ALWaveTable         *table;
+    void                *clientPrivate;
+    s16                 state;
+    s16                 priority;
+    s16                 fxBus;
+} ALVoice;
+
+typedef struct ALVoiceConfig_s {
+    s16                 priority;        
+    s16                 fxBus;           
+    u8                  unityPitch;      
+} ALVoiceConfig;
+
+typedef struct {
+    ALPlayer    *head;           
+    ALLink      pFreeList;       
+    ALLink      pAllocList;      
+    ALLink      pLameList;       
+    ALLink      vFreeList;       
+    ALLink      vAllocList;      
+    ALMicroTime curTime;         
+    ALMicroTime frameOffset;     
+    ALDMANew    dma;
+    ALHeap      *heap;
+    
+    struct ALParam_s    *paramList;
+    struct ALMainBus_s  *mainBus;
+    struct ALAuxBus_s   *auxBus;         
+    struct ALFilter_s   *outputFilter;   
+
+    s32                 paramCnt;
+    s32                 paramMax;
+    s32                 numPVoices;
+    s32                 numVVoices;
+    s32                 maxAuxBusses;
+    s32                 outputRate;      
+    s32                 maxOutSamples;   
+
+} ALSynth;
+
+void    alSynNew(ALSynth *s, ALSynConfig *config);
+void    alSynDelete(ALSynth *s);
+
+void    alSynAddPlayer(ALSynth *s, ALPlayer *client);
+void    alSynRemovePlayer(ALSynth *s, ALPlayer *client);
+
+ALVoice *alSynAllocVoice(ALSynth *s, ALVoiceConfig *vc);
+void    alSynFreeVoice(ALSynth *s, ALVoice *voice);
+
+void    alSynStartVoice(ALSynth *s, ALVoice *voice, ALWaveTable *w);
+void    alSynStartVoiceParams(ALSynth *s, ALVoice *voice, ALWaveTable *w,
+                              f32 pitch, s16 vol, ALPan pan, u8 fxmix,
+                              ALMicroTime t);
+void    alSynStopVoice(ALSynth *s, ALVoice *voice);
+
+void    alSynSetVol(ALSynth *s, ALVoice *v, s16 vol, ALMicroTime delta);
+void    alSynSetPitch(ALSynth *s, ALVoice *voice, f32 ratio);
+void    alSynSetPan(ALSynth *s, ALVoice *voice, ALPan pan);
+void    alSynSetFXMix(ALSynth *s, ALVoice *voice, u8 fxmix);
+void    alSynSetPriority(ALSynth *s, ALVoice *voice, s16 priority);
+s16     alSynGetPriority(ALSynth *s, ALVoice *voice);
+
+ 
+
+ALFxRef *alSynAllocFX(ALSynth *s, s16 bus, ALSynConfig *c, ALHeap *hp);
+ALFxRef alSynGetFXRef(ALSynth *s, s16 bus, s16 index);
+void    alSynSetFXtype(ALSynth *s, s16 bus, ALFxId id, s32 rate);
+void    alSynFreeFX(ALSynth *s, ALFxRef *fx);
+void    alSynSetFXParam(ALSynth *s, ALFxRef fx, s16 paramID, void *param);
+
+ 
+
+
+typedef struct {
+    ALSynth     drvr;
+} ALGlobals;
+
+extern ALGlobals *alGlobals;
+
+void    alInit(ALGlobals *glob, ALSynConfig *c);
+void    alClose(ALGlobals *glob);
+
+Acmd    *alAudioFrame(Acmd *cmdList, s32 *cmdLen, s16 *outBuf, s32 outLen);
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+enum ALMsg {
+    AL_SEQ_REF_EVT,	 
+    AL_SEQ_MIDI_EVT,
+    AL_SEQP_MIDI_EVT,
+    AL_TEMPO_EVT,
+    AL_SEQ_END_EVT,
+    AL_NOTE_END_EVT,
+    AL_SEQP_ENV_EVT,
+    AL_SEQP_META_EVT,
+    AL_SEQP_PROG_EVT,
+    AL_SEQP_API_EVT,
+    AL_SEQP_VOL_EVT,
+    AL_SEQP_LOOP_EVT,
+    AL_SEQP_STOP_EVT,
+    AL_SEQP_STOPPING_EVT,
+    AL_TRACK_END,
+    AL_CSP_LOOPSTART,
+    AL_CSP_LOOPEND,
+    AL_TREM_OSC_EVT,
+    AL_VIB_OSC_EVT
+};
+
+ 
+
+
+
+
+enum AL_MIDIstatus {
+     
+    AL_MIDI_ChannelMask         = 0x0F,
+    AL_MIDI_StatusMask          = 0xF0,
+
+     
+    AL_MIDI_ChannelVoice        = 0x80,
+    AL_MIDI_NoteOff             = 0x80,
+    AL_MIDI_NoteOn              = 0x90,
+    AL_MIDI_PolyKeyPressure     = 0xA0,
+    AL_MIDI_ControlChange       = 0xB0,
+    AL_MIDI_ChannelModeSelect   = 0xB0,
+    AL_MIDI_ProgramChange       = 0xC0,
+    AL_MIDI_ChannelPressure     = 0xD0,
+    AL_MIDI_PitchBendChange     = 0xE0,
+
+     
+    AL_MIDI_SysEx               = 0xF0,  
+
+     
+    AL_MIDI_SystemCommon            = 0xF1,
+    AL_MIDI_TimeCodeQuarterFrame    = 0xF1,
+    AL_MIDI_SongPositionPointer     = 0xF2,
+    AL_MIDI_SongSelect              = 0xF3,
+    AL_MIDI_Undefined1              = 0xF4,
+    AL_MIDI_Undefined2              = 0xF5,
+    AL_MIDI_TuneRequest             = 0xF6,
+    AL_MIDI_EOX                     = 0xF7,  
+
+     
+    AL_MIDI_SystemRealTime  = 0xF8,
+    AL_MIDI_TimingClock     = 0xF8,
+    AL_MIDI_Undefined3      = 0xF9,
+    AL_MIDI_Start           = 0xFA,
+    AL_MIDI_Continue        = 0xFB,
+    AL_MIDI_Stop            = 0xFC,
+    AL_MIDI_Undefined4      = 0xFD,
+    AL_MIDI_ActiveSensing   = 0xFE,
+    AL_MIDI_SystemReset     = 0xFF,
+    AL_MIDI_Meta            = 0xFF       
+};
+
+enum AL_MIDIctrl {
+    AL_MIDI_VOLUME_CTRL         = 0x07,
+    AL_MIDI_PAN_CTRL            = 0x0A,
+    AL_MIDI_FX_CTRL_0           = 0x14,
+    AL_MIDI_FX_CTRL_1           = 0x15,
+    AL_MIDI_FX_CTRL_2           = 0x16,
+    AL_MIDI_FX_CTRL_3           = 0x17,
+    AL_MIDI_FX_CTRL_4           = 0x18,
+    AL_MIDI_FX_CTRL_5           = 0x19,
+    AL_MIDI_FX_CTRL_6           = 0x1A,
+    AL_MIDI_FX_CTRL_7           = 0x1B,
+    AL_MIDI_FX_CTRL_8           = 0x1C,
+    AL_MIDI_FX_CTRL_9           = 0x1D,
+    AL_MIDI_SUSTAIN_CTRL        = 0x40,
+    AL_MIDI_FX1_CTRL            = 0x5B,
+    AL_MIDI_FX3_CTRL            = 0x5D
+};
+
+enum AL_MIDImeta {
+    AL_MIDI_META_TEMPO          = 0x51,
+    AL_MIDI_META_EOT            = 0x2f
+};
+
+
+
+
+
+
+
+
+
+
+typedef struct {
+    u8          *curPtr;                 
+    s32         lastTicks;               
+    s16         lastStatus;              
+} ALSeqMarker;
+
+typedef struct {
+    s32         ticks;     
+    u8          status;
+    u8          byte1; 
+    u8          byte2;
+    u32         duration;
+} ALMIDIEvent;
+
+typedef struct {
+    s32         ticks;
+    u8          status;
+    u8          type;
+    u8          len;
+    u8          byte1;
+    u8          byte2;
+    u8          byte3;
+} ALTempoEvent;
+
+typedef struct {
+    s32         ticks;
+    u8          status;
+    u8          type;
+    u8          len;
+} ALEndEvent;
+
+typedef struct {
+    struct ALVoice_s    *voice;
+} ALNoteEvent;
+
+typedef struct {
+    struct ALVoice_s    *voice;
+    ALMicroTime         delta;
+    u8                  vol;
+} ALVolumeEvent;
+
+typedef struct {
+    s16                 vol;
+} ALSeqpVolEvent;
+
+typedef struct {
+    ALSeqMarker         *start;
+    ALSeqMarker         *end;
+    s32                 count;
+} ALSeqpLoopEvent;
+
+typedef struct {
+    struct ALVoiceState_s      *vs;
+    void                       *oscState;
+    u8                         chan;
+} ALOscEvent;
+
+typedef struct {
+    s16                 type;
+    union {
+        ALMIDIEvent     midi;
+        ALTempoEvent    tempo;
+        ALEndEvent      end;
+        ALNoteEvent     note;
+        ALVolumeEvent   vol;
+        ALSeqpLoopEvent loop;
+        ALSeqpVolEvent  spvol;
+        ALOscEvent      osc;
+    } msg;
+} ALEvent;
+
+typedef struct {
+    ALLink      node;
+    ALMicroTime delta;
+    ALEvent     evt;
+} ALEventListItem;
+
+typedef struct {
+    ALLink      freeList;
+    ALLink      allocList;
+    s32         eventCount;
+} ALEventQueue;
+
+void            alEvtqNew(ALEventQueue *evtq, ALEventListItem *items,
+                          s32 itemCount);
+ALMicroTime     alEvtqNextEvent(ALEventQueue *evtq, ALEvent *evt);
+void            alEvtqPostEvent(ALEventQueue *evtq, ALEvent *evt,
+                                ALMicroTime delta);
+void        alEvtqFlush(ALEventQueue *evtq);
+
+
+
+
+
+
+
+
+typedef struct ALVoiceState_s {
+    struct ALVoiceState_s *next; 
+    ALVoice     *voice;
+    ALSound     *sound;
+    ALMicroTime envEndTime;      
+    f32         pitch;           
+    f32         vibrato;         
+    u8          envGain;         
+    u8          channel;         
+    u8          key;             
+    u8          velocity;        
+    u8          envPhase;        
+    u8          phase;
+    u8          tremelo;         
+    u8          flags;           
+
+} ALVoiceState;
+
+typedef struct {
+    ALInstrument        *instrument;     
+    s16                 bendRange;       
+    ALFxId              fxId;            
+    ALPan               pan;             
+    u8                  priority;        
+    u8                  vol;             
+    u8                  fxmix;           
+    u8                  sustain;         
+    f32                 pitchBend;       
+} ALChanState;
+
+typedef struct ALSeq_s {
+    u8          *base;                   
+    u8          *trackStart;             
+    u8          *curPtr;                 
+    s32         lastTicks;               
+    s32         len;                     
+    f32         qnpt;                    
+    s16         division;                
+    s16         lastStatus;              
+} ALSeq;
+
+typedef struct {
+    u32      trackOffset[16];
+    u32      division;
+} ALCMidiHdr;
+
+typedef struct ALCSeq_s {
+    ALCMidiHdr    *base;              
+    u32           validTracks;        
+    f32           qnpt;               
+    u32           lastTicks;          
+    u32           lastDeltaTicks;     
+    u32		  deltaFlag;	      
+    u8            *curLoc[16];        
+                                      
+                                      
+    u8            *curBUPtr[16];      
+    u8            curBULen[16];       
+    u8            lastStatus[16];     
+    u32           evtDeltaTicks[16];  
+} ALCSeq;
+
+typedef struct {
+    u32         validTracks;
+    s32         lastTicks;
+    u32         lastDeltaTicks;
+    u8          *curLoc[16];
+    u8          *curBUPtr[16];
+    u8          curBULen[16];
+    u8          lastStatus[16];
+    u32         evtDeltaTicks[16];
+} ALCSeqMarker;
+
+typedef struct {
+    s32         maxVoices;          
+    s32         maxEvents;          
+    u8          maxChannels;        
+    ALHeap      *heap;              
+    void        *initOsc;
+    void        *updateOsc;
+    void        *stopOsc;
+} ALSeqpConfig;
+
+typedef ALMicroTime   (*ALOscInit)(void **oscState,f32 *initVal, u8 oscType,
+                                   u8 oscRate, u8 oscDepth, u8 oscDelay);
+typedef ALMicroTime   (*ALOscUpdate)(void *oscState, f32 *updateVal);
+typedef void          (*ALOscStop)(void *oscState);
+
+typedef struct {
+    ALPlayer            node;            
+    ALSynth             *drvr;           
+    ALSeq               *target;         
+    ALMicroTime         curTime;
+    ALBank              *bank;           
+    s32                 uspt;            
+    s32                 nextDelta;       
+    s32                 state;
+    u16                 chanMask;        
+    s16                 vol;             
+    u8                  maxChannels;     
+    ALEvent             nextEvent;
+    ALEventQueue        evtq;
+    ALMicroTime         frameTime;
+    ALChanState         *chanState;      
+    ALVoiceState        *vAllocHead;     
+    ALVoiceState        *vAllocTail;     
+    ALVoiceState        *vFreeList;      
+    ALOscInit           initOsc;
+    ALOscUpdate         updateOsc;
+    ALOscStop           stopOsc;
+    ALSeqMarker         *loopStart;
+    ALSeqMarker         *loopEnd;
+    s32                 loopCount;       
+} ALSeqPlayer;
+
+typedef struct {
+    ALPlayer            node;            
+    ALSynth             *drvr;           
+    ALCSeq              *target;         
+    ALMicroTime         curTime;
+    ALBank              *bank;           
+    s32                 uspt;            
+    s32                 nextDelta;       
+    s32                 state;
+    u16                 chanMask;        
+    s16                 vol;             
+    u8                  maxChannels;     
+    ALEvent             nextEvent;
+    ALEventQueue        evtq;
+    ALMicroTime         frameTime;
+    ALChanState         *chanState;      
+    ALVoiceState        *vAllocHead;     
+    ALVoiceState        *vAllocTail;     
+    ALVoiceState        *vFreeList;      
+    ALOscInit           initOsc;
+    ALOscUpdate         updateOsc;
+    ALOscStop           stopOsc;
+} ALCSPlayer;
+
+ 
+
+
+void    alSeqNew(ALSeq *seq, u8 *ptr, s32 len);
+void    alSeqNextEvent(ALSeq *seq, ALEvent *event);
+s32     alSeqGetTicks(ALSeq *seq);
+f32     alSeqTicksToSec(ALSeq *seq, s32 ticks, u32 tempo);
+u32     alSeqSecToTicks(ALSeq *seq, f32 sec, u32 tempo);
+void    alSeqNewMarker(ALSeq *seq, ALSeqMarker *m, u32 ticks);
+void    alSeqSetLoc(ALSeq *seq, ALSeqMarker *marker);
+void    alSeqGetLoc(ALSeq *seq, ALSeqMarker *marker);
+ 
+
+
+void    alCSeqNew(ALCSeq *seq, u8 *ptr);
+void    alCSeqNextEvent(ALCSeq *seq,ALEvent *evt);
+s32     alCSeqGetTicks(ALCSeq *seq);
+f32     alCSeqTicksToSec(ALCSeq *seq, s32 ticks, u32 tempo);
+u32     alCSeqSecToTicks(ALCSeq *seq, f32 sec, u32 tempo);
+void    alCSeqNewMarker(ALCSeq *seq, ALCSeqMarker *m, u32 ticks);
+void    alCSeqSetLoc(ALCSeq *seq, ALCSeqMarker *marker);
+void    alCSeqGetLoc(ALCSeq *seq, ALCSeqMarker *marker); 
+
+ 
+
+
+f32     alCents2Ratio(s32 cents);
+
+void    alSeqpNew(ALSeqPlayer *seqp, ALSeqpConfig *config);
+void    alSeqpDelete(ALSeqPlayer *seqp);
+void    alSeqpSetSeq(ALSeqPlayer *seqp, ALSeq *seq);
+ALSeq   *alSeqpGetSeq(ALSeqPlayer *seqp);
+void    alSeqpPlay(ALSeqPlayer *seqp);
+void    alSeqpStop(ALSeqPlayer *seqp);
+void    alSeqpSetBank(ALSeqPlayer *seqp, ALBank *b);
+void    alSeqpSetTempo(ALSeqPlayer *seqp, s32 tempo);
+s32     alSeqpGetTempo(ALSeqPlayer *seqp);
+void    alSeqpSetProgram(ALSeqPlayer *seqp, u8 chan, u8 prog);
+s32     alSeqpGetProgram(ALSeqPlayer *seqp, u8 chan);
+void    alSeqpSetFXMix(ALSeqPlayer *seqp, u8 chan, u8 fxmix);
+u8      alSeqpGetFXMix(ALSeqPlayer *seqp, u8 chan);
+void    alSeqpSetPan(ALSeqPlayer *seqp, u8 chan, ALPan pan);
+ALPan   alSeqpGetPan(ALSeqPlayer *seqp, u8 chan);
+void    alSeqpSendMidi(ALSeqPlayer *seqp, s32 ticks, u8 status,
+                       u8 byte1, u8 byte2);
+
+s16     alSeqpGetVol(ALSeqPlayer *seqp);
+void    alSeqpSetVol(ALSeqPlayer *seqp, s16 vol);
+
+ALMicroTime alSeqpGetTime(ALSeqPlayer *seqp);
+void    alSeqpSetTime(ALSeqPlayer *seqp, ALMicroTime time);
+u8      alSeqpGetChannelPriority(ALSeqPlayer *seqp, u8 chan);
+void    alSeqpSetChannelPriority(ALSeqPlayer *seqp, u8 chan, u8 priority);
+
+void    alSeqpLoop(ALSeqPlayer *seqp, ALSeqMarker *start, ALSeqMarker *end, 
+                   s32 count);
+ 
+
+
+void    alCSPNew(ALCSPlayer *seqp, ALSeqpConfig *config);
+void    alCSPDelete(ALCSPlayer *seqp);
+void    alCSPSetSeq(ALCSPlayer *seqp, ALCSeq *seq);
+ALCSeq  *alCSPGetSeq(ALCSPlayer *seqp);
+void    alCSPPlay(ALCSPlayer *seqp);
+void    alCSPStop(ALCSPlayer *seqp);
+void    alCSPSetBank(ALCSPlayer *seqp, ALBank *b);
+void    alCSPSetTempo(ALCSPlayer *seqp, s32 tempo);
+s32     alCSPGetTempo(ALCSPlayer *seqp);
+void    alCSPSetProgram(ALCSPlayer *seqp, u8 chan, u8 prog);
+s32     alCSPGetProgram(ALCSPlayer *seqp, u8 chan);
+void    alCSPSetFXMix(ALCSPlayer *seqp, u8 chan, u8 fxmix);
+u8      alCSPGetFXMix(ALCSPlayer *seqp, u8 chan);
+void    alCSPSetPan(ALCSPlayer *seqp, u8 chan, ALPan pan);
+ALPan   alCSPGetPan(ALCSPlayer *seqp, u8 chan);
+s16     alCSPGetVol(ALCSPlayer *seqp);
+void    alCSPSetVol(ALCSPlayer *seqp, s16 vol);
+
+ALMicroTime alCSPGetTime(ALCSPlayer *seqp);
+void    alCSPSetTime(ALCSPlayer *seqp, ALMicroTime time);
+u8      alCSPGetChannelPriority(ALCSPlayer *seqp, u8 chan);
+void    alCSPSetChannelPriority(ALCSPlayer *seqp, u8 chan, u8 priority);
+
+void    alCSPSendMidi(ALCSPlayer *seqp, s32 ticks, u8 status,
+                       u8 byte1, u8 byte2);
+
+
+ 
+
+
+
+typedef struct {
+    s32         maxSounds;
+    s32         maxEvents;
+    ALHeap      *heap;
+} ALSndpConfig;
+
+typedef struct {
+    ALPlayer            node;            
+    ALEventQueue        evtq;
+    ALEvent             nextEvent;
+    ALSynth             *drvr;           
+    void                *evtList;
+    s32                 target;
+    void                *sndState;
+    s32                 maxSounds;
+    ALMicroTime         frameTime;
+    ALMicroTime         nextDelta;       
+    ALMicroTime         curTime;
+} ALSndPlayer;
+
+typedef s16   ALSndId;
+    
+void            alSndpNew(ALSndPlayer *sndp, ALSndpConfig *c);
+void            alSndpDelete(ALSndPlayer *sndp);
+
+ALSndId         alSndpAllocate(ALSndPlayer *sndp, ALSound *sound);
+void            alSndpDeallocate(ALSndPlayer *sndp, ALSndId id);
+
+void            alSndpSetSound(ALSndPlayer *sndp, ALSndId id);
+ALSndId         alSndpGetSound(ALSndPlayer *sndp);
+
+void            alSndpPlay(ALSndPlayer *sndp);
+void            alSndpPlayAt(ALSndPlayer *sndp, ALMicroTime delta);
+void            alSndpStop(ALSndPlayer *sndp);
+
+void            alSndpSetVol(ALSndPlayer *sndp, s16 vol);
+void            alSndpSetPitch(ALSndPlayer *sndp, f32 pitch);
+void            alSndpSetPan(ALSndPlayer *sndp, ALPan pan);
+void            alSndpSetPriority(ALSndPlayer *sndp, ALSndId id, u8 priority);
+
+void            alSndpSetFXMix(ALSndPlayer *sndp, u8 mix);
+s32             alSndpGetState(ALSndPlayer *sndp);
+
+
+
+
+
+
+
+
+
+# 26 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/gu.h"
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/mbi.h"
+# 88 "/usr/include/PR/mbi.h"
+
+# 17 "/usr/include/PR/gu.h"
+# 1 "/usr/include/PR/ultratypes.h"
+# 75 "/usr/include/PR/ultratypes.h"
+
+
+# 18 "/usr/include/PR/gu.h"
+# 1 "/usr/include/PR/sptask.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+# 187 "/usr/include/PR/sptask.h"
+
+# 19 "/usr/include/PR/gu.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+typedef struct {
+	unsigned char   *base;
+	int             fmt, siz;
+	int             xsize, ysize;
+	int             lsize;
+	 
+	int             addr;
+	int             w, h;
+	int             s, t;
+} Image;
+
+typedef struct {
+	float	col[3];
+	float	pos[3];
+	float	a1, a2;		 
+} PositionalLight;
+
+
+ 
+
+
+
+extern int guLoadTextureBlockMipMap(Gfx **glist, unsigned char *tbuf, Image *im, 
+		unsigned char startTile, unsigned char pal, unsigned char cms, 
+		unsigned char cmt, unsigned char masks, unsigned char maskt, 
+		unsigned char shifts, unsigned char shiftt, unsigned char cfs, 
+		unsigned char cft);
+
+extern int 	guGetDPLoadTextureTileSz (int ult, int lrt);
+extern void 	guDPLoadTextureTile (Gfx *glistp, void *timg,
+			int texl_fmt, int texl_size,
+			int img_width, int img_height,
+			int uls, int ult, int lrs, int lrt,
+			int palette,
+			int cms, int cmt,
+			int masks, int maskt,
+			int shifts, int shiftt);
+
+
+ 
+
+
+
+
+
+
+extern void guMtxIdent(Mtx *m);
+extern void guMtxIdentF(float mf[4][4]);
+extern void guOrtho(Mtx *m, float l, float r, float b, float t, 
+		    float n, float f, float scale);
+extern void guOrthoF(float mf[4][4], float l, float r, float b, float t, 
+		     float n, float f, float scale);
+extern void guFrustum(Mtx *m, float l, float r, float b, float t, 
+		      float n, float f, float scale);
+extern void guFrustumF(float mf[4][4], float l, float r, float b, float t, 
+		       float n, float f, float scale);
+extern void guPerspective(Mtx *m, u16 *perspNorm, float fovy, 
+			  float aspect, float near, float far, float scale);
+extern void guPerspectiveF(float mf[4][4], u16 *perspNorm, float fovy, 
+			   float aspect, float near, float far, float scale);
+extern void guLookAt(Mtx *m, 
+			float xEye, float yEye, float zEye,
+			float xAt,  float yAt,  float zAt,
+			float xUp,  float yUp,  float zUp);
+extern void guLookAtF(float mf[4][4], float xEye, float yEye, float zEye,
+		      float xAt,  float yAt,  float zAt,
+		      float xUp,  float yUp,  float zUp);
+extern void guLookAtReflect(Mtx *m, LookAt *l,
+			float xEye, float yEye, float zEye,
+			float xAt,  float yAt,  float zAt,
+			float xUp,  float yUp,  float zUp);
+extern void guLookAtReflectF(float mf[4][4], LookAt *l, 
+		      float xEye, float yEye, float zEye,
+		      float xAt,  float yAt,  float zAt,
+		      float xUp,  float yUp,  float zUp);
+extern void guLookAtHilite(Mtx *m, LookAt *l, Hilite *h,
+                float xEye, float yEye, float zEye,
+                float xAt,  float yAt,  float zAt,
+                float xUp,  float yUp,  float zUp,
+                float xl1,  float yl1,  float zl1,
+                float xl2,  float yl2,  float zl2,
+		int   twidth, int theight);
+extern void guLookAtHiliteF(float mf[4][4], LookAt *l, Hilite *h, 
+		float xEye, float yEye, float zEye,
+		float xAt,  float yAt,  float zAt,
+		float xUp,  float yUp,  float zUp,
+		float xl1,  float yl1,  float zl1,
+		float xl2,  float yl2,  float zl2,
+		int twidth, int theight);
+extern void guRotate(Mtx *m, float a, float x, float y, float z);
+extern void guRotateF(float mf[4][4], float a, float x, float y, float z);
+extern void guRotateRPY(Mtx *m, float r, float p, float y);
+extern void guRotateRPYF(float mf[4][4], float r, float p, float h);
+extern void guAlign(Mtx *m, float a, float x, float y, float z);
+extern void guAlignF(float mf[4][4], float a, float x, float y, float z);
+extern void guScale(Mtx *m, float x, float y, float z);
+extern void guScaleF(float mf[4][4], float x, float y, float z);
+extern void guTranslate(Mtx *m, float x, float y, float z);
+extern void guTranslateF(float mf[4][4], float x, float y, float z);
+extern void guPosition(Mtx *m, float r, float p, float h, float s,
+		       float x, float y, float z);
+extern void guPositionF(float mf[4][4], float r, float p, float h, float s,
+			float x, float y, float z);
+extern void guMtxF2L(float mf[4][4], Mtx *m);
+extern void guMtxL2F(float mf[4][4], Mtx *m);
+extern void guMtxCatF(float m[4][4], float n[4][4], float r[4][4]);
+extern void guMtxCatL(Mtx *m, Mtx *n, Mtx *res);
+extern void guMtxXFMF(float mf[4][4], float x, float y, float z, 
+		      float *ox, float *oy, float *oz);
+extern void guMtxXFML(Mtx *m, float x, float y, float z, 
+		      float *ox, float *oy, float *oz);
+
+ 
+extern void guNormalize(float *x, float *y, float *z);
+
+ 
+void guPosLight(PositionalLight *pl, Light *l,
+                float xOb, float yOb, float zOb);
+void guPosLightHilite(PositionalLight *pl1, PositionalLight *pl2,
+                Light *l1, Light *l2,
+                LookAt *l, Hilite *h,
+                float xEye, float yEye, float zEye,
+                float xOb,  float yOb,  float zOb,
+                float xUp,  float yUp,  float zUp,
+                int twidth, int theight);
+extern int guRandom(void);
+
+ 
+
+
+extern float sinf(float angle);
+extern float cosf(float angle);
+extern signed short sins (unsigned short angle);
+extern signed short coss (unsigned short angle);
+extern float sqrtf(float value);
+
+ 
+
+
+ 
+
+
+
+
+extern void guParseRdpDL(u64 *rdp_dl, u64 nbytes, u8 flags);
+extern void guDumpRawRdpDL(u64 *rdp_dl, u64 nbytes);
+
+ 
+
+
+
+extern void
+guBlinkRdpDL(u64 *rdp_dl_in, u64 nbytes_in,
+             u64 *rdp_dl_out, u64 *nbytes_out,
+             u32 x, u32 y, u32 radius,
+             u8  red, u8 green, u8 blue,
+             u8 flags);
+ 
+ 
+
+
+
+
+
+
+
+
+
+extern void guParseGbiDL(u64 *gbi_dl, u32 nbytes, u8 flags);
+extern void guDumpGbiDL(OSTask *tp,u8 flags);
+
+
+# 27 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/ramrom.h"
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+typedef struct {
+    long type;
+    long length;	     
+    long magic;
+    char userdata[(((4096) *6) -(3*sizeof(long)) ) ];
+} RamRomBuffer;
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 28 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/sp.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/mbi.h"
+# 88 "/usr/include/PR/mbi.h"
+
+# 21 "/usr/include/PR/sp.h"
+# 1 "/usr/include/PR/ultratypes.h"
+# 75 "/usr/include/PR/ultratypes.h"
+
+
+# 22 "/usr/include/PR/sp.h"
+
+ 
+
+
+
+
+
+struct bitmap {
+	s16	width;		 
+				 
+
+	s16	width_img;	 
+				 
+
+	s16	s;		 
+				 
+
+	s16	t;		 
+
+	void	*buf;		 
+				 
+				 
+				 
+
+	s16	actualHeight;	 
+
+	s16	LUToffset;	 
+};
+
+typedef struct bitmap Bitmap;
+
+struct sprite {
+	s16	x,y;		 
+
+	s16	width, height;	 
+
+	f32	scalex, scaley;	 
+
+	s16	expx, expy;	 
+
+	u16 	attr;		 
+	s16	zdepth;		 
+
+	u8	red;		 
+	u8	green;		 
+	u8	blue;		 
+	u8	alpha;		 
+
+	s16	startTLUT;	 
+	s16	nTLUT;		 
+
+	int	*LUT;		 
+
+	s16	istart;		 
+	s16	istep;		 
+				 
+
+	s16	nbitmaps;	 
+	s16	ndisplist;	 
+
+	s16	bmheight;	 
+	s16	bmHreal;	 
+	u8	bmfmt;		 
+	u8	bmsiz;		 
+
+	Bitmap	*bitmap;	 
+
+	Gfx	*rsp_dl;	 
+
+	Gfx	*rsp_dl_next;	 
+
+	s16	frac_s,		 
+		frac_t;		 
+};
+
+typedef struct sprite Sprite;
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+void spSetAttribute (Sprite *sp, s32 attr);
+void spClearAttribute (Sprite *sp, s32 attr);
+void spMove (Sprite *sp, s32 x, s32 y);
+void spScale (Sprite *sp, f32 sx, f32 sy);
+void spSetZ  (Sprite *sp, s32 z );
+void spColor (Sprite *sp, u8 red, u8 green, u8 blue, u8 alpha);
+Gfx *spDraw (Sprite *sp);
+void spInit( Gfx **glistp );
+void spScissor( s32 xmin, s32 xmax, s32 ymin, s32 ymax );
+void spFinish( Gfx **glistp );
+
+
+
+
+
+
+# 29 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/ucode.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/ultratypes.h"
+# 75 "/usr/include/PR/ultratypes.h"
+
+
+# 21 "/usr/include/PR/ucode.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+   
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+extern long long int	rspbootTextStart[], rspbootTextEnd[];
+
+ 
+extern long long int	gspFast3DTextStart[], gspFast3DTextEnd[];
+extern long long int	gspFast3DDataStart[], gspFast3DDataEnd[];
+
+ 
+extern long long int	gspFast3D_dramTextStart[], gspFast3D_dramTextEnd[];
+extern long long int	gspFast3D_dramDataStart[], gspFast3D_dramDataEnd[];
+
+ 
+extern long long int	gspFast3D_fifoTextStart[], gspFast3D_fifoTextEnd[];
+extern long long int	gspFast3D_fifoDataStart[], gspFast3D_fifoDataEnd[];
+
+ 
+extern long long int	gspLine3DTextStart[], gspLine3DTextEnd[];
+extern long long int	gspLine3DDataStart[], gspLine3DDataEnd[];
+
+ 
+extern long long int	gspLine3D_dramTextStart[], gspLine3D_dramTextEnd[];
+extern long long int	gspLine3D_dramDataStart[], gspLine3D_dramDataEnd[];
+
+ 
+extern long long int 	aspMainTextStart[], aspMainTextEnd[];
+extern long long int 	aspMainDataStart[], aspMainDataEnd[];
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 30 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/ultraerror.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/ultratypes.h"
+# 75 "/usr/include/PR/ultratypes.h"
+
+
+# 29 "/usr/include/PR/ultraerror.h"
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+typedef	void (*OSErrorHandler)(s16, s16, ...);
+
+OSErrorHandler	osSetErrorHandler(OSErrorHandler);
+
+
+
+
+
+
+
+# 31 "/usr/include/ultra64.h"
+# 1 "/usr/include/PR/ultralog.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/PR/ultratypes.h"
+# 75 "/usr/include/PR/ultratypes.h"
+
+
+# 29 "/usr/include/PR/ultralog.h"
+
+
+
+
+
+    
+typedef struct {
+    u32 magic;           
+    u32 len;             
+    u32 *base;           
+    s32 startCount;      
+    s32 writeOffset;     
+} OSLog;
+
+typedef struct {
+    u32 magic;
+    u32 timeStamp;
+    u16 argCount;
+    u16 eventID;
+} OSLogItem;
+
+typedef struct {
+    u32 magic;           
+    u32 version;         
+} OSLogFileHdr;
+
+void    osCreateLog(OSLog *log, u32 *base, s32 len);
+void    osLogEvent(OSLog *log, s16 code, s16 numArgs, ...);
+void    osFlushLog(OSLog *log);
+u32	osLogFloat(f32);
+
+extern void osDelay(int count);
+
+
+
+
+
+
+# 32 "/usr/include/ultra64.h"
+
+
+# 19 "./u64main.h"
+# 1 "./sys_defs.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+									 
+									 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+# 20 "./u64main.h"
+# 1 "./system.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+typedef void (*FUNC)();                          
+typedef FUNC JUMPTBL;                            
+
+typedef unsigned short (*FUNCW)();                       
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 21 "./u64main.h"
+
+ 
+
+
+
+
+typedef unsigned char BYTE;
+typedef unsigned short WORD;
+typedef unsigned int LONG;
+typedef unsigned long ADDRESS;
+
+ 
+typedef union u_pos {
+	long	pos;			 
+	struct {
+
+
+
+
+		short	fracpos;	 
+		short	intpos;		 
+
+	} u;
+} POS;
+
+ 
+typedef struct {
+	short x,y;
+	short w,h;
+} RECT;
+
+
+ 
+
+ 
+typedef union joypad {
+	LONG padvalue;			 
+	struct {
+
+
+
+
+		WORD p1pad;
+		WORD p2pad;
+
+	} u;
+} JOYPAD;
+
+ 
+typedef union u_xytype {
+	long yx;					 
+	struct {
+
+
+
+
+		short	xpos;			 
+		short	ypos;			 
+
+	} u;
+} XYTYPE;
+
+ 
+typedef struct o_color {
+	BYTE red;
+	BYTE green;
+	BYTE blue;
+	WORD rgb;
+} COLOR;
+
+ 
+
+
+
+/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern  u64 sys_rcp_stack[((1024)  >> 3) ];
+ 
+
+
+
+
+
+//extern u32 sys_ovmemptr;		// overlay pointer: points to next free physical byte of DRAM
+//extern u32 sys_obmemptr;		// object pointer: points to start of last object loaded
+//
+//extern u32 sys_zbuf_phys;						// physical start address of zbuffer (aligned on a 64-byte boundary)
+//extern u32 sys_fbuf_phys[3 ];	// physical start address of frame buffers (aligned on a 64-byte boundary)
+//extern u32 sys_dbuf_phys[3 ];		// physical start address of display-list buffers (aligned on an 8-byte boundary)
+//extern u32 sys_mbuf_phys[3 ];		// physical start address of matrix buffers (aligned on an 8-byte boundary)
+//extern u32 sys_vbuf_phys[3 ];		// physical start address of vertex buffers (aligned on an 8-byte boundary)
+//extern u32 sys_pbuf_phys[3 ];		// physical start address of viewport buffers (aligned on an 8-byte boundary)
+//
+//extern u32 sys_heap1_start;		// physical start of heap 1
+//extern u32 sys_heap1_end;		// physical end+1 of heap 1
+//extern u32 sys_heap2_start;		// physical start of heap 2
+//extern u32 sys_heap2_end;		// physical end+1 of heap 2
+
+ 
+extern   OSMesgQueue	sys_msgque_rsp;	// event message queues:
+extern   OSMesg		sys_msgbuf_rsp;
+
+ 
+extern   OSMesgQueue	sys_msgque_rdp;
+extern   OSMesg		sys_msgbuf_rdp;
+
+ 
+extern   OSMesgQueue	sys_msgque_vbi;
+extern   OSMesg		sys_msgbuf_vbi;
+
+ 
+extern   OSMesgQueue	sys_msgque_ser;
+extern   OSMesg		sys_msgbuf_ser;
+
+extern   OSMesgQueue	sys_msgque_joy;
+extern   OSMesg		sys_msgbuf_joy;
+
+ 
+extern   OSMesgQueue	sys_msgque_tmr;
+extern   OSMesg		sys_msgbuf_tmr;
+
+extern   OSMesg		sys_DummyMsg;
+
+//========================================================================================
+// Public system functions:
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// sys_assertion - assert a system error.
+//
+// Defined only when 1   is non-zero.
+//////////////////////////////////////////////////////////////////////////////////////////
+
+	extern void sys_assertion( int errcode, char *errinfo );
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// sys_disable_ints - disables R4300 CPU interrupts, returning the prior state.  This is
+//                    an assembly function.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern u32 sys_disable_ints( void );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// sys_restore_ints - restores R4300 CPU interrupts to their prior state (passed as the
+//                    parameter). This is an assembly function.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern void sys_restore_ints( u32 prior_state );
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// vid_vbi_wait_thread - An independent thread used to catch vertical retraces.
+//
+// IMPORTANT: This function is internally called and managed by the kernel. It should
+//            not be called.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern void vid_vbi_wait_thread( void *arg );
+
+/ 
+
+
+
+
+
+
+
+
+
+
+
+
+//-SONY- #define SONY_GRAPH_DEBUG 0
+//-SONY- #define SONY_HBLANK 0
+//-SONY- #define OTSIZE	250								 
+//-SONY- #define OBJPRIM_SIZE 220						 
+//-SONY- #define BOXPRIM_SIZE 10							 
+//-SONY- #define TEXTURE_MODE 1							 
+//-SONY- #define TRANS_RATE 0							 
+//-SONY- #define SHADE_TEX 0								 
+
+ 
+
+
+
+//-SONY- #define BUF0_X_COORD 0							 
+//-SONY- #define BUF0_Y_COORD 0							 
+//-SONY- #define BUF1_X_COORD 320 				 
+//-SONY- #define BUF1_Y_COORD 0							 
+//-SONY- #define BACK_TEXTURE_BASE_X 384					 
+//-SONY- #define BACK_TEXTURE_BASE_Y 256					 
+//-SONY- #define CP_TEXT_X	640							 
+//-SONY- #define CP_TEXT_Y	0							 
+//-SONY- #define OPT_TEXT_X	896							 
+//-SONY- #define OPT_TEXT_Y	256							 
+//-SONY- #define CLUT_BASE_PAL_X	0						 
+//-SONY- #define CLUT_BASE_PAL_Y 240						 
+
+
+
+
+ 
+ 
+//-SONY- #define FLR_L_BASE_X	CP_TEXT_X		//640+128
+//-SONY- #define FLR_L_BASE_Y	68			//(255-84 )
+
+//-SONY- #define FLR_R_BASE_X	CP_TEXT_X				//(640+128+128)
+//-SONY- #define FLR_R_BASE_Y	FLR_L_BASE_Y+84 	//(255-84 )
+
+//-SONY- #define PLYR_1_BASE_X	640+128+1
+//-SONY- #define PLYR_1_BASE_Y	0
+
+//-SONY- #define PLYR_2_BASE_X	(640+128+128)+1
+//-SONY- #define PLYR_2_BASE_Y	0
+
+//-SONY- #define FONT_15_BASE_X	(640+128)		 
+//-SONY- #define FONT_15_BASE_Y	(170)					 
+
+//-SONY- #define LOADING_BASE_X	(640+128+128)		 
+//-SONY- #define LOADING_BASE_Y	(170)						 
+
+//-SONY- #define FRAME_WIDTH 1023
+//-SONY- #define FRAME_HEIGHT 512
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+//-SONY- typedef struct {
+//-SONY- 	DRAWENV	draw;					 
+//-SONY- 	DISPENV disp;					 
+//-SONY- 	u_long ot[OTSIZE];				 
+//-SONY- 	u_long *ot_ptr;					 
+//-SONY- 	POLY_FT4 obj_prim[OBJPRIM_SIZE];	 
+//-SONY- 	POLY_FT4 *curr_prim;
+//-SONY- 	BLK_FILL clear;
+//-SONY- 	LONG primcnt;
+//-SONY- 
+//-SONY- 	DR_MODE	dm_score;						 
+//-SONY- 	SPRT cp[22 ];
+//-SONY- 
+//-SONY- 	DR_MODE dm_floor;						 
+//-SONY- 	SPRT floor[2];							 
+//-SONY- 
+//-SONY- 	DR_MODE dm_test;						 
+//-SONY- 
+//-SONY- 	POLY_F4	box_prim[BOXPRIM_SIZE];	 
+//-SONY- 	POLY_F4 *box_ptr;
+//-SONY- 
+//-SONY- #if 0 
+//-SONY- 	LINE_F2 lines[22];
+//-SONY- #endif
+//-SONY- } DB;
+
+ 
+typedef struct mc_reg {
+	ADDRESS c_wakeup;				 
+	ADDRESS c_stackptr;				 
+	ADDRESS c_frameptr;				 
+	ADDRESS c_globalptr;			 
+	ADDRESS c_s0;					 
+	ADDRESS c_s1;					 
+	ADDRESS c_s2;					 
+	ADDRESS c_s3;					 
+	ADDRESS c_s4;					 
+	ADDRESS c_s5;					 
+	ADDRESS c_s6;					 
+	ADDRESS c_s7;					 
+} MCONTEXT;
+
+typedef struct c_reg {
+	ADDRESS c_wakeup;				 
+	ADDRESS c_stackptr;				 
+	ADDRESS c_frameptr;				 
+	ADDRESS c_globalptr;			 
+	ADDRESS c_s0;					 
+	ADDRESS c_s1;					 
+	ADDRESS c_s2;					 
+	ADDRESS c_s3;					 
+	ADDRESS c_s4;					 
+	ADDRESS c_s5;					 
+	ADDRESS c_s6;					 
+	ADDRESS c_s7;					 
+	long long c_stack[(256) /8]; 	 
+} CONTEXT;
+
+ 
+
+
+//-SONY- extern  DB db[2];						 
+//-SONY- extern  DB *cdb;							 
+//-SONY- extern  WORD	bkgd_base_tpage;			 
+//-SONY- extern  WORD control_floor_tpage;		 
+//-SONY- extern  WORD load_tpage;				 
+
+//-SONY- extern  u_long vbEvent;					 
+
+extern  WORD pad1_map_tbl[MAP_TBL_ENTRIES];			// remap table for joystick 1
+extern  WORD pad2_map_tbl[MAP_TBL_ENTRIES];			// remap table for joystick 2
+extern  WORD game_map_tbl[MAP_TBL_ENTRIES];			// table for non fight modes
+
+ 
+
+
+extern  long long bkgd_texture_pool[(960 *84 +400*1024) /sizeof(long long)];
+
+extern  BYTE *bkgd_texture_ptr;				/// ptr to next available texture space
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern  BYTE *texture_base_ptrs[2		// max # of texture pools ];		// ptrs to start of each texture type
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+extern  long long image_dcomp_buffer[(1024*100) /sizeof(long long)];	// decomp buffer for image data
+extern  LONG *idcomp_base;						// base address of current used decomp buffer
+extern  LONG *idcomp_ptr;						// decomp buffer ptr to next free area
+
+ 
+
+extern long long player_heap[];	//-NOTE- align  __attribute__ ((aligned(4)));
+
+
+
+ 
+
+
+
+ 
+void init_hardware_system(void);
+void mk_vblank_int(void);
+
+ 
+BYTE *uncompress_image(BYTE *src);
+void unsonyRLE(BYTE *, BYTE **);
+void expand_simpleRLE(BYTE *, BYTE **);
+void unbetterSimpleRLE(BYTE *src, BYTE **dst);
+
+ 
+WORD joy_remap(WORD,WORD *);
+
+ 
+void load_perm_art(void);
+void ermac(WORD);
+void *sys_memset(void *dst,BYTE fill,int count);
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-SONY- u_short DLoadTpage(u_long *pix, int tp, int abr, int x, int y, int w, int h);
+//-SONY- int DLoadImage(RECT *rect, u_long *p);
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+# 13 "u64main.c"
+# 1 "./sys_defs.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 252 "./sys_defs.h"
+
+# 14 "u64main.c"
+
+# 1 "./romcopy.h"
+//////////////////////////////////////////////////////////////////////////////////////////
+// romcopy.h
+//
+// Author: Steve Ranck
+//////////////////////////////////////////////////////////////////////////////////////////
+// THIS CODE IS PROPRIETARY PROPERTY OF WILLIAMS ENTERTAINMENT.
+//
+// The contents of this file may not be disclosed to third
+// parties, copied or duplicated in any form, in whole or in part,
+// without the prior written permission of Williams Entertainment.
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+# 1 "./queue.h"
+//////////////////////////////////////////////////////////////////////////////////////////
+// queue.h
+//
+// Author: Steve Ranck
+//////////////////////////////////////////////////////////////////////////////////////////
+// THIS CODE IS PROPRIETARY PROPERTY OF WILLIAMS ENTERTAINMENT.
+//
+// The contents of this file may not be disclosed to third
+// parties, copied or duplicated in any form, in whole or in part,
+// without the prior written permission of Williams Entertainment.
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// Public definitions:
+
+struct qlink {
+	struct qlink	*plink;		// points to previous queue (0=this entry is first)
+	struct qlink	*nlink;		// points to next queue (0=this entry is last)
+};
+
+struct queue {
+	struct qlink	*head;		// points to the head of the queue (0=queue is empty)
+	struct qlink	*tail;		// points to the tail of the queue (0=queue is empty)
+};
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// Public functions:
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// queue_add_head - adds to the front of the queue.
+//
+// If add is a null-pointer, queue_add_head simply returns a null-pointer. Interrupts
+// are disabled through critical portions.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern struct qlink *queue_add_head( struct queue *queue, struct qlink *add );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// queue_add_tail - adds to the end of the queue.
+//
+// If add is a null-pointer, queue_add_tail simply returns a null-pointer. Interrupts
+// are disabled through critical portions.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern struct qlink *queue_add_tail( struct queue *queue, struct qlink *add );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// queue_remove - removes the specified entry from the queue.
+//
+// Returns a pointer to the removed entry, or 0 if the queue was empty. Interrupts are
+// disabled through critical portions.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern struct qlink *queue_remove( struct queue *queue, struct qlink *remove );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// queue_remove_head - removes from the head of the queue.
+//
+// Returns a pointer to the removed entry, or 0 if the queue was empty. Interrupts are
+// disabled through critical portions.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern struct qlink *queue_remove_head( struct queue *queue );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// queue_remove_tail - removes from the tail of the queue.
+//
+// Returns a pointer to the removed entry, or 0 if the queue was empty. Interrupts are
+// disabled through critical portions.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern struct qlink *queue_remove_tail( struct queue *queue );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// queue_init - initializes a queue. Interrupts are disabled through critical portions.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern void queue_init( struct queue *queue, void *first, int size, int num );
+
+
+
+
+# 17 "./romcopy.h"
+# 1 "./callback.h"
+//////////////////////////////////////////////////////////////////////////////////////////
+// callback.h
+//
+// Author: Steve Ranck
+//////////////////////////////////////////////////////////////////////////////////////////
+// THIS CODE IS PROPRIETARY PROPERTY OF WILLIAMS ENTERTAINMENT.
+//
+// The contents of this file may not be disclosed to third
+// parties, copied or duplicated in any form, in whole or in part,
+// without the prior written permission of Williams Entertainment.
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+# 1 "./queue.h"
+//////////////////////////////////////////////////////////////////////////////////////////
+// queue.h
+//
+// Author: Steve Ranck
+//////////////////////////////////////////////////////////////////////////////////////////
+// THIS CODE IS PROPRIETARY PROPERTY OF WILLIAMS ENTERTAINMENT.
+//
+// The contents of this file may not be disclosed to third
+// parties, copied or duplicated in any form, in whole or in part,
+// without the prior written permission of Williams Entertainment.
+//////////////////////////////////////////////////////////////////////////////////////////
+
+# 87 "./queue.h"
+
+# 17 "./callback.h"
+
+
+//========================================================================================
+// Public definitions:
+
+struct callback {
+	struct qlink	qlink;		// private: queue pointers
+	void (*callback)(void *);	// callback function pointer (0=none)
+};
+
+
+
+//========================================================================================
+// Public functions:
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// callback_add - add a callback function to queue.
+//
+// May be called at any time, including from within ISRs. If callback is zero, this
+// function simply returns.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern void callback_add( struct callback *callback );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// callback_work - handles callbacks. Should be called only by the main game loop.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern void callback_work( void );
+
+
+
+# 18 "./romcopy.h"
+
+
+//========================================================================================
+// Public definitions:
+
+struct romcopy {
+	struct callback	callback;			// private: queue & callback pointers
+	u32				romstart;			// rom start address (2-byte boundary)
+	void			*vstart;			// dram virtual start address (8-byte boundary)
+	s32				numbytes;			// transfer size (2-byte boundary)
+	volatile u32	flags;				// see RCFLAG_* for details
+	int				user;				// general-purpose user field
+};
+
+
+
+
+
+
+
+
+
+//========================================================================================
+// Public variables:
+
+extern OSThread romcopy_thread;
+extern u64 romcopy_stack[ 2048 /8 ];
+
+extern OSMesgQueue	romcopy_msgque;
+extern OSMesg		romcopy_msgbuf;
+extern OSIoMesg		romcopy_msgblk;
+
+
+//========================================================================================
+// Public system functions:
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// romcopy_sync - synchronously DMA copies between cartridge ROM and DRAM. (blocking)
+//
+// Returns when complete. romstart is the starting cartridge ROM address. vstart is
+// the starting DRAM virtual address. numbytes is the number of bytes in the transfer.
+// flags may contain one or more RCFLAG_* bit set for various alterations.
+//
+// NOTE: romstart must be aligned on an even address. vstart must be aligned on an
+//       8-byte boundary. numbytes should be even.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern void romcopy_sync( u32 romstart, void *vstart, s32 numbytes, int flags );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// romcopy_async - asynchronously DMA copies between cartridge and DRAM. (non-blocking)
+//
+// Returns immediately. Use the flags field or the callback function to determine when
+// the transfer has completed. If callback is 0, no callback is made. Returns romcopy.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern struct romcopy *romcopy_async( struct romcopy *romcopy );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// romcopy_wait_thread - An independent thread used in conjunction with
+//                       romcopy_start. Must be started only by kstart.
+//
+// IMPORTANT: This function is internally called and managed by the kernel. It should
+//            not be called.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern void romcopy_wait_thread( void *arg );
+
+
+
+
+# 16 "u64main.c"
+# 1 "./gamepad.h"
+//////////////////////////////////////////////////////////////////////////////////////////
+// gamepad.h
+//
+// Author: Steve Ranck
+//////////////////////////////////////////////////////////////////////////////////////////
+// THIS CODE IS PROPRIETARY PROPERTY OF WILLIAMS ENTERTAINMENT.
+//
+// The contents of this file may not be disclosed to third
+// parties, copied or duplicated in any form, in whole or in part,
+// without the prior written permission of Williams Entertainment.
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+//#include "tool.h"
+
+
+//========================================================================================
+// Public definitions:
+
+struct gamepad {
+	u32		b;			// button bits. See BUTTON_* for details
+
+	float	x;			// 0.0=left, 1.0=right
+	float	y;			// 0.0=down, 1.0=up
+	float	xraw;		// same as x, but without deadzone
+	float	yraw;		// same as y, but without deadzone
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//========================================================================================
+// Public variables:
+
+extern OSThread gamepad_thread;
+extern u64 gamepad_stack[ 2048 /8 ];
+extern OSThread gamepad_timer_thread;
+extern u64 gamepad_timer_stack[ 2048 /8 ];
+
+extern OSContStatus		gamepad_status[ 4  ];
+extern OSContPad		gamepad_data[ 4  ];
+extern u8				gamepad_bit_pattern;	// one bit for each controller
+extern int				gamepad_count;			// number of game controllers
+extern int				gamepad_index[ 2  ];
+extern int				gamepad_system_busy;
+extern float			gamepad_deadzone[ 2  ];
+extern float			gamepad_center[ 2  ][2];	// 2 is for x/y: 0=x, 1=y
+
+extern int				gamepad_rescan_count;
+
+extern struct gamepad	pad[ 2  + 0						// u64 (CUSA stuff ignore)  ];
+
+extern OSTimer	gamepad_timer;
+extern OSTime	gamepad_vbi_to_start_delay;
+extern OSTime	gamepad_vbi_red_start_time;
+extern OSTime	gamepad_vbi_green_start_time;
+
+
+//========================================================================================
+// Public functions:
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// gamepad_click - Returns the latched button state.
+//
+// The value returned is the latched state of the buttons and has the same bit configuration
+// as pad[].b. The bits parameter indicates which latched bits are to be cleared.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern int gamepad_click( int player, u32 bits );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// gamepad_update - updates gamepad_count and gamepad_index[] based on the values in
+//                  gamepad_status.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern void gamepad_update( void );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// gamepad_work - Updates the gamepad values. Used internally by the kernel. Should not
+//                be called.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern void gamepad_work( void );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// gamepad_30fps_vbi - Called from the vbi thread and in phase with the game loop's vbi,
+//                     this function starts a count-down timer which will trigger just
+//                     before the next game loop vbi. When the timer triggers,
+//                     gamepad_timer_thread is woken and starts DMAing the gamepad data
+//                     into memory. The data should be ready just before the beginning
+//                     of the next 30fps vbi.
+//
+// IMPORTANT: This function is internally called and managed by the kernel. It should
+//            not be directly called.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern void gamepad_30fps_vbi( void );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// gamepad_timer_wait_thread - An independent thread used to trigger gamepad data reads.
+//
+// IMPORTANT: This function is internally called and managed by the kernel. It should
+//            not be called.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern void gamepad_timer_wait_thread( void *arg );
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// gamepad_wait_thread - An independent thread used to read the gamepad state.
+//
+// IMPORTANT: This function is internally called and managed by the kernel. It should
+//            not be called.
+//////////////////////////////////////////////////////////////////////////////////////////
+extern void gamepad_wait_thread( void *arg );
+
+
+
+# 17 "u64main.c"
+
+# 1 "./mkbkgd.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+typedef struct o_block {
+	WORD xoffset;						 
+	WORD yoffset;						 
+	WORD zdepth;						 
+	WORD flags;							 
+	WORD hdr_index;						 
+} OBLOCK;
+
+ 
+typedef struct o_header {
+//-U64- change for new format
+//-SONY_IGNORE-		WORD tpage;							 
+//-SONY_IGNORE-		WORD t_xoffset;						 
+//-SONY_IGNORE-		WORD t_yoffset;						 
+	BYTE *t_src;						 
+	WORD t_width;						 
+	WORD t_height;						 
+} OHEADER;
+
+ 
+typedef struct obg_header {
+//-U64- change for new format (if used)
+	WORD tpage;							 
+	WORD t_xoffset;						 
+	WORD t_yoffset;						 
+	WORD padding;
+} OBGHEADER;
+
+ 
+typedef struct p_ram {
+	ADDRESS prsagptr;							// address to image data
+	XYTYPE prsize;							// image size info Y:X
+	WORD prflags;								// flip flags and other stuff (bits 0=hflip, bits1=vflip), padded
+	XYTYPE prpos;							// y:x delta offsets from object position for image
+} P_RAM;
+
+ 
+typedef struct o_module {
+	WORD xsize;							 
+	WORD ysize;							 
+	LONG blockcnt;						 
+	OBLOCK *block_ptr;					 
+	OHEADER *header_ptr;				 
+	WORD **clut_ptr;					 
+} OMODULE;
+
+typedef struct oimgtbl {
+	void *isagptr;				 
+	XYTYPE size;				 
+	short anixoff;				 
+	short aniyoff;				 
+} OIMGTBL;
+
+ 
+typedef struct oinit_tbl {
+	OIMGTBL *oimgptr;				 
+	void *opalptr;				 
+	WORD oid;					 
+	short oxoff;				 
+	short oyoff;				 
+	short ozdepth;				 
+} OINIT_TBL;
+
+ 
+typedef struct dtbl_init {
+	WORD ani_speed;
+	void *img;
+	short x;
+	short y;
+	void *a_list;
+	struct object **baklst;
+} DTBL_INIT;
+
+ 
+typedef struct dtbl_inita {
+	WORD ani_speed;
+	short x;
+	short y;
+	void *a_list;
+	struct object **baklst;
+} DTBL_INITA;
+
+
+ 
+typedef struct object {
+	struct object *olink;			 
+	struct process *oslink;			 
+
+	 
+	POS ograv;						 
+	POS oxvel;						 
+	POS oyvel;						 
+	POS oxpos;						 
+	POS oypos;						 
+	short ozval;					 
+	LONG oblockmask;				 
+	LONG oflags2;					 
+	OHEADER header;					 
+	WORD oid;						 
+	ADDRESS *oshape;				 
+	WORD ochar;						 
+	void *oimg;						 
+	WORD opal;						 
+	WORD oconst;					 
+	WORD ofset;						 
+	XYTYPE osize;					 
+	XYTYPE oscale;					 
+	WORD oflags;					 
+	WORD ovcache;					 
+	void *osag;						 
+	void *oheap;					 
+	P_RAM opinfo;					 
+} OBJECT;
+
+ 
+typedef struct plane_tbl {
+	LONG *bakbit;						 
+	OBJECT **baklst;					 
+	POS *world_y;						 
+	POS *world_x;						 
+	void *mod_ptr;						 
+} PLANETBL;
+
+ 
+typedef void (*FLRCALL)(long);
+
+ 
+
+
+extern  WORD f_street;					 
+extern  WORD load_bkgd;				 
+
+//-SONY- extern  WORD bkgd_base_x;
+extern  short f_only_t;				 
+extern  short ground_y;				 
+extern  short ceiling_y;				 
+extern  short left_edge;				 
+extern  short right_edge;				 
+extern  long *scrtab;				 
+extern  void *dlists;				 
+extern  void *bakmods[8];			 
+extern  WORD irqskye;				 
+extern  void *dark_dlist;
+
+extern  P_RAM *p1_frame;			 
+extern  P_RAM *p2_frame;			 
+
+ 
+extern  WORD f_skew;				// flag: skew the ground
+extern  POS skew_dx;
+extern  long skew_oc;			// how far off (and direction) center
+extern  short skew_y; 			// starting y position of floor
+extern  short skew_height;		// floor height
+extern  WORD skew_stack;			// # of times to stack floor
+extern  WORD skew_constpal;		// skew: const:pal
+extern  FLRCALL skew_calla;			// skew calla
+extern  BYTE *skew_sag;		// skew ground image pointer
+extern  ADDRESS *skew_scroll;	// pointer to which scroller skew uses
+
+
+ 
+
+
+void do_background(WORD background);
+void background_clear(void);
+void bkgd_graphics_setup(void);
+void init_background_module(void *);
+void bkgd_texture_load(void);
+void setup_floor_info(void *modptr);
+void use_next_y(void);
+void use_worldtly(void);
+void use_worldtly_t(void);
+void check_only_t(void);
+void background_routine(void);
+void multi_plane(void);
+void display_delete(OBJECT **baklst,XYTYPE *tl,XYTYPE *lr);
+void display_modify(OBJECT **baklst,void *bak_info,LONG *bakbit,XYTYPE *tl,XYTYPE *lr);
+void display_add(OBJECT **baklst,OMODULE *bakmod,LONG *bakbit,XYTYPE *tl,XYTYPE *lr,XYTYPE *start);
+int add_block(OBJECT **baklst,LONG *bakbit,OBLOCK *bakblk,OHEADER *hdr_info,XYTYPE *start,LONG blkmask,WORD **blkclt);
+void background_blast(void);
+OBJECT *gcb3(void *frame);
+void calla_return(void);
+void skew_7(long scroll);
+void skew_8(long scroll);
+void wind_sound(void);
+void garbage_straight(void);
+void garbage_loop(void);
+void paper_fly_offscreen(short pa1,short pa2);
+void paper_loop_sleep(long *pa1,long *pa2);
+void paper_glide(void);
+void get_paper_object(void);
+void paper_start_position(void);
+void a4_to_world_coord(short pa0,short pa1);
+void dumb_animator(void);
+void stop_scrolling(void);
+void scroll_a9(void);
+void scroll_to_x_a9(void);
+void scroll_center(void);
+void scorp_tele_scroll(void);
+void keep_centered_on_a8(void);
+void kcen_right(void);
+void kcen_left(void);
+void scroller(void);
+void handle_y_scrolling(void);
+void scroll_choose(WORD neg_flag);
+void ss_10000(WORD neg_flag);
+void ss_20000(WORD neg_flag);
+void ss_28000(WORD neg_flag);
+void ss_30000(WORD neg_flag);
+void ss_40000(WORD neg_flag);
+void ss_60000(WORD neg_flag);
+void ss_70000(WORD neg_flag);
+void ss_a0000(WORD neg_flag);
+void ss_80000(WORD neg_flag);
+void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+
+void pit_scroll_proc(void);
+void bridge_list_scroll(OBJECT **pa0,long pa1);
+void bridge_list_fixed(OBJECT **pa0,short pa5);
+void saw_spin_proc(void);
+void build_pit_saw(void);
+
+ 
+extern void *table_o_mods[];
+extern BYTE table_o_levels[];
+
+ 
+extern void *dlists_bogus[];
+extern void *dlists_objlst[];
+extern void *dlists_end[];
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 19 "u64main.c"
+# 1 "./mkobj.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+//-SONY- #define FLR_BUFFER_X 160					 
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+extern  OBJECT object_ram[235 ];		 
+
+extern  WORD scrntlx;						 
+extern  WORD scrntl2x;						 
+
+extern  WORD scrntly;						 
+extern  WORD scrntl2y;						 
+
+extern  WORD scrnlrx; 						 
+extern  WORD scrnlr2x;						 
+
+extern  WORD scrnlry;						 
+extern  WORD scrnlr2y;						 
+
+extern  OBJECT *obj_free;					 
+
+extern  OBJECT *objlst;						 
+extern  OBJECT *objlst2;						 
+extern  OBJECT *objlst3;						 
+
+ 
+extern  OBJECT *baklst9;						 
+extern  OBJECT *baklst8;						 
+extern  OBJECT *baklst7;						 
+extern  OBJECT *baklst6;						 
+extern  OBJECT *baklst5;						 
+extern  OBJECT *baklst4;						 
+extern  OBJECT *baklst3;						 
+extern  OBJECT *baklst2;						 
+extern  OBJECT *baklst1;						 
+
+extern  LONG bakbit8[512 /32 ];	 
+extern  LONG bakbit7[512 /32 ];	 
+extern  LONG bakbit6[512 /32 ];	 
+extern  LONG bakbit5[512 /32 ];	 
+extern  LONG bakbit4[512 /32 ];	 
+extern  LONG bakbit3[512 /32 ];	 
+extern  LONG bakbit2[512 /32 ];	 
+extern  LONG bakbit1[512 /32 ];	 
+
+ 
+extern  long long floor_draw_buf[320 *84  /sizeof(long long)];	// align  __attribute__ ((aligned (4)));		// draw buffer of active floor
+
+ 
+extern  WORD noflip;						 
+extern  FUNC call_every_tick;			 
+
+extern  POS scrolly;						 
+extern  POS worldtly8;					 
+extern  POS worldtly7;					 
+extern  POS worldtly6;					 
+extern  POS worldtly5;					 
+extern  POS worldtly4;					 
+extern  POS worldtly3;					 
+extern  POS worldtly2;					 
+extern  POS worldtly1;					 
+extern  POS worldtly;					 
+extern  POS scrollx8;					 
+extern  POS scrollx7;					 
+extern  POS scrollx6;					 
+extern  POS scrollx5;					 
+extern  POS scrollx4;					 
+extern  POS scrollx3;					 
+extern  POS scrollx2;					 
+extern  POS scrollx1;					 
+extern  POS scrollx;						 
+
+extern  POS worldtlx8;					 
+extern  POS worldtlx7;					 
+extern  POS worldtlx6;					 
+extern  POS worldtlx5;					 
+extern  POS worldtlx4;					 
+extern  POS worldtlx3;					 
+extern  POS worldtlx2;					 
+extern  POS worldtlx1;					 
+extern  POS worldtlx;					 
+
+ 
+extern  OBJECT *baklst8_t;				 
+extern  OBJECT *baklst7_t;				 
+extern  OBJECT *baklst6_t;				 
+extern  OBJECT *baklst5_t;				 
+extern  OBJECT *baklst4_t;				 
+extern  OBJECT *baklst3_t;				 
+extern  OBJECT *baklst2_t;				 
+extern  OBJECT *baklst1_t;				 
+extern  OBJECT *objlst_t;				 
+extern  POS worldtly_t;					 
+
+extern  POS worldtlx8_t;					 
+extern  POS worldtlx7_t;					 
+extern  POS worldtlx6_t;					 
+extern  POS worldtlx5_t;					 
+extern  POS worldtlx4_t;					 
+extern  POS worldtlx3_t;					 
+extern  POS worldtlx2_t;					 
+extern  POS worldtlx1_t;					 
+extern  POS worldtlx_t;					 
+
+ 
+
+
+void object_initialize(void);
+void zero_word_init(void);
+void zero_long_init(void);
+OBJECT *get_object(void);
+void insert_object(OBJECT *,OBJECT **);
+void display_object_lists(XYTYPE *,OBJECT *);
+void del_loop(OBJECT *,OBJECT **);
+void kilgen(WORD,WORD,OBJECT **);
+void gravity_n_bounds(OBJECT *,short,short);
+WORD yzsort(void);
+WORD sort_list(OBJECT **);
+void shadow_code(OBJECT *,short);
+void floor_code(void);
+WORD scrtst(OBJECT *);
+
+ 
+
+
+
+
+
+
+# 20 "u64main.c"
+# 1 "./mkos.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+typedef struct ps_data {
+	WORD *p_joyport;				 
+	struct object *p_otherguy;				 
+	struct process *p_otherproc;		 
+	OBJECT *p_slave;				 
+	ADDRESS *p_anitab;					 
+	ADDRESS p_store1;					 
+	ADDRESS p_store2;					 
+	ADDRESS p_store3;					 
+	ADDRESS p_store4;					 
+	ADDRESS p_store5;					 
+	ADDRESS p_store6;					 
+	ADDRESS p_store7;					 
+	ADDRESS p_store8;					 
+	LONG p_dronevar1;					 
+	WORD p_otheract;				 
+	WORD p_anirate;					 
+	WORD p_anicount;				 
+	WORD p_action;					 
+	short p_ganiy;					 
+	WORD p_flags;					 
+	WORD p_downcount;				 
+	WORD p_stk;							 
+	WORD p_hitby;						 
+	WORD p_damage;					// (16) - damage (for combo message)
+	WORD p_power;					// (8)  - power (for invincibilities)
+	WORD p_block;					// (8)  - block count
+	WORD p_hit;						// (8)  - hit count
+} PDATA;
+
+ 
+typedef struct process {
+	struct process *plink;			 
+
+	CONTEXT	p_context;				 
+
+
+
+	PDATA pdata;					 
+	WORD procid;					 
+	WORD ptime;						 
+	WORD joyindex;					 
+	WORD p_comp_flag;				 
+
+	struct object *pa8;				 
+	void *pa9;						 
+
+	ADDRESS a0;						 
+	ADDRESS a1;						 
+	ADDRESS a2;						 
+	ADDRESS a3;						 
+	ADDRESS a4;						 
+	ADDRESS a5;						 
+	ADDRESS a6;						 
+	ADDRESS a7;						 
+	ADDRESS a10;					 
+	ADDRESS a11;					 
+	ADDRESS a14;					 
+} PROCESS;
+
+ 
+
+
+extern  PROCESS *active_head;			 
+extern  PROCESS *free_head;				 
+extern  PROCESS *current_proc;			 
+extern  PROCESS process_ram[94 ];	 
+extern  MCONTEXT main_context;				 
+extern  volatile WORD irq_timer;						 
+extern  volatile WORD tick;							 
+
+
+
+
+
+
+ 
+
+
+void process_initialize(void);
+PROCESS *process_create(WORD,void (*func)(void));
+void process_kill(PROCESS *);
+void process_kill_class(WORD,WORD);
+PROCESS *process_exist(WORD,WORD);
+void process_suicide(void);
+void process_dispatch(void);
+void process_sleep(WORD);
+void timer_interrupt(void);
+
+ 
+void context_switch(CONTEXT *,CONTEXT *);
+void context_kill_switch(CONTEXT *);
+void context_init_main(CONTEXT *);
+void context_jump(CONTEXT *);
+
+ 
+
+
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+# 21 "u64main.c"
+# 1 "./mkgame.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+// when adding more, add entries to the tables in drone.asm
+
+ 
+
+
+extern  WORD p1_preload;
+extern  WORD bkgd_preload;
+
+extern  WORD f_no_bonus;				// prevent async bug that can occur, if set bonus routine delayed until fatal stuff say go
+extern  WORD f_freeplay;				// set if game is in freeplay
+extern  WORD credits;					// # of credits in game
+
+extern  WORD	gstate;					 
+extern  WORD	switch_escape;
+
+extern  WORD coinflag;				 
+extern  WORD on_hstd;				 
+
+extern  WORD b0;						// emul reg b0
+extern  WORD b1;						// emul reg b1
+
+ 
+extern  WORD p3_char;
+extern  WORD p4_char;
+
+extern  WORD	p1_state;				 
+extern  WORD p1_heap_char;			 
+extern  WORD p1_boss_char;			 
+extern  ADDRESS p1_shape;
+extern  OBJECT *p1_obj;				 
+extern  WORD *p1_button;				 
+extern  PROCESS *p1_proc;			 
+extern  WORD p1_char;
+extern  WORD p1_name_char;
+extern  POS p1_xvel;				 
+extern  WORD p1_bar;					 
+extern  WORD p1_turbo;				 
+extern  WORD p1_perfect;
+extern  WORD p1_matchw;				 
+extern  POS	p1_map;					 
+extern  LONG p1_bcq[20 +1];			 
+extern  LONG p1_jcq[20 +1];			 
+extern  LONG p1_boq[20 +1];			 
+extern  LONG p1_joq[20 +1];			 
+extern  WORD p1_dont_raise;
+
+ 
+extern  WORD	p2_state;				 
+extern  WORD p2_heap_char;			 
+extern  WORD p2_boss_char;			 
+extern  ADDRESS p2_shape;
+extern  OBJECT *p2_obj;				 
+extern  WORD *p2_button;			 
+extern  PROCESS *p2_proc;			 
+extern  WORD p2_char;
+extern  WORD p2_name_char;
+extern  POS p2_xvel;				 
+extern  WORD p2_bar;					 
+extern  WORD p2_turbo;			 
+extern  WORD p2_perfect;
+extern  WORD p2_matchw;				 
+extern  POS	p2_map;					 
+extern  LONG p2_bcq[20 +1];			 
+extern  LONG p2_jcq[20 +1];			 
+extern  LONG p2_boq[20 +1];			 
+extern  LONG p2_joq[20 +1];			 
+extern  WORD p2_dont_raise;
+
+ 
+extern  short f_shadow_fighting;			// shadowing fighting
+extern  short f_p1_half_damage;		// p1 inflicts half damage
+extern  short f_p2_half_damage;		// p2 inflicts half damage
+extern  short f_no_special_moves;	// disable speical moves
+extern  short f_no_vs;							// disable vs screen coming up
+extern  short f_superjumps;			// allow long super jumps
+extern  short f_no_combos;			// disable combos
+extern  short f_no_clock;				// if set clock disabled
+extern  short f_shang_morph;			 
+extern  short f_one_win;				 
+extern  short f_unlim_fatal;			 
+extern  short f_level_select;		 
+extern  short f_cheat_menu;			 
+extern  short f_pause;				 
+extern  short f_nosound;				 
+extern  short f_timeout;				 
+extern  short f_doscore;				 
+extern  short f_death;				 
+extern  short f_norepell;				 
+extern  short f_start;				 
+extern  short f_auto_erase;			 
+extern  short f_novel;				 
+extern  short f_warnsound;			 
+extern  short f_nopmsg;				 
+extern  short f_start_pressed;		 
+extern  short f_hey;					 
+extern  short f_no_blood;				 
+extern  short f_fade;					 
+extern  short f_thatsall;				 
+extern  short f_shadows;				 
+extern  short f_show_ranking;			 
+extern  short f_no_pan;				 
+extern  short f_music;			 
+
+extern  short f_mileena;
+extern  short f_ermac;
+extern  short f_oldsz;
+extern  short f_shao;
+
+
+
+
+
+extern  short f_no_sfx;				 
+extern  short f_stereo;				 
+
+extern  WORD curback;				 
+extern  short cmos_diff;				 
+extern  short diff;				 
+extern  short perform;				 
+extern  WORD round_num;				 
+extern  WORD winner_status;			 
+extern  WORD *map_start;				 
+extern  WORD map_position;			 
+extern  WORD battle_num;				 
+extern  WORD p1_wiar;				 
+extern  WORD p2_wiar;				 
+extern  WORD p1_rwon;				 
+extern  WORD p2_rwon;				 
+extern  WORD p1_hitq[6 ];				 
+extern  WORD p2_hitq[6 ];				 
+extern  WORD silhoette;				 
+
+extern  WORD c_three;				 
+extern  WORD c_drone_kill;			 
+extern  WORD c_amodeloop;			 
+//extern  WORD c_amode_bio;			 
+extern  WORD f_secret;
+
+ 
+
+
+extern  WORD	l_hp[2];					 
+extern  WORD	l_lp[2];					 
+extern  WORD	l_block[2];				 
+extern  WORD	l_hk[2];					 
+extern  WORD	l_lk[2];					 
+extern  WORD	l_up[2];					 
+extern  WORD	l_down[2];					 
+extern  WORD	l_left[2];					 
+extern  WORD	l_right[2];					 
+extern  WORD	l_run[2];					 
+
+ 
+extern  WORD	c_hp[2];					 
+extern  WORD	c_lp[2];					 
+extern  WORD	c_block[2];				 
+extern  WORD	c_hk[2];					 
+extern  WORD	c_lk[2];					 
+extern  WORD	c_up[2];					 
+extern  WORD	c_down[2];					 
+extern  WORD	c_left[2];					 
+extern  WORD	c_right[2];					 
+extern  WORD	c_run[2];					 
+
+
+extern  WORD	c_p1p2_fastblk[2];		 
+
+extern  WORD	c_kahn_dummy;			 
+extern  WORD	c_goro_dummy;			 
+extern  WORD	c_sk_taunt;				 
+extern  WORD	f_final_act;			 
+extern  WORD c_1p_tries;				 
+
+extern  short df_fastrun;
+extern  short df_nopower;
+extern  short df_p1joy;
+extern  short df_p2joy;
+extern  short df_quiet;
+extern  short df_nodamage;
+
+extern  WORD f_colbox;				 
+
+extern  WORD f_block;				 
+
+extern  WORD p1_bar_view;			 
+extern  WORD p2_bar_view;			 
+extern  WORD p2_bar_xpos;			 
+
+extern  WORD p1_turbo_view;			 
+extern  WORD p2_turbo_view;			 
+extern  WORD p2_turbo_xpos;			 
+
+extern  short clk_tens;				 
+extern  short clk_ones;				 
+
+extern  short p1_shadadj;				 
+extern  short p2_shadadj;				 
+
+extern  WORD displayon;				 
+
+extern  WORD shadow_clt;				 
+
+
+extern  WORD f_sans_throws;			// throwing disabled
+extern  short kode_offset;
+extern  WORD f_sans_block;			// blocking disabled
+extern  WORD f_mercy;				// mercy
+
+ 
+extern  WORD l_sz_decoy[2];			 
+extern  WORD l_morph[2];				 
+extern  WORD l_slide[2];				 
+
+extern  WORD l_liazap[2];
+extern  WORD l_net[2];
+extern  WORD l_angle[2];
+extern  WORD f_aabuse;
+extern  WORD f_upcut_rec;
+extern  WORD f_unlim_run;
+extern  WORD lem4[2];
+extern  WORD l_jaxzap2[2];
+extern  WORD l_throw_fan[2];
+extern  WORD l_decoy[2];
+extern  WORD l_flash[2];
+extern  WORD l_spear[2];
+extern  WORD l_block_fk[2];
+extern  WORD l_mileena_roll[2];
+extern  WORD l_puddle[2];
+extern  LONG f_gameflags;
+extern  WORD l_swat_gun[2];
+extern  WORD l_ermac_slam[2];
+extern  WORD l_orb_slow[2];
+extern  WORD l_orb_fast[2];
+extern  WORD l_zap[2];
+
+extern  WORD room7[2];
+extern  WORD room8[2];
+
+extern  WORD f_dark;
+extern  WORD f_smoke;
+//round_zero_end,0,1
+
+extern  WORD mode_of_play;
+extern  WORD p1_tour[16];			// tournament players (16 slots)
+extern  WORD twinners[7];			// tounrament winners
+extern  WORD c_curback;				// counter for current background
+
+
+extern  WORD comboram[10];			// combination lock ram
+
+
+
+
+
+
+
+
+
+
+
+
+# 22 "u64main.c"
+# 1 "./mkpal.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+//-SONY_IGNORE- #define CLUT_SIZE	256	//64								 
+//-SONY_IGNORE- #define CLUT_SHIFT_SIZE	8	//6							 
+//-SONY_IGNORE- #define CLUT_FACTOR 4	//16								 
+//-SONY_IGNORE- #define CLUT_ID_SHIFT	4	//2									 
+
+//-SONY_IGNORE- #define FORE_CLUT_START_X CLUT_BASE_PAL_X			 
+//-SONY_IGNORE- #define FORE_CLUT_START_Y CLUT_BASE_PAL_Y			 
+
+//-SONY_IGNORE- #define BKGD_CLUT_START_X (FORE_CLUT_START_X+((48	//128 %CLUT_FACTOR)<<CLUT_SHIFT_SIZE))	 
+//-SONY_IGNORE- #define BKGD_CLUT_START_Y (FORE_CLUT_START_Y+(48	//128 /CLUT_FACTOR))	 
+
+
+
+
+
+
+typedef struct p_palqent {
+	WORD index;										 
+	WORD count;										 
+	ADDRESS *csrc;									 
+} PALQENT;
+
+typedef struct p_palinfo {
+	WORD *palid;										 
+	short palcnt;									 
+	WORD paltime;									 
+} PALINFO;
+
+ 
+
+
+extern  PALQENT paltrans_queue[64 ];	 
+extern  PALQENT *paltrans_start;					 
+extern  PALQENT *paltrans_end;					 
+
+extern  PALINFO palram[48	//128 +48	//128 ];
+extern  WORD pal_buffer[48	//128 +48	//128 ][256];	// storage area to keep active palettes (need to do this way in order to color cycle and stuff)
+
+
+extern  WORD usefpcnt;							 
+extern  WORD usebpcnt;							 
+
+
+ 
+
+
+void init_paltrans_queue(void);
+WORD findpal(WORD*);
+void clear_pal(void);
+void clear_fore_pal(void);
+void clear_back_pal(void);
+WORD get_fore_pal(WORD *);
+WORD get_back_pal(WORD *);
+void free_pal(WORD);
+void color_cycle(WORD *pal,WORD dir);
+
+//-SONY_IGNORE- void palset_xfer(WORD,WORD,WORD *);
+void palset_xfer(WORD,WORD *);
+
+//-SONY_IGNORE- void unget_pal(WORD);
+//-SONY_IGNORE- void blow_pal(WORD*);
+
+void transfer_palettes(void);
+
+ 
+extern WORD bpal_black_P[];
+extern WORD bpal_red_P[];
+extern WORD bpal_white_P[];
+extern WORD bpal_flash1_P[];
+extern WORD bpal_flash2_P[];
+extern WORD bpal_flash3_P[];
+extern WORD bpal_flash4_P[];
+extern WORD bpal_flash5_P[];
+extern WORD SCORE_P[];
+extern WORD BLOOD_P[];
+extern WORD OIL_P[];
+extern WORD SHEEBL_P[];
+extern WORD WHITE_p[];
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 23 "u64main.c"
+# 1 "./mkmain.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+ 
+
+
+extern  WORD f_play3;					// set when at PLAY3 label
+extern  FUNC play3_pa14;				// if set then return to this point instead of continue (nasty hack for C)
+extern  WORD round_results;
+extern  volatile WORD f_sync;						// semaphore type var
+extern  WORD f_victory_start;
+
+ 
+
+
+void force_it(void);
+void start_entry(WORD *,WORD);
+void goto_mode_select(WORD *pstate,WORD poffset);
+void post_mode_select(void);
+void buyin_to_1_on_1(void);
+void two_on_two(void);
+WORD round_is_over(void);
+void tournament_play(void);
+void round_1_vs(void);
+void game_loop(void);
+void round_loop(void);
+void one_on_one(void);
+void game_init(void);
+void set_winner_status(void);
+void play_1_match(void);
+void spawn_endurance_guy(WORD pa0);
+WORD is_endurance_possible(void);
+short a0_next_endurance_guy(void);
+void fatal_demo_loop(void);
+void game_over(void);
+void init_player_variables(void);
+void master_proc_mercy(void);
+WORD count_active_players(void);
+WORD set_drone_ochar(void);
+WORD *drone_char_point_a6(void);
+short current_drone_a0(void);
+WORD who_is_alone(void);
+WORD play_1_round(void);
+void play3(void);
+WORD master_mercy_entry(void);
+
+void restore_power(WORD *pa5,WORD *pa6);
+void mercy_start(void);
+void wait_for_wingman(WORD *pbar);
+PROCESS *spawn_wingman(PROCESS *pa1,WORD pa5);
+void results_of_round(WORD);
+void match_init(void);
+void round_init(void);
+void round_intro_fx(void);
+void start_tune(WORD);
+void try_kombat_kodes(void);
+void clear_combo_ram(void);
+void print_round_num(void);
+void zero_round_init_words(void);
+void zero_round_init_longs(void);
+void inc_winners_wiar(void);
+WORD fatality_wait(WORD);
+WORD is_finish_him_allowed(void);
+void finish_him_sequence(void);
+void loser_in_buyin(void);
+void print_timeout_msg(void);
+void ochar_force_curback(void);
+void adv_winner_map(void);
+void end_of_match_chores(void);
+void amode_demo_game(void);
+void stuff_a0_diff(short);
+void add_to_diff(short);
+void diff_adjust(void);
+WORD ladderorder_a1(void);
+void boss_minimum_diff(void);
+void check_battle_milestone(void);
+void weed_out_cheaters(void);
+void flash_pmsg(void);
+void flash_pmsg2(void);
+void finish_him_or_her(void);
+void check_enter_initials1(void);
+void check_enter_initials2(void);
+void barge_in_message(void);
+void advance_curback(void);
+short get_adj(WORD);
+short get_adj_diff(void);
+void reset_map_variables(void);
+
+void player_heap_adj(void);
+
+void pause_setup(WORD poffset);
+void pause_hold(WORD poffset);
+WORD get_background_tune(void);
+void play_background_tune(void);
+void play_ending_chord(void);
+
+void hidden_game_load(void);
+void pong_game_load(void);
+
+ 
+
+
+
+
+
+
+
+
+
+# 24 "u64main.c"
+# 1 "./mkinit.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+extern  WORD f_load;
+
+extern  LONG system_marker;					 
+
+extern  volatile JOYPAD swcurr;						 
+extern  JOYPAD swtemp1;						 
+extern  JOYPAD swtemp2;						 
+extern  WORD *swstack;						 
+extern  WORD swstmn[16 ];			 
+extern  WORD f_gridon;						// flag to turn grid on
+extern  WORD f_profile;						// flag: turn on profile
+
+extern  XYTYPE disp_world;					// current position for world during display
+extern  void *dlists_ptr;					// current entry in dlists to process
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+void mk3_main(void);
+void main_init(void);
+void dipinit(void);
+void wipeout(void);
+
+void queue_and_jump(WORD,LONG *,WORD,WORD);
+void player_die_check(WORD);
+void switch_queue(WORD,LONG *);
+void update_bar_common(WORD *,WORD *,WORD *,WORD);
+void shadow_p1p2(void);
+
+void p1_button0_open(void);
+void p1_button1_open(void);
+void p1_button2_open(void);
+void p1_button3_open(void);
+void p1_button4_open(void);
+void p1_button5_open(void);
+void p2_button0_open(void);
+void p2_button1_open(void);
+void p2_button2_open(void);
+void p2_button3_open(void);
+void p2_button4_open(void);
+void p2_button5_open(void);
+void p1_button0(void);
+void p1_button1(void);
+void p1_button2(void);
+void p1_button3(void);
+void p1_button4(void);
+void p1_button5(void);
+void p2_button0(void);
+void p2_button1(void);
+void p2_button2(void);
+void p2_button3(void);
+void p2_button4(void);
+void p2_button5(void);
+void p1_start_button(void);
+void p1_joy_up(void);
+void p1_joy_right(void);
+void p1_joy_down(void);
+void p1_joy_left(void);
+void p2_start_button(void);
+void p2_joy_up(void);
+void p2_joy_right(void);
+void p2_joy_down(void);
+void p2_joy_left(void);
+void p_grid(void);
+void p_profile(void);
+void p_colbox(void);
+void pdie2(WORD pb0,WORD pb1,WORD pa3,WORD);
+void p1_start_open(void);
+void p2_start_open(void);
+void setup_and_draw(void);
+extern WORD *last_switch_ram[];
+ 
+
+
+
+
+
+
+
+
+# 25 "u64main.c"
+# 1 "./mkguys.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+extern void *character_palettes_1[];
+extern void *character_palettes_2[];
+
+void setup_players(void);
+void setup_1on1_wingmen(void);
+void setup_2on2_wingmen(void);
+void p1_wing(WORD);
+void p2_wing(WORD);
+void make_ochar_obj(WORD pchar,short t_a1);
+void init_p_others(void);
+void setup_player_1(void);
+void setup_player_2(void);
+void tot_my_pal(void);
+void get_player_palette(void *);
+void make_player_1_obj(void);
+void make_player_2_obj(void);
+void *a9_ochar_frame_1(WORD pa9);
+void set_x_woff(OBJECT *pa8);
+OBJECT *make_player_obj(WORD,WORD,WORD,void *,void *);
+void *get_char_ani(WORD,short);
+void ground_ochar(void);
+void player_normpal(void);
+void player_ugly_pal(void);
+void stance_setup(void);
+LONG get_walk_info_b(void);
+LONG get_walk_info_f(void);
+void player_swpal_a0_image(void *);
+void player_froze_pal(void);
+WORD q_nice_pal(void);
+
+ 
+void shock_init(void);
+void shock_check(void);
+void stun_speed_3(void);
+void stun_speed_6(void);
+void set_a10_to_him(void);
+void set_a10_to_slave(void);
+
+//-SONY-extern void *PUFF1[];
+//-SONY-extern void *explode_fx_anims[];
+
+//-SONY-extern void *a_puff[];
+//-SONY-extern void *a_dave_explode[];
+//-SONY-extern void *a_ground_explode[];
+//-SONY-extern void *a_small_explode[];
+
+ 
+void sonya_zap_pal(void);
+void lineup_number_2(void);
+void ochar_bank_bit(OBJECT *pa8);
+
+ 
+extern void *jax_anitab1[];
+extern void *jax_anitab2[];
+
+extern void *sonya_anitab1[];
+extern void *sonya_anitab2[];
+
+extern void *lao_anitab1[];
+extern void *lao_anitab2[];
+
+extern void *lia_anitab1[];
+extern void *lia_anitab2[];
+
+extern void *kano_anitab1[];
+extern void *kano_anitab2[];
+
+extern void *ind_anitab1[];
+extern void *ind_anitab2[];
+
+extern void *sz_anitab1[];
+extern void *sz_anitab2[];
+
+extern void *swat_anitab1[];
+extern void *swat_anitab2[];
+
+extern void *robo1_anitab1[];
+extern void *robo1_anitab2[];
+
+extern void *robo2_anitab1[];
+extern void *robo2_anitab2[];
+
+extern void *robo3_anitab1[];
+extern void *robo3_anitab2[];
+
+extern void *tusk_anitab1[];
+extern void *tusk_anitab2[];
+
+extern void *sg_anitab1[];
+extern void *sg_anitab2[];
+
+extern void *st_anitab1[];
+extern void *st_anitab2[];
+
+extern void *lk_anitab1[];
+extern void *lk_anitab2[];
+
+
+
+
+ 
+extern WORD SHADOW_P[];
+
+ 
+extern WORD LPRP_P[];
+extern WORD LBLU_P[];
+extern WORD BLUESCR_P[];
+extern WORD SPARK_P[];
+extern WORD LSKUL_P[];
+extern WORD SHOCK_P[];
+extern WORD LIFLASH_P[];
+extern WORD LIASPIT_P[];
+extern WORD LIXPLOD_P[];
+
+ 
+extern WORD JAXPRP_P[];
+extern WORD JZXGRN_P[];
+extern WORD JAXGRN_P[];
+extern WORD JQAK_P[];
+extern WORD JAXPOW_P[];
+extern WORD JXPROJT_P[];
+extern WORD JXPREXP_P[];
+extern WORD JAXPOW_P[];
+
+ 
+extern WORD SBGREEN_P[];
+extern WORD sbENG_p[];
+extern WORD sbzap_p[];
+extern WORD dROP_p[];
+extern WORD SPARKIS_P[];
+extern WORD KISSORB_P[];
+extern WORD SBLTBLU_P[];
+extern WORD sbENG2_p[];
+
+ 
+extern WORD KUNG_P[];
+extern WORD LHATGLO_P[];
+extern WORD LAHAT_P[];
+extern WORD KUNGBLU_P[];
+
+ 
+extern WORD KANOBLU_P[];
+extern WORD KANORED_P[];
+extern WORD SABER_P[];
+
+ 
+extern WORD INBLU_P[];
+extern WORD INYEL_P[];
+extern WORD GRNFLM_P[];
+extern WORD UPAXE_P[];
+extern WORD ind_shadow_p[];
+
+ 
+extern WORD SZBLU_P[];
+extern WORD SZBLUGR_P[];
+extern WORD FRZBLST_P[];
+extern WORD IC013P[];
+
+ 
+extern WORD SBFROZN_P[];
+extern WORD INFROZN_P[];
+extern WORD LIFROZN_P[];
+extern WORD OBFROZN_P[];
+extern WORD KLFROZN_P[];
+extern WORD JXFROZN_P[];
+extern WORD RBFROZN_P[];
+extern WORD SZFROZN_P[];
+extern WORD KNFROZN_P[];
+extern WORD SHFROZN_P[];
+extern WORD TRFROZN_P[];
+extern WORD TSFROZN_P[];
+extern WORD LUFROZN_P[];
+extern WORD white_froze_p[];
+extern WORD sk_shadow_p[];
+
+ 
+extern WORD OBRED_P[];
+extern WORD OLTBLU_P[];
+extern WORD CPBLAST_P[];
+
+
+ 
+extern WORD ROBO_P[];
+extern WORD MECARM_P[];
+extern WORD ROCKET_P[];
+extern WORD TARGET_P[];
+extern WORD NET_P[];
+extern WORD ROBSHKB_P[];
+extern WORD ROBOMB_P[];
+
+extern WORD R1PAL1_P[];
+extern WORD R1PAL2_P[];
+
+ 
+extern WORD ROBO3_P[];
+extern WORD ROBOGLD_P[];
+
+extern WORD R2PAL1_P[];
+extern WORD R2PAL2_P[];
+
+ 
+extern WORD TSKTAN_P[];
+extern WORD TSBLU_P[];
+
+ 
+extern WORD FGRED_P[];
+extern WORD FGGREEN_P[];
+extern WORD FGBLUE_P[];
+
+ 
+extern WORD TSRED_P[];
+extern WORD TSYEL_P[];
+extern WORD GLOW_P[];
+extern WORD FIRE_P[];
+
+ 
+extern WORD LKRED_P[];
+extern WORD LKYELO_P[];
+
+ 
+extern WORD MOTARO_P[];
+
+ 
+extern WORD BGPAL1_P[];
+
+ 
+extern WORD noob_p[];
+
+ 
+extern WORD SMOKE1_P[];
+extern WORD SMOKE2_P[];
+
+ 
+extern WORD KIT1_P[];
+extern WORD KIT2_P[];
+extern WORD KTFRZ_P[];
+extern WORD MIL1_P[];
+extern WORD MIL2_P[];
+extern WORD JADE1_P[];
+extern WORD JADE2_P[];
+extern WORD jade_bright_p[];
+extern WORD white_p[];
+extern WORD BLOBUB_P[];
+extern WORD FANSTUN_P[];
+extern WORD JADPRO_P[];
+extern WORD SIPROJ_p[];
+extern WORD ROD_P[];
+
+ 
+extern WORD SCORP1_P[];
+extern WORD SCORP2_P[];
+extern WORD SCFRZ_P[];
+extern WORD REP1_P[];
+extern WORD REP2_P[];
+extern WORD ERMAC1_P[];
+extern WORD ERMAC2_P[];
+extern WORD SUBZ1_P[];
+extern WORD SUBZ2_P[];
+extern WORD NJSMOKE_P[];
+extern WORD RPACID_P[];
+extern WORD REPHEAD_P[];
+extern WORD TUNG_P[];
+extern WORD SCFRZ_P[];
+extern WORD GLOBALL_P[];
+extern WORD SPIT_P[];
+extern WORD SPEAR_P[];
+extern WORD ICE_P[];
+extern WORD SCFIRE_P[];
+extern WORD SKULL_P[];
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+# 26 "u64main.c"
+# 1 "./mkdma.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+//================================================================================================
+ 
+struct sys_ovdirentry {	// overlay directory entry:
+	u32	romstart;		// overlay's start address in ROM
+	u32	romend;			// overlay's end address in ROM (one byte past end)
+	u32	vstart;			// overlay's start virtual address
+	u32	vend;			// overlay's end virtual address
+	u32	bss_start;		// overlay's bss start virtual address
+	u32	bss_end;		// overlay's bss end virtual address
+};
+
+//================================================================================================
+// Append to this enum:
+
+enum {							// overlay id definitions
+	SYS_ARENA_OVL,
+	SYS_ARMOR_OVL,
+	SYS_BATTLE_OVL,
+	SYS_BELL_OVL,
+	SYS_BRIDGE_OVL,
+	SYS_CAVE_OVL,
+	SYS_CITY_OVL,
+	SYS_DEAD_OVL,
+	SYS_DESERT_OVL,
+	SYS_GRAVE_OVL,
+	SYS_HPORT_OVL,
+	SYS_LOST_OVL,
+	SYS_MONK_OVL,
+	SYS_PIT_OVL,
+	SYS_SBST_OVL,
+	SYS_SOUL_OVL,
+	SYS_TEMPLE_OVL,
+	SYS_TOWER_OVL,
+	SYS_TREE_OVL,
+	SYS_WATER_OVL,
+	SYS_BUYIN_OVL,
+	SYS_SELECT_OVL,
+	SYS_GRAD_OVL,
+	SYS_OPTION_OVL,
+	SYS_TITLE_OVL,
+
+	SYS_NUM_OVERLAYS			// always leave this in the last enum position
+};
+
+
+//================================================================================================
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+
+
+ 
+ 
+
+//================================================================================================
+// Append to this list (CREATE EXTERNALS):
+extern char _arenacodSegmentRomStart[], _arenacodSegmentRomEnd[];		extern char _arenacodSegmentStart[], _arenacodSegmentEnd[];				extern char _arenacodSegmentBssStart[], _arenacodSegmentBssEnd[];		extern char _arenacodSegmentTextStart[], _arenacodSegmentTextEnd[];		extern char _arenacodSegmentDataStart[], _arenacodSegmentDataEnd[] ; 	extern char _arenatxtSegmentRomStart[], _arenatxtSegmentRomEnd[]  ;
+extern char _armorcodSegmentRomStart[], _armorcodSegmentRomEnd[];		extern char _armorcodSegmentStart[], _armorcodSegmentEnd[];				extern char _armorcodSegmentBssStart[], _armorcodSegmentBssEnd[];		extern char _armorcodSegmentTextStart[], _armorcodSegmentTextEnd[];		extern char _armorcodSegmentDataStart[], _armorcodSegmentDataEnd[] ; 	extern char _armortxtSegmentRomStart[], _armortxtSegmentRomEnd[]  ;
+extern char _battlecodSegmentRomStart[], _battlecodSegmentRomEnd[];		extern char _battlecodSegmentStart[], _battlecodSegmentEnd[];				extern char _battlecodSegmentBssStart[], _battlecodSegmentBssEnd[];		extern char _battlecodSegmentTextStart[], _battlecodSegmentTextEnd[];		extern char _battlecodSegmentDataStart[], _battlecodSegmentDataEnd[] ; 	extern char _battletxtSegmentRomStart[], _battletxtSegmentRomEnd[]  ;
+extern char _bellcodSegmentRomStart[], _bellcodSegmentRomEnd[];		extern char _bellcodSegmentStart[], _bellcodSegmentEnd[];				extern char _bellcodSegmentBssStart[], _bellcodSegmentBssEnd[];		extern char _bellcodSegmentTextStart[], _bellcodSegmentTextEnd[];		extern char _bellcodSegmentDataStart[], _bellcodSegmentDataEnd[] ; 	extern char _belltxtSegmentRomStart[], _belltxtSegmentRomEnd[]  ;
+extern char _bridgecodSegmentRomStart[], _bridgecodSegmentRomEnd[];		extern char _bridgecodSegmentStart[], _bridgecodSegmentEnd[];				extern char _bridgecodSegmentBssStart[], _bridgecodSegmentBssEnd[];		extern char _bridgecodSegmentTextStart[], _bridgecodSegmentTextEnd[];		extern char _bridgecodSegmentDataStart[], _bridgecodSegmentDataEnd[] ; 	extern char _bridgetxtSegmentRomStart[], _bridgetxtSegmentRomEnd[]  ;
+extern char _cavecodSegmentRomStart[], _cavecodSegmentRomEnd[];		extern char _cavecodSegmentStart[], _cavecodSegmentEnd[];				extern char _cavecodSegmentBssStart[], _cavecodSegmentBssEnd[];		extern char _cavecodSegmentTextStart[], _cavecodSegmentTextEnd[];		extern char _cavecodSegmentDataStart[], _cavecodSegmentDataEnd[] ; 	extern char _cavetxtSegmentRomStart[], _cavetxtSegmentRomEnd[]  ;
+extern char _citycodSegmentRomStart[], _citycodSegmentRomEnd[];		extern char _citycodSegmentStart[], _citycodSegmentEnd[];				extern char _citycodSegmentBssStart[], _citycodSegmentBssEnd[];		extern char _citycodSegmentTextStart[], _citycodSegmentTextEnd[];		extern char _citycodSegmentDataStart[], _citycodSegmentDataEnd[] ; 	extern char _citytxtSegmentRomStart[], _citytxtSegmentRomEnd[]  ;
+extern char _deadcodSegmentRomStart[], _deadcodSegmentRomEnd[];		extern char _deadcodSegmentStart[], _deadcodSegmentEnd[];				extern char _deadcodSegmentBssStart[], _deadcodSegmentBssEnd[];		extern char _deadcodSegmentTextStart[], _deadcodSegmentTextEnd[];		extern char _deadcodSegmentDataStart[], _deadcodSegmentDataEnd[] ; 	extern char _deadtxtSegmentRomStart[], _deadtxtSegmentRomEnd[]  ;
+extern char _desertcodSegmentRomStart[], _desertcodSegmentRomEnd[];		extern char _desertcodSegmentStart[], _desertcodSegmentEnd[];				extern char _desertcodSegmentBssStart[], _desertcodSegmentBssEnd[];		extern char _desertcodSegmentTextStart[], _desertcodSegmentTextEnd[];		extern char _desertcodSegmentDataStart[], _desertcodSegmentDataEnd[] ; 	extern char _deserttxtSegmentRomStart[], _deserttxtSegmentRomEnd[]  ;
+extern char _gravecodSegmentRomStart[], _gravecodSegmentRomEnd[];		extern char _gravecodSegmentStart[], _gravecodSegmentEnd[];				extern char _gravecodSegmentBssStart[], _gravecodSegmentBssEnd[];		extern char _gravecodSegmentTextStart[], _gravecodSegmentTextEnd[];		extern char _gravecodSegmentDataStart[], _gravecodSegmentDataEnd[] ; 	extern char _gravetxtSegmentRomStart[], _gravetxtSegmentRomEnd[]  ;
+extern char _hportcodSegmentRomStart[], _hportcodSegmentRomEnd[];		extern char _hportcodSegmentStart[], _hportcodSegmentEnd[];				extern char _hportcodSegmentBssStart[], _hportcodSegmentBssEnd[];		extern char _hportcodSegmentTextStart[], _hportcodSegmentTextEnd[];		extern char _hportcodSegmentDataStart[], _hportcodSegmentDataEnd[] ; 	extern char _hporttxtSegmentRomStart[], _hporttxtSegmentRomEnd[]  ;
+extern char _lostcodSegmentRomStart[], _lostcodSegmentRomEnd[];		extern char _lostcodSegmentStart[], _lostcodSegmentEnd[];				extern char _lostcodSegmentBssStart[], _lostcodSegmentBssEnd[];		extern char _lostcodSegmentTextStart[], _lostcodSegmentTextEnd[];		extern char _lostcodSegmentDataStart[], _lostcodSegmentDataEnd[] ; 	extern char _losttxtSegmentRomStart[], _losttxtSegmentRomEnd[]  ;
+extern char _monkcodSegmentRomStart[], _monkcodSegmentRomEnd[];		extern char _monkcodSegmentStart[], _monkcodSegmentEnd[];				extern char _monkcodSegmentBssStart[], _monkcodSegmentBssEnd[];		extern char _monkcodSegmentTextStart[], _monkcodSegmentTextEnd[];		extern char _monkcodSegmentDataStart[], _monkcodSegmentDataEnd[] ; 	extern char _monktxtSegmentRomStart[], _monktxtSegmentRomEnd[]  ;
+extern char _pitcodSegmentRomStart[], _pitcodSegmentRomEnd[];		extern char _pitcodSegmentStart[], _pitcodSegmentEnd[];				extern char _pitcodSegmentBssStart[], _pitcodSegmentBssEnd[];		extern char _pitcodSegmentTextStart[], _pitcodSegmentTextEnd[];		extern char _pitcodSegmentDataStart[], _pitcodSegmentDataEnd[] ; 	extern char _pittxtSegmentRomStart[], _pittxtSegmentRomEnd[]  ;
+extern char _sbstcodSegmentRomStart[], _sbstcodSegmentRomEnd[];		extern char _sbstcodSegmentStart[], _sbstcodSegmentEnd[];				extern char _sbstcodSegmentBssStart[], _sbstcodSegmentBssEnd[];		extern char _sbstcodSegmentTextStart[], _sbstcodSegmentTextEnd[];		extern char _sbstcodSegmentDataStart[], _sbstcodSegmentDataEnd[] ; 	extern char _sbsttxtSegmentRomStart[], _sbsttxtSegmentRomEnd[]  ;
+extern char _soulcodSegmentRomStart[], _soulcodSegmentRomEnd[];		extern char _soulcodSegmentStart[], _soulcodSegmentEnd[];				extern char _soulcodSegmentBssStart[], _soulcodSegmentBssEnd[];		extern char _soulcodSegmentTextStart[], _soulcodSegmentTextEnd[];		extern char _soulcodSegmentDataStart[], _soulcodSegmentDataEnd[] ; 	extern char _soultxtSegmentRomStart[], _soultxtSegmentRomEnd[]  ;
+extern char _templecodSegmentRomStart[], _templecodSegmentRomEnd[];		extern char _templecodSegmentStart[], _templecodSegmentEnd[];				extern char _templecodSegmentBssStart[], _templecodSegmentBssEnd[];		extern char _templecodSegmentTextStart[], _templecodSegmentTextEnd[];		extern char _templecodSegmentDataStart[], _templecodSegmentDataEnd[] ; 	extern char _templetxtSegmentRomStart[], _templetxtSegmentRomEnd[]  ;
+extern char _towercodSegmentRomStart[], _towercodSegmentRomEnd[];		extern char _towercodSegmentStart[], _towercodSegmentEnd[];				extern char _towercodSegmentBssStart[], _towercodSegmentBssEnd[];		extern char _towercodSegmentTextStart[], _towercodSegmentTextEnd[];		extern char _towercodSegmentDataStart[], _towercodSegmentDataEnd[] ; 	extern char _towertxtSegmentRomStart[], _towertxtSegmentRomEnd[]  ;
+extern char _treecodSegmentRomStart[], _treecodSegmentRomEnd[];		extern char _treecodSegmentStart[], _treecodSegmentEnd[];				extern char _treecodSegmentBssStart[], _treecodSegmentBssEnd[];		extern char _treecodSegmentTextStart[], _treecodSegmentTextEnd[];		extern char _treecodSegmentDataStart[], _treecodSegmentDataEnd[] ; 	extern char _treetxtSegmentRomStart[], _treetxtSegmentRomEnd[]  ;
+extern char _watercodSegmentRomStart[], _watercodSegmentRomEnd[];		extern char _watercodSegmentStart[], _watercodSegmentEnd[];				extern char _watercodSegmentBssStart[], _watercodSegmentBssEnd[];		extern char _watercodSegmentTextStart[], _watercodSegmentTextEnd[];		extern char _watercodSegmentDataStart[], _watercodSegmentDataEnd[] ; 	extern char _watertxtSegmentRomStart[], _watertxtSegmentRomEnd[]  ;
+extern char _buyincodSegmentRomStart[], _buyincodSegmentRomEnd[];		extern char _buyincodSegmentStart[], _buyincodSegmentEnd[];				extern char _buyincodSegmentBssStart[], _buyincodSegmentBssEnd[];		extern char _buyincodSegmentTextStart[], _buyincodSegmentTextEnd[];		extern char _buyincodSegmentDataStart[], _buyincodSegmentDataEnd[] ; 	extern char _buyintxtSegmentRomStart[], _buyintxtSegmentRomEnd[]  ;
+extern char _selectcodSegmentRomStart[], _selectcodSegmentRomEnd[];		extern char _selectcodSegmentStart[], _selectcodSegmentEnd[];				extern char _selectcodSegmentBssStart[], _selectcodSegmentBssEnd[];		extern char _selectcodSegmentTextStart[], _selectcodSegmentTextEnd[];		extern char _selectcodSegmentDataStart[], _selectcodSegmentDataEnd[] ; 	extern char _selecttxtSegmentRomStart[], _selecttxtSegmentRomEnd[]  ;
+extern char _gradcodSegmentRomStart[], _gradcodSegmentRomEnd[];		extern char _gradcodSegmentStart[], _gradcodSegmentEnd[];				extern char _gradcodSegmentBssStart[], _gradcodSegmentBssEnd[];		extern char _gradcodSegmentTextStart[], _gradcodSegmentTextEnd[];		extern char _gradcodSegmentDataStart[], _gradcodSegmentDataEnd[] ; 	extern char _gradtxtSegmentRomStart[], _gradtxtSegmentRomEnd[]  ;
+extern char _optioncodSegmentRomStart[], _optioncodSegmentRomEnd[];		extern char _optioncodSegmentStart[], _optioncodSegmentEnd[];				extern char _optioncodSegmentBssStart[], _optioncodSegmentBssEnd[];		extern char _optioncodSegmentTextStart[], _optioncodSegmentTextEnd[];		extern char _optioncodSegmentDataStart[], _optioncodSegmentDataEnd[] ; 	extern char _optiontxtSegmentRomStart[], _optiontxtSegmentRomEnd[]  ;
+extern char _titlecodSegmentRomStart[], _titlecodSegmentRomEnd[];		extern char _titlecodSegmentStart[], _titlecodSegmentEnd[];				extern char _titlecodSegmentBssStart[], _titlecodSegmentBssEnd[];		extern char _titlecodSegmentTextStart[], _titlecodSegmentTextEnd[];		extern char _titlecodSegmentDataStart[], _titlecodSegmentDataEnd[] ; 	extern char _titletxtSegmentRomStart[], _titletxtSegmentRomEnd[]  ;
+
+//================================================================================================
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+//================================================================================================
+ 
+
+
+
+
+
+//================================================================================================
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//================================================================================================
+typedef struct ovl
+{
+	char **ovl_addr;
+	char *ovl_file;
+} OVL;
+
+ 
+typedef struct 
+{ 
+	u32 segl_start;
+	u32 segl_end;
+} SEGL;
+
+typedef int File_IO_Struct;
+
+
+//================================================================================================
+ 
+
+
+
+
+
+
+
+
+//================================================================================================
+ 
+
+
+
+
+
+
+
+
+
+//================================================================================================
+ 
+
+
+
+
+//================================================================================================
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+//================================================================================================
+
+ 
+
+
+extern  BYTE load_level;				// current level in load_addr area
+
+extern  void *finish_heap_ptr;		// ptr for finishing heap info
+extern  void *player_heap_ptr;		// remember what my heap ptr was before fatality
+ 
+
+
+int module_io_init(void);
+File_IO_Struct *module_os_open(char *filename);
+int module_os_read(void *destptr,int readbytes,File_IO_Struct *fileptr);
+int module_os_seek(File_IO_Struct *fileptr,int seekpos,int seekmode);
+int module_os_size(File_IO_Struct *fileptr);
+int module_os_close(File_IO_Struct *fileptr);
+
+void sys_aligned_memfill( int *memstart, int numints, int val );
+void sys_aligned_memclear( int *memstart, int numints );
+void loadoverlay( LONG index );
+
+
+void texture_pool_init(void);
+int texture_level_load(WORD level,WORD sync);
+int character_texture_load(WORD pchar,WORD type,void *dest,WORD sync);
+int async_overlay_load(WORD overnum);
+int generic_overlay_load(WORD overnum);
+BYTE *special_fx_load(WORD fxtype);
+int level_overlay_load(WORD level);
+
+ 
+
+
+
+
+# 27 "u64main.c"
+
+/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------------------------------------
+// Create and start romcopy thread...
+
+	osCreateMesgQueue( &romcopy_msgque, &romcopy_msgbuf, 1 );
+
+	osCreateThread(
+		&romcopy_thread,
+		3 ,
+		romcopy_wait_thread,
+		(void *)0,
+		romcopy_stack + 2048 /8,
+		50 
+	);
+	osStartThread( &romcopy_thread );		// will return immediately
+
+//----------------------------------------------------------------------------------------
+// Initialize kernel...
+
+//	sys_loadoverlay( SYS_OVID_INIT );
+	init_hardware_system();
+//	sys_unloadoverlay( SYS_OVID_INIT );
+
+rmonPrintf( "here!\n" );
+//----------------------------------------------------------------------------------------
+// 1  ONLY: Print more startup info...
+
+
+
+
+
+
+//----------------------------------------------------------------------------------------
+// Jump to main loop...
+
+	mk3_main();				// can return only in 1  mode
+
+//----------------------------------------------------------------------------------------
+// 1  ONLY: Exit from executable...
+
+
+	osSetThreadPri( 0, 0 );		// lower current thread's priority to zero
+	osExit();
+
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+void init_hardware_system(void)
+{
+	int i, j;
+
+	 
+	game_map_tbl[0]=pad1_map_tbl[0]=pad2_map_tbl[0]=0x0004;			//r1,block
+	game_map_tbl[1]=pad1_map_tbl[1]=pad2_map_tbl[1]=0x0004;			//l1,block
+	game_map_tbl[2]=pad1_map_tbl[2]=pad2_map_tbl[2]=0x0008;			//r2,run
+	game_map_tbl[3]=pad1_map_tbl[3]=pad2_map_tbl[3]=0x0008;			//l2,run
+
+	game_map_tbl[4]=pad1_map_tbl[4]=pad2_map_tbl[4]=0x0020;			//triangle, hk
+	game_map_tbl[5]=pad1_map_tbl[5]=pad2_map_tbl[5]=0x0040;			//circle, lk
+	game_map_tbl[6]=pad1_map_tbl[6]=pad2_map_tbl[6]=0x0080;			//x, lp
+	game_map_tbl[7]=pad1_map_tbl[7]=pad2_map_tbl[7]=0x0010;			//square, hp
+
+	game_map_tbl[8]=pad1_map_tbl[8]=pad2_map_tbl[8]=0x0100;			//coll box, (SELECT BUTTON)
+	game_map_tbl[9]=pad1_map_tbl[9]=pad2_map_tbl[9]=0x0200;			//run, needed for sony box controllers
+	game_map_tbl[10]=pad1_map_tbl[10]=pad2_map_tbl[10]=0x0400;		//block, needed for sony box controllers
+	game_map_tbl[11]=pad1_map_tbl[11]=pad2_map_tbl[11]=0x0800;		//start
+
+	game_map_tbl[12]=pad1_map_tbl[12]=pad2_map_tbl[12]=0x1000;		//up
+	game_map_tbl[13]=pad1_map_tbl[13]=pad2_map_tbl[13]=0x2000;		//right
+	game_map_tbl[14]=pad1_map_tbl[14]=pad2_map_tbl[14]=0x4000;		//down
+	game_map_tbl[15]=pad1_map_tbl[15]=pad2_map_tbl[15]=0x8000;		//left
+
+//----------------------------------------------------------------------------------------
+// Create and start the Vi manager and init the video mode...
+
+	osCreateViManager( 254  );
+	osViSetMode( &osViModeTable[2  ] );	//-DHS- setup correctly (possible set to point sampled)
+	displayon=0,osViBlack(1) ;
+
+//----------------------------------------------------------------------------------------
+// Initialize gamepad...
+
+	gamepad_rescan_count = 30 ;
+	gamepad_vbi_to_start_delay = (osTvType ? (((u64)( ( (1000000/60)-2000-2000 ) )*45637500LL)/1000000LL)  					  : (((u64)( ( (1000000/60)-2000-2000 ) )*46552500LL)/1000000LL) )  ;
+
+	osCreateMesgQueue( &sys_msgque_ser, &sys_msgbuf_ser, 1 );
+	osSetEventMesg( 5 , &sys_msgque_ser, 0 );
+	for( j=0; j<3 ; j++ ) {
+		osContInit( &sys_msgque_ser, &gamepad_bit_pattern, gamepad_status );
+		for( i=0; i<4 ; i++ ) {
+			if( gamepad_status[i].errno == 0x4  ) break;
+		}
+		if( i==4  ) break;
+	}
+
+	gamepad_update();
+
+	for( i=0; i<2 ; i++ ) {
+		gamepad_center[i][0] = 0.5 ;
+		gamepad_center[i][1] = 0.5 ;
+		gamepad_deadzone[i] = 0.1 ;
+	}
+
+//----------------------------------------------------------------------------------------
+// Setup message queues and event triggering...
+
+	 
+	osCreateMesgQueue( &sys_msgque_rsp, &sys_msgbuf_rsp, 1 );
+	osSetEventMesg( 4 , &sys_msgque_rsp, 0 );
+
+	 
+	osCreateMesgQueue( &sys_msgque_rdp, &sys_msgbuf_rdp, 1 );
+	osSetEventMesg( 9 , &sys_msgque_rdp, 0 );
+
+	 
+	osCreateMesgQueue( &sys_msgque_joy, &sys_msgbuf_joy, 1 );
+	osSetEventMesg( 5 , &sys_msgque_joy, 0 );
+
+	 
+	osCreateMesgQueue( &sys_msgque_vbi, &sys_msgbuf_vbi, 1 );
+	osViSetEvent( &sys_msgque_vbi, 0, 1 );			// 2 indicates 30 FPS (1=60)
+
+	 
+	osCreateMesgQueue( &sys_msgque_tmr, &sys_msgbuf_tmr, 1 );
+
+//----------------------------------------------------------------------------------------
+// Create and start video vbi thread...
+
+	osCreateThread(
+		&vid_vbi_thread,
+		4 ,
+		vid_vbi_wait_thread,
+		(void *)0,
+		vid_vbi_stack + 2048 /8,
+		90 
+	);
+	osStartThread( &vid_vbi_thread );		// will return immediately
+
+//----------------------------------------------------------------------------------------
+// Create and start RSP wait thread...
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------------------------------------
+// Create and start RDP wait thread...
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------------------------------------
+// Create and start gamepad wait thread...
+
+	osCreateThread(
+		&gamepad_thread,
+		7 ,
+		gamepad_wait_thread,
+		(void *)0,
+		gamepad_stack + 2048 /8,
+		70 
+	);
+	osStartThread( &gamepad_thread );		// will return immediately
+
+//----------------------------------------------------------------------------------------
+// Create and start timer wait thread...
+
+	osCreateThread(
+		&gamepad_timer_thread,
+		8 ,
+		gamepad_timer_wait_thread,
+		(void *)0,
+		gamepad_timer_stack + 2048 /8,
+		85 
+	);
+	osStartThread( &gamepad_timer_thread );	// will return immediately
+
+//----------------------------------------------------------------------------------------
+// Initialize video buffers...
+
+
+
+
+
+
+
+
+
+
+
+
+	return;
+}
+
+/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+static void stack_switch_bits(LONG,WORD);
+
+# 705 "u64main.c"
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// vid_vbi_wait_thread - An independent thread used to catch vertical retraces.
+//
+// IMPORTANT: This function is internally called and managed by the kernel. It should
+//            not be called.
+//////////////////////////////////////////////////////////////////////////////////////////
+void vid_vbi_wait_thread( void *arg ) 
+{
+	CRITICAL_DEFS;
+	int frame_on_screen;
+	int current_fbuf;
+	int i;
+
+	for(;;) 
+	{
+		osRecvMesg( &sys_msgque_vbi, &sys_DummyMsg, 1  );
+
+		mk_vblank_int();
+		
+# 814 "u64main.c"
+
+	}
+}
+
+
+static WORD irq_tick;
+extern short or1;
+void mk_vblank_int(void)
+{
+	JOYPAD swprev1,swprev2;
+	JOYPAD sw0,swstate;
+
+	 
+	irq_timer++;
+	if ( f_pause<0x03				// pause is off but waiting for player to clear for debounce  )
+		irq_tick++;
+	tick=(irq_tick*55)/60;
+
+	 
+	//-SONY- swcurr.padvalue=PadRead(SONY_PAD_ID);		 
+	swcurr.padvalue=0;		//-DHS-
+	or1+=(swcurr.u.p1pad+swcurr.u.p2pad);
+
+	 
+	if ( gstate==0x02  || gstate==0x07 )
+	{
+		swcurr.u.p1pad=joy_remap(swcurr.u.p1pad,pad1_map_tbl);
+		swcurr.u.p2pad=joy_remap(swcurr.u.p2pad,pad2_map_tbl);
+	}
+	else
+	{
+		swcurr.u.p1pad=joy_remap(swcurr.u.p1pad,game_map_tbl);
+		swcurr.u.p2pad=joy_remap(swcurr.u.p2pad,game_map_tbl);
+	}
+
+	 
+	swprev1.padvalue=swtemp1.padvalue;					 
+	swprev2.padvalue=swtemp2.padvalue;					 
+
+	swtemp2.padvalue=swtemp1.padvalue;					 
+	swtemp1.padvalue=swcurr.padvalue;						 
+
+	if ((sw0.padvalue=swcurr.padvalue ^ swprev1.padvalue)) 			 
+	{
+		 
+		if ((swstate.padvalue=sw0.padvalue & swcurr.padvalue))		 
+		{
+		 	swstate.padvalue &= ~(swprev1.padvalue | swprev2.padvalue);   	 
+		 	stack_switch_bits(swstate.padvalue,32 );
+		}
+
+		 
+		swstate.padvalue = ~swcurr.padvalue & swprev1.padvalue;		 
+		stack_switch_bits(swstate.padvalue,0 );
+	}
+
+	//-NOTE- routines that belong here gravity & scroll are with mkos.c
+
+	 
+
+	return;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void stack_switch_bits(LONG swstate,WORD swoffset)
+{
+	LONG sw0;
+	WORD i=0;
+
+	while (swstate)
+	{
+		if ((sw0=swstate & 1))			 
+		{
+			if (swstack>=&swstmn[16 ])	 
+				return;
+
+			*swstack=i+swoffset;		 
+			swstack++;
+		}
+
+		i++;							 
+
+		swstate=(0xfffffffe & swstate)>>1;	 
+	}
+
+	return;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+WORD joy_remap(WORD input,WORD *tbl)
+{
+	short i;
+	WORD output=0;
+
+	for (i=0;i<MAP_TBL_ENTRIES;i++)
+	{
+		if (input & 1)
+		{
+			 
+			output|=*(tbl+i);		// map table entry contains correct bit to set in output
+		}
+
+		input>>=1;					// shift down next bit
+	}
+
+	return(output);
+}
+
+/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BYTE *uncompress_image(BYTE *src)
+{
+	BYTE *dest;
+	BYTE *start;
+	WORD i;
+
+	switch (((*( (LONG *)src)) >>24)&0x3f)
+	{
+		case 0:		// no compression
+			start=src+sizeof(LONG);
+			break;
+		case 1:		// 64 color comp
+			start=dest=(BYTE *)idcomp_ptr;
+			unsonyRLE(src,&dest);
+			idcomp_ptr=(LONG *)(((LONG)(dest+3)) & (~3));
+   			break;
+		case 2:		// 256 color comp
+			start=dest=(BYTE *)idcomp_ptr;
+			expand_simpleRLE(src,&dest);
+			idcomp_ptr=(LONG *)(((LONG)(dest+3)) & (~3));
+			break;
+		case 3:
+			start=dest=(BYTE *)idcomp_ptr;
+			unbetterSimpleRLE(src,&dest);
+			idcomp_ptr=(LONG *)(((LONG)(dest+3)) & (~3));
+			break;
+	}
+
+	return(start);
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+void expand_simpleRLE(BYTE *src, BYTE **dst)
+{
+	int i;
+	signed char *s, *d, ch;
+	long srcBytes;
+
+	s = (signed char *)src + sizeof(long);
+	d = (signed char *)(*dst);
+	srcBytes = (*(long *)src & 0x00FFFFFF) - sizeof(long);
+	while (srcBytes > 0)
+		if ((i = *s++) < 0)
+		{               					 
+			ch = *s++;                       
+			for (srcBytes -= 2; i <= 0; i++)
+				*d++ = ch;
+		}
+		else
+			for (srcBytes -= i + 2; i >= 0; i--)
+				*d++ = *s++;                 
+
+	*dst=(BYTE *)d;
+}   
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+void unsonyRLE(BYTE *src, BYTE **dst)
+{
+	short someshort;
+	long Lrunlen;
+	int complete, partial;
+	BYTE *packdata, *packlen;
+	WORD *buffer;
+
+
+
+
+
+
+
+
+
+
+	packdata = src;
+	packlen = packdata + (*((long*)packdata) & 0x00FFFFFF);
+	buffer = (WORD *)(*dst);
+
+	for (packdata += 4; packdata < packlen; ) {
+		someshort = *(((WORD *)packdata)++);
+
+		if (someshort & 0x8000) {
+			Lrunlen = someshort & 0x01FF;
+			someshort &= 0x7E00;
+			someshort = (someshort >> 1) | (someshort >> 9);
+			complete = Lrunlen >> 6;
+			partial = Lrunlen & 63;
+
+			if (!partial) {
+				partial = 64;
+				complete--;
+			}
+
+# 1130 "u64main.c"
+
+
+		}
+		else *(((WORD *)buffer)++) = someshort;
+	}
+
+	*dst=(BYTE *)buffer;
+}   
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+void unbetterSimpleRLE(BYTE *src, BYTE **dst)
+{
+	int i, state;
+	BYTE ch, c1, c2, c3;
+	long srcBytes;
+	BYTE *buffer;
+
+	srcBytes = (*(long *)src & 0x00FFFFFF) - (sizeof(long));
+	srcBytes = srcBytes + (srcBytes / 3) - (src[3] >> 6);
+	src += sizeof(long);
+	buffer = *dst;
+	state = 0;
+	while (srcBytes > 0)
+	{
+		switch (state++) {      	case 0:                                     		c1 = *src++;                            		c2 = *src++;                            		c3 = *src++;                            		i = c1 >> 2;                          		break;                                  	case 1:                                     		i = (c2 >> 4) | ((c1 << 4) & 0x30);   		break;                                  	case 2:                                     		i = ((c2 << 2) & 0x3C) | (c3 >> 6);   		break;                                  	case 3:                                     		i = c3 & 0x3F;                        		state = 0;                              		break;                                  } ;
+		if (i < 32)
+		{                       			 
+			switch (state++) {      	case 0:                                     		c1 = *src++;                            		c2 = *src++;                            		c3 = *src++;                            		ch = c1 >> 2;                          		break;                                  	case 1:                                     		ch = (c2 >> 4) | ((c1 << 4) & 0x30);   		break;                                  	case 2:                                     		ch = ((c2 << 2) & 0x3C) | (c3 >> 6);   		break;                                  	case 3:                                     		ch = c3 & 0x3F;                        		state = 0;                              		break;                                  } ;                    
+			for (srcBytes -= 2; i >= 0; i--)
+				*buffer++ = ch;
+		}
+		else
+		{
+			i -= 32;
+			for (srcBytes -= i + 2; i >= 0; i--)
+				switch (state++) {      	case 0:                                     		c1 = *src++;                            		c2 = *src++;                            		c3 = *src++;                            		*buffer++ = c1 >> 2;                          		break;                                  	case 1:                                     		*buffer++ = (c2 >> 4) | ((c1 << 4) & 0x30);   		break;                                  	case 2:                                     		*buffer++ = ((c2 << 2) & 0x3C) | (c3 >> 6);   		break;                                  	case 3:                                     		*buffer++ = c3 & 0x3F;                        		state = 0;                              		break;                                  } ;            
+		}
+	}
+
+	*dst=buffer;
+}   
+
+
+/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void load_perm_art(void)
+{
+
+	 
+	//-SONY-texture_level_load(25 ,0x0000			// normal sync load );
+	//-SONY-control_floor_tpage=DLoadTPage((ADDRESS *)(&player_heap[(510000*2)/2]), TEXTURE_MODE, 0, CP_TEXT_X, CP_TEXT_Y, 256, 256); ;		// 0 trans for score bar
+	//-SONY-DrawSync(0);
+
+	 
+	//-SONY-texture_level_load(27 ,0x0000			// normal sync load );
+	//-SONY-load_tpage=DLoadTPage((ADDRESS *)(&player_heap[(510000*2)/2]), TEXTURE_MODE, 0, LOADING_BASE_X, LOADING_BASE_Y, 256, 70); ;		// 0 trans for score bar
+	//-SONY-DrawSync(0);
+
+	 
+	//-SONY-setup_text_fonts();
+
+	return;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void ermac(WORD error)
+{
+	int wait=0;
+
+# 1344 "u64main.c"
+
+
+	while(wait==0)
+		 ;
+	return;
+}
+

@@ -1,0 +1,20 @@
+timefloor1 70x43 3096 931 30.071060 NH dict RLE 32
+timemonk1 15x27 432 170 39.351852 NH dict RLE 32
+timemonk2 14x27 432 168 38.888889 NH dict RLE 32
+timemonk3 14x27 432 168 38.888889 NH dict RLE 32
+timemonk4 14x26 416 179 43.028847 NH dict RLE 32
+timemonk5 15x27 432 169 39.120369 NH dict RLE 32
+timemonk6 15x27 432 171 39.583332 NH dict RLE 32
+timemonk7 16x27 432 177 40.972221 NH dict RLE 32
+warplite1 10x11 132 34 25.757576 NH 8 color
+warplite2 12x14 168 45 26.785715 NH 8 color
+warplite3 14x15 240 49 20.416666 NH 8 color
+warplite4 15x15 240 55 22.916666 NH 8 color
+warplite5 20x7 140 43 30.714285 NH 8 color
+warplite6 21x9 216 52 24.074074 NH 8 color
+scaled = 7240 RLEd + dict = 2667 33.301105
+RLE average bytes/frame 190.500000
+max width = 70 timefloor1
+max height = 43 timefloor1
+min width = 10 warplite1
+min height = 7 warplite5

@@ -1,0 +1,3230 @@
+nj_anitab1:
+	.word a_stance
+	.word a_walkf
+	.word a_walkb
+	.word a_turn
+	.word a_duck
+	.word a_duck_turn
+	.word a_duck_block
+	.word a_duck_hit
+	.word a_duck_punch
+	.word a_duck_kick_hi
+	.word a_duck_kick_lo
+	.word a_uppercut
+	.word a_block
+	.word a_victory
+	.word a_hipunch
+	.word a_lopunch
+	.word a_elbow
+	.word a_hikick
+	.word a_lokick
+	.word a_knee
+	.word a_sweep_kick
+	.word a_roundhouse
+	.word a_jump
+	.word a_jump_kick
+	.word a_flip_punch
+	.word a_flip_kick
+	.word a_fflip
+	.word a_bflip
+	.word a_hit_hi
+	.word a_hit_lo
+	.word a_knockdown
+	.word a_sweep_fall
+	.word a_stumble
+	.word a_getup
+	.word a_sweepup
+	.word a_throw
+	.word a_ermac_zap
+	.word a_dizzy
+	.word a_fb_kano
+	.word a_fb_sonya
+	.word a_fb_jax
+	.word a_fb_ind
+	.word a_fb_sz
+	.word a_fb_swat
+	.word a_fb_lia
+	.word a_fb_robo
+	.word a_fb_robo2
+	.word a_fb_lao
+	.word a_fb_tusk
+	.word a_fb_sg
+	.word a_fb_st
+	.word a_fb_lk
+	.word a_fb_smoke
+	.word a_fb_kitana
+	.word a_fb_jade
+	.word a_fb_mileena
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_rd
+	.word a_fb_sa
+	.word a_afb_kano
+	.word a_legged
+	.word a_projectile
+	.word a_shook
+	.word a_afb_robo2
+	.word a_zoomed
+	.word a_orb_banged
+	.word a_jade_shook
+	.word a_impaled
+	.word a_run
+	.word a_thudd
+	.word a_scared
+	.word a_back_break
+	.word a_baby
+	.word a_big_head
+	.word a_half_cutup
+	.word a_cutup
+	.word a_float
+	.word a_pounded
+	.word a_reach
+	.word a_skin_rip
+	.word a_stretch
+	.word a_suk
+	.word a_shocked
+	.word a_shredded
+nj_anitab2:
+	.word a_reptile_elbow2
+	.word a_reptile_inv
+	.word a_slide
+	.word a_osz_elbow
+	.word a_ermac_elbow3
+	.word a_release_orb
+	.word a_spit
+	.word a_spit_glob
+	.word a_scorp_tele
+	.word a_throw_spear
+	.word a_air_throw
+	.word a_rep_dash_elbow
+	.word a_scorpion_summon
+	.word a_mask_off
+	.word a_breath_fire
+	.word a_tony_flame
+	.word a_floor_ice
+	.word a_oldsz_zap
+	.word a_moving_roundhouse
+	.word 0
+	.word 0	/* a_vomit */
+	.word 0	/* a_hi_tongue */
+	.word 0	/* a_med_tongue  */
+	.word 0	/* a_lo_tongue  */
+	.word 0	/* a_reptile_chomp_head */
+	.word 0		/* schand */
+	.word a_icespike
+	.word a_ermac_zapper
+	.word a_noob_zap
+	.word a_rain_cloud
+	.word a_noob_teleslam
+	.word a_rain_bolt
+	
+a_dummy:
+a_zap:
+a_projectile:
+
+
+a_rain_bolt:
+	.word RAINLT1
+	.word RAINLT1
+	.word 0
+	.word ani_sladd
+	.word RAINLT4A
+	.word RAINLT3A
+	.word ani_slani
+	.word RAINLT4B
+	.word RAINLT3B
+	.word ani_calla
+	.word delete_slave
+	.word 0
+	.word RAINLT6
+	.word RAINLT6
+	.word 0
+
+
+a_stance:
+	.word ani_ochar_jump
+	.word ft_reptile
+	.word a_reptile_stance
+
+	.word ani_ochar_jump
+	.word 29
+	.word a_reptile_stance
+	
+	.word SCSTANCE1
+	.word SCSTANCE2
+	.word SCSTANCE3
+	.word SCSTANCE4
+	.word SCSTANCE5
+	.word SCSTANCE6
+	.word SCSTANCE7
+	.word SCSTANCE8
+	.word SCSTANCE9
+	
+	.word ani_jump
+	.word a_stance
+a_reptile_stance:
+	.word RPSTANCE3
+	.word RPSTANCE5
+	.word RPSTANCE7
+	.word RPSTANCE9
+	.word ani_jump
+	.word a_reptile_stance
+a_walkf:
+	.word SCWALK1
+	.word SCWALK1
+	.word SCWALK3
+	.word SCWALK3
+	.word SCWALK5
+	.word SCWALK5
+	.word SCWALK7
+	.word SCWALK7
+	.word SCWALK9
+	.word ani_jump
+	.word a_walkf
+a_walkb:
+	.word SCWALK9
+	.word SCWALK9
+	.word SCWALK7
+	.word SCWALK7
+	.word SCWALK5
+	.word SCWALK5
+	.word SCWALK3
+	.word SCWALK1
+	.word SCWALK1
+	.word ani_jump
+	.word a_walkb
+a_turn:
+	.word SCTURN1
+	.word SCTURN2
+	.word ani_flip
+	.word SCTURN1
+	.word 0
+a_block:
+	.word SCBLOCK1
+	.word SCBLOCK1
+	.word SCBLOCK3
+	.word 0
+a_duck:
+	.word SCDUCK2
+	.word SCDUCK2
+	.word SCDUCK3
+	.word 0
+a_impaled:
+	.word	ani_adjustxy
+	.half	-0x60
+	.half	0x00
+	.word	RPSPIT2
+
+	.word	ani_adjustxy
+	.half	0x00
+	.half	-0x18
+	.word	RPSPIT2
+
+	.word	ani_adjustxy
+	.half	0x00
+	.half	-0x18
+	.word	RPSPIT2
+
+	.word	ani_adjustxy
+	.half	0x10
+	.half	-0x08
+	.word	RPSPIT2
+
+	.word	0
+
+	.word	RPSPIT2
+	.word	SCJUMPFLIP1
+	.word	SCFLIPPED1
+
+	.word	SCJUMPFLIP1
+	.word	RPSPIT2
+	.word	SCJUMPFLIP1
+	.word	SCFLIPPED1
+	.word	0
+
+a_duck_block:
+	.word SCDUCKBLOCK3
+	.word SCDUCKBLOCK3
+	.word SCDUCKBLOCK3
+	.word 0
+a_duck_turn:
+	.word SCDUCKTURN2
+	.word SCDUCKTURN2
+	.word ani_flip
+	.word SCDUCKTURN2
+	.word SCDUCK3
+	.word 0
+a_duck_punch:
+	.word SCDUCKPUNCH2
+	.word SCDUCKPUNCH2
+	.word SCDUCKPUNCH3
+	.word 0
+	.word SCDUCKPUNCH2
+	.word SCDUCKPUNCH2
+	.word SCDUCK3
+	.word 0
+a_duck_kick_lo:
+	.word SCDUCKLOKICK2
+	.word SCDUCKLOKICK2
+	.word SCDUCKLOKICK3
+	.word 0
+	.word SCDUCKLOKICK2
+	.word SCDUCKLOKICK2
+	.word SCDUCK3
+	.word 0
+a_duck_kick_hi:
+	.word SCDUCKLOKICK2
+	.word SCDUCKHIKICK3
+	.word SCDUCKHIKICK3
+	.word SCDUCKHIKICK4
+	.word 0
+	.word SCDUCKHIKICK3
+	.word SCDUCKHIKICK3
+	.word SCDUCKLOKICK3
+	.word SCDUCK3
+	.word 0
+a_uppercut:
+	.word SCUPPERCUT2
+	.word SCUPPERCUT2
+	.word SCUPPERCUT4
+	.word SCUPPERCUT5
+	.word ani_nosleep
+	.word SCUPPERCUT7
+	.word 0
+	.word SCUPPERCUT5
+	.word 0
+a_duck_hit:
+	.word SCDUCKHIT3
+	.word SCDUCKHIT3
+	.word SCDUCKHIT1
+	.word SCDUCKHIT1
+	.word 0
+a_hipunch:
+	.word SCHIPUNCH1
+	.word SCHIPUNCH4
+	.word SCHIPUNCH3
+	.word 0
+	.word SCHIPUNCH4
+	.word SCHIPUNCH5
+	.word SCHIPUNCH6
+	.word 0
+	.word SCHIPUNCH5
+	.word SCHIPUNCH4
+	.word ani_jump
+	.word a_hipunch+((32*2)/8)
+	.word 0
+	.word SCHIPUNCH4
+	.word SCHIPUNCH1
+	.word 0
+	.word SCHIPUNCH7
+	.word 0
+	.word SCHIPUNCH4
+	.word SCLOPUNCH5
+	.word ani_jump
+	.word a_lopunch+((32*6)/8)
+	.word 0
+	.word SCHIPUNCH5
+	.word SCLOPUNCH3
+	.word ani_jump
+	.word a_lopunch+((32*2)/8)
+	.word 0
+a_lopunch:
+	.word SCHIPUNCH1
+	.word SCLOPUNCH3
+	.word SCLOPUNCH3
+	.word 0
+	.word SCLOPUNCH3
+	.word SCLOPUNCH5
+	.word SCLOPUNCH6
+	.word 0
+	.word SCLOPUNCH5
+	.word SCLOPUNCH3
+	.word ani_jump
+	.word a_lopunch+((32*2)/8)
+	.word 0
+	.word SCLOPUNCH3
+	.word SCHIPUNCH1
+	.word 0
+	.word SCHIPUNCH7
+	.word 0
+	.word SCLOPUNCH3
+	.word SCLOPUNCH5
+	.word ani_jump
+	.word a_hipunch+((32*6)/8)
+	.word 0
+	.word SCLOPUNCH3
+	.word SCHIPUNCH5
+	.word ani_jump
+	.word a_hipunch+((32*2)/8)
+a_elbow:
+	.word ani_adjustx
+	.word 6
+	.word SCCOMBO1
+	.word ani_adjustx
+	.word 6
+	.word SCCOMBO1
+	.word SCCOMBO3
+	.word ani_nosleep
+	.word SCCOMBO4
+	.word 0
+	.word SCCOMBO1
+	.word SCCOMBO1
+	.word 0
+	.word ani_adjustx
+	.word 6
+	.word SCCOMBO6
+	.word ani_adjustx
+	.word 6
+	.word SCCOMBO7
+	.word SCCOMBO8
+	.word SCCOMBO8
+	.word 0
+	.word ani_adjustx
+	.word 6
+	.word SCCOMBO10
+	.word ani_adjustx
+	.word 6
+	.word SCCOMBO10
+	.word SCCOMBO12
+	.word 0
+	.word SCCOMBO10
+	.word SCCOMBO10
+	.word SCCOMBO8
+	.word 0
+a_ermac_elbow3:
+	.word ani_adjustx
+	.word 6
+	.word SCUPPERCUT2
+	.word ani_adjustx
+	.word 6
+	.word SCUPPERCUT2
+	.word SCUPPERCUT4
+	.word SCUPPERCUT5
+	.word SCUPPERCUT7
+	.word 0
+	.word SCUPPERCUT5
+	.word SCUPPERCUT4
+	.word SCUPPERCUT2
+	.word SCUPPERCUT2
+	.word 0
+a_osz_elbow:
+	.word ani_adjustx
+	.word 6
+	.word SCCOMBO10
+	.word ani_adjustx
+	.word 6
+	.word SCCOMBO10
+	.word SCCOMBO12
+	.word 0
+	.word SCCOMBO10
+	.word SCCOMBO10
+	.word 0
+	.word RPCOMBO1
+	.word RPCOMBO2
+	.word RPCOMBO2
+	.word ani_nosleep
+	.word RPCOMBO4
+	.word 0
+	.word RPCOMBO2
+	.word RPCOMBO2
+	.word RPCOMBO1
+	.word 0
+a_rep_dash_elbow:
+	.word SCCOMBO10
+	.word SCCOMBO10
+	.word SCCOMBO12
+	.word 0
+	.word SCCOMBO10
+	.word SCCOMBO10
+	.word 0
+a_reptile_elbow2:
+	.word RPCOMBO1
+	.word RPCOMBO2
+	.word RPCOMBO2
+	.word ani_nosleep
+	.word RPCOMBO4
+	.word 0
+	.word RPCOMBO2
+	.word RPCOMBO2
+	.word RPCOMBO1
+	.word 0
+	.word ani_adjustx
+	.word 6
+	.word SCCOMBO10
+	.word ani_adjustx
+	.word 6
+	.word SCCOMBO10
+	.word SCCOMBO12
+	.word 0
+	.word RPCOMBO6
+	.word RPCOMBO6
+	.word RPCOMBO8
+	.word RPCOMBO9
+	.word RPCOMBO9
+	.word 0
+	.word RPCOMBO9
+	.word RPCOMBO8
+	.word RPCOMBO6
+	.word RPCOMBO6
+	.word 0
+a_lokick:
+	.word SCLOKICK2
+	.word SCLOKICK2
+	.word SCLOKICK2
+	.word SCLOKICK4
+	.word SCLOKICK4
+	.word SCLOKICK6
+	.word 0
+	.word SCLOKICK4
+	.word SCLOKICK4
+	.word SCLOKICK2
+	.word SCLOKICK2
+	.word SCLOKICK2
+	.word 0
+a_hikick:
+	.word SCLOKICK2
+	.word SCLOKICK2
+	.word SCLOKICK2
+	.word SCHIKICK4
+	.word SCHIKICK6
+	.word SCHIKICK6
+	.word 0
+	.word SCHIKICK4
+	.word SCHIKICK4
+	.word SCLOKICK2
+	.word SCLOKICK2
+	.word SCLOKICK2
+	.word 0
+a_knee:
+	.word SCKNEECOMBO2
+	.word SCKNEECOMBO2
+	.word 0
+	.word SCKNEECOMBO2
+	.word SCKNEECOMBO2
+	.word 0
+	.word ani_adjustx
+	.word 4
+	.word SCKNEECOMBO4
+	.word ani_adjustx
+	.word 4
+	.word SCKNEECOMBO5
+	.word SCKNEECOMBO6
+	.word 0
+	.word ani_adjustx
+	.word 4
+	.word SCKNEECOMBO6
+	.word ani_adjustx
+	.word 4
+	.word SCKNEECOMBO8
+	.word ani_adjustx
+	.word 4
+	.word SCKNEECOMBO9
+	.word ani_adjustx
+	.word 4
+	.word SCKNEECOMBO11
+	.word SCKNEECOMBO11
+	.word 0
+	.word ani_adjustx
+	.word 4
+	.word SCKNEECOMBO11
+	.word ani_adjustx
+	.word 4
+	.word SCKNEECOMBO9
+	.word ani_adjustx
+	.word 4
+	.word SCKNEECOMBO8
+	.word ani_adjustx
+	.word 4
+	.word SCKNEECOMBO6
+	.word SCKNEECOMBO6
+	.word 0
+	.word SCKNEECOMBO5
+	.word SCKNEECOMBO4
+	.word SCKNEECOMBO2
+	.word SCKNEECOMBO2
+	.word 0
+a_moving_roundhouse:
+	.word SCSPINHOOK2
+	.word ani_adjustx
+	.word 8
+	.word SCSPINHOOK2
+	.word ani_adjustx
+	.word 8
+	.word SCSPINHOOK4
+	.word ani_adjustx
+	.word 8
+	.word SCSPINHOOK4
+	.word ani_adjustx
+	.word 6
+	.word SCKNEECOMBO5
+	.word 0
+	.word SCSPINHOOK4
+	.word SCSPINHOOK4
+	.word SCSPINHOOK2
+	.word SCSPINHOOK2
+	.word 0
+a_sweep_kick:
+	.word SCSWEEPKICK2
+	.word SCSWEEPKICK2
+	.word SCSWEEPKICK4
+	.word ani_calla
+	.word sweep_sounds
+	.word SCSWEEPKICK4
+	.word SCSWEEPKICK5
+	.word 0
+	.word SCSWEEPKICK5
+	.word SCSWEEPKICK5
+	.word SCSWEEPKICK8
+	.word 0
+a_roundhouse:
+	.word SCSPINHOOK2
+	.word SCSPINHOOK2
+	.word SCSPINHOOK4
+	.word SCSPINHOOK4
+	.word ani_nosleep
+	.word SCKNEECOMBO5
+	.word 0
+	.word SCSPINHOOK7
+	.word SCSPINHOOK7
+	.word SCSPINHOOK8
+	.word 0
+	.word SCSPINHOOK7
+	.word SCSPINHOOK7
+	.word SCSPINHOOK8
+	.word SCSPINHOOK2
+	.word SCSPINHOOK2
+	.word SCSPINHOOK4
+	.word SCSPINHOOK4
+	.word ani_nosleep
+	.word SCKNEECOMBO5
+	.word 0
+	.word SCSPINHOOK7
+	.word SCSPINHOOK7
+	.word SCSPINHOOK8
+	.word 0
+a_jump:
+	.word SCJUMP1
+	.word SCJUMP2
+	.word SCJUMP2
+	.word 0
+a_jump_kick:
+	.word SCJUMPKICK2
+	.word SCJUMPKICK2
+	.word SCJUMPKICK3
+	.word 0
+	.word SCJUMPKICK2
+	.word SCJUMPKICK2
+	.word 0
+a_fflip:
+	.word SCJUMPFLIP1
+	.word SCJUMPFLIP3
+	.word SCJUMPFLIP3
+	.word SCJUMPFLIP5
+	.word SCJUMPFLIP5
+	.word SCJUMPFLIP5
+	.word SCJUMPFLIP7
+	.word SCJUMPFLIP7
+	.word ani_jump
+	.word a_fflip+(32/8)
+a_bflip:
+	.word SCJUMPFLIP1
+	.word SCJUMPFLIP7
+	.word SCJUMPFLIP7
+	.word SCJUMPFLIP5
+	.word SCJUMPFLIP5
+	.word SCJUMPFLIP5
+	.word SCJUMPFLIP3
+	.word SCJUMPFLIP3
+	.word ani_jump
+	.word a_bflip+(32/8)
+a_flip_kick:
+	.word SCFLIPUNCH2
+	.word SCFLIPKICK2
+	.word SCFLIPKICK3
+	.word 0
+	.word SCFLIPKICK2
+	.word SCFLIPUNCH2
+	.word 0
+a_flip_punch:
+	.word SCFLIPUNCH2
+	.word SCFLIPUNCH2
+	.word SCFLIPUNCH3
+	.word 0
+	.word SCFLIPUNCH2
+	.word SCFLIPUNCH2
+	.word 0
+a_slide:
+	.word SCDUCK2
+	.word SZSLIDE3
+	.word SZSLIDE3
+	.word 0
+a_scorp_tele:
+	.word SCFLIPUNCH2
+	.word SCFLIPUNCH2
+	.word SCFLIPUNCH3
+	.word 0
+a_hit_hi:
+	.word SCHIHIT3
+	.word SCHIHIT3
+	.word SCLOHIT1
+	.word SCLOHIT1
+	.word 0
+a_hit_lo:
+	.word SCLOHIT3
+	.word SCLOHIT3
+	.word SCLOHIT1
+	.word SCLOHIT1
+	.word 0
+a_stumble:
+	.word SCSTUMBLE4
+	.word SCSTUMBLE5
+	.word SCSTUMBLE7
+	.word 0
+j_stumble:
+	.word SCSTUMBLE4
+	.word SCSTUMBLE5
+	.word SCSTUMBLE7
+	.word ani_jump
+	.word j_stumble
+a_knockdown:
+	.word SCKNOCKDOWN1
+	.word SCKNOCKDOWN1
+	.word SCKNOCKDOWN4
+	.word SCKNOCKDOWN4
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN7
+	.word 0
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN8
+	.word 0
+a_getup:
+	.word SCGETUP2
+	.word SCGETUP2
+	.word SCGETUP3
+	.word SCBACKBREAK1
+	.word SCGETUP6
+	.word SCGETUP6
+	.word 0
+a_sweep_fall:
+	.word SCSWEEPFALL3
+	.word SCSWEEPFALL3
+	.word 0
+	.word SCSWEEPUP1
+	.word SCSWEEPFALL6
+	.word 0
+a_sweepup:
+	.word SCSWEEPUP1
+	.word SCSWEEPUP1
+	.word SCSWEEPUP3
+	.word SCSWEEPUP3
+	.word SCSWEEPUP5
+	.word SCSWEEPUP5
+	.word 0
+a_orb_banged:
+	.word SCFLIPPED1
+	.word SCFLIPPED1
+	.word SCFLIPPED3
+	.word SCFLIPPED4
+	.word SCFLIPPED5
+	.word 0
+a_fb_sa:
+	.word ani_adjustxy
+	.half 0x10
+	.half -0x20
+	.word SCFLIPPED1
+	.word ani_adjustxy
+	.half 0x20
+	.half -0x10
+	.word SCFLIPPED1
+	.word ani_adjustxy
+	.half 0x40
+	.half -0x10
+	.word SCFLIPPED3
+	.word 0
+a_fb_rd:
+	.word ani_adjustxy
+	.half 0x0a
+	.half -0x25
+	.word SCFLIPPED1
+	.word ani_adjustxy
+	.half 0x34
+	.half -0x1b
+	.word SCFLIPPED1
+	.word SCFLIPPED1
+	.word ani_adjustxy
+	.half 0x0a
+	.half 0x90
+	.word ani_flip_v
+	.word SCFLIPPED1
+	.word ani_adjustxy
+	.half 0x38
+	.half 0x40
+	.word SCFLIPPED1
+	.word 0
+	.word ani_adjustxy
+	.half 0x18
+	.half 0x10
+	.word ani_flip
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_kano:
+	.word ani_offset_xy
+	.half -0x3c
+	.half -0x10
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x1e
+	.half -0x23
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x20
+	.half -0x2d
+	.word SCFLIPPED3
+	.word 0
+	.word SCFLIPPED4
+	.word SCFLIPPED5
+	.word SCKNOCKDOWN4
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_sonya:
+	.word ani_offset_xy
+	.half -0x31
+	.half 0x0d
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x16
+	.half 0x14
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x0b
+	.half -0x03
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x50
+	.half -0x17
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x81
+	.half -0x23
+	.word SCFLIPPED4
+	.word 0
+	.word SCFLIPPED5
+	.word SCKNOCKDOWN4
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_jax:
+	.word ani_offset_xy
+	.half -0x4b
+	.half -0x12
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x30
+	.half -0x2a
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x08
+	.half -0x45
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x35
+	.half -0x1f
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x45
+	.half 0x1d
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x40
+	.half 0x2d
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_ind:
+	.word ani_offset_xy
+	.half -0x64
+	.half -0x0c
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x4f
+	.half -0x30
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x1f
+	.half -0x56
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x2e
+	.half -0x31
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x50
+	.half -0x0f
+	.word SCKNOCKDOWN7
+	.word ani_offset_xy
+	.half 0x44
+	.half -0x1b
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_sz:
+	.word ani_offset_xy
+	.half -0x49
+	.half -0x32
+	.word SCFLIPPED1
+	.word ani_flip
+	.word ani_offset_xy
+	.half 0x53
+	.half -0x1b
+	.word SCFLIPPED5
+	.word ani_offset_xy
+	.half 0x35
+	.half 0x0b
+	.word SCFLIPPED5
+	.word ani_offset_xy
+	.half -0x09
+	.half 0x26
+	.word SCKNOCKDOWN7
+	.word ani_offset_xy
+	.half -0x47
+	.half 0x04
+	.word SCKNOCKDOWN7
+	.word ani_offset_xy
+	.half -0x75
+	.half -0x26
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_swat:
+	.word ani_offset_xy
+	.half -0x57
+	.half -0x08
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x3e
+	.half -0x31
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x1d
+	.half -0x47
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x58
+	.half 0x01
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x43
+	.half 0x24
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_lia:
+	.word ani_offset_xy
+	.half -0x64
+	.half 0x00
+	.word SCSTUMBLE4
+	.word ani_offset_xy
+	.half -0x73
+	.half 0x03
+	.word SCSTUMBLE4
+	.word ani_offset_xy
+	.half -0x75
+	.half -0x1e
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x57
+	.half -0x3d
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x23
+	.half -0x46
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x1e
+	.half -0x4e
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0xa8
+	.half 0x12
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x8d
+	.half 0x00
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_robo:
+	.word ani_offset_xy
+	.half -0x47
+	.half -0x0b
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x43
+	.half -0x2f
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x31
+	.half -0x48
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x00
+	.half -0x74
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x3c
+	.half -0x72
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x60
+	.half -0x5b
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x7b
+	.half -0x17
+	.word SCFLIPPED5
+	.word ani_offset_xy
+	.half 0x57
+	.half -0x08
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_robo2:
+	.word ani_offset_xy
+	.half -0x26
+	.half -0x08
+	.word SCSTUMBLE4
+	.word ani_offset_xy
+	.half -0x32
+	.half -0x11
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x0e
+	.half -0x1b
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x14
+	.half -0x12
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x23
+	.half -0x0d
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x2
+	.half 0x0e
+	.word SCFLIPPED5
+	.word ani_offset_xy
+	.half -0x24
+	.half -0x11
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_lao:
+	.word ani_offset_xy
+	.half -0x1d
+	.half 0x1a
+	.word SCSTUMBLE4
+	.word ani_offset_xy
+	.half 0x00
+	.half 0x33
+	.word SCSTUMBLE4
+	.word ani_flip
+	.word ani_offset_xy
+	.half -0x22
+	.half 0x1d
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x46
+	.half -0x0f
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x2c
+	.half -0x3f
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x08
+	.half -0x57
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x4f
+	.half -0x59
+	.word SCFLIPPED5
+	.word ani_offset_xy
+	.half 0x5a
+	.half -0x35
+	.word SCFLIPPED5
+	.word ani_offset_xy
+	.half 0x65
+	.half 0x0d
+	.word SCFLIPPED5
+	.word ani_offset_xy
+	.half 0x49
+	.half 0x45
+	.word SCFLIPPED5
+	.word 0
+a_fb_tusk:
+	.word ani_offset_xy
+	.half -0x6e
+	.half 0x00
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x62
+	.half -0x3f
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x13
+	.half -0x73
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x40
+	.half -0x38
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x44
+	.half 0x09
+	.word SCFLIPPED5
+	.word ani_offset_xy
+	.half 0x0f
+	.half 0x33
+	.word SCFLIPPED5
+	.word ani_offset_xy
+	.half -0x2c
+	.half 0x1a
+	.word SCKNOCKDOWN7
+	.word ani_offset_xy
+	.half -0x72
+	.half 0x0c
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x5d
+	.half -0x4b
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x1c
+	.half -0x61
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x65
+	.half 0x0f
+	.word SCFLIPPED5
+	.word ani_offset_xy
+	.half 0x64
+	.half 0x1f
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_sg:
+	.word ani_offset_xy
+	.half -0x3d
+	.half -0x30
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x10
+	.half -0x41
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x0e
+	.half -0x4b
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x0b
+	.half -0x3d
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x10
+	.half -0x23
+	.word SCFLIPPED3
+	.word ani_flip
+	.word ani_offset_xy
+	.half -0x12
+	.half -0x14
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_st:
+	.word ani_offset_xy
+	.half -0x4c
+	.half 0x00
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x41
+	.half 0x07
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x2a
+	.half 0x12
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x07
+	.half 0x0d
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x0e
+	.half 0x2e
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half -0x0f
+	.half 0x14
+	.word SCKNOCKDOWN7
+	.word ani_offset_xy
+	.half -0x2c
+	.half 0x13
+	.word SCKNOCKDOWN7
+	.word ani_offset_xy
+	.half -0x3e
+	.half -0x13
+	.word SCKNOCKDOWN7
+	.word ani_offset_xy
+	.half -0x54
+	.half 0x18
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x61
+	.half -0x0b
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x3c
+	.half -0x3e
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x2b
+	.half -0x33
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x4c
+	.half 0x03
+	.word SCFLIPPED5
+	.word ani_offset_xy
+	.half 0x42
+	.half 0x0e
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_lk:
+	.word ani_offset_xy
+	.half -0x42
+	.half 0x0c
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x3d
+	.half 0x0f
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x13
+	.half 0x13
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x0a
+	.half 0x0f
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x33
+	.half 0x03
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x78
+	.half -0x16
+	.word SCFLIPPED4
+	.word 0
+	.word SCFLIPPED5
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_nj:
+	.word ani_offset_xy
+	.half -0x49
+	.half 0x06
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x3c
+	.half 0x0e
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x28
+	.half 0x17
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x00
+	.half 0x16
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x0e
+	.half 0x0e
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x5d
+	.half -0x17
+	.word SCFLIPPED4
+	.word 0
+	.word SCFLIPPED5
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN8
+	.word 0
+a_fb_smoke:
+a_afb_robo2:
+	.word ani_offset_xy
+	.half -0x19
+	.half -0x3b
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x16
+	.half -0x52
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x37
+	.half -0x40
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x4f
+	.half -0x26
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x66
+	.half -0x17
+	.word SCKNOCKDOWN7
+	.word ani_offset_xy
+	.half 0x78
+	.half 0x0f
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_mileena:
+	.word ani_offset_xy
+	.half -0x3a
+	.half -0x01
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x29
+	.half 0x07
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x1e
+	.half 0x01
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x0e
+	.half -0x1a
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x63
+	.half -0x34
+	.word SCFLIPPED4
+	.word 0
+	.word SCFLIPPED5
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_kitana:
+	.word ani_offset_xy
+	.half -0x20
+	.half -0x23
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x08
+	.half -0x2e
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x23
+	.half -0x1d
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x32
+	.half 0x2c
+	.word SCFLIPPED4
+	.word 0
+	.word SCFLIPPED4
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN7
+	.word 0
+a_fb_jade:
+	.word ani_offset_xy
+	.half -0x65
+	.half -0x01
+	.word SCKNOCKDOWN1
+	.word ani_offset_xy
+	.half -0x67
+	.half -0x21
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x43
+	.half -0x52
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x11
+	.half -0x4e
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half 0x4a
+	.half -0x55
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x74
+	.half -0x1c
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x7b
+	.half 0x11
+	.word SCFLIPPED5
+	.word 0
+	.word SCFLIPPED4
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN7
+	.word 0
+a_afb_kano:
+	.word ani_offset_xy
+	.half -0x29
+	.half -0x03
+	.word SCKNOCKDOWN1
+	.word ani_offset_xy
+	.half -0x44
+	.half 0x1c
+	.word SCKNOCKDOWN4
+	.word ani_offset_xy
+	.half -0x5c
+	.half 0x3f
+	.word SCKNOCKDOWN4
+	.word 0
+	.word SCKNOCKDOWN4
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN7
+	.word 0
+a_legged:
+	.word ani_offset_xy
+	.half -0x55
+	.half 0x00
+	.word SCKNOCKDOWN1
+	.word ani_offset_xy
+	.half -0x44
+	.half -0x29
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x1f
+	.half -0x3c
+	.word SCFLIPPED3
+	.word ani_offset_xy
+	.half 0x2b
+	.half -0x29
+	.word SCFLIPPED4
+	.word ani_offset_xy
+	.half 0x56
+	.half 0x12
+	.word SCFLIPPED5
+	.word 0
+a_zoomed:
+	.word ani_offset_xy
+	.half 0x48
+	.half 0x01
+	.word SCKNOCKDOWN4
+	.word ani_offset_xy
+	.half 0x4e
+	.half 0x2b
+	.word SCKNOCKDOWN4
+	.word ani_offset_xy
+	.half 0x24
+	.half 0x42
+	.word SCKNOCKDOWN7
+	.word ani_offset_xy
+	.half -0x33
+	.half 0x40
+	.word SCKNOCKDOWN7
+	.word ani_offset_xy
+	.half -0x84
+	.half -0x04
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x2c
+	.half -0x52
+	.word SCFLIPPED3
+	.word 0
+	.word SCFLIPPED3
+	.word SCFLIPPED4
+	.word SCFLIPPED5
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN7
+	.word SCKNOCKDOWN7
+	.word 0
+a_shook:
+	.word ani_offset_xy
+	.half -0x4f
+	.half -0x08
+	.word SCSTUMBLE4
+	.word ani_offset_xy
+	.half -0x38
+	.half -0x1f
+	.word SCSTUMBLE4
+	.word ani_offset_xy
+	.half -0x1b
+	.half -0x1c
+	.word SCSTUMBLE4
+	.word 0
+	.word ani_offset_xy
+	.half -0x1d
+	.half -0x1a
+	.word SCSTUMBLE4
+	.word ani_offset_xy
+	.half -0x33
+	.half -0x2b
+	.word SCSTUMBLE4
+	.word ani_offset_xy
+	.half -0x44
+	.half -0x2d
+	.word SCSTUMBLE4
+	.word ani_offset_xy
+	.half -0x33
+	.half -0x2b
+	.word SCSTUMBLE4
+	.word 0
+a_air_throw:
+a_throw:
+	.word SCFLIP2
+	.word SCFLIP2
+	.word 0
+	.word ani_adjustx
+	.word -9
+	.word SCFLIP4
+	.word ani_adjustx
+	.word -9
+	.word SCFLIP4
+	.word ani_adjustx
+	.word -9
+	.word SCFLIP6
+	.word ani_adjustx
+	.word -9
+	.word SCFLIP6
+	.word ani_adjustx
+	.word -9
+	.word SCFLIP7
+	.word SCFLIP9
+	.word 0
+	.word SCFLIP9
+	.word SCFLIP7
+	.word SCFLIP6
+	.word SCFLIP6
+	.word SCFLIP4
+	.word SCFLIP4
+	.word SCFLIP2
+	.word 0
+a_dizzy:
+	.word SCSTUNNED2
+	.word SCSTUNNED2
+	.word SCSTUNNED5
+	.word SCSTUNNED5
+	.word SCSTUNNED7
+	.word SCSTUNNED7
+	.word ani_jump
+	.word a_dizzy
+a_thudd:
+	.word SCFALLTHUD1
+	.word SCFALLTHUD1
+	.word SCFALLTHUD6
+	.word SCFALLTHUD6
+	.word SCFALLTHUD7
+	.word 0
+a_throw_spear:
+	.word SCSPEAR1
+	.word SCSPEAR1
+	.word SCUPPERCUT4
+	.word SCSPEAR4
+	.word 0
+	.word SCSPEAR4
+	.word SCSPEAR4
+	.word SCSPEAR8
+	.word SCSPEAR9
+	.word 0
+	.word SPEAR1
+	.word SPEAR2
+	.word SPEAR3
+	.word 0
+	.word MSPEAR1
+a_release_orb:
+	.word RPFORCEBALL1
+	.word ani_sladd
+	.word ORB1
+	.word RPFORCEBALL2
+	.word ani_slani
+	.word ORB2
+	.word RPFORCEBALL2
+	.word ani_slani
+	.word ORB3
+	.word RPFORCEBALL4
+	.word ani_slani
+	.word ORB4
+	.word RPFORCEBALL5
+	.word 0
+	.word RPFORCEBALL4
+	.word RPFORCEBALL2
+	.word RPFORCEBALL2
+	.word RPFORCEBALL1
+	.word 0
+j_orb:
+	.word ORB7
+	.word ORB8
+	.word ORB9
+	.word ORB8
+	.word ani_jump
+	.word j_orb
+	.word 0
+	.word ani_swpal
+	.word ORBBOOM1
+	.word ORBBOOM1
+	.word ORBBOOM3
+	.word ORBBOOM3
+	.word ORBBOOM5
+	.word ORBBOOM5
+	.word ORBBOOM5
+	.word 0
+a_ermac_zapper:
+	.word SZICEPRO2
+	.word SZICEPRO2
+	.word SZICEPRO3
+	.word 0
+	
+a_oldsz_zap:
+	.word SZICEPRO2
+	.word SZICEPRO2
+	.word SZICEPRO3
+	.word ani_sladd
+	.word ICENJBS1
+	.word 0
+	.word ani_jump
+	.word nj_sz_ice
+	.word 0
+	.word SZICEPRO2
+	.word SZICEPRO2
+	.word 0
+	
+nj_sz_ice:
+	.word ICENJBS1
+	.word ICENJBS2
+	.word ICENJBS3
+	.word ICENJBS3
+	.word ICENJBS5
+	.word ICENJBS5
+	.word ICENJBS7
+	.word 0
+	.word ICENJBS8
+	.word ICENJBS8
+	.word ICENJBS10
+	.word ICENJBS10
+	.word ICENJBS12
+	.word ICENJBS12
+	.word ICENJBS14
+	.word ICENJBS14
+	.word ICENJBS16
+	.word ICENJBS16
+	.word 0
+	
+ICENJBS2:
+	.word ICENJBS2_SUB, 0
+ICENJBS2_SUB:
+	.word ICENJBS2_IMG64
+	.half 50, 38, -5, 26
+ICENJBS3:
+	.word ICENJBS3_SUB, 0
+ICENJBS3_SUB:
+	.word ICENJBS3_IMG64
+	.half 62, 67, -5, 31
+ICENJBS5:
+	.word ICENJBS5_SUB, 0
+ICENJBS5_SUB:
+	.word ICENJBS5_IMG64
+	.half 30, 107, -7, 13
+ICENJBS7:
+	.word ICENJBS7_SUB, 0
+ICENJBS7_SUB:
+	.word ICENJBS7_IMG64
+	.half 24, 170, 54, 10
+ICENJBS8:
+	.word ICENJBS8_SUB, 0
+ICENJBS8_SUB:
+	.word ICENJBS8_IMG64
+	.half 23, 94, -21, 10
+ICENJBS10:
+	.word ICENJBS10_SUB, 0
+ICENJBS10_SUB:
+	.word ICENJBS10_IMG64
+	.half 51, 70, -52, 26
+ICENJBS12:
+	.word ICENJBS12_SUB, 0
+ICENJBS12_SUB:
+	.word ICENJBS12_IMG64
+	.half 74, 58, -77, 33
+ICENJBS14:
+	.word ICENJBS14_SUB, 0
+ICENJBS14_SUB:
+	.word ICENJBS14_IMG64
+	.half 96, 82, -65, 43
+ICENJBS16:
+	.word ICENJBS16_SUB, 0
+ICENJBS16_SUB:
+	.word ICENJBS16_IMG64
+	.half 112, 96, -58, 51
+	
+a_floor_ice:
+	.word SZFLOORICE1
+	.word SZFLOORICE2
+	.word SZFLOORICE2
+	.word ani_sladd
+	.word FLICE1
+	.word ani_slani_sleep
+	.word FLICE1
+	.word ani_slani_sleep
+	.word FLICE2
+	.word ani_slani_sleep
+	.word FLICE3
+	.word ani_slani_sleep
+	.word FLICE4
+	.word 0
+	.word SZFLOORICE2
+	.word SZFLOORICE1
+	.word 0
+	.word FLICE6
+	.word FLICE7
+	.word 0
+	.word FLICE9
+	.word FLICE11
+	.word FLICE13
+	.word 0
+a_spit:
+	.word RPSPIT1
+	.word RPSPIT2
+	.word RPSPIT2
+	.word ani_sladd
+	.word LOOGY2
+	.word RPSPIT4
+	.word 0
+	.word RPSPIT2
+	.word RPSPIT1
+	.word 0
+	.word LOOGY2
+	.word LOOGY4
+	.word LOOGY4
+j_loogy:
+	.word LOOGY6
+	.word LOOGY6
+	.word ani_jump
+	.word j_loogy
+	.word 0
+	.word LOOGY7
+	.word LOOGY7
+	.word LOOGY9
+	.word LOOGY9
+	.word LOOGY12
+	.word LOOGY12
+	.word LOOGY12
+	.word LOOGY12
+	.word 0
+a_breath_fire:
+	.word RPSPIT1
+	.word RPSPIT1
+	.word RPBREATH3
+	.word 0
+	.word SKULLSPTFIRE1
+	.word SKULLSPTFIRE2
+	.word SKULLSPTFIRE3
+	.word 0
+a_tony_flame:
+	.word SCORPFIRE3
+	.word SCORPFIRE3
+	.word 0
+	.word SCORPFIRE3
+	.word SCORPFIRE5
+	.word SCORPFIRE5
+	.word 0
+	.word SCORPFIRE7
+	.word SCORPFIRE7
+	.word SCORPFIRE9
+	.word SCORPFIRE9
+	.word SCORPFIRE11
+	.word SCORPFIRE11
+	.word SCORPFIRE11
+	.word 0
+a_reptile_inv:
+	.word RPPOOF1
+	.word RPPOOF1
+	.word RPPOOF3
+	.word 0
+a_spit_glob:
+	.word SPITROT1
+	.word SPITROT1
+	.word SPITROT3
+	.word SPITROT3
+	.word ani_jump
+	.word a_spit_glob
+	.word 0
+	.word SPITROT6
+	.word SPITROT6
+	.word SPITROT6
+	.word SPITROT9
+	.word SPITROT9
+	.word SPITROT11
+	.word SPITROT11
+	.word SPITROT13
+	.word SPITROT13
+	.word 0
+a_run:
+	.word SCRUN1
+	.word SCRUN3
+	.word ani_calla
+	.word rsnd_footstep
+	.word SCRUN5
+	.word SCRUN7
+	.word SCRUN9
+	.word ani_calla
+	.word rsnd_footstep
+	.word SCRUN11
+	.word ani_jump
+	.word a_run
+	.word 0
+a_victory:
+	.word ani_ochar_jump
+	.word ft_reptile
+	.word a_reptile_victory
+	.word ani_ochar_jump
+	.word 29
+	.word a_reptile_victory
+	.word ani_ochar_jump
+	.word ft_oldsz
+	.word a_oldsz_victory
+	.word ani_ochar_jump
+	.word ft_oldsmoke
+	.word a_oldsz_victory
+	.word ani_ochar_jump
+	.word ft_ermac
+	.word a_oldsz_victory
+	.word SCVICTORY5
+	.word SCVICTORY5
+	.word SCVICTORY7
+	.word SCVICTORY7
+	.word 0
+a_oldsz_victory:	
+	.word SCTURN1
+	.word SZVICTORY3
+	.word SZVICTORY3
+	.word 0
+a_reptile_victory:
+	.word RPVICTORY2
+	.word RPVICTORY2
+	.word RPVICTORY5
+	.word RPVICTORY5
+	.word 0
+a_scorpion_summon:
+	.word SCSUMMON5
+	.word SCSUMMON5
+	.word SCSUMMON8
+	.word SCSUMMON8
+	.word SCSUMMON9
+	.word 0
+a_scared:
+	.word SCSCARED2
+	.word 0
+a_jade_shook:
+	.word ani_offset_xy
+	.half -0x83
+	.half -0x18
+	.word SCFLIPPED1
+	.word ani_offset_xy
+	.half -0x80
+	.half 0x0a
+	.word SCSTUMBLE4
+	.word ani_offset_xy
+	.half -0x6d
+	.half 0x24
+	.word SCKNOCKDOWN1
+	.word ani_offset_xy
+	.half -0x80
+	.half 0x0a
+	.word SCSTUMBLE4
+	.word ani_jump
+	.word a_jade_shook
+a_mask_off:
+	.word SCMASKOFF2
+	.word SCMASKOFF2
+	.word SCMASKOFF4
+	.word SCMASKOFF4
+	.word SCMASKOFF7
+	.word SCMASKOFF7
+	.word 0
+a_back_break:
+	.word SCBACKBREAK1
+	.word 0
+a_baby:
+	.word BABYSCORP
+	.word 0
+a_big_head:
+	.word BHSCO1
+	.word BHSCO1
+	.word BHSCO3
+	.word BHSCO3
+	.word BHSCO5
+	.word 0
+a_half_cutup:
+	.word CUTSCL1
+	.word CUTSCL2
+	.word 0
+a_cutup:
+	.word CUTSCH
+	.word CUTSCM
+	.word CUTSCL1
+	.word CUTSCL2
+	.word 0
+a_float:
+	.word SCSTUNNED5
+	.word 0
+a_pounded:
+	.word SCFALLTHUD1
+	.word 0
+a_reach:
+	.word ani_adjustxy
+	.half 0
+	.half 0
+	.word NJMOUTH4
+	.word NJMOUTH5
+	.word NJMOUTH6
+	.word NJMOUTH8
+	.word 0
+a_skin_rip:
+	.word SCRIP1
+	.word 0
+a_stretch:
+	.word GROSCORP2
+	.word GROSCORP4
+	.word GROSCORP5
+	.word 0
+a_suk:
+	.word SUKSCO1
+	.word SUKSCO1
+	.word SUKSCO4
+	.word SUKSCO5
+	.word SUKSCO6
+	.word 0
+a_shocked:
+	.word SCSCARED2
+	.word SCSCARED2
+	.word SCSCARED2
+	.word SCSCARED2
+	.word 0
+a_shredded:
+	.word ani_adjustxy
+	.half 6
+	.half 6
+	.word SCSTUMBLE4
+	.word ani_adjustxy
+	.half -6
+	.half -6
+	.word SCSTUMBLE4
+	.word ani_adjustxy
+	.half 6
+	.half 6
+	.word SCSTUMBLE5
+	.word ani_adjustxy
+	.half -6
+	.half -6
+	.word SCSTUMBLE4
+	.word ani_jump
+	.word a_shredded
+a_icespike:
+	.word 0
+a_ermac_zap:
+	.word KAHNPRO1
+	.word KAHNPRO4
+	.word KAHNPRO7
+	.word KAHNPRO10
+	.word ani_jump
+	.word a_ermac_zap
+	
+/*
+Dave look here
+	.word RAPROFORM1
+	.word RAPROFORM3
+	.word RAPROFORM4
+	.word RAPROFORM6
+	.word RAPROFORM7
+	.word RAPROLOOP1
+	.word RAPROLOOP4
+	.word RAPROLOOP5
+	.word SBZAP11
+	.word SBZAP12
+	.word SBZAP13
+	.word SBZAP15
+	.word SBZAP16
+*/
+a_rain_cloud:
+	.word 0
+	
+a_noob_ego_exp:
+/* ;part 1 explode */
+	.word	KAHNPRO4
+	.word	KAHNPRO7
+	.word	0
+/* ;part 2 small flying balls */
+j_nee:
+	.word	KAHNPRO7_SUB
+	.word	KAHNPRO10_SUB
+	.word	ani_jump,j_nee
+	.word	0
+
+
+/*
+Dave look here
+	.word GHOSTFORM1
+	.word GHOSTFORM3
+	.word GHOSTFORM3
+	.word GHOSTFORM5
+	.word GHOSTLOOP1
+	.word GHOSTLOOP3
+	.word GHOSTLOOP5
+	.word GHOSTLOOP5
+	.word GHOSTCPLOOP1(use this instead of ghostcap1)
+	.word GHOSTCPLOOP2
+	.word GHOSTCPLOOP3
+	.word GHOSTCPLOOP3
+	.word GHOSTDISP1
+	.word GHOSTDISP2
+	.word GHOSTDISP2
+*/
+a_noob_zap:
+	
+a_noob_teleslam:
+	.word SCVICTORY7
+	.word	0
+	.word SCSPEAR8
+	.word	0
+
+SCSTANCE1:
+	.word SCSTANCE1_SUB, 0
+SCSTANCE1_SUB:
+	.word SCSTANCE1_IMG64
+	.half 110, 50, 21, -3
+	.word   SCORP1_P_64
+SCSTANCE2:
+	.word SCSTANCE2_SUB, 0
+SCSTANCE2_SUB:
+	.word SCSTANCE2_IMG64
+	.half 110, 50, 24, -3
+SCSTANCE3:
+	.word SCSTANCE3_SUB, 0
+SCSTANCE3_SUB:
+	.word SCSTANCE3_IMG64
+	.half 109, 50, 26, -4
+SCSTANCE4:
+	.word SCSTANCE4_SUB, 0
+SCSTANCE4_SUB:
+	.word SCSTANCE4_IMG64
+	.half 109, 51, 27, -4
+SCSTANCE5:
+	.word SCSTANCE5_SUB, 0
+SCSTANCE5_SUB:
+	.word SCSTANCE5_IMG64
+	.half 109, 52, 28, -4
+SCSTANCE6:
+	.word SCSTANCE6_SUB, 0
+SCSTANCE6_SUB:
+	.word SCSTANCE6_IMG64
+	.half 109, 52, 26, -4
+SCSTANCE7:
+	.word SCSTANCE7_SUB, 0
+SCSTANCE7_SUB:
+	.word SCSTANCE7_IMG64
+	.half 110, 51, 24, -3
+SCSTANCE8:
+	.word SCSTANCE8_SUB, 0
+SCSTANCE8_SUB:
+	.word SCSTANCE8_IMG64
+	.half 110, 51, 22, -3
+SCSTANCE9:
+	.word SCSTANCE9_SUB, 0
+SCSTANCE9_SUB:
+	.word SCSTANCE9_IMG64
+	.half 110, 50, 20, -3
+	
+SCWALK1:
+	.word SCWALK1_SUB, 0
+SCWALK1_SUB:
+	.word SCWALK1_IMG64
+	.half 109, 51, 19, -3
+SCWALK3:
+	.word SCWALK3_SUB, 0
+SCWALK3_SUB:
+	.word SCWALK3_IMG64
+	.half 111, 50, 18, -2
+SCWALK5:
+	.word SCWALK5_SUB, 0
+SCWALK5_SUB:
+	.word SCWALK5_IMG64
+	.half 109, 50, 19, -4
+SCWALK7:
+	.word SCWALK7_SUB, 0
+SCWALK7_SUB:
+	.word SCWALK7_IMG64
+	.half 110, 50, 19, -3
+SCWALK9:
+	.word SCWALK9_SUB, 0
+SCWALK9_SUB:
+	.word SCWALK9_IMG64
+	.half 110, 54, 19, -3
+SCTURN1:
+	.word SCTURN1_SUB, 0
+SCTURN1_SUB:
+	.word SCTURN1_IMG64
+	.half 110, 44, 19, -3
+SCTURN2:
+	.word SCTURN2_SUB, 0
+SCTURN2_SUB:
+	.word SCTURN2_IMG64
+	.half 110, 42, 18, -3
+SCDUCK2:
+	.word SCDUCK2_SUB, 0
+SCDUCK2_SUB:
+	.word SCDUCK2_IMG64
+	.half 76, 50, 17, -37
+SCDUCK3:
+	.word SCDUCK3_SUB, 0
+SCDUCK3_SUB:
+	.word SCDUCK3_IMG64
+	.half 60, 51, 18, -52
+SCDUCKTURN2:
+	.word SCDUCKTURN2_SUB, 0
+SCDUCKTURN2_SUB:
+	.word SCDUCKTURN2_IMG64
+	.half 63, 46, 18, -49
+SCDUCKBLOCK3:
+	.word SCDUCKBLOCK3_SUB, 0
+SCDUCKBLOCK3_SUB:
+	.word SCDUCKBLOCK3_IMG64
+	.half 75, 39, 18, -37
+SCDUCKHIT3:
+	.word SCDUCKHIT3_SUB, 0
+SCDUCKHIT3_SUB:
+	.word SCDUCKHIT3_IMG64
+	.half 65, 51, 25, -47
+SCDUCKHIT1:
+	.word SCDUCKHIT1_SUB, 0
+SCDUCKHIT1_SUB:
+	.word SCDUCKHIT1_IMG64
+	.half 65, 44, 18, -47
+SCDUCKPUNCH2:
+	.word SCDUCKPUNCH2_SUB, 0
+SCDUCKPUNCH2_SUB:
+	.word SCDUCKPUNCH2_IMG64
+	.half 70, 57, 18, -42
+SCDUCKPUNCH3:
+	.word SCDUCKPUNCH3_SUB, 0
+SCDUCKPUNCH3_SUB:
+	.word SCDUCKPUNCH3_IMG64
+	.half 76, 79, 19, -40
+SCDUCKHIKICK3:
+	.word SCDUCKHIKICK3_SUB, 0
+SCDUCKHIKICK3_SUB:
+	.word SCDUCKHIKICK3_IMG64
+	.half 66, 70, 23, -52
+SCDUCKHIKICK4:
+	.word SCDUCKHIKICK4_SUB, 0
+SCDUCKHIKICK4_SUB:
+	.word SCDUCKHIKICK4_IMG64
+	.half 68, 81, 23, -49
+SCDUCKLOKICK2:
+	.word SCDUCKLOKICK2_SUB, 0
+SCDUCKLOKICK2_SUB:
+	.word SCDUCKLOKICK2_IMG64
+	.half 65, 50, 14, -49
+SCDUCKLOKICK3:
+	.word SCDUCKLOKICK3_SUB, 0
+SCDUCKLOKICK3_SUB:
+	.word SCDUCKLOKICK3_IMG64
+	.half 63, 82, 14, -53
+SCUPPERCUT2:
+	.word SCUPPERCUT2_SUB, 0
+SCUPPERCUT2_SUB:
+	.word SCUPPERCUT2_IMG64
+	.half 76, 60, 22, -36
+SCUPPERCUT4:
+	.word SCUPPERCUT4_SUB, 0
+SCUPPERCUT4_SUB:
+	.word SCUPPERCUT4_IMG64
+	.half 98, 62, 18, -14
+SCUPPERCUT5:
+	.word SCUPPERCUT5_SUB, 0
+SCUPPERCUT5_SUB:
+	.word SCUPPERCUT5_IMG64
+	.half 106, 70, 18, -6
+SCUPPERCUT7:
+	.word SCUPPERCUT7_SUB, 0
+SCUPPERCUT7_SUB:
+	.word SCUPPERCUT7_IMG64
+	.half 136, 40, 13, 21
+SCBLOCK1:
+	.word SCBLOCK1_SUB, 0
+SCBLOCK1_SUB:
+	.word SCBLOCK1_IMG64
+	.half 110, 46, 16, -2
+SCBLOCK3:
+	.word SCBLOCK3_SUB, 0
+SCBLOCK3_SUB:
+	.word SCBLOCK3_IMG64
+	.half 108, 42, 17, -4
+SCVICTORY5:
+	.word SCVICTORY5_SUB, 0
+SCVICTORY5_SUB:
+	.word SCVICTORY5_IMG64
+	.half 114, 33, 15, 1
+SCVICTORY7:
+	.word SCVICTORY7_SUB, 0
+SCVICTORY7_SUB:
+	.word SCVICTORY7_IMG64
+	.half 146, 29, 14, 33
+SZVICTORY3:
+	.word SZVICTORY3_SUB, 0
+SZVICTORY3_SUB:
+	.word SZVICTORY3_IMG64
+	.half 144, 32, 10, 31
+RPVICTORY2:
+	.word RPVICTORY2_SUB, 0
+RPVICTORY2_SUB:
+	.word RPVICTORY2_IMG64
+	.half 109, 60, 24, -3
+RPVICTORY5:
+	.word RPVICTORY5_SUB, 0
+RPVICTORY5_SUB:
+	.word RPVICTORY5_IMG64
+	.half 128, 70, 31, 15
+SCHIPUNCH1:
+	.word SCHIPUNCH1_SUB, 0
+SCHIPUNCH1_SUB:
+	.word SCHIPUNCH1_IMG64
+	.half 109, 42, 13, -4
+SCHIPUNCH3:
+	.word SCHIPUNCH3_SUB, 0
+SCHIPUNCH3_SUB:
+	.word SCHIPUNCH3_IMG64
+	.half 113, 76, 15, -1
+SCHIPUNCH4:
+	.word SCHIPUNCH4_SUB, 0
+SCHIPUNCH4_SUB:
+	.word SCHIPUNCH4_IMG64
+	.half 114, 67, 15, 0
+SCHIPUNCH5:
+	.word SCHIPUNCH5_SUB, 0
+SCHIPUNCH5_SUB:
+	.word SCHIPUNCH5_IMG64
+	.half 116, 63, 14, 2
+SCHIPUNCH6:
+	.word SCHIPUNCH6_SUB, 0
+SCHIPUNCH6_SUB:
+	.word SCHIPUNCH6_IMG64
+	.half 116, 77, 14, 2
+SCHIPUNCH7:
+	.word SCHIPUNCH7_SUB, 0
+SCHIPUNCH7_SUB:
+	.word SCHIPUNCH7_IMG64
+	.half 114, 53, 14, 0
+SCLOPUNCH5:
+	.word SCLOPUNCH5_SUB, 0
+SCLOPUNCH5_SUB:
+	.word SCLOPUNCH5_IMG64
+	.half 111, 65, 20, -3
+SCLOPUNCH3:
+	.word SCLOPUNCH3_SUB, 0
+SCLOPUNCH3_SUB:
+	.word SCLOPUNCH3_IMG64
+	.half 106, 86, 22, -8
+SCLOPUNCH6:
+	.word SCLOPUNCH6_SUB, 0
+SCLOPUNCH6_SUB:
+	.word SCLOPUNCH6_IMG64
+	.half 108, 85, 19, -5
+SCCOMBO1:
+	.word SCCOMBO1_SUB, 0
+SCCOMBO1_SUB:
+	.word SCCOMBO1_IMG64
+	.half 103, 53, 25, -10
+SCCOMBO3:
+	.word SCCOMBO3_SUB, 0
+SCCOMBO3_SUB:
+	.word SCCOMBO3_IMG64
+	.half 109, 103, 16, -5
+SCCOMBO4:
+	.word SCCOMBO4_SUB, 0
+SCCOMBO4_SUB:
+	.word SCCOMBO4_IMG64
+	.half 149, 64, 15, 33
+SCCOMBO6:
+	.word SCCOMBO6_SUB, 0
+SCCOMBO6_SUB:
+	.word SCCOMBO6_IMG64
+	.half 111, 52, 18, -4
+SCCOMBO7:
+	.word SCCOMBO7_SUB, 0
+SCCOMBO7_SUB:
+	.word SCCOMBO7_IMG64
+	.half 121, 68, 22, 5
+SCCOMBO8:
+	.word SCCOMBO8_SUB, 0
+SCCOMBO8_SUB:
+	.word SCCOMBO8_IMG64
+	.half 111, 84, 32, -5
+SCCOMBO10:
+	.word SCCOMBO10_SUB, 0
+SCCOMBO10_SUB:
+	.word SCCOMBO10_IMG64
+	.half 95, 42, 15, -19
+SCCOMBO12:
+	.word SCCOMBO12_SUB, 0
+SCCOMBO12_SUB:
+	.word SCCOMBO12_IMG64
+	.half 106, 82, 25, -8
+SCHIKICK4:
+	.word SCHIKICK4_SUB, 0
+SCHIKICK4_SUB:
+	.word SCHIKICK4_IMG64
+	.half 109, 54, 9, -5
+SCHIKICK6:
+	.word SCHIKICK6_SUB, 0
+SCHIKICK6_SUB:
+	.word SCHIKICK6_IMG64
+	.half 112, 82, 6, -2
+SCLOKICK2:
+	.word SCLOKICK2_SUB, 0
+SCLOKICK2_SUB:
+	.word SCLOKICK2_IMG64
+	.half 112, 46, 18, -2
+SCLOKICK4:
+	.word SCLOKICK4_SUB, 0
+SCLOKICK4_SUB:
+	.word SCLOKICK4_IMG64
+	.half 107, 48, 4, -8
+SCLOKICK6:
+	.word SCLOKICK6_SUB, 0
+SCLOKICK6_SUB:
+	.word SCLOKICK6_IMG64
+	.half 103, 93, 6, -12
+SCKNEECOMBO2:
+	.word SCKNEECOMBO2_SUB, 0
+SCKNEECOMBO2_SUB:
+	.word SCKNEECOMBO2_IMG64
+	.half 113, 51, 6, 0
+SCKNEECOMBO4:
+	.word SCKNEECOMBO4_SUB, 0
+SCKNEECOMBO4_SUB:
+	.word SCKNEECOMBO4_IMG64
+	.half 103, 96, 32, -9
+SCKNEECOMBO5:
+	.word SCKNEECOMBO5_SUB, 0
+SCKNEECOMBO5_SUB:
+	.word SCKNEECOMBO5_IMG64
+	.half 111, 93, 21, -2
+SCKNEECOMBO6:
+	.word SCKNEECOMBO6_SUB, 0
+SCKNEECOMBO6_SUB:
+	.word SCKNEECOMBO6_IMG64
+	.half 112, 84, 22, 0
+SCKNEECOMBO8:
+	.word SCKNEECOMBO8_SUB, 0
+SCKNEECOMBO8_SUB:
+	.word SCKNEECOMBO8_IMG64
+	.half 102, 85, 25, -10
+SCKNEECOMBO9:
+	.word SCKNEECOMBO9_SUB, 0
+SCKNEECOMBO9_SUB:
+	.word SCKNEECOMBO9_IMG64
+	.half 112, 85, 22, 0
+SCKNEECOMBO11:
+	.word SCKNEECOMBO11_SUB, 0
+SCKNEECOMBO11_SUB:
+	.word SCKNEECOMBO11_IMG64
+	.half 97, 66, 22, -15
+SCSWEEPKICK2:
+	.word SCSWEEPKICK2_SUB, 0
+SCSWEEPKICK2_SUB:
+	.word SCSWEEPKICK2_IMG64
+	.half 82, 58, 26, -31
+SCSWEEPKICK4:
+	.word SCSWEEPKICK4_SUB, 0
+SCSWEEPKICK4_SUB:
+	.word SCSWEEPKICK4_IMG64
+	.half 59, 61, 15, -57
+SCSWEEPKICK5:
+	.word SCSWEEPKICK5_SUB, 0
+SCSWEEPKICK5_SUB:
+	.word SCSWEEPKICK5_IMG64
+	.half 54, 95, 14, -65
+SCSWEEPKICK8:
+	.word SCSWEEPKICK8_SUB, 0
+SCSWEEPKICK8_SUB:
+	.word SCSWEEPKICK8_IMG64
+	.half 86, 67, 25, -32
+SCSPINHOOK2:
+	.word SCSPINHOOK2_SUB, 0
+SCSPINHOOK2_SUB:
+	.word SCSPINHOOK2_IMG64
+	.half 103, 55, 26, -10
+SCSPINHOOK4:
+	.word SCSPINHOOK4_SUB, 0
+SCSPINHOOK4_SUB:
+	.word SCSPINHOOK4_IMG64
+	.half 99, 58, 8, -13
+SCSPINHOOK7:
+	.word SCSPINHOOK7_SUB, 0
+SCSPINHOOK7_SUB:
+	.word SCSPINHOOK7_IMG64
+	.half 102, 38, 2, -10
+SCSPINHOOK8:
+	.word SCSPINHOOK8_SUB, 0
+SCSPINHOOK8_SUB:
+	.word SCSPINHOOK8_IMG64
+	.half 108, 46, 10, -4
+SCJUMP1:
+	.word SCJUMP1_SUB, 0
+SCJUMP1_SUB:
+	.word SCJUMP1_IMG64
+	.half 91, 48, 15, -22
+SCJUMP2:
+	.word SCJUMP2_SUB, 0
+SCJUMP2_SUB:
+	.word SCJUMP2_IMG64
+	.half 118, 54, 19, 5
+SCJUMPKICK2:
+	.word SCJUMPKICK2_SUB, 0
+SCJUMPKICK2_SUB:
+	.word SCJUMPKICK2_IMG64
+	.half 106, 55, 14, 14
+SCJUMPKICK3:
+	.word SCJUMPKICK3_SUB, 0
+SCJUMPKICK3_SUB:
+	.word SCJUMPKICK3_IMG64
+	.half 113, 82, 19, 16
+SCFLIPUNCH2:
+	.word SCFLIPUNCH2_SUB, 0
+SCFLIPUNCH2_SUB:
+	.word SCFLIPUNCH2_IMG64
+	.half 85, 62, 13, 6
+SCFLIPUNCH3:
+	.word SCFLIPUNCH3_SUB, 0
+SCFLIPUNCH3_SUB:
+	.word SCFLIPUNCH3_IMG64
+	.half 81, 100, 38, 2
+SCFLIPKICK2:
+	.word SCFLIPKICK2_SUB, 0
+SCFLIPKICK2_SUB:
+	.word SCFLIPKICK2_IMG64
+	.half 68, 63, 14, 6
+SCFLIPKICK3:
+	.word SCFLIPKICK3_SUB, 0
+SCFLIPKICK3_SUB:
+	.word SCFLIPKICK3_IMG64
+	.half 81, 88, 27, 10
+SCJUMPFLIP1:
+	.word SCJUMPFLIP1_SUB, 0
+SCJUMPFLIP1_SUB:
+	.word SCJUMPFLIP1_IMG64
+	.half 116, 57, 8, 3
+SCJUMPFLIP3:
+	.word SCJUMPFLIP3_SUB, 0
+SCJUMPFLIP3_SUB:
+	.word SCJUMPFLIP3_IMG64
+	.half 44, 59, 24, -13
+SCJUMPFLIP5:
+	.word SCJUMPFLIP5_SUB, 0
+SCJUMPFLIP5_SUB:
+	.word SCJUMPFLIP5_IMG64
+	.half 63, 42, 24, 7
+SCJUMPFLIP7:
+	.word SCJUMPFLIP7_SUB, 0
+SCJUMPFLIP7_SUB:
+	.word SCJUMPFLIP7_IMG64
+	.half 44, 59, 34, 2
+SCHIHIT3:
+	.word SCHIHIT3_SUB, 0
+SCHIHIT3_SUB:
+	.word SCHIHIT3_IMG64
+	.half 103, 50, 22, -10
+SCLOHIT3:
+	.word SCLOHIT3_SUB, 0
+SCLOHIT3_SUB:
+	.word SCLOHIT3_IMG64
+	.half 105, 45, 21, -7
+SCLOHIT1:
+	.word SCLOHIT1_SUB, 0
+SCLOHIT1_SUB:
+	.word SCLOHIT1_IMG64
+	.half 107, 46, 19, -5
+SCKNOCKDOWN1:
+	.word SCKNOCKDOWN1_SUB, 0
+SCKNOCKDOWN1_SUB:
+	.word SCKNOCKDOWN1_IMG64
+	.half 111, 47, 18, -3
+SCKNOCKDOWN4:
+	.word SCKNOCKDOWN4_SUB, 0
+SCKNOCKDOWN4_SUB:
+	.word SCKNOCKDOWN4_IMG64
+	.half 82, 68, 24, -13
+SCKNOCKDOWN7:
+	.word SCKNOCKDOWN7_SUB, 0
+SCKNOCKDOWN7_SUB:
+	.word SCKNOCKDOWN7_IMG64
+	.half 47, 90, 28, -64
+SCKNOCKDOWN8:
+	.word SCKNOCKDOWN8_SUB, 0
+SCKNOCKDOWN8_SUB:
+	.word SCKNOCKDOWN8_IMG64
+	.half 25, 103, 29, -91
+SCSWEEPFALL3:
+	.word SCSWEEPFALL3_SUB, 0
+SCSWEEPFALL3_SUB:
+	.word SCSWEEPFALL3_IMG64
+	.half 57, 51, 21, -30
+SCSWEEPFALL6:
+	.word SCSWEEPFALL6_SUB, 0
+SCSWEEPFALL6_SUB:
+	.word SCSWEEPFALL6_IMG64
+	.half 30, 52, 18, -78
+SCSTUMBLE4:
+	.word SCSTUMBLE4_SUB, 0
+SCSTUMBLE4_SUB:
+	.word SCSTUMBLE4_IMG64
+	.half 108, 63, 38, -5
+SCSTUMBLE5:
+	.word SCSTUMBLE5_SUB, 0
+SCSTUMBLE5_SUB:
+	.word SCSTUMBLE5_IMG64
+	.half 130, 47, 21, 15
+SCSTUMBLE7:
+	.word SCSTUMBLE7_SUB, 0
+SCSTUMBLE7_SUB:
+	.word SCSTUMBLE7_IMG64
+	.half 120, 53, 27, 9
+SCGETUP2:
+	.word SCGETUP2_SUB, 0
+SCGETUP2_SUB:
+	.word SCGETUP2_IMG64
+	.half 55, 49, 31, -60
+SCGETUP3:
+	.word SCGETUP3_SUB, 0
+SCGETUP3_SUB:
+	.word SCGETUP3_IMG64
+	.half 94, 43, 27, -21
+SCGETUP6:
+	.word SCGETUP6_SUB, 0
+SCGETUP6_SUB:
+	.word SCGETUP6_IMG64
+	.half 99, 40, 16, -15
+SCSWEEPUP1:
+	.word SCSWEEPUP1_SUB, 0
+SCSWEEPUP1_SUB:
+	.word SCSWEEPUP1_IMG64
+	.half 34, 43, 15, -79
+SCSWEEPUP3:
+	.word SCSWEEPUP3_SUB, 0
+SCSWEEPUP3_SUB:
+	.word SCSWEEPUP3_IMG64
+	.half 73, 37, 13, -39
+SCSWEEPUP5:
+	.word SCSWEEPUP5_SUB, 0
+SCSWEEPUP5_SUB:
+	.word SCSWEEPUP5_IMG64
+	.half 71, 71, 34, -44
+SCFLIP2:
+	.word SCFLIP2_SUB, 0
+SCFLIP2_SUB:
+	.word SCFLIP2_IMG64
+	.half 105, 64, 12, -8
+SCFLIP4:
+	.word SCFLIP4_SUB, 0
+SCFLIP4_SUB:
+	.word SCFLIP4_IMG64
+	.half 71, 58, 16, -42
+SCFLIP6:
+	.word SCFLIP6_SUB, 0
+SCFLIP6_SUB:
+	.word SCFLIP6_IMG64
+	.half 48, 66, 26, -59
+SCFLIP7:
+	.word SCFLIP7_SUB, 0
+SCFLIP7_SUB:
+	.word SCFLIP7_IMG64
+	.half 57, 60, 25, -51
+SCFLIP9:
+	.word SCFLIP9_SUB, 0
+SCFLIP9_SUB:
+	.word SCFLIP9_IMG64
+	.half 71, 62, 44, -36
+KAHNPRO1:
+	.word	KAHNPRO1_SUB,0
+KAHNPRO1_SUB:
+	.word KAHNPRO1_IMG64
+	.half 49, 53, -46, -32
+	.word	KANPRO_P
+KAHNPRO4:
+	.word	KAHNPRO4_SUB,0
+KAHNPRO4_SUB:
+	.word KAHNPRO4_IMG64
+	.half 50, 55, -45, -31
+	.word	noob_p
+KAHNPRO7:
+	.word	KAHNPRO7_SUB,0
+KAHNPRO7_SUB:
+	.word KAHNPRO7_IMG64
+	.half 48, 50, -48, -34
+KAHNPRO10:
+	.word	KAHNPRO10_SUB,0
+KAHNPRO10_SUB:
+	.word KAHNPRO10_IMG64
+	.half 50, 51, -45, -33
+SCSTUNNED2:
+	.word SCSTUNNED2_SUB, 0
+SCSTUNNED2_SUB:
+	.word SCSTUNNED2_IMG64
+	.half 106, 40, 15, -7
+SCSTUNNED5:
+	.word SCSTUNNED5_SUB, 0
+SCSTUNNED5_SUB:
+	.word SCSTUNNED5_IMG64
+	.half 106, 39, 14, -7
+SCSTUNNED7:
+	.word SCSTUNNED7_SUB, 0
+SCSTUNNED7_SUB:
+	.word SCSTUNNED7_IMG64
+	.half 109, 45, 21, -4
+SCFLIPPED1:
+	.word SCFLIPPED1_SUB, 0
+SCFLIPPED1_SUB:
+	.word SCFLIPPED1_IMG64
+	.half 107, 61, 16, -8
+SCFLIPPED3:
+	.word SCFLIPPED3_SUB, 0
+SCFLIPPED3_SUB:
+	.word SCFLIPPED3_IMG64
+	.half 55, 60, 26, -12
+SCFLIPPED4:
+	.word SCFLIPPED4_SUB, 0
+SCFLIPPED4_SUB:
+	.word SCFLIPPED4_IMG64
+	.half 79, 54, 23, 11
+SCFLIPPED5:
+	.word SCFLIPPED5_SUB, 0
+SCFLIPPED5_SUB:
+	.word SCFLIPPED5_IMG64
+	.half 67, 72, 29, -8
+SCRUN1:
+	.word SCRUN1_SUB, 0
+SCRUN1_SUB:
+	.word SCRUN1_IMG64
+	.half 113, 50, 22, 1
+SCRUN3:
+	.word SCRUN3_SUB, 0
+SCRUN3_SUB:
+	.word SCRUN3_IMG64
+	.half 111, 57, 33, -1
+SCRUN5:
+	.word SCRUN5_SUB, 0
+SCRUN5_SUB:
+	.word SCRUN5_IMG64
+	.half 107, 44, 22, -4
+SCRUN7:
+	.word SCRUN7_SUB, 0
+SCRUN7_SUB:
+	.word SCRUN7_IMG64
+	.half 111, 51, 25, -1
+SCRUN9:
+	.word SCRUN9_SUB, 0
+SCRUN9_SUB:
+	.word SCRUN9_IMG64
+	.half 113, 58, 36, 0
+SCRUN11:
+	.word SCRUN11_SUB, 0
+SCRUN11_SUB:
+	.word SCRUN11_IMG64
+	.half 111, 42, 22, -2
+SCFALLTHUD1:
+	.word SCFALLTHUD1_SUB, 0
+SCFALLTHUD1_SUB:
+	.word SCFALLTHUD1_IMG64
+	.half 111, 24, 6, -7
+SCFALLTHUD6:
+	.word SCFALLTHUD6_SUB, 0
+SCFALLTHUD6_SUB:
+	.word SCFALLTHUD6_IMG64
+	.half 88, 77, 66, -30
+SCFALLTHUD7:
+	.word SCFALLTHUD7_SUB, 0
+SCFALLTHUD7_SUB:
+	.word SCFALLTHUD7_IMG64
+	.half 43, 97, 89, -75
+SCSCARED2:
+	.word SCSCARED2_SUB, 0
+SCSCARED2_SUB:
+	.word SCSCARED2_IMG64
+	.half 113, 37, 16, 0
+SCBACKBREAK1:
+	.word SCBACKBREAK1_SUB, 0
+SCBACKBREAK1_SUB:
+	.word SCBACKBREAK1_IMG64
+	.half 51, 114, 44, -34
+BABYSCORP:
+	.word BABYSCORP_IMG64
+	.half 37, 22, 0, 0
+	.word BABYERM_P
+BHSCO1:
+	.word BHSCO1_IMG64
+	.half 23, 16, 0, 0
+	.word BHSCO_P
+BHSCO3:
+	.word BHSCO3_IMG64
+	.half 44, 31, 7, 20
+BHSCO5:
+	.word BHSCO5_IMG64
+	.half 57, 52, 18, 32
+CUTSCH:
+	.word CUTSCH_IMG64
+	.half 16, 10, -4, -7
+	.word SCRCUT_P
+CUTSCM:
+	.word CUTSCM_IMG64
+	.half 24, 33, 10, -18
+	.word SCRCUT_P
+CUTSCL1:
+	.word CUTSCL1_IMG64
+	.half 48, 38, 11, -38
+	.word SCRCUT_P
+CUTSCL2:
+	.word CUTSCL2_IMG64
+	.half 30, 38, 14, -83
+	.word SCRCUT_P
+NJMOUTH4:
+	.word NJMOUTH4_SUB, 0
+NJMOUTH4_SUB:
+	.word NJMOUTH4_IMG64
+	.half 91, 53, 26, -22
+NJMOUTH5:
+	.word NJMOUTH5_SUB, 0
+NJMOUTH5_SUB:
+	.word NJMOUTH5_IMG64
+	.half 89, 56, 30, -24
+NJMOUTH6:
+	.word NJMOUTH6_SUB, 0
+NJMOUTH6_SUB:
+	.word NJMOUTH6_IMG64
+	.half 57, 70, 30, -56
+NJMOUTH8:
+	.word NJMOUTH8_SUB, 0
+NJMOUTH8_SUB:
+	.word NJMOUTH8_IMG64
+	.half 36, 82, 32, -84
+SCRIP1:
+	.word SCRIP1_SUB, 0
+SCRIP1_SUB:
+	.word SCRIP1_IMG64
+	.half 105, 46, 20, -8
+	.word SCRIPA_P
+GROSCORP2:
+	.word GROSCORP2_SUB, 0
+GROSCORP2_SUB:
+	.word GROSCORP2_IMG64
+	.half 123, 34, 13, 9
+GROSCORP4:
+	.word GROSCORP4_SUB, 0
+GROSCORP4_SUB:
+	.word GROSCORP4_IMG64
+	.half 146, 31, 11, 32
+GROSCORP5:
+	.word GROSCORP5_SUB, 0
+GROSCORP5_SUB:
+	.word GROSCORP5_IMG64
+	.half 156, 31, 12, 42
+SUKSCO1:
+	.word SUKSCO1_SUB, 0
+SUKSCO1_SUB:
+	.word SUKSCO1_IMG64
+	.half 97, 80, -29, -12
+SUKSCO4:
+	.word SUKSCO4_SUB, 0
+SUKSCO4_SUB:
+	.word SUKSCO4_IMG64
+	.half 38, 60, -29, 15
+SUKSCO5:
+	.word SUKSCO5_SUB, 0
+SUKSCO5_SUB:
+	.word SUKSCO5_IMG64
+	.half 19, 24, -29, -1
+SUKSCO6:
+	.word SUKSCO6_SUB, 0
+SUKSCO6_SUB:
+	.word SUKSCO6_IMG64
+	.half 17, 11, -29, -5
+RPCOMBO1:
+	.word RPCOMBO1_SUB, 0
+RPCOMBO1_SUB:
+	.word RPCOMBO1_IMG64
+	.half 104, 53, 29, -12
+RPCOMBO2:
+	.word RPCOMBO2_SUB, 0
+RPCOMBO2_SUB:
+	.word RPCOMBO2_IMG64
+	.half 107, 43, 18, -8
+RPCOMBO4:
+	.word RPCOMBO4_SUB, 0
+RPCOMBO4_SUB:
+	.word RPCOMBO4_IMG64
+	.half 111, 46, 0, -5
+RPCOMBO6:
+	.word RPCOMBO6_SUB, 0
+RPCOMBO6_SUB:
+	.word RPCOMBO6_IMG64
+	.half 99, 53, 23, -16
+RPCOMBO8:
+	.word RPCOMBO8_SUB, 0
+RPCOMBO8_SUB:
+	.word RPCOMBO8_IMG64
+	.half 103, 65, 17, -12
+RPCOMBO9:
+	.word RPCOMBO9_SUB, 0
+RPCOMBO9_SUB:
+	.word RPCOMBO9_IMG64
+	.half 128, 45, 14, 12
+RPPOOF1:
+	.word RPPOOF1_SUB, 0
+RPPOOF1_SUB:
+	.word RPPOOF1_IMG64
+	.half 121, 63, 18, 6
+RPPOOF3:
+	.word RPPOOF3_SUB, 0
+RPPOOF3_SUB:
+	.word RPPOOF3_IMG64
+	.half 111, 56, 11, -3
+SZSLIDE3:
+	.word SZSLIDE3_SUB, 0
+SZSLIDE3_SUB:
+	.word SZSLIDE3_IMG64
+	.half 65, 84, 39, -50
+RPFORCEBALL1:
+	.word RPFORCEBALL1_SUB, 0
+RPFORCEBALL1_SUB:
+	.word RPFORCEBALL1_IMG64
+	.half 99, 61, 24, -14
+	.word   REP1_P
+ORB1:
+	.word ORB1_SUB, 0
+ORB1_SUB:
+	.word ORB1_IMG64
+	.half 7, 6, -41, -37
+	.word   GLOBALL_P
+RPFORCEBALL2:
+	.word RPFORCEBALL2_SUB, 0
+RPFORCEBALL2_SUB:
+	.word RPFORCEBALL2_IMG64
+	.half 86, 76, 27, -29
+ORB2:
+	.word ORB2_SUB, 0
+ORB2_SUB:
+	.word ORB2_IMG64
+	.half 48, 20, -30, -21
+ORB3:
+	.word ORB3_SUB, 0
+ORB3_SUB:
+	.word ORB3_IMG64
+	.half 76, 33, -20, -10
+RPFORCEBALL4:
+	.word RPFORCEBALL4_SUB, 0
+RPFORCEBALL4_SUB:
+	.word RPFORCEBALL4_IMG64
+	.half 107, 71, 26, -8
+ORB4:
+	.word ORB4_SUB, 0
+ORB4_SUB:
+	.word ORB4_IMG64
+	.half 94, 55, -5, -4
+RPFORCEBALL5:
+	.word RPFORCEBALL5_SUB, 0
+RPFORCEBALL5_SUB:
+	.word RPFORCEBALL5_IMG64
+	.half 114, 54, 26, -2
+ORB7:
+	.word ORB7_SUB, 0
+ORB7_SUB:
+	.word ORB7_IMG64
+	.half 18, 26, -57, -38
+ORB8:
+	.word ORB8_SUB, 0
+ORB8_SUB:
+	.word ORB8_IMG64
+	.half 21, 25, -58, -36
+ORB9:
+	.word ORB9_SUB, 0
+ORB9_SUB:
+	.word ORB9_IMG64
+	.half 26, 18, -61, -33
+ORBBOOM1:
+	.word ORBBOOM1_SUB, 0
+ORBBOOM1_SUB:
+	.word ORBBOOM1_IMG64
+	.half 43, 50, -45, -25
+	.word   REPLODE_P
+ORBBOOM3:
+	.word ORBBOOM3_SUB, 0
+ORBBOOM3_SUB:
+	.word ORBBOOM3_IMG64
+	.half 86, 100, -20, -5
+ORBBOOM5:
+	.word ORBBOOM5_SUB, 0
+ORBBOOM5_SUB:
+	.word ORBBOOM5_IMG64
+	.half 65, 74, -33, -15
+RPSPIT1:
+	.word RPSPIT1_SUB, 0
+RPSPIT1_SUB:
+	.word RPSPIT1_IMG64
+	.half 108, 42, 14, -6
+RPSPIT2:
+	.word RPSPIT2_SUB, 0
+RPSPIT2_SUB:
+	.word RPSPIT2_IMG64
+	.half 107, 48, 14, -8
+	.word   SPIT_P
+LOOGY2:
+	.word LOOGY2_SUB, 0
+LOOGY2_SUB:
+	.word LOOGY2_IMG64
+	.half 20, 34, -37, -19
+	.word SPIT_P
+RPSPIT4:
+	.word RPSPIT4_SUB, 0
+RPSPIT4_SUB:
+	.word RPSPIT4_IMG64
+	.half 101, 61, 19, -13
+LOOGY4:
+	.word LOOGY4_SUB, 0
+LOOGY4_SUB:
+	.word LOOGY4_IMG64
+	.half 5, 105, -52, -25
+LOOGY6:
+	.word LOOGY6_SUB, 0
+LOOGY6_SUB:
+	.word LOOGY6_IMG64
+	.half 5, 96, -61, -25
+LOOGY7:
+	.word LOOGY7_SUB, 0
+LOOGY7_SUB:
+	.word LOOGY7_IMG64
+	.half 10, 66, -93, -23
+LOOGY9:
+	.word LOOGY9_SUB, 0
+LOOGY9_SUB:
+	.word LOOGY9_IMG64
+	.half 26, 23, -136, -15
+LOOGY12:
+	.word LOOGY12_SUB, 0
+LOOGY12_SUB:
+	.word LOOGY12_IMG64
+	.half 60, 55, -104, -16
+SPITROT1:
+	.word SPITROT1_IMG64
+	.half 9, 9, -9, -2
+	.word   SPIT_P
+SPITROT3:
+	.word SPITROT3_IMG64
+	.half 9, 9, -9, -2
+SPITROT6:
+	.word SPITROT6_IMG64
+	.half 9, 26, 0, 0
+SPITROT9:
+	.word SPITROT9_IMG64
+	.half 4, 18, -4, -4
+SPITROT11:
+	.word SPITROT11_IMG64
+	.half 3, 14, -6, -5
+SPITROT13:
+	.word SPITROT13_IMG64
+	.half 3, 6, -11, -6
+SCSPEAR1:
+	.word SCSPEAR1_SUB, 0
+SCSPEAR1_SUB:
+	.word SCSPEAR1_IMG64
+	.half 106, 62, 31, -8
+	.word   SCORP1_P
+SCSPEAR4:
+	.word SCSPEAR4_SUB, 0
+SCSPEAR4_SUB:
+	.word SCSPEAR4_IMG64
+	.half 107, 75, 14, -8
+SCSPEAR8:
+	.word SCSPEAR8_SUB, 0
+SCSPEAR8_SUB:
+	.word SCSPEAR8_IMG64
+	.half 108, 51, 19, -5
+SCSPEAR9:
+	.word SCSPEAR9_SUB, 0
+SCSPEAR9_SUB:
+	.word SCSPEAR9_IMG64
+	.half 104, 49, 23, -9
+MSPEAR1:
+	.word SPEAR1,0
+SPEAR1:
+	.word SPEAR1_IMG64
+	.half 24, 234, 0, 0
+	.word   SPEAR_P
+SPEAR2:
+	.word SPEAR2_IMG64
+	.half 24, 234, 0, -1
+SPEAR3:
+	.word SPEAR3_IMG64
+	.half 9, 226, 0, -8
+SCSUMMON5:
+	.word SCSUMMON5_SUB, 0
+SCSUMMON5_SUB:
+	.word SCSUMMON5_IMG64
+	.half 112, 77, 16, 0
+SCSUMMON8:
+	.word SCSUMMON8_SUB, 0
+SCSUMMON8_SUB:
+	.word SCSUMMON8_IMG64
+	.half 137, 58, 16, 24
+SCSUMMON9:
+	.word SCSUMMON9_SUB, 0
+SCSUMMON9_SUB:
+	.word SCSUMMON9_IMG64
+	.half 145, 45, 15, 31
+SCMASKOFF2:
+	.word SCMASKOFF2_SUB, 0
+SCMASKOFF2_SUB:
+	.word SCMASKOFF2_IMG64
+	.half 109, 34, 14, -3
+SCMASKOFF4:
+	.word SCMASKOFF4_SUB, 0
+SCMASKOFF4_SUB:
+	.word SCMASKOFF4_IMG64
+	.half 118, 34, 15, 5
+SCMASKOFF7:
+	.word SCMASKOFF7_SUB, 0
+SCMASKOFF7_SUB:
+	.word SCMASKOFF7_IMG64
+	.half 101, 55, 30, -11
+RPBREATH3:
+	.word RPBREATH3_SUB, 0
+RPBREATH3_SUB:
+	.word RPBREATH3_IMG64
+	.half 101, 54, 19, -13
+SKULLSPTFIRE1:
+	.word SKULLSPTFIRE1_IMG64
+	.half 19, 13, -2, -8
+	.word SKULL_P
+SKULLSPTFIRE2:
+	.word SKULLSPTFIRE2_IMG64
+	.half 19, 15, -7, -8
+SKULLSPTFIRE3:
+	.word SKULLSPTFIRE3_IMG64
+	.half 20, 15, -19, -2
+SCORPFIRE3:
+	.word SCORPFIRE3_IMG64
+	.half 54, 50, -35, -14
+	.word   SCFIRE_P
+SCORPFIRE5:
+	.word SCORPFIRE5_IMG64
+	.half 61, 65, -73, -56
+SCORPFIRE7:
+	.word SCORPFIRE7_IMG64
+	.half 79, 37, -130, -52
+SCORPFIRE9:
+	.word SCORPFIRE9_IMG64
+	.half 139, 48, -119, 7
+SCORPFIRE11:
+	.word SCORPFIRE11_IMG64
+	.half 142, 53, -114, 9
+SZFLOORICE1:
+	.word SZFLOORICE1_SUB, 0
+SZFLOORICE1_SUB:
+	.word SZFLOORICE1_IMG64
+	.half 109, 49, 16, -5
+	.word	ICE_P			
+SZFLOORICE2:
+	.word SZFLOORICE2_SUB, 0
+SZFLOORICE2_SUB:
+	.word SZFLOORICE2_IMG64
+	.half 111, 51, 17, -3
+FLICE1:
+	.word FLICE1_SUB, 0
+FLICE1_SUB:
+	.word FLICE1_IMG64
+	.half 21, 19, -9, -36
+	.word ICE_P
+FLICE2:
+	.word FLICE2_SUB, 0
+FLICE2_SUB:
+	.word FLICE2_IMG64
+	.half 44, 40, -4, -29
+FLICE3:
+	.word FLICE3_SUB, 0
+FLICE3_SUB:
+	.word FLICE3_IMG64
+	.half 70, 64, 0, -25
+FLICE4:
+	.word FLICE4_SUB, 0
+FLICE4_SUB:
+	.word FLICE4_IMG64
+	.half 82, 88, -4, -30
+FLICE6:
+	.word FLICE6_SUB, 0
+FLICE6_SUB:
+	.word FLICE6_IMG64
+	.half 69, 102, -17, -46
+FLICE7:
+	.word FLICE7_SUB, 0
+FLICE7_SUB:
+	.word FLICE7_IMG64
+	.half 18, 91, -46, -99
+FLICE9:
+	.word FLICE9_SUB, 0
+FLICE9_SUB:
+	.word FLICE9_IMG64
+	.half 12, 53, -65, -103
+FLICE11:
+	.word FLICE11_SUB, 0
+FLICE11_SUB:
+	.word FLICE11_IMG64
+	.half 7, 26, -81, -105
+FLICE13:
+	.word FLICE13_SUB, 0
+FLICE13_SUB:
+	.word FLICE13_IMG64
+	.half 3, 13, -89, -107
+SZICEPRO2:
+	.word SZICEPRO2_SUB, 0
+SZICEPRO2_SUB:
+	.word SZICEPRO2_IMG64
+	.half 98, 75, 27, -19
+SZICEPRO3:
+	.word SZICEPRO3_SUB, 0
+SZICEPRO3_SUB:
+	.word SZICEPRO3_IMG64
+	.half 88, 77, 23, -28
+ICENJBS1:
+	.word ICENJBS1_SUB, 0
+ICENJBS1_SUB:
+	.word ICENJBS1_IMG64
+	.half 30, 16, -6, 15
+	.word   ICE_P
+RPSTANCE3:
+	.word RPSTANCE3_SUB, 0
+RPSTANCE3_SUB:
+	.word RPSTANCE3_IMG64
+	.half 109, 53, 15, -4
+RPSTANCE5:
+	.word RPSTANCE5_SUB, 0
+RPSTANCE5_SUB:
+	.word RPSTANCE5_IMG64
+	.half 109, 54, 15, -4
+RPSTANCE7:
+	.word RPSTANCE7_SUB, 0
+RPSTANCE7_SUB:
+	.word RPSTANCE7_IMG64
+	.half 110, 47, 15, -3
+RPSTANCE9:
+	.word RPSTANCE9_SUB, 0
+RPSTANCE9_SUB:
+	.word RPSTANCE9_IMG64
+	.half 109, 46, 17, -4
+ICSPIKE8:
+	.word ICSPIKE8_SUB, 0
+ICSPIKE8_SUB:
+	.word ICSPIKE8_IMG64
+	.half 79, 79, -45, -35
+ICSPIKE10:
+	.word ICSPIKE10_SUB, 0
+ICSPIKE10_SUB:
+	.word ICSPIKE10_IMG64
+	.half 110, 42, -80, -7
+
+GHOSTFORM1:
+	.word GHOSTFORM1_IMG64
+	.half 31, 30, -45, -39
+GHOSTFORM3:
+	.word GHOSTFORM3_IMG64
+	.half 28, 60, -45, -41
+GHOSTFORM5:
+	.word GHOSTFORM5_IMG64
+	.half 29, 69, -62, -41
+GHOSTLOOP1:
+	.word GHOSTLOOP1_IMG64
+	.half 31, 81, -63, -41
+GHOSTLOOP3:
+	.word GHOSTLOOP3_IMG64
+	.half 31, 84, -60, -41
+GHOSTLOOP5:
+	.word GHOSTLOOP5_IMG64
+	.half 31, 82, -62, -41
+GHOSTCPLOOP1:
+	.word GHOSTCPLOOP1_IMG64
+	.half 31, 92, -59, -42
+GHOSTCPLOOP2:
+	.word GHOSTCPLOOP2_IMG64
+	.half 33, 97, -55, -40
+GHOSTCPLOOP3:
+	.word GHOSTCPLOOP3_IMG64
+	.half 35, 97, -54, -39
+
+RAPROFORM1:
+	.word RAPROFORM1_IMG64
+	.half 37, 40, -35, -36
+RAPROFORM3:
+	.word RAPROFORM3_IMG64
+	.half 28, 28, -40, -40
+RAPROFORM4:
+	.word RAPROFORM4_IMG64
+	.half 23, 33, -49, -42
+RAPROFORM6:
+	.word RAPROFORM6_IMG64
+	.half 28, 39, -77, -40
+RAPROFORM7:
+	.word RAPROFORM7_IMG64
+	.half 31, 39, -91, -38
+RAPROLOOP1:
+	.word RAPROLOOP1_IMG64
+	.half 34, 43, -105, -37
+RAPROLOOP4:
+	.word RAPROLOOP4_IMG64
+	.half 35, 46, -105, -36
+RAPROLOOP5:
+	.word RAPROLOOP5_IMG64
+	.half 34, 46, -105, -37
+SBZAP11:
+	.word SBZAP11_IMG64
+	.half 102, 50, -121, -8
+SBZAP12:
+	.word SBZAP12_IMG64
+	.half 139, 64, -117, 3
+SBZAP13:
+	.word SBZAP13_IMG64
+	.half 138, 79, -113, 1
+SBZAP15:
+	.word SBZAP15_IMG64
+	.half 28, 60, -106, -110
+SBZAP16:
+	.word SBZAP16_IMG64
+	.half 29, 63, -104, -111
+
+RAINLT1:
+	.word RAINLT1_SUB,0
+RAINLT1_SUB:
+	.word RAINLT1_IMG64
+	.half 82, 80, 0, 0
+	.word RAINLT_PAL
+RAINLT3A:
+	.word RAINLT3A_SUB,0
+RAINLT3A_SUB:
+	.word RAINLT3A_IMG64
+	.half 165, 50, -26, 0
+RAINLT3B:
+	.word RAINLT3B_SUB,0
+RAINLT3B_SUB:
+	.word RAINLT3B_IMG64
+	.half 33, 74, -17, -155
+RAINLT4A:
+	.word RAINLT4A_SUB,0
+RAINLT4A_SUB:
+	.word RAINLT4A_IMG64
+	.half 108, 32, -47, -61
+RAINLT4B:
+	.word RAINLT4B_SUB,0
+RAINLT4B_SUB:
+	.word RAINLT4B_IMG64
+	.half 22, 104, -3, -169
+RAINLT6:
+	.word RAINLT6_SUB,0
+RAINLT6_SUB:
+	.word RAINLT4B_IMG64
+	.half 19, 61, -23, -172

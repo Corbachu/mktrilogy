@@ -1,0 +1,25 @@
+	.align 2
+	.globl titmodBMOD
+titmodBMOD:
+	.half   357,   251
+	.word     4, titmod_BLK, nutitle3_HDR, nutitle3_CLT
+
+	.align 2
+	.globl titmod_BLK
+titmod_BLK:
+	.half     5,     7,    64, 0x0000,     0
+	.half     5,   127,    64, 0x0000,     1
+	.half   180,     7,    64, 0x0000,     2
+	.half   180,   127,    64, 0x0000,     3
+
+	.align 2
+	.globl nutitle3_HDR
+nutitle3_HDR:
+	.half   176,   120
+	.word     0
+	.half   176,   120
+	.word 21120
+	.half   172,   120
+	.word 42240
+	.half   172,   120
+	.word 62880

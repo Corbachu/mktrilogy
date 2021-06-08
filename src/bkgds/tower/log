@@ -1,0 +1,10 @@
+cloud1a 69x84 6048 2506 41.435184 NH dict RLE 64
+cloud1b 78x52 4160 1702 40.913460 NH dict RLE 64
+cloud1c 78x52 4160 1701 40.889423 NH dict RLE 64
+cloud1d 69x84 6048 2506 41.435184 NH dict RLE 64
+scaled = 20416 RLEd + dict = 8671 41.217674
+RLE average bytes/frame 2167.750000
+max width = 78 cloud1b
+max height = 84 cloud1a
+min width = 69 cloud1a
+min height = 52 cloud1b

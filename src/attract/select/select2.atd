@@ -1,0 +1,15 @@
+select_anims:
+	.word emh_images
+	.word a_stuff
+a_stuff:
+	.word NSCURSOR
+	.word 0
+emh_images:
+	.word TXT_CHAMPION
+	.word 0
+TXT_CHAMPION:
+	.word TXT_CHAMPION_IMG
+	.half 51, 8, 0, 0
+NSCURSOR:
+	.word NSCURSOR_IMG
+	.half 39, 49, 0, 0

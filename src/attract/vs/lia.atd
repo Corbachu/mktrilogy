@@ -1,0 +1,71 @@
+lia_list:
+	.word VLIAFLESH1A
+	.word VLIAFLESH1B
+	.word VLIAFLESH1C
+	.word VLIAFLESH1D
+	.word VLIAFLESH1E
+	.word VLIAGREY1A
+	.word VLIAGREY1B
+	.word VLIAGREY1C
+	.word VLIAPURP1A
+	.word VLIAPURP1B
+VLIAFLESH1A:
+	.word LIAFLESH1A
+	.word 0
+VLIAFLESH1B:
+	.word LIAFLESH1B
+	.word 0
+VLIAFLESH1C:
+	.word LIAFLESH1C
+	.word 0
+VLIAFLESH1D:
+	.word LIAFLESH1D
+	.word 0
+VLIAFLESH1E:
+	.word LIAFLESH1E
+	.word 0
+VLIAGREY1A:
+	.word LIAGREY1A
+	.word 0
+VLIAGREY1B:
+	.word LIAGREY1B
+	.word 0
+VLIAGREY1C:
+	.word LIAGREY1C
+	.word 0
+VLIAPURP1A:
+	.word LIAPURP1A
+	.word 0
+VLIAPURP1B:
+	.word LIAPURP1B
+	.word 0
+LIAFLESH1A:
+	.word LIAFLESH1A_IMG
+	.half 53, 33, 67, -79
+LIAFLESH1B:
+	.word LIAFLESH1B_IMG
+	.half 72, 25, 34, -61
+LIAFLESH1C:
+	.word LIAFLESH1C_IMG
+	.half 26, 26, -60, -55
+LIAFLESH1D:
+	.word LIAFLESH1D_IMG
+	.half 51, 35, -27, -81
+LIAFLESH1E:
+	.word LIAFLESH1E_IMG
+	.half 115, 35, 10, -36
+LIAGREY1A:
+	.word LIAGREY1A_IMG
+        .half 166, 66, 59, -7
+LIAGREY1B:
+	.word LIAGREY1B_IMG
+        .half 39, 25, -49, -74
+LIAGREY1C:
+	.word LIAGREY1C_IMG
+        .half 166, 26, -6, -7
+LIAPURP1A:
+	.word LIAPURP1A_IMG
+	.half 42, 15, 38, -95
+LIAPURP1B:
+	.word LIAPURP1B_IMG
+        .half 77, 33, 8, -96

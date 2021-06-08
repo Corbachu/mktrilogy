@@ -1,0 +1,41 @@
+sk_anitab1:
+sk_anitab2:
+	.word a_jump
+a_jump:
+	.word VULT1
+	.word VULT2
+	.word VULT3
+	.word VULT4
+	.word VULT5
+	.word VULT6
+	.word 0
+VULT1:
+	.word VULT1_SUB, 0
+VULT1_SUB:
+	.word VULT1_IMG
+	.half 52, 97, 0, 0
+VULT2:
+	.word VULT2_SUB, 0
+VULT2_SUB:
+	.word VULT2_IMG
+	.half 67, 76, 7, 15
+VULT3:
+	.word VULT3_SUB, 0
+VULT3_SUB:
+	.word VULT3_IMG
+	.half 100, 78, 24, 49
+VULT4:
+	.word VULT4_SUB, 0
+VULT4_SUB:
+	.word VULT4_IMG
+	.half 109, 77, 23, 54
+VULT5:
+	.word VULT5_SUB, 0
+VULT5_SUB:
+	.word VULT5_IMG
+	.half 70, 82, 19, 18
+VULT6:
+	.word VULT6_SUB, 0
+VULT6_SUB:
+	.word VULT6_IMG
+	.half 49, 85, 7, -4

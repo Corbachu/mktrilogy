@@ -1,0 +1,11 @@
+.word 0
+JCMRF1:
+	.word JCMRF1_SUB, 0
+JCMRF1_SUB:
+	.word JCMRF1_IMG
+	.half 107, 52, 22, -9
+JCMRF2:
+	.word JCMRF2_SUB, 0
+JCMRF2_SUB:
+	.word JCMRF2_IMG
+	.half 109, 53, 22, -9

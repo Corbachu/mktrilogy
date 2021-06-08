@@ -1,0 +1,27 @@
+acidskel1 11x10 120 69 57.500000 dict RLE 64
+acidskel10 21x26 624 283 45.352566 dict RLE 64
+acidskel11 21x26 624 272 43.589745 dict RLE 64
+acidskel2 12x10 120 73 60.833332 dict RLE 64
+acidskel3 16x18 288 140 48.611111 dict RLE 64
+acidskel4 17x18 360 150 41.666668 dict RLE 64
+acidskel5 19x19 380 185 48.684212 dict RLE 64
+acidskel6 24x20 480 198 41.250000 dict RLE 64
+acidskel7 27x22 616 248 40.259739 dict RLE 64
+acidskel8 27x25 700 273 39.000000 dict RLE 64
+acidskel9 21x26 624 283 45.352566 dict RLE 64
+acidsplash1a 62x11 704 298 42.329544 dict RLE 64
+acidsplash1b 57x31 1860 582 31.290323 dict RLE 64
+acidsplash2a 78x23 1840 661 35.923912 dict RLE 64
+acidsplash2b 85x31 2728 768 28.152493 dict RLE 64
+acidsplash3 127x60 7680 1543 20.091146 dict RLE 64
+acidsplash4 158x59 9440 1601 16.959745 dict RLE 64
+acidsplash5 169x70 12040 1462 12.142858 dict RLE 64
+acidsplash6 98x69 6900 1303 18.884058 dict RLE 64
+acidsplash7 111x73 8176 1261 15.423190 dict RLE 64
+acidsplash8 110x70 7840 1154 14.719388 dict RLE 64
+scaled = 64144 RLEd + dict = 13063 19.966015
+RLE average bytes/frame 622.047607
+max width = 169 acidsplash5
+max height = 73 acidsplash7
+min width = 11 acidskel1
+min height = 10 acidskel1

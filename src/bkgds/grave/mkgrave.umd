@@ -1,0 +1,368 @@
+	.align 2
+	.globl GRAVE7BMOD
+GRAVE7BMOD:
+	.half   354,   100
+	.word     3, GRAVE7_BLK, MKGRAVE_HDR, MKGRAVE_CLT
+
+	.align 2
+	.globl GRAVE7_BLK
+GRAVE7_BLK:
+	.half    11,    49,    64, 0x0900,     4
+	.half   120,    39,    64, 0x0900,    16
+	.half   222,    24,    64, 0x0900,    33
+
+	.align 2
+	.globl GRAVE6BMOD
+GRAVE6BMOD:
+	.half   409,    67
+	.word     8, GRAVE6_BLK, MKGRAVE_HDR, MKGRAVE_CLT
+
+	.align 2
+	.globl GRAVE6_BLK
+GRAVE6_BLK:
+	.half    16,    38,    64, 0x0000,     2
+	.half    16,    51,    64, 0x0000,     3
+	.half    56,    51,    64, 0x0000,     3
+	.half    86,    21,    64, 0x0000,    11
+	.half   162,    29,    64, 0x0000,    27
+	.half   232,    38,    64, 0x0000,    34
+	.half   293,    37,    64, 0x0000,    42
+	.half   334,    38,    64, 0x0000,    34
+
+	.align 2
+	.globl GRAVE5BMOD
+GRAVE5BMOD:
+	.half   440,   128
+	.word     9, GRAVE5_BLK, MKGRAVE_HDR, MKGRAVE_CLT
+
+	.align 2
+	.globl GRAVE5_BLK
+GRAVE5_BLK:
+	.half    24,    97,    64, 0x0600,    10
+	.half    57,    18,    64, 0x0C00,    14
+	.half    97,    24,    64, 0x0C00,    26
+	.half   116,   100,    64, 0x0600,    28
+	.half   174,    83,    64, 0x0600,    35
+	.half   260,   103,    64, 0x0600,    47
+	.half   289,    63,    64, 0x0600,    50
+	.half   328,    65,    64, 0x0600,    59
+	.half   358,   101,    64, 0x0600,    63
+
+	.align 2
+	.globl GRAVE4BMOD
+GRAVE4BMOD:
+	.half   577,   100
+	.word    15, GRAVE4_BLK, MKGRAVE_HDR, MKGRAVE_CLT
+
+	.align 2
+	.globl GRAVE4_BLK
+GRAVE4_BLK:
+	.half    13,    71,    64, 0x0600,     0
+	.half    56,    69,    64, 0x0610,     5
+	.half   108,    76,    64, 0x0600,    12
+	.half   137,    23,    64, 0x0600,    15
+	.half   169,    20,    64, 0x0600,    23
+	.half   170,    76,    64, 0x0600,    24
+	.half   194,    21,    64, 0x0600,    29
+	.half   227,    69,    64, 0x0600,     5
+	.half   279,    80,    64, 0x0600,    39
+	.half   299,    35,    64, 0x0B00,    41
+	.half   337,    66,    64, 0x0600,    49
+	.half   365,    44,    64, 0x0600,    51
+	.half   383,    71,    64, 0x0600,     0
+	.half   426,    71,    64, 0x0600,    62
+	.half   464,    70,    64, 0x0600,    70
+
+	.align 2
+	.globl GRAVE3BMOD
+GRAVE3BMOD:
+	.half   667,   125
+	.word    16, GRAVE3_BLK, MKGRAVE_HDR, MKGRAVE_CLT
+
+	.align 2
+	.globl GRAVE3_BLK
+GRAVE3_BLK:
+	.half    20,    96,    64, 0x0700,     1
+	.half    68,    94,    64, 0x0700,     6
+	.half   118,    94,    64, 0x0710,     6
+	.half   169,    82,    64, 0x0700,    22
+	.half   169,   109,    64, 0x0700,    21
+	.half   233,    81,    64, 0x0700,    32
+	.half   294,    27,    64, 0x0700,    40
+	.half   311,    44,    64, 0x0700,    43
+	.half   325,    86,    64, 0x0700,    45
+	.half   399,    54,    64, 0x0700,    58
+	.half   429,    82,    64, 0x0700,    61
+	.half   478,    82,    64, 0x0700,    72
+	.half   528,    73,    64, 0x0700,    80
+	.half   564,    45,    64, 0x0700,    81
+	.half   592,   100,    64, 0x0700,    83
+	.half   610,    96,    64, 0x0700,     1
+
+	.align 2
+	.globl GRAVE2BMOD
+GRAVE2BMOD:
+	.half   750,   227
+	.word    31, GRAVE2_BLK, MKGRAVE_HDR, MKGRAVE_CLT
+
+	.align 2
+	.globl GRAVE2_BLK
+GRAVE2_BLK:
+	.half    41,   199,    64, 0x0800,     7
+	.half   139,   180,    64, 0x0A00,    20
+	.half   182,   189,    64, 0x0800,    30
+	.half   186,   106,    64, 0x0A00,    31
+	.half   243,   181,    64, 0x0A00,    37
+	.half   284,   180,    64, 0x0800,    44
+	.half   304,   203,    64, 0x0800,    46
+	.half   346,    82,    64, 0x0400,    52
+	.half   350,   203,    64, 0x0300,    53
+	.half   351,   160,    64, 0x0200,    54
+	.half   362,    55,    64, 0x0400,    55
+	.half   369,   170,    64, 0x0100,    56
+	.half   395,    80,    64, 0x0400,    60
+	.half   418,   199,    64, 0x0400,    64
+	.half   420,     8,    64, 0x0400,    65
+	.half   425,    41,    64, 0x0400,    66
+	.half   426,    52,    64, 0x0400,    67
+	.half   431,    81,    64, 0x0400,    68
+	.half   438,   152,    64, 0x0400,    69
+	.half   444,     9,    64, 0x0400,    71
+	.half   456,    53,    64, 0x0400,    73
+	.half   457,    98,    64, 0x0400,    74
+	.half   467,    29,    64, 0x0400,    76
+	.half   489,    52,    64, 0x0400,    77
+	.half   490,    32,    64, 0x0400,    78
+	.half   495,   181,    64, 0x0A00,    79
+	.half   556,   196,    64, 0x0800,    82
+	.half   598,   110,    64, 0x0800,    84
+	.half   613,   110,    64, 0x0800,    85
+	.half   636,   201,    64, 0x0800,    86
+	.half   658,   149,    64, 0x0800,    87
+
+	.align 2
+	.globl GRAVE1BMOD
+GRAVE1BMOD:
+	.half   927,   211
+	.word    19, GRAVE1_BLK, MKGRAVE_HDR, MKGRAVE_CLT
+
+	.align 2
+	.globl GRAVE1_BLK
+GRAVE1_BLK:
+	.half    18,    11,    64, 0x0500,     8
+	.half    28,    12,    64, 0x0500,     9
+	.half    61,    16,    64, 0x0500,    13
+	.half    91,    38,    64, 0x0500,    17
+	.half    91,   108,    64, 0x0500,    18
+	.half   112,   148,    64, 0x0500,    25
+	.half   212,   165,    64, 0x0500,    38
+	.half   278,   170,    64, 0x0500,    48
+	.half   335,   171,    64, 0x0500,    57
+	.half   423,   173,    64, 0x0500,    75
+	.half   505,   171,    64, 0x0510,    57
+	.half   591,   170,    64, 0x0510,    48
+	.half   649,   165,    64, 0x0510,    38
+	.half   717,   148,    64, 0x0510,    25
+	.half   806,    38,    64, 0x0510,    17
+	.half   814,   108,    64, 0x0510,    18
+	.half   836,    16,    64, 0x0510,    13
+	.half   865,    12,    64, 0x0510,     9
+	.half   899,    11,    64, 0x0510,     8
+
+	.align 2
+	.globl GRAVE0BMOD
+GRAVE0BMOD:
+	.half  1073,    72
+	.word     8, GRAVE0_BLK, MKGRAVE_HDR, MKGRAVE_CLT
+
+	.align 2
+	.globl GRAVE0_BLK
+GRAVE0_BLK:
+	.half    44,    33,    64, 0x0D00,    19
+	.half   157,    19,    64, 0x0D00,    36
+	.half   276,    33,    64, 0x0D00,    19
+	.half   463,    33,    64, 0x0D10,    19
+	.half   519,    19,    64, 0x0D00,    36
+	.half   763,    33,    64, 0x0D10,    19
+	.half   802,    19,    64, 0x0D00,    36
+	.half   980,    33,    64, 0x0D10,    19
+
+	.align 2
+	.globl MKGRAVE_HDR
+MKGRAVE_HDR:
+	.half    44,    20
+	.word     0
+	.half    48,    25
+	.word   880
+	.half    72,    13
+	.word  2080
+	.half    40,     7
+	.word  3016
+	.half   112,    46
+	.word  3296
+	.half    52,    22
+	.word  8448
+	.half    52,    27
+	.word  9592
+	.half   144,    20
+	.word 11000
+	.half    12,   191
+	.word 13880
+	.half    36,   186
+	.word 16176
+	.half    68,    18
+	.word 22872
+	.half    76,    30
+	.word 24096
+	.half    64,    15
+	.word 26376
+	.half    32,   169
+	.word 27336
+	.half    40,    97
+	.word 32744
+	.half    32,    54
+	.word 36624
+	.half   104,    56
+	.word 38352
+	.half    32,    71
+	.word 44176
+	.half    24,    77
+	.word 46448
+	.half    32,    32
+	.word 48296
+	.half    20,    19
+	.word 49320
+	.half    36,    12
+	.word 49704
+	.half    64,    27
+	.word 50136
+	.half    28,    56
+	.word 51864
+	.half    60,    15
+	.word 53432
+	.half   100,    37
+	.word 54336
+	.half    44,    91
+	.word 58040
+	.half    72,    22
+	.word 62048
+	.half    60,    15
+	.word 63632
+	.half    36,    55
+	.word 64536
+	.half   104,    30
+	.word 66520
+	.half    32,    83
+	.word 69640
+	.half    64,    28
+	.word 72296
+	.half   116,    71
+	.word 74088
+	.half    64,    13
+	.word 82328
+	.half    88,    32
+	.word 83160
+	.half    80,    46
+	.word 85976
+	.half    20,    20
+	.word 89656
+	.half    68,    20
+	.word 90056
+	.half    60,    11
+	.word 91416
+	.half    20,    82
+	.word 92080
+	.half    20,    45
+	.word 93720
+	.half    44,    14
+	.word 94624
+	.half    16,    65
+	.word 95240
+	.half    28,    39
+	.word 96280
+	.half    76,    23
+	.word 97376
+	.half    48,    16
+	.word 99128
+	.half    84,    14
+	.word 99896
+	.half    60,    15
+	.word 101072
+	.half    28,    25
+	.word 101976
+	.half    40,    40
+	.word 102680
+	.half    20,    47
+	.word 104280
+	.half    52,    31
+	.word 105224
+	.half    72,    16
+	.word 106840
+	.half    20,    43
+	.word 107992
+	.half    40,    29
+	.word 108856
+	.half    32,    33
+	.word 110016
+	.half    88,    14
+	.word 111072
+	.half    32,    55
+	.word 112304
+	.half    36,    53
+	.word 114064
+	.half    36,    48
+	.word 115976
+	.half    52,    27
+	.word 117704
+	.half    40,    20
+	.word 119112
+	.half    72,    17
+	.word 119912
+	.half    80,    20
+	.word 121136
+	.half    12,    33
+	.word 122736
+	.half   112,    12
+	.word 123136
+	.half    32,    31
+	.word 124480
+	.half    28,    71
+	.word 125472
+	.half    24,    47
+	.word 127464
+	.half   104,    21
+	.word 128592
+	.half    12,    34
+	.word 130776
+	.half    52,    39
+	.word 131184
+	.half    36,    46
+	.word 133216
+	.half    40,    55
+	.word 134872
+	.half    84,    12
+	.word 137072
+	.half     4,    12
+	.word 138080
+	.half    40,    46
+	.word 138128
+	.half     8,    13
+	.word 139968
+	.half    64,    38
+	.word 140072
+	.half    36,    48
+	.word 142504
+	.half    28,    76
+	.word 144232
+	.half    80,    23
+	.word 146360
+	.half    20,    21
+	.word 148200
+	.half    16,    86
+	.word 148624
+	.half    20,    86
+	.word 150000
+	.half   108,    18
+	.word 151720
+	.half    28,    52
+	.word 153664

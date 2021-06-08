@@ -1,0 +1,150 @@
+	.align 2
+	.globl mkcity5BMOD
+mkcity5BMOD:
+	.half   332,   130
+	.word     4, mkcity5_BLK, MKCITY_HDR, MKCITY_CLT
+
+	.align 2
+	.globl mkcity5_BLK
+mkcity5_BLK:
+	.half     9,    16,    64, 0x0A00,    13
+	.half     9,    70,    64, 0x0B00,    14
+	.half   159,    35,    64, 0x0900,    24
+	.half   159,    83,    64, 0x0B00,    23
+
+	.align 2
+	.globl mkcity4BMOD
+mkcity4BMOD:
+	.half   446,   183
+	.word     5, mkcity4_BLK, MKCITY_HDR, MKCITY_CLT
+
+	.align 2
+	.globl mkcity4_BLK
+mkcity4_BLK:
+	.half    21,    92,    65, 0x0C00,    11
+	.half    76,   115,    64, 0x0C00,    15
+	.half   168,   123,    64, 0x0600,    20
+	.half   182,    31,    64, 0x0500,    22
+	.half   362,    30,    64, 0x0800,    26
+
+	.align 2
+	.globl mkcity3BMOD
+mkcity3BMOD:
+	.half   307,    93
+	.word     2, mkcity3_BLK, MKCITY_HDR, MKCITY_CLT
+
+	.align 2
+	.globl mkcity3_BLK
+mkcity3_BLK:
+	.half   105,    15,    64, 0x0400,    19
+	.half   204,    38,    64, 0x0700,    25
+
+	.align 2
+	.globl mkcity2BMOD
+mkcity2BMOD:
+	.half   881,    82
+	.word    22, mkcity2_BLK, MKCITY_HDR, MKCITY_CLT
+
+	.align 2
+	.globl mkcity2_BLK
+mkcity2_BLK:
+	.half    18,    46,    64, 0x0300,     2
+	.half    64,    46,    64, 0x0300,     5
+	.half   111,    46,    64, 0x0300,     7
+	.half   156,    46,    64, 0x0300,     8
+	.half   172,     9,    65, 0x0000,     9
+	.half   218,    46,    64, 0x0300,    10
+	.half   267,    46,    64, 0x0300,    12
+	.half   312,    46,    64, 0x0300,    16
+	.half   337,    11,    65, 0x0100,    17
+	.half   355,    46,    64, 0x0300,    18
+	.half   402,    46,    64, 0x0300,    21
+	.half   442,    46,    64, 0x0310,    21
+	.half   484,    46,    64, 0x0310,    18
+	.half   505,    11,    65, 0x0110,    17
+	.half   531,    46,    64, 0x0310,    16
+	.half   572,    46,    64, 0x0310,    12
+	.half   617,    46,    64, 0x0310,    10
+	.half   667,    46,    64, 0x0310,     8
+	.half   672,    10,    65, 0x0010,     9
+	.half   728,    46,    64, 0x0310,     7
+	.half   775,    46,    64, 0x0310,     5
+	.half   821,    46,    64, 0x0310,     2
+
+	.align 2
+	.globl mkcity1BMOD
+mkcity1BMOD:
+	.half   938,   254
+	.word    10, mkcity1_BLK, MKCITY_HDR, MKCITY_CLT
+
+	.align 2
+	.globl mkcity1_BLK
+mkcity1_BLK:
+	.half    14,   162,    64, 0x0200,     0
+	.half    16,    26,    64, 0x0200,     1
+	.half    25,   129,    64, 0x0200,     3
+	.half    53,    19,    64, 0x0200,     4
+	.half    99,    51,    64, 0x0200,     6
+	.half   785,   162,    64, 0x0210,     0
+	.half   801,    51,    64, 0x0210,     6
+	.half   810,   129,    64, 0x0210,     3
+	.half   815,    18,    64, 0x0210,     4
+	.half   872,    25,    64, 0x0210,     1
+
+	.align 2
+	.globl MKCITY_HDR
+MKCITY_HDR:
+	.half   128,    73
+	.word     0
+	.half    40,   104
+	.word  9344
+	.half    48,    26
+	.word 13504
+	.half    92,    33
+	.word 14752
+	.half    60,   111
+	.word 17792
+	.half    48,    26
+	.word 24456
+	.half    28,    56
+	.word 25704
+	.half    48,    26
+	.word 27272
+	.half    64,    26
+	.word 28520
+	.half    44,    52
+	.word 30184
+	.half    52,    26
+	.word 32472
+	.half    60,    82
+	.word 33824
+	.half    48,    26
+	.word 38744
+	.half   152,    54
+	.word 39992
+	.half   152,    55
+	.word 48200
+	.half    64,    59
+	.word 56560
+	.half    44,    26
+	.word 60336
+	.half    44,    48
+	.word 61480
+	.half    48,    26
+	.word 63592
+	.half    60,    70
+	.word 64840
+	.half   128,    51
+	.word 69040
+	.half    44,    26
+	.word 75568
+	.half   100,    92
+	.word 76712
+	.half   172,    42
+	.word 85912
+	.half   172,    48
+	.word 93136
+	.half    88,    47
+	.word 101392
+	.half    48,   144
+	.word 105528

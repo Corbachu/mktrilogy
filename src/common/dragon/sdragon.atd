@@ -1,0 +1,39 @@
+a_badge_spin:
+	.word MKCOIN_01
+	.word MKCOIN_02
+	.word MKCOIN_03
+	.word MKCOIN_04
+	.word MKCOIN_05
+	.word MKCOIN_06
+	.word MKCOIN_07
+	.word MKCOIN_08
+	.word MKCOIN_09
+	.word ani_jump
+	.word a_badge_spin
+MKCOIN_01:
+	.word MKCOIN_01_IMG
+	.half 33, 35, 0, 0
+MKCOIN_02:
+	.word MKCOIN_02_IMG
+	.half 33, 34, 0, 0
+MKCOIN_03:
+	.word MKCOIN_03_IMG
+	.half 33, 30, 0, 0
+MKCOIN_04:
+	.word MKCOIN_04_IMG
+	.half 33, 23, -3, 0
+MKCOIN_05:
+	.word MKCOIN_05_IMG
+	.half 33, 14, -9, 0
+MKCOIN_06:
+	.word MKCOIN_06_IMG
+	.half 33, 10, -12, 0
+MKCOIN_07:
+	.word MKCOIN_07_IMG
+	.half 33, 21, -8, 0
+MKCOIN_08:
+	.word MKCOIN_08_IMG
+	.half 33, 30, -3, 0
+MKCOIN_09:
+	.word MKCOIN_09_IMG
+	.half 33, 34, -1, 0

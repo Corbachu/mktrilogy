@@ -1,0 +1,40 @@
+File I:\proj\mktrilogy\seg\bkgds\armory\bkgdarmr.c:
+44         extern BYTE *armory_dict;
+File I:\proj\mktrilogy\seg\bkgds\arena\bkgdaren.c:
+44         extern BYTE *arena_dict;
+File I:\proj\mktrilogy\seg\bkgds\bell\bkgdbell.c:
+46         extern BYTE *bell_dict;
+331        		pa8->odict=bell_dict;
+File I:\proj\mktrilogy\seg\bkgds\cave\bkgdcave.c:
+40         extern BYTE *cave_dict;
+243        	obj->odict=cave_dict;
+File I:\proj\mktrilogy\seg\bkgds\city\bkgdcity.c:
+42         extern BYTE *city_dict;
+File I:\proj\mktrilogy\seg\bkgds\dead\bkgddead.c:
+44         extern BYTE *dead_dict;
+File I:\proj\mktrilogy\seg\bkgds\desert\bkgdesrt.c:
+39         extern BYTE *desert_dict;
+File I:\proj\mktrilogy\seg\bkgds\grave\bkgdgrav.c:
+39         extern BYTE *grave_dict;
+File I:\proj\mktrilogy\seg\bkgds\hport\bkgdport.c:
+37         extern BYTE *hport_dict;
+File I:\proj\mktrilogy\seg\bkgds\lost\bkgdlost.c:
+38         extern BYTE *lost_dict;
+File I:\proj\mktrilogy\seg\bkgds\monks\bkgdmonk.c:
+44         extern BYTE *monks_dict;
+File I:\proj\mktrilogy\seg\bkgds\pit\bkgdpit.c:
+42         extern BYTE *pit_dict;
+File I:\proj\mktrilogy\seg\bkgds\sbst\bkgdsbst.c:
+178        extern BYTE *sbst_dict;
+File I:\proj\mktrilogy\seg\bkgds\soul\bkgdsoul.c:
+38         extern BYTE *soul_dict;
+File I:\proj\mktrilogy\seg\bkgds\temple\bkgdtemp.c:
+43         extern BYTE *temple_dict;
+File I:\proj\mktrilogy\seg\bkgds\tower\bkgdtowr.c:
+41         extern BYTE *tower_dict;
+File I:\proj\mktrilogy\seg\bkgds\tree\bkgdtree.c:
+38         extern BYTE *tree_dict;
+File I:\proj\mktrilogy\seg\bkgds\water\bkgdwatr.c:
+41         extern BYTE *water_dict;
+86         				ta8->odict=water_dict;
+107        				ta9->odict=water_dict;

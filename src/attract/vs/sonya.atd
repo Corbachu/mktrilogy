@@ -1,0 +1,120 @@
+sonya_list:
+	.word VBGSONYA1A
+	.word VBGSONYA1B
+	.word VBGSONYA1C
+	.word VBGSONYA1D
+	.word VBGSONYA1E
+	.word VBGSONYA1F
+	.word VBGSONYA2A
+	.word VBGSONYA2B
+	.word VBGSONYA2C
+	.word VBGSONYA2D
+	.word VBGSONYA3A
+	.word VBGSONYA3B
+	.word VBGSONYA3C
+	.word VBGSONYA3D
+	.word VBGSONYA3E
+	.word VBGSONYA3F
+	.word VBGSONYA3G
+VBGSONYA1A:
+	.word BGSONYA1A
+	.word 0
+VBGSONYA1B:
+	.word BGSONYA1B
+	.word 0
+VBGSONYA1C:
+	.word BGSONYA1C
+	.word 0
+VBGSONYA1D:
+	.word BGSONYA1D
+	.word 0
+VBGSONYA1E:
+	.word BGSONYA1E
+	.word 0
+VBGSONYA1F:
+	.word BGSONYA1F
+	.word 0
+VBGSONYA2A:
+	.word BGSONYA2A
+	.word 0
+VBGSONYA2B:
+	.word BGSONYA2B
+	.word 0
+VBGSONYA2C:
+	.word BGSONYA2C
+	.word 0
+VBGSONYA2D:
+	.word BGSONYA2D
+	.word 0
+VBGSONYA3A:
+	.word BGSONYA3A
+	.word 0
+VBGSONYA3B:
+	.word BGSONYA3B
+	.word 0
+VBGSONYA3C:
+	.word BGSONYA3C
+	.word 0
+VBGSONYA3D:
+	.word BGSONYA3D
+	.word 0
+VBGSONYA3E:
+	.word BGSONYA3E
+	.word 0
+VBGSONYA3F:
+	.word BGSONYA3F
+	.word 0
+VBGSONYA3G:
+	.word BGSONYA3G
+	.word 0
+BGSONYA1A:
+	.word BGSONYA1A_IMG
+	.half 104, 64, 75, -5
+BGSONYA1B:
+	.word BGSONYA1B_IMG
+	.half 70, 26, 11, -2
+BGSONYA1C:
+	.word BGSONYA1C_IMG
+	.half 53, 20, -13, -9
+BGSONYA1D:
+	.word BGSONYA1D_IMG
+	.half 31, 53, 37, -124
+BGSONYA1E:
+	.word BGSONYA1E_IMG
+	.half 59, 34, -16, -73
+BGSONYA1F:
+	.word BGSONYA1F_IMG
+        .half 39, 36, -50, -93
+BGSONYA2A:
+	.word BGSONYA2A_IMG
+	.half 3, 6, 51, -78
+BGSONYA2B:
+	.word BGSONYA2B_IMG
+	.half 37, 30, 61, -136
+BGSONYA2C:
+	.word BGSONYA2C_IMG
+	.half 64, 34, 22, -64
+BGSONYA2D:
+	.word BGSONYA2D_IMG
+	.half 59, 18, -11, -70
+BGSONYA3A:
+	.word BGSONYA3A_IMG
+	.half 32, 7, 34, -92
+BGSONYA3B:
+	.word BGSONYA3B_IMG
+	.half 70, 20, 30, -57
+BGSONYA3C:
+	.word BGSONYA3C_IMG
+        .half 36, 38, 44, -137
+BGSONYA3D:
+	.word BGSONYA3D_IMG
+        .half 21, 10, 6, -152
+BGSONYA3E:
+	.word BGSONYA3E_IMG
+	.half 84, 16, 10, -29
+BGSONYA3F:
+	.word BGSONYA3F_IMG
+	.half 91, 37, -5, -24
+BGSONYA3G:
+	.word BGSONYA3G_IMG
+	.half 26, 15, -72, -85

@@ -1,0 +1,363 @@
+					Segment To Create
+
+KEY:
+ovl	- code overlay
+btxt - background textures
+atxt - animation textures
+
+;--------------------------------------------------------------
+Subway & Street:
+Overlay Code:	sbst_ovl
+Bkgd Textures:	sbst_btxt
+Bkgd Animation Textures (Train, Lights, Rails):	sbst_atxt
+Common:	rock_atx, trash_atxt, storm_atxt
+
+;--------------------------------------------------------------
+Bank & City:
+Overlay Code:	city_ovl
+Bkgd Textures:	city_btxt
+Bkgd Animation Textures (burning bldg):	city_atxt
+Common:	rock_atx, storm_atxt
+
+;--------------------------------------------------------------
+Balcony & Soul Chamber:
+Overlay Code:	soul_ovl
+Bkgd Textures:	soul_btxt
+Bkgd Animation Textures (sonado, flames):	soul_atxt
+Common:	rock_atx
+
+;--------------------------------------------------------------
+Bridge:
+Overlay Code:	bridge_ovl
+Bkgd Textures:	bridge_btxt
+Bkgd Animation Textures:	
+Common:	trash_atx
+
+;--------------------------------------------------------------
+Bell Tower:
+Overlay Code:	bell_ovl
+Bkgd Textures:	bell_btxt
+Bkgd Animation Textures (bell holes, spikes):	bell_atxt
+Common:	
+
+;--------------------------------------------------------------
+Temple:
+Overlay Code:	temple_ovl
+Bkgd Textures:	temple_btxt
+Bkgd Animation Textures (torch flames, candles):	temple_atxt
+Common:	
+
+;--------------------------------------------------------------
+Graveyard:
+Overlay Code:	grave_ovl
+Bkgd Textures:	grave_btxt
+Bkgd Animation Textures (tombstones, clouds):	grave_atxt
+Common:	
+
+;--------------------------------------------------------------
+MK3 Pit:
+Overlay Code:	pit_ovl
+Bkgd Textures:	pit_btxt
+Bkgd Animation Textures (saw blades, throne wall):	pit_atxt
+Common:	
+
+;--------------------------------------------------------------
+Water River:
+Overlay Code:	water_ovl
+Bkgd Textures:	water_btxt
+Bkgd Animation Textures (water pieces):	water_atxt
+Common:	
+
+;--------------------------------------------------------------
+Hades & Cave :
+Overlay Code:	cave_ovl
+Bkgd Textures:	cave_btxt
+Bkgd Animation Textures (hell flames, hell lava, cave sky):	cave_atxt
+Common:	rock_atxt
+
+;--------------------------------------------------------------
+Desert:
+Overlay Code:	desert_ovl
+Bkgd Textures:	desert_btxt
+Bkgd Animation Textures (Cyrax moving):	desert_atxt
+Common:	
+
+;--------------------------------------------------------------
+Buyin & Mode Select Screen:
+Overlay Code:	buyin_ovl
+Bkgd Textures:	buyin_btxt
+Bkgd Animation Textures (mode select cursor):	buyin_atxt
+Common:	
+
+;--------------------------------------------------------------
+Lost MK2 Bridge:
+Overlay Code:	lost_ovl
+Bkgd Textures:	lost_btxt
+Bkgd Animation Textures (little fighter, burning fighter):	lost_atxt
+Common:	
+
+;--------------------------------------------------------------
+Hidden Portal:
+Overlay Code:	hport_ovl
+Bkgd Textures:	hport_btxt
+Bkgd Animation Textures (portal zap):	hport_atxt
+Common:	
+
+;--------------------------------------------------------------
+Deadpool:
+Overlay Code:	dead_ovl
+Bkgd Textures:	dead_btxt
+Bkgd Animation Textures (splash, floating skull):	dead_atxt
+Common:	
+
+;--------------------------------------------------------------
+Battlefield:
+Overlay Code:	battle_ovl
+Bkgd Textures:	battle_btxt
+Bkgd Animation Textures:	
+Common:	
+
+;--------------------------------------------------------------
+SK Arena:
+Overlay Code:	arena_ovl
+Bkgd Textures:	arena_btxt
+Bkgd Animation Textures (crowd, SK Sitting and Standing):	arena_atxt
+Common:	
+
+;--------------------------------------------------------------
+Goros Lair & Armory & Tomb:
+Overlay Code:	armor_ovl
+Bkgd Textures:	armor_btxt
+Bkgd Animation Textures (medium & small birds, back spikes, fronts spikes, lava drips):	armor_atxt
+Common:	rocks_atxt
+
+;--------------------------------------------------------------
+Living Forest:
+Overlay Code:	tree_ovl
+Bkgd Textures:	tree_btxt
+Bkgd Animation Textures (tree faces):	tree_atxt
+Common:	
+
+;--------------------------------------------------------------
+SK Tower:
+Overlay Code:	sktower_ovl
+Bkgd Textures:	sktower_btxt
+Bkgd Animation Textures (moving clouds):	sktower_atxt
+Common:	monk_atxt
+
+;--------------------------------------------------------------
+Outworld Portal (Floating Monks):
+Overlay Code:	monks_ovl
+Bkgd Textures:	monks_btxt
+Bkgd Animation Textures (portal zap, portal floor):	monks_atxt
+Common:	monk_atxt
+
+;--------------------------------------------------------------
+Tournament:
+Overlay Code:	tourn_ovl
+Bkgd Textures:	tourn_btxt
+Bkgd Animation Textures:	
+Common:	mugs_atxt
+
+;--------------------------------------------------------------
+High Score Screen:
+Overlay Code:	_ovl
+Bkgd Textures:	_btxt
+Bkgd Animation Textures:	_atxt
+Common:	
+
+;--------------------------------------------------------------
+Select & Ladder Screens:
+Overlay Code:	sel_ovl
+Bkgd Textures:	sel_btxt
+Bkgd Animation Textures (cursor, brick, mountain base, txt types):	sel_atxt
+Common:	sdragon_atxt, mugs_atxt
+
+;--------------------------------------------------------------
+Verse Screen:
+Overlay Code:	vs_ovl
+Bkgd Textures:	vs_btxt
+Bkgd Animation Textures (Flaming VS, Batman Lights, Battle Digits):	vs_atxt
+Common:	name_portrait_atxt, mugs_atxt, sdragon_atxt, symbol_atxt 
+
+;--------------------------------------------------------------
+Fire Portal: (SEE LADDER SCREEN)
+Overlay Code:	_ovl
+Bkgd Textures:	_btxt
+Bkgd Animation Textures:	_atxt
+Common:	
+
+;--------------------------------------------------------------
+Gradient Screen:
+Overlay Code:	grad_ovl
+Bkgd Textures:	grad_btxt
+Bkgd Animation Textures:	
+Common:	symbol_atxt
+
+;--------------------------------------------------------------
+Title & Legal Screen:
+Overlay Code:	title_ovl
+Bkgd Textures:	title_btxt
+Bkgd Animation Textures:	title_atxt
+Common:	
+
+;--------------------------------------------------------------
+Options Screen:
+Overlay Code:  opt_ovl
+Bkgd Textures:	opt_btxt
+Bkgd Animation Textures (icons, text sprites):	opt_atxt
+Common:	
+
+;--------------------------------------------------------------
+Briefcase Symbols & SK Treasures Textures:
+Name:	symbol_atxt
+
+;--------------------------------------------------------------
+Fighter Mugshots Textures:
+Name:	mugs_atxt
+
+;--------------------------------------------------------------
+Spinning Dragon Coin Textures:
+Name:	sdragon_atxt
+
+;--------------------------------------------------------------
+Character Portraits for VS & BIO Textures:
+Name:	name_portrait_atxt
+
+;--------------------------------------------------------------
+Monk Textures (small monks, big monks w/animating torsos):
+Name:	mong_atxt
+
+;--------------------------------------------------------------
+Rock & Street Break Textures (All connecting levels):
+Name:	rock_atxt
+
+;--------------------------------------------------------------
+Trash Textures (Street, Bridge):
+Name:	trash_atxt
+
+;--------------------------------------------------------------
+Storm Textures (Street, City Top):
+Name:	storm_atxt
+
+;--------------------------------------------------------------
+Font Textures (Part of Code Space):
+Name:	font_atxt
+
+;--------------------------------------------------------------
+Control Panel (Part of Code Space):
+Notes:	power bars, clock digits, win symbol, combo text, fighter names, toasty image, danger
+Name:	control_atxt
+
+;--------------------------------------------------------------
+Explosions (Part of Code Space):
+Notes:	ground explode, small explode, smoke puffs
+Name:	explode_atxt
+
+;--------------------------------------------------------------
+Animality Animation:
+Name:	animal_atxt
+
+;--------------------------------------------------------------
+Fatality Animation:
+Name:	fatal_atxt
+
+;--------------------------------------------------------------
+Babality Animation:
+Name:	baby_atxt
+
+;--------------------------------------------------------------
+Friendship Animation:
+Name:	friend_atxt
+
+;--------------------------------------------------------------
+Fight Animation:
+Name:	fight_atxt
+
+;--------------------------------------------------------------
+Finish Hit Animation:
+Name:	finishhim_atxt
+
+;--------------------------------------------------------------
+Finish Her Animation:
+Name:	finishher_atxt
+
+;--------------------------------------------------------------
+Mercy Animation:
+Name:	mercy_atxt
+
+;--------------------------------------------------------------
+Blood and Guts (Part of Code Space):
+Notes:	face blood, decap blood, skinny blood, bigger blood, drip blood, pork, rib, arm, legs 
+Name:	blood_atxt
+
+;--------------------------------------------------------------
+Dream Team Faces:
+Name:	dteam_atxt
+
+
+
+
+
+					Directory Structures
+
+seg/gamecode
+	- game code files
+
+seg/bkgddata
+	sbst	-->		subway & street code and textures
+	city	-->		bank & city code and textures
+	soul	-->		soul chamber & balcony code and textures
+	bridge	-->		bridge code and textures
+	bell	-->		bell tower code and textures
+	temple	-->		temple code and textures
+	grave	-->		graveyard code and textures
+	pit		-->		pit code and textures
+	water	-->		water code and textures
+	cave	-->		hades & cave code and textures
+	desert	-->		deset code and textures
+	lost	-->		MK2 lost code and texture
+	hport	-->		hidden portal code and textures
+	dead	-->		deadpool code and textures
+	battle	-->		battlefield wasteland code and textures
+	arena	-->		SK arena code and textures
+	armory	-->		goros lair, armory, tomb code and textures
+	tree	-->		living forest code and textures
+	tower	-->		sk tower code and textures
+	monks	-->		outworld portal code and textures
+
+seg/attract
+	buyin	-->		buyin & mode select code and textures
+	tourn	-->		tournament code and textures
+	select	-->		select & ladder code and textures
+	vs		-->		vs code and textures
+		names....	-->	fighter portraits	code and textures
+	gradient-->		gradient code and textures
+	title	-->		title & legal code and textures
+	options	-->		options code and textures
+
+seg/common
+	symbols	-->		briefcase symbols textures
+	mugs	-->		fighter mugshots textures
+	dragon	-->		spinning dragon textures
+	rocks	-->		rocks and floor breaking textures
+	monk	-->		monk textures
+	trash	-->		trash, leafs textures
+	storm	-->		spinning storm textures
+	fonts	-->		fonts textures
+	control	-->		control panel textures
+	explode	-->		explosion textures
+	animal	-->		animality animation textures
+	fatal	-->		fatality animation textures
+	baby	-->		babality animation textures
+	friend	-->		friendship animation textures
+	fight	-->		fight animation textures
+	finhim	-->		finish him animation textures
+	finher	-->		finish her animation textures
+	mercy	-->		mercy animation textures
+	blood	-->		blood and guts animation textures
+	dteam	-->		dream team face textures
+
+seg/chardata
+	names....	-->	fighter data
+

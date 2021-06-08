@@ -1,0 +1,119 @@
+projectiles_anims:
+	.word a_noob
+	.word a_rain
+a_noob:
+	.word GHOSTFORM1
+	.word GHOSTFORM3
+	.word GHOSTFORM4
+	.word GHOSTFORM5
+	.word GHOSTLOOP1
+	.word GHOSTLOOP3
+	.word GHOSTLOOP5
+        .word GHOSTLOOP7
+        .word GHOSTCPLOOP1(use this instead of ghostcap1)
+	.word GHOSTCPLOOP2
+	.word GHOSTCPLOOP3
+	.word GHOSTCPLOOP4
+        .word GHOSTDISP1
+	.word GHOSTDISP2
+	.word GHOSTDISP3
+	.word 0
+a_rain:
+	.word RAPROFORM1
+	.word RAPROFORM3
+	.word RAPROFORM4
+	.word RAPROFORM6
+	.word RAPROFORM7
+	.word RAPROLOOP1
+	.word RAPROLOOP4
+	.word RAPROLOOP5
+	.word SBZAP11
+	.word SBZAP12
+	.word SBZAP13
+	.word SBZAP15
+	.word SBZAP16
+	.word 0
+GHOSTFORM1:
+	.word GHOSTFORM1_IMG
+	.half 31, 30, -45, -39
+GHOSTFORM3:
+	.word GHOSTFORM3_IMG
+	.half 28, 60, -45, -41
+GHOSTFORM4:
+	.word GHOSTFORM4_IMG
+	.half 31, 78, -43, -38
+GHOSTFORM5:
+	.word GHOSTFORM5_IMG
+	.half 29, 69, -62, -41
+GHOSTLOOP1:
+	.word GHOSTLOOP1_IMG
+	.half 31, 81, -63, -41
+GHOSTLOOP3:
+	.word GHOSTLOOP3_IMG
+	.half 31, 84, -60, -41
+GHOSTLOOP5:
+	.word GHOSTLOOP5_IMG
+	.half 31, 82, -62, -41
+GHOSTLOOP7:
+	.word GHOSTLOOP7_IMG
+	.half 31, 80, -65, -41
+GHOSTCPLOOP1:
+	.word GHOSTCPLOOP1_IMG
+	.half 31, 92, -59, -42
+GHOSTCPLOOP2:
+	.word GHOSTCPLOOP2_IMG
+	.half 33, 97, -55, -40
+GHOSTCPLOOP3:
+	.word GHOSTCPLOOP3_IMG
+	.half 35, 97, -54, -39
+GHOSTCPLOOP4:
+	.word GHOSTCPLOOP4_IMG
+	.half 36, 86, -59, -40
+GHOSTDISP1:
+	.word GHOSTDISP1_IMG
+	.half 32, 93, -58, -42
+GHOSTDISP2:
+	.word GHOSTDISP2_IMG
+	.half 31, 98, -55, -42
+GHOSTDISP3:
+	.word GHOSTDISP3_IMG
+	.half 24, 87, -58, -44
+RAPROFORM1:
+	.word RAPROFORM1_IMG
+	.half 37, 40, -35, -36
+RAPROFORM3:
+	.word RAPROFORM3_IMG
+	.half 28, 28, -40, -40
+RAPROFORM4:
+	.word RAPROFORM4_IMG
+	.half 23, 33, -49, -42
+RAPROFORM6:
+	.word RAPROFORM6_IMG
+	.half 28, 39, -77, -40
+RAPROFORM7:
+	.word RAPROFORM7_IMG
+	.half 31, 39, -91, -38
+RAPROLOOP1:
+	.word RAPROLOOP1_IMG
+	.half 34, 43, -105, -37
+RAPROLOOP4:
+	.word RAPROLOOP4_IMG
+	.half 35, 46, -105, -36
+RAPROLOOP5:
+	.word RAPROLOOP5_IMG
+	.half 34, 46, -105, -37
+SBZAP11:
+	.word SBZAP11_IMG
+	.half 102, 50, -121, -8
+SBZAP12:
+	.word SBZAP12_IMG
+	.half 139, 64, -117, 3
+SBZAP13:
+	.word SBZAP13_IMG
+	.half 138, 79, -113, 1
+SBZAP15:
+	.word SBZAP15_IMG
+	.half 28, 60, -106, -110
+SBZAP16:
+	.word SBZAP16_IMG
+	.half 29, 63, -104, -111

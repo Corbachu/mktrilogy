@@ -1,0 +1,768 @@
+esk_anitab1:
+sk_anitab2:
+	.word a_stance
+	.word a_walkf
+	.word a_walkb
+	.word a_turn
+	.word a_dummy
+	.word a_dummy
+	.word 0	/* a_dying */
+	.word a_shredded
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_sk_laugh
+	.word a_block
+	.word a_victory
+	.word a_punch
+	.word a_dummy
+	.word a_dummy
+	.word a_kick
+	.word a_dummy
+	.word a_dummy
+	.word a_air_charge
+	.word a_dummy
+	.word a_jump
+	.word a_sk_projectile
+	.word a_sk_talk
+	.word a_charge
+	.word a_hammer
+	.word a_dummy
+	.word a_hit
+	.word a_hit
+	.word a_knockdown
+	.word a_dummy
+	.word a_stumble
+	.word a_getup
+	.word a_dummy
+	.word a_throw
+	.word a_zap
+	.word a_dummy
+a_jump:
+	.word BGJUMP1
+	.word BGJUMP2
+	.word BGJUMP3
+	.word 0
+	.word BGJUMP2
+	.word BGJUMP1
+	.word 0
+a_grab_hit:
+a_sweep_kick:
+a_hop:
+a_throw:
+a_dummy:
+a_stance:
+	.word BGSTANCE1
+	.word BGSTANCE2
+	.word BGSTANCE3
+	.word BGSTANCE4
+	.word BGSTANCE5
+	.word BGSTANCE6
+	.word BGSTANCE7
+	.word ani_jump
+	.word a_stance
+a_walkf:
+	.word BGWALK1
+	.word BGWALK2
+	.word BGWALK3
+	.word BGWALK4
+	.word BGWALK5
+	.word BGWALK6
+	.word BGWALK7
+	.word BGWALK8
+	.word BGWALK9
+	.word ani_jump
+	.word a_walkf
+a_walkb:
+	.word BGWALK9
+	.word BGWALK8
+	.word BGWALK7
+	.word BGWALK6
+	.word BGWALK5
+	.word BGWALK4
+	.word BGWALK3
+	.word BGWALK2
+	.word BGWALK1
+	.word ani_jump
+	.word a_walkb
+a_turn:
+	.word BGTURN1
+	.word BGTURN2
+	.word ani_flip
+	.word BGTURN1
+	.word 0
+a_punch:
+	.word BGPUNCH2
+	.word BGPUNCH2
+	.word BGPUNCH3
+	.word BGPUNCH4
+	.word ani_nosleep
+	.word BGPUNCH5
+	.word 0
+	.word BGPUNCH4
+	.word BGPUNCH3
+	.word BGPUNCH2
+	.word 0
+a_victory:
+	.word BGLAFF1
+	.word 0
+a_sk_laugh:
+	.word BGLAFF1
+	.word BGLAFF2
+	.word BGLAFF3
+	.word BGLAFF4
+	.word BGLAFF3
+	.word BGLAFF2
+	.word ani_jump
+	.word a_sk_laugh
+a_kick:
+	.word BGKICK1
+	.word BGKICK2
+	.word BGKICK3
+	.word BGKICK4
+	.word BGKICK5
+	.word 0
+	.word BGKICK4
+	.word BGKICK3
+	.word BGKICK2
+	.word BGKICK1
+	.word 0
+a_charge:
+	.word BGCHARGE1
+	.word BGCHARGE2
+	.word BGCHARGE3
+	.word BGCHARGE4
+	.word 0
+	.word BGCHARGE3
+	.word BGCHARGE2
+	.word BGCHARGE1
+	.word 0
+a_block:
+	.word BGBLOCK1
+	.word BGBLOCK2
+	.word BGBLOCK3
+	.word 0
+	.word BGBLOCK2
+	.word BGBLOCK1
+	.word 0
+a_knockdown:
+	.word BGKNOCKDOWN1
+	.word BGKNOCKDOWN2
+	.word BGKNOCKDOWN3
+	.word BGKNOCKDOWN4
+	.word BGKNOCKDOWN5
+	.word BGKNOCKDOWN6
+	.word BGKNOCKDOWN7
+	.word 0
+	.word BGKNOCKDOWN8
+	.word BGKNOCKDOWN9
+	.word 0
+a_stumble:
+	.word BGSTUMBLE1
+	.word BGSTUMBLE2
+	.word BGSTUMBLE3
+	.word BGSTUMBLE4
+	.word BGSTUMBLE5
+	.word BGSTUMBLE6
+	.word BGSTUMBLE7
+	.word 0
+j_stumble:
+	.word BGSTUMBLE1
+	.word BGSTUMBLE2
+	.word BGSTUMBLE3
+	.word BGSTUMBLE4
+	.word BGSTUMBLE5
+	.word BGSTUMBLE6
+	.word BGSTUMBLE7
+	.word ani_jump
+	.word j_stumble
+a_shredded:
+	.word ani_adjustxy
+	.half 6
+	.half 6
+	.word BGSTUMBLE1
+	.word ani_adjustxy
+	.half -6
+	.half -6
+	.word BGSTUMBLE2
+	.word ani_adjustxy
+	.half 6
+	.half 6
+	.word BGSTUMBLE3
+	.word ani_adjustxy
+	.half -6
+	.half -6
+	.word BGSTUMBLE2
+	.word ani_jump
+	.word a_shredded
+a_hammer:
+	.word SHAHEADHAM2
+	.word SHAHEADHAM4
+	.word SHAHEADHAM5
+	.word SHAHEADHAM6
+	.word SHAHEADHAM7
+	.word SHAHEADHAM8
+	.word 0
+	.word SHAHEADHAM7
+	.word SHAHEADHAM6
+	.word SHAHEADHAM5
+	.word SHAHEADHAM4
+	.word SHAHEADHAM2
+	.word 0
+a_sk_talk:
+	.word BGTALK1
+j_sktu:
+	.word BGTALK2
+	.word BGTALK3
+	.word BGTALK4
+	.word BGTALK5
+	.word 0
+	.word BGTALK4
+	.word BGTALK3
+	.word ani_jump
+	.word j_sktu
+	.word 0
+	.word BGTALK4
+	.word BGTALK3
+	.word BGTALK2
+	.word BGTALK1
+	.word 0
+a_hit:
+	.word BGHIT2
+	.word BGHIT3
+	.word BGHIT2
+	.word BGHIT1
+	.word 0
+a_getup:
+	.word BGGETUP1
+	.word BGGETUP2
+	.word BGGETUP3
+	.word BGGETUP4
+	.word BGGETUP5
+	.word BGGETUP6
+	.word BGGETUP7
+	.word 0
+a_zap:
+	.word SHABLO2
+	.word SHABLO3
+	.word SHABLO4
+	.word SHABLO8
+/*
+	.word ani_sladd
+	.word KAHNGLOW
+*/	
+	.word 0
+	.word SHABLO4
+	.word SHABLO3
+	.word SHABLO2
+	.word 0
+a_sk_projectile:
+	.word SKPRO1
+	.word SKPRO2
+	.word SKPRO3
+	.word SKPRO4
+	.word SKPRO5
+	.word SKPRO6
+	.word SKPRO7
+	.word SKPRO8
+	.word SKPRO9
+	.word SKPRO10
+	.word SKPRO11
+	.word ani_jump
+	.word a_sk_projectile
+a_air_charge:
+	.word BGJUMPFLY1
+	.word BGJUMPFLY2
+	.word BGJUMPFLY3
+	.word 0
+	.word BGJUMP2
+	.word 0
+BGSTANCE1:
+	.word BGSTANCE1_SUB, 0
+BGSTANCE1_SUB:
+	.word 0x00000000+0xb70
+	.half 133, 54, 24, -9
+	.word   BGPAL1_P
+BGSTANCE2:
+	.word BGSTANCE2_SUB, 0
+BGSTANCE2_SUB:
+	.word 0x000009A8+0xb70
+	.half 133, 56, 26, -9
+BGSTANCE3:
+	.word BGSTANCE3_SUB, 0
+BGSTANCE3_SUB:
+	.word 0x0000133C+0xb70
+	.half 132, 57, 27, -10
+BGSTANCE4:
+	.word BGSTANCE4_SUB, 0
+BGSTANCE4_SUB:
+	.word 0x00001D00+0xb70
+	.half 133, 59, 27, -9
+BGSTANCE5:
+	.word BGSTANCE5_SUB, 0
+BGSTANCE5_SUB:
+	.word 0x000026D4+0xb70
+	.half 133, 58, 24, -9
+BGSTANCE6:
+	.word BGSTANCE6_SUB, 0
+BGSTANCE6_SUB:
+	.word 0x000030BC+0xb70
+	.half 133, 57, 22, -9
+BGSTANCE7:
+	.word BGSTANCE7_SUB, 0
+BGSTANCE7_SUB:
+	.word 0x00003ACC+0xb70
+	.half 133, 51, 22, -9
+BGWALK1:
+	.word BGWALK1_SUB, 0
+BGWALK1_SUB:
+	.word 0x00006D78+0xb70
+	.half 135, 53, 26, -7
+BGWALK2:
+	.word BGWALK2_SUB, 0
+BGWALK2_SUB:
+	.word 0x00007780+0xb70
+	.half 137, 55, 28, -5
+BGWALK3:
+	.word BGWALK3_SUB, 0
+BGWALK3_SUB:
+	.word 0x00008178+0xb70
+	.half 139, 53, 26, -4
+BGWALK4:
+	.word BGWALK4_SUB, 0
+BGWALK4_SUB:
+	.word 0x00008B44+0xb70
+	.half 139, 53, 26, -6
+BGWALK5:
+	.word BGWALK5_SUB, 0
+BGWALK5_SUB:
+	.word 0x00009488+0xb70
+	.half 139, 53, 26, -6
+BGWALK6:
+	.word BGWALK6_SUB, 0
+BGWALK6_SUB:
+	.word 0x00009D94+0xb70
+	.half 138, 53, 26, -7
+BGWALK7:
+	.word BGWALK7_SUB, 0
+BGWALK7_SUB:
+	.word 0x0000A67C+0xb70
+	.half 138, 53, 26, -7
+BGWALK8:
+	.word BGWALK8_SUB, 0
+BGWALK8_SUB:
+	.word 0x0000AFA0+0xb70
+	.half 137, 53, 26, -8
+BGWALK9:
+	.word BGWALK9_SUB, 0
+BGWALK9_SUB:
+	.word 0x0000B94C+0xb70
+	.half 137, 58, 26, -8
+BGTURN1:
+	.word BGTURN1_SUB, 0
+BGTURN1_SUB:
+	.word 0x0000C32C+0xb70
+	.half 128, 56, 26, -14
+BGTURN2:
+	.word BGTURN2_SUB, 0
+BGTURN2_SUB:
+	.word 0x0000CCC4+0xb70
+	.half 130, 52, 25, -13
+BGLAFF1:
+	.word BGLAFF1_SUB, 0
+BGLAFF1_SUB:
+	.word 0x00004444+0xb70
+	.half 136, 54, 26, -8
+BGLAFF2:
+	.word BGLAFF2_SUB, 0
+BGLAFF2_SUB:
+	.word 0x00004EAC+0xb70
+	.half 135, 54, 27, -9
+BGLAFF3:
+	.word BGLAFF3_SUB, 0
+BGLAFF3_SUB:
+	.word 0x00005910+0xb70
+	.half 132, 54, 26, -13
+BGLAFF4:
+	.word BGLAFF4_SUB, 0
+BGLAFF4_SUB:
+	.word 0x00006364+0xb70
+	.half 128, 54, 26, -17
+BGBLOCK1:
+	.word BGBLOCK1_SUB, 0
+BGBLOCK1_SUB:
+	.word 0x0000D678+0xb70
+	.half 128, 59, 22, -15
+BGBLOCK2:
+	.word BGBLOCK2_SUB, 0
+BGBLOCK2_SUB:
+	.word 0x0000DF04+0xb70
+	.half 128, 52, 22, -15
+BGBLOCK3:
+	.word BGBLOCK3_SUB, 0
+BGBLOCK3_SUB:
+	.word 0x0000E74C+0xb70
+	.half 128, 51, 22, -16
+BGPUNCH2:
+	.word BGPUNCH2_SUB, 0
+BGPUNCH2_SUB:
+	.word 0x0000EF98+0xb70
+	.half 131, 58, 24, -13
+BGPUNCH3:
+	.word BGPUNCH3_SUB, 0
+BGPUNCH3_SUB:
+	.word 0x0000F878+0xb70
+	.half 131, 60, 28, -12
+BGPUNCH4:
+	.word BGPUNCH4_SUB, 0
+BGPUNCH4_SUB:
+	.word 0x00010068+0xb70
+	.half 129, 98, 30, -14
+BGPUNCH5:
+	.word BGPUNCH5_SUB, 0
+BGPUNCH5_SUB:
+	.word 0x0001097C+0xb70
+	.half 124, 78, 30, -21
+BGKICK1:
+	.word BGKICK1_SUB, 0
+BGKICK1_SUB:
+	.word 0x00011268+0xb70
+	.half 132, 57, 22, -10
+BGKICK2:
+	.word BGKICK2_SUB, 0
+BGKICK2_SUB:
+	.word 0x00011AC4+0xb70
+	.half 132, 45, 7, -10
+BGKICK3:
+	.word BGKICK3_SUB, 0
+BGKICK3_SUB:
+	.word 0x000121E4+0xb70
+	.half 132, 54, 2, -10
+BGKICK4:
+	.word BGKICK4_SUB, 0
+BGKICK4_SUB:
+	.word 0x0001294C+0xb70
+	.half 132, 65, 1, -11
+BGKICK5:
+	.word BGKICK5_SUB, 0
+BGKICK5_SUB:
+	.word 0x00013154+0xb70
+	.half 126, 96, 10, -17
+BGJUMPFLY1:
+	.word BGJUMPFLY1_SUB, 0
+BGJUMPFLY1_SUB:
+	.word 0x000139B4+0xb70
+	.half 122, 62, 30, -22
+BGJUMPFLY2:
+	.word BGJUMPFLY2_SUB, 0
+BGJUMPFLY2_SUB:
+	.word 0x000141B8+0xb70
+	.half 132, 64, 28, -12
+BGJUMPFLY3:
+	.word BGJUMPFLY3_SUB, 0
+BGJUMPFLY3_SUB:
+	.word 0x00014940+0xb70
+	.half 132, 74, 23, -11
+BGJUMP2:
+	.word BGJUMP2_SUB, 0
+BGJUMP2_SUB:
+	.word 0x00015B84+0xb70
+	.half 140, 60, 24, -2
+BGJUMP1:
+	.word BGJUMP1_SUB, 0
+BGJUMP1_SUB:
+	.word 0x000152C0+0xb70
+	.half 114, 58, 22, -28
+BGJUMP3:
+	.word BGJUMP3_SUB, 0
+BGJUMP3_SUB:
+	.word 0x00016598+0xb70
+	.half 125, 60, 23, 3
+SKPRO1:
+	.word SKPRO1_SUB, 0
+SKPRO1_SUB:
+	.word 0x00016EC8+0xb70
+	.half 49, 53, -46, -32
+	.word   KANPRO_P
+SKPRO2:
+	.word SKPRO2_SUB, 0
+SKPRO2_SUB:
+	.word 0x000171E8+0xb70
+	.half 46, 54, -45, -34
+SKPRO3:
+	.word SKPRO3_SUB, 0
+SKPRO3_SUB:
+	.word 0x0001748C+0xb70
+	.half 41, 46, -50, -36
+SKPRO4:
+	.word SKPRO4_SUB, 0
+SKPRO4_SUB:
+	.word 0x000176F4+0xb70
+	.half 50, 55, -45, -31
+SKPRO5:
+	.word SKPRO5_SUB, 0
+SKPRO5_SUB:
+	.word 0x00017A24+0xb70
+	.half 39, 42, -51, -38
+SKPRO6:
+	.word SKPRO6_SUB, 0
+SKPRO6_SUB:
+	.word 0x00017C94+0xb70
+	.half 43, 42, -52, -37
+SKPRO7:
+	.word SKPRO7_SUB, 0
+SKPRO7_SUB:
+	.word 0x00017E78+0xb70
+	.half 48, 50, -48, -34
+SKPRO8:
+	.word SKPRO8_SUB, 0
+SKPRO8_SUB:
+	.word 0x000181A4+0xb70
+	.half 47, 46, -49, -33
+SKPRO9:
+	.word SKPRO9_SUB, 0
+SKPRO9_SUB:
+	.word 0x0001840C+0xb70
+	.half 41, 46, -49, -37
+SKPRO10:
+	.word SKPRO10_SUB, 0
+SKPRO10_SUB:
+	.word 0x00018660+0xb70
+	.half 50, 51, -45, -33
+SKPRO11:
+	.word SKPRO11_SUB, 0
+SKPRO11_SUB:
+	.word 0x00018948+0xb70
+	.half 41, 41, -50, -37
+BGTALK1:
+	.word BGTALK1_SUB, 0
+BGTALK1_SUB:
+	.word 0x00018B8C+0xb70
+	.half 133, 59, 20, -9
+BGTALK2:
+	.word BGTALK2_SUB, 0
+BGTALK2_SUB:
+	.word 0x000194DC+0xb70
+	.half 132, 62, 20, -10
+BGTALK3:
+	.word BGTALK3_SUB, 0
+BGTALK3_SUB:
+	.word 0x00019E48+0xb70
+	.half 131, 75, 20, -11
+BGTALK4:
+	.word BGTALK4_SUB, 0
+BGTALK4_SUB:
+	.word 0x0001A7CC+0xb70
+	.half 131, 81, 20, -11
+BGTALK5:
+	.word BGTALK5_SUB, 0
+BGTALK5_SUB:
+	.word 0x0001B178+0xb70
+	.half 132, 83, 20, -10
+BGCHARGE1:
+	.word BGCHARGE1_SUB, 0
+BGCHARGE1_SUB:
+	.word 0x0001BB20+0xb70
+	.half 129, 60, 16, -12
+BGCHARGE2:
+	.word BGCHARGE2_SUB, 0
+BGCHARGE2_SUB:
+	.word 0x0001C4EC+0xb70
+	.half 128, 63, 16, -13
+BGCHARGE3:
+	.word BGCHARGE3_SUB, 0
+BGCHARGE3_SUB:
+	.word 0x0001CEDC+0xb70
+	.half 117, 78, 23, -24
+BGCHARGE4:
+	.word BGCHARGE4_SUB, 0
+BGCHARGE4_SUB:
+	.word 0x0001D8AC+0xb70
+	.half 116, 101, 41, -25
+SHAHEADHAM2:
+	.word SHAHEADHAM2_SUB, 0
+SHAHEADHAM2_SUB:
+	.word 0x0001E294+0xb70
+	.half 133, 78, 44, -12
+SHAHEADHAM4:
+	.word SHAHEADHAM4_SUB, 0
+SHAHEADHAM4_SUB:
+	.word 0x0001ECBC+0xb70
+	.half 123, 86, 51, -21
+SHAHEADHAM5:
+	.word SHAHEADHAM5_SUB, 0
+SHAHEADHAM5_SUB:
+	.word 0x0001F66C+0xb70
+	.half 131, 70, 36, -13
+SHAHEADHAM6:
+	.word SHAHEADHAM6_SUB, 0
+SHAHEADHAM6_SUB:
+	.word 0x0001FF48+0xb70
+	.half 151, 74, 30, 6
+SHAHEADHAM7:
+	.word SHAHEADHAM7_SUB, 0
+SHAHEADHAM7_SUB:
+	.word 0x000208C0+0xb70
+	.half 156, 74, 20, 11
+SHAHEADHAM8:
+	.word SHAHEADHAM8_SUB, 0
+SHAHEADHAM8_SUB:
+	.word 0x0002130C+0xb70
+	.half 117, 130, 22, -26
+BGHIT2:
+	.word BGHIT2_SUB, 0
+BGHIT2_SUB:
+	.word 0x00022564+0xb70
+	.half 130, 50, 22, -13
+BGHIT3:
+	.word BGHIT3_SUB, 0
+BGHIT3_SUB:
+	.word 0x00022D04+0xb70
+	.half 129, 50, 22, -13
+BGHIT1:
+	.word BGHIT1_SUB, 0
+BGHIT1_SUB:
+	.word 0x00021D30+0xb70
+	.half 130, 50, 21, -13
+BGKNOCKDOWN1:
+	.word BGKNOCKDOWN1_SUB, 0
+BGKNOCKDOWN1_SUB:
+	.word 0x000234A4+0xb70
+	.half 126, 57, 29, -17
+BGKNOCKDOWN2:
+	.word BGKNOCKDOWN2_SUB, 0
+BGKNOCKDOWN2_SUB:
+	.word 0x00023D58+0xb70
+	.half 132, 84, 29, -11
+BGKNOCKDOWN3:
+	.word BGKNOCKDOWN3_SUB, 0
+BGKNOCKDOWN3_SUB:
+	.word 0x00024664+0xb70
+	.half 110, 105, 38, -24
+BGKNOCKDOWN4:
+	.word BGKNOCKDOWN4_SUB, 0
+BGKNOCKDOWN4_SUB:
+	.word 0x00024F04+0xb70
+	.half 68, 103, 46, -33
+BGKNOCKDOWN5:
+	.word BGKNOCKDOWN5_SUB, 0
+BGKNOCKDOWN5_SUB:
+	.word 0x0002560C+0xb70
+	.half 63, 92, 42, -53
+BGKNOCKDOWN6:
+	.word BGKNOCKDOWN6_SUB, 0
+BGKNOCKDOWN6_SUB:
+	.word 0x00025C64+0xb70
+	.half 60, 91, 43, -67
+BGKNOCKDOWN7:
+	.word BGKNOCKDOWN7_SUB, 0
+BGKNOCKDOWN7_SUB:
+	.word 0x00026298+0xb70
+	.half 53, 118, 59, -88
+BGKNOCKDOWN8:
+	.word BGKNOCKDOWN8_SUB, 0
+BGKNOCKDOWN8_SUB:
+	.word 0x000269B4+0xb70
+	.half 45, 119, 58, -98
+BGKNOCKDOWN9:
+	.word BGKNOCKDOWN9_SUB, 0
+BGKNOCKDOWN9_SUB:
+	.word 0x0002706C+0xb70
+	.half 41, 124, 63, -109
+BGSTUMBLE1:
+	.word BGSTUMBLE1_SUB, 0
+BGSTUMBLE1_SUB:
+	.word 0x0002773C+0xb70
+	.half 128, 57, 30, -14
+BGSTUMBLE2:
+	.word BGSTUMBLE2_SUB, 0
+BGSTUMBLE2_SUB:
+	.word 0x00027FF8+0xb70
+	.half 120, 69, 31, -24
+BGSTUMBLE3:
+	.word BGSTUMBLE3_SUB, 0
+BGSTUMBLE3_SUB:
+	.word 0x0002883C+0xb70
+	.half 126, 55, 22, -18
+BGSTUMBLE4:
+	.word BGSTUMBLE4_SUB, 0
+BGSTUMBLE4_SUB:
+	.word 0x00028F58+0xb70
+	.half 124, 43, 17, -19
+BGSTUMBLE5:
+	.word BGSTUMBLE5_SUB, 0
+BGSTUMBLE5_SUB:
+	.word 0x0002961C+0xb70
+	.half 120, 40, 10, -24
+BGSTUMBLE6:
+	.word BGSTUMBLE6_SUB, 0
+BGSTUMBLE6_SUB:
+	.word 0x00029D04+0xb70
+	.half 123, 46, 16, -21
+BGSTUMBLE7:
+	.word BGSTUMBLE7_SUB, 0
+BGSTUMBLE7_SUB:
+	.word 0x0002A424+0xb70
+	.half 131, 54, 22, -13
+BGGETUP1:
+	.word BGGETUP1_SUB, 0
+BGGETUP1_SUB:
+	.word 0x0002AD28+0xb70
+	.half 66, 110, 43, -84
+BGGETUP2:
+	.word BGGETUP2_SUB, 0
+BGGETUP2_SUB:
+	.word 0x0002B578+0xb70
+	.half 73, 97, 32, -75
+BGGETUP3:
+	.word BGGETUP3_SUB, 0
+BGGETUP3_SUB:
+	.word 0x0002BE18+0xb70
+	.half 85, 87, 27, -61
+BGGETUP4:
+	.word BGGETUP4_SUB, 0
+BGGETUP4_SUB:
+	.word 0x0002C6C8+0xb70
+	.half 88, 81, 26, -59
+BGGETUP5:
+	.word BGGETUP5_SUB, 0
+BGGETUP5_SUB:
+	.word 0x0002CF94+0xb70
+	.half 97, 74, 20, -50
+BGGETUP6:
+	.word BGGETUP6_SUB, 0
+BGGETUP6_SUB:
+	.word 0x0002D8B0+0xb70
+	.half 115, 60, 17, -31
+BGGETUP7:
+	.word BGGETUP7_SUB, 0
+BGGETUP7_SUB:
+	.word 0x0002E074+0xb70
+	.half 132, 56, 21, -14
+SHABLO2:
+	.word SHABLO2_SUB, 0
+SHABLO2_SUB:
+	.word 0x0002E90C+0xb70
+	.half 126, 76, 45, -18
+SHABLO3:
+	.word SHABLO3_SUB, 0
+SHABLO3_SUB:
+	.word 0x0002F278+0xb70
+	.half 127, 76, 40, -17
+SHABLO4:
+	.word SHABLO4_SUB, 0
+SHABLO4_SUB:
+	.word 0x0002FB3C+0xb70
+	.half 123, 72, 32, -20
+SHABLO8:
+	.word SHABLO8_SUB, 0
+SHABLO8_SUB:
+	.word 0x0003037C+0xb70
+	.half 111, 70, 21, -32
+KAHNGLOW:
+	.word KAHNGLOW_SUB, 0
+KAHNGLOW_SUB:
+	.word 0x00030B70+0xb70
+	.half 32, 23, -25, -32
+	.word SKGLOW_P
+

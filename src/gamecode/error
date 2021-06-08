@@ -1,0 +1,3138 @@
+--- mkamode.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkamode.c
+--- mkani.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkani.c
+--- mkamode.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkani.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+--- mkamode.o ---
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkani.o ---
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+--- mkamode.o ---
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkani.o ---
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+--- mkamode.o ---
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkani.o ---
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+--- mkamode.o ---
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+--- mkani.o ---
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+--- mkamode.o ---
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+--- mkani.o ---
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+--- mkamode.o ---
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+--- mkani.o ---
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+--- mkamode.o ---
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+--- mkani.o ---
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+--- mkamode.o ---
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+--- mkani.o ---
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+--- mkamode.o ---
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+--- mkani.o ---
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+--- mkamode.o ---
+*** Error code 1
+--- mkani.o ---
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+--- mkanimal.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkanimal.c
+--- mkani.o ---
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkbio.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkbio.c
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+*** Error code 1
+--- mkanimal.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkanimal.c: 36: Cannot open file psxspu.h for #include
+--- mkbkgd.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkbkgd.c
+--- mkanimal.o ---
+*** Error code 1
+--- mkbkgd.o ---
+cfe: Warning 568: No new-line character at the end of the file mkbkgd.c
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkbkgd.c: 32: Cannot open file psxspu.h for #include
+--- mkblood.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkblood.c
+cfe: Warning 568: No new-line character at the end of the file mkblood.c
+--- mkbkgd.o ---
+*** Error code 1
+--- mkblood.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+--- mkbonus.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkbonus.c
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkbonus.c: 29: Cannot open file psxspu.h for #include
+--- mkblood.o ---
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkboss.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkboss.c
+--- mkbonus.o ---
+*** Error code 1
+--- mkbug.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkbug.c
+cfe: Warning 568: No new-line character at the end of the file mkbug.c
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+--- mkboss.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+--- mkbug.o ---
+*** Error code 1
+--- mkboss.o ---
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+--- mkbuyin.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkbuyin.c
+--- mkboss.o ---
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkcanned.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkcanned.c
+--- mkbuyin.o ---
+cfe: Error: mkbuyin.c: 29: Cannot open file psxcd.h for #include
+*** Error code 1
+--- mkcanned.o ---
+cfe: Warning 568: No new-line character at the end of the file mkcanned.c
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+--- mkcombo.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkcombo.c
+cfe: Warning 568: No new-line character at the end of the file mkcombo.c
+--- mkcanned.o ---
+*** Error code 1
+--- mkcombo.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+--- mkdiag.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkdiag.c
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+--- mkcombo.o ---
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkdiag.o ---
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+--- mkdrone.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkdrone.c
+--- mkdiag.o ---
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkend.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkend.c
+--- mkdrone.o ---
+cfe: Warning 568: No new-line character at the end of the file mkdrone.c
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+--- mkend.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkend.c: 47: Cannot open file wessapi.h for #include
+--- mkdrone.o ---
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+--- mkend.o ---
+*** Error code 1
+--- mkdrone.o ---
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+--- mkfade.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkfade.c
+--- mkdrone.o ---
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkfatal.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkfatal.c
+--- mkfade.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkfatal.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkfatal.c: 37: Cannot open file psxspu.h for #include
+--- mkfile.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkfile.c
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkfile.c: 21: Cannot open file psxcdabs.h for #include
+*** Error code 1
+--- mkfatal.o ---
+*** Error code 1
+--- mkfriend.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkfriend.c
+--- mkfx.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkfx.c
+--- mkfriend.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkfriend.c: 32: Cannot open file psxspu.h for #include
+*** Error code 1
+--- mkfx.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+--- mkglobal.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkglobal.c
+--- mkfx.o ---
+*** Error code 1
+--- mkglobal.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Warning 568: No new-line character at the end of the file ./mkmode.h
+--- mkguys.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkguys.c
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkguys.c: 30: Cannot open file psxsnd.h for #include
+--- mkglobal.o ---
+*** Error code 1
+--- mkhstd.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkhstd.c
+--- mkguys.o ---
+*** Error code 1
+--- mkhstd.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+--- mkinit.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkinit.c
+--- mkhstd.o ---
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkjoy.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkjoy.c
+--- mkinit.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkinit.c: 38: Cannot open file psxsnd.h for #include
+cfe: Error: mkinit.c: 39: Cannot open file wessapi.h for #include
+--- mkjoy.o ---
+cfe: Warning 568: No new-line character at the end of the file mkjoy.c
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+*** Error code 1
+--- mkinit.o ---
+*** Error code 1
+--- mkladder.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkladder.c
+--- mkmain.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkmain.c
+--- mkladder.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+--- mkmain.o ---
+cfe: Error: mkmain.c: 16: Cannot open file psxcd.h for #include
+cfe: Warning 568: No new-line character at the end of the file ./mkmode.h
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkmain.c: 52: Cannot open file psxspu.h for #include
+cfe: Error: mkmain.c: 53: Cannot open file psxsnd.h for #include
+--- mkladder.o ---
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+--- mkmain.o ---
+*** Error code 1
+--- mkladder.o ---
+*** Error code 1
+--- mkmark.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkmark.c
+--- mkmode.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkmode.c
+cfe: Warning 568: No new-line character at the end of the file mkmode.c
+cfe: Warning 568: No new-line character at the end of the file ./mkmode.h
+--- mkmark.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+--- mkmode.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+--- mkmark.o ---
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkmark.o ---
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mkmark.o ---
+*** Error code 1
+--- mkmode.o ---
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+--- mkobj.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkobj.c
+--- mkmode.o ---
+*** Error code 1
+--- mkopt.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkopt.c
+--- mkobj.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkopt.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkopt.c: 31: Cannot open file psxcd.h for #include
+--- mkos.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkos.c
+--- mkopt.o ---
+*** Error code 1
+--- mkpal.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkpal.c
+--- mkos.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkpal.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+--- mkpong.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkpong.c
+--- mkpal.o ---
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkprop.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkprop.c
+--- mkpong.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+--- mkprop.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+--- mkpong.o ---
+*** Error code 1
+--- mkprop.o ---
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+--- mkr1.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkr1.c
+--- mkprop.o ---
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkreact.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkreact.c
+--- mkr1.o ---
+cfe: Warning 568: No new-line character at the end of the file mkr1.c
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+--- mkreact.o ---
+cfe: Error: mkreact.c: 35: Cannot open file psxspu.h for #include
+--- mkr1.o ---
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+--- mkreact.o ---
+*** Error code 1
+--- mkr1.o ---
+*** Error code 1
+--- mkrepell.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkrepell.c
+--- mkscore.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkscore.c
+--- mkrepell.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkscore.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+--- mksel.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mksel.c
+--- mkscore.o ---
+*** Error code 1
+--- mkslam.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkslam.c
+--- mksel.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mksel.c: 31: Cannot open file psxcd.h for #include
+cfe: Error: mksel.c: 32: Cannot open file wessapi.h for #include
+--- mkslam.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+--- mksel.o ---
+*** Error code 1
+--- mkslam.o ---
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+--- mksound.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mksound.c
+--- mkslam.o ---
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- mkstat.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkstat.c
+--- mksound.o ---
+cfe: Error: mksound.c: 21: Cannot open file psxcd.h for #include
+cfe: Error: mksound.c: 22: Cannot open file psxsnd.h for #include
+*** Error code 1
+--- mkstat.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkstat.c: 38: Cannot open file psxspu.h for #include
+--- mktext.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mktext.c
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+--- mkstat.o ---
+*** Error code 1
+--- mkutil.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkutil.c
+--- mktext.o ---
+*** Error code 1
+--- mkutil.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkutil.c: 30: Cannot open file psxsnd.h for #include
+--- mkvs.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkvs.c
+--- mkutil.o ---
+*** Error code 1
+--- mkzap.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c mkzap.c
+--- mkvs.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: mkvs.c: 30: Cannot open file psxspu.h for #include
+--- mkzap.o ---
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+cfe: Error: ./mkbkgd.h, line 292: Syntax Error
+ inline void a4_to_world_coord(short pa0,short pa1);
+ --------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 293: Syntax Error
+ void dumb_animator(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+--- mkvs.o ---
+*** Error code 1
+--- mkzap.o ---
+ inline void stop_scrolling(void);
+ ^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 294: Syntax Error
+ inline void stop_scrolling(void);
+ --------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 295: Syntax Error
+ void scroll_a9(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 296: Syntax Error
+ void scroll_to_x_a9(void);
+ -------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 297: Syntax Error
+ void scroll_center(void);
+ ------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 298: Syntax Error
+ void scorp_tele_scroll(void);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 299: Syntax Error
+ void keep_centered_on_a8(void);
+ ------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 300: Syntax Error
+ void kcen_right(void);
+ ---------------------^
+The token read was unexpected.
+--- moves.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c moves.c
+--- mkzap.o ---
+cfe: Error: ./mkbkgd.h, line 301: Syntax Error
+ void kcen_left(void);
+ --------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 302: Syntax Error
+ void scroller(void);
+ -------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 303: Syntax Error
+ void handle_y_scrolling(void);
+ -----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 304: Syntax Error
+ void scroll_choose(WORD neg_flag);
+ ---------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 305: Syntax Error
+ void ss_10000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 306: Syntax Error
+ void ss_20000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 307: Syntax Error
+ void ss_28000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 308: Syntax Error
+ void ss_30000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 309: Syntax Error
+ void ss_40000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 310: Syntax Error
+ void ss_60000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 311: Syntax Error
+ void ss_70000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 312: Syntax Error
+ void ss_a0000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 313: Syntax Error
+ void ss_80000(WORD neg_flag);
+ ----------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 314: Syntax Error
+ void create_dumb_animators_w(DTBL_INIT *tbl,void *heap);
+ -------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 315: Syntax Error
+ void create_dumb_animators(DTBL_INITA *tbl,void *heap);
+ ------------------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 317: Syntax Error
+ void pit_scroll_proc(void);
+ --------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 318: Syntax Error
+ void bridge_list_scroll(OBJECT **pa0,long pa1);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Error: ./mkbkgd.h, line 319: Syntax Error
+ void bridge_list_fixed(OBJECT **pa0,short pa5);
+ ----------------------------------------------^
+The token read was unexpected.
+cfe: Fatal: Too many errors... goodbye.
+There is a limit of 30 errors before aborting.
+*** Error code 1
+--- heaparea.o ---
+	/usr/bin/cc -xansi     -O0 -I. -fullwarn -wlint,-f -woff 813,819,826,827,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm  -nostdinc -I/usr/include -g0  -MDupdate Makedepend -woff 515,608,658,799 -c heaparea.c
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------^
+The token read was unexpected.
+cfe: Error: ./u64main.h, line 211: Syntax Error
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -------------------------------------------------------------^
+The token read was unexpected.
+cfe: Warning 625: ./u64main.h, line 211: Empty declaration
+ extern BYTE player_heap[(510000*2) ] __attribute__ ((aligned(4)));
+ -----------------------------------------------------------------^
+Empty declarations are invalid in standard C.
+*** Error code 1
+--- moves.o ---
+cfe: Error: ./mkfile.h: 16: Cannot open file psxcd.h for #include
+cfe: Error: moves.c: 40: Cannot open file psxsnd.h for #include
+--- context.o ---
+	/usr/bin/as         -nostdinc -I/usr/include -g0  -MDupdate Makedepend -o context.o context.s
+--- moves.o ---
+*** Error code 1
+--- context.o ---
+as0: Error: context.s, line 1:Expected cpp-generated line number
+*** Error code 1
+`defaultrule' not remade because of errors.

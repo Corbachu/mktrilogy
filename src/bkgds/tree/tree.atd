@@ -1,0 +1,45 @@
+tree_anims:
+	.word a_treeroar
+a_treeroar:
+	.word TREEANI1
+	.word TREEANI2
+	.word TREEANI3
+	.word TREEANI4
+	.word TREEANI5
+	.word TREEANI6
+	.word TREEANI7
+	.word TREEANI6
+	.word TREEANI7
+	.word TREEANI6
+	.word TREEANI7
+	.word TREEANI6
+	.word TREEANI7
+	.word TREEANI6
+	.word TREEANI7
+	.word TREEANI5
+	.word TREEANI4
+	.word TREEANI3
+	.word TREEANI2
+	.word TREEANI1
+	.word 0
+TREEANI1:
+	.word TREEANI1_IMG
+	.half 65, 72, 0, 0
+TREEANI2:
+	.word TREEANI2_IMG
+	.half 64, 72, 0, 0
+TREEANI3:
+	.word TREEANI3_IMG
+	.half 65, 72, 0, 0
+TREEANI4:
+	.word TREEANI4_IMG
+	.half 64, 72, 0, 0
+TREEANI5:
+	.word TREEANI5_IMG
+	.half 65, 72, 0, 0
+TREEANI6:
+	.word TREEANI6_IMG
+	.half 65, 72, 0, 0
+TREEANI7:
+	.word TREEANI7_IMG
+	.half 64, 72, 0, 0

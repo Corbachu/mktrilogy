@@ -1,0 +1,120 @@
+kentart_anims:
+	.word a_expld
+	.word a_ship
+	.word a_enemy
+a_expld:
+	.word expld1
+	.word expld2
+	.word expld3
+	.word expld4
+	.word expld5
+	.word expld6
+	.word expld7
+	.word expld8
+	.word 0
+a_ship:
+	.word ship1
+	.word ship2
+	.word ship3
+	.word ship4
+	.word 0
+a_enemy:
+	.word enemy1
+	.word enemy2
+	.word enemy3
+	.word enemy4
+	.word enemy5
+	.word enemy6
+	.word enemy7
+	.word enemy8
+	.word enemy9
+	.word enemy10
+	.word 0
+expld1:
+	.word expld1_IMG
+        .half 12, 11, 0, 0
+	.word	expldp3
+expld2:
+	.word expld2_IMG
+        .half 16, 21, 0, 0
+	.word	expldp3
+expld3:
+	.word expld3_IMG
+        .half 16, 21, 0, 0
+	.word	expldp3
+expld4:
+	.word expld4_IMG
+        .half 16, 21, 0, 0
+	.word	expldp3
+expld5:
+	.word expld5_IMG
+        .half 16, 20, 0, 0
+	.word	expldp3
+expld6:
+	.word expld6_IMG
+        .half 10, 10, 0, 0
+	.word	expldp3
+expld7:
+	.word expld7_IMG
+        .half 11, 11, 0, 0
+	.word	expldp3
+expld8:
+	.word expld8_IMG
+        .half 11, 11, 0, 0
+	.word	expldp3
+ship1:
+	.word ship1_IMG
+        .half 14, 21, 0, 0
+	.word	shipp1
+ship2:
+	.word ship2_IMG
+        .half 14, 21, 0, 0
+	.word	shipp1
+ship3:
+	.word ship3_IMG
+        .half 15, 15, 0, 0
+	.word	shipp1
+ship4:
+	.word ship4_IMG
+        .half 15, 15, 0, 0
+	.word	shipp1
+enemy1:
+	.word enemy1_IMG
+        .half 11, 11, 0, 0
+	.word	enemyp
+enemy2:
+	.word enemy2_IMG
+        .half 11, 11, 0, 0
+	.word	enemyp
+enemy3:
+	.word enemy3_IMG
+        .half 11, 11, 0, 0
+	.word	enemyp
+enemy4:
+	.word enemy4_IMG
+        .half 8, 11, 0, 0
+	.word	enemyp
+enemy5:
+	.word enemy5_IMG
+        .half 11, 11, 0, 0
+	.word	enemyp
+enemy6:
+	.word enemy6_IMG
+        .half 11, 8, 0, 0
+	.word	enemyp
+enemy7:
+	.word enemy7_IMG
+        .half 11, 11, 0, 0
+	.word	enemyp
+enemy8:
+	.word enemy8_IMG
+        .half 11, 11, 0, 0
+	.word	enemyp
+enemy9:
+	.word enemy9_IMG
+        .half 11, 11, 0, 0
+	.word	enemyp
+enemy10:
+	.word enemy10_IMG
+        .half 11, 8, 0, 0
+	.word	enemyp

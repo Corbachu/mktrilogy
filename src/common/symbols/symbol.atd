@@ -1,0 +1,42 @@
+a_symbol_table:
+	.word I_DRAGON
+	.word I_MK
+	.word I_YINYANG
+	.word I_THREE
+	.word I_QUESTION
+	.word I_LIGHTNING
+	.word I_GORO
+	.word I_RAIDEN
+	.word I_SHOKAHN
+	.word I_SKULL
+	.word I_QUESTION
+I_DRAGON:
+	.word I_DRAGON_IMG
+	.half 14, 17, 0, 0
+I_MK:
+	.word I_MK_IMG
+	.half 14, 17, 0, 0
+I_YINYANG:
+	.word I_YINYANG_IMG
+	.half 14, 17, 0, 0
+I_THREE:
+	.word I_THREE_IMG
+	.half 14, 17, 0, 0
+I_QUESTION:
+	.word I_QUESTION_IMG
+	.half 14, 17, 0, 0
+I_LIGHTNING:
+	.word I_LIGHTNING_IMG
+	.half 14, 17, 0, 0
+I_GORO:
+	.word I_GORO_IMG
+	.half 14, 17, 0, 0
+I_RAIDEN:
+	.word I_RAIDEN_IMG
+	.half 14, 17, 0, 0
+I_SHOKAHN:
+	.word I_SHOKAHN_IMG
+	.half 14, 17, 0, 0
+I_SKULL:
+	.word I_SKULL_IMG
+	.half 14, 17, 0, 0

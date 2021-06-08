@@ -1,0 +1,2424 @@
+#include <regdef.h>
+
+	.option	pic0
+
+	.set noreorder
+	.data
+
+/*
+;******************************************************************************
+; File: artverse.s
+;
+; By: David Schwartz
+;
+; Date: Jan 1995
+;
+; (C) Williams Entertainment
+;
+; Mortal Kombat III Verse Art Textures
+;******************************************************************************
+*/
+
+/*	KANO 	*/
+	.align 2
+	.globl kano_pieces
+kano_pieces:
+	.half	0x5e,0x4e,0x12d,0x4e
+	.word VBGKANO1A,0
+	.word VBGKANO1B,0
+	.word VBGKANO1C,0
+	.word VBGKANO1D,0
+	.word VBGKANO2A,BGKNBLU_P
+	.word VBGKANO2B,BGKNBLU_P
+	.word VBGKANO2C,BGKNBLU_P
+	.word VBGKANO2D,BGKNBLU_P
+	.word VBGKANO2E,BGKNBLU_P
+	.word VBGKANO3A,0
+	.word VBGKANO3B,0
+	.word VBGKANO3C,0
+	.word VBGKANO3D,0
+	.word VBGKANO4A,0
+	.word	0
+	
+VBGKANO1A:
+	.word BGKANO1A
+	.word 0
+VBGKANO1B:
+	.word BGKANO1B
+	.word 0
+VBGKANO1C:
+	.word BGKANO1C
+	.word 0
+VBGKANO1D:
+	.word BGKANO1D
+	.word 0
+VBGKANO2A:
+	.word BGKANO2A
+	.word 0
+VBGKANO2B:
+	.word BGKANO2B
+	.word 0
+VBGKANO2C:
+	.word BGKANO2C
+	.word 0
+VBGKANO2D:
+	.word BGKANO2D
+	.word 0
+VBGKANO2E:
+	.word BGKANO2E
+	.word 0
+VBGKANO3A:
+	.word BGKANO3A
+	.word 0
+VBGKANO3B:
+	.word BGKANO3B
+	.word 0
+VBGKANO3C:
+	.word BGKANO3C
+	.word 0
+VBGKANO3D:
+	.word BGKANO3D
+	.word 0
+VBGKANO4A:
+	.word BGKANO4A
+	.word 0
+BGKANO1A:
+	.word BGKANO1A_IMG
+	.half 67, 45, 66, -35
+	.word	BGKANO1_P
+BGKANO1B:
+	.word BGKANO1B_IMG
+	.half 82, 43, -2, -7
+	.word	BGKANO1_P
+BGKANO1C:
+	.word BGKANO1C_IMG
+	.half 60, 12, -45, -9
+	.word	BGKANO1_P
+BGKANO1D:
+	.word BGKANO1D_IMG
+	.half 65, 38, -31, -93
+	.word	BGKANO1_P
+BGKANO2A:
+	.word BGKANO2A_IMG
+	.half 44, 28, 70, -55
+	.word	BGKANO2_P
+BGKANO2B:
+	.word BGKANO2B_IMG
+	.half 67, 22, 24, -30
+	.word	BGKANO2_P
+BGKANO2C:
+	.word BGKANO2C_IMG
+	.half 9, 2, -1, -79
+	.word	BGKANO2_P
+BGKANO2D:
+	.word BGKANO2D_IMG
+	.half 37, 16, 68, -137
+	.word	BGKANO2_P
+BGKANO2E:
+	.word BGKANO2E_IMG
+	.half 93, 78, 3, -81
+	.word	BGKANO2_P
+BGKANO3A:
+	.word BGKANO3A_IMG
+	.half 36, 25, 68, -59
+	.word	BGKANO3_P
+BGKANO3B:
+	.word BGKANO3B_IMG
+	.half 137, 77, 64, -37
+	.word	BGKANO3_P
+BGKANO3C:
+	.word BGKANO3C_IMG
+	.half 36, 28, -44, -114
+	.word	BGKANO3_P
+BGKANO3D:
+	.word BGKANO3D_IMG
+	.half 117, 46, -12, -23
+	.word	BGKANO3_P
+BGKANO4A:
+	.word BGKANO4A_IMG
+	.half 72, 63, 10, -39
+	.word	BGKANO3_P
+	
+	
+#include "kano.att"
+
+/* INDIAN */
+	.align 2
+	.globl ind_pieces
+ind_pieces:
+	.half	0x63,0x25+19+10,0x125,0x25+19+10
+	.word VINGRY1A,0
+	.word VINGRY1B,0
+	.word VINGRY1C,0
+	.word VINGRY1D,0
+	.word VINGRY1E,0
+	.word VINBLU1A,VINTAN_P
+	.word VINBLU1B,VINTAN_P
+	.word VINBLU1C,VINTAN_P
+	.word VINBLU1D,VINTAN_P
+	.word VINSKIN1A,0
+	.word VINSKIN1B,0
+	.word VINSKIN1C,0
+	.word VINSKIN1D,0
+	.word VINSKIN1E,0
+	.word VINSKIN1F,0
+	.word VINSKIN1G,0
+	.word	0
+	
+VINGRY1A:
+	.word INGRY1A
+	.word 0
+VINGRY1B:
+	.word INGRY1B
+	.word 0
+VINGRY1C:
+	.word INGRY1C
+	.word 0
+VINGRY1D:
+	.word INGRY1D
+	.word 0
+VINGRY1E:
+	.word INGRY1E
+	.word 0
+VINBLU1A:
+	.word INBLU1A
+	.word 0
+VINBLU1B:
+	.word INBLU1B
+	.word 0
+VINBLU1C:
+	.word INBLU1C
+	.word 0
+VINBLU1D:
+	.word INBLU1D
+	.word 0
+VINSKIN1A:
+	.word INSKIN1A
+	.word 0
+VINSKIN1B:
+	.word INSKIN1B
+	.word 0
+VINSKIN1C:
+	.word INSKIN1C
+	.word 0
+VINSKIN1D:
+	.word INSKIN1D
+	.word 0
+VINSKIN1E:
+	.word INSKIN1E
+	.word 0
+VINSKIN1F:
+	.word INSKIN1F
+	.word 0
+VINSKIN1G:
+	.word INSKIN1G
+	.word 0
+INGRY1A:
+	.word INGRY1A_IMG
+	.half 24, 21, -62, -121
+	.word	VINGRY_P
+INGRY1B:
+	.word INGRY1B_IMG
+	.half 81, 23, 72, -103
+	.word	VINGRY_P
+INGRY1C:
+	.word INGRY1C_IMG
+	.half 95, 41, 49, -48
+	.word	VINGRY_P
+INGRY1D:
+	.word INGRY1D_IMG
+	.half 105, 19, -25, -16
+	.word	VINGRY_P
+INGRY1E:
+	.word INGRY1E_IMG
+	.half 159, 64, 38, -15
+	.word	VINGRY_P
+INBLU1A:
+	.word INBLU1A_IMG
+	.half 23, 21, 64, -76
+	.word	VINBLU_P
+INBLU1B:
+	.word INBLU1B_IMG
+	.half 68, 38, -2, -33
+	.word	VINBLU_P
+INBLU1C:
+	.word INBLU1C_IMG
+	.half 26, 22, -19, -120
+	.word	VINBLU_P
+INBLU1D:
+	.word INBLU1D_IMG
+	.half 13, 64, 56, -171
+	.word	VINBLU_P
+INSKIN1A:
+	.word INSKIN1A_IMG
+	.half 77, 34, 88, -69
+	.word	VINSKN_P
+INSKIN1B:
+	.word INSKIN1B_IMG
+	.half 116, 33, 58, -60
+	.word	VINSKN_P
+INSKIN1C:
+	.word INSKIN1C_IMG
+	.half 41, 28, -12, -42
+	.word	VINSKN_P
+INSKIN1D:
+	.word INSKIN1D_IMG
+	.half 31, 18, -67, -98
+	.word	VINSKN_P
+INSKIN1E:
+	.word INSKIN1E_IMG
+	.half 24, 14, -25, -99
+	.word	VINSKN_P
+INSKIN1F:
+	.word INSKIN1F_IMG
+	.half 48, 54, -19, -126
+	.word	VINSKN_P
+INSKIN1G:
+	.word INSKIN1G_IMG
+	.half 89, 44, 26, -69
+	.word	VINSKN_P
+
+
+#include "ind.att"
+
+/* JAX */
+	.align 2
+	.globl jax_pieces
+jax_pieces:
+	.half	0x63,0x20+35,0x125,0x20+35
+	.word VJXFLESH1A,0
+	.word VJXPURP1A,VJXGRN_P
+	.word VJXPURP1B,VJXGRN_P
+	.word VJXGRY1A,0
+	.word VJXGRY1B,0
+	.word VJXGRY1C,0
+	.word	0
+	
+VJXFLESH1A:
+	.word JXFLESH1A
+	.word 0
+VJXPURP1A:
+	.word JXPURP1A
+	.word 0
+VJXPURP1B:
+	.word JXPURP1B
+	.word 0
+VJXGRY1A:
+	.word JXGRY1A
+	.word 0
+VJXGRY1B:
+	.word JXGRY1B
+	.word 0
+VJXGRY1C:
+	.word JXGRY1C
+	.word 0
+JXFLESH1A:
+	.word JXFLESH1A_IMG
+	.half 158, 88, 44, -13
+	.word	VJXFLSH_P
+JXPURP1A:
+	.word JXPURP1A_IMG
+	.half 20, 28, 58, -168
+	.word	VJXFLSH_P
+JXPURP1B:
+	.word JXPURP1B_IMG
+	.half 10, 7, -16, -178
+	.word	VJXFLSH_P
+JXGRY1A:
+	.word JXGRY1A_IMG
+	.half 96, 77, 84, -50
+	.word	VJXGRY_P
+JXGRY1B:
+	.word JXGRY1B_IMG
+	.half 35, 72, 50, -153
+	.word	VJXGRY_P
+JXGRY1C:
+	.word JXGRY1C_IMG
+	.half 106, 34, -32, -77
+	.word	VJXGRY_P
+
+#include "jax.att"
+
+/* LAO */
+	.align 2
+	.globl lao_pieces
+lao_pieces:
+	.half	0x5c,0x35+15,0x128,0x35+15
+	.word VKLFLESH1A,0
+	.word VKLFLESH1B,0
+	.word VKLFLESH1C,0
+	.word VKLFLESH1D,0
+	.word VKLFLESH1E,0
+	.word VKLGREY1A,0
+	.word VKLGREY1B,0
+	.word VKLGREY1C,0
+	.word VKLGREY1D,0
+	.word VKLGREY1E,0
+	.word VKLGREY1F,0
+	.word VKLGREY1G,0
+	.word VKLPANTS1A,VKLBLU_P
+	.word VKLPANTS1B,VKLBLU_P
+	.word	0
+	
+VKLFLESH1A:
+	.word KLFLESH1A
+	.word 0
+VKLFLESH1B:
+	.word KLFLESH1B
+	.word 0
+VKLFLESH1C:
+	.word KLFLESH1C
+	.word 0
+VKLFLESH1D:
+	.word KLFLESH1D
+	.word 0
+VKLFLESH1E:
+	.word KLFLESH1E
+	.word 0
+VKLGREY1A:
+	.word KLGREY1A
+	.word 0
+VKLGREY1B:
+	.word KLGREY1B
+	.word 0
+VKLGREY1C:
+	.word KLGREY1C
+	.word 0
+VKLGREY1D:
+	.word KLGREY1D
+	.word 0
+VKLGREY1E:
+	.word KLGREY1E
+	.word 0
+VKLGREY1F:
+	.word KLGREY1F
+	.word 0
+VKLGREY1G:
+	.word KLGREY1G
+	.word 0
+VKLPANTS1A:
+	.word KLPANTS1A
+	.word 0
+VKLPANTS1B:
+	.word KLPANTS1B
+	.word 0
+KLFLESH1A:
+	.word KLFLESH1A_IMG
+	.half 46, 66, 84, -26
+	.word	VKLSKIN_P
+KLFLESH1B:
+	.word KLFLESH1B_IMG
+	.half 87, 10, 42, -72
+	.word	VKLSKIN_P
+KLFLESH1C:
+	.word KLFLESH1C_IMG
+	.half 134, 51, 31, -25
+	.word	VKLSKIN_P
+KLFLESH1D:
+	.word KLFLESH1D_IMG
+	.half 116, 39, -19, -25
+	.word	VKLSKIN_P
+KLFLESH1E:
+	.word KLFLESH1E_IMG
+	.half 70, 33, -58, -72
+	.word	VKLSKIN_P
+KLGREY1A:
+	.word KLGREY1A_IMG
+	.half 20, 26, 70, -27
+	.word	VKLGRAY_P
+KLGREY1B:
+	.word KLGREY1B_IMG
+	.half 137, 47, 42, -6
+	.word	VKLGRAY_P
+KLGREY1C:
+	.word KLGREY1C_IMG
+	.half 34, 22, -61, -94
+	.word	VKLGRAY_P
+KLGREY1D:
+	.word KLGREY1D_IMG
+	.half 31, 27, 0, -151
+	.word	VKLGRAY_P
+KLGREY1E:
+	.word KLGREY1E_IMG
+	.half 83, 59, -4, -1
+	.word	VKLGRAY_P
+KLGREY1F:
+	.word KLGREY1F_IMG
+	.half 28, 18, -4, -114
+	.word	VKLGRAY_P
+KLGREY1G:
+	.word KLGREY1G_IMG
+	.half 40, 46, 51, -143
+	.word	VKLGRAY_P
+KLPANTS1A:
+	.word KLPANTS1A_IMG
+	.half 18, 9, 37, -165
+	.word	VKLTAN_P
+KLPANTS1B:
+	.word KLPANTS1B_IMG
+	.half 25, 32, 6, -158
+	.word	VKLTAN_P
+
+#include "lao.att"
+
+/* FEMALE NINJAS */
+	.align 2
+	.globl kitana_pieces	
+kitana_pieces:	
+	.half	0x5d,0x3d+30,0x135,0x3d+30
+	.word VKITGRAY1A,0
+	.word VKITGRAY1B,0
+	.word VKITGRAY1C,0
+	.word VKITFLESH1A,0
+	.word VKITFLESH1B,0
+	.word VKITFLESH1C,0
+	.word VKITFLESH1D,0
+	.word VKITFLESH1E,0
+	.word VKITFLESH1F,0
+	.word VKITFLESH1G,0
+	.word VKITBLUE1A,KTBLUE1_P
+	.word VKITBLUE1B,KTBLUE1_P
+	.word VKITBLUE1C,KTBLUE1_P
+	.word VKITBLUE1D,KTBLUE1_P
+	.word VKITBLUE1E,KTBLUE1_P
+	.word	0
+	
+	.globl jade_pieces
+jade_pieces:
+	.half	0x5d,0x3d+30,0x135,0x3d+30
+	.word VJADFGRAY1A,0
+	.word VJADFGRAY1B,0
+	.word VJADFGRAY1C,0
+	.word VJADFGRAY1D,0
+	.word VJADFGRAY1E,0
+	.word VJADFGRAY1F,0
+	.word VJADFGRAY1G,0
+	.word VJADFLESH1A,0
+	.word VJADFLESH1B,0
+	.word VJADFLESH1C,0
+	.word VJADFLESH1D,0
+	.word VJADFLESH1E,0
+	.word VJADFLESH1F,0
+	.word VJADFLESH1G,0
+	.word VJADFLESH1H,0
+	.word VJADFLESH1I,0
+	.word VJADGREEN1A,JDGRN1_P
+	.word VJADGREEN1B,JDGRN1_P
+	.word VJADGREEN1C,JDGRN1_P
+	.word VJADGREEN1D,JDGRN1_P
+	.word VJADGREEN1E,JDGRN1_P
+	.word VJADGREEN1F,JDGRN1_P
+	.word 0
+	
+	.globl mileena_pieces
+mileena_pieces:
+	.half	0x5d,0x3d+29,0x135,0x3d+29
+	.word VJADFGRAY1A,0
+	.word VJADFGRAY1B,0
+	.word VJADFGRAY1C,0
+	.word VJADFGRAY1D,0
+	.word VJADFGRAY1E,0
+	.word VJADFGRAY1F,0
+	.word VJADFGRAY1G,0
+	.word VMILFLESH1A,0
+	.word VJADFLESH1B,0
+	.word VJADFLESH1C,0
+	.word VJADFLESH1D,0
+	.word VJADFLESH1E,0
+	.word VJADFLESH1F,0
+	.word VJADFLESH1G,0
+	.word VJADFLESH1H,0
+	.word VJADFLESH1I,0
+	.word VMILGREEN1A,MLPURP2_P
+	.word VJADGREEN1B,MLPURP2_P
+	.word VJADGREEN1C,MLPURP2_P
+	.word VJADGREEN1D,MLPURP2_P
+	.word VJADGREEN1E,MLPURP2_P
+	.word VJADGREEN1F,MLPURP2_P
+	.word 0
+	
+	
+VKITGRAY1A:
+	.word KITGRAY1A
+	.word 0
+VKITGRAY1B:
+	.word KITGRAY1B
+	.word 0
+VKITGRAY1C:
+	.word KITGRAY1C
+	.word 0
+VKITFLESH1A:
+	.word KITFLESH1A
+	.word 0
+VKITFLESH1B:
+	.word KITFLESH1B
+	.word 0
+VKITFLESH1C:
+	.word KITFLESH1C
+	.word 0
+VKITFLESH1D:
+	.word KITFLESH1D
+	.word 0
+VKITFLESH1E:
+	.word KITFLESH1E
+	.word 0
+VKITFLESH1F:
+	.word KITFLESH1F
+	.word 0
+VKITFLESH1G:
+	.word KITFLESH1G
+	.word 0
+VKITBLUE1A:
+	.word KITBLUE1A
+	.word 0
+VKITBLUE1B:
+	.word KITBLUE1B
+	.word 0
+VKITBLUE1C:
+	.word KITBLUE1C
+	.word 0
+VKITBLUE1D:
+	.word KITBLUE1D
+	.word 0
+VKITBLUE1E:
+	.word KITBLUE1E
+	.word 0
+VJADFGRAY1A:
+	.word JADFGRAY1A
+	.word 0
+VJADFGRAY1B:
+	.word JADFGRAY1B
+	.word 0
+VJADFGRAY1C:
+	.word JADFGRAY1C
+	.word 0
+VJADFGRAY1D:
+	.word JADFGRAY1D
+	.word 0
+VJADFGRAY1E:
+	.word JADFGRAY1E
+	.word 0
+VJADFGRAY1F:
+	.word JADFGRAY1F
+	.word 0
+VJADFGRAY1G:
+	.word JADFGRAY1G
+	.word 0
+VJADFLESH1A:
+	.word JADFLESH1A
+	.word 0
+VMILFLESH1A:
+	.word MILFLESH1A
+	.word 0
+VJADFLESH1B:
+	.word JADFLESH1B
+	.word 0
+VJADFLESH1C:
+	.word JADFLESH1C
+	.word 0
+VJADFLESH1D:
+	.word JADFLESH1D
+	.word 0
+VJADFLESH1E:
+	.word JADFLESH1E
+	.word 0
+VJADFLESH1F:
+	.word JADFLESH1F
+	.word 0
+VJADFLESH1G:
+	.word JADFLESH1G
+	.word 0
+VJADFLESH1H:
+	.word JADFLESH1H
+	.word 0
+VJADFLESH1I:
+	.word JADFLESH1I
+	.word 0
+VJADGREEN1A:
+	.word JADGREEN1A
+	.word 0
+VMILGREEN1A:
+	.word MILGREEN1A
+	.word 0
+VJADGREEN1B:
+	.word JADGREEN1B
+	.word 0
+VJADGREEN1C:
+	.word JADGREEN1C
+	.word 0
+VJADGREEN1D:
+	.word JADGREEN1D
+	.word 0
+VJADGREEN1E:
+	.word JADGREEN1E
+	.word 0
+VJADGREEN1F:
+	.word JADGREEN1F
+	.word 0
+KITGRAY1A:
+	.word KITGRAY1A_IMG
+	.half 141, 86, 92, -22
+	.word   KTGRAY_P
+KITGRAY1B:
+	.word KITGRAY1B_IMG
+	.half 139, 15, 6, -24
+	.word   KTGRAY_P
+KITGRAY1C:
+	.word KITGRAY1C_IMG
+	.half 164, 42, -9, 0
+	.word   KTGRAY_P
+KITFLESH1A:
+	.word KITFLESH1A_IMG
+	.half 20, 18, 55, -25
+	.word   KTFLESH_P
+KITFLESH1B:
+	.word KITFLESH1B_IMG
+	.half 23, 22, 37, -22
+	.word   KTFLESH_P
+KITFLESH1C:
+	.word KITFLESH1C_IMG
+	.half 22, 26, 12, -33
+	.word   KTFLESH_P
+KITFLESH1D:
+	.word KITFLESH1D_IMG
+	.half 26, 26, 36, -137
+	.word   KTFLESH_P
+KITFLESH1E:
+	.word KITFLESH1E_IMG
+	.half 71, 27, -25, -65
+	.word   KTFLESH_P
+KITFLESH1F:
+	.word KITFLESH1F_IMG
+	.half 50, 34, -18, -9
+	.word   KTFLESH_P
+KITFLESH1G:
+	.word KITFLESH1G_IMG
+	.half 89, 26, -3, -74
+	.word   KTFLESH_P
+KITBLUE1A:
+	.word KITBLUE1A_IMG
+	.half 9, 39, 28, -19
+	.word   KTBLUE1_P
+KITBLUE1B:
+	.word KITBLUE1B_IMG
+	.half 51, 33, 22, -93
+	.word   KTBLUE1_P
+KITBLUE1C:
+	.word KITBLUE1C_IMG
+	.half 8, 7, -8, -53
+	.word   KTBLUE1_P
+KITBLUE1D:
+	.word KITBLUE1D_IMG
+	.half 47, 11, -26, -61
+	.word   KTBLUE1_P
+KITBLUE1E:
+	.word KITBLUE1E_IMG
+	.half 24, 33, -18, -35
+	.word   KTBLUE1_P
+JADFGRAY1A:
+	.word JADFGRAY1A_IMG
+	.half 34, 61, 60, -19
+	.word   JDGRAY_P
+JADFGRAY1B:
+	.word JADFGRAY1B_IMG
+	.half 54, 27, 36, -110
+	.word   JDGRAY_P
+JADFGRAY1C:
+	.word JADFGRAY1C_IMG
+	.half 94, 22, 9, -71
+	.word   JDGRAY_P
+JADFGRAY1D:
+	.word JADFGRAY1D_IMG
+	.half 17, 18, -32, -105
+	.word   JDGRAY_P
+JADFGRAY1E:
+	.word JADFGRAY1E_IMG
+	.half 54, 35, -49, -97
+	.word   JDGRAY_P
+JADFGRAY1F:
+	.word JADFGRAY1F_IMG
+	.half 3, 15, -28, -28
+	.word   JDGRAY_P
+JADFGRAY1G:
+	.word JADFGRAY1G_IMG
+	.half 146, 41, -2, 0
+	.word   JDGRAY_P
+JADFLESH1A:
+	.word JADFLESH1A_IMG
+	.half 22, 15, 68, -22
+	.word   JDFLESH_P
+MILFLESH1A:
+	.word MILFLESH1A_IMG
+	.half 22, 15, 68, -22
+	.word   MDGRAY_P
+JADFLESH1B:
+	.word JADFLESH1B_IMG
+	.half 31, 22, 53, -19
+	.word   JDFLESH_P
+JADFLESH1C:
+	.word JADFLESH1C_IMG
+	.half 40, 32, 25, -35
+	.word   JDFLESH_P
+JADFLESH1D:
+	.word JADFLESH1D_IMG
+	.half 32, 30, 47, -132
+	.word   JDFLESH_P
+JADFLESH1E:
+	.word JADFLESH1E_IMG
+	.half 20, 11, -2, -145
+	.word   JDFLESH_P
+JADFLESH1F:
+	.word JADFLESH1F_IMG
+	.half 45, 34, -9, -10
+	.word   JDFLESH_P
+JADFLESH1G:
+	.word JADFLESH1G_IMG
+	.half 44, 19, -27, -65
+	.word   JDFLESH_P
+JADFLESH1H:
+	.word JADFLESH1H_IMG
+	.half 32, 26, -35, -119
+	.word   JDFLESH_P
+JADFLESH1I:
+	.word JADFLESH1I_IMG
+	.half 64, 23, 1, -69
+	.word   JDFLESH_P
+JADGREEN1A:
+	.word JADGREEN1A_IMG
+	.half 7, 39, 45, -17
+	.word   JDGRN1_P
+MILGREEN1A:
+	.word MILGREEN1A_IMG
+	.half 7, 39, 45, -17
+	.word   MLPURP1_P
+JADGREEN1B:
+	.word JADGREEN1B_IMG
+	.half 26, 32, -12, -30
+	.word   JDGRN1_P
+JADGREEN1C:
+	.word JADGREEN1C_IMG
+	.half 15, 7, -59, -122
+	.word   JDGRN1_P
+JADGREEN1D:
+	.word JADGREEN1D_IMG
+	.half 65, 25, -10, -70
+	.word   JDGRN1_P
+JADGREEN1E:
+	.word JADGREEN1E_IMG
+	.half 11, 9, -1, -132
+	.word   JDGRN1_P
+JADGREEN1F:
+	.word JADGREEN1F_IMG
+	.half 85, 39, 28, -54
+	.word   JDGRN1_P
+
+#include "fninja.att"
+
+/* LIA */
+	.align 2
+	.globl lia_pieces
+lia_pieces:
+	.half	0x5d,0x35+26,0x12a,0x35+26
+	.word VLIAFLESH1A,0
+	.word VLIAFLESH1B,0
+	.word VLIAFLESH1C,0
+	.word VLIAFLESH1D,0
+	.word VLIAFLESH1E,0
+	.word VLIAGREY1A,0
+	.word VLIAGREY1B,0
+	.word VLIAGREY1C,0
+	.word VLIAPURP1A,VLIABLU_P
+	.word VLIAPURP1B,VLIABLU_P
+	.word 0
+VLIAFLESH1A:
+	.word LIAFLESH1A
+	.word 0
+VLIAFLESH1B:
+	.word LIAFLESH1B
+	.word 0
+VLIAFLESH1C:
+	.word LIAFLESH1C
+	.word 0
+VLIAFLESH1D:
+	.word LIAFLESH1D
+	.word 0
+VLIAFLESH1E:
+	.word LIAFLESH1E
+	.word 0
+VLIAGREY1A:
+	.word LIAGREY1A
+	.word 0
+VLIAGREY1B:
+	.word LIAGREY1B
+	.word 0
+VLIAGREY1C:
+	.word LIAGREY1C
+	.word 0
+VLIAPURP1A:
+	.word LIAPURP1A
+	.word 0
+VLIAPURP1B:
+	.word LIAPURP1B
+	.word 0
+LIAFLESH1A:
+	.word LIAFLESH1A_IMG
+	.half 53, 33, 67, -79
+	.word VLIASKN_P
+LIAFLESH1B:
+	.word LIAFLESH1B_IMG
+	.half 72, 25, 34, -61
+	.word VLIASKN_P
+LIAFLESH1C:
+	.word LIAFLESH1C_IMG
+	.half 26, 26, -60, -55
+	.word VLIASKN_P
+LIAFLESH1D:
+	.word LIAFLESH1D_IMG
+	.half 51, 35, -27, -81
+	.word VLIASKN_P
+LIAFLESH1E:
+	.word LIAFLESH1E_IMG
+	.half 115, 35, 10, -36
+	.word VLIASKN_P
+LIAGREY1A:
+	.word LIAGREY1A_IMG
+	.half 166, 66, 59, -8
+	.word VLIAGRY_P
+LIAGREY1B:
+	.word LIAGREY1B_IMG
+	.half 39, 25, -49, -75
+	.word VLIAGRY_P
+LIAGREY1C:
+	.word LIAGREY1C_IMG
+	.half 166, 26, -5, -8
+	.word VLIAGRY_P
+LIAPURP1A:
+	.word LIAPURP1A_IMG
+	.half 42, 15, 38, -95
+	.word VLIAPRP_P
+LIAPURP1B:
+	.word LIAPURP1B_IMG
+	.half 77, 33, 7, -97
+	.word VLIAPRP_P
+
+#include "lia.att"
+
+/* LIU KANG */
+	.align 2
+	.globl lk_pieces
+lk_pieces:	
+	.half	0x60,0x35+31,0x12c,0x35+31
+	.word VLKFLESH1A,0
+	.word VLKFLESH1B,0
+	.word VLKFLESH1C,0
+	.word VLKFLESH1D,0
+	.word VLKFLESH1E,0
+	.word VLKGREY1A,0
+	.word VLKGREY1B,0
+	.word VLKGREY1C,0
+	.word VLKGREY1D,0
+	.word VLKGREY1E,0
+	.word VLKRED1A,VLKYEL_P
+	.word VLKRED1B,VLKYEL_P
+	.word VLKRED1C,VLKYEL_P
+	.word 0
+	
+VLKFLESH1A:
+	.word LKFLESH1A
+	.word 0
+VLKFLESH1B:
+	.word LKFLESH1B
+	.word 0
+VLKFLESH1C:
+	.word LKFLESH1C
+	.word 0
+VLKFLESH1D:
+	.word LKFLESH1D
+	.word 0
+VLKFLESH1E:
+	.word LKFLESH1E
+	.word 0
+VLKGREY1A:
+	.word LKGREY1A
+	.word 0
+VLKGREY1B:
+	.word LKGREY1B
+	.word 0
+VLKGREY1C:
+	.word LKGREY1C
+	.word 0
+VLKGREY1D:
+	.word LKGREY1D
+	.word 0
+VLKGREY1E:
+	.word LKGREY1E
+	.word 0
+VLKRED1A:
+	.word LKRED1A
+	.word 0
+VLKRED1B:
+	.word LKRED1B
+	.word 0
+VLKRED1C:
+	.word LKRED1C
+	.word 0
+LKFLESH1A:
+	.word LKFLESH1A_IMG
+	.half 73, 28, 73, -66
+	.word	VLKSKIN_P
+LKFLESH1B:
+	.word LKFLESH1B_IMG
+	.half 98, 35, 45, -57
+	.word	VLKSKIN_P
+LKFLESH1C:
+	.word LKFLESH1C_IMG
+	.half 26, 15, -65, -79
+	.word	VLKSKIN_P
+LKFLESH1D:
+	.word LKFLESH1D_IMG
+	.half 78, 38, -28, -76
+	.word	VLKSKIN_P
+LKFLESH1E:
+	.word LKFLESH1E_IMG
+	.half 124, 38, 10, -28
+	.word	VLKSKIN_P
+LKGREY1A:
+	.word LKGREY1A_IMG
+	.half 80, 28, 18, 0
+	.word	VLKGRAY_P
+LKGREY1B:
+	.word LKGREY1B_IMG
+	.half 67, 18, -9, 0
+	.word	VLKGRAY_P
+LKGREY1C:
+	.word LKGREY1C_IMG
+	.half 36, 22, -54, -98
+	.word	VLKGRAY_P
+LKGREY1D:
+	.word LKGREY1D_IMG
+	.half 48, 51, 56, -121
+	.word	VLKGRAY_P
+LKGREY1E:
+	.word LKGREY1E_IMG
+	.half 18, 11, 5, -152
+	.word	VLKGRAY_P
+LKRED1A:
+	.word LKRED1A_IMG
+	.half 56, 53, 24, -19
+	.word	VLKRED_P
+LKRED1B:
+	.word LKRED1B_IMG
+	.half 27, 17, 58, -143
+	.word	VLKRED_P
+LKRED1C:
+	.word LKRED1C_IMG
+	.half 23, 51, 38, -147
+	.word	VLKRED_P
+
+#include "lk.att"
+
+/* MNINJA */
+	.align 2
+	.globl scorpion_pieces
+scorpion_pieces:
+	.half 0x5d,0x3d+25,0x135,0x3d+25
+	.word VSCORPGRAY1A,0
+	.word VSCORPGRAY1B,0
+	.word VSCORPGRAY1C,0
+	.word VSCORPGRAY1D,0
+	.word VSCORPGRAY1E,0
+	.word VSCORPGRAY1F,0
+	.word VSCORPGRAY1G,0
+	.word VSCORPGRAY1H,0
+	.word VSCORPFLESH1A,0
+	.word VSCORPFLESH1B,0
+	.word VSCORPFLESH1C,0
+	.word VSCORPFLESH1D,0
+	.word VSCORPFLESH1E,0
+	.word VSCORPYELO1A,SCYELO2_P
+	.word VSCORPYELO1B,SCYELO2_P
+	.word VSCORPYELO1C,SCYELO2_P
+	.word VSCORPYELO1D,SCYELO2_P
+	.word VSCORPYELO1E,SCYELO2_P
+	.word	0
+	
+	.globl oldsmoke_pieces
+oldsmoke_pieces
+	.half	0x5d,0x3d+25,0x135,0x3d+25
+	.word VSCORPGRAY1A,0
+	.word VSCORPGRAY1B,0
+	.word VSCORPGRAY1C,0
+	.word VSCORPGRAY1D,0
+	.word VSCORPGRAY1E,0
+	.word VSCORPGRAY1F,0
+	.word VSCORPGRAY1G,0
+	.word VSCORPGRAY1H,0
+	.word VSCORPFLESH1A,0
+	.word VSCORPFLESH1B,0
+	.word VSCORPFLESH1C,0
+	.word VSCORPFLESH1D,0
+	.word VSCORPFLESH1E,0
+	.word VOSMYELO1A,SCORPG_P
+	.word VSCORPYELO1B,SCORPG_P
+	.word VSCORPYELO1C,SCORPG_P
+	.word VSCORPYELO1D,SCORPG_P
+	.word VSCORPYELO1E,SCORPG_P
+	.word	0
+	
+	.globl noob_pieces
+noob_pieces
+	.half	0x5d,0x3d+25,0x135,0x3d+25
+	.word VSCORPGRAY1A,0
+	.word VSCORPGRAY1B,0
+	.word VSCORPGRAY1C,0
+	.word VSCORPGRAY1D,0
+	.word VSCORPGRAY1E,0
+	.word VSCORPGRAY1F,0
+	.word VSCORPGRAY1G,0
+	.word VSCORPGRAY1H,0
+	.word VSCORPFLESH1A,0
+	.word VSCORPFLESH1B,0
+	.word VSCORPFLESH1C,0
+	.word VSCORPFLESH1D,0
+	.word VSCORPFLESH1E,0
+	.word VNOOBYELO1A,noob_p
+	.word VSCORPYELO1B,noob_p
+	.word VSCORPYELO1C,noob_p
+	.word VSCORPYELO1D,noob_p
+	.word VSCORPYELO1E,noob_p
+	.word	0
+	
+	.globl ermac_pieces
+ermac_pieces
+	.half	0x5d,0x30+29,0x135,0x30+29
+	.word VREPGRAY1A,0
+	.word VREPGRAY1B,0
+	.word VREPGRAY1C,0
+	.word VREPGRAY1D,0
+	.word VREPFLESH1A,0
+	.word VREPFLESH1B,0
+	.word VREPFLESH1C,0
+	.word VREPFLESH1D,0
+	.word VERMGREEN1A,RPRED2_P
+	.word VREPGREEN1B,RPRED2_P
+	.word VREPGREEN1C,RPRED2_P
+	.word VREPGREEN1D,RPRED2_P
+	.word VREPGREEN1E,RPRED2_P
+	.word	0
+
+	.globl reptile_pieces
+reptile_pieces
+	.half	0x5d,0x30+29,0x135,0x30+29
+	.word VREPGRAY1A,0
+	.word VREPGRAY1B,0
+	.word VREPGRAY1C,0
+	.word VREPGRAY1D,0
+	.word VREPFLESH1A,0
+	.word VREPFLESH1B,0
+	.word VREPFLESH1C,0
+	.word VREPFLESH1D,0
+	.word VREPGREEN1A,RPGRN2_P
+	.word VREPGREEN1B,RPGRN2_P
+	.word VREPGREEN1C,RPGRN2_P
+	.word VREPGREEN1D,RPGRN2_P
+	.word VREPGREEN1E,RPGRN2_P
+	.word	0
+	
+	.globl oldsz_pieces
+oldsz_pieces
+	.half	0x5d,0x30+29,0x135,0x30+29
+	.word VREPGRAY1A,0
+	.word VREPGRAY1B,0
+	.word VREPGRAY1C,0
+	.word VREPGRAY1D,0
+	.word VREPFLESH1A,0
+	.word VREPFLESH1B,0
+	.word VREPFLESH1C,0
+	.word VREPFLESH1D,0
+	.word VOSZGREEN1A,SCBLUE2_P
+	.word VREPGREEN1B,SCBLUE2_P
+	.word VREPGREEN1C,SCBLUE2_P
+	.word VREPGREEN1D,SCBLUE2_P
+	.word VREPGREEN1E,SCBLUE2_P
+	.word	0
+	
+VSCORPGRAY1A:
+	.word SCORPGRAY1A
+	.word 0
+VSCORPGRAY1B:
+	.word SCORPGRAY1B
+	.word 0
+VSCORPGRAY1C:
+	.word SCORPGRAY1C
+	.word 0
+VSCORPGRAY1D:
+	.word SCORPGRAY1D
+	.word 0
+VSCORPGRAY1E:
+	.word SCORPGRAY1E
+	.word 0
+VSCORPGRAY1F:
+	.word SCORPGRAY1F
+	.word 0
+VSCORPGRAY1G:
+	.word SCORPGRAY1G
+	.word 0
+VSCORPGRAY1H:
+	.word SCORPGRAY1H
+	.word 0
+VSCORPFLESH1A:
+	.word SCORPFLESH1A
+	.word 0
+VSCORPFLESH1B:
+	.word SCORPFLESH1B
+	.word 0
+VSCORPFLESH1C:
+	.word SCORPFLESH1C
+	.word 0
+VSCORPFLESH1D:
+	.word SCORPFLESH1D
+	.word 0
+VSCORPFLESH1E:
+	.word SCORPFLESH1E
+	.word 0
+VSCORPYELO1A:
+	.word SCORPYELO1A
+	.word 0
+VOSMYELO1A:
+	.word OSMYELO1A
+	.word 0
+VNOOBYELO1A:
+	.word NOOBYELO1A
+	.word 0
+VSCORPYELO1B:
+	.word SCORPYELO1B
+	.word 0
+VSCORPYELO1C:
+	.word SCORPYELO1C
+	.word 0
+VSCORPYELO1D:
+	.word SCORPYELO1D
+	.word 0
+VSCORPYELO1E:
+	.word SCORPYELO1E
+	.word 0
+VREPGRAY1A:
+	.word REPGRAY1A
+	.word 0
+VREPGRAY1B:
+	.word REPGRAY1B
+	.word 0
+VREPGRAY1C:
+	.word REPGRAY1C
+	.word 0
+VREPGRAY1D:
+	.word REPGRAY1D
+	.word 0
+VREPFLESH1A:
+	.word REPFLESH1A
+	.word 0
+VREPFLESH1B:
+	.word REPFLESH1B
+	.word 0
+VREPFLESH1C:
+	.word REPFLESH1C
+	.word 0
+VREPFLESH1D:
+	.word REPFLESH1D
+	.word 0
+VREPGREEN1A:
+	.word REPGREEN1A
+	.word 0
+VERMGREEN1A:
+	.word ERMGREEN1A
+	.word 0
+VOSZGREEN1A:
+	.word OSZGREEN1A
+	.word 0
+VREPGREEN1B:
+	.word REPGREEN1B
+	.word 0
+VREPGREEN1C:
+	.word REPGREEN1C
+	.word 0
+VREPGREEN1D:
+	.word REPGREEN1D
+	.word 0
+VREPGREEN1E:
+	.word REPGREEN1E
+	.word 0
+SCORPGRAY1A:
+	.word SCORPGRAY1A_IMG
+	.half 44, 22, 65, -57
+	.word   SCGRAY_P
+SCORPGRAY1B:
+	.word SCORPGRAY1B_IMG
+	.half 48, 27, 46, -119
+	.word   SCGRAY_P
+SCORPGRAY1C:
+	.word SCORPGRAY1C_IMG
+	.half 67, 30, -58, -75
+	.word   SCGRAY_P
+SCORPGRAY1D:
+	.word SCORPGRAY1D_IMG
+	.half 24, 6, -52, -117
+	.word   SCGRAY_P
+SCORPGRAY1E:
+	.word SCORPGRAY1E_IMG
+	.half 94, 30, -37, 0
+	.word   SCGRAY_P
+SCORPGRAY1F:
+	.word SCORPGRAY1F_IMG
+	.half 123, 50, 30, -14
+	.word   SCGRAY_P
+SCORPGRAY1G:
+	.word SCORPGRAY1G_IMG
+	.half 128, 20, -20, 0
+	.word   SCGRAY_P
+SCORPGRAY1H:
+	.word SCORPGRAY1H_IMG
+	.half 30, 34, 2, -138
+	.word   SCGRAY_P
+SCORPFLESH1A:
+	.word SCORPFLESH1A_IMG
+	.half 50, 39, 64, -24
+	.word   SCFLESH_P
+SCORPFLESH1B:
+	.word SCORPFLESH1B_IMG
+	.half 24, 16, 37, -95
+	.word   SCFLESH_P
+SCORPFLESH1C:
+	.word SCORPFLESH1C_IMG
+	.half 18, 25, -30, -25
+	.word   SCFLESH_P
+SCORPFLESH1D:
+	.word SCORPFLESH1D_IMG
+	.half 26, 17, -71, -69
+	.word   SCFLESH_P
+SCORPFLESH1E:
+	.word SCORPFLESH1E_IMG
+	.half 60, 29, -37, -77
+	.word   SCFLESH_P
+SCORPYELO1A:
+	.word SCORPYELO1A_IMG
+	.half 51, 22, -65, -79
+	.word   SCYELO1_P
+OSMYELO1A:
+	.word SCORPYELO1A_IMG
+	.half 51, 22, -65, -79
+	.word   SCORPG_P
+NOOBYELO1A:
+	.word SCORPYELO1A_IMG
+	.half 51, 22, -65, -79
+	.word   noob_p
+SCORPYELO1B:
+	.word SCORPYELO1B_IMG
+	.half 20, 10, -55, -112
+	.word   SCYELO1_P
+SCORPYELO1C:
+	.word SCORPYELO1C_IMG
+	.half 51, 26, 63, -64
+	.word   SCYELO1_P
+SCORPYELO1D:
+	.word SCORPYELO1D_IMG
+	.half 127, 66, -4, -30
+	.word   SCYELO1_P
+SCORPYELO1E:
+	.word SCORPYELO1E_IMG
+	.half 162, 47, 38, -6
+	.word   SCYELO1_P
+REPGRAY1A:
+	.word REPGRAY1A_IMG
+	.half 37, 60, 74, 0
+	.word   RPGRAY_P
+REPGRAY1B:
+	.word REPGRAY1B_IMG
+	.half 116, 46, 40, -54
+	.word   RPGRAY_P
+REPGRAY1C:
+	.word REPGRAY1C_IMG
+	.half 68, 34, -54, -94
+	.word   RPGRAY_P
+REPGRAY1D:
+	.word REPGRAY1D_IMG
+	.half 147, 42, -5, -23
+	.word   RPGRAY_P
+REPFLESH1A:
+	.word REPFLESH1A_IMG
+	.half 75, 77, 74, -5
+	.word   RPFLESH_P
+REPFLESH1B:
+	.word REPFLESH1B_IMG
+	.half 18, 27, -20, -50
+	.word   RPFLESH_P
+REPFLESH1C:
+	.word REPFLESH1C_IMG
+	.half 71, 39, -38, -93
+	.word   RPFLESH_P
+REPFLESH1D:
+	.word REPFLESH1D_IMG
+	.half 26, 21, -77, -93
+	.word   RPFLESH_P
+REPGREEN1A:
+	.word REPGREEN1A_IMG
+	.half 36, 38, 68, 0
+	.word   RPGRN1_P
+ERMGREEN1A:
+	.word REPGREEN1A_IMG
+	.half 36, 38, 68, 0
+	.word   RPRED1_P
+OSZGREEN1A:
+	.word REPGREEN1A_IMG
+	.half 36, 38, 68, 0
+	.word	SCBLUE1_P
+REPGREEN1B:
+	.word REPGREEN1B_IMG
+	.half 22, 18, 30, 0
+	.word   RPGRN1_P
+REPGREEN1C:
+	.word REPGREEN1C_IMG
+	.half 142, 38, 40, -33
+	.word   RPGRN1_P
+REPGREEN1D:
+	.word REPGREEN1D_IMG
+	.half 43, 28, -57, -107
+	.word   RPGRN1_P
+REPGREEN1E:
+	.word REPGREEN1E_IMG
+	.half 128, 67, 2, -47
+	.word   RPGRN1_P
+
+#include "mninja.att"
+
+/* ROBO */
+	.align 2
+	.globl robo1_pieces
+robo1_pieces:
+	.half	0x55,0x35+0x1e,0x130,0x35+0x1e
+	.word VRB2GREY1A,0
+	.word VRB2GREY1B,0
+	.word VRB2GREY1C,0
+	.word VRB2GREY1D,0
+	.word VRB2GREY1E,0
+	.word VRB2GREY1F,0
+	.word VRB2RED1A,VRBDRED_P
+	.word VRB2RED1B,VRBDRED_P
+	.word VRB2RED1C,VRBDRED_P
+	.word VRB2RED1D,VRBDRED_P
+	.word VRB2RED1E,VRBDRED_P
+	.word VRB2RED1F,VRBDRED_P
+	.word VRB2RED1G,VRBDRED_P
+	.word 0
+
+	.globl robo2_pieces
+robo2_pieces:
+	.half	0x5c,0x35+0x1f,0x128,0x35+0x1f
+	.word VRB1GOLD1A,VRBDYEL_P
+	.word VRB1GOLD1B,VRBDYEL_P
+	.word VRB1GOLD1C,VRBDYEL_P
+	.word VRB1GOLD1D,VRBDYEL_P
+	.word VRB1GOLD1E,VRBDYEL_P
+	.word VRB1GREY1A,0
+	.word VRB1GREY1B,0
+	.word VRB1GREY1C,0
+	.word VRB1GREY1D,0
+	.word VRB1GREY1E,0
+	.word VRB1GREY1F,0
+	.word VRB1GREY1G,0
+	.word 0
+	
+	.globl smoke_pieces
+smoke_pieces:
+	.half	0x5c,0x35+0x1f,0x128,0x35+0x1f
+	.word VSM1GOLD1A,VSMOK2_P
+	.word VRB1GOLD1B,VSMOK2_P
+	.word VRB1GOLD1C,VSMOK2_P
+	.word VRB1GOLD1D,VSMOK2_P
+	.word VRB1GOLD1E,VSMOK2_P
+	.word VSM1GREY1A,0
+	.word VRB1GREY1B,0
+	.word VRB1GREY1C,0
+	.word VRB1GREY1D,0
+	.word VRB1GREY1E,0
+	.word VRB1GREY1F,0
+	.word VRB1GREY1G,0
+	.word 0
+	
+VRB1GOLD1A:
+	.word RB1GOLD1A
+	.word 0
+VSM1GOLD1A:
+	.word SM1GOLD1A
+	.word 0
+VRB1GOLD1B:
+	.word RB1GOLD1B
+	.word 0
+VRB1GOLD1C:
+	.word RB1GOLD1C
+	.word 0
+VRB1GOLD1D:
+	.word RB1GOLD1D
+	.word 0
+VRB1GOLD1E:
+	.word RB1GOLD1E
+	.word 0
+VRB1GREY1A:
+	.word RB1GREY1A
+	.word 0
+VSM1GREY1A:
+	.word SM1GREY1A
+	.word 0
+VRB1GREY1B:
+	.word RB1GREY1B
+	.word 0
+VRB1GREY1C:
+	.word RB1GREY1C
+	.word 0
+VRB1GREY1D:
+	.word RB1GREY1D
+	.word 0
+VRB1GREY1E:
+	.word RB1GREY1E
+	.word 0
+VRB1GREY1F:
+	.word RB1GREY1F
+	.word 0
+VRB1GREY1G:
+	.word RB1GREY1G
+	.word 0
+VRB2GREY1A:
+	.word RB2GREY1A
+	.word 0
+VRB2GREY1B:
+	.word RB2GREY1B
+	.word 0
+VRB2GREY1C:
+	.word RB2GREY1C
+	.word 0
+VRB2GREY1D:
+	.word RB2GREY1D
+	.word 0
+VRB2GREY1E:
+	.word RB2GREY1E
+	.word 0
+VRB2GREY1F:
+	.word RB2GREY1F
+	.word 0
+VRB2RED1A:
+	.word RB2RED1A
+	.word 0
+VRB2RED1B:
+	.word RB2RED1B
+	.word 0
+VRB2RED1C:
+	.word RB2RED1C
+	.word 0
+VRB2RED1D:
+	.word RB2RED1D
+	.word 0
+VRB2RED1E:
+	.word RB2RED1E
+	.word 0
+VRB2RED1F:
+	.word RB2RED1F
+	.word 0
+VRB2RED1G:
+	.word RB2RED1G
+	.word 0
+RB1GOLD1A:
+	.word RB1GOLD1A_IMG
+	.half 48, 29, 78, -25
+	.word   VRB1YEL_P
+SM1GOLD1A:
+	.word SM1GOLD1A_IMG
+	.half 48, 29, 78, -25
+	.word   VSMOK1_P
+RB1GOLD1B:
+	.word RB1GOLD1B_IMG
+	.half 33, 27, 50, -42
+	.word   VRB1YEL_P
+RB1GOLD1C:
+	.word RB1GOLD1C_IMG
+	.half 16, 62, 45, -153
+	.word   VRB1YEL_P
+RB1GOLD1D:
+	.word RB1GOLD1D_IMG
+	.half 111, 66, 38, -36
+	.word   VRB1YEL_P
+RB1GOLD1E:
+	.word RB1GOLD1E_IMG
+	.half 139, 46, -27, -23
+	.word   VRB1YEL_P
+RB1GREY1A:
+	.word RB1GREY1A_IMG
+	.half 43, 54, 56, -1
+	.word   VRB1GRY_P
+SM1GREY1A:
+	.word SM1GREY1A_IMG
+	.half 43, 54, 56, -1
+	.word   VRG3GRY_P
+RB1GREY1B:
+	.word RB1GREY1B_IMG
+	.half 27, 22, 66, -47
+	.word   VRB1GRY_P
+RB1GREY1C:
+	.word RB1GREY1C_IMG
+	.half 125, 54, 59, -44
+	.word   VRB1GRY_P
+RB1GREY1D:
+	.word RB1GREY1D_IMG
+	.half 27, 23, 5, -142
+	.word   VRB1GRY_P
+RB1GREY1E:
+	.word RB1GREY1E_IMG
+	.half 82, 54, -4, -1
+	.word   VRB1GRY_P
+RB1GREY1F:
+	.word RB1GREY1F_IMG
+	.half 41, 25, -22, -87
+	.word   VRB1GRY_P
+RB1GREY1G:
+	.word RB1GREY1G_IMG
+	.half 65, 67, -29, -88
+	.word   VRB1GRY_P
+RB2GREY1A:
+	.word RB2GREY1A_IMG
+	.half 43, 37, 4, -133
+	.word   VRB2GRY_P
+RB2GREY1B:
+	.word RB2GREY1B_IMG
+	.half 66, 50, 59, -50
+	.word   VRB2GRY_P
+RB2GREY1C:
+	.word RB2GREY1C_IMG
+	.half 60, 50, 54, -116
+	.word   VRB2GRY_P
+RB2GREY1D:
+	.word RB2GREY1D_IMG
+	.half 52, 22, -56, -70
+	.word   VRB2GRY_P
+RB2GREY1E:
+	.word RB2GREY1E_IMG
+	.half 51, 38, -16, -84
+	.word   VRB2GRY_P
+RB2GREY1F:
+	.word RB2GREY1F_IMG
+	.half 82, 51, 9, -7
+	.word   VRB2GRY_P
+RB2RED1A:
+	.word RB2RED1A_IMG
+	.half 36, 54, 82, -38
+	.word   VRB2RED_P
+RB2RED1B:
+	.word RB2RED1B_IMG
+	.half 13, 12, 42, -156
+	.word   VRB2RED_P
+RB2RED1C:
+	.word RB2RED1C_IMG
+	.half 101, 50, 40, -41
+	.word   VRB2RED_P
+RB2RED1D:
+	.word RB2RED1D_IMG
+	.half 5, 10, -9, -151
+	.word   VRB2RED_P
+RB2RED1E:
+	.word RB2RED1E_IMG
+	.half 21, 24, 21, -155
+	.word   VRB2RED_P
+RB2RED1F:
+	.word RB2RED1F_IMG
+	.half 111, 19, -9, -25
+	.word   VRB2RED_P
+RB2RED1G:
+	.word RB2RED1G_IMG
+	.half 103, 46, -29, -42
+	.word   VRB2RED_P
+
+#include "robo.att"
+
+/* SHANG */
+	.align 2
+	.globl shang_pieces
+shang_pieces:
+	.half	0x58,0x35+30,0x135,0x35+30
+	.word VTSFLESH1A,0
+	.word VTSFLESH1B,0
+	.word VTSFLESH1C,0
+	.word VTSFLESH1D,0
+	.word VTSFLESH1E,0
+	.word VTSGREY1A,0
+	.word VTSGREY1B,0
+	.word VTSGREY1C,0
+	.word VTSGREY1D,0
+	.word VTSGREY1E,0
+	.word VTSPANT1A,VTSRED_P
+	.word VTSPANT1B,VTSRED_P
+	.word	0
+VTSFLESH1A:
+	.word TSFLESH1A
+	.word 0
+VTSFLESH1B:
+	.word TSFLESH1B
+	.word 0
+VTSFLESH1C:
+	.word TSFLESH1C
+	.word 0
+VTSFLESH1D:
+	.word TSFLESH1D
+	.word 0
+VTSFLESH1E:
+	.word TSFLESH1E
+	.word 0
+VTSGREY1A:
+	.word TSGREY1A
+	.word 0
+VTSGREY1B:
+	.word TSGREY1B
+	.word 0
+VTSGREY1C:
+	.word TSGREY1C
+	.word 0
+VTSGREY1D:
+	.word TSGREY1D
+	.word 0
+VTSGREY1E:
+	.word TSGREY1E
+	.word 0
+VTSPANT1A:
+	.word TSPANT1A
+	.word 0
+VTSPANT1B:
+	.word TSPANT1B
+	.word 0
+TSFLESH1A:
+	.word TSFLESH1A_IMG
+	.half 49, 18, 13, -93
+	.word VTSKIN_P
+TSFLESH1B:
+	.word TSFLESH1B_IMG
+	.half 142, 63, 64, -7
+	.word VTSKIN_P
+TSFLESH1C:
+	.word TSFLESH1C_IMG
+	.half 14, 6, -4, -94
+	.word VTSKIN_P
+TSFLESH1D:
+	.word TSFLESH1D_IMG
+	.half 105, 31, -3, -47
+	.word VTSKIN_P
+TSFLESH1E:
+	.word TSFLESH1E_IMG
+	.half 119, 59, -34, -51
+	.word VTSKIN_P
+TSGREY1A:
+	.word TSGREY1A_IMG
+	.half 18, 18, 44, -5
+	.word VTSGRY_P
+TSGREY1B:
+	.word TSGREY1B_IMG
+	.half 24, 18, -60, -124
+	.word VTSGRY_P
+TSGREY1C:
+	.word TSGREY1C_IMG
+	.half 147, 60, 43, -23
+	.word VTSGRY_P
+TSGREY1D:
+	.word TSGREY1D_IMG
+	.half 105, 42, -16, -16
+	.word VTSGRY_P
+TSGREY1E:
+	.word TSGREY1E_IMG
+	.half 19, 10, -16, -149
+	.word VTSGRY_P
+TSPANT1A:
+	.word TSPANT1A_IMG
+	.half 15, 18, 39, -155
+	.word VTSYEL_P
+TSPANT1B:
+	.word TSPANT1B_IMG
+	.half 13, 17, -13, -157
+	.word VTSYEL_P
+
+#include "shang.att"
+
+/* SG */
+	.align 2
+	.globl sg_pieces
+sg_pieces:
+	.half	0x5c,0x33+18,0x128,0x33+18
+	.word VSHFLESH1A,0
+	.word VSHFLESH1B,0
+	.word VSHFLESH1C,0
+	.word VSHFLESH1D,0
+	.word VSHFLESH1E,0
+	.word VSHFLESH1F,0
+	.word VSHFLESH1G,0
+	.word VSHFLESH1H,0
+	.word VSHFLESH1I,0
+	.word VSHGREY1A,0
+	.word VSHGREY1B,0
+	.word VSHGREY1C,0
+	.word VSHGREY1D,0
+	.word VSHGREY1E,0
+	.word VSHGREY1F,0
+	.word VSHGREY1G,0
+	.word VSHRED1A,VSHBLU_P
+	.word VSHRED1B,VSHBLU_P
+	.word VSHRED1C,VSHBLU_P
+	.word VSHRED1D,VSHBLU_P
+	.word 0
+	
+VSHFLESH1A:
+	.word SHFLESH1A
+	.word 0
+VSHFLESH1B:
+	.word SHFLESH1B
+	.word 0
+VSHFLESH1C:
+	.word SHFLESH1C
+	.word 0
+VSHFLESH1D:
+	.word SHFLESH1D
+	.word 0
+VSHFLESH1E:
+	.word SHFLESH1E
+	.word 0
+VSHFLESH1F:
+	.word SHFLESH1F
+	.word 0
+VSHFLESH1G:
+	.word SHFLESH1G
+	.word 0
+VSHFLESH1H:
+	.word SHFLESH1H
+	.word 0
+VSHFLESH1I:
+	.word SHFLESH1I
+	.word 0
+VSHGREY1A:
+	.word SHGREY1A
+	.word 0
+VSHGREY1B:
+	.word SHGREY1B
+	.word 0
+VSHGREY1C:
+	.word SHGREY1C
+	.word 0
+VSHGREY1D:
+	.word SHGREY1D
+	.word 0
+VSHGREY1E:
+	.word SHGREY1E
+	.word 0
+VSHGREY1F:
+	.word SHGREY1F
+	.word 0
+VSHGREY1G:
+	.word SHGREY1G
+	.word 0
+VSHRED1A:
+	.word SHRED1A
+	.word 0
+VSHRED1B:
+	.word SHRED1B
+	.word 0
+VSHRED1C:
+	.word SHRED1C
+	.word 0
+VSHRED1D:
+	.word SHRED1D
+	.word 0
+SHFLESH1A:
+	.word SHFLESH1A_IMG
+	.half 37, 19, 64, -8
+	.word	VSHESKIN_
+SHFLESH1B:
+	.word SHFLESH1B_IMG
+	.half 60, 31, 82, -64
+	.word	VSHESKIN_
+SHFLESH1C:
+	.word SHFLESH1C_IMG
+	.half 27, 17, 21, -155
+	.word	VSHESKIN_
+SHFLESH1D:
+	.word SHFLESH1D_IMG
+	.half 61, 28, -55, -93
+	.word	VSHESKIN_
+SHFLESH1E:
+	.word SHFLESH1E_IMG
+	.half 64, 56, 51, -15
+	.word	VSHESKIN_
+SHFLESH1F:
+	.word SHFLESH1F_IMG
+	.half 104, 61, 71, -79
+	.word	VSHESKIN_
+SHFLESH1G:
+	.word SHFLESH1G_IMG
+	.half 64, 15, 10, -81
+	.word	VSHESKIN_
+SHFLESH1H:
+	.word SHFLESH1H_IMG
+	.half 84, 24, -39, -94
+	.word	VSHESKIN_
+SHFLESH1I:
+	.word SHFLESH1I_IMG
+	.half 156, 45, -4, -17
+	.word	VSHESKIN_
+SHGREY1A:
+	.word SHGREY1A_IMG
+	.half 20, 18, 54, -10
+	.word	VSHEGRY_P
+SHGREY1B:
+	.word SHGREY1B_IMG
+	.half 20, 21, 82, -72
+	.word	VSHEGRY_P
+SHGREY1C:
+	.word SHGREY1C_IMG
+	.half 14, 10, 37, -59
+	.word	VSHEGRY_P
+SHGREY1D:
+	.word SHGREY1D_IMG
+	.half 53, 54, 11, -2
+	.word	VSHEGRY_P
+SHGREY1E:
+	.word SHGREY1E_IMG
+	.half 27, 14, -69, -121
+	.word	VSHEGRY_P
+SHGREY1F:
+	.word SHGREY1F_IMG
+	.half 17, 18, -31, -161
+	.word	VSHEGRY_P
+SHGREY1G:
+	.word SHGREY1G_IMG
+	.half 23, 38, 48, -134
+	.word	VSHEGRY_P
+SHRED1A:
+	.word SHRED1A_IMG
+	.half 32, 18, 32, -150
+	.word	VSHERED_P
+SHRED1B:
+	.word SHRED1B_IMG
+	.half 61, 26, -5, -76
+	.word	VSHERED_P
+SHRED1C:
+	.word SHRED1C_IMG
+	.half 21, 22, 16, -135
+	.word	VSHERED_P
+SHRED1D:
+	.word SHRED1D_IMG
+	.half 94, 44, 30, -52
+	.word	VSHERED_P
+
+#include "sheeva.att"
+
+/* SONYA */
+	.align 2
+	.globl sonya_pieces
+sonya_pieces:
+	.half	0x5e,0x4f,0x12d,0x4f
+	.word VBGSONYA1A,0
+	.word VBGSONYA1B,0
+	.word VBGSONYA1C,0
+	.word VBGSONYA1D,0
+	.word VBGSONYA1E,0
+	.word VBGSONYA1F,0
+	.word VBGSONYA2A,BGSNBLU_P
+	.word VBGSONYA2B,BGSNBLU_P
+	.word VBGSONYA2C,BGSNBLU_P
+	.word VBGSONYA2D,BGSNBLU_P
+	.word VBGSONYA3A,0
+	.word VBGSONYA3B,0
+	.word VBGSONYA3C,0
+	.word VBGSONYA3D,0
+	.word VBGSONYA3E,0
+	.word VBGSONYA3F,0
+	.word VBGSONYA3G,0
+	.word	0
+	
+VBGSONYA1A:
+	.word BGSONYA1A
+	.word 0
+VBGSONYA1B:
+	.word BGSONYA1B
+	.word 0
+VBGSONYA1C:
+	.word BGSONYA1C
+	.word 0
+VBGSONYA1D:
+	.word BGSONYA1D
+	.word 0
+VBGSONYA1E:
+	.word BGSONYA1E
+	.word 0
+VBGSONYA1F:
+	.word BGSONYA1F
+	.word 0
+VBGSONYA2A:
+	.word BGSONYA2A
+	.word 0
+VBGSONYA2B:
+	.word BGSONYA2B
+	.word 0
+VBGSONYA2C:
+	.word BGSONYA2C
+	.word 0
+VBGSONYA2D:
+	.word BGSONYA2D
+	.word 0
+VBGSONYA3A:
+	.word BGSONYA3A
+	.word 0
+VBGSONYA3B:
+	.word BGSONYA3B
+	.word 0
+VBGSONYA3C:
+	.word BGSONYA3C
+	.word 0
+VBGSONYA3D:
+	.word BGSONYA3D
+	.word 0
+VBGSONYA3E:
+	.word BGSONYA3E
+	.word 0
+VBGSONYA3F:
+	.word BGSONYA3F
+	.word 0
+VBGSONYA3G:
+	.word BGSONYA3G
+	.word 0
+BGSONYA1A:
+	.word BGSONYA1A_IMG
+	.half 104, 64, 75, -5
+	.word BGSON1_P
+BGSONYA1B:
+	.word BGSONYA1B_IMG
+	.half 70, 26, 11, -2
+	.word BGSON1_P
+BGSONYA1C:
+	.word BGSONYA1C_IMG
+	.half 53, 20, -13, -9
+	.word BGSON1_P
+BGSONYA1D:
+	.word BGSONYA1D_IMG
+	.half 31, 53, 37, -124
+	.word BGSON1_P
+BGSONYA1E:
+	.word BGSONYA1E_IMG
+	.half 59, 34, -16, -73
+	.word BGSON1_P
+BGSONYA1F:
+	.word BGSONYA1F_IMG
+	.half 39, 36, -49, -93
+	.word BGSON1_P
+BGSONYA2A:
+	.word BGSONYA2A_IMG
+	.half 3, 6, 51, -78
+	.word BGSON2_P
+BGSONYA2B:
+	.word BGSONYA2B_IMG
+	.half 37, 30, 61, -136
+	.word BGSON2_P
+BGSONYA2C:
+	.word BGSONYA2C_IMG
+	.half 64, 34, 22, -64
+	.word BGSON2_P
+BGSONYA2D:
+	.word BGSONYA2D_IMG
+	.half 59, 18, -11, -70
+	.word BGSON2_P
+BGSONYA3A:
+	.word BGSONYA3A_IMG
+	.half 32, 7, 34, -92
+	.word BGSON3_P
+BGSONYA3B:
+	.word BGSONYA3B_IMG
+	.half 70, 20, 30, -57
+	.word BGSON3_P
+BGSONYA3C:
+	.word BGSONYA3C_IMG
+	.half 36, 38, 43, -137
+	.word BGSON3_P
+BGSONYA3D:
+	.word BGSONYA3D_IMG
+	.half 21, 10, 5, -151
+	.word BGSON3_P
+BGSONYA3E:
+	.word BGSONYA3E_IMG
+	.half 84, 16, 10, -29
+	.word BGSON3_P
+BGSONYA3F:
+	.word BGSONYA3F_IMG
+	.half 91, 37, -5, -24
+	.word BGSON3_P
+BGSONYA3G:
+	.word BGSONYA3G_IMG
+	.half 26, 15, -72, -85
+	.word BGSON3_P
+
+#include "sonya.att"
+
+/* SWAT */
+	.align 2
+	.globl swat_pieces
+swat_pieces:
+	.half	0x63,0x25+29,0x125,0x25+29
+	.word VCOPBLUE1A,VCOPRED_P
+	.word VCOPBLUE1B,VCOPRED_P
+	.word VCOPBLUE1C,VCOPRED_P
+	.word VCOPFLESH1A,0
+	.word VCOPFLESH1B,0
+	.word VCOPFLESH1C,0
+	.word VCOPFLESH1D,0
+	.word VCOPGREY1A,0
+	.word VCOPGREY1B,0
+	.word VCOPGREY1C,0
+	.word VCOPGREY1D,0
+	.word	0
+	
+VCOPBLUE1A:
+	.word COPBLUE1A
+	.word 0
+VCOPBLUE1B:
+	.word COPBLUE1B
+	.word 0
+VCOPBLUE1C:
+	.word COPBLUE1C
+	.word 0
+VCOPFLESH1A:
+	.word COPFLESH1A
+	.word 0
+VCOPFLESH1B:
+	.word COPFLESH1B
+	.word 0
+VCOPFLESH1C:
+	.word COPFLESH1C
+	.word 0
+VCOPFLESH1D:
+	.word COPFLESH1D
+	.word 0
+VCOPGREY1A:
+	.word COPGREY1A
+	.word 0
+VCOPGREY1B:
+	.word COPGREY1B
+	.word 0
+VCOPGREY1C:
+	.word COPGREY1C
+	.word 0
+VCOPGREY1D:
+	.word COPGREY1D
+	.word 0
+COPBLUE1A:
+	.word COPBLUE1A_IMG
+	.half 72, 96, 48, -66
+	.word VCOPBLU_P
+COPBLUE1B:
+	.word COPBLUE1B_IMG
+	.half 9, 10, 42, -150
+	.word VCOPBLU_P
+COPBLUE1C:
+	.word COPBLUE1C_IMG
+	.half 14, 20, 69, -171
+	.word VCOPBLU_P
+COPFLESH1A:
+	.word COPFLESH1A_IMG
+	.half 39, 44, -1, -31
+	.word VCOPSKN_P
+COPFLESH1B:
+	.word COPFLESH1B_IMG
+	.half 35, 55, 69, -97
+	.word VCOPSKN_P
+COPFLESH1C:
+	.word COPFLESH1C_IMG
+	.half 16, 11, 10, -127
+	.word VCOPSKN_P
+COPFLESH1D:
+	.word COPFLESH1D_IMG
+	.half 60, 40, -34, -111
+	.word VCOPSKN_P
+COPGREY1A:
+	.word COPGREY1A_IMG
+	.half 33, 50, 4, -13
+	.word VCOPGRY_P
+COPGREY1B:
+	.word COPGREY1B_IMG
+	.half 134, 77, 75, -50
+	.word VCOPGRY_P
+COPGREY1C:
+	.word COPGREY1C_IMG
+	.half 31, 21, -53, -139
+	.word VCOPGRY_P
+COPGREY1D:
+	.word COPGREY1D_IMG
+	.half 133, 46, -1, -51
+	.word VCOPGRY_P
+
+#include "swat.att"
+
+/* SZ */
+	.align 2
+	.globl sz_pieces
+sz_pieces:
+	.half	0x5d,0x30+29,0x135,0x30+29
+	.word VSZBLUE1A,0
+	.word VSZBLUE1B,0
+	.word VSZBLUE1C,0
+	.word VSZBLUE1D,0
+	.word VSZFLESH1A,0
+	.word VSZFLESH1B,0
+	.word VSZFLESH1C,0
+	.word VSZFLESH1D,0
+	.word VSZFLESH1E,0
+	.word VSZFLESH1F,0
+	.word VSZFLESH1G,0
+	.word VSZFLESH1H,0
+	.word VSZGREY1A,SCBLUE2_P
+	.word VSZGREY1B,SCBLUE2_P
+	.word VSZGREY1C,SCBLUE2_P
+	.word VSZGREY1D,SCBLUE2_P
+	.word VSZGREY1E,SCBLUE2_P
+	.word VSZGREY1F,SCBLUE2_P
+	.word VSZGREY1G,SCBLUE2_P
+	.word 0
+	
+VSZBLUE1A:
+	.word SZBLUE1A
+	.word 0
+VSZBLUE1B:
+	.word SZBLUE1B
+	.word 0
+VSZBLUE1C:
+	.word SZBLUE1C
+	.word 0
+VSZBLUE1D:
+	.word SZBLUE1D
+	.word 0
+VSZFLESH1A:
+	.word SZFLESH1A
+	.word 0
+VSZFLESH1B:
+	.word SZFLESH1B
+	.word 0
+VSZFLESH1C:
+	.word SZFLESH1C
+	.word 0
+VSZFLESH1D:
+	.word SZFLESH1D
+	.word 0
+VSZFLESH1E:
+	.word SZFLESH1E
+	.word 0
+VSZFLESH1F:
+	.word SZFLESH1F
+	.word 0
+VSZFLESH1G:
+	.word SZFLESH1G
+	.word 0
+VSZFLESH1H:
+	.word SZFLESH1H
+	.word 0
+VSZGREY1A:
+	.word SZGREY1A
+	.word 0
+VSZGREY1B:
+	.word SZGREY1B
+	.word 0
+VSZGREY1C:
+	.word SZGREY1C
+	.word 0
+VSZGREY1D:
+	.word SZGREY1D
+	.word 0
+VSZGREY1E:
+	.word SZGREY1E
+	.word 0
+VSZGREY1F:
+	.word SZGREY1F
+	.word 0
+VSZGREY1G:
+	.word SZGREY1G
+	.word 0
+SZBLUE1A:
+	.word SZBLUE1A_IMG
+	.half 22, 30, 60, -155
+	.word	SCBLUE1_P
+SZBLUE1B:
+	.word SZBLUE1B_IMG
+	.half 104, 50, 52, -45
+	.word	SCBLUE1_P
+SZBLUE1C:
+	.word SZBLUE1C_IMG
+	.half 40, 8, 2, -47
+	.word	SCBLUE1_P
+SZBLUE1D:
+	.word SZBLUE1D_IMG
+	.half 65, 36, 2, -80
+	.word	SCBLUE1_P
+SZFLESH1A:
+	.word SZFLESH1A_IMG
+	.half 21, 31, 36, -9
+	.word	RPZFLESH_P
+SZFLESH1B:
+	.word SZFLESH1B_IMG
+	.half 28, 28, 34, -120
+	.word	RPZFLESH_P
+SZFLESH1C:
+	.word SZFLESH1C_IMG
+	.half 116, 75, 88, -12
+	.word	RPZFLESH_P
+SZFLESH1D:
+	.word SZFLESH1D_IMG
+	.half 13, 2, 13, -45
+	.word	RPZFLESH_P
+SZFLESH1E:
+	.word SZFLESH1E_IMG
+	.half 32, 15, -62, -121
+	.word	RPZFLESH_P
+SZFLESH1F:
+	.word SZFLESH1F_IMG
+	.half 87, 33, 11, -38
+	.word	RPZFLESH_P
+SZFLESH1G:
+	.word SZFLESH1G_IMG
+	.half 78, 45, -13, -99
+	.word	RPZFLESH_P
+SZFLESH1H:
+	.word SZFLESH1H_IMG
+	.half 54, 29, -21, -29
+	.word	RPZFLESH_P
+SZGREY1A:
+	.word SZGREY1A_IMG
+	.half 34, 51, 83, -11
+	.word	RPZGRAY_P
+SZGREY1B:
+	.word SZGREY1B_IMG
+	.half 60, 38, 94, -117
+	.word	RPZGRAY_P
+SZGREY1C:
+	.word SZGREY1C_IMG
+	.half 131, 54, 56, -47
+	.word	RPZGRAY_P
+SZGREY1D:
+	.word SZGREY1D_IMG
+	.half 51, 46, -3, -13
+	.word	RPZGRAY_P
+SZGREY1E:
+	.word SZGREY1E_IMG
+	.half 20, 6, 2, -67
+	.word	RPZGRAY_P
+SZGREY1F:
+	.word SZGREY1F_IMG
+	.half 61, 36, 2, -83
+	.word	RPZGRAY_P
+SZGREY1G:
+	.word SZGREY1G_IMG
+	.half 36, 46, -23, -142
+	.word	RPZGRAY_P
+
+#include "sz.att"
+
+/* TUSK */
+	.align 2
+	.globl tusk_pieces
+tusk_pieces:	
+	.half	0x5c,0x35+19,0x128,0x35+19
+	.word VKBFLESH1A,0
+	.word VKBFLESH1B,0
+	.word VKBFLESH1C,0
+	.word VKBFLESH1D,0
+	.word VKBFLESH1E,0
+	.word VKBGRVEST1A,0
+	.word VKBGRVEST1B,0
+	.word VKBGRVEST1C,0
+	.word VKBGRVEST1D,0
+	.word VKBGRVEST1E,0
+	.word VKBPANTS1A,VKBBLU_P
+	.word VKBPANTS1B,VKBBLU_P
+	.word 0
+	
+VKBFLESH1A:
+	.word KBFLESH1A
+	.word 0
+VKBFLESH1B:
+	.word KBFLESH1B
+	.word 0
+VKBFLESH1C:
+	.word KBFLESH1C
+	.word 0
+VKBFLESH1D:
+	.word KBFLESH1D
+	.word 0
+VKBFLESH1E:
+	.word KBFLESH1E
+	.word 0
+VKBGRVEST1A:
+	.word KBGRVEST1A
+	.word 0
+VKBGRVEST1B:
+	.word KBGRVEST1B
+	.word 0
+VKBGRVEST1C:
+	.word KBGRVEST1C
+	.word 0
+VKBGRVEST1D:
+	.word KBGRVEST1D
+	.word 0
+VKBGRVEST1E:
+	.word KBGRVEST1E
+	.word 0
+VKBPANTS1A:
+	.word KBPANTS1A
+	.word 0
+VKBPANTS1B:
+	.word KBPANTS1B
+	.word 0
+KBFLESH1A:
+	.word KBFLESH1A_IMG
+	.half 62, 26, 78, -64
+	.word VKBSKIN_P
+KBFLESH1B:
+	.word KBFLESH1B_IMG
+	.half 15, 26, -7, -11
+	.word VKBSKIN_P
+KBFLESH1C:
+	.word KBFLESH1C_IMG
+	.half 13, 6, -29, -70
+	.word VKBSKIN_P
+KBFLESH1D:
+	.word KBFLESH1D_IMG
+	.half 83, 47, 19, -43
+	.word VKBSKIN_P
+KBFLESH1E:
+	.word KBFLESH1E_IMG
+	.half 51, 41, -45, -85
+	.word VKBSKIN_P
+KBGRVEST1A:
+	.word KBGRVEST1A_IMG
+	.half 31, 21, -68, -58
+	.word VKBGRAY_P
+KBGRVEST1B:
+	.word KBGRVEST1B_IMG
+	.half 140, 44, 70, -39
+	.word VKBGRAY_P
+KBGRVEST1C:
+	.word KBGRVEST1C_IMG
+	.half 169, 38, 8, -10
+	.word VKBGRAY_P
+KBGRVEST1D:
+	.word KBGRVEST1D_IMG
+	.half 152, 18, 26, -27
+	.word VKBGRAY_P
+KBGRVEST1E:
+	.word KBGRVEST1E_IMG
+	.half 122, 33, -29, -15
+	.word VKBGRAY_P
+KBPANTS1A:
+	.word KBPANTS1A_IMG
+	.half 11, 19, 72, -168
+	.word VKBTAN_P
+KBPANTS1B:
+	.word KBPANTS1B_IMG
+	.half 27, 30, 41, -152
+	.word VKBTAN_P
+
+#include "tusk.att"

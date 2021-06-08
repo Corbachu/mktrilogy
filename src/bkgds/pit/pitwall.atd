@@ -1,0 +1,8 @@
+pit_anims:
+	.word a_wall
+a_wall:
+	.word THRONEWALL
+	.word 0
+THRONEWALL:
+	.word THRONEWALL_IMG
+	.half 183, 71, 0, 0

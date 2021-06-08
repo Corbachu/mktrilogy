@@ -1,0 +1,85 @@
+tusk_list:
+	.word VKBFLESH1A
+	.word VKBFLESH1B
+	.word VKBFLESH1C
+	.word VKBFLESH1D
+	.word VKBFLESH1E
+	.word VKBGRVEST1A
+	.word VKBGRVEST1B
+	.word VKBGRVEST1C
+	.word VKBGRVEST1D
+	.word VKBGRVEST1E
+	.word VKBPANTS1A
+	.word VKBPANTS1B
+VKBFLESH1A:
+	.word KBFLESH1A
+	.word 0
+VKBFLESH1B:
+	.word KBFLESH1B
+	.word 0
+VKBFLESH1C:
+	.word KBFLESH1C
+	.word 0
+VKBFLESH1D:
+	.word KBFLESH1D
+	.word 0
+VKBFLESH1E:
+	.word KBFLESH1E
+	.word 0
+VKBGRVEST1A:
+	.word KBGRVEST1A
+	.word 0
+VKBGRVEST1B:
+	.word KBGRVEST1B
+	.word 0
+VKBGRVEST1C:
+	.word KBGRVEST1C
+	.word 0
+VKBGRVEST1D:
+	.word KBGRVEST1D
+	.word 0
+VKBGRVEST1E:
+	.word KBGRVEST1E
+	.word 0
+VKBPANTS1A:
+	.word KBPANTS1A
+	.word 0
+VKBPANTS1B:
+	.word KBPANTS1B
+	.word 0
+KBFLESH1A:
+	.word KBFLESH1A_IMG
+        .half 62, 26, 77, -64
+KBFLESH1B:
+	.word KBFLESH1B_IMG
+        .half 15, 26, -8, -11
+KBFLESH1C:
+	.word KBFLESH1C_IMG
+	.half 13, 6, -29, -70
+KBFLESH1D:
+	.word KBFLESH1D_IMG
+	.half 83, 47, 19, -43
+KBFLESH1E:
+	.word KBFLESH1E_IMG
+	.half 51, 41, -45, -85
+KBGRVEST1A:
+	.word KBGRVEST1A_IMG
+	.half 31, 21, -68, -58
+KBGRVEST1B:
+	.word KBGRVEST1B_IMG
+	.half 140, 44, 70, -39
+KBGRVEST1C:
+	.word KBGRVEST1C_IMG
+	.half 169, 38, 8, -10
+KBGRVEST1D:
+	.word KBGRVEST1D_IMG
+	.half 152, 18, 26, -27
+KBGRVEST1E:
+	.word KBGRVEST1E_IMG
+	.half 122, 33, -29, -15
+KBPANTS1A:
+	.word KBPANTS1A_IMG
+        .half 11, 19, 71, -168
+KBPANTS1B:
+	.word KBPANTS1B_IMG
+        .half 27, 30, 40, -152

@@ -1,0 +1,99 @@
+kano_list:
+	.word VBGKANO1A
+	.word VBGKANO1B
+	.word VBGKANO1C
+	.word VBGKANO1D
+	.word VBGKANO2A
+	.word VBGKANO2B
+	.word VBGKANO2C
+	.word VBGKANO2D
+	.word VBGKANO2E
+	.word VBGKANO3A
+	.word VBGKANO3B
+	.word VBGKANO3C
+	.word VBGKANO3D
+	.word VBGKANO4A
+VBGKANO1A:
+	.word BGKANO1A
+	.word 0
+VBGKANO1B:
+	.word BGKANO1B
+	.word 0
+VBGKANO1C:
+	.word BGKANO1C
+	.word 0
+VBGKANO1D:
+	.word BGKANO1D
+	.word 0
+VBGKANO2A:
+	.word BGKANO2A
+	.word 0
+VBGKANO2B:
+	.word BGKANO2B
+	.word 0
+VBGKANO2C:
+	.word BGKANO2C
+	.word 0
+VBGKANO2D:
+	.word BGKANO2D
+	.word 0
+VBGKANO2E:
+	.word BGKANO2E
+	.word 0
+VBGKANO3A:
+	.word BGKANO3A
+	.word 0
+VBGKANO3B:
+	.word BGKANO3B
+	.word 0
+VBGKANO3C:
+	.word BGKANO3C
+	.word 0
+VBGKANO3D:
+	.word BGKANO3D
+	.word 0
+VBGKANO4A:
+	.word BGKANO4A
+	.word 0
+BGKANO1A:
+	.word BGKANO1A_IMG
+	.half 67, 45, 66, -35
+BGKANO1B:
+	.word BGKANO1B_IMG
+	.half 82, 43, -2, -7
+BGKANO1C:
+	.word BGKANO1C_IMG
+        .half 60, 12, -45, -10
+BGKANO1D:
+	.word BGKANO1D_IMG
+	.half 65, 38, -31, -93
+BGKANO2A:
+	.word BGKANO2A_IMG
+	.half 44, 28, 70, -55
+BGKANO2B:
+	.word BGKANO2B_IMG
+	.half 67, 22, 24, -30
+BGKANO2C:
+	.word BGKANO2C_IMG
+	.half 9, 2, -1, -79
+BGKANO2D:
+	.word BGKANO2D_IMG
+	.half 37, 16, 68, -137
+BGKANO2E:
+	.word BGKANO2E_IMG
+        .half 93, 78, 4, -81
+BGKANO3A:
+	.word BGKANO3A_IMG
+        .half 36, 25, 68, -58
+BGKANO3B:
+	.word BGKANO3B_IMG
+        .half 137, 77, 65, -37
+BGKANO3C:
+	.word BGKANO3C_IMG
+	.half 36, 28, -44, -114
+BGKANO3D:
+	.word BGKANO3D_IMG
+	.half 117, 46, -12, -23
+BGKANO4A:
+	.word BGKANO4A_IMG
+        .half 72, 63, 10, -40

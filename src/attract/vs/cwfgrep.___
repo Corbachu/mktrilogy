@@ -1,0 +1,6 @@
+File I:\proj\mktrilogy\seg\attract\vs\artmninja.s:
+62         	.word VOSMYELO1A,OSMG_P
+64         	.word VOSMYELO1B,OSMG_P
+66         	.word VOSMYELO1C,OSMG_P
+68         	.word VOSMYELO1D,OSMG_P
+70         	.word VOSMYELO1E,OSMG_P

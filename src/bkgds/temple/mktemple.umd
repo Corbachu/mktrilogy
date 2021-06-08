@@ -1,0 +1,93 @@
+	.align 2
+	.globl temple0BMOD
+temple0BMOD:
+	.half  1220,    53
+	.word    11, temple0_BLK, nutemp3_HDR, nutemp3_CLT
+
+	.align 2
+	.globl temple0_BLK
+temple0_BLK:
+	.half     9,     9,    64, 0x0500,     2
+	.half   129,     9,    64, 0x0500,     2
+	.half   249,     9,    64, 0x0500,     2
+	.half   369,     9,    64, 0x0500,     2
+	.half   489,     9,    64, 0x0500,     2
+	.half   609,     9,    64, 0x0500,     2
+	.half   729,     9,    64, 0x0500,     2
+	.half   849,     9,    64, 0x0500,     2
+	.half   969,     9,    64, 0x0500,     2
+	.half  1089,     9,    64, 0x0500,     2
+	.half  1194,     9,    64, 0x0500,     2
+
+	.align 2
+	.globl temple3BMOD
+temple3BMOD:
+	.half   854,   227
+	.word    11, temple3_BLK, nutemp3_HDR, nutemp3_CLT
+
+	.align 2
+	.globl temple3_BLK
+temple3_BLK:
+	.half    15,    35,    64, 0x0200,     1
+	.half   155,    35,    64, 0x0200,     4
+	.half   236,   116,    63, 0x0300,     6
+	.half   293,    35,    64, 0x0200,     8
+	.half   326,   116,    64, 0x0300,     6
+	.half   403,   104,    64, 0x0400,    11
+	.half   427,    35,    64, 0x0210,     8
+	.half   514,   116,    64, 0x0310,     6
+	.half   565,    35,    64, 0x0210,     4
+	.half   604,   116,    63, 0x0310,     6
+	.half   705,    35,    64, 0x0210,     1
+
+	.align 2
+	.globl temple1BMOD
+temple1BMOD:
+	.half  1002,   125
+	.word    14, temple1_BLK, nutemp3_HDR, nutemp3_CLT
+
+	.align 2
+	.globl temple1_BLK
+temple1_BLK:
+	.half    20,    41,    64, 0x0100,     0
+	.half   151,    41,    64, 0x0100,     3
+	.half   217,    11,    64, 0x0100,     5
+	.half   297,    41,    64, 0x0100,     7
+	.half   338,    11,    64, 0x0100,     5
+	.half   421,    84,    64, 0x0100,     9
+	.half   436,    41,    64, 0x0000,    10
+	.half   481,    84,    64, 0x0110,     9
+	.half   487,    84,    64, 0x0110,     9
+	.half   551,    41,    64, 0x0110,     7
+	.half   614,    11,    64, 0x0110,     5
+	.half   673,    41,    64, 0x0110,     3
+	.half   735,    11,    64, 0x0110,     5
+	.half   820,    41,    64, 0x0110,     0
+
+	.align 2
+	.globl nutemp3_HDR
+nutemp3_HDR:
+	.half   132,    69
+	.word     0
+	.half   140,   182
+	.word  9112
+	.half    16,    36
+	.word 34592
+	.half   148,    69
+	.word 35168
+	.half   140,   182
+	.word 45384
+	.half    20,    30
+	.word 70864
+	.half    20,    72
+	.word 71464
+	.half   124,    69
+	.word 72904
+	.half   140,   182
+	.word 81464
+	.half    64,    26
+	.word 106944
+	.half   100,    43
+	.word 108608
+	.half    56,    84
+	.word 112912

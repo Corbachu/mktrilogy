@@ -1,0 +1,282 @@
+	.align 2
+	.globl wood1BMOD
+wood1BMOD:
+	.half  1078,   231
+	.word    35, wood1_BLK, forest2_HDR, forest2_CLT
+
+	.align 2
+	.globl wood1_BLK
+wood1_BLK:
+	.half    38,   200,    64, 0x0000,     2
+	.half    61,   113,    64, 0x0A00,     7
+	.half    95,     8,    64, 0x0A20,    13
+	.half    95,    43,    64, 0x0A00,    13
+	.half    95,    78,    64, 0x0A20,    13
+	.half   116,   199,    64, 0x0000,    17
+	.half   123,   113,    64, 0x0A00,    18
+	.half   197,   200,    64, 0x0000,     2
+	.half   264,   188,    64, 0x0A00,    29
+	.half   273,   199,    64, 0x0000,    17
+	.half   301,    12,    64, 0x0A00,    13
+	.half   301,    47,    64, 0x0A20,    13
+	.half   301,    81,    64, 0x0A00,    13
+	.half   354,   200,    64, 0x0000,     2
+	.half   431,   200,    64, 0x0000,     2
+	.half   500,   188,    64, 0x0A00,    29
+	.half   509,   200,    64, 0x0000,     2
+	.half   539,    12,    64, 0x0A00,    13
+	.half   539,    47,    64, 0x0A20,    13
+	.half   539,    81,    64, 0x0A00,    13
+	.half   587,   200,    64, 0x0000,     2
+	.half   664,   200,    64, 0x0000,     2
+	.half   730,   188,    64, 0x0A00,    29
+	.half   740,   199,    64, 0x0000,    17
+	.half   769,    12,    64, 0x0A00,    13
+	.half   769,    47,    64, 0x0A20,    13
+	.half   769,    81,    64, 0x0A00,    13
+	.half   821,   200,    64, 0x0000,     2
+	.half   898,   200,    64, 0x0000,     2
+	.half   931,   122,    64, 0x0A00,    37
+	.half   953,    17,    64, 0x0A00,    13
+	.half   953,    52,    64, 0x0A20,    13
+	.half   953,    87,    64, 0x0A00,    13
+	.half   970,   199,    64, 0x0000,    17
+	.half   981,   122,    64, 0x0A00,    38
+
+	.align 2
+	.globl wood2BMOD
+wood2BMOD:
+	.half   854,   191
+	.word    26, wood2_BLK, forest2_HDR, forest2_CLT
+
+	.align 2
+	.globl wood2_BLK
+wood2_BLK:
+	.half    38,   161,    64, 0x0810,    16
+	.half    83,   144,    64, 0x0810,    20
+	.half   134,   136,    64, 0x0810,    21
+	.half   141,    93,    64, 0x0600,    23
+	.half   176,     7,    64, 0x0400,    27
+	.half   176,    28,    64, 0x0500,    26
+	.half   190,   175,    64, 0x0700,    30
+	.half   198,    28,    64, 0x0500,    32
+	.half   198,    93,    64, 0x0600,    31
+	.half   271,   174,    64, 0x0700,    33
+	.half   343,    95,    64, 0x0600,    34
+	.half   357,   175,    64, 0x0700,    30
+	.half   376,     9,    64, 0x0400,    27
+	.half   376,    30,    64, 0x0500,    26
+	.half   398,    30,    64, 0x0500,    32
+	.half   398,    95,    64, 0x0600,    35
+	.half   438,   174,    64, 0x0700,    33
+	.half   524,   175,    64, 0x0700,    30
+	.half   590,    93,    64, 0x0600,    36
+	.half   604,   174,    64, 0x0700,    33
+	.half   624,     7,    64, 0x0400,    27
+	.half   624,    28,    64, 0x0500,    26
+	.half   646,    28,    64, 0x0500,    32
+	.half   688,   161,    64, 0x0810,    16
+	.half   733,   144,    64, 0x0810,    20
+	.half   785,   136,    64, 0x0810,    21
+
+	.align 2
+	.globl wood4BMOD
+wood4BMOD:
+	.half   862,   154
+	.word    24, wood4_BLK, forest2_HDR, forest2_CLT
+
+	.align 2
+	.globl wood4_BLK
+wood4_BLK:
+	.half    96,   130,    64, 0x0900,     6
+	.half   129,    84,    64, 0x0400,     9
+	.half   144,    11,    64, 0x0400,    11
+	.half   144,    32,    64, 0x0300,    10
+	.half   159,   126,    64, 0x0900,    14
+	.half   216,   130,    64, 0x0900,     6
+	.half   279,   126,    64, 0x0900,    14
+	.half   288,    86,    64, 0x0400,    25
+	.half   307,    13,    64, 0x0400,    11
+	.half   307,    34,    64, 0x0300,    10
+	.half   333,   126,    64, 0x0910,    14
+	.half   393,   130,    64, 0x0900,     6
+	.half   453,   126,    64, 0x0910,    14
+	.half   475,    85,    64, 0x0400,     9
+	.half   490,    12,    64, 0x0400,    11
+	.half   490,    33,    64, 0x0300,    10
+	.half   512,   130,    64, 0x0910,     6
+	.half   576,   130,    64, 0x0900,     6
+	.half   638,   130,    64, 0x0910,     6
+	.half   702,   130,    64, 0x0900,     6
+	.half   709,    87,    64, 0x0400,    25
+	.half   728,    14,    64, 0x0400,    11
+	.half   728,    35,    64, 0x0300,    10
+	.half   764,   130,    64, 0x0910,     6
+
+	.align 2
+	.globl wood5BMOD
+wood5BMOD:
+	.half   748,   122
+	.word    27, wood5_BLK, forest2_HDR, forest2_CLT
+
+	.align 2
+	.globl wood5_BLK
+wood5_BLK:
+	.half    65,   106,    64, 0x0900,     0
+	.half    84,    74,    64, 0x0400,     1
+	.half   100,     7,    64, 0x0400,     4
+	.half   100,    22,    64, 0x0400,     3
+	.half   115,   106,    64, 0x0900,     0
+	.half   165,   106,    64, 0x0900,     0
+	.half   215,   106,    64, 0x0900,     0
+	.half   265,   106,    64, 0x0900,     0
+	.half   273,    74,    64, 0x0400,    22
+	.half   289,     7,    64, 0x0400,     4
+	.half   289,    22,    64, 0x0400,     3
+	.half   314,   106,    64, 0x0900,    28
+	.half   408,    74,    64, 0x0400,     1
+	.half   414,   106,    64, 0x0900,     0
+	.half   424,     7,    64, 0x0400,     4
+	.half   424,    22,    64, 0x0400,     3
+	.half   464,   106,    64, 0x0900,     0
+	.half   514,   106,    64, 0x0900,     0
+	.half   562,    74,    64, 0x0400,    22
+	.half   564,   106,    64, 0x0900,     0
+	.half   578,     7,    64, 0x0400,     4
+	.half   578,    22,    64, 0x0400,     3
+	.half   613,   106,    64, 0x0900,     0
+	.half   657,    74,    64, 0x0400,     1
+	.half   663,   106,    64, 0x0900,     0
+	.half   673,     7,    64, 0x0400,     4
+	.half   673,    22,    64, 0x0400,     3
+
+	.align 2
+	.globl wood6BMOD
+wood6BMOD:
+	.half   596,   100
+	.word    17, wood6_BLK, forest2_HDR, forest2_CLT
+
+	.align 2
+	.globl wood6_BLK
+wood6_BLK:
+	.half    18,    87,    64, 0x0910,     5
+	.half    87,    21,    64, 0x0200,    15
+	.half   100,    13,    64, 0x0200,    19
+	.half   102,    87,    64, 0x0900,     5
+	.half   180,    87,    64, 0x0910,     5
+	.half   204,    20,    64, 0x0200,    24
+	.half   216,    11,    64, 0x0200,    19
+	.half   264,    87,    64, 0x0900,     5
+	.half   306,    20,    64, 0x0200,    24
+	.half   319,    11,    64, 0x0200,    19
+	.half   342,    87,    64, 0x0910,     5
+	.half   416,    22,    64, 0x0200,    15
+	.half   426,    87,    64, 0x0900,     5
+	.half   429,    13,    64, 0x0200,    19
+	.half   504,    87,    64, 0x0910,     5
+	.half   536,    20,    64, 0x0200,    24
+	.half   548,    11,    64, 0x0200,    19
+
+	.align 2
+	.globl wood7BMOD
+wood7BMOD:
+	.half   437,    71
+	.word    12, wood7_BLK, forest2_HDR, forest2_CLT
+
+	.align 2
+	.globl wood7_BLK
+wood7_BLK:
+	.half    12,    35,    64, 0x0100,     8
+	.half    29,     6,    64, 0x0100,    12
+	.half    82,     6,    64, 0x0100,    12
+	.half   116,    35,    64, 0x0100,     8
+	.half   133,     6,    64, 0x0100,    12
+	.half   186,     6,    64, 0x0100,    12
+	.half   220,    35,    64, 0x0100,     8
+	.half   237,     6,    64, 0x0100,    12
+	.half   290,     6,    64, 0x0100,    12
+	.half   324,    35,    64, 0x0100,     8
+	.half   341,     6,    64, 0x0100,    12
+	.half   394,     6,    64, 0x0100,    12
+
+	.align 2
+	.globl forest2_HDR
+forest2_HDR:
+	.half    52,    13
+	.word     0
+	.half    48,    44
+	.word   680
+	.half    80,    26
+	.word  2792
+	.half    24,    52
+	.word  4872
+	.half    24,    16
+	.word  6120
+	.half    84,     9
+	.word  6504
+	.half    64,    15
+	.word  7264
+	.half    64,   113
+	.word  8224
+	.half   104,    29
+	.word 15456
+	.half    60,    54
+	.word 18472
+	.half    28,    52
+	.word 21712
+	.half    28,    21
+	.word 23168
+	.half    12,    29
+	.word 23760
+	.half    56,    35
+	.word 24112
+	.half    60,    19
+	.word 26072
+	.half    40,    73
+	.word 27216
+	.half    48,    26
+	.word 30136
+	.half    84,    27
+	.word 31384
+	.half    52,   111
+	.word 33656
+	.half    20,     9
+	.word 39432
+	.half    52,    43
+	.word 39616
+	.half    56,    51
+	.word 41856
+	.half    48,    43
+	.word 44712
+	.half    60,    89
+	.word 46776
+	.half    40,    74
+	.word 52120
+	.half    60,    54
+	.word 55080
+	.half    24,    65
+	.word 58320
+	.half    44,    21
+	.word 59880
+	.half   100,    13
+	.word 60808
+	.half   124,    37
+	.word 62112
+	.half    84,    12
+	.word 66704
+	.half    44,    89
+	.word 67712
+	.half    20,    65
+	.word 71632
+	.half    88,    13
+	.word 72936
+	.half    56,    88
+	.word 74080
+	.half    44,    88
+	.word 79008
+	.half   100,    89
+	.word 82880
+	.half    52,    96
+	.word 91784
+	.half    44,    96
+	.word 96776

@@ -1,0 +1,29 @@
+storm_anims:
+	.word a_storm
+a_storm:
+	.word STORM01
+	.word STORM03
+	.word STORM05
+	.word STORM07
+	.word STORM09
+	.word STORM11
+	.word ani_jump
+	.word a_storm_city
+STORM01:
+	.word STORM01_IMG
+	.half 52, 165, -15, -9
+STORM03:
+	.word STORM03_IMG
+	.half 61, 151, -15, -4
+STORM05:
+	.word STORM05_IMG
+	.half 54, 173, -9, -9
+STORM07:
+	.word STORM07_IMG
+	.half 51, 162, -6, -8
+STORM09:
+	.word STORM09_IMG
+	.half 65, 155, -20, 0
+STORM11:
+	.word STORM11_IMG
+	.half 55, 177, -14, -5

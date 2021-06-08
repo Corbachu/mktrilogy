@@ -1,0 +1,1896 @@
+/* spec - Cartridge ROM specification file
+//
+// Author: David Schwartz
+*/
+
+#include "sys_defs.h"
+
+/*==========================================================================================
+// Cartridge ROM kernel segment
+//
+// Loaded by the boot code and always resident
+*/
+
+beginseg
+	name	"kernel"
+	flags	BOOT OBJECT
+	entry	kstart_entry
+	stack	boot_stack + SYS_BOOT_STACKSIZE
+	address	SYS_MEMMAP_KERNEL_K0
+	include	"seggamecode.o"
+	include	"$(ROOT)/usr/lib/PR/rspboot.o"
+	include "$(ROOT)/usr/lib/PR/gspFast3D.o"
+	include "$(ROOT)/usr/lib/PR/aspMain.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM DRAM STACK
+//
+// Loaded as an overlay by kernel
+*/
+beginseg
+	name	"dstack"
+	flags	OBJECT 
+	after	"kernel"
+	align 	64
+ 	include "dstack.o" 
+endseg
+
+/*==========================================================================================
+// Player Heap Area
+//
+// 
+*/
+beginseg
+	name	"pheap"
+	flags	OBJECT
+	after	"dstack"
+	align 	64
+ 	include "playerheap.o" 
+endseg
+
+beginseg
+	name	"vsplaycod"
+	flags	OBJECT
+	after	"dstack"
+	include	"versetxt.o"
+endseg
+
+beginseg
+	name	"ponggame"
+	flags	OBJECT
+	after	"dstack"
+	include	"../seg/gamecode/mkpong.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM VS ZIP FILES
+//
+// 
+*/
+beginseg
+	name	"fninjaziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/fninja.rbc"
+endseg
+
+beginseg
+	name	"indianziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/indian.rbc"
+endseg
+
+beginseg
+	name	"jaxziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/jax.rbc"
+endseg
+
+beginseg
+	name	"kanoziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/kano.rbc"
+endseg
+
+beginseg
+	name	"laoziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/lao.rbc"
+endseg
+
+beginseg
+	name	"liaziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/lia.rbc"
+endseg
+
+beginseg
+	name	"lkziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/lk.rbc"
+endseg
+
+beginseg
+	name	"mninjaziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/mninja.rbc"
+endseg
+
+beginseg
+	name	"roboziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/robo.rbc"
+endseg
+
+beginseg
+	name	"shangziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/shang.rbc"
+endseg
+
+beginseg
+	name	"sheevaziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/sheeva.rbc"
+endseg
+
+beginseg
+	name	"sonyaziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/sonya.rbc"
+endseg
+
+beginseg
+	name	"swatziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/swat.rbc"
+endseg
+
+beginseg
+	name	"jcziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/jcvs.rbc"
+endseg
+
+beginseg
+	name	"tuskziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/tusk.rbc"
+endseg
+
+beginseg
+	name	"nuguysziptxt"
+	flags	RAW
+	include	"../seg/attract/vs/nuguys.rbc"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Frame buffer
+//
+// Loaded as an overlay by dstack
+*/
+beginseg
+	name	"framebuffer"
+	flags	OBJECT
+	after	"pheap"
+	align 	64
+ 	include "framebufs.o" 
+endseg
+
+
+beginseg
+	name	"markgame"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"../seg/gamecode/mkmark.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Intro Segments
+//
+// Loaded as an overlay by kernel
+*/
+beginseg
+	name	"mugstxt"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"mugstxt.o"
+endseg
+
+beginseg
+	name	"skdietxt"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"skdietxt.o"
+endseg
+
+beginseg
+	name	"logotxt"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"logotxt.o"
+endseg
+
+beginseg
+	name	"fighttxt"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"fighttxt.o"
+endseg
+
+beginseg
+	name	"finhertxt"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"finhertxt.o"
+endseg
+
+beginseg
+	name	"finhimtxt"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"finhimtxt.o"
+endseg
+
+beginseg
+	name	"mercytxt"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"mercytxt.o"
+endseg
+
+beginseg
+	name	"toptxt"
+	flags	OBJECT
+	after	"mercytxt"
+	include	"toptxt.o"
+endseg
+
+/* make sure this follows largest of finhim,finher,fight */
+
+/* make sure this follows largest of finhim,finher,fight */
+beginseg
+	name	"ripstxt"
+	flags	OBJECT
+	after	"mercytxt"
+	include	"ripstxt.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM ALITY Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"animaltxt"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"animaltxt.o"
+endseg
+
+beginseg
+	name	"babytxt"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"babytxt.o"
+endseg
+
+beginseg
+	name	"friendtxt"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"friendtxt.o"
+endseg
+
+beginseg
+	name	"fataltxt"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"fataltxt.o"
+endseg
+
+beginseg
+	name	"brutaltxt"
+	flags	OBJECT
+	after	"framebuffer"
+	include	"brutaltxt.o"
+endseg
+
+beginseg
+	name	"skeltxt"
+	flags	OBJECT
+	after	"fataltxt"
+	include	"skeltxt.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM City Segments
+//
+// Loaded as an overlay by mercy
+*/
+beginseg
+	name	"citycod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"citycod.o"
+endseg
+
+beginseg
+	name	"citytxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"citytxt.o"
+endseg
+
+beginseg
+	name	"cityflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"cityflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM armory Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"armorcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"armorcod.o"
+endseg
+
+beginseg
+	name	"armortxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"armortxt.o"
+endseg
+
+beginseg
+	name	"armorflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"armorflr.o"
+endseg
+
+beginseg
+	name	"tombflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"tombflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM battlefield Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"battlecod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"battlecod.o"
+endseg
+
+beginseg
+	name	"battletxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"battletxt.o"
+endseg
+
+beginseg
+	name	"battleflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"battleflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Belltower Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"bellcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"bellcod.o"
+endseg
+
+beginseg
+	name	"belltxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"belltxt.o"
+endseg
+
+beginseg
+	name	"bellflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"bellflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Bridge Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"bridgecod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"bridgecod.o"
+endseg
+
+beginseg
+	name	"bridgetxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"bridgetxt.o"
+endseg
+
+beginseg
+	name	"bridgeflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"bridgeflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Cave & Hell Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"cavecod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"cavecod.o"
+endseg
+
+beginseg
+	name	"cavetxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"cavetxt.o"
+endseg
+
+beginseg
+	name	"caveflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"caveflr.o"
+endseg
+
+beginseg
+	name	"hellflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"hellflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM City & Bank Segments
+//
+// Loaded as an overlay by mugs
+*/
+#if 0
+beginseg
+	name	"citycod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"citycod.o"
+endseg
+
+beginseg
+	name	"citytxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"citytxt.o"
+endseg
+
+beginseg
+	name	"cityflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"cityflr.o"
+endseg
+#endif
+
+/*==========================================================================================
+// Cartridge ROM Deadpool Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"deadcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"deadcod.o"
+endseg
+
+beginseg
+	name	"deadtxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"deadtxt.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Desert Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"desertcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"desertcod.o"
+endseg
+
+beginseg
+	name	"deserttxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"deserttxt.o"
+endseg
+
+beginseg
+	name	"desertflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"desertflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Graveyard Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"gravecod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"gravecod.o"
+endseg
+
+beginseg
+	name	"gravetxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"gravetxt.o"
+endseg
+
+beginseg
+	name	"graveflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"graveflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Kungfu 2 Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"kung2cod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"kung2cod.o"
+endseg
+
+beginseg
+	name	"kung2txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"kung2txt.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Kungfu 5 Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"kung5cod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"kung5cod.o"
+endseg
+
+beginseg
+	name	"kung5txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"kung5txt.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Hidden Portal Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"hportcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"hportcod.o"
+endseg
+
+beginseg
+	name	"hporttxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"hporttxt.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM MK2 Lost Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"lostcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"lostcod.o"
+endseg
+
+beginseg
+	name	"losttxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"losttxt.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM MK2 mk2pit Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"mk2pitcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"mk2pitcod.o"
+endseg
+
+beginseg
+	name	"mk2pittxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"mk2pittxt.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Pit Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"monkcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"monkcod.o"
+endseg
+
+beginseg
+	name	"monktxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"monktxt.o"
+endseg
+
+beginseg
+	name	"monkflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"monkflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM pit Outworld Portal Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"pitcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"pitcod.o"
+endseg
+
+beginseg
+	name	"pittxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"pittxt.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Subway & Street Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"sbstcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"sbstcod.o"
+endseg
+
+beginseg
+	name	"stormdata"
+	flags	OBJECT
+	after	"sbstcod"
+	include	"stormtxt.o"
+endseg
+
+beginseg
+	name	"sbsttxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"sbsttxt.o"
+endseg
+
+beginseg
+	name	"subflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"subflr.o"
+endseg
+
+beginseg
+	name	"streetflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"streetflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Soul Chamber & Balcony Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"soulcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"soulcod.o"
+endseg
+
+beginseg
+	name	"soultxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"soultxt.o"
+endseg
+
+beginseg
+	name	"soulflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"soulflr.o"
+endseg
+
+beginseg
+	name	"balcflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"balcflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Church Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"templecod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"tempcod.o"
+endseg
+
+beginseg
+	name	"templetxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"temptxt.o"
+endseg
+
+beginseg
+	name	"templeflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"tempflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Shao Kahn Tower Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"towercod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"towercod.o"
+endseg
+
+beginseg
+	name	"towertxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"towertxt.o"
+endseg
+
+beginseg
+	name	"towerflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"towerflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Living Forest Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"treecod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"treecod.o"
+endseg
+
+beginseg
+	name	"treetxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"treetxt.o"
+endseg
+
+beginseg
+	name	"treeflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"treeflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Water River Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"watercod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"watercod.o"
+endseg
+
+beginseg
+	name	"watertxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"watertxt.o"
+endseg
+
+beginseg
+	name	"waterflr"
+	flags	OBJECT
+	address 0x00000000
+	include	"waterflr.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Buyin Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"buyincod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"buyincod.o"
+endseg
+
+beginseg
+	name	"buyintxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"buyintxt.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Gradient Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"gradcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"gradcod.o"
+endseg
+
+beginseg
+	name	"gradtxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"gradtxt.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Options Segments
+//
+// Loaded as an overlay by mugs
+*/
+#if 0
+beginseg
+	name	"optioncod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"optioncod.o"
+endseg
+beginseg
+	name	"optiontxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"optiontxt.o"
+endseg
+#endif
+/*==========================================================================================
+// Cartridge ROM Select Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"selectcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"selectcod.o"
+endseg
+
+beginseg
+	name	"selecttxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"selecttxt.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM steel Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"steelcod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"steelcod.o"
+endseg
+
+beginseg
+	name	"steeltxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"steeltxt.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM ind Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"indiantxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"indiantxt.o"
+endseg
+
+beginseg
+	name	"indianatxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"indianatxt.o"
+endseg
+
+beginseg
+	name	"indianf2txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"indianf2txt.o"
+endseg
+
+beginseg
+	name	"indianftxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"indianftxt.o"
+endseg
+
+beginseg
+	name	"indiandct"
+	flags	OBJECT
+	address 0x00000000
+	include	"indiandct.o"
+endseg
+
+#if COLOR64
+beginseg
+	name	"indian64txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"indian64txt.o"
+endseg
+
+beginseg
+	name	"indian64dct"
+	flags	OBJECT
+	address 0x00000000
+	include	"indian64dct.o"
+endseg
+#endif
+/*==========================================================================================
+// Cartridge ROM jax Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"jaxtxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"jaxtxt.o"
+endseg
+
+beginseg
+	name	"jaxdct"
+	flags	OBJECT
+	address 0x00000000
+	include	"jaxdct.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM kano Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"kanotxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"kanotxt.o"
+endseg
+
+beginseg
+	name	"kanodct"
+	flags	OBJECT
+	address 0x00000000
+	include	"kanodct.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM lao Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"laotxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"laotxt.o"
+endseg
+
+beginseg
+	name	"laodct"
+	flags	OBJECT
+	address 0x00000000
+	include	"laodct.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM lia Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"liatxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"liatxt.o"
+endseg
+
+beginseg
+	name	"liaatxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"liaatxt.o"
+endseg
+
+beginseg
+	name	"liadct"
+	flags	OBJECT
+	address 0x00000000
+	include	"liadct.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM lk Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"lktxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"lktxt.o"
+endseg
+
+beginseg
+	name	"lkdct"
+	flags	OBJECT
+	address 0x00000000
+	include	"lkdct.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM fn Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"fntxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"fntxt.o"
+endseg
+
+beginseg
+	name	"fnftxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"fnftxt.o"
+endseg
+
+beginseg
+	name	"fnmlf1txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"fnmlf1txt.o"
+endseg
+
+#if 0
+beginseg
+	name	"fnjdf1txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"fnjdf1txt.o"
+endseg
+#endif
+
+beginseg
+	name	"fndct"
+	flags	OBJECT
+	address 0x00000000
+	include	"fndct.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM nj Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"njtxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"njtxt.o"
+endseg
+
+beginseg
+	name	"njatxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"njatxt.o"
+endseg
+
+beginseg
+	name	"njftxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"njftxt.o"
+endseg
+
+beginseg
+	name	"njrpf1txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"njrpf1txt.o"
+endseg
+
+beginseg
+	name	"njrpf2txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"njrpf2txt.o"
+endseg
+
+#if 0
+beginseg
+	name	"njszf2txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"njszf2txt.o"
+endseg
+#endif
+
+beginseg
+	name	"njscf1txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"njscf1txt.o"
+endseg
+
+beginseg
+	name	"njscf2txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"njscf2txt.o"
+endseg
+
+beginseg
+	name	"njdct"
+	flags	OBJECT
+	address 0x00000000
+	include	"njdct.o"
+endseg
+
+#if COLOR64
+beginseg
+	name	"nj64dct"
+	flags	OBJECT
+	address 0x00000000
+	include	"nj64dct.o"
+endseg
+
+beginseg
+	name	"nj64txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"nj64txt.o"
+endseg
+#endif
+
+
+
+
+/*==========================================================================================
+// Cartridge ROM mot Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"mottxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"mottxt.o"
+endseg
+
+beginseg
+	name	"motdct"
+	flags	OBJECT
+	address 0x00000000
+	include	"motdct.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM sa Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"satxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"satxt.o"
+endseg
+
+beginseg
+	name	"sadct"
+	flags	OBJECT
+	address 0x00000000
+	include	"sadct.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM rd Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"rdtxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"rdtxt.o"
+endseg
+
+beginseg
+	name	"rddct"
+	flags	OBJECT
+	address 0x00000000
+	include	"rddct.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM st Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"sttxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"sttxt.o"
+endseg
+
+beginseg
+	name	"statxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"statxt.o"
+endseg
+
+beginseg
+	name	"stdct"
+	flags	OBJECT
+	address 0x00000000
+	include	"stdct.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM sk Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"sktxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"sktxt.o"
+endseg
+
+#if 1
+beginseg
+	name	"sksziptxt"
+	flags	RAW
+	include	"../seg/chardata/sk/mksk.rbc"
+endseg
+
+beginseg
+	name	"motsziptxt"
+	flags	RAW
+	include	"../seg/chardata/motaro/mkmot.rbc"
+endseg
+
+#endif
+
+beginseg
+	name	"skdct"
+	flags	OBJECT
+	address 0x00000000
+	include	"skdct.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM Sonya Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"sonyatxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"sonyatxt.o"
+endseg
+
+beginseg
+	name	"sonyadct"
+	flags	OBJECT
+	address 0x00000000
+	include	"sonyadct.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM robo Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"robotxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"robotxt.o"
+endseg
+
+beginseg
+	name	"robo3atxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"robo3atxt.o"
+endseg
+
+beginseg
+	name	"roboftxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"roboftxt.o"
+endseg
+
+beginseg
+	name	"robo2atxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"robo2atxt.o"
+endseg
+
+beginseg
+	name	"robo1atxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"robo1atxt.o"
+endseg
+
+beginseg
+	name	"robo1f1txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"r1f1txt.o"
+endseg
+
+beginseg
+	name	"robo1f2txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"r1f2txt.o"
+endseg
+
+beginseg
+	name	"robo2f1txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"r2f1txt.o"
+endseg
+
+beginseg
+	name	"robo2f2txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"r2f2txt.o"
+endseg
+
+beginseg
+	name	"robo3f1txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"r3f1txt.o"
+endseg
+
+beginseg
+	name	"robo3f2txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"r3f2txt.o"
+endseg
+
+beginseg
+	name	"robodct"
+	flags	OBJECT
+	address 0x00000000
+	include	"robodct.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM swat Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"swattxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"swattxt.o"
+endseg
+
+beginseg
+	name	"swatdct"
+	flags	OBJECT
+	address 0x00000000
+	include	"swatdct.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM Jcage Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"jcagetxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"jcagetxt.o"
+endseg
+
+beginseg
+	name	"jcagedct"
+	flags	OBJECT
+	address 0x00000000
+	include	"jcagedct.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM sheeva Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"sheevatxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"sheevatxt.o"
+endseg
+
+beginseg
+	name	"sheevadct"
+	flags	OBJECT
+	address 0x00000000
+	include	"sheevadct.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM tusk Characters
+//
+// Loaded as offset values
+*/
+beginseg
+	name	"tusktxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"tusktxt.o"
+endseg
+
+beginseg
+	name	"tuskatxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"tuskatxt.o"
+endseg
+
+beginseg
+	name	"tuskf2txt"
+	flags	OBJECT
+	address 0x00000000
+	include	"tuskf2txt.o"
+endseg
+
+beginseg
+	name	"tuskdct"
+	flags	OBJECT
+	address 0x00000000
+	include	"tuskdct.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM Title Segments
+//
+// Loaded as an overlay by mugs
+*/
+beginseg
+	name	"titlecod"
+	flags	OBJECT
+	after	"mugstxt"
+	include	"titlecod.o"
+endseg
+
+beginseg
+	name	"titletxt"
+	flags	OBJECT
+	address 0x00000000
+	include	"titletxt.o"
+endseg
+
+/*==========================================================================================
+// Cartridge ROM raw audio data segment
+//
+// Used by kernel to locate object in ROM
+*/
+
+beginseg
+	name	"wess_wmd"
+	flags	RAW
+	include	"../seg/audio/mktril.wmd"
+endseg
+
+beginseg
+	name	"wess_wsd"
+	flags	RAW
+	include	"../seg/audio/mktril.wsd"
+endseg
+
+beginseg
+	name	"wess_wdd"
+	flags	RAW
+	include	"../seg/audio/mktril.wdd"
+endseg
+
+/*==========================================================================================
+// Wave definitions:
+*/
+
+beginwave
+	name	"mktrilogy"
+	include	"kernel"
+	include	"dstack" 
+	include	"pheap" 
+	include	"framebuffer" 
+
+	include "citycod"
+	include "citytxt"
+	include "cityflr"
+
+	include "armorcod"
+	include "armortxt"
+	include "armorflr"
+	include "tombflr"
+	
+	include "battlecod"
+	include "battletxt"
+	include "battleflr"
+	
+	include "bellcod"
+	include "belltxt"
+	include "bellflr"
+	
+	include "bridgecod"
+	include "bridgetxt"
+	include "bridgeflr"
+	
+	include "cavecod"
+	include "cavetxt"
+	include "caveflr"
+	include "hellflr"
+	
+	include "deadcod"
+	include "deadtxt"
+	
+	include "desertcod"
+	include "deserttxt"
+	include "desertflr"
+	
+	include "gravecod"
+	include "gravetxt"
+	include "graveflr"
+
+	include "kung2cod"
+	include "kung2txt"
+
+	include "kung5cod"
+	include "kung5txt"
+
+	include "hportcod"
+	include "hporttxt"
+
+	include "lostcod"
+	include "losttxt"
+
+	include "mk2pitcod"
+	include "mk2pittxt"
+
+	include "monkcod"
+	include "monktxt"
+	include "monkflr"
+	
+	include "pitcod"
+	include "pittxt"
+	
+	include "stormdata"
+	include "sbstcod"
+	include "sbsttxt"
+	include "subflr"
+	include "streetflr"
+	
+	include "soulcod"
+	include "soultxt"
+	include "soulflr"
+	include "balcflr"
+	
+	include "templecod"
+	include "templetxt"
+	include "templeflr"
+	
+	include "towercod"
+	include "towertxt"
+	include "towerflr"
+	
+	include "treecod"
+	include "treetxt"
+	include "treeflr"
+	
+	include "watercod"
+	include "watertxt"
+	include "waterflr"
+
+	include "buyincod"
+	include "buyintxt"
+	
+	include "gradcod"
+	include "gradtxt"
+#if 0	
+	include "optioncod"
+	include "optiontxt"
+#endif	
+	include "selectcod"
+	include "selecttxt"
+	
+	include "steelcod"
+	include "steeltxt"
+	
+	include "titlecod"
+	include "titletxt"
+	
+	include "vsplaycod"
+	
+	include "fninjaziptxt"
+	include "indianziptxt"
+	include "jaxziptxt"
+	include "kanoziptxt"
+	include "laoziptxt"
+	include "liaziptxt"
+	include "lkziptxt"
+	include "mninjaziptxt"
+	include "roboziptxt"
+	include "shangziptxt"
+	include "sheevaziptxt"
+	include "swatziptxt"
+	include "sonyaziptxt"
+	include "jcziptxt"
+	include "tuskziptxt"
+	include "nuguysziptxt"
+
+	include "ponggame"
+	include "markgame"
+	
+	include "animaltxt"
+	include "babytxt"
+	include "friendtxt"
+	include "fataltxt"
+	include "brutaltxt"
+	
+	include "fighttxt"
+	include "finhimtxt"
+	include "finhertxt"
+	include "mercytxt"
+	include "mugstxt"
+	include "logotxt"
+	include "toptxt"
+	include "skeltxt"
+	include "ripstxt"
+	
+	include "sonyatxt"
+	include "sonyadct"
+	
+	include "tusktxt"
+	include "tuskatxt"
+	include "tuskf2txt"
+	include "tuskdct"
+	
+	include "swattxt"
+	include "swatdct"
+	
+	include "sheevatxt"
+	include "sheevadct"
+	
+	include "jcagetxt"
+	include "jcagedct"
+
+	include "lktxt"
+	include "lkdct"
+	
+	include "liatxt"
+	include "liaatxt"
+	include "liadct"
+	
+	include "laotxt"
+	include "laodct"
+	
+	include "kanotxt"
+	include "kanodct"
+	
+	include "jaxtxt"
+	include "jaxdct"
+	
+	include "indiantxt"
+	include "indianatxt"
+	include "indianftxt"
+	include "indianf2txt"
+	include "indiandct"
+
+#if COLOR64
+	include "indian64txt"
+	include "indian64dct"
+#endif
+
+	include "satxt"
+	include "sadct"
+	
+	include "rdtxt"
+	include "rddct"
+	
+	include "mottxt"
+	include "motdct"
+	
+	include "sttxt"
+	include "statxt"
+	include "stdct"
+	
+	include "sktxt"
+	include "skdct"
+	include "skdietxt"
+#if 1
+	include "sksziptxt"
+	include "motsziptxt"
+#endif
+	
+	include "fntxt"
+	include "fnftxt"
+#if 0
+	include "fnjdf1txt"
+#endif	
+	include "fnmlf1txt"
+	include "fndct"
+	
+	include "njtxt"
+	include "njatxt"
+	include "njftxt"
+	include "njscf1txt"
+	include "njscf2txt"
+	include "njrpf1txt"
+	include "njrpf2txt"
+#if 0	
+	include "njszf2txt"
+#endif	
+	include "njdct"
+	
+	include "robotxt"
+	include "roboftxt"
+	include "robo2atxt"
+	include "robo3atxt"
+	include "robo1atxt"
+	include "robo1f1txt"
+	include "robo1f2txt"
+	include "robo2f1txt"
+	include "robo2f2txt"
+	include "robo3f1txt"
+	include "robo3f2txt"
+	include "robodct"
+	
+	include "wess_wmd"
+	include "wess_wsd"
+	include "wess_wdd"
+endwave

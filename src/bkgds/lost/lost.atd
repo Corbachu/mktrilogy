@@ -1,0 +1,63 @@
+lost_anims:
+	.word a_darkman1
+	.word a_darkman2
+a_darkman1:
+	.word BKGUY1
+	.word BKGUY2
+	.word BKGUY3
+	.word BKGUY4
+	.word BKGUY5
+	.word BKGUY6
+	.word BKGUY7
+	.word 0
+a_darkman2:
+	.word TORCH1
+	.word TORCH2
+	.word TORCH3
+	.word TORCH4
+	.word TORCH5
+	.word TORCH6
+	.word TORCH7
+	.word 0
+BKGUY1:
+	.word BKGUY1_IMG
+	.half 11, 22, 5, 20
+BKGUY2:
+	.word BKGUY2_IMG
+	.half 11, 22, 5, 20
+BKGUY3:
+	.word BKGUY3_IMG
+	.half 11, 22, 5, 20
+BKGUY4:
+	.word BKGUY4_IMG
+	.half 11, 22, 5, 20
+BKGUY5:
+	.word BKGUY5_IMG
+	.half 10, 22, 5, 20
+BKGUY6:
+	.word BKGUY6_IMG
+	.half 11, 22, 5, 20
+BKGUY7:
+	.word BKGUY7_IMG
+	.half 10, 22, 5, 20
+TORCH1:
+	.word TORCH1_IMG
+	.half 12, 29, 6, 25
+TORCH2:
+	.word TORCH2_IMG
+	.half 12, 30, 6, 26
+TORCH3:
+	.word TORCH3_IMG
+	.half 11, 29, 6, 25
+TORCH4:
+	.word TORCH4_IMG
+	.half 11, 30, 6, 26
+TORCH5:
+	.word TORCH5_IMG
+        .half 12, 31, 6, 27
+TORCH6:
+	.word TORCH6_IMG
+	.half 12, 31, 6, 27
+TORCH7:
+	.word TORCH7_IMG
+	.half 11, 28, 6, 24

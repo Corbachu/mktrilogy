@@ -1,0 +1,5 @@
+	.align 2
+	.globl SBZAP11_PAL
+SBZAP11_PAL:
+	.word 5
+	.half 0x07C0, 0x96BD, 0x7D39, 0x3429, 0x321B

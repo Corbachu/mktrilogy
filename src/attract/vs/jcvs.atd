@@ -1,0 +1,40 @@
+JC_anims:
+	.word a_JC
+a_JC:
+	.word JC1
+	.word JC2
+	.word JC3
+	.word JC4
+	.word JC5
+	.word JC6
+	.word JC7
+	.word JC8
+	.word JC9
+	.word 0
+JC1:
+	.word JC1_IMG
+	.half 23, 34, -101, -27
+JC2:
+	.word JC2_IMG
+	.half 57, 40, 0, -67
+JC3:
+	.word JC3_IMG
+	.half 79, 37, -139, -89
+JC4:
+	.word JC4_IMG
+	.half 20, 77, -25, -148
+JC5:
+	.word JC5_IMG
+	.half 30, 34, -4, -50
+JC6:
+	.word JC6_IMG
+	.half 70, 104, -38, -39
+JC7:
+	.word JC7_IMG
+	.half 54, 83, -33, -108
+JC8:
+	.word JC8_IMG
+	.half 60, 50, -115, -108
+JC9:
+	.word JC9_IMG
+	.half 42, 51, -87, 0

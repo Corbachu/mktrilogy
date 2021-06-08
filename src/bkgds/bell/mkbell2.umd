@@ -1,0 +1,81 @@
+	.align 2
+	.globl MKTOWERBMOD
+MKTOWERBMOD:
+	.half   348,   359
+	.word    22, MKTOWER_BLK, MKBELL2_HDR, MKBELL2_CLT
+
+	.align 2
+	.globl MKTOWER_BLK
+MKTOWER_BLK:
+	.half    13,    98,    64, 0x0400,     0
+	.half    13,   180,    64, 0x0400,     1
+	.half    13,   261,    64, 0x0100,     2
+	.half    13,   284,    64, 0x0000,     3
+	.half    81,    93,    64, 0x0300,     5
+	.half    81,   136,    64, 0x0300,     4
+	.half    81,   179,    64, 0x0300,     6
+	.half   123,   179,    64, 0x0300,     8
+	.half   123,   222,    64, 0x0300,     7
+	.half   173,   261,    64, 0x0100,    10
+	.half   173,   284,    64, 0x0000,     9
+	.half   177,   110,    64, 0x0200,    12
+	.half   177,   185,    64, 0x0300,    11
+	.half   178,    49,    64, 0x0200,    13
+	.half   191,   184,    64, 0x0400,    14
+	.half   194,   101,    64, 0x0200,    15
+	.half   200,    42,    64, 0x0200,    16
+	.half   228,   110,    64, 0x0200,    17
+	.half   253,    48,    64, 0x0200,    18
+	.half   256,   184,    64, 0x0300,    19
+	.half   270,   138,    64, 0x0400,    21
+	.half   270,   201,    64, 0x0400,    20
+
+	.align 2
+	.globl MKBELL2_HDR
+MKBELL2_HDR:
+	.half    68,    82
+	.word 135608
+	.half    68,    81
+	.word 141184
+	.half   164,    23
+	.word 146696
+	.half   160,    65
+	.word 150472
+	.half   100,    43
+	.word 160872
+	.half   100,    43
+	.word 165176
+	.half    44,    82
+	.word 169480
+	.half    56,    40
+	.word 173088
+	.half    56,    43
+	.word 175328
+	.half   160,    65
+	.word 177736
+	.half   164,    23
+	.word 188136
+	.half    16,    77
+	.word 191912
+	.half    52,    75
+	.word 193144
+	.half    20,    62
+	.word 197048
+	.half    68,    77
+	.word 198288
+	.half    76,     9
+	.word 203528
+	.half    52,    57
+	.word 204216
+	.half    44,    75
+	.word 207184
+	.half    20,    53
+	.word 210488
+	.half    16,    77
+	.word 211552
+	.half    64,    60
+	.word 212784
+	.half    64,    63
+	.word 216624
+	.half    68,    82
+	.word 220656

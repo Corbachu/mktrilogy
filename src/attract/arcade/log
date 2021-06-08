@@ -1,0 +1,28 @@
+ship1 14x21 336 134 39.880951 dict RLE 32
+ship2 14x21 336 146 43.452381 dict RLE 32
+ship3 15x15 240 123 51.250000 dict RLE 32
+ship4 15x15 240 119 49.583332 dict RLE 32
+enemy1 11x11 132 73 55.303032 dict RLE 32
+enemy10 11x8 96 47 48.958332 dict RLE 32
+enemy2 11x11 132 52 39.393940 dict RLE 32
+enemy3 11x11 132 76 57.575756 dict RLE 32
+enemy4 8x11 88 43 48.863636 dict RLE 32
+enemy5 11x11 132 66 50.000000 dict RLE 32
+enemy6 11x8 96 47 48.958332 dict RLE 32
+expld8 11x11 132 68 51.515152 dict RLE 32
+enemy7 11x11 132 76 57.575756 dict RLE 32
+enemy8 11x11 132 59 44.696968 dict RLE 32
+enemy9 11x11 132 71 53.787880 dict RLE 32
+expld1 12x11 132 65 49.242424 dict RLE 32
+expld2 16x21 336 155 46.130951 dict RLE 32
+expld3 16x21 336 170 50.595238 dict RLE 32
+expld4 16x21 336 166 49.404762 dict RLE 32
+expld5 16x20 320 157 49.062500 dict RLE 32
+expld6 10x10 120 57 47.500000 dict RLE 32
+expld7 11x11 132 63 47.727272 dict RLE 32
+scaled = 4200 RLEd + dict = 2289 48.404762
+RLE average bytes/frame 104.045456
+max width = 16 expld2
+max height = 21 ship1
+min width = 8 enemy4
+min height = 8 enemy10

@@ -1,0 +1,53 @@
+	.align 2
+	.globl redmodBMOD
+redmodBMOD:
+	.half   142,    98
+	.word     1, redmod_BLK, nucoin3_HDR, nucoin3_CLT
+
+	.align 2
+	.globl redmod_BLK
+redmod_BLK:
+	.half     6,     4,    65, 0x0100,     3
+
+	.align 2
+	.globl coin3modBMOD
+coin3modBMOD:
+	.half   372,   286
+	.word     9, coin3mod_BLK, nucoin3_HDR, nucoin3_CLT
+
+	.align 2
+	.globl coin3mod_BLK
+coin3mod_BLK:
+	.half     9,     7,    64, 0x0000,     0
+	.half     9,   107,    64, 0x0000,     1
+	.half     9,   207,    64, 0x0000,     2
+	.half   109,     7,    64, 0x0000,     4
+	.half   109,   107,    64, 0x0000,     5
+	.half   109,   207,    64, 0x0000,     6
+	.half   209,     7,    64, 0x0000,     7
+	.half   209,   107,    64, 0x0000,     8
+	.half   209,   207,    64, 0x0000,     9
+
+	.align 2
+	.globl nucoin3_HDR
+nucoin3_HDR:
+	.half   100,   100
+	.word     0
+	.half   100,   100
+	.word 10000
+	.half   100,    72
+	.word 20000
+	.half   132,    90
+	.word 27200
+	.half   100,   100
+	.word 39080
+	.half   100,   100
+	.word 49080
+	.half   100,    72
+	.word 59080
+	.half   152,   100
+	.word 66280
+	.half   152,   100
+	.word 81480
+	.half   152,    72
+	.word 96680

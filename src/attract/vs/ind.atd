@@ -1,0 +1,113 @@
+ind_list:
+	.word VINGRY1A
+	.word VINGRY1B
+	.word VINGRY1C
+	.word VINGRY1D
+	.word VINGRY1E
+	.word VINBLU1A
+	.word VINBLU1B
+	.word VINBLU1C
+	.word VINBLU1D
+	.word VINSKIN1A
+	.word VINSKIN1B
+	.word VINSKIN1C
+	.word VINSKIN1D
+	.word VINSKIN1E
+	.word VINSKIN1F
+	.word VINSKIN1G
+VINGRY1A:
+	.word INGRY1A
+	.word 0
+VINGRY1B:
+	.word INGRY1B
+	.word 0
+VINGRY1C:
+	.word INGRY1C
+	.word 0
+VINGRY1D:
+	.word INGRY1D
+	.word 0
+VINGRY1E:
+	.word INGRY1E
+	.word 0
+VINBLU1A:
+	.word INBLU1A
+	.word 0
+VINBLU1B:
+	.word INBLU1B
+	.word 0
+VINBLU1C:
+	.word INBLU1C
+	.word 0
+VINBLU1D:
+	.word INBLU1D
+	.word 0
+VINSKIN1A:
+	.word INSKIN1A
+	.word 0
+VINSKIN1B:
+	.word INSKIN1B
+	.word 0
+VINSKIN1C:
+	.word INSKIN1C
+	.word 0
+VINSKIN1D:
+	.word INSKIN1D
+	.word 0
+VINSKIN1E:
+	.word INSKIN1E
+	.word 0
+VINSKIN1F:
+	.word INSKIN1F
+	.word 0
+VINSKIN1G:
+	.word INSKIN1G
+	.word 0
+INGRY1A:
+	.word INGRY1A_IMG
+        .half 24, 21, -62, -122
+INGRY1B:
+	.word INGRY1B_IMG
+        .half 81, 23, 71, -102
+INGRY1C:
+	.word INGRY1C_IMG
+        .half 95, 41, 48, -48
+INGRY1D:
+	.word INGRY1D_IMG
+	.half 105, 19, -25, -16
+INGRY1E:
+	.word INGRY1E_IMG
+	.half 159, 64, 38, -15
+INBLU1A:
+	.word INBLU1A_IMG
+	.half 23, 21, 64, -76
+INBLU1B:
+	.word INBLU1B_IMG
+        .half 68, 38, -3, -33
+INBLU1C:
+	.word INBLU1C_IMG
+	.half 26, 22, -19, -120
+INBLU1D:
+	.word INBLU1D_IMG
+        .half 13, 64, 56, -170
+INSKIN1A:
+	.word INSKIN1A_IMG
+	.half 77, 34, 88, -69
+INSKIN1B:
+	.word INSKIN1B_IMG
+	.half 116, 33, 58, -60
+INSKIN1C:
+	.word INSKIN1C_IMG
+	.half 41, 28, -12, -42
+INSKIN1D:
+	.word INSKIN1D_IMG
+	.half 31, 18, -67, -98
+INSKIN1E:
+	.word INSKIN1E_IMG
+	.half 24, 14, -25, -99
+INSKIN1F:
+	.word INSKIN1F_IMG
+	.half 48, 54, -19, -126
+INSKIN1G:
+	.word INSKIN1G_IMG
+	.half 89, 44, 26, -69

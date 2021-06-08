@@ -1,0 +1,14 @@
+monk1 38x37 1480 681 46.013512 dict RLE 64
+monk2 34x38 1368 648 47.368420 dict RLE 64
+monk3 34x38 1368 662 48.391811 dict RLE 64
+monk4 34x37 1332 665 49.924927 dict RLE 64
+monk5 34x37 1332 667 50.075073 dict RLE 64
+monk6 36x37 1332 668 50.150150 dict RLE 64
+monk7 37x37 1480 708 47.837837 dict RLE 64
+monktorso 32x37 1184 558 47.128380 dict RLE 64
+scaled = 10876 RLEd + dict = 5513 48.335785
+RLE average bytes/frame 689.125000
+max width = 38 monk1
+max height = 38 monk2
+min width = 32 monktorso
+min height = 37 monk1

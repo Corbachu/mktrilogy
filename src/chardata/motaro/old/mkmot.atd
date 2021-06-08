@@ -1,0 +1,727 @@
+mot_anitab1:
+	.word a_stance
+	.word a_walkf
+	.word a_walkb
+	.word a_turn
+	.word a_grab_hit
+	.word a_mist_tele
+	.word a_mot_zap
+	.word a_head_grab
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_block
+	.word a_victory
+	.word a_punch
+	.word a_dummy
+	.word a_dummy
+	.word a_kick
+	.word a_dummy
+	.word a_dummy
+	.word a_sweep_kick
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_hop
+	.word a_dummy
+	.word a_hit
+	.word a_hit
+	.word a_knockdown
+	.word a_dummy
+	.word a_stumble
+	.word a_getup
+	.word a_dummy
+	.word a_throw
+	.word a_zap
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+	.word a_dummy
+mot_anitab2:
+	.word a_stance2
+a_throw:
+a_zap:
+a_dummy:
+a_stance:
+	.word MOSTANCE1
+	.word ani_calla
+	.word motaro_leg_stance
+	.word MOSTANCE3
+j_stan5:
+	.word MOSTANCE5
+	.word MOSTANCE6
+	.word MOSTANCE7
+	.word MOSTANCE9
+	.word MOSTANCE11
+	.word ani_jump
+	.word a_stance
+a_stance2:
+	.word MOLEG21
+	.word MOLEG22
+	.word MOLEG23
+	.word ani_jump
+	.word j_stan5
+a_walkf:
+	.word MOWALK1
+	.word MOWALK3
+	.word MOWALK5
+	.word MOWALK6
+	.word MOWALK8
+	.word MOWALK9
+	.word MOWALK10
+	.word MOWALK11
+	.word ani_jump
+	.word a_walkf
+a_walkb:
+	.word MOWALK11
+	.word MOWALK10
+	.word MOWALK9
+	.word MOWALK8
+	.word MOWALK6
+	.word MOWALK5
+	.word MOWALK3
+	.word MOWALK1
+	.word ani_jump
+	.word a_walkb
+a_turn:
+	.word MOTURN1
+	.word MOTURN3
+	.word MOTURN5
+	.word MOTURN7
+	.word ani_flip
+	.word ani_nosleep
+	.word MOSTANCE1
+	.word 0
+a_punch:
+	.word MOPUNCH1
+	.word MOPUNCH2
+	.word MOPUNCH3
+	.word MOPUNCH5
+	.word 0
+	.word MOPUNCH3
+	.word MOPUNCH2
+	.word MOPUNCH1
+	.word 0
+a_grab_hit:
+	.word MOGRABHIT1
+	.word MOGRABHIT1
+	.word MOGRABHIT3
+	.word 0
+	.word MOGRABHIT4
+	.word MOGRABHIT5
+	.word MOGRABHIT6
+	.word 0
+	.word MOGRABHIT8
+	.word MOGRABHIT9
+	.word 0
+	.word MOGRABHIT10
+	.word MOGRABHIT10
+	.word MOGRABHIT10
+	.word MOGRABHIT10
+	.word MOGRABHIT10
+	.word MOGRABHIT10
+	.word MOGRABHIT9
+	.word MOGRABHIT8
+	.word 0
+a_hit:
+	.word MOHIT2
+	.word MOHIT3
+	.word MOHIT2
+	.word MOHIT1
+	.word 0
+a_block:
+	.word MOBLOCK1
+	.word MOBLOCK3
+	.word 0
+a_stumble:
+	.word MOSTUMBLE2
+	.word MOSTUMBLE2
+	.word MOSTUMBLE3
+	.word MOSTUMBLE5
+	.word MOSTUMBLE5
+	.word MOSTUMBLE6
+	.word 0
+j_stumble:
+	.word MOSTUMBLE2
+	.word MOSTUMBLE2
+	.word MOSTUMBLE3
+	.word MOSTUMBLE5
+	.word MOSTUMBLE5
+	.word MOSTUMBLE6
+	.word ani_jump
+	.word j_stumble
+a_knockdown:
+	.word MODEAD1
+	.word MODEAD2
+	.word MODEAD4
+	.word MODEAD6
+	.word MODEAD8
+	.word 0
+	.word MODEAD8
+	.word 0
+a_getup:
+	.word MOGETUP1
+	.word MOGETUP2
+	.word MOGETUP2
+	.word MOGETUP4
+	.word MOGETUP4
+	.word MOGETUP6
+	.word MOGETUP7
+	.word MOGETUP8
+	.word MOSTANCE1
+	.word 0
+a_mot_zap:
+	.word MOTAILSHOOT1
+	.word MOTAILSHOOT2
+	.word MOTAILSHOOT3
+	.word ani_sladd
+	.word MOBLAST1
+	.word 0
+	.word MOTAILSHOOT2
+	.word MOTAILSHOOT1
+	.word 0
+j_motzap:
+	.word MOBLAST2
+	.word MOBLAST3
+	.word ani_jump
+	.word j_motzap
+a_mist_tele:
+	.word ani_swpal
+	.word MOMIST1
+	.word MOMIST2
+	.word MOMIST3
+	.word MOMIST4
+	.word 0
+	.word MOMIST4
+	.word MOMIST3
+	.word MOMIST2
+	.word MOMIST1
+	.word 0
+a_sweep_kick:
+	.word MOTURN1
+	.word MOTURN3
+	.word MOSWEEP1
+	.word MOSWEEP2
+	.word 0
+	.word MOSWEEP4
+	.word MOSWEEP5
+	.word 0
+	.word MOSWEEP4
+	.word MOSWEEP2
+	.word MOSWEEP1
+	.word MOTURN3
+	.word MOTURN1
+	.word 0
+a_head_grab:
+	.word MOPUNCH2
+	.word MOPUNCH3
+	.word MOGRABHIT3
+	.word 0
+	.word MOGRABHIT4
+	.word MOGRABHIT5
+	.word MOGRABHIT6
+	.word 0
+	
+	
+a_victory:
+	.word MOVICTORY1
+	.word MOVICTORY3
+	.word MOVICTORY5
+	.word 0
+a_hop:
+	.word MOHOP1
+	.word MOHOP4
+	.word MOHOP4
+	.word MOHOP5
+	.word MOHOP6
+	.word 0
+	.word MOHOP7
+	.word MOHOP9
+	.word MOHOP11
+	.word 0
+a_kick:
+	.word MOTURN1
+	.word MOTURN3
+	.word MOTURN3
+	.word MOTURN5
+	.word MOTURN5
+	.word ani_flip
+	.word 0
+	.word MOKICK1
+	.word MOKICK3
+	.word MOKICK4
+	.word MOKICK6
+	.word 0
+	.word MOKICK4
+	.word MOKICK3
+	.word 0
+MOSTANCE1:
+	.word MOSTANCE1_SUB, 0
+MOSTANCE1_SUB:
+	.word MOSTANCE1_IMG
+	.half 156, 132, 102, 8
+	.word MOTARO_P
+MOSTANCE3:
+	.word MOSTANCE3_SUB, 0
+MOSTANCE3_SUB:
+	.word MOSTANCE3_IMG
+	.half 145, 122, 96, -3
+MOSTANCE5:
+	.word MOSTANCE5_SUB, 0
+MOSTANCE5_SUB:
+	.word MOSTANCE5_IMG
+	.half 140, 127, 96, -8
+MOSTANCE6:
+	.word MOSTANCE6_SUB, 0
+MOSTANCE6_SUB:
+	.word MOSTANCE6_IMG
+	.half 142, 136, 103, -6
+MOSTANCE7:
+	.word MOSTANCE7_SUB, 0
+MOSTANCE7_SUB:
+	.word MOSTANCE7_IMG
+	.half 167, 138, 108, 19
+MOSTANCE9:
+	.word MOSTANCE9_SUB, 0
+MOSTANCE9_SUB:
+	.word MOSTANCE9_IMG
+	.half 158, 144, 111, 10
+MOSTANCE11:
+	.word MOSTANCE11_SUB, 0
+MOSTANCE11_SUB:
+	.word MOSTANCE11_IMG
+	.half 145, 138, 106, -3
+MOLEG21:
+	.word MOLEG21_SUB, 0
+MOLEG21_SUB:
+	.word MOLEG21_IMG
+	.half 152, 123, 98, 4
+MOLEG22:
+	.word MOLEG22_SUB, 0
+MOLEG22_SUB:
+	.word MOLEG22_IMG
+	.half 145, 118, 95, -3
+MOLEG23:
+	.word MOLEG23_SUB, 0
+MOLEG23_SUB:
+	.word MOLEG23_IMG
+	.half 141, 119, 95, -7
+MOWALK1:
+	.word MOWALK1_SUB, 0
+MOWALK1_SUB:
+	.word MOWALK1_IMG
+	.half 142, 134, 106, -5
+MOWALK3:
+	.word MOWALK3_SUB, 0
+MOWALK3_SUB:
+	.word MOWALK3_IMG
+	.half 145, 169, 131, -2
+MOWALK5:
+	.word MOWALK5_SUB, 0
+MOWALK5_SUB:
+	.word MOWALK5_IMG
+	.half 148, 170, 139, 1
+MOWALK6:
+	.word MOWALK6_SUB, 0
+MOWALK6_SUB:
+	.word MOWALK6_IMG
+	.half 147, 159, 126, 0
+MOWALK8:
+	.word MOWALK8_SUB, 0
+MOWALK8_SUB:
+	.word MOWALK8_IMG
+	.half 138, 141, 110, -9
+MOWALK9:
+	.word MOWALK9_SUB, 0
+MOWALK9_SUB:
+	.word MOWALK9_IMG
+	.half 141, 154, 119, -6
+MOWALK10:
+	.word MOWALK10_SUB, 0
+MOWALK10_SUB:
+	.word MOWALK10_IMG
+	.half 145, 138, 106, -2
+MOWALK11:
+	.word MOWALK11_SUB, 0
+MOWALK11_SUB:
+	.word MOWALK11_IMG
+	.half 142, 137, 106, -5
+MOTURN1:
+	.word MOTURN1_SUB, 0
+MOTURN1_SUB:
+	.word MOTURN1_IMG
+	.half 147, 136, 96, -2
+MOTURN3:
+	.word MOTURN3_SUB, 0
+MOTURN3_SUB:
+	.word MOTURN3_IMG
+	.half 145, 128, 86, -3
+MOTURN5:
+	.word MOTURN5_SUB, 0
+MOTURN5_SUB:
+	.word MOTURN5_IMG
+	.half 142, 107, 26, -5
+MOTURN7:
+	.word MOTURN7_SUB, 0
+MOTURN7_SUB:
+	.word MOTURN7_IMG
+	.half 143, 131, 26, -4
+MOGRABHIT1:
+	.word MOGRABHIT1_SUB, 0
+MOGRABHIT1_SUB:
+	.word MOGRABHIT1_IMG
+	.half 166, 164, 98, 17
+MOGRABHIT3:
+	.word MOGRABHIT3_SUB, 0
+MOGRABHIT3_SUB:
+	.word MOGRABHIT3_IMG
+	.half 153, 162, 91, 4
+MOGRABHIT4:
+	.word MOGRABHIT4_SUB, 0
+MOGRABHIT4_SUB:
+	.word MOGRABHIT4_IMG
+	.half 140, 152, 102, -8
+MOGRABHIT5:
+	.word MOGRABHIT5_SUB, 0
+MOGRABHIT5_SUB:
+	.word MOGRABHIT5_IMG
+	.half 158, 137, 113, 9
+MOGRABHIT6:
+	.word MOGRABHIT6_SUB, 0
+MOGRABHIT6_SUB:
+	.word MOGRABHIT6_IMG
+	.half 165, 141, 117, 15
+MOGRABHIT8:
+	.word MOGRABHIT8_SUB, 0
+MOGRABHIT8_SUB:
+	.word MOGRABHIT8_IMG
+	.half 164, 152, 107, 14
+MOGRABHIT9:
+	.word MOGRABHIT9_SUB, 0
+MOGRABHIT9_SUB:
+	.word MOGRABHIT9_IMG
+	.half 150, 151, 106, 1
+MOGRABHIT10:
+	.word MOGRABHIT10_SUB, 0
+MOGRABHIT10_SUB:
+	.word MOGRABHIT10_IMG
+	.half 146, 150, 105, -2
+MOMIST1:
+	.word MOMIST1_SUB, 0
+MOMIST1_SUB:
+	.word MOMIST1_IMG
+	.half 146, 140, 117, -2
+	.word MOMIST_P
+MOMIST2:
+	.word MOMIST2_SUB, 0
+MOMIST2_SUB:
+	.word MOMIST2_IMG
+	.half 157, 145, 114, 3
+MOMIST3:
+	.word MOMIST3_SUB, 0
+MOMIST3_SUB:
+	.word MOMIST3_IMG
+	.half 163, 167, 117, 8
+MOMIST4:
+	.word MOMIST4_SUB, 0
+MOMIST4_SUB:
+	.word MOMIST4_IMG
+	.half 168, 153, 110, 11
+MOTAILSHOOT1:
+	.word MOTAILSHOOT1_SUB, 0
+MOTAILSHOOT1_SUB:
+	.word MOTAILSHOOT1_IMG
+	.half 168, 130, 91, 21
+MOTAILSHOOT2:
+	.word MOTAILSHOOT2_SUB, 0
+MOTAILSHOOT2_SUB:
+	.word MOTAILSHOOT2_IMG
+	.half 164, 131, 81, 16
+MOTAILSHOOT3:
+	.word MOTAILSHOOT3_SUB, 0
+MOTAILSHOOT3_SUB:
+	.word MOTAILSHOOT3_IMG
+	.half 168, 137, 88, 20
+MOBLAST1:
+	.word MOBLAST1_SUB, 0
+MOBLAST1_SUB:
+	.word MOBLAST1_IMG
+	.half 85, 66, 42, 37
+	.word BLAST_P
+MOBLAST2:
+	.word MOBLAST2_SUB, 0
+MOBLAST2_SUB:
+	.word MOBLAST2_IMG
+	.half 33, 40, 19, 16
+MOBLAST3:
+	.word MOBLAST3_SUB, 0
+MOBLAST3_SUB:
+	.word MOBLAST3_IMG
+	.half 28, 34, 17, 14
+MOBLOCK1:
+	.word MOBLOCK1_SUB, 0
+MOBLOCK1_SUB:
+	.word MOBLOCK1_IMG
+	.half 154, 132, 106, 6
+MOBLOCK3:
+	.word MOBLOCK3_SUB, 0
+MOBLOCK3_SUB:
+	.word MOBLOCK3_IMG
+	.half 140, 138, 114, -7
+MOVICTORY1:
+	.word MOVICTORY1_SUB, 0
+MOVICTORY1_SUB:
+	.word MOVICTORY1_IMG
+	.half 140, 143, 115, -8
+MOVICTORY3:
+	.word MOVICTORY3_SUB, 0
+MOVICTORY3_SUB:
+	.word MOVICTORY3_IMG
+	.half 149, 138, 119, 0
+MOVICTORY5:
+	.word MOVICTORY5_SUB, 0
+MOVICTORY5_SUB:
+	.word MOVICTORY5_IMG
+	.half 166, 143, 124, 17
+MOPUNCH1:
+	.word MOPUNCH1_SUB, 0
+MOPUNCH1_SUB:
+	.word MOPUNCH1_IMG
+	.half 143, 143, 110, -4
+MOPUNCH2:
+	.word MOPUNCH2_SUB, 0
+MOPUNCH2_SUB:
+	.word MOPUNCH2_IMG
+	.half 144, 156, 114, -3
+MOPUNCH3:
+	.word MOPUNCH3_SUB, 0
+MOPUNCH3_SUB:
+	.word MOPUNCH3_IMG
+	.half 148, 132, 110, 0
+MOPUNCH5:
+	.word MOPUNCH5_SUB, 0
+MOPUNCH5_SUB:
+	.word MOPUNCH5_IMG
+	.half 165, 168, 82, 16
+MOKICK1:
+	.word MOKICK1_SUB, 0
+MOKICK1_SUB:
+	.word MOKICK1_IMG
+	.half 161, 146, 110, 14
+MOKICK3:
+	.word MOKICK3_SUB, 0
+MOKICK3_SUB:
+	.word MOKICK3_IMG
+	.half 164, 140, 110, 17
+MOKICK4:
+	.word MOKICK4_SUB, 0
+MOKICK4_SUB:
+	.word MOKICK4_IMG
+	.half 157, 121, 74, 10
+MOKICK6:
+	.word MOKICK6_SUB, 0
+MOKICK6_SUB:
+	.word MOKICK6_IMG
+	.half 165, 143, 104, 18
+MOSWEEP1:
+	.word MOSWEEP1_SUB, 0
+MOSWEEP1_SUB:
+	.word MOSWEEP1_IMG
+	.half 145, 132, 29, -2
+MOSWEEP2:
+	.word MOSWEEP2_SUB, 0
+MOSWEEP2_SUB:
+	.word MOSWEEP2_IMG
+	.half 146, 161, 27, -2
+MOSWEEP4:
+	.word MOSWEEP4_SUB, 0
+MOSWEEP4_SUB:
+	.word MOSWEEP4_IMG
+	.half 146, 231, 27, -2
+MOSWEEP5:
+	.word MOSWEEP5_SUB, 0
+MOSWEEP5_SUB:
+	.word MOSWEEP5_IMG
+	.half 146, 194, 27, -2
+MOHOP1:
+	.word MOHOP1_SUB, 0
+MOHOP1_SUB:
+	.word MOHOP1_IMG
+	.half 144, 131, 107, -2
+MOHOP4:
+	.word MOHOP4_SUB, 0
+MOHOP4_SUB:
+	.word MOHOP4_IMG
+	.half 152, 169, 138, 14
+MOHOP5:
+	.word MOHOP5_SUB, 0
+MOHOP5_SUB:
+	.word MOHOP5_IMG
+	.half 122, 186, 156, 3
+MOHOP6:
+	.word MOHOP6_SUB, 0
+MOHOP6_SUB:
+	.word MOHOP6_IMG
+	.half 121, 228, 198, -9
+MOHOP7:
+	.word MOHOP7_SUB, 0
+MOHOP7_SUB:
+	.word MOHOP7_IMG
+	.half 137, 195, 168, -11
+MOHOP9:
+	.word MOHOP9_SUB, 0
+MOHOP9_SUB:
+	.word MOHOP9_IMG
+	.half 141, 170, 145, -8
+MOHOP11:
+	.word MOHOP11_SUB, 0
+MOHOP11_SUB:
+	.word MOHOP11_IMG
+	.half 141, 150, 126, -8
+MOHIT2:
+	.word MOHIT2_SUB, 0
+MOHIT2_SUB:
+	.word MOHIT2_IMG
+	.half 162, 120, 98, 14
+MOHIT3:
+	.word MOHIT3_SUB, 0
+MOHIT3_SUB:
+	.word MOHIT3_IMG
+	.half 162, 119, 97, 14
+MOHIT1:
+	.word MOHIT1_SUB, 0
+MOHIT1_SUB:
+	.word MOHIT1_IMG
+	.half 156, 124, 98, 8
+MODEAD1:
+	.word MODEAD1_SUB, 0
+MODEAD1_SUB:
+	.word MODEAD1_IMG
+	.half 136, 118, 91, -10
+MODEAD2:
+	.word MODEAD2_SUB, 0
+MODEAD2_SUB:
+	.word MODEAD2_IMG
+	.half 126, 130, 86, -21
+MODEAD4:
+	.word MODEAD4_SUB, 0
+MODEAD4_SUB:
+	.word MODEAD4_IMG
+	.half 118, 146, 89, -30
+MODEAD6:
+	.word MODEAD6_SUB, 0
+MODEAD6_SUB:
+	.word MODEAD6_IMG
+	.half 113, 149, 89, -36
+MODEAD8:
+	.word MODEAD8_SUB, 0
+MODEAD8_SUB:
+	.word MODEAD8_IMG
+	.half 114, 146, 90, -38
+MOSTUMBLE2:
+	.word MOSTUMBLE2_SUB, 0
+MOSTUMBLE2_SUB:
+	.word MOSTUMBLE2_IMG
+	.half 142, 137, 101, -6
+MOSTUMBLE3:
+	.word MOSTUMBLE3_SUB, 0
+MOSTUMBLE3_SUB:
+	.word MOSTUMBLE3_IMG
+	.half 140, 131, 102, -6
+MOSTUMBLE5:
+	.word MOSTUMBLE5_SUB, 0
+MOSTUMBLE5_SUB:
+	.word MOSTUMBLE5_IMG
+	.half 142, 134, 104, -5
+MOSTUMBLE6:
+	.word MOSTUMBLE6_SUB, 0
+MOSTUMBLE6_SUB:
+	.word MOSTUMBLE6_IMG
+	.half 144, 133, 102, -3
+MOGETUP1:
+	.word MOGETUP1_SUB, 0
+MOGETUP1_SUB:
+	.word MOGETUP1_IMG
+	.half 120, 150, 90, -34
+MOGETUP2:
+	.word MOGETUP2_SUB, 0
+MOGETUP2_SUB:
+	.word MOGETUP2_IMG
+	.half 128, 145, 90, -26
+MOGETUP4:
+	.word MOGETUP4_SUB, 0
+MOGETUP4_SUB:
+	.word MOGETUP4_IMG
+	.half 128, 144, 90, -26
+MOGETUP6:
+	.word MOGETUP6_SUB, 0
+MOGETUP6_SUB:
+	.word MOGETUP6_IMG
+	.half 130, 145, 92, -19
+MOGETUP7:
+	.word MOGETUP7_SUB, 0
+MOGETUP7_SUB:
+	.word MOGETUP7_IMG
+	.half 145, 155, 102, -4
+MOGETUP8:
+	.word MOGETUP8_SUB, 0
+MOGETUP8_SUB:
+	.word MOGETUP8_IMG
+	.half 145, 156, 106, -2
+MOGETUP9:
+	.word MOGETUP9_SUB, 0
+MOGETUP9_SUB:
+	.word MOGETUP9_IMG
+	.half 146, 136, 106, -1

@@ -1,0 +1,32 @@
+disapate_anims:
+	.word a_noob
+a_noob:
+	.word GHOSTCPLOOP1
+	.word GHOSTCPLOOP2
+	.word GHOSTCPLOOP3
+	.word GHOSTCPLOOP4
+	.word GHOSTDISP1
+	.word GHOSTDISP2
+	.word GHOSTDISP3
+	.word 0
+GHOSTCPLOOP1:
+	.word GHOSTCPLOOP1_IMG
+	.half 31, 92, -59, -42
+GHOSTCPLOOP2:
+	.word GHOSTCPLOOP2_IMG
+	.half 33, 97, -55, -40
+GHOSTCPLOOP3:
+	.word GHOSTCPLOOP3_IMG
+	.half 35, 97, -54, -39
+GHOSTCPLOOP4:
+	.word GHOSTCPLOOP4_IMG
+	.half 36, 86, -59, -40
+GHOSTDISP1:
+	.word GHOSTDISP1_IMG
+	.half 32, 93, -58, -42
+GHOSTDISP2:
+	.word GHOSTDISP2_IMG
+	.half 31, 98, -55, -42
+GHOSTDISP3:
+	.word GHOSTDISP3_IMG
+	.half 24, 87, -58, -44

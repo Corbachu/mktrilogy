@@ -1,0 +1,99 @@
+lao_list:
+	.word VKLFLESH1A
+	.word VKLFLESH1B
+	.word VKLFLESH1C
+	.word VKLFLESH1D
+	.word VKLFLESH1E
+	.word VKLGREY1A
+	.word VKLGREY1B
+	.word VKLGREY1C
+	.word VKLGREY1D
+	.word VKLGREY1E
+	.word VKLGREY1F
+	.word VKLGREY1G
+	.word VKLPANTS1A
+	.word VKLPANTS1B
+VKLFLESH1A:
+	.word KLFLESH1A
+	.word 0
+VKLFLESH1B:
+	.word KLFLESH1B
+	.word 0
+VKLFLESH1C:
+	.word KLFLESH1C
+	.word 0
+VKLFLESH1D:
+	.word KLFLESH1D
+	.word 0
+VKLFLESH1E:
+	.word KLFLESH1E
+	.word 0
+VKLGREY1A:
+	.word KLGREY1A
+	.word 0
+VKLGREY1B:
+	.word KLGREY1B
+	.word 0
+VKLGREY1C:
+	.word KLGREY1C
+	.word 0
+VKLGREY1D:
+	.word KLGREY1D
+	.word 0
+VKLGREY1E:
+	.word KLGREY1E
+	.word 0
+VKLGREY1F:
+	.word KLGREY1F
+	.word 0
+VKLGREY1G:
+	.word KLGREY1G
+	.word 0
+VKLPANTS1A:
+	.word KLPANTS1A
+	.word 0
+VKLPANTS1B:
+	.word KLPANTS1B
+	.word 0
+KLFLESH1A:
+	.word KLFLESH1A_IMG
+	.half 46, 66, 84, -26
+KLFLESH1B:
+	.word KLFLESH1B_IMG
+	.half 87, 10, 42, -72
+KLFLESH1C:
+	.word KLFLESH1C_IMG
+        .half 134, 51, 32, -25
+KLFLESH1D:
+	.word KLFLESH1D_IMG
+	.half 116, 39, -19, -25
+KLFLESH1E:
+	.word KLFLESH1E_IMG
+	.half 70, 33, -58, -72
+KLGREY1A:
+	.word KLGREY1A_IMG
+	.half 20, 26, 70, -27
+KLGREY1B:
+	.word KLGREY1B_IMG
+        .half 137, 47, 43, -6
+KLGREY1C:
+	.word KLGREY1C_IMG
+	.half 34, 22, -61, -94
+KLGREY1D:
+	.word KLGREY1D_IMG
+	.half 31, 27, 0, -151
+KLGREY1E:
+	.word KLGREY1E_IMG
+	.half 83, 59, -4, -1
+KLGREY1F:
+	.word KLGREY1F_IMG
+	.half 28, 18, -4, -114
+KLGREY1G:
+	.word KLGREY1G_IMG
+        .half 40, 46, 52, -142
+KLPANTS1A:
+	.word KLPANTS1A_IMG
+        .half 18, 9, 38, -164
+KLPANTS1B:
+	.word KLPANTS1B_IMG
+        .half 25, 32, 7, -157

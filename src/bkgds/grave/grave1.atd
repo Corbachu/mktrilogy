@@ -1,0 +1,88 @@
+grave_anims:
+	.word a_moon
+	.word a_tomb_stones
+a_tomb_stones:
+	.word VOGEL
+	.word BERAN
+	.word GOSKIE
+	.word MICHIC
+	.word BOON
+	.word TOBIAS
+	.word 0
+a_moon:
+	.word MOONA28
+	.word MOONA2
+	.word MOONA4
+	.word MOONA6
+	.word MOONA8
+	.word MOONA10
+	.word MOONA12
+	.word MOONA14
+	.word MOONA16
+	.word MOONA18
+	.word MOONA20
+	.word MOONA22
+	.word MOONA24
+	.word MOONA26
+	.word MOONA28
+	.word 0
+MOONA28:
+	.word MOONA28_IMG
+	.half 72, 65, -16, 0
+MOONA2:
+	.word MOONA2_IMG
+	.half 75, 65, -13, 0
+MOONA4:
+	.word MOONA4_IMG
+	.half 76, 65, -12, 0
+MOONA6:
+	.word MOONA6_IMG
+	.half 74, 65, -13, 0
+MOONA8:
+	.word MOONA8_IMG
+	.half 89, 65, 0, 0
+MOONA10:
+	.word MOONA10_IMG
+	.half 82, 65, -6, 0
+MOONA12:
+	.word MOONA12_IMG
+	.half 93, 65, 0, 0
+MOONA14:
+	.word MOONA14_IMG
+	.half 98, 65, -6, 0
+MOONA16:
+	.word MOONA16_IMG
+	.half 96, 65, -11, 0
+MOONA18:
+	.word MOONA18_IMG
+	.half 89, 65, -16, 0
+MOONA20:
+	.word MOONA20_IMG
+	.half 79, 65, -16, 0
+MOONA22:
+	.word MOONA22_IMG
+	.half 86, 65, -16, 0
+MOONA24:
+	.word MOONA24_IMG
+	.half 83, 65, -16, 0
+MOONA26:
+	.word MOONA26_IMG
+	.half 83, 65, -16, 0
+VOGEL:
+	.word VOGEL_IMG
+	.half 34, 43, 0, 0
+BERAN:
+	.word BERAN_IMG
+	.half 34, 43, 0, 0
+GOSKIE:
+	.word GOSKIE_IMG
+	.half 34, 43, 0, 0
+MICHIC:
+	.word MICHIC_IMG
+	.half 34, 43, 0, 0
+BOON:
+	.word BOON_IMG
+	.half 34, 43, 0, 0
+TOBIAS:
+	.word TOBIAS_IMG
+	.half 34, 43, 0, 0

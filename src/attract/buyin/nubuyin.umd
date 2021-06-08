@@ -1,0 +1,89 @@
+	.align 2
+	.globl BUYINBOTBMOD
+BUYINBOTBMOD:
+	.half   333,   151
+	.word    10, BUYINBOT_BLK, NUBUYIN_HDR, NUBUYIN_CLT
+
+	.align 2
+	.globl BUYINBOT_BLK
+BUYINBOT_BLK:
+	.half     7,    10,    64, 0x0000,     2
+	.half     7,    27,   100, 0x0000,     0
+	.half    35,     7,   100, 0x0000,     4
+	.half    86,    10,    64, 0x0000,     7
+	.half   114,     7,   100, 0x0000,     8
+	.half   166,    10,    64, 0x0000,    11
+	.half   168,     7,   100, 0x0000,    12
+	.half   232,     7,   100, 0x0000,    16
+	.half   247,    10,    64, 0x0000,    18
+	.half   311,    27,    64, 0x0000,    21
+
+	.align 2
+	.globl BUYINTOPBMOD
+BUYINTOPBMOD:
+	.half   330,   150
+	.word    12, BUYINTOP_BLK, NUBUYIN_HDR, NUBUYIN_CLT
+
+	.align 2
+	.globl BUYINTOP_BLK
+BUYINTOP_BLK:
+	.half     6,     6,    64, 0x0000,     3
+	.half     6,   120,   100, 0x0000,     1
+	.half    44,     6,    64, 0x0000,     5
+	.half    74,   120,   100, 0x0000,     6
+	.half   127,     6,    64, 0x0000,     9
+	.half   127,   120,   100, 0x0000,    10
+	.half   167,   120,   100, 0x0000,    13
+	.half   202,     6,    64, 0x0000,    14
+	.half   205,   120,   100, 0x0000,    15
+	.half   243,   120,   100, 0x0000,    17
+	.half   282,   120,   100, 0x0000,    19
+	.half   284,     6,    64, 0x0000,    20
+
+	.align 2
+	.globl NUBUYIN_HDR
+NUBUYIN_HDR:
+	.half    20,     4
+	.word     0
+	.half    56,    25
+	.word    80
+	.half    80,   136
+	.word  1480
+	.half    40,   137
+	.word 12360
+	.half    68,    25
+	.word 17840
+	.half    84,   136
+	.word 19544
+	.half    56,    25
+	.word 30968
+	.half    80,   136
+	.word 32368
+	.half    56,    25
+	.word 43248
+	.half    76,   136
+	.word 44648
+	.half    40,    25
+	.word 54984
+	.half    84,   136
+	.word 55984
+	.half    52,    25
+	.word 67408
+	.half    40,    25
+	.word 68712
+	.half    84,   136
+	.word 69712
+	.half    40,    25
+	.word 81136
+	.half    68,    25
+	.word 82136
+	.half    40,    25
+	.word 83840
+	.half    80,   136
+	.word 84840
+	.half    44,    25
+	.word 95720
+	.half    44,   136
+	.word 96824
+	.half    16,     4
+	.word 102808

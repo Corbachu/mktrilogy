@@ -1,0 +1,393 @@
+	.align 2
+	.globl ARENA1BMOD
+ARENA1BMOD:
+	.half   881,   112
+	.word    38, ARENA1_BLK, KUNGFU2x_HDR, KUNGFU2x_CLT
+
+	.align 2
+	.globl ARENA1_BLK
+ARENA1_BLK:
+	.half    11,    48,    65, 0x0200,     3
+	.half    29,    71,    64, 0x0C00,     5
+	.half    32,    90,    64, 0x0C00,     6
+	.half    39,    93,    64, 0x0200,     7
+	.half    56,    53,    64, 0x0C00,     9
+	.half    71,    17,    64, 0x0200,    10
+	.half    83,    53,    64, 0x0C00,    12
+	.half    87,    90,    64, 0x0C00,     6
+	.half   138,    53,    64, 0x0C00,    12
+	.half   142,    90,    64, 0x0C00,     6
+	.half   193,    53,    64, 0x0C00,    12
+	.half   197,    90,    64, 0x0C00,     6
+	.half   248,    53,    64, 0x0C00,    12
+	.half   252,    90,    64, 0x0C00,     6
+	.half   303,    53,    64, 0x0C00,    12
+	.half   307,    90,    64, 0x0C00,     6
+	.half   358,    53,    64, 0x0C00,    12
+	.half   362,    90,    64, 0x0C00,     6
+	.half   413,    53,    64, 0x0C00,    12
+	.half   417,    90,    64, 0x0C00,     6
+	.half   468,    53,    64, 0x0C00,    12
+	.half   472,    90,    64, 0x0C00,     6
+	.half   523,    53,    64, 0x0C00,    12
+	.half   527,    90,    64, 0x0C00,     6
+	.half   578,    53,    64, 0x0C00,    12
+	.half   582,    90,    64, 0x0C00,     6
+	.half   633,    53,    64, 0x0C00,    12
+	.half   637,    90,    64, 0x0C00,     6
+	.half   688,    53,    64, 0x0C00,    12
+	.half   692,    90,    64, 0x0C00,     6
+	.half   743,    53,    64, 0x0C00,    12
+	.half   747,    90,    64, 0x0C00,     6
+	.half   789,    17,    64, 0x0210,    10
+	.half   796,    71,    64, 0x0C10,     5
+	.half   797,    53,    64, 0x0C10,     9
+	.half   802,    90,    64, 0x0C00,     6
+	.half   825,    93,    64, 0x0210,     7
+	.half   836,    48,    65, 0x0210,     3
+
+	.align 2
+	.globl ARENA2BMOD
+ARENA2BMOD:
+	.half   847,   178
+	.word    70, ARENA2_BLK, KUNGFU2x_HDR, KUNGFU2x_CLT
+
+	.align 2
+	.globl ARENA2_BLK
+ARENA2_BLK:
+	.half    92,    87,    66, 0x0400,    14
+	.half    92,   104,    64, 0x0400,    13
+	.half   116,    86,    66, 0x0400,    17
+	.half   120,    55,    65, 0x0400,    18
+	.half   124,     7,    65, 0x0400,    19
+	.half   136,   104,    64, 0x0400,    13
+	.half   150,    83,    66, 0x0400,    22
+	.half   156,    83,    66, 0x0400,    24
+	.half   162,    52,    67, 0x0D10,    26
+	.half   162,   105,    67, 0x0D10,    25
+	.half   173,    38,    68, 0x0310,    35
+	.half   181,   104,    64, 0x0400,    13
+	.half   189,    83,    66, 0x0400,    38
+	.half   195,    57,    67, 0x0D10,    40
+	.half   211,   105,    67, 0x0D10,    46
+	.half   212,    71,    67, 0x0D10,    47
+	.half   216,    28,    67, 0x0D10,    48
+	.half   220,    83,    66, 0x0400,    24
+	.half   226,   104,    64, 0x0400,    13
+	.half   254,    83,    66, 0x0400,    38
+	.half   271,   104,    64, 0x0400,    13
+	.half   291,    83,    66, 0x0400,    24
+	.half   307,    52,    67, 0x0D10,    26
+	.half   307,   105,    67, 0x0D10,    25
+	.half   316,   104,    64, 0x0400,    13
+	.half   317,    37,    68, 0x0310,    35
+	.half   324,    83,    66, 0x0400,    38
+	.half   340,    56,    67, 0x0D10,    40
+	.half   355,   105,    67, 0x0D10,    46
+	.half   357,    70,    67, 0x0D10,    47
+	.half   361,    28,    67, 0x0D10,    48
+	.half   361,    83,    66, 0x0400,    24
+	.half   361,   104,    64, 0x0400,    13
+	.half   395,    83,    66, 0x0400,    38
+	.half   406,   104,    64, 0x0400,    13
+	.half   432,    83,    66, 0x0400,    24
+	.half   451,   104,    64, 0x0400,    13
+	.half   465,    83,    66, 0x0400,    38
+	.half   496,   104,    64, 0x0400,    13
+	.half   498,    28,    67, 0x0D00,    48
+	.half   502,    70,    67, 0x0D00,    47
+	.half   502,    83,    66, 0x0400,    24
+	.half   503,    57,    67, 0x0D00,    40
+	.half   503,   105,    67, 0x0D00,    46
+	.half   524,    52,    67, 0x0D00,    26
+	.half   524,   105,    67, 0x0D00,    25
+	.half   529,    38,    68, 0x0300,    35
+	.half   536,    83,    66, 0x0400,    38
+	.half   541,   104,    64, 0x0400,    13
+	.half   551,   104,    64, 0x0400,    13
+	.half   572,    83,    66, 0x0400,    24
+	.half   596,   104,    64, 0x0400,    13
+	.half   606,    83,    66, 0x0400,    38
+	.half   641,   104,    64, 0x0400,    13
+	.half   643,    83,    66, 0x0400,    24
+	.half   648,    28,    67, 0x0D00,    48
+	.half   652,    71,    67, 0x0D00,    47
+	.half   653,    56,    67, 0x0D00,    40
+	.half   653,   105,    67, 0x0D00,    46
+	.half   673,    52,    67, 0x0D00,    26
+	.half   673,    83,    66, 0x0400,    38
+	.half   673,   105,    67, 0x0D00,    25
+	.half   680,    37,    68, 0x0300,    35
+	.half   686,   104,    64, 0x0400,    13
+	.half   708,    83,    66, 0x0410,    22
+	.half   710,    57,    65, 0x0410,    18
+	.half   714,     9,    65, 0x0410,    19
+	.half   726,    85,    66, 0x0410,    17
+	.half   731,   104,    64, 0x0400,    13
+	.half   748,    86,    66, 0x0410,    14
+
+	.align 2
+	.globl ARENA3BMOD
+ARENA3BMOD:
+	.half   645,    42
+	.word     9, ARENA3_BLK, KUNGFU2x_HDR, KUNGFU2x_CLT
+
+	.align 2
+	.globl ARENA3_BLK
+ARENA3_BLK:
+	.half    10,     1,    72, 0x0B00,     2
+	.half    79,     1,    71, 0x0B00,     2
+	.half   148,     1,    70, 0x0B00,     2
+	.half   217,     1,    69, 0x0B00,     2
+	.half   286,     1,    68, 0x0B00,     2
+	.half   355,     1,    67, 0x0B00,     2
+	.half   424,     1,    66, 0x0B00,     2
+	.half   493,     1,    65, 0x0B00,     2
+	.half   562,     1,    64, 0x0B00,     2
+
+	.align 2
+	.globl ARENA4BMOD
+ARENA4BMOD:
+	.half   507,    40
+	.word     7, ARENA4_BLK, KUNGFU2x_HDR, KUNGFU2x_CLT
+
+	.align 2
+	.globl ARENA4_BLK
+ARENA4_BLK:
+	.half     6,     1,    70, 0x0000,     2
+	.half    75,     1,    69, 0x0000,     2
+	.half   144,     1,    68, 0x0000,     2
+	.half   213,     1,    67, 0x0000,     2
+	.half   282,     1,    66, 0x0000,     2
+	.half   352,     1,    65, 0x0000,     2
+	.half   421,     1,    64, 0x0000,     2
+
+	.align 2
+	.globl ARENA5BMOD
+ARENA5BMOD:
+	.half   536,   136
+	.word    42, ARENA5_BLK, KUNGFU2x_HDR, KUNGFU2x_CLT
+
+	.align 2
+	.globl ARENA5_BLK
+ARENA5_BLK:
+	.half    13,    45,    64, 0x0500,     0
+	.half    14,    31,    64, 0x0800,     1
+	.half    29,    45,    64, 0x0500,     4
+	.half    34,    31,    64, 0x0810,     1
+	.half    58,    31,    64, 0x0800,     1
+	.half    78,    31,    64, 0x0810,     1
+	.half   111,    45,    64, 0x0510,     4
+	.half   144,    21,    64, 0x0A00,    21
+	.half   154,    43,    64, 0x0A00,    23
+	.half   166,    24,    64, 0x0A00,    28
+	.half   171,    40,    64, 0x0A00,    33
+	.half   174,    27,    64, 0x0A00,    34
+	.half   178,     7,    64, 0x0A00,    36
+	.half   179,    20,    64, 0x0A00,    37
+	.half   195,    45,    64, 0x0500,     0
+	.half   209,    67,    66, 0x0510,    44
+	.half   211,    52,    64, 0x0600,    45
+	.half   233,    48,    64, 0x0610,    50
+	.half   237,    48,    64, 0x0600,    51
+	.half   250,    48,    64, 0x0600,    51
+	.half   256,    58,    64, 0x0600,    52
+	.half   263,    48,    64, 0x0600,    51
+	.half   276,    48,    64, 0x0600,    51
+	.half   287,    48,    64, 0x0600,    51
+	.half   296,    67,    66, 0x0500,    44
+	.half   300,    48,    64, 0x0600,    50
+	.half   302,    52,    64, 0x0600,    45
+	.half   326,    45,    64, 0x0500,     0
+	.half   331,    40,    64, 0x0A10,    33
+	.half   340,     7,    64, 0x0A10,    36
+	.half   342,    45,    64, 0x0500,     4
+	.half   344,    27,    64, 0x0A10,    34
+	.half   347,    20,    64, 0x0A10,    37
+	.half   364,    25,    64, 0x0A10,    28
+	.half   370,    21,    64, 0x0A10,    21
+	.half   370,    43,    64, 0x0A10,    23
+	.half   424,    45,    64, 0x0510,     4
+	.half   436,    31,    64, 0x0800,     1
+	.half   456,    31,    64, 0x0810,     1
+	.half   480,    31,    64, 0x0800,     1
+	.half   500,    31,    64, 0x0810,     1
+	.half   508,    45,    64, 0x0500,     0
+
+	.align 2
+	.globl ARENA6BMOD
+ARENA6BMOD:
+	.half   404,   175
+	.word    13, ARENA6_BLK, KUNGFU2x_HDR, KUNGFU2x_CLT
+
+	.align 2
+	.globl ARENA6_BLK
+ARENA6_BLK:
+	.half    21,    92,    64, 0x0100,    15
+	.half    49,    58,    64, 0x0810,    20
+	.half    82,   113,    64, 0x0810,    29
+	.half    84,   126,    64, 0x0800,    31
+	.half   125,    58,    64, 0x0800,    43
+	.half   163,    58,    64, 0x0800,    43
+	.half   175,   101,    64, 0x0700,    53
+	.half   201,    58,    64, 0x0800,    43
+	.half   239,    58,    64, 0x0800,    43
+	.half   277,    58,    64, 0x0800,    20
+	.half   304,   113,    64, 0x0800,    29
+	.half   310,   126,    64, 0x0810,    31
+	.half   356,    92,    64, 0x0110,    15
+
+	.align 2
+	.globl ARENA7BMOD
+ARENA7BMOD:
+	.half   235,    82
+	.word     7, ARENA7_BLK, KUNGFU2x_HDR, KUNGFU2x_CLT
+
+	.align 2
+	.globl ARENA7_BLK
+ARENA7_BLK:
+	.half    13,    21,    64, 0x0810,    30
+	.half    15,     7,    64, 0x0800,    32
+	.half    51,     7,    64, 0x0800,    42
+	.half    51,    19,    64, 0x0800,    41
+	.half   165,    19,    64, 0x0800,    41
+	.half   181,     7,    64, 0x0810,    32
+	.half   211,    21,    64, 0x0800,    30
+
+	.align 2
+	.globl ARENA8BMOD
+ARENA8BMOD:
+	.half   339,   173
+	.word     6, ARENA8_BLK, KUNGFU2x_HDR, KUNGFU2x_CLT
+
+	.align 2
+	.globl ARENA8_BLK
+ARENA8_BLK:
+	.half     9,    93,    64, 0x0900,     8
+	.half    40,   107,    64, 0x0900,    11
+	.half    64,   101,    64, 0x0900,    16
+	.half   118,   110,    64, 0x0900,    27
+	.half   146,   116,    64, 0x0900,    39
+	.half   180,   122,    64, 0x0900,    49
+
+	.align 2
+	.globl CLOUDZBMOD
+CLOUDZBMOD:
+	.half   323,    60
+	.word     0, CLOUDZ_BLK, KUNGFU2x_HDR, KUNGFU2x_CLT
+
+	.align 2
+	.globl CLOUDZ_BLK
+CLOUDZ_BLK:
+
+	.align 2
+	.globl KUNGFU2x_HDR
+KUNGFU2x_HDR:
+	.half    16,    50
+	.word     0
+	.half    24,    14
+	.word   800
+	.half    84,    35
+	.word  1136
+	.half    28,    54
+	.word  4080
+	.half    84,    50
+	.word  5592
+	.half    56,    19
+	.word  9792
+	.half    56,     9
+	.word 10856
+	.half    12,     9
+	.word 11360
+	.half    32,    57
+	.word 11472
+	.half    28,    18
+	.word 13296
+	.half    20,    43
+	.word 13800
+	.half    24,    43
+	.word 14664
+	.half    56,    37
+	.word 15696
+	.half    48,    69
+	.word 17768
+	.half    28,    38
+	.word 21080
+	.half    24,    71
+	.word 22144
+	.half    56,    49
+	.word 23848
+	.half    24,    30
+	.word 26592
+	.half    36,    53
+	.word 27312
+	.half    28,    48
+	.word 29224
+	.half    76,    55
+	.word 30568
+	.half    24,    22
+	.word 34752
+	.half     8,    22
+	.word 35280
+	.half    16,     3
+	.word 35456
+	.half    36,    22
+	.word 35504
+	.half    36,    20
+	.word 36296
+	.half    36,    53
+	.word 37016
+	.half    28,    40
+	.word 38928
+	.half     8,    16
+	.word 40048
+	.half    16,    13
+	.word 40176
+	.half    12,    42
+	.word 40384
+	.half     8,    37
+	.word 40888
+	.half    40,    14
+	.word 41184
+	.half    36,     7
+	.word 41744
+	.half    20,    14
+	.word 42000
+	.half    20,    20
+	.word 42280
+	.half    20,    14
+	.word 42680
+	.half    12,     7
+	.word 42960
+	.half    40,    22
+	.word 43048
+	.half    36,    34
+	.word 43928
+	.half    24,    19
+	.word 45152
+	.half    20,    60
+	.word 45608
+	.half   136,    12
+	.word 46808
+	.half    40,    55
+	.word 48440
+	.half    32,    28
+	.word 50640
+	.half    24,    15
+	.word 51536
+	.half     8,    19
+	.word 51896
+	.half     8,    35
+	.word 52048
+	.half     8,    43
+	.word 52328
+	.half    28,    28
+	.word 52672
+	.half     4,    47
+	.word 53456
+	.half    16,    47
+	.word 53648
+	.half    28,    27
+	.word 54400
+	.half    56,    64
+	.word 55160

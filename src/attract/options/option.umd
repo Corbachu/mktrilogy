@@ -1,0 +1,31 @@
+	.align 2
+	.globl optionBMOD
+optionBMOD:
+	.half   329,   247
+	.word     6, option_BLK, option_HDR, option_CLT
+
+	.align 2
+	.globl option_BLK
+option_BLK:
+	.half     5,     4,    64, 0x0000,     0
+	.half     5,    84,    64, 0x0000,     1
+	.half     5,   164,    64, 0x0000,     2
+	.half   165,     4,    64, 0x0000,     3
+	.half   165,    84,    64, 0x0000,     4
+	.half   165,   164,    64, 0x0000,     5
+
+	.align 2
+	.globl option_HDR
+option_HDR:
+	.half   160,    80
+	.word     0
+	.half   160,    80
+	.word 12800
+	.half   160,    80
+	.word 25600
+	.half   160,    80
+	.word 38400
+	.half   160,    80
+	.word 51200
+	.half   160,    80
+	.word 64000

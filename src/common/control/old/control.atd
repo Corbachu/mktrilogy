@@ -1,0 +1,258 @@
+combo_heap:
+	.word a_panel
+	.word a_names
+	.word a_powerbar
+	.word a_clock_nums
+	.word a_score_nums_tbl
+	.word a_misc
+a_panel:
+	.word DANGER
+	.word TOASTY
+	.word damage_s
+	.word hits_s
+	.word 0
+a_names:
+	.word N_KANO
+	.word N_SONYA
+	.word N_JAX
+	.word N_NIGHTWOLF
+	.word N_SUBZERO
+	.word N_STRYKER
+	.word N_SINDEL
+	.word N_SEKTOR
+	.word N_CYRAX
+	.word N_KUNGLAO
+	.word N_KABAL
+	.word N_SHEEVA
+	.word N_SHANGTSUNG
+	.word N_LIUKANG
+	.word N_SMOKE
+	.word N_KITANA
+	.word N_JADE
+	.word N_MILEENA
+	.word N_SCORPION
+	.word N_REPTILE
+	.word N_ERMAC
+	.word N_SUBZERO
+	.word N_SMOKE
+	.word N_RAIDEN
+	.word N_BARAKA
+	.word N_NOOBSAIBOT
+  .word N_BARAKA
+  .word N_RAYDEN
+  .word N_RAIN
+	.word N_MOTARO
+  .word N_SHAOKAHN
+	.word 0
+a_powerbar:
+	.word PWRBAR_LA
+	.word PWRBAR_LB
+	.word 0
+a_clock_nums:
+	.word COUNTDOWN_0
+	.word COUNTDOWN_1
+	.word COUNTDOWN_2
+	.word COUNTDOWN_3
+	.word COUNTDOWN_4
+	.word COUNTDOWN_5
+	.word COUNTDOWN_6
+	.word COUNTDOWN_7
+	.word COUNTDOWN_8
+	.word COUNTDOWN_9
+	.word 0
+a_score_nums_tbl:
+	.word X_SHADNUM0
+	.word X_SHADNUM1
+	.word X_SHADNUM2
+	.word X_SHADNUM3
+	.word X_SHADNUM4
+	.word X_SHADNUM5
+	.word X_SHADNUM6
+	.word X_SHADNUM7
+	.word X_SHADNUM8
+	.word X_SHADNUM9
+	.word 0
+a_misc:
+	.word PUSHSTART
+	.word X_SHADWINS
+	.word MEDAL1
+	.word aggressor	
+	.word 0
+DANGER:
+	.word DANGER_IMG
+	.half 8, 31, 0, 0
+TOASTY:
+	.word TOASTY_IMG
+	.half 85, 78, 82, 0
+damage_s:
+	.word damage_s_IMG
+	.half 10, 65, 0, 0
+hits_s:
+	.word hits_s_IMG
+	.half 10, 26, 0, 0
+N_BARAKA:
+  .word N_BARAKA_IMG
+  .half 7, 39, 0, 0
+N_RAYDEN:
+  .word N_RAYDEN_IMG
+  .half 7, 38, 0, 0
+N_RAIN
+  .word N_RAIN_IMG
+  .half 7, 23, 0, 0
+N_KANO:
+	.word N_KANO_IMG
+	.half 7, 26, 0, 0
+N_SONYA:
+	.word N_SONYA_IMG
+	.half 7, 30, 0, 0
+N_JAX:
+	.word N_JAX_IMG
+	.half 7, 19, 0, 0
+N_NIGHTWOLF:
+	.word N_NIGHTWOLF_IMG
+	.half 7, 53, 0, 0
+N_SUBZERO:
+	.word N_SUBZERO_IMG
+	.half 7, 44, 0, 0
+N_STRYKER:
+	.word N_STRYKER_IMG
+	.half 7, 41, 0, 0
+N_SINDEL:
+	.word N_SINDEL_IMG
+	.half 7, 31, 0, 0
+N_SEKTOR:
+	.word N_SEKTOR_IMG
+	.half 7, 36, 0, 0
+N_CYRAX:
+	.word N_CYRAX_IMG
+	.half 7, 32, 0, 0
+N_KUNGLAO:
+	.word N_KUNGLAO_IMG
+	.half 7, 48, 0, 0
+N_KABAL:
+	.word N_KABAL_IMG
+	.half 7, 30, 0, 0
+N_SHEEVA:
+	.word N_SHEEVA_IMG
+	.half 7, 34, 0, 0
+N_SHANGTSUNG:
+	.word N_SHANGTSUNG_IMG
+	.half 7, 66, 0, 0
+N_LIUKANG:
+	.word N_LIUKANG_IMG
+	.half 7, 43, 0, 0
+N_SMOKE:
+	.word N_SMOKE_IMG
+	.half 7, 32, 0, 0
+N_KITANA:
+	.word N_KITANA_IMG
+	.half 7, 34, 0, 0
+N_JADE:
+	.word N_JADE_IMG
+	.half 7, 26, 0, 0
+N_MILEENA:
+	.word N_MILEENA_IMG
+	.half 7, 40, 0, 0
+N_SCORPION:
+	.word N_SCORPION_IMG
+	.half 7, 47, 0, 0
+N_REPTILE:
+	.word N_REPTILE_IMG
+	.half 7, 36, 0, 0
+N_ERMAC:
+	.word N_ERMAC_IMG
+	.half 7, 33, 0, 0
+N_RAIDEN:
+	.word N_RAIDEN_IMG
+	.half 7, 33, 0, 0
+N_BARAKA:
+	.word N_BARAKA_IMG
+	.half 7, 33, 0, 0
+N_NOOBSAIBOT:
+	.word N_NOOBSAIBOT_IMG
+	.half 7, 62, 0, 0
+N_MOTARO:
+	.word N_MOTARO_IMG
+	.half 7, 39, 0, 0
+N_SHAOKAHN:
+	.word N_SHAOKAHN_IMG
+	.half 7, 54, 0, 0
+PWRBAR_LA:
+	.word PWRBAR_LA_IMG
+	.half 13, 134, 0, 0
+PWRBAR_LB:
+	.word PWRBAR_LB_IMG
+	.half 13, 134, 0, 0
+COUNTDOWN_0:
+	.word COUNTDOWN_0_IMG
+	.half 14, 10, 0, 0
+COUNTDOWN_1:
+	.word COUNTDOWN_1_IMG
+	.half 14, 7, 0, 0
+COUNTDOWN_2:
+	.word COUNTDOWN_2_IMG
+	.half 14, 10, 0, 0
+COUNTDOWN_3:
+	.word COUNTDOWN_3_IMG
+	.half 14, 10, 0, 0
+COUNTDOWN_4:
+	.word COUNTDOWN_4_IMG
+	.half 14, 10, 0, 0
+COUNTDOWN_5:
+	.word COUNTDOWN_5_IMG
+	.half 14, 10, 0, 0
+COUNTDOWN_6:
+	.word COUNTDOWN_6_IMG
+	.half 14, 10, 0, 0
+COUNTDOWN_7:
+	.word COUNTDOWN_7_IMG
+	.half 14, 10, 0, 0
+COUNTDOWN_8:
+	.word COUNTDOWN_8_IMG
+	.half 14, 10, 0, 0
+COUNTDOWN_9:
+	.word COUNTDOWN_9_IMG
+	.half 14, 10, 0, 0
+X_SHADNUM0:
+	.word X_SHADNUM0_IMG
+	.half 11, 10, 0, 0
+X_SHADNUM1:
+	.word X_SHADNUM1_IMG
+	.half 10, 6, 0, 0
+X_SHADNUM2:
+	.word X_SHADNUM2_IMG
+	.half 10, 10, 0, 0
+X_SHADNUM3:
+	.word X_SHADNUM3_IMG
+	.half 10, 9, 0, 0
+X_SHADNUM4:
+	.word X_SHADNUM4_IMG
+	.half 10, 9, 0, 0
+X_SHADNUM5:
+	.word X_SHADNUM5_IMG
+	.half 10, 9, 0, 0
+X_SHADNUM6:
+	.word X_SHADNUM6_IMG
+	.half 11, 9, 0, 0
+X_SHADNUM7:
+	.word X_SHADNUM7_IMG
+	.half 10, 10, 0, 0
+X_SHADNUM8:
+	.word X_SHADNUM8_IMG
+	.half 11, 9, 0, 0
+X_SHADNUM9:
+	.word X_SHADNUM9_IMG
+	.half 10, 9, 0, 0
+PUSHSTART:
+	.word PUSHSTART_IMG
+	.half 12, 74, 0, 0
+X_SHADWINS:
+	.word X_SHADWINS_IMG
+	.half 10, 34, 36, 2
+MEDAL1:
+	.word MEDAL1_IMG
+	.half 11, 10, 0, 0
+aggressor:
+	.word aggressor_IMG
+	.half 10, 72, 0, 0
+

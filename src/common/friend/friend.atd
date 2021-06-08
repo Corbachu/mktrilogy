@@ -1,0 +1,78 @@
+a_friend:
+	.word FRIEN01
+	.word FRIEN02
+	.word FRIEN03
+	.word FRIEN04
+	.word FRIEN05
+	.word FRIEN04
+	.word FRIEN03
+	.word FRIEN02
+	.word FRIEN01
+	.word FRIEN02
+	.word FRIEN03
+	.word FRIEN04
+	.word FRIEN05
+	.word FRIEN04
+	.word FRIEN03
+	.word FRIEN02
+	.word FRIEN01
+	.word FRIEN02
+	.word FRIEN03
+	.word FRIEN04
+	.word FRIEN05
+	.word 0
+a_ship:
+	.word DSHIP01
+	.word DSHIP02
+	.word DSHIP03
+	.word DSHIP04
+	.word DSHIP05
+	.word DSHIP04
+	.word DSHIP03
+	.word DSHIP02
+	.word DSHIP01
+	.word DSHIP02
+	.word DSHIP03
+	.word DSHIP04
+	.word DSHIP05
+	.word DSHIP04
+	.word DSHIP03
+	.word DSHIP02
+	.word DSHIP01
+	.word DSHIP02
+	.word DSHIP03
+	.word DSHIP04
+	.word DSHIP05
+	.word 0
+FRIEN01:
+	.word FRIEN01_IMG
+	.half 49, 102, 102, 11
+	.word FRIEN_P
+FRIEN02:
+	.word FRIEN02_IMG
+	.half 45, 101, 101, 9
+FRIEN03:
+	.word FRIEN03_IMG
+	.half 35, 98, 98, 4
+FRIEN04:
+	.word FRIEN04_IMG
+	.half 26, 95, 96, 0
+FRIEN05:
+	.word FRIEN05_IMG
+	.half 23, 94, 95, -1
+DSHIP01:
+	.word DSHIP01_IMG
+	.half 51, 98, 0, 12
+	.word DSHIP_P
+DSHIP02:
+	.word DSHIP02_IMG
+	.half 46, 98, 0, 9
+DSHIP03:
+	.word DSHIP03_IMG
+	.half 37, 98, 0, 5
+DSHIP04:
+	.word DSHIP04_IMG
+	.half 26, 98, 0, 0
+DSHIP05:
+	.word DSHIP05_IMG
+	.half 23, 101, 1, -1

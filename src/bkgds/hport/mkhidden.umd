@@ -1,0 +1,84 @@
+	.align 2
+	.globl HIDDEN1BMOD
+HIDDEN1BMOD:
+	.half  1072,    66
+	.word    11, HIDDEN1_BLK, MKHIDx_HDR, MKHIDx_CLT
+
+	.align 2
+	.globl HIDDEN1_BLK
+HIDDEN1_BLK:
+	.half    15,    14,    64, 0x0400,     5
+	.half   109,    14,    64, 0x0410,     5
+	.half   205,    14,    64, 0x0400,     5
+	.half   299,    14,    64, 0x0410,     5
+	.half   395,    14,    64, 0x0400,     5
+	.half   489,    14,    64, 0x0410,     5
+	.half   585,    14,    64, 0x0400,     5
+	.half   679,    14,    64, 0x0410,     5
+	.half   775,    14,    64, 0x0400,     5
+	.half   869,    14,    64, 0x0410,     5
+	.half   965,    14,    64, 0x0400,     5
+
+	.align 2
+	.globl HIDDEN2BMOD
+HIDDEN2BMOD:
+	.half   337,   245
+	.word    16, HIDDEN2_BLK, MKHIDx_HDR, MKHIDx_CLT
+
+	.align 2
+	.globl HIDDEN2_BLK
+HIDDEN2_BLK:
+	.half     4,     5,    70, 0x0220,     0
+	.half     5,    14,    64, 0x0200,     1
+	.half     5,   161,    64, 0x0100,     2
+	.half     5,   230,    64, 0x0120,     3
+	.half     7,   155,    65, 0x0300,     4
+	.half    86,   180,    65, 0x0300,     6
+	.half   101,    14,    64, 0x0200,     8
+	.half   101,    36,    64, 0x0000,     7
+	.half   112,   166,    65, 0x0300,     9
+	.half   155,     5,    70, 0x0220,    10
+	.half   160,    36,    64, 0x0000,    11
+	.half   166,   161,    64, 0x0100,    12
+	.half   185,   230,    64, 0x0120,    13
+	.half   192,   144,    65, 0x0300,    14
+	.half   218,    14,    64, 0x0200,    15
+	.half   277,   127,    65, 0x0300,    16
+
+	.align 2
+	.globl MKHIDx_HDR
+MKHIDx_HDR:
+	.half   156,    10
+	.word     0
+	.half    96,   148
+	.word  1560
+	.half   164,    70
+	.word 15768
+	.half   184,     9
+	.word 27248
+	.half    24,    54
+	.word 28904
+	.half    96,    43
+	.word 30200
+	.half    12,    21
+	.word 34328
+	.half    60,   125
+	.word 34584
+	.half   120,    23
+	.word 42088
+	.half    24,    40
+	.word 44848
+	.half   176,    10
+	.word 45808
+	.half    60,   125
+	.word 47568
+	.half   164,    70
+	.word 55072
+	.half   144,     9
+	.word 66552
+	.half    36,    71
+	.word 67848
+	.half   112,   148
+	.word 70408
+	.half    52,    92
+	.word 86984

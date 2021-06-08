@@ -1,0 +1,166 @@
+	.align 2
+	.globl BALCONY3BMOD
+BALCONY3BMOD:
+	.half   423,    66
+	.word     3, BALCONY3_BLK, MKBALC2z_HDR, MKBALC2z_CLT
+
+	.align 2
+	.globl BALCONY3_BLK
+BALCONY3_BLK:
+	.half   110,    23,    64, 0x0A00,    13
+	.half   160,    34,    64, 0x0400,    16
+	.half   204,    24,    64, 0x0A00,    19
+
+	.align 2
+	.globl BALCONY4BMOD
+BALCONY4BMOD:
+	.half   420,   132
+	.word     8, BALCONY4_BLK, MKBALC2z_HDR, MKBALC2z_CLT
+
+	.align 2
+	.globl BALCONY4_BLK
+BALCONY4_BLK:
+	.half    64,    82,    64, 0x0100,     8
+	.half    80,    36,    64, 0x0000,    12
+	.half   152,    36,    64, 0x0010,    12
+	.half   191,    76,    64, 0x0100,     8
+	.half   213,    74,    64, 0x0100,    21
+	.half   225,    36,    64, 0x0000,    12
+	.half   299,    36,    64, 0x0010,    12
+	.half   327,    77,    64, 0x0100,     8
+
+	.align 2
+	.globl BALCONY5BMOD
+BALCONY5BMOD:
+	.half   238,    28
+	.word     1, BALCONY5_BLK, MKBALC2z_HDR, MKBALC2z_CLT
+
+	.align 2
+	.globl BALCONY5_BLK
+BALCONY5_BLK:
+	.half    21,     9,    64, 0x0100,     5
+
+	.align 2
+	.globl BALCONY1BMOD
+BALCONY1BMOD:
+	.half   909,   302
+	.word    43, BALCONY1_BLK, MKBALC2z_HDR, MKBALC2z_CLT
+
+	.align 2
+	.globl BALCONY1_BLK
+BALCONY1_BLK:
+	.half    81,   198,    64, 0x0900,     0
+	.half   110,   100,    68, 0x0800,     1
+	.half   129,   192,    64, 0x0900,     2
+	.half   165,    17,    65, 0x0600,     3
+	.half   166,    61,    64, 0x0600,     4
+	.half   215,   119,    64, 0x0300,    10
+	.half   215,   195,    64, 0x0600,     9
+	.half   216,     8,    64, 0x0620,    11
+	.half   216,    62,    64, 0x0600,    11
+	.half   241,   175,    68, 0x0B00,    14
+	.half   276,    99,    64, 0x0700,    15
+	.half   321,     9,    64, 0x0620,    17
+	.half   321,    62,    64, 0x0600,    17
+	.half   322,    99,    64, 0x0700,    18
+	.half   353,    62,    64, 0x0200,    20
+	.half   367,   167,    64, 0x0600,    22
+	.half   382,    28,    64, 0x0210,    23
+	.half   382,    47,    64, 0x0220,    23
+	.half   404,    81,    64, 0x0700,    24
+	.half   450,   216,    64, 0x0700,    25
+	.half   452,    22,    64, 0x0730,    26
+	.half   452,    62,    64, 0x0710,    26
+	.half   488,    22,    64, 0x0720,    26
+	.half   488,    62,    64, 0x0700,    26
+	.half   520,    81,    64, 0x0710,    24
+	.half   522,    28,    64, 0x0200,    23
+	.half   522,    47,    64, 0x0230,    23
+	.half   523,    62,    64, 0x0210,    20
+	.half   569,   167,    64, 0x0610,    22
+	.half   591,     9,    64, 0x0630,    17
+	.half   591,    62,    64, 0x0610,    17
+	.half   605,    99,    64, 0x0710,    18
+	.half   651,    99,    64, 0x0710,    15
+	.half   652,     8,    64, 0x0630,    11
+	.half   652,    62,    64, 0x0610,    11
+	.half   686,   119,    64, 0x0310,    10
+	.half   696,   195,    64, 0x0610,     9
+	.half   702,   175,    68, 0x0B10,    14
+	.half   756,    61,    64, 0x0610,     4
+	.half   758,    17,    65, 0x0610,     3
+	.half   787,   192,    64, 0x0910,     2
+	.half   804,   100,    68, 0x0810,     1
+	.half   847,   198,    64, 0x0910,     0
+
+	.align 2
+	.globl BALCONY2BMOD
+BALCONY2BMOD:
+	.half   717,   228
+	.word     4, BALCONY2_BLK, MKBALC2z_HDR, MKBALC2z_CLT
+
+	.align 2
+	.globl BALCONY2_BLK
+BALCONY2_BLK:
+	.half    24,    11,    65, 0x0500,     7
+	.half    24,    36,    64, 0x0500,     6
+	.half   603,    11,    65, 0x0510,     7
+	.half   603,    37,    64, 0x0510,     6
+
+	.align 2
+	.globl MKBALC2z_HDR
+MKBALC2z_HDR:
+	.half    48,    97
+	.word     0
+	.half    60,   112
+	.word  4656
+	.half    60,    95
+	.word 11376
+	.half    52,    52
+	.word 17080
+	.half    52,   167
+	.word 19784
+	.half   204,    15
+	.word 28472
+	.half    64,   171
+	.word 31536
+	.half    64,    31
+	.word 42480
+	.half    12,    19
+	.word 44464
+	.half    64,    33
+	.word 44696
+	.half    72,    76
+	.word 46808
+	.half   108,    57
+	.word 52280
+	.half    32,    83
+	.word 58440
+	.half    96,    32
+	.word 61096
+	.half    32,    60
+	.word 64168
+	.half    48,   131
+	.word 66088
+	.half    92,    14
+	.word 72376
+	.half    64,    56
+	.word 73664
+	.half    48,   131
+	.word 77248
+	.half   100,    31
+	.word 83536
+	.half   100,   127
+	.word 86640
+	.half    12,    27
+	.word 99344
+	.half    40,    61
+	.word 99672
+	.half    72,    19
+	.word 102112
+	.half    52,   149
+	.word 103480
+	.half    92,    13
+	.word 111232
+	.half    36,    43
+	.word 112432

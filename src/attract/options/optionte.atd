@@ -1,0 +1,220 @@
+OPTIONTEXT_anims:
+	.word a_TEXT
+a_TEXT:
+	.word 1HITDEAT
+	.word 1ROUNDMA
+	.word ALL
+	.word BLOCK
+	.word BLOOD
+	.word CD
+	.word CHEATS
+	.word CLASSIC
+	.word CLOCK
+	.word CONTROL
+	.word DIFFICUL
+	.word DISABLED
+	.word EASY
+	.word ENABLED
+	.word ERMAC
+	.word EXIT
+	.word FATALITY
+	.word FREEPLAY
+	.word FX
+	.word HARD
+	.word HIGHKICK
+	.word HIGHPUNC
+	.word KRANKED
+	.word LR
+	.word LEVEL
+	.word LOWKICK
+	.word LOWPUNCH
+	.word MASTER
+	.word MEDIUM
+	.word MILEENA
+	.word MONITOR
+	.word MONO
+	.word MUSIC
+	.word NOTASSIG
+	.word OFF
+	.word ON
+	.word OPPONENT
+	.word PAN
+	.word QUIET
+	.word RL
+	.word ROCKIN
+	.word RUN
+	.word SCREEN
+	.word SELECT
+	.word SHANGMOR
+	.word SILENT
+	.word SOUND
+	.word STEREO
+	.word SUBZERO
+	.word TIME
+	.word TYPE
+	.word VERY
+	.word VOLUME
+	.word VS
+	.word 0
+1HITDEAT:
+	.word 1HITDEAT_IMG
+	.half 112, 14, 0, 0
+1ROUNDMA:
+	.word 1ROUNDMA_IMG
+	.half 144, 14, 0, 0
+ALL:
+	.word ALL_IMG
+	.half 33, 14, 0, 0
+BLOCK:
+	.word BLOCK_IMG
+	.half 40, 9, 0, 0
+BLOOD:
+	.word BLOOD_IMG
+	.half 60, 13, 0, 0
+CD:
+	.word CD_IMG
+	.half 22, 13, 0, 0
+CHEATS:
+	.word CHEATS_IMG
+	.half 66, 13, 0, 0
+CLASSIC:
+	.word CLASSIC_IMG
+	.half 67, 14, 0, 0
+CLOCK:
+	.word CLOCK_IMG
+	.half 54, 13, 0, 0
+CONTROL:
+	.word CONTROL_IMG
+	.half 78, 14, 0, 0
+DIFFICUL:
+	.word DIFFICUL_IMG
+	.half 107, 15, 0, 0
+DISABLED:
+	.word DISABLED_IMG
+	.half 90, 14, 0, 0
+EASY:
+	.word EASY_IMG
+	.half 46, 14, 0, 0
+ENABLED:
+	.word ENABLED_IMG
+	.half 86, 14, 0, 0
+ERMAC:
+	.word ERMAC_IMG
+	.half 61, 14, 0, 0
+EXIT:
+	.word EXIT_IMG
+	.half 43, 13, 0, 0
+FATALITY:
+	.word FATALITY_IMG
+	.half 88, 15, 0, 0
+FREEPLAY:
+	.word FREEPLAY_IMG
+	.half 102, 15, 0, 0
+FX:
+	.word FX_IMG
+	.half 24, 15, 0, 0
+HARD:
+	.word HARD_IMG
+	.half 52, 14, 0, 0
+HIGHKICK:
+	.word HIGHKICK_IMG
+	.half 69, 10, 0, 0
+HIGHPUNC:
+	.word HIGHPUNC_IMG
+	.half 79, 10, 0, 0
+KRANKED:
+	.word KRANKED_IMG
+	.half 97, 14, 0, 0
+LR:
+	.word LR_IMG
+	.half 33, 14, 0, 0
+LEVEL:
+	.word LEVEL_IMG
+	.half 55, 13, 0, 0
+LOWKICK:
+	.word LOWKICK_IMG
+	.half 61, 9, 0, 0
+LOWPUNCH:
+	.word LOWPUNCH_IMG
+	.half 71, 10, 0, 0
+MASTER:
+	.word MASTER_IMG
+	.half 71, 14, 0, 0
+MEDIUM:
+	.word MEDIUM_IMG
+	.half 76, 13, 0, 0
+MILEENA:
+	.word MILEENA_IMG
+	.half 80, 14, 0, 0
+MONITOR:
+	.word MONITOR_IMG
+	.half 85, 14, 0, 0
+MONO:
+	.word MONO_IMG
+	.half 54, 13, 0, 0
+MUSIC:
+	.word MUSIC_IMG
+	.half 54, 13, 0, 0
+NOTASSIG:
+	.word NOTASSIG_IMG
+	.half 94, 10, 0, 0
+OFF:
+	.word OFF_IMG
+	.half 35, 15, 0, 0
+ON:
+	.word ON_IMG
+	.half 26, 13, 0, 0
+OPPONENT:
+	.word OPPONENT_IMG
+	.half 99, 13, 0, 0
+PAN:
+	.word PAN_IMG
+	.half 38, 14, 0, 0
+QUIET:
+	.word QUIET_IMG
+	.half 59, 13, 0, 0
+RL:
+	.word RL_IMG
+	.half 30, 14, 0, 0
+ROCKIN:
+	.word ROCKIN_IMG
+	.half 75, 16, 0, 0
+RUN:
+	.word RUN_IMG
+	.half 27, 10, 0, 0
+SCREEN:
+	.word SCREEN_IMG
+	.half 68, 14, 0, 0
+SELECT:
+	.word SELECT_IMG
+	.half 63, 13, 0, 0
+SHANGMOR:
+	.word SHANGMOR_IMG
+	.half 135, 14, 0, 0
+SILENT:
+	.word SILENT_IMG
+	.half 63, 13, 0, 0
+SOUND:
+	.word SOUND_IMG
+	.half 59, 13, 0, 0
+STEREO:
+	.word STEREO_IMG
+	.half 68, 14, 0, 0
+SUBZERO:
+	.word SUBZERO_IMG
+	.half 94, 14, 0, 0
+TIME:
+	.word TIME_IMG
+	.half 45, 13, 0, 0
+TYPE:
+	.word TYPE_IMG
+	.half 45, 14, 0, 0
+VERY:
+	.word VERY_IMG
+	.half 47, 14, 0, 0
+VOLUME:
+	.word VOLUME_IMG
+	.half 71, 13, 0, 0
+VS:
+	.word VS_IMG
+	.half 21, 13, 0, 0

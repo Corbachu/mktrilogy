@@ -1,0 +1,71 @@
+#!smake -k
+#
+# Makefile for Wargods
+#
+# -S on OPTIMIZER creates assembler .s files
+# LCINCS =	-O3 -I. to invoke optimizer - at present run incorrectly!!!
+# warnings:-
+# 712 illegal caombination of pointer and integer   => (WORD)&a <or> &a
+# 822 control may fall through labeled statement
+# 825 label without goto: 'xxxx'
+# 665 modified an r value => *((WORD *)ar0.w)++
+
+include $(ROOT)/usr/include/make/PRdefs
+
+APP =		main
+
+OPTIMIZER =	-g0
+
+TARGETS =	rom
+
+TEXDIR  =	Texture
+
+HFILES =	machine.h u64main.h \
+		mkamode.h mkani.h mkanimal.h mkbio.h mkbkgd.h mkblood.h mkbonus.h mkboss.h \
+		mkbug.h mkbuyin.h mkcanned.h mkcombo.h mkdiag.h mkdrone.h mkend.h mkfade.h \
+		mkfatal.h mkdma.h mkfriend.h mkfx.h mkgame.h mkguys.h mkhstd.h mkinit.h \
+		mkjoy.h mkladder.h mkmain.h mkmark.h mkmode.h mkobj.h mkopt.h mkos.h mkpal.h \
+		mkprop.h mkr1.h mkreact.h mkrepell.h mkscore.h mksel.h mkslam.h mksony.h mksound.h \
+		mkstat.h mktext.h mkutil.h mkvs.h mkzap.h moves.h system.h vcache.h
+
+CODEFILES   =	mkobj.c mkfade.c mkpal.c mkpong.c mkmark.c mkscore.c mktext.c mksound.c mkdma.c mksel.c mkbkgd.c mkani.c \
+	mkguys.c mkbonus.c mkopt.c mkladder.c mkinit.c mkanimal.c mkfatal.c mkfriend.c mkfx.c \
+	mkbuyin.c mkmode.c mkvs.c mkend.c mkmain.c mkglobal.c mkjoy.c mkslam.c \
+	mkblood.c mkprop.c moves.c mkreact.c mkos.c mkhstd.c mkbug.c \
+	heaparea.c mkcanned.c mkdiag.c mkcombo.c mkdrone.c mkboss.c \
+	mkutil.c mkr1.c mkrepell.c mkbio.c mkamode.c mkstat.c mkzap.c vcache.c
+
+DATAFILES   =	
+		
+ASMFILES   =	context.s mkbt.s mkscombo.s mkstk.s mktextdt.s
+
+CODEOBJECTS =	$(CODEFILES:.c=.o) $(ASMFILES:.s=.o)
+DATAOBJECTS =	$(DATAFILES:.c=.o)
+
+CODESEGMENT =	codesegment.o
+
+OBJECTS =	$(CODESEGMENT) $(DATAOBJECTS)
+
+LCDEFS =
+LCINCS =	-O0 -I.
+LCOPTS =	-fullwarn -wlint,-f -woff 813,819,826,827,835,852,712,822,825,665 -non_shared -G 0 -Xcpluscomm
+#LDFLAGS =	$(MKDEPOPT) -nostdlib -L$(ROOT)/usr/lib -lultra_d
+LDFLAGS =	$(MKDEPOPT) -nostdlib -L$(ROOT)/usr/lib -lultra
+
+LDIRT  =	$(APP)
+
+default:	$(TARGETS)
+
+include $(COMMONRULES)
+
+install:	default
+		$(INSTALL) -m 444 -F /usr/proj/mktrilogy/gamecode \
+			$(HFILES) $(CODEFILES) $(DATAFILES) $(ASMFILES) $(TEXTURES) Makefile spec
+
+$(CODESEGMENT):	$(CODEOBJECTS)
+		$(LD) -o $(CODESEGMENT) -r $(CODEOBJECTS) $(LDFLAGS)
+
+rom $(APP): $(OBJECTS)
+
+#rom $(APP):	spec $(OBJECTS) $(MAKEROM)
+#		$(MAKEROM) -m -r rom spec

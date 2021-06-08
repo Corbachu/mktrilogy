@@ -1,0 +1,20 @@
+silo_anims:
+	.word a_silo
+a_silo:
+	.word sil1
+	.word sil2
+	.word sil3
+	.word sil4
+	.word 0
+sil1:
+	.word sil1_IMG
+	.half 39, 92, 0, 0
+sil2:
+	.word sil2_IMG
+	.half 20, 25, 0, 0
+sil3:
+	.word sil3_IMG
+	.half 25, 32, 0, 0
+sil4:
+	.word sil4_IMG
+	.half 13, 13, 0, 0

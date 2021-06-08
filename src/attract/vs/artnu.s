@@ -1,0 +1,85 @@
+#include <regdef.h>
+
+	.option	pic0
+
+	.set noreorder
+	.data
+
+/*
+;******************************************************************************
+; File: artverse.s
+;
+; By: David Schwartz
+;
+; Date: Jan 1995
+;
+; (C) Williams Entertainment
+;
+; Mortal Kombat III Verse Art Textures
+;******************************************************************************
+*/
+
+/*	RAYDEN & BARAKA */
+	.align 2
+	.globl rayden_pieces
+rayden_pieces:
+	.half	0x5e,0x5e-8,0x12d,0x5e-8
+	.word	RAIDENVS1,RDRED_P
+	.word	RAIDENVS2,0
+	.word	RAIDENVS3,0
+	.word 	0
+	
+	.globl baraka_pieces
+baraka_pieces:
+	.half	0x5e,0x5e-8,0x12d,0x5e-8
+	.word	BARAKAVS1,0
+	.word	BARAKAVS2,0
+	.word	BARAKAVS3,BKBLUE_P
+	.word 	0
+	
+
+
+
+RAIDENVS1:
+	.word	RAIDENVS1_SUB,0
+RAIDENVS1_SUB:
+	.word 0x00002AB8
+	.half 116, 96, 58, -52
+	.word RDBLUE_P
+RAIDENVS2:
+	.word	RAIDENVS2_SUB,0
+RAIDENVS2_SUB:
+	.word 0x0000397C
+	.half 134, 125, 30, 0
+	.word RDFLESH_P
+RAIDENVS3:
+	.word	RAIDENVS3_SUB,0
+RAIDENVS3_SUB:
+	.word 0x00004694
+	.half 141, 151, 73, -27
+	.word RDGRAY_P
+BARAKAVS1:
+	.word	BARAKAVS1_SUB,0
+BARAKAVS1_SUB:
+	.word 0x00000000
+	.half 149, 169, 75, -2
+	.word	BKFLESH_P
+BARAKAVS2:
+	.word	BARAKAVS2_SUB,0
+BARAKAVS2_SUB:
+	.word 0x000019B8
+	.half 119, 75, 41, -40
+	.word BKGRAY_P
+BARAKAVS3:
+	.word	BARAKAVS3_SUB,0
+BARAKAVS3_SUB:
+	.word 0x00002448
+	.half 95, 78, 39, -39
+	.word BKRED_P
+	
+	.align 2
+	.globl nuguys_dict
+nuguys_dict:
+#include "nuguys.dct"
+
+

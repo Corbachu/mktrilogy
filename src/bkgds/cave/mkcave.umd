@@ -1,0 +1,76 @@
+	.align 2
+	.globl CAVE1BMOD
+CAVE1BMOD:
+	.half   699,   126
+	.word     6, CAVE1_BLK, MKCAVE_HDR, MKCAVE_CLT
+
+	.align 2
+	.globl CAVE1_BLK
+CAVE1_BLK:
+	.half    20,    57,    64, 0x0500,     0
+	.half   110,    29,    64, 0x0500,     2
+	.half   220,    28,    64, 0x0500,     7
+	.half   433,    28,    64, 0x0510,     7
+	.half   483,    29,    64, 0x0510,     2
+	.half   593,    57,    64, 0x0510,     0
+
+	.align 2
+	.globl CAVE2BMOD
+CAVE2BMOD:
+	.half   626,   193
+	.word    17, CAVE2_BLK, MKCAVE_HDR, MKCAVE_CLT
+
+	.align 2
+	.globl CAVE2_BLK
+CAVE2_BLK:
+	.half    21,    45,    64, 0x0100,     1
+	.half    97,   142,    64, 0x0110,     3
+	.half    99,    44,    64, 0x0000,     4
+	.half   136,    45,    64, 0x0000,     5
+	.half   143,    48,    64, 0x0100,     6
+	.half   231,    58,    64, 0x0300,     8
+	.half   232,   158,    64, 0x0400,     9
+	.half   253,   120,    64, 0x0400,    10
+	.half   257,    37,    64, 0x0400,    11
+	.half   293,    90,    64, 0x0200,    12
+	.half   310,    38,    64, 0x0300,    13
+	.half   352,   119,    64, 0x0400,    14
+	.half   373,    49,    64, 0x0110,     6
+	.half   424,    46,    64, 0x0010,     5
+	.half   481,    45,    64, 0x0010,     4
+	.half   495,   142,    64, 0x0100,     3
+	.half   517,    45,    64, 0x0110,     1
+
+	.align 2
+	.globl MKCAVE_HDR
+MKCAVE_HDR:
+	.half    92,    60
+	.word     0
+	.half    80,   125
+	.word  5520
+	.half   112,    88
+	.word 15520
+	.half    24,    28
+	.word 25376
+	.half    40,    99
+	.word 26048
+	.half    60,   100
+	.word 30008
+	.half   104,   124
+	.word 36008
+	.half    52,    89
+	.word 48904
+	.half    80,   100
+	.word 53536
+	.half   156,    23
+	.word 61536
+	.half    24,    26
+	.word 65128
+	.half    40,    35
+	.word 65752
+	.half    28,    54
+	.word 67152
+	.half    84,   120
+	.word 68664
+	.half    12,    28
+	.word 78744

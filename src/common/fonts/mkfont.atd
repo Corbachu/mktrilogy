@@ -1,0 +1,562 @@
+FONTS_anims:
+	.word a_SMALL-FONTS_anims
+	.word a_MEDIUM-FONTS_anims
+	.word a_BIG-FONTS_anims
+a_SMALL:
+	.word SMALLFONT_0-FONTS_anims
+	.word SMALLFONT_1-FONTS_anims
+	.word SMALLFONT_2-FONTS_anims
+	.word SMALLFONT_3-FONTS_anims
+	.word SMALLFONT_4-FONTS_anims
+	.word SMALLFONT_5-FONTS_anims
+	.word SMALLFONT_6-FONTS_anims
+	.word SMALLFONT_7-FONTS_anims
+	.word SMALLFONT_8-FONTS_anims
+	.word SMALLFONT_9-FONTS_anims
+	.word SMALLFONT_A-FONTS_anims
+	.word SMALLFONT_B-FONTS_anims
+	.word SMALLFONT_C-FONTS_anims
+	.word SMALLFONT_D-FONTS_anims
+	.word SMALLFONT_E-FONTS_anims
+	.word SMALLFONT_F-FONTS_anims
+	.word SMALLFONT_G-FONTS_anims
+	.word SMALLFONT_H-FONTS_anims
+	.word SMALLFONT_I-FONTS_anims
+	.word SMALLFONT_J-FONTS_anims
+	.word SMALLFONT_K-FONTS_anims
+	.word SMALLFONT_L-FONTS_anims
+	.word SMALLFONT_M-FONTS_anims
+	.word SMALLFONT_N-FONTS_anims
+	.word SMALLFONT_O-FONTS_anims
+	.word SMALLFONT_P-FONTS_anims
+	.word SMALLFONT_Q-FONTS_anims
+	.word SMALLFONT_R-FONTS_anims
+	.word SMALLFONT_S-FONTS_anims
+	.word SMALLFONT_T-FONTS_anims
+	.word SMALLFONT_U-FONTS_anims
+	.word SMALLFONT_V-FONTS_anims
+	.word SMALLFONT_W-FONTS_anims
+	.word SMALLFONT_X-FONTS_anims
+	.word SMALLFONT_Y-FONTS_anims
+	.word SMALLFONT_Z-FONTS_anims
+	.word SMALLFONT_PER-FONTS_anims
+	.word SMALLFONT_COL-FONTS_anims
+	.word SMALLFONT_COM-FONTS_anims
+	.word SMALLFONT_EXC-FONTS_anims
+	.word SMALLFONT_MIN-FONTS_anims
+	.word SMALLFONT_PERC-FONTS_anims
+	.word SMALLFONT_PR1-FONTS_anims
+	.word SMALLFONT_PR2-FONTS_anims
+	.word SMALLFONT_QUE-FONTS_anims
+	.word SMALLFONT_SLA-FONTS_anims
+	.word 0
+a_MEDIUM:
+	.word MEDFONT_0-FONTS_anims
+	.word MEDFONT_1-FONTS_anims
+	.word MEDFONT_2-FONTS_anims
+	.word MEDFONT_3-FONTS_anims
+	.word MEDFONT_4-FONTS_anims
+	.word MEDFONT_5-FONTS_anims
+	.word MEDFONT_6-FONTS_anims
+	.word MEDFONT_7-FONTS_anims
+	.word MEDFONT_8-FONTS_anims
+	.word MEDFONT_9-FONTS_anims
+	.word MEDFONT_A-FONTS_anims
+	.word MEDFONT_B-FONTS_anims
+	.word MEDFONT_C-FONTS_anims
+	.word MEDFONT_D-FONTS_anims
+	.word MEDFONT_E-FONTS_anims
+	.word MEDFONT_F-FONTS_anims
+	.word MEDFONT_G-FONTS_anims
+	.word MEDFONT_H-FONTS_anims
+	.word MEDFONT_I-FONTS_anims
+	.word MEDFONT_J-FONTS_anims
+	.word MEDFONT_K-FONTS_anims
+	.word MEDFONT_L-FONTS_anims
+	.word MEDFONT_M-FONTS_anims
+	.word MEDFONT_N-FONTS_anims
+	.word MEDFONT_O-FONTS_anims
+	.word MEDFONT_P-FONTS_anims
+	.word MEDFONT_Q-FONTS_anims
+	.word MEDFONT_R-FONTS_anims
+	.word MEDFONT_S-FONTS_anims
+	.word MEDFONT_T-FONTS_anims
+	.word MEDFONT_U-FONTS_anims
+	.word MEDFONT_V-FONTS_anims
+	.word MEDFONT_W-FONTS_anims
+	.word MEDFONT_X-FONTS_anims
+	.word MEDFONT_Y-FONTS_anims
+	.word MEDFONT_Z-FONTS_anims
+	.word MEDFONT_PER-FONTS_anims
+	.word MEDFONT_COL-FONTS_anims
+	.word MEDFONT_COM-FONTS_anims
+	.word MEDFONT_EXC-FONTS_anims
+	.word MEDFONT_MIN-FONTS_anims
+	.word MEDFONT_PERC-FONTS_anims
+	.word MEDFONT_PR1-FONTS_anims
+	.word MEDFONT_PR2-FONTS_anims
+	.word MEDFONT_QUE-FONTS_anims
+	.word MEDFONT_SLA-FONTS_anims
+	.word 0
+a_BIG:
+	.word BIGFONT_0-FONTS_anims
+	.word BIGFONT_1-FONTS_anims
+	.word BIGFONT_2-FONTS_anims
+	.word BIGFONT_3-FONTS_anims
+	.word BIGFONT_4-FONTS_anims
+	.word BIGFONT_5-FONTS_anims
+	.word BIGFONT_6-FONTS_anims
+	.word BIGFONT_7-FONTS_anims
+	.word BIGFONT_8-FONTS_anims
+	.word BIGFONT_9-FONTS_anims
+	.word BIGFONT_A-FONTS_anims
+	.word BIGFONT_B-FONTS_anims
+	.word BIGFONT_C-FONTS_anims
+	.word BIGFONT_D-FONTS_anims
+	.word BIGFONT_E-FONTS_anims
+	.word BIGFONT_F-FONTS_anims
+	.word BIGFONT_G-FONTS_anims
+	.word BIGFONT_H-FONTS_anims
+	.word BIGFONT_I-FONTS_anims
+	.word BIGFONT_J-FONTS_anims
+	.word BIGFONT_K-FONTS_anims
+	.word BIGFONT_L-FONTS_anims
+	.word BIGFONT_M-FONTS_anims
+	.word BIGFONT_N-FONTS_anims
+	.word BIGFONT_O-FONTS_anims
+	.word BIGFONT_P-FONTS_anims
+	.word BIGFONT_Q-FONTS_anims
+	.word BIGFONT_R-FONTS_anims
+	.word BIGFONT_S-FONTS_anims
+	.word BIGFONT_T-FONTS_anims
+	.word BIGFONT_U-FONTS_anims
+	.word BIGFONT_V-FONTS_anims
+	.word BIGFONT_W-FONTS_anims
+	.word BIGFONT_X-FONTS_anims
+	.word BIGFONT_Y-FONTS_anims
+	.word BIGFONT_Z-FONTS_anims
+	.word BIGFONT_PER-FONTS_anims
+	.word BIGFONT_COL-FONTS_anims
+	.word BIGFONT_COM-FONTS_anims
+	.word BIGFONT_EXC-FONTS_anims
+	.word BIGFONT_MIN-FONTS_anims
+	.word BIGFONT_PERC-FONTS_anims
+	.word BIGFONT_PR1-FONTS_anims
+	.word BIGFONT_PR2-FONTS_anims
+	.word BIGFONT_QUE-FONTS_anims
+	.word BIGFONT_SLA-FONTS_anims
+	.word 0
+SMALLFONT_0:
+	.word SMALLFONT_0_IMG-FONTS_anims
+	.half 8, 9, 0, 0
+SMALLFONT_1:
+	.word SMALLFONT_1_IMG-FONTS_anims
+	.half 6, 9, 0, 0
+SMALLFONT_2:
+	.word SMALLFONT_2_IMG-FONTS_anims
+	.half 8, 9, 0, 0
+SMALLFONT_3:
+	.word SMALLFONT_3_IMG-FONTS_anims
+	.half 8, 9, 0, 0
+SMALLFONT_4:
+	.word SMALLFONT_4_IMG-FONTS_anims
+	.half 7, 9, 0, 0
+SMALLFONT_5:
+	.word SMALLFONT_5_IMG-FONTS_anims
+	.half 7, 9, 0, 0
+SMALLFONT_6:
+	.word SMALLFONT_6_IMG-FONTS_anims
+	.half 8, 9, 0, 0
+SMALLFONT_7:
+	.word SMALLFONT_7_IMG-FONTS_anims
+	.half 8, 9, 0, 0
+SMALLFONT_8:
+	.word SMALLFONT_8_IMG-FONTS_anims
+	.half 8, 10, 0, 0
+SMALLFONT_9:
+	.word SMALLFONT_9_IMG-FONTS_anims
+	.half 7, 9, 0, 0
+SMALLFONT_A:
+	.word SMALLFONT_A_IMG-FONTS_anims
+	.half 9, 10, 0, 0
+SMALLFONT_B:
+	.word SMALLFONT_B_IMG-FONTS_anims
+	.half 9, 9, 0, 0
+SMALLFONT_C:
+	.word SMALLFONT_C_IMG-FONTS_anims
+	.half 6, 9, 0, 0
+SMALLFONT_D:
+	.word SMALLFONT_D_IMG-FONTS_anims
+	.half 9, 9, 0, 0
+SMALLFONT_E:
+	.word SMALLFONT_E_IMG-FONTS_anims
+	.half 8, 9, 0, 0
+SMALLFONT_F:
+	.word SMALLFONT_F_IMG-FONTS_anims
+	.half 8, 10, 0, 0
+SMALLFONT_G:
+	.word SMALLFONT_G_IMG-FONTS_anims
+	.half 8, 9, 0, 0
+SMALLFONT_H:
+	.word SMALLFONT_H_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+SMALLFONT_I:
+	.word SMALLFONT_I_IMG-FONTS_anims
+	.half 6, 9, 0, 0
+SMALLFONT_J:
+	.word SMALLFONT_J_IMG-FONTS_anims
+	.half 7, 11, 0, 0
+SMALLFONT_K:
+	.word SMALLFONT_K_IMG-FONTS_anims
+	.half 10, 9, 0, 0
+SMALLFONT_L:
+	.word SMALLFONT_L_IMG-FONTS_anims
+	.half 6, 9, 0, 0
+SMALLFONT_M:
+	.word SMALLFONT_M_IMG-FONTS_anims
+	.half 10, 9, 0, 0
+SMALLFONT_N:
+	.word SMALLFONT_N_IMG-FONTS_anims
+	.half 10, 9, 0, 0
+SMALLFONT_O:
+	.word SMALLFONT_O_IMG-FONTS_anims
+	.half 8, 9, 0, 0
+SMALLFONT_P:
+	.word SMALLFONT_P_IMG-FONTS_anims
+	.half 9, 9, 0, 0
+SMALLFONT_Q:
+	.word SMALLFONT_Q_IMG-FONTS_anims
+	.half 9, 9, 0, 1
+SMALLFONT_R:
+	.word SMALLFONT_R_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+SMALLFONT_S:
+	.word SMALLFONT_S_IMG-FONTS_anims
+	.half 7, 9, 0, 0
+SMALLFONT_T:
+	.word SMALLFONT_T_IMG-FONTS_anims
+	.half 7, 9, 0, 0
+SMALLFONT_U:
+	.word SMALLFONT_U_IMG-FONTS_anims
+	.half 8, 9, 0, 0
+SMALLFONT_V:
+	.word SMALLFONT_V_IMG-FONTS_anims
+	.half 8, 9, 0, 0
+SMALLFONT_W:
+	.word SMALLFONT_W_IMG-FONTS_anims
+	.half 11, 9, 0, 0
+SMALLFONT_X:
+	.word SMALLFONT_X_IMG-FONTS_anims
+	.half 10, 9, 0, 0
+SMALLFONT_Y:
+	.word SMALLFONT_Y_IMG-FONTS_anims
+	.half 8, 10, 0, 0
+SMALLFONT_Z:
+	.word SMALLFONT_Z_IMG-FONTS_anims
+	.half 9, 9, 0, 0
+SMALLFONT_PER:
+	.word SMALLFONT_PER_IMG-FONTS_anims
+	.half 3, 3, 0, -5
+SMALLFONT_COL:
+	.word SMALLFONT_COL_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+SMALLFONT_COM:
+	.word SMALLFONT_COM_IMG-FONTS_anims
+	.half 4, 4, 0, -4
+SMALLFONT_EXC:
+	.word SMALLFONT_EXC_IMG-FONTS_anims
+	.half 6, 9, 0, 0
+SMALLFONT_MIN:
+	.word SMALLFONT_MIN_IMG-FONTS_anims
+	.half 5, 3, 0, -2
+SMALLFONT_PERC:
+	.word SMALLFONT_PERC_IMG-FONTS_anims
+	.half 10, 9, 0, 0
+SMALLFONT_PR1:
+	.word SMALLFONT_PR1_IMG-FONTS_anims
+	.half 7, 10, 0, 0
+SMALLFONT_PR2:
+	.word SMALLFONT_PR2_IMG-FONTS_anims
+	.half 7, 10, 0, 0
+SMALLFONT_QUE:
+	.word SMALLFONT_QUE_IMG-FONTS_anims
+	.half 6, 9, 0, 0
+SMALLFONT_SLA:
+	.word SMALLFONT_SLA_IMG-FONTS_anims
+	.half 9, 11, 0, 0
+MEDFONT_0:
+	.word MEDFONT_0_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+MEDFONT_1:
+	.word MEDFONT_1_IMG-FONTS_anims
+	.half 6, 10, 0, 0
+MEDFONT_2:
+	.word MEDFONT_2_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+MEDFONT_3:
+	.word MEDFONT_3_IMG-FONTS_anims
+	.half 9, 10, 0, 0
+MEDFONT_4:
+	.word MEDFONT_4_IMG-FONTS_anims
+	.half 9, 10, 0, 0
+MEDFONT_5:
+	.word MEDFONT_5_IMG-FONTS_anims
+	.half 9, 10, 0, 0
+MEDFONT_6:
+	.word MEDFONT_6_IMG-FONTS_anims
+	.half 8, 10, 0, 0
+MEDFONT_7:
+	.word MEDFONT_7_IMG-FONTS_anims
+	.half 9, 10, 0, 0
+MEDFONT_8:
+	.word MEDFONT_8_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+MEDFONT_9:
+	.word MEDFONT_9_IMG-FONTS_anims
+	.half 9, 10, 0, 0
+MEDFONT_A:
+	.word MEDFONT_A_IMG-FONTS_anims
+	.half 11, 12, 0, 0
+MEDFONT_B:
+	.word MEDFONT_B_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+MEDFONT_C:
+	.word MEDFONT_C_IMG-FONTS_anims
+	.half 8, 10, 0, 0
+MEDFONT_D:
+	.word MEDFONT_D_IMG-FONTS_anims
+	.half 11, 10, 0, 0
+MEDFONT_E:
+	.word MEDFONT_E_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+MEDFONT_F:
+	.word MEDFONT_F_IMG-FONTS_anims
+	.half 10, 12, 0, 0
+MEDFONT_G:
+	.word MEDFONT_G_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+MEDFONT_H:
+	.word MEDFONT_H_IMG-FONTS_anims
+	.half 12, 12, 0, 0
+MEDFONT_I:
+	.word MEDFONT_I_IMG-FONTS_anims
+	.half 6, 10, 0, 0
+MEDFONT_J:
+	.word MEDFONT_J_IMG-FONTS_anims
+	.half 9, 13, 0, 0
+MEDFONT_K:
+	.word MEDFONT_K_IMG-FONTS_anims
+	.half 11, 10, 0, 0
+MEDFONT_L:
+	.word MEDFONT_L_IMG-FONTS_anims
+	.half 7, 10, 0, 0
+MEDFONT_M:
+	.word MEDFONT_M_IMG-FONTS_anims
+	.half 12, 10, 0, 0
+MEDFONT_N:
+	.word MEDFONT_N_IMG-FONTS_anims
+	.half 11, 10, 0, 0
+MEDFONT_O:
+	.word MEDFONT_O_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+MEDFONT_P:
+	.word MEDFONT_P_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+MEDFONT_Q:
+	.word MEDFONT_Q_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+MEDFONT_R:
+	.word MEDFONT_R_IMG-FONTS_anims
+	.half 10, 12, 0, 0
+MEDFONT_S:
+	.word MEDFONT_S_IMG-FONTS_anims
+	.half 9, 10, 0, 0
+MEDFONT_T:
+	.word MEDFONT_T_IMG-FONTS_anims
+	.half 9, 10, 0, 0
+MEDFONT_U:
+	.word MEDFONT_U_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+MEDFONT_V:
+	.word MEDFONT_V_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+MEDFONT_W:
+	.word MEDFONT_W_IMG-FONTS_anims
+	.half 14, 10, 0, 0
+MEDFONT_X:
+	.word MEDFONT_X_IMG-FONTS_anims
+	.half 11, 10, 0, 0
+MEDFONT_Y:
+	.word MEDFONT_Y_IMG-FONTS_anims
+	.half 9, 12, 0, 0
+MEDFONT_Z:
+	.word MEDFONT_Z_IMG-FONTS_anims
+	.half 10, 10, 0, 0
+MEDFONT_PER:
+	.word MEDFONT_PER_IMG-FONTS_anims
+	.half 3, 3, 0, -7
+MEDFONT_COL:
+	.word MEDFONT_COL_IMG-FONTS_anims
+	.half 5, 8, 0, -1
+MEDFONT_COM:
+	.word MEDFONT_COM_IMG-FONTS_anims
+	.half 5, 4, 0, -7
+MEDFONT_EXC:
+	.word MEDFONT_EXC_IMG-FONTS_anims
+	.half 6, 10, 0, 0
+MEDFONT_MIN:
+	.word MEDFONT_MIN_IMG-FONTS_anims
+	.half 6, 3, -1, -2
+MEDFONT_PERC:
+	.word MEDFONT_PERC_IMG-FONTS_anims
+	.half 13, 12, 0, 0
+MEDFONT_PR1:
+	.word MEDFONT_PR1_IMG-FONTS_anims
+	.half 9, 13, 0, 0
+MEDFONT_PR2:
+	.word MEDFONT_PR2_IMG-FONTS_anims
+	.half 9, 13, 0, 0
+MEDFONT_QUE:
+	.word MEDFONT_QUE_IMG-FONTS_anims
+	.half 8, 10, 0, 0
+MEDFONT_SLA:
+	.word MEDFONT_SLA_IMG-FONTS_anims
+	.half 10, 13, 0, 1
+BIGFONT_0:
+	.word BIGFONT_0_IMG-FONTS_anims
+	.half 13, 13, 0, 0
+BIGFONT_1:
+	.word BIGFONT_1_IMG-FONTS_anims
+	.half 8, 13, 0, 0
+BIGFONT_2:
+	.word BIGFONT_2_IMG-FONTS_anims
+	.half 12, 13, 0, 0
+BIGFONT_3:
+	.word BIGFONT_3_IMG-FONTS_anims
+	.half 11, 13, 0, 0
+BIGFONT_4:
+	.word BIGFONT_4_IMG-FONTS_anims
+	.half 11, 13, 0, 0
+BIGFONT_5:
+	.word BIGFONT_5_IMG-FONTS_anims
+	.half 10, 13, 0, 0
+BIGFONT_6:
+	.word BIGFONT_6_IMG-FONTS_anims
+	.half 10, 14, 0, 0
+BIGFONT_7:
+	.word BIGFONT_7_IMG-FONTS_anims
+	.half 12, 13, 0, 0
+BIGFONT_8:
+	.word BIGFONT_8_IMG-FONTS_anims
+	.half 12, 14, 0, 0
+BIGFONT_9:
+	.word BIGFONT_9_IMG-FONTS_anims
+	.half 11, 14, 0, 0
+BIGFONT_A:
+	.word BIGFONT_A_IMG-FONTS_anims
+	.half 14, 14, 0, 0
+BIGFONT_B:
+	.word BIGFONT_B_IMG-FONTS_anims
+	.half 14, 13, 0, 0
+BIGFONT_C:
+	.word BIGFONT_C_IMG-FONTS_anims
+	.half 10, 13, 0, 0
+BIGFONT_D:
+	.word BIGFONT_D_IMG-FONTS_anims
+	.half 13, 13, 1, 0
+BIGFONT_E:
+	.word BIGFONT_E_IMG-FONTS_anims
+	.half 13, 13, 0, 0
+BIGFONT_F:
+	.word BIGFONT_F_IMG-FONTS_anims
+	.half 12, 15, 0, 0
+BIGFONT_G:
+	.word BIGFONT_G_IMG-FONTS_anims
+	.half 12, 13, 0, 0
+BIGFONT_H:
+	.word BIGFONT_H_IMG-FONTS_anims
+	.half 15, 14, 0, 0
+BIGFONT_I:
+	.word BIGFONT_I_IMG-FONTS_anims
+	.half 9, 13, 0, 0
+BIGFONT_J:
+	.word BIGFONT_J_IMG-FONTS_anims
+	.half 11, 16, 0, 0
+BIGFONT_K:
+	.word BIGFONT_K_IMG-FONTS_anims
+	.half 14, 13, 0, 0
+BIGFONT_L:
+	.word BIGFONT_L_IMG-FONTS_anims
+	.half 10, 13, 2, 0
+BIGFONT_M:
+	.word BIGFONT_M_IMG-FONTS_anims
+	.half 16, 13, 0, 0
+BIGFONT_N:
+	.word BIGFONT_N_IMG-FONTS_anims
+	.half 14, 13, 1, 0
+BIGFONT_O:
+	.word BIGFONT_O_IMG-FONTS_anims
+	.half 13, 13, 0, 0
+BIGFONT_P:
+	.word BIGFONT_P_IMG-FONTS_anims
+	.half 13, 13, 0, 0
+BIGFONT_Q:
+	.word BIGFONT_Q_IMG-FONTS_anims
+	.half 12, 14, 0, 0
+BIGFONT_R:
+	.word BIGFONT_R_IMG-FONTS_anims
+	.half 14, 14, 0, 0
+BIGFONT_S:
+	.word BIGFONT_S_IMG-FONTS_anims
+	.half 10, 13, 0, 0
+BIGFONT_T:
+	.word BIGFONT_T_IMG-FONTS_anims
+	.half 11, 13, -1, 0
+BIGFONT_U:
+	.word BIGFONT_U_IMG-FONTS_anims
+	.half 14, 13, 0, 0
+BIGFONT_V:
+	.word BIGFONT_V_IMG-FONTS_anims
+	.half 12, 13, 0, 0
+BIGFONT_W:
+	.word BIGFONT_W_IMG-FONTS_anims
+	.half 18, 13, 0, 0
+BIGFONT_X:
+	.word BIGFONT_X_IMG-FONTS_anims
+	.half 15, 13, 1, 0
+BIGFONT_Y:
+	.word BIGFONT_Y_IMG-FONTS_anims
+	.half 12, 14, 0, 0
+BIGFONT_Z:
+	.word BIGFONT_Z_IMG-FONTS_anims
+	.half 14, 13, 1, 0
+BIGFONT_PER:
+	.word BIGFONT_PER_IMG-FONTS_anims
+	.half 5, 4, 0, -8
+BIGFONT_COL:
+	.word BIGFONT_COL_IMG-FONTS_anims
+	.half 6, 10, 0, -1
+BIGFONT_COM:
+	.word BIGFONT_COM_IMG-FONTS_anims
+	.half 6, 5, 0, -8
+BIGFONT_EXC:
+	.word BIGFONT_EXC_IMG-FONTS_anims
+	.half 8, 13, 0, 0
+BIGFONT_MIN:
+	.word BIGFONT_MIN_IMG-FONTS_anims
+	.half 7, 4, 0, -5
+BIGFONT_PERC:
+	.word BIGFONT_PERC_IMG-FONTS_anims
+	.half 15, 13, 0, 0
+BIGFONT_PR1:
+	.word BIGFONT_PR1_IMG-FONTS_anims
+	.half 11, 16, 0, 0
+BIGFONT_PR2:
+	.word BIGFONT_PR2_IMG-FONTS_anims
+	.half 11, 16, 0, 0
+BIGFONT_QUE:
+	.word BIGFONT_QUE_IMG-FONTS_anims
+	.half 10, 13, 0, 0
+BIGFONT_SLA:
+	.word BIGFONT_SLA_IMG-FONTS_anims
+	.half 14, 16, 0, 0

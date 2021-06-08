@@ -1,0 +1,37 @@
+	.align 2
+	.globl tournmodBMOD
+tournmodBMOD:
+	.half   329,   485
+	.word     8, tournmod_BLK, trnment_HDR, trnment_CLT
+
+	.align 2
+	.globl tournmod_BLK
+tournmod_BLK:
+	.half     3,     4,    64, 0x0000,     0
+	.half     3,   124,    64, 0x0000,     1
+	.half     3,   243,    64, 0x0000,     2
+	.half     3,   363,    64, 0x0000,     3
+	.half   163,     4,    64, 0x0000,     4
+	.half   163,   124,    64, 0x0000,     5
+	.half   163,   243,    64, 0x0000,     7
+	.half   163,   363,    64, 0x0000,     6
+
+	.align 2
+	.globl trnment_HDR
+trnment_HDR:
+	.half   160,   120
+	.word 235960
+	.half   160,   120
+	.word 255160
+	.half   160,   120
+	.word 274360
+	.half   160,   119
+	.word 293560
+	.half   160,   120
+	.word 312600
+	.half   160,   120
+	.word 331800
+	.half   160,   119
+	.word 351000
+	.half   160,   120
+	.word 370040

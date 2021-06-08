@@ -1,0 +1,25 @@
+	.align 2
+	.globl kronmodBMOD
+kronmodBMOD:
+	.half   330,   250
+	.word     4, kronmod_BLK, kronfin_HDR, kronfin_CLT
+
+	.align 2
+	.globl kronmod_BLK
+kronmod_BLK:
+	.half     5,     4,    64, 0x0000,     0
+	.half     5,   124,    64, 0x0000,     1
+	.half   165,     4,    64, 0x0000,     2
+	.half   165,   124,    64, 0x0000,     3
+
+	.align 2
+	.globl kronfin_HDR
+kronfin_HDR:
+	.half   160,   120
+	.word     0
+	.half   160,   120
+	.word 19200
+	.half   160,   120
+	.word 38400
+	.half   160,   120
+	.word 57600

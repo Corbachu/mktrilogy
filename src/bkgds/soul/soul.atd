@@ -1,0 +1,81 @@
+soul_anims:
+	.word a_soul_na_do
+	.word a_torch
+a_soul_na_do:
+	.word SONADO1
+	.word SONADO2
+	.word SONADO3
+	.word SONADO4
+	.word SONADO5
+	.word SONADO6
+	.word SONADO7
+	.word SONADO8
+	.word SONADO9
+	.word SONADO10
+	.word SONADO11
+	.word SONADO12
+	.word ani_jump
+	.word a_soul_na_do
+a_torch:
+	.word BALFIRE1
+	.word BALFIRE2
+	.word BALFIRE3
+	.word BALFIRE4
+	.word BALFIRE5
+	.word BALFIRE6
+	.word ani_jump
+	.word a_torch
+SONADO1:
+	.word SONADO1_IMG
+	.half 34, 83, -15, -56
+SONADO2:
+	.word SONADO2_IMG
+	.half 34, 83, -15, -56
+SONADO3:
+	.word SONADO3_IMG
+	.half 34, 83, -15, -56
+SONADO4:
+	.word SONADO4_IMG
+	.half 34, 83, -15, -56
+SONADO5:
+	.word SONADO5_IMG
+	.half 34, 83, -15, -56
+SONADO6:
+	.word SONADO6_IMG
+	.half 34, 83, -15, -56
+SONADO7:
+	.word SONADO7_IMG
+	.half 34, 83, -15, -56
+SONADO8:
+	.word SONADO8_IMG
+	.half 34, 83, -15, -56
+SONADO9:
+	.word SONADO9_IMG
+	.half 34, 83, -15, -56
+SONADO10:
+	.word SONADO10_IMG
+	.half 34, 83, -15, -56
+SONADO11:
+	.word SONADO11_IMG
+	.half 34, 83, -15, -56
+SONADO12:
+	.word SONADO12_IMG
+	.half 34, 83, -15, -56
+BALFIRE1:
+	.word BALFIRE1_IMG
+	.half 29, 33, 0, -3
+BALFIRE2:
+	.word BALFIRE2_IMG
+	.half 29, 29, 0, -8
+BALFIRE3:
+	.word BALFIRE3_IMG
+	.half 29, 29, 0, -8
+BALFIRE4:
+	.word BALFIRE4_IMG
+	.half 29, 34, 0, -2
+BALFIRE5:
+	.word BALFIRE5_IMG
+	.half 29, 36, 0, -1
+BALFIRE6:
+	.word BALFIRE6_IMG
+	.half 29, 37, 0, 0

@@ -1,0 +1,176 @@
+robot_list:
+	.word VRB1GOLD1A
+	.word VRB1GOLD1B
+	.word VRB1GOLD1C
+	.word VRB1GOLD1D
+	.word VRB1GOLD1E
+	.word VRB1GREY1A
+	.word VRB1GREY1B
+	.word VRB1GREY1C
+	.word VRB1GREY1D
+	.word VRB1GREY1E
+	.word VRB1GREY1F
+	.word VRB1GREY1G
+	.word VRB2GREY1A
+	.word VRB2GREY1B
+	.word VRB2GREY1C
+	.word VRB2GREY1D
+	.word VRB2GREY1E
+	.word VRB2GREY1F
+	.word VRB2RED1A
+	.word VRB2RED1B
+	.word VRB2RED1C
+	.word VRB2RED1D
+	.word VRB2RED1E
+	.word VRB2RED1F
+	.word VRB2RED1G
+VRB1GOLD1A:
+	.word RB1GOLD1A
+	.word 0
+VRB1GOLD1B:
+	.word RB1GOLD1B
+	.word 0
+VRB1GOLD1C:
+	.word RB1GOLD1C
+	.word 0
+VRB1GOLD1D:
+	.word RB1GOLD1D
+	.word 0
+VRB1GOLD1E:
+	.word RB1GOLD1E
+	.word 0
+VRB1GREY1A:
+	.word RB1GREY1A
+	.word 0
+VRB1GREY1B:
+	.word RB1GREY1B
+	.word 0
+VRB1GREY1C:
+	.word RB1GREY1C
+	.word 0
+VRB1GREY1D:
+	.word RB1GREY1D
+	.word 0
+VRB1GREY1E:
+	.word RB1GREY1E
+	.word 0
+VRB1GREY1F:
+	.word RB1GREY1F
+	.word 0
+VRB1GREY1G:
+	.word RB1GREY1G
+	.word 0
+VRB2GREY1A:
+	.word RB2GREY1A
+	.word 0
+VRB2GREY1B:
+	.word RB2GREY1B
+	.word 0
+VRB2GREY1C:
+	.word RB2GREY1C
+	.word 0
+VRB2GREY1D:
+	.word RB2GREY1D
+	.word 0
+VRB2GREY1E:
+	.word RB2GREY1E
+	.word 0
+VRB2GREY1F:
+	.word RB2GREY1F
+	.word 0
+VRB2RED1A:
+	.word RB2RED1A
+	.word 0
+VRB2RED1B:
+	.word RB2RED1B
+	.word 0
+VRB2RED1C:
+	.word RB2RED1C
+	.word 0
+VRB2RED1D:
+	.word RB2RED1D
+	.word 0
+VRB2RED1E:
+	.word RB2RED1E
+	.word 0
+VRB2RED1F:
+	.word RB2RED1F
+	.word 0
+VRB2RED1G:
+	.word RB2RED1G
+	.word 0
+RB1GOLD1A:
+	.word RB1GOLD1A_IMG
+	.half 48, 29, 78, -25
+RB1GOLD1B:
+	.word RB1GOLD1B_IMG
+	.half 33, 27, 50, -42
+RB1GOLD1C:
+	.word RB1GOLD1C_IMG
+	.half 16, 62, 45, -153
+RB1GOLD1D:
+	.word RB1GOLD1D_IMG
+	.half 111, 66, 38, -36
+RB1GOLD1E:
+	.word RB1GOLD1E_IMG
+	.half 139, 46, -27, -23
+RB1GREY1A:
+	.word RB1GREY1A_IMG
+	.half 43, 54, 56, -1
+RB1GREY1B:
+	.word RB1GREY1B_IMG
+        .half 27, 22, 66, -48
+RB1GREY1C:
+	.word RB1GREY1C_IMG
+	.half 125, 54, 59, -44
+RB1GREY1D:
+	.word RB1GREY1D_IMG
+	.half 27, 23, 5, -142
+RB1GREY1E:
+	.word RB1GREY1E_IMG
+	.half 82, 54, -4, -1
+RB1GREY1F:
+	.word RB1GREY1F_IMG
+        .half 41, 25, -22, -88
+RB1GREY1G:
+	.word RB1GREY1G_IMG
+        .half 65, 67, -29, -89
+RB2GREY1A:
+	.word RB2GREY1A_IMG
+	.half 43, 37, 4, -133
+RB2GREY1B:
+	.word RB2GREY1B_IMG
+        .half 66, 50, 58, -50
+RB2GREY1C:
+	.word RB2GREY1C_IMG
+	.half 60, 50, 54, -116
+RB2GREY1D:
+	.word RB2GREY1D_IMG
+        .half 52, 22, -57, -71
+RB2GREY1E:
+	.word RB2GREY1E_IMG
+        .half 51, 38, -18, -84
+RB2GREY1F:
+	.word RB2GREY1F_IMG
+        .half 82, 51, 8, -7
+RB2RED1A:
+	.word RB2RED1A_IMG
+	.half 36, 54, 82, -38
+RB2RED1B:
+	.word RB2RED1B_IMG
+	.half 13, 12, 42, -156
+RB2RED1C:
+	.word RB2RED1C_IMG
+        .half 101, 50, 39, -41
+RB2RED1D:
+	.word RB2RED1D_IMG
+	.half 5, 10, -9, -151
+RB2RED1E:
+	.word RB2RED1E_IMG
+	.half 21, 24, 21, -155
+RB2RED1F:
+	.word RB2RED1F_IMG
+        .half 111, 19, -11, -25
+RB2RED1G:
+	.word RB2RED1G_IMG
+        .half 103, 46, -30, -42

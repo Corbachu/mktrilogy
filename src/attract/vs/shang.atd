@@ -1,0 +1,85 @@
+shang_list:
+	.word VTSFLESH1A
+	.word VTSFLESH1B
+	.word VTSFLESH1C
+	.word VTSFLESH1D
+	.word VTSFLESH1E
+	.word VTSGREY1A
+	.word VTSGREY1B
+	.word VTSGREY1C
+	.word VTSGREY1D
+	.word VTSGREY1E
+	.word VTSPANT1A
+	.word VTSPANT1B
+VTSFLESH1A:
+	.word TSFLESH1A
+	.word 0
+VTSFLESH1B:
+	.word TSFLESH1B
+	.word 0
+VTSFLESH1C:
+	.word TSFLESH1C
+	.word 0
+VTSFLESH1D:
+	.word TSFLESH1D
+	.word 0
+VTSFLESH1E:
+	.word TSFLESH1E
+	.word 0
+VTSGREY1A:
+	.word TSGREY1A
+	.word 0
+VTSGREY1B:
+	.word TSGREY1B
+	.word 0
+VTSGREY1C:
+	.word TSGREY1C
+	.word 0
+VTSGREY1D:
+	.word TSGREY1D
+	.word 0
+VTSGREY1E:
+	.word TSGREY1E
+	.word 0
+VTSPANT1A:
+	.word TSPANT1A
+	.word 0
+VTSPANT1B:
+	.word TSPANT1B
+	.word 0
+TSFLESH1A:
+	.word TSFLESH1A_IMG
+        .half 49, 18, 12, -93
+TSFLESH1B:
+	.word TSFLESH1B_IMG
+	.half 142, 63, 64, -7
+TSFLESH1C:
+	.word TSFLESH1C_IMG
+	.half 14, 6, -4, -94
+TSFLESH1D:
+	.word TSFLESH1D_IMG
+	.half 105, 31, -3, -47
+TSFLESH1E:
+	.word TSFLESH1E_IMG
+	.half 119, 59, -34, -51
+TSGREY1A:
+	.word TSGREY1A_IMG
+	.half 18, 18, 44, -5
+TSGREY1B:
+	.word TSGREY1B_IMG
+	.half 24, 18, -60, -124
+TSGREY1C:
+	.word TSGREY1C_IMG
+        .half 147, 60, 44, -22
+TSGREY1D:
+	.word TSGREY1D_IMG
+        .half 105, 42, -15, -16
+TSGREY1E:
+	.word TSGREY1E_IMG
+	.half 19, 10, -16, -149
+TSPANT1A:
+	.word TSPANT1A_IMG
+        .half 15, 18, 40, -154
+TSPANT1B:
+	.word TSPANT1B_IMG
+        .half 13, 17, -12, -156

@@ -1,0 +1,76 @@
+	.align 2
+	.globl LOST3BMOD
+LOST3BMOD:
+	.half   340,   234
+	.word     4, LOST3_BLK, MKLOST_HDR, MKLOST_CLT
+
+	.align 2
+	.globl LOST3_BLK
+LOST3_BLK:
+	.half     9,     7,    64, 0x0000,     1
+	.half     9,   116,    64, 0x0100,     0
+	.half   172,     8,    64, 0x0000,     7
+	.half   172,   116,    64, 0x0100,     8
+
+	.align 2
+	.globl LOST1BMOD
+LOST1BMOD:
+	.half  1160,    60
+	.word    12, LOST1_BLK, MKLOST_HDR, MKLOST_CLT
+
+	.align 2
+	.globl LOST1_BLK
+LOST1_BLK:
+	.half     9,    10,    64, 0x0300,     2
+	.half   104,    10,    64, 0x0300,     5
+	.half   199,    10,    64, 0x0300,     2
+	.half   294,    10,    64, 0x0300,     5
+	.half   389,    10,    64, 0x0300,     2
+	.half   484,    10,    64, 0x0300,     5
+	.half   579,    10,    64, 0x0300,     2
+	.half   674,    10,    64, 0x0300,     5
+	.half   769,    10,    64, 0x0300,     2
+	.half   864,    10,    64, 0x0300,     5
+	.half   959,    10,    64, 0x0300,     2
+	.half  1054,    10,    64, 0x0300,     5
+
+	.align 2
+	.globl LOST2BMOD
+LOST2BMOD:
+	.half   516,   201
+	.word     9, LOST2_BLK, MKLOST_HDR, MKLOST_CLT
+
+	.align 2
+	.globl LOST2_BLK
+LOST2_BLK:
+	.half    40,     5,    64, 0x0200,     3
+	.half   101,    66,    64, 0x0200,     4
+	.half   138,    92,    64, 0x0200,     6
+	.half   190,    92,    64, 0x0200,     6
+	.half   242,    92,    64, 0x0200,     6
+	.half   294,    92,    64, 0x0200,     6
+	.half   346,    92,    64, 0x0200,     6
+	.half   383,    66,    64, 0x0210,     4
+	.half   433,     5,    64, 0x0210,     3
+
+	.align 2
+	.globl MKLOST_HDR
+MKLOST_HDR:
+	.half   164,   109
+	.word     0
+	.half   164,   109
+	.word 17880
+	.half    96,    43
+	.word 35760
+	.half    64,   184
+	.word 39888
+	.half    52,   123
+	.word 51664
+	.half    96,    43
+	.word 58064
+	.half    52,    97
+	.word 62192
+	.half   160,   109
+	.word 67240
+	.half   160,   109
+	.word 84680

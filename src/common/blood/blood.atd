@@ -1,0 +1,884 @@
+blood_anims:
+	.word a_face_blood
+	.word a_decap_spray
+	.word a_skinny_blood
+	.word a_bigger
+	.word a_drip
+	.word a_drip_splat
+	.word a_rotate_12
+	.word a_goro_arm
+	.word a_skull
+	.word a_rib_cage
+	.word a_bone
+	.word a_limb
+	.word a_leg2
+	.word a_leg
+	.word a_arm2
+	.word a_arm_land
+	.word a_arm
+	.word a_pork
+	.word a_blood_explode
+	.word a_misc_blood
+a_misc_blood:
+	.word BIGBLD1
+	.word STAB1
+	.word 0
+a_blood_explode:
+	.word BLDXPD1
+	.word BLDXPD2
+	.word BLDXPD3
+	.word BLDXPD4
+	.word BLDXPD5
+	.word BLDXPD6
+	.word BLDXPD7
+	.word BLDXPD8
+	.word BLDXPD9
+	.word BLDXPD10
+	.word BLDXPD11
+	.word BLDXPD12
+	.word BLDXPD13
+	.word 0
+a_pork:
+	.word PORK01
+	.word PORK02
+	.word PORK03
+	.word PORK04
+	.word PORK05
+	.word PORK06
+	.word PORK07
+	.word PORK08
+	.word PORK09
+	.word PORK10
+	.word PORK11
+	.word PORK12
+	.word ani_jump
+	.word a_pork
+a_arm:
+	.word ARM01
+	.word ARM02
+	.word ARM03
+	.word ARM04
+	.word ARM05
+	.word ARM06
+	.word ARM07
+	.word ARM08
+	.word ARM09
+	.word ARM10
+	.word ARM11
+	.word ARM12
+	.word ani_jump
+	.word a_arm
+	.word 0
+a_arm_land:
+	.word ARM13
+	.word ARM14
+	.word ARM15
+	.word ARM16
+	.word ARM17
+	.word ARM18
+	.word ARM19
+	.word 0
+a_arm2:
+	.word ARM_B01
+	.word ARM_B02
+	.word ARM_B03
+	.word ARM_B04
+	.word ARM_B05
+	.word ARM_B06
+	.word ARM_B07
+	.word ARM_B08
+	.word ARM_B09
+	.word ARM_B10
+	.word ARM_B11
+	.word ARM_B12
+	.word ani_jump
+	.word a_arm2
+	.word 0
+a_leg:
+	.word LEG01
+	.word LEG02
+	.word LEG03
+	.word LEG04
+	.word LEG05
+	.word LEG06
+	.word LEG07
+	.word LEG08
+	.word LEG09
+	.word LEG10
+	.word LEG11
+	.word LEG12
+	.word ani_jump
+	.word a_leg
+a_leg2:
+	.word LEG_B01
+	.word LEG_B02
+	.word LEG_B03
+	.word LEG_B04
+	.word LEG_B05
+	.word LEG_B06
+	.word LEG_B07
+	.word LEG_B08
+	.word LEG_B09
+	.word LEG_B10
+	.word LEG_B11
+	.word LEG_B12
+	.word ani_jump
+	.word a_leg2
+	.word 0
+a_limb:
+	.word XLIMB01
+	.word XLIMB02
+	.word XLIMB03
+	.word XLIMB04
+	.word XLIMB05
+	.word XLIMB06
+	.word XLIMB07
+	.word XLIMB08
+	.word XLIMB09
+	.word XLIMB10
+	.word XLIMB11
+	.word XLIMB12
+	.word ani_jump
+	.word a_limb
+	.word 0
+a_bone:
+	.word BONE01
+	.word BONE02
+	.word BONE03
+	.word BONE04
+	.word BONE05
+	.word BONE06
+	.word BONE07
+	.word BONE08
+	.word BONE09
+	.word BONE10
+	.word BONE11
+	.word BONE12
+	.word ani_jump
+	.word a_bone
+a_rib_cage:
+	.word CAGE01
+	.word CAGE02
+	.word CAGE03
+	.word CAGE04
+	.word CAGE05
+	.word CAGE06
+	.word CAGE07
+	.word CAGE08
+	.word CAGE09
+	.word CAGE10
+	.word CAGE11
+	.word CAGE12
+	.word ani_jump
+	.word a_rib_cage
+a_skull:
+	.word SKULL01
+	.word SKULL02
+	.word SKULL03
+	.word SKULL04
+	.word SKULL05
+	.word SKULL06
+	.word SKULL07
+	.word SKULL08
+	.word SKULL09
+	.word SKULL10
+	.word SKULL11
+	.word SKULL12
+	.word ani_jump
+	.word a_skull
+a_goro_arm:
+	.word GOROARM02
+	.word GOROARM03
+	.word GOROARM04
+	.word GOROARM05
+	.word GOROARM06
+	.word GOROARM07
+	.word GOROARM08
+	.word GOROARM09
+	.word GOROARM10
+	.word GOROARM11
+	.word GOROARM12
+	.word ani_jump
+	.word a_goro_arm
+a_face_blood:
+	.word SPLAT1
+	.word SPLAT2
+	.word SPLAT3
+	.word SPLAT4
+	.word SPLAT5
+	.word SPLAT6
+	.word SPLAT7
+	.word 0
+a_decap_spray:
+	.word SPRAY1
+	.word SPRAY2
+	.word SPRAY3
+	.word SPRAY4
+	.word SPRAY5
+	.word SPRAY6
+	.word SPRAY8
+	.word SPRAY9
+	.word SPRAY10
+	.word SPRAY11
+	.word SPRAY12
+	.word SPRAY13
+	.word 0
+a_skinny_blood:
+	.word SMDRIP1
+	.word SMDRIP2
+	.word SMDRIP3
+	.word 0
+	.word SMDRIP4
+	.word SMDRIP5
+	.word SMDRIP6
+	.word SMDRIP7
+	.word 0
+	.word SMDRIP8
+	.word SMDRIP9
+	.word 0
+a_bigger:
+	.word BIGGERBLUD1
+	.word BIGGERBLUD1
+	.word BIGGERBLUD2
+	.word BIGGERBLUD2
+	.word BIGGERBLUD3
+	.word BIGGERBLUD4
+	.word BIGGERBLUD5
+	.word BIGGERBLUD6
+	.word 0
+a_drip:
+	.word DRIP1
+	.word DRIP2
+	.word DRIP3
+	.word DRIP4
+	.word 0
+a_drip_splat:
+	.word DRIP5
+	.word DRIP6
+	.word DRIP7
+	.word 0
+a_rotate_12:
+	.word bludglob1
+	.word bludglob2
+	.word bludglob3
+a_rotate_standard:
+	.word bludglob4
+	.word bludglob5
+a_rotate_9:
+	.word bludglob6
+	.word bludglob7
+	.word bludglob8
+a_rotate_7:
+	.word bludglob9
+	.word bludglob10
+	.word bludglob11
+	.word bludglob12
+	.word 0
+SPLAT1:
+	.word SPLAT1_IMG
+	.half 9, 7, 0, 6
+SPLAT2:
+	.word SPLAT2_IMG
+	.half 15, 15, 0, 13
+SPLAT3:
+	.word SPLAT3_IMG
+	.half 27, 25, 1, 20
+SPLAT4:
+	.word SPLAT4_IMG
+	.half 39, 26, -3, 29
+SPLAT5:
+	.word SPLAT5_IMG
+	.half 45, 37, -1, 36
+SPLAT6:
+	.word SPLAT6_IMG
+	.half 51, 39, -5, 37
+SPLAT7:
+	.word SPLAT7_IMG
+	.half 43, 29, -12, 27
+SPRAY1:
+	.word SPRAY1_IMG
+	.half 10, 9, -3, 12
+SPRAY2:
+	.word SPRAY2_IMG
+	.half 20, 19, -4, 23
+SPRAY3:
+	.word SPRAY3_IMG
+	.half 27, 25, -4, 30
+SPRAY4:
+	.word SPRAY4_IMG
+	.half 40, 38, -4, 42
+SPRAY5:
+	.word SPRAY5_IMG
+	.half 57, 52, -4, 54
+SPRAY6:
+	.word SPRAY6_IMG
+	.half 70, 63, -4, 60
+SPRAY8:
+	.word SPRAY8_IMG
+	.half 89, 90, -5, 60
+SPRAY9:
+	.word SPRAY9_IMG
+	.half 64, 66, -6, 57
+SPRAY10:
+	.word SPRAY10_IMG
+	.half 54, 76, -9, 52
+SPRAY11:
+	.word SPRAY11_IMG
+	.half 51, 70, -9, 44
+SPRAY12:
+	.word SPRAY12_IMG
+	.half 47, 54, -17, 37
+SPRAY13:
+	.word SPRAY13_IMG
+	.half 38, 52, -23, 27
+SMDRIP1:
+	.word SMDRIP1_IMG
+	.half 5, 2, 1, 0
+SMDRIP2:
+	.word SMDRIP2_IMG
+	.half 9, 2, 1, 0
+SMDRIP3:
+	.word SMDRIP3_IMG
+	.half 13, 2, 1, 0
+SMDRIP4:
+	.word SMDRIP4_IMG
+	.half 13, 2, 1, -2
+SMDRIP5:
+	.word SMDRIP5_IMG
+	.half 13, 2, 1, -13
+SMDRIP6:
+	.word SMDRIP6_IMG
+	.half 13, 2, 1, -25
+SMDRIP7:
+	.word SMDRIP7_IMG
+	.half 13, 2, 1, -36
+SMDRIP8:
+	.word SMDRIP8_IMG
+	.half 10, 7, 4, -47
+SMDRIP9:
+	.word SMDRIP9_IMG
+	.half 4, 14, 7, -54
+BIGGERBLUD1:
+	.word BIGGERBLUD1_IMG
+	.half 12, 21, 11, -20
+BIGGERBLUD2:
+	.word BIGGERBLUD2_IMG
+	.half 20, 22, 18, -17
+BIGGERBLUD3:
+	.word BIGGERBLUD3_IMG
+	.half 24, 16, 22, -14
+BIGGERBLUD4:
+	.word BIGGERBLUD4_IMG
+	.half 27, 20, 30, -12
+BIGGERBLUD5:
+	.word BIGGERBLUD5_IMG
+	.half 25, 18, 36, -13
+BIGGERBLUD6:
+	.word BIGGERBLUD6_IMG
+	.half 22, 18, 42, -14
+DRIP1:
+	.word DRIP1_IMG
+	.half 12, 18, 0, 11
+DRIP2:
+	.word DRIP2_IMG
+	.half 17, 11, 0, 17
+DRIP3:
+	.word DRIP3_IMG
+	.half 20, 8, 2, 20
+DRIP4:
+	.word DRIP4_IMG
+	.half 23, 6, 2, 22
+DRIP5:
+	.word DRIP5_IMG
+	.half 11, 18, 8, 9
+DRIP6:
+	.word DRIP6_IMG
+	.half 11, 24, 12, 8
+DRIP7:
+	.word DRIP7_IMG
+	.half 9, 28, 14, 5
+bludglob1:
+	.word bludglob1_IMG
+	.half 18, 6, 0, 0
+bludglob2:
+	.word bludglob2_IMG
+	.half 20, 7, 0, 0
+bludglob3:
+	.word bludglob3_IMG
+	.half 17, 10, 0, 0
+bludglob4:
+	.word bludglob4_IMG
+	.half 16, 14, 0, 0
+bludglob5:
+	.word bludglob5_IMG
+	.half 12, 19, 0, 0
+bludglob6:
+	.word bludglob6_IMG
+	.half 7, 21, 0, 0
+bludglob7:
+	.word bludglob7_IMG
+	.half 9, 21, 0, 3
+bludglob8:
+	.word bludglob8_IMG
+	.half 12, 19, 0, 6
+bludglob9:
+	.word bludglob9_IMG
+	.half 15, 15, 0, 9
+bludglob10:
+	.word bludglob10_IMG
+	.half 17, 11, 0, 10
+bludglob11:
+	.word bludglob11_IMG
+	.half 20, 8, 0, 14
+bludglob12:
+	.word bludglob12_IMG
+	.half 23, 6, 0, 15
+GOROARM02:
+	.word GOROARM02_IMG
+	.half 22, 23, 13, 7
+GOROARM03:
+	.word GOROARM03_IMG
+	.half 10, 26, 15, 2
+GOROARM04:
+	.word GOROARM04_IMG
+	.half 15, 24, 15, 4
+GOROARM05:
+	.word GOROARM05_IMG
+	.half 27, 18, 13, 11
+GOROARM06:
+	.word GOROARM06_IMG
+	.half 34, 10, 7, 16
+GOROARM07:
+	.word GOROARM07_IMG
+	.half 32, 18, 11, 18
+GOROARM08:
+	.word GOROARM08_IMG
+	.half 23, 30, 15, 14
+GOROARM09:
+	.word GOROARM09_IMG
+	.half 8, 31, 15, 3
+GOROARM10:
+	.word GOROARM10_IMG
+	.half 22, 27, 13, 10
+GOROARM11:
+	.word GOROARM11_IMG
+	.half 35, 19, 8, 15
+GOROARM12:
+	.word GOROARM12_IMG
+	.half 37, 10, 4, 15
+SKULL01:
+	.word SKULL01_IMG
+	.half 14, 15, 8, 8
+SKULL02:
+	.word SKULL02_IMG
+	.half 14, 17, 9, 8
+SKULL03:
+	.word SKULL03_IMG
+	.half 14, 16, 8, 7
+SKULL04:
+	.word SKULL04_IMG
+	.half 15, 14, 6, 8
+SKULL05:
+	.word SKULL05_IMG
+	.half 17, 14, 6, 9
+SKULL06:
+	.word SKULL06_IMG
+	.half 16, 15, 8, 8
+SKULL07:
+	.word SKULL07_IMG
+	.half 13, 15, 9, 4
+SKULL08:
+	.word SKULL08_IMG
+	.half 14, 17, 9, 5
+SKULL09:
+	.word SKULL09_IMG
+	.half 14, 16, 9, 7
+SKULL10:
+	.word SKULL10_IMG
+	.half 15, 14, 9, 7
+SKULL11:
+	.word SKULL11_IMG
+	.half 17, 14, 9, 8
+SKULL12:
+	.word SKULL12_IMG
+	.half 16, 15, 8, 8
+CAGE01:
+	.word CAGE01_IMG
+	.half 21, 21, 12, 8
+CAGE02:
+	.word CAGE02_IMG
+	.half 20, 23, 14, 7
+CAGE03:
+	.word CAGE03_IMG
+	.half 17, 23, 14, 8
+CAGE04:
+	.word CAGE04_IMG
+	.half 20, 22, 13, 9
+CAGE05:
+	.word CAGE05_IMG
+	.half 21, 19, 11, 9
+CAGE06:
+	.word CAGE06_IMG
+	.half 20, 19, 9, 11
+CAGE07:
+	.word CAGE07_IMG
+	.half 21, 23, 11, 12
+CAGE08:
+	.word CAGE08_IMG
+	.half 19, 24, 11, 10
+CAGE09:
+	.word CAGE09_IMG
+	.half 17, 22, 10, 8
+CAGE10:
+	.word CAGE10_IMG
+	.half 20, 22, 10, 10
+CAGE11:
+	.word CAGE11_IMG
+	.half 21, 18, 9, 10
+CAGE12:
+	.word CAGE12_IMG
+	.half 21, 18, 10, 9
+BONE01:
+	.word BONE01_IMG
+	.half 21, 8, 5, 12
+BONE02:
+	.word BONE02_IMG
+	.half 14, 11, 5, 8
+BONE03:
+	.word BONE03_IMG
+	.half 5, 19, 9, 3
+BONE04:
+	.word BONE04_IMG
+	.half 15, 23, 11, 8
+BONE05:
+	.word BONE05_IMG
+	.half 22, 22, 10, 11
+BONE06:
+	.word BONE06_IMG
+	.half 23, 17, 8, 12
+BONE07:
+	.word BONE07_IMG
+	.half 21, 9, 4, 11
+BONE08:
+	.word BONE08_IMG
+	.half 13, 11, 6, 7
+BONE09:
+	.word BONE09_IMG
+	.half 6, 18, 9, 3
+BONE10:
+	.word BONE10_IMG
+	.half 15, 22, 11, 8
+BONE11:
+	.word BONE11_IMG
+	.half 22, 22, 11, 11
+BONE12:
+	.word BONE12_IMG
+	.half 25, 17, 9, 13
+XLIMB01:
+	.word XLIMB01_IMG
+	.half 23, 25, 12, 9
+XLIMB02:
+	.word XLIMB02_IMG
+	.half 15, 31, 16, 7
+XLIMB03:
+	.word XLIMB03_IMG
+	.half 9, 30, 16, 3
+XLIMB04:
+	.word XLIMB04_IMG
+	.half 16, 24, 14, 8
+XLIMB05:
+	.word XLIMB05_IMG
+	.half 21, 13, 8, 10
+XLIMB06:
+	.word XLIMB06_IMG
+	.half 24, 16, 9, 11
+XLIMB07:
+	.word XLIMB07_IMG
+	.half 20, 26, 14, 9
+XLIMB08:
+	.word XLIMB08_IMG
+	.half 13, 32, 17, 5
+XLIMB09:
+	.word XLIMB09_IMG
+	.half 10, 31, 17, 4
+XLIMB10:
+	.word XLIMB10_IMG
+	.half 18, 25, 14, 7
+XLIMB11:
+	.word XLIMB11_IMG
+	.half 24, 14, 7, 10
+XLIMB12:
+	.word XLIMB12_IMG
+	.half 26, 15, 8, 11
+LEG_B01:
+	.word LEG_B01_IMG
+	.half 31, 18, 9, 15
+LEG_B02:
+	.word LEG_B02_IMG
+	.half 33, 14, 10, 14
+LEG_B03:
+	.word LEG_B03_IMG
+	.half 29, 22, 13, 11
+LEG_B04:
+	.word LEG_B04_IMG
+	.half 20, 30, 17, 6
+LEG_B05:
+	.word LEG_B05_IMG
+	.half 14, 31, 18, 8
+LEG_B06:
+	.word LEG_B06_IMG
+	.half 23, 26, 17, 11
+LEG_B07:
+	.word LEG_B07_IMG
+	.half 28, 18, 13, 13
+LEG_B08:
+	.word LEG_B08_IMG
+	.half 31, 16, 9, 15
+LEG_B09:
+	.word LEG_B09_IMG
+	.half 28, 24, 14, 15
+LEG_B10:
+	.word LEG_B10_IMG
+	.half 19, 28, 16, 12
+LEG_B11:
+	.word LEG_B11_IMG
+	.half 15, 31, 16, 7
+LEG_B12:
+	.word LEG_B12_IMG
+	.half 23, 27, 13, 11
+LEG01:
+	.word LEG01_IMG
+	.half 29, 15, 7, 11
+LEG02:
+	.word LEG02_IMG
+	.half 30, 19, 9, 11
+LEG03:
+	.word LEG03_IMG
+	.half 31, 21, 10, 11
+LEG04:
+	.word LEG04_IMG
+	.half 32, 19, 10, 12
+LEG05:
+	.word LEG05_IMG
+	.half 32, 19, 10, 12
+LEG06:
+	.word LEG06_IMG
+	.half 32, 14, 7, 12
+LEG07:
+	.word LEG07_IMG
+	.half 33, 14, 8, 13
+LEG08:
+	.word LEG08_IMG
+	.half 31, 18, 11, 12
+LEG09:
+	.word LEG09_IMG
+	.half 31, 20, 11, 12
+LEG10:
+	.word LEG10_IMG
+	.half 31, 20, 12, 12
+LEG11:
+	.word LEG11_IMG
+	.half 29, 19, 11, 11
+LEG12:
+	.word LEG12_IMG
+	.half 29, 14, 8, 11
+ARM_B01:
+	.word ARM_B01_IMG
+	.half 25, 13, 6, 14
+ARM_B02:
+	.word ARM_B02_IMG
+	.half 18, 23, 11, 10
+ARM_B03:
+	.word ARM_B03_IMG
+	.half 10, 28, 15, 6
+ARM_B04:
+	.word ARM_B04_IMG
+	.half 12, 26, 15, 6
+ARM_B05:
+	.word ARM_B05_IMG
+	.half 23, 20, 13, 9
+ARM_B06:
+	.word ARM_B06_IMG
+	.half 29, 11, 8, 11
+ARM_B07:
+	.word ARM_B07_IMG
+	.half 27, 14, 6, 9
+ARM_B08:
+	.word ARM_B08_IMG
+	.half 19, 26, 10, 6
+ARM_B09:
+	.word ARM_B09_IMG
+	.half 10, 30, 11, 3
+ARM_B10:
+	.word ARM_B10_IMG
+	.half 12, 26, 10, 5
+ARM_B11:
+	.word ARM_B11_IMG
+	.half 21, 19, 7, 11
+ARM_B12:
+	.word ARM_B12_IMG
+	.half 26, 10, 4, 14
+ARM13:
+	.word ARM13_IMG
+	.half 19, 18, 11, 4
+ARM14:
+	.word ARM14_IMG
+	.half 17, 11, 6, -1
+ARM15:
+	.word ARM15_IMG
+	.half 15, 14, 6, -6
+ARM16:
+	.word ARM16_IMG
+	.half 12, 23, 10, -11
+ARM17:
+	.word ARM17_IMG
+	.half 8, 28, 11, -14
+ARM18:
+	.word ARM18_IMG
+	.half 9, 35, 13, -15
+ARM19:
+	.word ARM19_IMG
+	.half 9, 34, 13, -14
+ARM01:
+	.word ARM01_IMG
+	.half 22, 18, 10, 11
+ARM02:
+	.word ARM02_IMG
+	.half 21, 11, 6, 10
+ARM03:
+	.word ARM03_IMG
+	.half 23, 11, 6, 11
+ARM04:
+	.word ARM04_IMG
+	.half 24, 19, 8, 11
+ARM05:
+	.word ARM05_IMG
+	.half 26, 23, 9, 11
+ARM06:
+	.word ARM06_IMG
+	.half 26, 22, 7, 11
+ARM07:
+	.word ARM07_IMG
+	.half 25, 18, 6, 11
+ARM08:
+	.word ARM08_IMG
+	.half 23, 10, 4, 11
+ARM09:
+	.word ARM09_IMG
+	.half 22, 11, 4, 11
+ARM10:
+	.word ARM10_IMG
+	.half 22, 18, 8, 11
+ARM11:
+	.word ARM11_IMG
+	.half 22, 22, 11, 11
+ARM12:
+	.word ARM12_IMG
+	.half 22, 21, 12, 11
+PORK01:
+	.word PORK01_IMG
+	.half 20, 14, 7, 9
+PORK02:
+	.word PORK02_IMG
+	.half 13, 16, 8, 6
+PORK03:
+	.word PORK03_IMG
+	.half 6, 15, 8, 3
+PORK04:
+	.word PORK04_IMG
+	.half 14, 12, 6, 7
+PORK05:
+	.word PORK05_IMG
+	.half 20, 8, 5, 10
+PORK06:
+	.word PORK06_IMG
+	.half 21, 10, 6, 12
+PORK07:
+	.word PORK07_IMG
+	.half 20, 14, 8, 11
+PORK08:
+	.word PORK08_IMG
+	.half 13, 16, 10, 7
+PORK09:
+	.word PORK09_IMG
+	.half 7, 15, 10, 3
+PORK10:
+	.word PORK10_IMG
+	.half 14, 12, 7, 6
+PORK11:
+	.word PORK11_IMG
+	.half 20, 6, 4, 9
+PORK12:
+	.word PORK12_IMG
+	.half 22, 9, 6, 9
+BLDXPD1:
+	.word BLDXPD1_SUB, 0
+BLDXPD1_SUB:
+	.word BLDXPD1_IMG
+	.half 40, 45, 22, 20
+BLDXPD2:
+	.word BLDXPD2_SUB, 0
+BLDXPD2_SUB:
+	.word BLDXPD2_IMG
+	.half 49, 56, 28, 25
+BLDXPD3:
+	.word BLDXPD3_SUB, 0
+BLDXPD3_SUB:
+	.word BLDXPD3_IMG
+	.half 59, 67, 34, 29
+BLDXPD4:
+	.word BLDXPD4_SUB, 0
+BLDXPD4_SUB:
+	.word BLDXPD4_IMG
+	.half 66, 77, 38, 33
+BLDXPD5:
+	.word BLDXPD5_SUB, 0
+BLDXPD5_SUB:
+	.word BLDXPD5_IMG
+	.half 77, 85, 42, 37
+BLDXPD6:
+	.word BLDXPD6_SUB, 0
+BLDXPD6_SUB:
+	.word BLDXPD6_IMG
+	.half 86, 96, 48, 41
+BLDXPD7:
+	.word BLDXPD7_SUB, 0
+BLDXPD7_SUB:
+	.word BLDXPD7_IMG
+	.half 97, 107, 54, 47
+BLDXPD8:
+	.word BLDXPD8_SUB, 0
+BLDXPD8_SUB:
+	.word BLDXPD8_IMG
+	.half 106, 118, 59, 51
+BLDXPD9:
+	.word BLDXPD9_SUB, 0
+BLDXPD9_SUB:
+	.word BLDXPD9_IMG
+	.half 116, 130, 65, 55
+BLDXPD10:
+	.word BLDXPD10_SUB, 0
+BLDXPD10_SUB:
+	.word BLDXPD10_IMG
+	.half 127, 144, 72, 61
+BLDXPD11:
+	.word BLDXPD11_SUB, 0
+BLDXPD11_SUB:
+	.word BLDXPD11_IMG
+	.half 139, 162, 81, 68
+BLDXPD12:
+	.word BLDXPD12_SUB, 0
+BLDXPD12_SUB:
+	.word BLDXPD12_IMG
+	.half 143, 182, 91, 69
+BLDXPD13:
+	.word BLDXPD13_SUB, 0
+BLDXPD13_SUB:
+	.word BLDXPD13_IMG
+	.half 150, 157, 78, 77
+BIGBLD1:
+	.word BIGBLD1_IMG
+	.half 9, 14, 5, -22
+STAB1:
+	.word STAB1_IMG
+	.half 9, 6, 0, 5

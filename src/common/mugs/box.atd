@@ -1,0 +1,8 @@
+mugs_anims:
+	.word ochar_order_mugs
+ochar_order_mugs:
+	.word BOX_01
+	.word 0
+BOX_01:
+	.word BOX_01_IMG
+	.half 50, 38, 0, 0

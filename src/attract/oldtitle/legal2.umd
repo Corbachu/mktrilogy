@@ -1,0 +1,25 @@
+	.align 2
+	.globl legalmodBMOD
+legalmodBMOD:
+	.half   331,   248
+	.word     4, legalmod_BLK, legal2_HDR, legal2_CLT 
+	 
+	.align 2
+	.globl legalmod_BLK
+legalmod_BLK:
+	.half     4,     4,    64, 0x0100,     0   
+	.half     4,   124,    64, 0x0200,     1  
+	.half   164,     4,    64, 0x0100,     2
+	.half   164,   124,    64, 0x0300,     3 
+
+	.align 2
+	.globl legal2_HDR
+legal2_HDR:
+	.half   160,   120
+	.word     0
+	.half   160,   120
+	.word 19200
+	.half   160,   120
+	.word 38400
+	.half   160,   120
+	.word 57600										  

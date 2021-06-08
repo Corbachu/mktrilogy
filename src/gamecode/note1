@@ -1,0 +1,15 @@
+//MISSING STUFF
+#define RSND_STAB3		0
+#define TS_CURSOR_PICK	0
+#define TS_ITS_OFFICAL	0
+#define TS_PLAY_BUY		0
+#define TUNE_SELECT		0
+#define TUNE_GAMEOVER	0
+#define TS_MONKEY		0
+#define TS_FROG			0
+#define TS_OH_MAW		0
+#define TS_PONG_SCORED	0
+#define ST_REP_EXP		0
+#define ST_SCORP_STAB	0
+#define ST_REP_ORB		0
+#define TS_ONEPLAY_END	0

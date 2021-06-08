@@ -1,0 +1,257 @@
+vs_anims:
+	.word a_mklight
+	.word a_vs_v
+	.word a_vs_s
+	.word a_battle_digits
+	.word a_misc_vs
+a_mklight:
+	.word MKLIGHT1
+	.word MKLIGHT2
+	.word MKLIGHT3
+	.word MKLIGHT4
+	.word MKLIGHT5
+	.word MKLIGHT6
+	.word MKLIGHT7
+	.word MKLIGHT8
+	.word MKLIGHT9
+	.word MKLIGHT10
+	.word MKLIGHT11
+	.word MKLIGHT12
+	.word MKLIGHT13
+	.word MKLIGHT14
+	.word MKLIGHT15
+	.word MKLIGHT16
+	.word MKLIGHT17
+	.word MKLIGHT18
+	.word MKLIGHT19
+	.word MKLIGHT20
+	.word ani_jump
+	.word a_mklight
+a_vs_v:
+	.word BURNV1
+	.word BURNV2
+	.word BURNV3
+	.word BURNV4
+	.word BURNV5
+	.word BURNV6
+	.word BURNV7
+	.word BURNV8
+	.word BURNV9
+	.word BURNV10
+	.word BURNV11
+	.word BURNV12
+	.word BURNV13
+	.word 0
+a_vs_s:
+	.word BURNS1
+	.word BURNS2
+	.word BURNS3
+	.word BURNS4
+	.word BURNS5
+	.word BURNS6
+	.word BURNS7
+	.word BURNS8
+	.word BURNS9
+	.word BURNS10
+	.word BURNS11
+	.word BURNS12
+	.word BURNS13
+	.word BURNS14
+	.word BURNS15
+	.word 0
+a_battle_digits:
+	.word BATTLE0
+	.word BATTLE1
+	.word BATTLE2
+	.word BATTLE3
+	.word BATTLE4
+	.word BATTLE5
+	.word BATTLE6
+	.word BATTLE7
+	.word BATTLE8
+	.word BATTLE9
+	.word 0
+a_misc_vs:
+	.word BATTLE
+	.word BOX2
+	.word 0
+MKLIGHT1:
+	.word MKLIGHT1_IMG
+	.half 63, 52, 0, 0
+MKLIGHT2:
+	.word MKLIGHT2_IMG
+	.half 63, 51, 0, 0
+MKLIGHT3:
+	.word MKLIGHT3_IMG
+	.half 63, 52, 0, 0
+MKLIGHT4:
+	.word MKLIGHT4_IMG
+	.half 63, 52, 0, 0
+MKLIGHT5:
+	.word MKLIGHT5_IMG
+	.half 63, 52, 0, 0
+MKLIGHT6:
+	.word MKLIGHT6_IMG
+	.half 63, 51, 0, 0
+MKLIGHT7:
+	.word MKLIGHT7_IMG
+	.half 63, 51, 0, 0
+MKLIGHT8:
+	.word MKLIGHT8_IMG
+	.half 63, 51, 0, 0
+MKLIGHT9:
+	.word MKLIGHT9_IMG
+	.half 63, 52, 0, 0
+MKLIGHT10:
+	.word MKLIGHT10_IMG
+	.half 63, 51, 0, 0
+MKLIGHT11:
+	.word MKLIGHT11_IMG
+	.half 63, 52, 0, 0
+MKLIGHT12:
+	.word MKLIGHT12_IMG
+	.half 63, 51, 0, 0
+MKLIGHT13:
+	.word MKLIGHT13_IMG
+	.half 63, 51, 0, 0
+MKLIGHT14:
+	.word MKLIGHT14_IMG
+	.half 63, 51, 0, 0
+MKLIGHT15:
+	.word MKLIGHT15_IMG
+	.half 63, 51, 0, 0
+MKLIGHT16:
+	.word MKLIGHT16_IMG
+	.half 63, 52, 0, 0
+MKLIGHT17:
+	.word MKLIGHT17_IMG
+	.half 63, 51, 0, 0
+MKLIGHT18:
+	.word MKLIGHT18_IMG
+	.half 63, 52, 0, 0
+MKLIGHT19:
+	.word MKLIGHT19_IMG
+	.half 63, 51, 0, 0
+MKLIGHT20:
+	.word MKLIGHT20_IMG
+	.half 63, 52, 0, 0
+BURNV1:
+	.word BURNV1_IMG
+	.half 16, 20, -1, -7
+BURNV2:
+	.word BURNV2_IMG
+	.half 16, 22, 1, -9
+BURNV3:
+	.word BURNV3_IMG
+	.half 14, 26, 0, -9
+BURNV4:
+	.word BURNV4_IMG
+	.half 13, 32, 0, -9
+BURNV5:
+	.word BURNV5_IMG
+	.half 14, 43, -1, -9
+BURNV6:
+	.word BURNV6_IMG
+	.half 15, 41, -2, -9
+BURNV7:
+	.word BURNV7_IMG
+	.half 19, 40, -2, -9
+BURNV8:
+	.word BURNV8_IMG
+	.half 21, 40, -2, -9
+BURNV9:
+	.word BURNV9_IMG
+	.half 22, 40, -2, -9
+BURNV10:
+	.word BURNV10_IMG
+	.half 29, 45, -2, -4
+BURNV11:
+	.word BURNV11_IMG
+	.half 30, 46, -2, -3
+BURNV12:
+	.word BURNV12_IMG
+	.half 32, 50, -2, 0
+BURNV13:
+	.word BURNV13_IMG
+	.half 33, 51, -2, 1
+BURNS1:
+	.word BURNS1_IMG
+	.half 11, 16, -20, 0
+BURNS2:
+	.word BURNS2_IMG
+	.half 12, 18, -19, 1
+BURNS3:
+	.word BURNS3_IMG
+	.half 17, 15, -14, -2
+BURNS4:
+	.word BURNS4_IMG
+	.half 18, 18, -13, -2
+BURNS5:
+	.word BURNS5_IMG
+	.half 22, 21, -9, -2
+BURNS6:
+	.word BURNS6_IMG
+	.half 27, 28, -4, -2
+BURNS7:
+	.word BURNS7_IMG
+	.half 23, 28, -8, -2
+BURNS8:
+	.word BURNS8_IMG
+	.half 22, 28, -9, -2
+BURNS9:
+	.word BURNS9_IMG
+	.half 23, 32, -8, -2
+BURNS10:
+	.word BURNS10_IMG
+	.half 23, 36, -8, -2
+BURNS11:
+	.word BURNS11_IMG
+	.half 23, 40, -8, -2
+BURNS12:
+	.word BURNS12_IMG
+	.half 23, 45, -8, -2
+BURNS13:
+	.word BURNS13_IMG
+	.half 26, 48, -5, -2
+BURNS14:
+	.word BURNS14_IMG
+	.half 30, 49, -1, -2
+BURNS15:
+	.word BURNS15_IMG
+	.half 33, 51, 1, -2
+BATTLE0:
+	.word BATTLE0_IMG
+	.half 28, 15, 14, -4
+BATTLE1:
+	.word BATTLE1_IMG
+	.half 19, 15, 11, -4
+BATTLE2:
+	.word BATTLE2_IMG
+	.half 27, 15, 14, -4
+BATTLE3:
+	.word BATTLE3_IMG
+	.half 26, 16, 14, -4
+BATTLE4:
+	.word BATTLE4_IMG
+	.half 30, 15, 14, -4
+BATTLE5:
+	.word BATTLE5_IMG
+	.half 26, 15, 13, -5
+BATTLE6:
+	.word BATTLE6_IMG
+	.half 28, 15, 14, -5
+BATTLE7:
+	.word BATTLE7_IMG
+	.half 25, 15, 11, -5
+BATTLE8:
+	.word BATTLE8_IMG
+	.half 26, 15, 14, -5
+BATTLE9:
+	.word BATTLE9_IMG
+	.half 29, 15, 14, -5
+BATTLE:
+	.word BATTLE_IMG
+	.half 140, 16, 0, 0
+BOX2:
+	.word BOX2_IMG
+	.half 118, 18, 0, 0

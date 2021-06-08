@@ -1,0 +1,40 @@
+monk_anims:
+	.word a_bg_monk
+	.word a_monk_torso
+a_bg_monk:
+	.word monk1
+	.word monk2
+	.word monk3
+	.word monk4
+	.word monk5
+	.word monk6
+	.word monk7
+	.word ani_jump
+	.word a_bg_monk
+a_monk_torso:
+	.word monktorso
+	.word 0
+monk1:
+	.word monk1_IMG
+	.half 37, 38, 11, 0
+monk2:
+	.word monk2_IMG
+	.half 38, 34, 11, 0
+monk3:
+	.word monk3_IMG
+	.half 38, 34, 11, 0
+monk4:
+	.word monk4_IMG
+	.half 37, 34, 10, 0
+monk5:
+	.word monk5_IMG
+	.half 37, 34, 10, 0
+monk6:
+	.word monk6_IMG
+	.half 37, 36, 10, 0
+monk7:
+	.word monk7_IMG
+	.half 37, 37, 10, 0
+monktorso:
+	.word monktorso_IMG
+	.half 37, 32, 18, 34

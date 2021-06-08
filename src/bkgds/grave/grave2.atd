@@ -1,0 +1,20 @@
+grave_anims:
+	.word a_tomb_stones
+a_tomb_stones:
+	.word MA
+	.word MIL
+	.word SCH
+	.word GUI
+	.word 0
+MA:
+	.word MA_IMG
+	.half 34, 43, 0, 0
+MIL:
+	.word MIL_IMG
+	.half 34, 43, 0, 0
+SCH:
+	.word SCH_IMG
+	.half 34, 43, 0, 0
+GUI:
+	.word GUI_IMG
+	.half 34, 43, 0, 0

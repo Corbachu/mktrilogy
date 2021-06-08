@@ -1,0 +1,43 @@
+jax_list:
+	.word VJXFLESH1A
+	.word VJXPURP1A
+	.word VJXPURP1B
+	.word VJXGRY1A
+	.word VJXGRY1B
+	.word VJXGRY1C
+VJXFLESH1A:
+	.word JXFLESH1A
+	.word 0
+VJXPURP1A:
+	.word JXPURP1A
+	.word 0
+VJXPURP1B:
+	.word JXPURP1B
+	.word 0
+VJXGRY1A:
+	.word JXGRY1A
+	.word 0
+VJXGRY1B:
+	.word JXGRY1B
+	.word 0
+VJXGRY1C:
+	.word JXGRY1C
+	.word 0
+JXFLESH1A:
+	.word JXFLESH1A_IMG
+	.half 158, 88, 44, -13
+JXPURP1A:
+	.word JXPURP1A_IMG
+        .half 20, 28, 56, -168
+JXPURP1B:
+	.word JXPURP1B_IMG
+        .half 10, 7, -16, -177
+JXGRY1A:
+	.word JXGRY1A_IMG
+	.half 96, 77, 84, -50
+JXGRY1B:
+	.word JXGRY1B_IMG
+        .half 35, 72, 49, -152
+JXGRY1C:
+	.word JXGRY1C_IMG
+	.half 106, 34, -32, -77

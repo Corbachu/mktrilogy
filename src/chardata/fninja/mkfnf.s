@@ -1,0 +1,260 @@
+#include <regdef.h>
+#include "mkchar.inc"
+
+	.option	pic0
+	.set	noreorder
+	.data
+ 
+fn_anitab1:
+	.word a_pogo_stick
+	.word a_mirror_mirror 
+
+a_pogo_stick:
+	.word JDPOGO1
+	.word JDPOGO2
+	.word JDPOGO3
+	.word JDPOGO4
+	.word 0
+
+a_mirror_mirror:
+#ifdef CUT_FRAME
+	.word MLMIRROR1
+	.word MLMIRROR2
+	.word MLMIRROR3
+	.word MLMIRROR5
+	.word MLMIRROR6
+
+	.word ani_sladd
+	.word MIRBREAK1
+	.word ani_calla
+	.word slave_pal_change
+	.word MBRKBOD
+	.word 0
+
+	.word ani_slani_sleep
+	.word MIRBREAK2
+	.word ani_slani_sleep
+	.word MIRBREAK2
+
+	.word ani_slani_sleep
+	.word MIRBREAK4
+	.word ani_slani_sleep
+	.word MIRBREAK4
+
+	.word ani_slani_sleep
+	.word MIRBREAK6
+	.word ani_slani_sleep
+	.word MIRBREAK6
+
+	.word ani_slani_sleep
+	.word MIRBREAK8
+	.word ani_slani_sleep
+	.word MIRBREAK8
+
+	.word ani_slani_sleep
+	.word MIRBREAK10
+	.word ani_slani_sleep
+	.word MIRBREAK10
+
+	.word ani_slani_sleep
+	.word MIRBREAK12
+	.word ani_slani
+	.word MIRBREAK12
+	.word MBRKBOD
+	.word ani_calla
+	.word delete_slave
+	.word 0
+#else
+	.word MLMIRROR1
+	.word MLMIRROR2
+	.word MLMIRROR3
+	.word MLMIRROR4
+	.word MLMIRROR5
+	.word MLMIRROR6
+	.word MIRRORBREAK1
+	.word 0
+	.word MIRRORBREAK2
+	.word MIRRORBREAK3
+	.word MIRRORBREAK4
+	.word MIRRORBREAK5
+	.word MIRRORBREAK6
+	.word MIRRORBREAK7
+	.word MIRRORBREAK8
+	.word MIRRORBREAK9
+	.word MIRRORBREAK10
+	.word MIRRORBREAK11
+	.word MIRRORBREAK12
+	.word MIRRORBREAK13
+	.word 0
+#endif
+
+
+MLMIRROR1:
+	.word MLMIRROR1_SUB, 0
+MLMIRROR1_SUB:
+	.word MLMIRROR1_IMG
+	.half 111, 47, 23, -3
+MLMIRROR2:
+	.word MLMIRROR2_SUB, 0
+MLMIRROR2_SUB:
+	.word MLMIRROR2_IMG
+	.half 111, 62, 38, -3
+MLMIRROR3:
+	.word MLMIRROR3_SUB, 0
+MLMIRROR3_SUB:
+	.word MLMIRROR3_IMG
+	.half 111, 43, 18, -3
+#ifndef CUT_FRAME
+MLMIRROR4:
+	.word MLMIRROR4_SUB, 0
+MLMIRROR4_SUB:
+	.word MLMIRROR4_IMG
+	.half 111, 43, 18, -3
+#endif
+MLMIRROR5:
+	.word MLMIRROR5_SUB, 0
+MLMIRROR5_SUB:
+	.word MLMIRROR5_IMG
+	.half 111, 81, 57, -3
+MLMIRROR6:
+	.word MLMIRROR6_SUB, 0
+MLMIRROR6_SUB:
+	.word MLMIRROR6_IMG
+	.half 115, 88, 64, 0
+
+#ifdef CUT_FRAME
+MBRKBOD:
+	.word MBRKBOD_SUB, 0
+MBRKBOD_SUB:
+	.word MBRKBOD_IMG
+	.half 130, 82, 58, 14
+
+MIRBREAK1:
+	.word MIRBREAK1_SUB, 0
+MIRBREAK1_SUB:
+	.word MIRBREAK1_IMG
+	.half 32, 26, 50, 14
+	.word KIT1_P
+MIRBREAK2:
+	.word MIRBREAK2_SUB, 0
+MIRBREAK2_SUB:
+	.word MIRBREAK2_IMG
+	.half 39, 42, 58, 18
+MIRBREAK4:
+	.word MIRBREAK4_SUB, 0
+MIRBREAK4_SUB:
+	.word MIRBREAK4_IMG
+	.half 44, 51, 63, 14
+MIRBREAK6:
+	.word MIRBREAK6_SUB, 0
+MIRBREAK6_SUB:
+	.word MIRBREAK6_IMG
+	.half 64, 63, 71, 0
+MIRBREAK8:
+	.word MIRBREAK8_SUB, 0
+MIRBREAK8_SUB:
+	.word MIRBREAK8_IMG
+	.half 84, 72, 78, -18
+MIRBREAK10:
+	.word MIRBREAK10_SUB, 0
+MIRBREAK10_SUB:
+	.word MIRBREAK10_IMG
+	.half 35, 60, 53, -79
+MIRBREAK12:
+	.word MIRBREAK12_SUB, 0
+MIRBREAK12_SUB:
+	.word MIRBREAK12_IMG
+	.half 20, 78, 58, -94
+#else
+MIRRORBREAK1:
+	.word MIRRORBREAK1_SUB, 0
+MIRRORBREAK1_SUB:
+	.word MIRRORBREAK1_IMG
+	.half 130, 74, 50, 14
+MIRRORBREAK2:
+	.word MIRRORBREAK2_SUB, 0
+MIRRORBREAK2_SUB:
+	.word MIRRORBREAK2_IMG
+	.half 133, 82, 58, 18
+MIRRORBREAK4:
+	.word MIRRORBREAK4_SUB, 0
+MIRRORBREAK4_SUB:
+	.word MIRRORBREAK4_IMG
+	.half 130, 87, 63, 14
+MIRRORBREAK6:
+	.word MIRRORBREAK6_SUB, 0
+MIRRORBREAK6_SUB:
+	.word MIRRORBREAK6_IMG
+	.half 130, 95, 71, 14
+MIRRORBREAK8:
+	.word MIRRORBREAK8_SUB, 0
+MIRRORBREAK8_SUB:
+	.word MIRRORBREAK8_IMG
+	.half 130, 102, 78, 14
+MIRRORBREAK10:
+	.word MIRRORBREAK10_SUB, 0
+MIRRORBREAK10_SUB:
+	.word MIRRORBREAK10_IMG
+	.half 130, 77, 53, 14
+MIRRORBREAK12:
+	.word MIRRORBREAK12_SUB, 0
+MIRRORBREAK12_SUB:
+	.word MIRRORBREAK12_IMG
+	.half 130, 82, 58, 14
+#endif
+#ifndef CUT_FRAME
+MIRRORBREAK3:
+	.word MIRRORBREAK3_SUB, 0
+MIRRORBREAK3_SUB:
+	.word MIRRORBREAK3_IMG
+	.half 130, 84, 60, 14
+MIRRORBREAK5:
+	.word MIRRORBREAK5_SUB, 0
+MIRRORBREAK5_SUB:
+	.word MIRRORBREAK5_IMG
+	.half 130, 91, 67, 14
+MIRRORBREAK7:
+	.word MIRRORBREAK7_SUB, 0
+MIRRORBREAK7_SUB:
+	.word MIRRORBREAK7_IMG
+	.half 130, 98, 74, 14
+MIRRORBREAK9:
+	.word MIRRORBREAK9_SUB, 0
+MIRRORBREAK9_SUB:
+	.word MIRRORBREAK9_IMG
+	.half 130, 95, 71, 14
+MIRRORBREAK11:
+	.word MIRRORBREAK11_SUB, 0
+MIRRORBREAK11_SUB:
+	.word MIRRORBREAK11_IMG
+	.half 130, 78, 54, 14
+MIRRORBREAK13:
+	.word MIRRORBREAK13_SUB, 0
+MIRRORBREAK13_SUB:
+	.word MIRRORBREAK13_IMG
+	.half 130, 82, 58, 14
+#endif
+
+JDPOGO1:
+	.word JDPOGO1_SUB, 0
+JDPOGO1_SUB:
+	.word JDPOGO1_IMG
+	.half 121, 46, 30, 4
+JDPOGO2:
+	.word JDPOGO2_SUB, 0
+JDPOGO2_SUB:
+	.word JDPOGO2_IMG
+	.half 125, 39, 25, 9
+JDPOGO3:
+	.word JDPOGO3_SUB, 0
+JDPOGO3_SUB:
+	.word JDPOGO3_IMG
+	.half 109, 29, 22, -8
+JDPOGO4:
+	.word JDPOGO4_SUB, 0
+JDPOGO4_SUB:
+	.word JDPOGO4_IMG
+	.half 132, 31, 22, 14
+
+	.align 2
+#include "mkfn.attf" 

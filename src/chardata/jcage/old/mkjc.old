@@ -1,0 +1,2727 @@
+jc_anitab1:
+	.word a_stance
+	.word a_walkf
+	.word a_walkb
+	.word a_turn
+	.word a_duck
+	.word a_duck_turn
+	.word a_duck_block
+	.word a_duck_hit
+	.word a_duck_punch
+	.word a_duck_kick_hi
+	.word a_duck_kick_lo
+	.word a_uppercut
+	.word a_block
+	.word a_victory
+	.word a_hipunch
+	.word a_lopunch
+	.word a_elbow
+	.word a_hikick
+	.word a_lokick
+	.word a_knee
+	.word a_sweep_kick
+	.word a_roundhouse
+	.word a_jump
+	.word a_jump_kick
+	.word a_flip_punch
+	.word a_flip_kick
+	.word a_fflip
+	.word a_bflip
+	.word a_hit_hi
+	.word a_hit_lo
+	.word a_knockdown
+	.word a_sweep_fall
+	.word a_stumble
+	.word a_getup
+	.word a_sweepup
+	.word a_throw
+	.word a_zap
+	.word a_dizzy
+	.word a_fb_kano
+	.word a_fb_sonya
+	.word a_fb_jax
+	.word a_fb_ind
+	.word a_fb_jc
+	.word a_fb_swat
+	.word a_fb_lia
+	.word a_fb_robo
+	.word a_fb_robo2
+	.word a_fb_lao
+	.word a_fb_tusk
+	.word a_fb_sg
+	.word a_fb_st
+	.word a_fb_lk
+	.word a_fb_smoke
+	.word a_fb_kitana
+	.word a_fb_jade
+	.word a_fb_mileena
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_fb_nj
+	.word a_afb_kano
+	.word a_legged
+	.word a_projectile
+	.word a_shook
+	.word a_afb_robo2
+	.word a_zoomed
+	.word a_orb_banged
+	.word a_jade_shook
+	.word a_impaled
+	.word a_run
+	.word a_thudd
+	.word a_scared
+	.word a_back_break
+	.word a_baby
+	.word a_big_head
+	.word a_half_cutup
+	.word a_cutup
+	.word a_float
+	.word a_pounded
+	.word a_reach
+	.word a_skin_rip
+	.word a_stretch
+	.word a_suk
+	.word a_shocked
+	.word a_shredded
+jc_anitab2:
+	.word a_shadow_elbow
+	.word a_shadow_kick
+	.word a_friend
+dummy:
+a_stance:
+	.word JCSTANCE1
+	.word JCSTANCE2
+	.word JCSTANCE3
+	.word JCSTANCE4
+	.word JCSTANCE5
+	.word JCSTANCE6
+	.word JCSTANCE7
+	.word JCSTANCE8
+	.word ani_jump
+	.word a_stance
+a_walkf:
+	.word JCWALK1
+	.word JCWALK2
+	.word JCWALK3
+	.word JCWALK4
+	.word JCWALK5
+	.word JCWALK6
+	.word JCWALK7
+	.word JCWALK8
+	.word JCWALK9
+	.word ani_jump
+	.word a_walkf
+a_walkb:
+	.word JCWALK9
+	.word JCWALK8
+	.word JCWALK7
+	.word JCWALK6
+	.word JCWALK5
+	.word JCWALK4
+	.word JCWALK3
+	.word JCWALK2
+	.word JCWALK1
+	.word ani_jump
+	.word a_walkb
+a_turn:
+	.word JCTURN1
+	.word JCTURN2
+	.word ani_flip
+	.word JCTURN1
+	.word 0
+a_duck:
+	.word JCDUCK1
+	.word JCDUCK2
+	.word JCDUCK3
+	.word 0
+a_duck_turn:
+	.word JCDUCKTURN1
+	.word JCDUCKTURN2
+	.word ani_flip
+	.word JCDUCKTURN2
+	.word JCDUCKTURN1
+	.word JCDUCK3
+	.word 0
+a_duck_block:
+	.word JCDUCKBLOCK1
+	.word JCDUCKBLOCK2
+	.word JCDUCKBLOCK3
+	.word 0
+a_duck_hit:
+	.word JCDUCKHIT2
+	.word JCDUCKHIT3
+	.word JCDUCKHIT2
+	.word JCDUCKHIT1
+	.word JCDUCK3
+	.word 0
+a_duck_punch:
+	.word JCDUCKPUNCH1
+	.word JCDUCKPUNCH2
+	.word JCDUCKPUNCH3
+	.word 0
+	.word JCDUCKPUNCH2
+	.word JCDUCKPUNCH1
+	.word JCDUCK3
+	.word 0
+a_duck_kick_hi:
+	.word JCDUCKLOKICK1
+	.word JCDUCKLOKICK2
+	.word JCDUCKHIKICK1
+	.word JCDUCKHIKICK2
+	.word 0
+	.word JCDUCKHIKICK1
+	.word JCDUCKLOKICK2
+	.word JCDUCKLOKICK1
+	.word JCDUCK3
+	.word 0
+a_duck_kick_lo:
+	.word JCDUCKLOKICK1
+	.word JCDUCKLOKICK2
+	.word JCDUCKLOKICK3
+	.word JCDUCKLOKICK4
+	.word 0
+	.word JCDUCKLOKICK3
+	.word JCDUCKLOKICK2
+	.word JCDUCKLOKICK1
+	.word JCDUCK3
+	.word 0
+a_uppercut:
+	.word JCUPPERCUT1
+	.word JCUPPERCUT2
+	.word JCUPPERCUT3
+	.word JCUPPERCUT4
+	.word JCUPPERCUT5
+	.word ani_nosleep
+	.word JCUPPERCUT6
+	.word 0
+	.word JCUPPERCUT7
+	.word 0
+a_block:
+	.word JCHIBLOCK1
+	.word JCHIBLOCK2
+	.word JCHIBLOCK3
+	.word 0
+a_victory:
+	.word JCVICTORY1
+	.word JCVICTORY2
+	.word JCVICTORY3
+	.word JCVICTORY4
+	.word JCVICTORY5
+	.word JCVICTORY6
+	.word 0
+a_hipunch:
+	.word JCHIPUNCH1
+	.word JCHIPUNCH2
+	.word JCHIPUNCH3
+	.word 0
+	.word JCHIPUNCH4
+	.word JCHIPUNCH5
+	.word JCHIPUNCH6
+	.word 0
+	.word JCHIPUNCH5
+	.word JCHIPUNCH4
+	.word ani_jump
+	.word a_hipunch+((32*2)/8)
+	.word 0
+	.word JCHIPUNCH2
+	.word JCHIPUNCH1
+	.word 0
+	.word JCHIPUNCH6
+	.word 0
+	.word JCHIPUNCH4
+	.word JCLOPUNCH5
+	.word ani_jump
+	.word a_lopunch+((32*6)/8)
+	.word 0
+	.word JCHIPUNCH5
+	.word JCLOPUNCH2
+	.word ani_jump
+	.word a_lopunch+((32*2)/8)
+	.word 0
+a_lopunch:
+	.word JCLOPUNCH1
+	.word JCLOPUNCH2
+	.word JCLOPUNCH3
+	.word 0
+	.word JCLOPUNCH4
+	.word JCLOPUNCH5
+	.word JCLOPUNCH6
+	.word 0
+	.word JCLOPUNCH7
+	.word JCLOPUNCH5
+	.word JCLOPUNCH4
+	.word ani_jump
+	.word a_lopunch+((32*2)/8)
+	.word 0
+	.word JCLOPUNCH2
+	.word JCLOPUNCH1
+	.word 0
+	.word JCHIPUNCH6
+	.word 0
+	.word JCLOPUNCH4
+	.word JCLOPUNCH5
+	.word ani_jump
+	.word a_hipunch+((32*6)/8)
+	.word 0
+	.word JCLOPUNCH4
+	.word JCHIPUNCH5
+	.word ani_jump
+	.word a_hipunch+((32*2)/8)
+a_elbow:
+	.word JCELBOCOMBO1
+	.word JCELBOCOMBO2
+	.word JCELBOCOMBO3
+	.word 0
+j_unelb:
+	.word JCELBOCOMBO2
+	.word JCELBOCOMBO1
+	.word 0
+	.word JCELBOCOMBO4
+	.word JCELBOCOMBO5
+	.word 0
+	.word JCELBOCOMBO6
+	.word JCELBOCOMBO7
+	.word JCELBOCOMBO8
+	.word JCELBOCOMBO9
+	.word JCELBOCOMBO10
+	.word 0
+a_hikick:
+	.word JCLOKICK1
+	.word JCLOKICK2
+	.word JCLOKICK3
+	.word JCLOKICK4
+	.word JCLOKICK5
+	.word JCHIKICK1
+	.word 0
+	.word JCLOKICK5
+	.word JCLOKICK4
+	.word JCLOKICK3
+	.word JCLOKICK2
+	.word JCLOKICK1
+	.word 0
+a_lokick:
+	.word JCLOKICK1
+	.word JCLOKICK2
+	.word JCLOKICK3
+	.word JCLOKICK4
+	.word JCLOKICK5
+	.word JCLOKICK6
+	.word 0
+	.word JCLOKICK5
+	.word JCLOKICK4
+	.word JCLOKICK3
+	.word JCLOKICK2
+	.word JCLOKICK1
+	.word 0
+a_knee:
+	.word JCKNEEKICK1
+	.word JCKNEEKICK2
+	.word JCKNEEKICK3
+	.word 0
+	.word JCKNEEKICK2
+	.word JCKNEEKICK1
+	.word 0
+a_sweep_kick:
+	.word JCSWEEPKICK1
+	.word JCSWEEPKICK2
+	.word JCSWEEPKICK3
+	.word ani_calla
+	.word sweep_sounds
+	.word JCSWEEPKICK4
+	.word JCSWEEPKICK5
+	.word 0
+	.word JCSWEEPKICK6
+	.word JCSWEEPKICK7
+	.word JCSWEEPKICK8
+	.word 0
+a_roundhouse:
+	.word JCROUNDHOUSE1
+	.word JCROUNDHOUSE2
+	.word JCROUNDHOUSE3
+	.word JCROUNDHOUSE4
+	.word ani_nosleep
+	.word JCROUNDHOUSE5
+	.word 0
+	.word JCROUNDHOUSE6
+	.word JCROUNDHOUSE7
+	.word JCROUNDHOUSE8
+	.word 0
+a_jump:
+	.word JCJUMP1
+	.word JCJUMP2
+	.word JCJUMP3
+	.word 0
+a_jump_kick:
+	.word JCJUMPKICK1
+	.word JCJUMPKICK2
+	.word JCJUMPKICK3
+	.word 0
+	.word JCJUMPKICK2
+	.word JCJUMPKICK1
+	.word 0
+a_flip_punch:
+	.word JCFLIPUNCH1
+	.word JCFLIPUNCH2
+	.word JCFLIPUNCH3
+	.word 0
+	.word JCFLIPUNCH2
+	.word JCFLIPUNCH1
+	.word 0
+a_flip_kick:
+	.word JCFLIPKICK1
+	.word JCFLIPKICK2
+	.word JCFLIPKICK3
+	.word 0
+	.word JCFLIPKICK2
+	.word JCFLIPKICK1
+	.word 0
+a_fflip:
+	.word JCJUMPFLIP1
+	.word JCJUMPFLIP2
+	.word JCJUMPFLIP3
+	.word JCJUMPFLIP4
+	.word JCJUMPFLIP5
+	.word JCJUMPFLIP6
+	.word JCJUMPFLIP7
+	.word JCJUMPFLIP8
+	.word ani_jump
+	.word a_fflip+(32/8)
+a_bflip:
+	.word JCJUMPFLIP1
+	.word JCJUMPFLIP8
+	.word JCJUMPFLIP7
+	.word JCJUMPFLIP6
+	.word JCJUMPFLIP5
+	.word JCJUMPFLIP4
+	.word JCJUMPFLIP3
+	.word JCJUMPFLIP2
+	.word ani_jump
+	.word a_bflip+(32/8)
+a_hit_hi:
+	.word JCHIHIT2
+	.word JCHIHIT3
+	.word JCHIHIT2
+	.word JCHIHIT1
+	.word 0
+a_hit_lo:
+	.word JCLOHIT2
+	.word JCLOHIT3
+	.word JCLOHIT2
+	.word JCLOHIT1
+	.word 0
+a_knockdown:
+	.word JCKNOCKDOWN1
+	.word JCKNOCKDOWN2
+	.word JCKNOCKDOWN3
+	.word JCKNOCKDOWN4
+	.word JCKNOCKDOWN5
+	.word 0
+	.word JCKNOCKDOWN6
+	.word JCKNOCKDOWN7
+	.word 0
+a_sweep_fall:
+	.word JCSWEEPFALL1
+	.word JCSWEEPFALL2
+	.word JCSWEEPFALL3
+	.word JCSWEEPFALL4
+	.word JCSWEEPFALL5
+	.word 0
+	.word JCSWEEPFALL6
+	.word 0
+a_stumble:
+	.word JCSTUMBLE1
+	.word JCSTUMBLE2
+	.word JCSTUMBLE3
+	.word JCSTUMBLE4
+	.word JCSTUMBLE5
+	.word JCSTUMBLE6
+	.word JCSTUMBLE7
+	.word 0
+j_stumble:
+	.word JCSTUMBLE1
+	.word JCSTUMBLE2
+	.word JCSTUMBLE3
+	.word JCSTUMBLE4
+	.word JCSTUMBLE5
+	.word JCSTUMBLE6
+	.word JCSTUMBLE7
+	.word 0
+a_getup:
+	.word JCGETUP1
+	.word JCGETUP2
+	.word JCGETUP3
+	.word JCGETUP4
+	.word JCGETUP5
+	.word JCGETUP6
+	.word 0
+a_sweepup:
+	.word JCSWEEPUP1
+	.word JCSWEEPUP2
+	.word JCSWEEPUP3
+	.word JCSWEEPUP4
+	.word JCSWEEPUP5
+	.word JCSWEEPUP6
+	.word 0
+a_throw:
+	.word JCFLIP1
+	.word JCFLIP2
+	.word 0
+	.word JCFLIP3
+	.word JCFLIP4
+	.word JCFLIP5
+	.word JCFLIP6
+	.word JCFLIP7
+	.word 0
+	.word JCFLIP8
+	.word JCFLIP9
+	.word 0
+a_zap:
+	.word JCORBTOSS1
+	.word ani_sladd
+	.word GREENBALL1
+	.word JCORBTOSS2
+	.word JCORBTOSS3
+	.word 0
+	.word JCORBTOSS4
+	.word JCORBTOSS5
+	.word JCORBTOSS6
+	.word 0
+a_dizzy:
+	.word JCSTUNNED1
+	.word JCSTUNNED2
+	.word JCSTUNNED3
+	.word JCSTUNNED4
+	.word JCSTUNNED5
+	.word JCSTUNNED6
+	.word JCSTUNNED7
+	.word ani_jump
+	.word a_dizzy
+a_fb_kano:
+	.word ani_offset_xy
+	.half -0x3f
+	.half -0x1b
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x1b
+	.half -0x31
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x4c
+	.half -0x37
+	.word JCFLIPPED3
+	.word 0
+	.word JCFLIPPED4
+	.word JCFLIPPED5
+	.word JCKNOCKDOWN5
+	.word JCKNOCKDOWN6
+	.word JCKNOCKDOWN7
+	.word 0
+a_fb_sonya:
+	.word ani_offset_xy
+	.half -0x31
+	.half -0x0e
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x1b
+	.half 0x01
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x26
+	.half -0x0a
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x68
+	.half -0x1b
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0xa7
+	.half -0x1f
+	.word JCFLIPPED4
+	.word 0
+	.word JCFLIPPED5
+	.word JCKNOCKDOWN5
+	.word JCKNOCKDOWN6
+	.word JCKNOCKDOWN7
+	.word 0
+a_fb_jax:
+	.word ani_offset_xy
+	.half -0x4b
+	.half -0x27
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x30
+	.half -0x3e
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x18
+	.half -0x4c
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x40
+	.half -0x3a
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x53
+	.half -0x03
+	.word JCFLIPPED5
+	.word ani_offset_xy
+	.half 0x48
+	.half 0x00
+	.word JCKNOCKDOWN7
+	.word 0
+a_fb_ind:
+	.word ani_offset_xy
+	.half -0x58
+	.half -0x1d
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x42
+	.half -0x3c
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half -0x09
+	.half -0x5c
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x38
+	.half -0x54
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x55
+	.half -0x18
+	.word JCFLIPPED5
+	.word ani_offset_xy
+	.half 0x54
+	.half 0x0c
+	.word JCKNOCKDOWN6
+	.word 0
+a_fb_jc:
+a_fb_swat:
+	.word ani_offset_xy
+	.half -0x4f
+	.half -0x16
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x43
+	.half -0x44
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x30
+	.half -0x5b
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x63
+	.half -0x23
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x48
+	.half -0x02
+	.word JCKNOCKDOWN7
+	.word 0
+a_fb_lia:
+	.word ani_offset_xy
+	.half -0x64
+	.half -0x0d
+	.word JCSTUMBLE1
+	.word ani_offset_xy
+	.half -0x81
+	.half -0x0d
+	.word JCSTUMBLE1
+	.word ani_offset_xy
+	.half -0x7f
+	.half -0x29
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x5d
+	.half -0x48
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x2e
+	.half -0x54
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half 0x16
+	.half -0x5a
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half 0xa8
+	.half 0x12
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x8d
+	.half 0x00
+	.word JCKNOCKDOWN7
+	.word 0
+a_fb_robo:
+	.word ani_offset_xy
+	.half -0x4e
+	.half -0x16
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x51
+	.half -0x36
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half -0x42
+	.half -0x48
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x00
+	.half -0x6e
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x3b
+	.half -0x73
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x64
+	.half -0x61
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x7f
+	.half -0x1e
+	.word JCFLIPPED5
+	.word ani_offset_xy
+	.half 0x59
+	.half -0x11
+	.word JCKNOCKDOWN7
+	.word 0
+a_fb_robo2:
+	.word ani_offset_xy
+	.half -0x36
+	.half -0x0e
+	.word JCSTUMBLE1
+	.word ani_offset_xy
+	.half -0x32
+	.half -0x28
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x15
+	.half -0x29
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x1c
+	.half -0x24
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x22
+	.half -0x0b
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x09
+	.half 0x05
+	.word JCFLIPPED5
+	.word ani_offset_xy
+	.half -0x18
+	.half -0x12
+	.word JCKNOCKDOWN7
+	.word 0
+a_fb_lao:
+	.word ani_offset_xy
+	.half -0x34
+	.half 0x13
+	.word JCSTUMBLE1
+	.word ani_offset_xy
+	.half -0x1e
+	.half 0x2e
+	.word JCSTUMBLE1
+	.word ani_flip
+	.word ani_offset_xy
+	.half -0x2b
+	.half 0x20
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x54
+	.half -0x12
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half -0x2c
+	.half -0x57
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x14
+	.half -0x6d
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x19
+	.half -0x74
+	.word JCFLIPPED5
+	.word ani_offset_xy
+	.half 0x54
+	.half -0x70
+	.word JCFLIPPED5
+	.word ani_offset_xy
+	.half 0x60
+	.half -0x56
+	.word JCFLIPPED5
+	.word ani_offset_xy
+	.half 0x77
+	.half 0x02
+	.word JCFLIPPED5
+	.word 0
+a_fb_tusk:
+	.word ani_offset_xy
+	.half -0x6e
+	.half -0x07
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x5d
+	.half -0x4a
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half -0x0c
+	.half -0x81
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x40
+	.half -0x57
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x44
+	.half -0x15
+	.word JCFLIPPED5
+	.word ani_offset_xy
+	.half 0x0f
+	.half 0x1e
+	.word JCFLIPPED5
+	.word ani_offset_xy
+	.half -0x31
+	.half 0x01
+	.word JCKNOCKDOWN6
+	.word ani_offset_xy
+	.half -0x75
+	.half -0x0c
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x54
+	.half -0x4f
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x26
+	.half -0x72
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x65
+	.half -0x05
+	.word JCFLIPPED5
+	.word ani_offset_xy
+	.half 0x64
+	.half 0x09
+	.word JCKNOCKDOWN6
+	.word 0
+a_fb_sg:
+	.word ani_offset_xy
+	.half -0x3d
+	.half -0x30
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x08
+	.half -0x52
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x01
+	.half -0x59
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x18
+	.half -0x4f
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x1a
+	.half -0x28
+	.word JCFLIPPED3
+	.word ani_flip
+	.word ani_offset_xy
+	.half -0x1b
+	.half -0x11
+	.word JCKNOCKDOWN7
+	.word 0
+a_fb_st:
+	.word ani_offset_xy
+	.half -0x4c
+	.half 0x00
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x41
+	.half 0x07
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x2a
+	.half 0x01
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half -0x07
+	.half 0x03
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x0e
+	.half 0x25
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half -0x0f
+	.half -0x04
+	.word JCKNOCKDOWN6
+	.word ani_offset_xy
+	.half -0x23
+	.half -0x04
+	.word JCKNOCKDOWN6
+	.word ani_offset_xy
+	.half -0x38
+	.half -0x04
+	.word JCKNOCKDOWN6
+	.word ani_offset_xy
+	.half -0x60
+	.half 0x19
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x67
+	.half -0x0b
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x3c
+	.half -0x4c
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x2b
+	.half -0x41
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x4c
+	.half -0x18
+	.word JCFLIPPED5
+	.word ani_offset_xy
+	.half 0x5b
+	.half -0x08
+	.word JCKNOCKDOWN6
+	.word 0
+a_fb_lk:
+	.word ani_offset_xy
+	.half -0x44
+	.half -0x0e
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x3b
+	.half -0x0c
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x13
+	.half 0x02
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x10
+	.half 0x00
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x37
+	.half 0x01
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x88
+	.half -0x1f
+	.word JCFLIPPED4
+	.word 0
+	.word JCFLIPPED5
+	.word JCKNOCKDOWN5
+	.word JCKNOCKDOWN6
+	.word JCKNOCKDOWN7
+	.word 0
+a_fb_kitana:
+	.word ani_offset_xy
+	.half -0x20
+	.half -0x23
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x08
+	.half -0x40
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x32
+	.half -0x2d
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x3d
+	.half 0x0c
+	.word JCFLIPPED4
+	.word 0
+	.word JCFLIPPED4
+	.word JCKNOCKDOWN5
+	.word JCKNOCKDOWN6
+	.word 0
+a_fb_jade:
+	.word ani_offset_xy
+	.half -0x5a
+	.half 0x04
+	.word JCKNOCKDOWN1
+	.word ani_offset_xy
+	.half -0x5b
+	.half -0x21
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x43
+	.half -0x6c
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half -0x05
+	.half -0x6d
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x5e
+	.half -0x6c
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x81
+	.half -0x3d
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x89
+	.half -0x0c
+	.word JCFLIPPED5
+	.word 0
+	.word JCFLIPPED4
+	.word JCKNOCKDOWN5
+	.word JCKNOCKDOWN6
+	.word 0
+a_fb_mileena:
+	.word ani_offset_xy
+	.half -0x3a
+	.half -0x01
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x29
+	.half 0x07
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x1e
+	.half 0x01
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x0e
+	.half -0x1a
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x63
+	.half -0x34
+	.word JCFLIPPED4
+	.word 0
+	.word JCFLIPPED5
+	.word JCKNOCKDOWN5
+	.word JCKNOCKDOWN6
+	.word JCKNOCKDOWN7
+	.word 0
+a_fb_nj:
+	.word ani_offset_xy
+	.half -0x49
+	.half 0x06
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x3c
+	.half 0x0e
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x28
+	.half 0x17
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x00
+	.half 0x16
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x0e
+	.half 0x0e
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x5d
+	.half -0x17
+	.word JCFLIPPED4
+	.word 0
+	.word JCFLIPPED5
+	.word JCKNOCKDOWN7
+	.word 0
+a_afb_kano:
+	.word ani_offset_xy
+	.half -0x40
+	.half -0x1b
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x3c
+	.half -0x0b
+	.word JCKNOCKDOWN4
+	.word ani_offset_xy
+	.half -0x59
+	.half 0x22
+	.word JCKNOCKDOWN5
+	.word 0
+	.word JCKNOCKDOWN5
+	.word JCKNOCKDOWN6
+	.word JCKNOCKDOWN7
+	.word 0
+a_legged:
+	.word ani_offset_xy
+	.half -0x5d
+	.half -0x07
+	.word JCKNOCKDOWN1
+	.word ani_offset_xy
+	.half -0x51
+	.half -0x30
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x0c
+	.half -0x4a
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x37
+	.half -0x2d
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x5e
+	.half 0x00
+	.word JCFLIPPED5
+	.word 0
+a_projectile:
+	.word GREENBALL1
+	.word GREENBALL2
+	.word GREENBALL3
+j_jczap:
+	.word GREENBALL4
+	.word GREENBALL5
+	.word GREENBALL6
+	.word GREENBALL7
+	.word GREENBALL8
+	.word GREENBALL9
+	.word GREENBALL10
+	.word ani_jump
+	.word j_jczap
+	.word 0
+	.word ani_swpal
+	.word GREENBALL11
+	.word GREENBALL12
+	.word GREENBALL13
+	.word GREENBALL14
+	.word GREENBALL15
+	.word GREENBALL16
+	.word 0
+a_shook:
+	.word ani_offset_xy
+	.half -0x4a
+	.half -0x0d
+	.word JCSTUMBLE2
+	.word ani_offset_xy
+	.half -0x31
+	.half -0x26
+	.word JCSTUMBLE2
+	.word ani_offset_xy
+	.half -0x1b
+	.half -0x24
+	.word JCSTUMBLE2
+	.word 0
+	.word ani_offset_xy
+	.half -0x1d
+	.half -0x26
+	.word JCSTUMBLE2
+	.word ani_offset_xy
+	.half -0x2d
+	.half -0x30
+	.word JCSTUMBLE2
+	.word ani_offset_xy
+	.half -0x3d
+	.half -0x34
+	.word JCSTUMBLE2
+	.word ani_offset_xy
+	.half -0x2d
+	.half -0x30
+	.word JCSTUMBLE2
+	.word 0
+a_fb_smoke:
+a_afb_robo2:
+	.word ani_offset_xy
+	.half -0x1e
+	.half -0x38
+	.word JCFLIPPED2
+	.word ani_offset_xy
+	.half 0x08
+	.half -0x48
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x2f
+	.half -0x41
+	.word JCFLIPPED3
+	.word ani_offset_xy
+	.half 0x4a
+	.half -0x26
+	.word JCFLIPPED4
+	.word ani_offset_xy
+	.half 0x57
+	.half 0x02
+	.word JCKNOCKDOWN6
+	.word ani_offset_xy
+	.half 0x6b
+	.half 0x30
+	.word JCKNOCKDOWN6
+	.word 0
+a_zoomed:
+	.word ani_offset_xy
+	.half 0x55
+	.half -0x1c
+	.word JCKNOCKDOWN3
+	.word ani_offset_xy
+	.half 0x57
+	.half 0x01
+	.word JCKNOCKDOWN4
+	.word ani_offset_xy
+	.half 0x20
+	.half 0x16
+	.word JCKNOCKDOWN5
+	.word ani_offset_xy
+	.half -0x37
+	.half 0x17
+	.word JCKNOCKDOWN5
+	.word ani_offset_xy
+	.half -0x8c
+	.half -0x13
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x2e
+	.half -0x5e
+	.word JCFLIPPED3
+	.word 0
+	.word JCFLIPPED3
+	.word JCFLIPPED4
+	.word JCFLIPPED5
+	.word JCKNOCKDOWN5
+	.word JCKNOCKDOWN6
+	.word JCKNOCKDOWN7
+	.word 0
+a_orb_banged:
+	.word JCFLIPPED1
+	.word JCFLIPPED2
+	.word JCFLIPPED3
+	.word JCFLIPPED4
+	.word 0
+a_jade_shook:
+	.word ani_offset_xy
+	.half -0x86
+	.half -0x27
+	.word JCFLIPPED1
+	.word ani_offset_xy
+	.half -0x87
+	.half 0x0d
+	.word JCSTUMBLE1
+	.word ani_offset_xy
+	.half -0x6d
+	.half 0x0d
+	.word JCKNOCKDOWN2
+	.word ani_offset_xy
+	.half -0x87
+	.half 0x0d
+	.word JCSTUMBLE1
+	.word ani_jump
+	.word a_jade_shook
+a_impaled:
+	.word ani_adjustxy
+	.half -0x60
+	.half 0x00
+	.word JCKNOCKDOWN1
+	.word ani_adjustxy
+	.half 0x00
+	.half -0x18
+	.word JCKNOCKDOWN1
+	.word ani_adjustxy
+	.half 0x00
+	.half -0x18
+	.word JCKNOCKDOWN1
+	.word ani_adjustxy
+	.half 0x10
+	.half -0x08
+	.word JCKNOCKDOWN1
+	.word 0
+	.word JCKNOCKDOWN1
+	.word JCJUMPFLIP1
+	.word JCFLIPPED1
+	.word JCJUMPFLIP1
+	.word JCKNOCKDOWN1
+	.word JCJUMPFLIP1
+	.word JCFLIPPED1
+	.word 0
+a_run:
+	.word JCRUN1
+	.word JCRUN2
+	.word JCRUN3
+	.word JCRUN4
+	.word ani_calla
+	.word rsnd_footstep
+	.word JCRUN5
+	.word JCRUN6
+	.word JCRUN7
+	.word JCRUN8
+	.word JCRUN9
+	.word ani_calla
+	.word rsnd_footstep
+	.word JCRUN10
+	.word JCRUN11
+	.word JCRUN12
+	.word ani_jump
+	.word a_run
+a_thudd:
+	.word JCTHUD1
+	.word JCTHUD2
+	.word JCTHUD3
+	.word JCTHUD4
+	.word JCTHUD5
+	.word JCTHUD6
+	.word JCTHUD7
+	.word 0
+a_scared:
+	.word JCSCARED3
+	.word 0
+a_back_break:
+	.word JCBACKBROKEN3
+	.word 0
+a_baby:
+	.word BABJC
+	.word 0
+a_big_head:
+	.word BHJC1
+	.word BHJC2
+	.word BHJC3
+	.word BHJC4
+	.word BHJC5
+	.word 0
+a_half_cutup:
+	.word HALF_JCCUTUP1
+	.word 0
+a_cutup:
+	.word JCCUTUP1A
+	.word JCCUTUP1B
+	.word JCCUTUP1C
+	.word JCCUTUP1D
+	.word 0
+a_float:
+	.word JCSTUNNED2
+	.word 0
+a_pounded:
+	.word JCTHUD1_SUB
+	.word 0
+a_reach:
+	.word ani_adjustxy
+	.half -5
+	.half 0
+	.word JCMOUTH1
+	.word JCMOUTH2
+	.word JCMOUTH3
+	.word JCMOUTH4
+	.word JCMOUTH5
+	.word JCMOUTH6
+	.word JCMOUTH7
+	.word JCMOUTH8
+	.word 0
+a_skin_rip:
+	.word JCRIP1
+	.word 0
+a_stretch:
+	.word GROJC2
+	.word GROJC4
+	.word GROJC5
+	.word 0
+a_suk:
+	.word SUKJC1
+	.word SUKJC3
+	.word SUKJC4
+	.word SUKJC5
+	.word SUKJC6
+	.word 0
+a_shocked:
+	.word JCSCARED3
+	.word JCSCARED3
+	.word JCSCARED3
+	.word JCSCARED3
+	.word 0
+a_shredded:
+	.word ani_adjustxy
+	.half 6
+	.half 6
+	.word JCSTUMBLE1
+	.word ani_adjustxy
+	.half -6
+	.half -6
+	.word JCSTUMBLE2
+	.word ani_adjustxy
+	.half 6
+	.half 6
+	.word JCSTUMBLE3
+	.word ani_adjustxy
+	.half -6
+	.half -6
+	.word JCSTUMBLE2
+	.word ani_jump
+	.word a_shredded
+a_shadow_elbow:
+	.word JCSHADOWELBOW1
+	.word JCSHADOWELBOW2
+	.word JCSHADOWELBOW3
+	.word JCSHADOWELBOW4
+	.word 0
+	.word JCSHADOWELBOW3
+	.word JCJUMP1
+	.word 0
+a_shadow_kick:
+	.word JCLOKICK2
+	.word JCLOKICK4
+	.word JCLOKICK5
+	.word JCHIKICK1
+	.word 0
+	.word JCLOKICK5
+	.word JCLOKICK4
+	.word JCLOKICK3
+	.word JCLOKICK2
+	.word JCLOKICK1
+	.word 0
+a_friend:
+	.word JCFRIENDSHIP1
+	.word JCFRIENDSHIP2
+	.word JCFRIENDSHIP3
+	.word JCFRIENDSHIP4
+	.word JCFRIENDSHIP5
+	.word JCFRIENDSHIP6
+	.word JCFRIENDSHIP7
+	.word JCFRIENDSHIP8
+	.word JCFRIENDSHIP9
+	.word JCFRIENDSHIP10
+JCSTANCE1:
+	.word JCSTANCE1_SUB, 0
+JCSTANCE1_SUB:
+	.word JCSTANCE1_IMG
+	.half 111, 52, -1, -1
+	.word JCBLU_P
+JCSTANCE2:
+	.word JCSTANCE2_SUB, 0
+JCSTANCE2_SUB:
+	.word JCSTANCE2_IMG
+	.half 111, 51, -1, -1
+JCSTANCE3:
+	.word JCSTANCE3_SUB, 0
+JCSTANCE3_SUB:
+	.word JCSTANCE3_IMG
+	.half 111, 46, -1, -1
+JCSTANCE4:
+	.word JCSTANCE4_SUB, 0
+JCSTANCE4_SUB:
+	.word JCSTANCE4_IMG
+	.half 111, 43, -1, -1
+JCSTANCE5:
+	.word JCSTANCE5_SUB, 0
+JCSTANCE5_SUB:
+	.word JCSTANCE5_IMG
+	.half 111, 43, -1, -1
+JCSTANCE6:
+	.word JCSTANCE6_SUB, 0
+JCSTANCE6_SUB:
+	.word JCSTANCE6_IMG
+	.half 111, 44, -1, -1
+JCSTANCE7:
+	.word JCSTANCE7_SUB, 0
+JCSTANCE7_SUB:
+	.word JCSTANCE7_IMG
+	.half 112, 48, -1, 0
+JCSTANCE8:
+	.word JCSTANCE8_SUB, 0
+JCSTANCE8_SUB:
+	.word JCSTANCE8_IMG
+	.half 112, 50, -1, 0
+JCWALK1:
+	.word JCWALK1_SUB, 0
+JCWALK1_SUB:
+	.word JCWALK1_IMG
+	.half 112, 49, -6, 0
+JCWALK2:
+	.word JCWALK2_SUB, 0
+JCWALK2_SUB:
+	.word JCWALK2_IMG
+	.half 112, 44, -11, 0
+JCWALK3:
+	.word JCWALK3_SUB, 0
+JCWALK3_SUB:
+	.word JCWALK3_IMG
+	.half 113, 40, -15, 0
+JCWALK4:
+	.word JCWALK4_SUB, 0
+JCWALK4_SUB:
+	.word JCWALK4_IMG
+	.half 111, 40, -15, -1
+JCWALK5:
+	.word JCWALK5_SUB, 0
+JCWALK5_SUB:
+	.word JCWALK5_IMG
+	.half 110, 42, -13, -2
+JCWALK6:
+	.word JCWALK6_SUB, 0
+JCWALK6_SUB:
+	.word JCWALK6_IMG
+	.half 110, 40, -15, -2
+JCWALK7:
+	.word JCWALK7_SUB, 0
+JCWALK7_SUB:
+	.word JCWALK7_IMG
+	.half 111, 40, -15, -1
+JCWALK8:
+	.word JCWALK8_SUB, 0
+JCWALK8_SUB:
+	.word JCWALK8_IMG
+	.half 111, 40, -15, -1
+JCWALK9:
+	.word JCWALK9_SUB, 0
+JCWALK9_SUB:
+	.word JCWALK9_IMG
+	.half 111, 45, -15, -1
+JCTURN1:
+	.word JCTURN1_SUB, 0
+JCTURN1_SUB:
+	.word JCTURN1_IMG
+	.half 113, 51, 0, 0
+JCTURN2:
+	.word JCTURN2_SUB, 0
+JCTURN2_SUB:
+	.word JCTURN2_IMG
+	.half 114, 48, 0, 1
+JCDUCK1:
+	.word JCDUCK1_SUB, 0
+JCDUCK1_SUB:
+	.word JCDUCK1_IMG
+	.half 93, 50, 2, -19
+JCDUCK2:
+	.word JCDUCK2_SUB, 0
+JCDUCK2_SUB:
+	.word JCDUCK2_IMG
+	.half 80, 50, 1, -32
+JCDUCK3:
+	.word JCDUCK3_SUB, 0
+JCDUCK3_SUB:
+	.word JCDUCK3_IMG
+	.half 66, 48, 1, -47
+JCDUCKTURN1:
+	.word JCDUCKTURN1_SUB, 0
+JCDUCKTURN1_SUB:
+	.word JCDUCKTURN1_IMG
+	.half 67, 48, 0, -45
+JCDUCKTURN2:
+	.word JCDUCKTURN2_SUB, 0
+JCDUCKTURN2_SUB:
+	.word JCDUCKTURN2_IMG
+	.half 69, 53, 3, -43
+JCDUCKBLOCK1:
+	.word JCDUCKBLOCK1_SUB, 0
+JCDUCKBLOCK1_SUB:
+	.word JCDUCKBLOCK1_IMG
+	.half 76, 46, 1, -40
+JCDUCKBLOCK2:
+	.word JCDUCKBLOCK2_SUB, 0
+JCDUCKBLOCK2_SUB:
+	.word JCDUCKBLOCK2_IMG
+	.half 79, 44, 1, -37
+JCDUCKBLOCK3:
+	.word JCDUCKBLOCK3_SUB, 0
+JCDUCKBLOCK3_SUB:
+	.word JCDUCKBLOCK3_IMG
+	.half 80, 44, 1, -36
+JCDUCKHIT2:
+	.word JCDUCKHIT2_SUB, 0
+JCDUCKHIT2_SUB:
+	.word JCDUCKHIT2_IMG
+	.half 81, 46, 0, -35
+JCDUCKHIT3:
+	.word JCDUCKHIT3_SUB, 0
+JCDUCKHIT3_SUB:
+	.word JCDUCKHIT3_IMG
+	.half 79, 45, 0, -37
+JCDUCKHIT1:
+	.word JCDUCKHIT1_SUB, 0
+JCDUCKHIT1_SUB:
+	.word JCDUCKHIT1_IMG
+	.half 79, 49, 0, -37
+JCDUCKPUNCH1:
+	.word JCDUCKPUNCH1_SUB, 0
+JCDUCKPUNCH1_SUB:
+	.word JCDUCKPUNCH1_IMG
+	.half 77, 52, 1, -38
+JCDUCKPUNCH2:
+	.word JCDUCKPUNCH2_SUB, 0
+JCDUCKPUNCH2_SUB:
+	.word JCDUCKPUNCH2_IMG
+	.half 79, 65, 1, -36
+JCDUCKPUNCH3:
+	.word JCDUCKPUNCH3_SUB, 0
+JCDUCKPUNCH3_SUB:
+	.word JCDUCKPUNCH3_IMG
+	.half 79, 76, 1, -36
+JCDUCKLOKICK1:
+	.word JCDUCKLOKICK1_SUB, 0
+JCDUCKLOKICK1_SUB:
+	.word JCDUCKLOKICK1_IMG
+	.half 64, 50, 1, -57
+JCDUCKLOKICK2:
+	.word JCDUCKLOKICK2_SUB, 0
+JCDUCKLOKICK2_SUB:
+	.word JCDUCKLOKICK2_IMG
+	.half 61, 47, -3, -56
+JCDUCKHIKICK1:
+	.word JCDUCKHIKICK1_SUB, 0
+JCDUCKHIKICK1_SUB:
+	.word JCDUCKHIKICK1_IMG
+	.half 60, 54, -12, -57
+JCDUCKHIKICK2:
+	.word JCDUCKHIKICK2_SUB, 0
+JCDUCKHIKICK2_SUB:
+	.word JCDUCKHIKICK2_IMG
+	.half 66, 72, -10, -51
+JCDUCKLOKICK3:
+	.word JCDUCKLOKICK3_SUB, 0
+JCDUCKLOKICK3_SUB:
+	.word JCDUCKLOKICK3_IMG
+	.half 61, 54, -15, -56
+JCDUCKLOKICK4:
+	.word JCDUCKLOKICK4_SUB, 0
+JCDUCKLOKICK4_SUB:
+	.word JCDUCKLOKICK4_IMG
+	.half 56, 74, -14, -61
+JCUPPERCUT1:
+	.word JCUPPERCUT1_SUB, 0
+JCUPPERCUT1_SUB:
+	.word JCUPPERCUT1_IMG
+	.half 75, 67, 16, -41
+JCUPPERCUT2:
+	.word JCUPPERCUT2_SUB, 0
+JCUPPERCUT2_SUB:
+	.word JCUPPERCUT2_IMG
+	.half 77, 48, 1, -35
+JCUPPERCUT3:
+	.word JCUPPERCUT3_SUB, 0
+JCUPPERCUT3_SUB:
+	.word JCUPPERCUT3_IMG
+	.half 82, 54, 1, -30
+JCUPPERCUT4:
+	.word JCUPPERCUT4_SUB, 0
+JCUPPERCUT4_SUB:
+	.word JCUPPERCUT4_IMG
+	.half 88, 72, 1, -24
+JCUPPERCUT5:
+	.word JCUPPERCUT5_SUB, 0
+JCUPPERCUT5_SUB:
+	.word JCUPPERCUT5_IMG
+	.half 94, 71, 2, -18
+JCUPPERCUT6:
+	.word JCUPPERCUT6_SUB, 0
+JCUPPERCUT6_SUB:
+	.word JCUPPERCUT6_IMG
+	.half 117, 61, 7, 4
+JCUPPERCUT7:
+	.word JCUPPERCUT7_SUB, 0
+JCUPPERCUT7_SUB:
+	.word JCUPPERCUT7_IMG
+	.half 125, 47, 0, 12
+JCHIBLOCK1:
+	.word JCHIBLOCK1_SUB, 0
+JCHIBLOCK1_SUB:
+	.word JCHIBLOCK1_IMG
+	.half 113, 43, -1, 0
+JCHIBLOCK2:
+	.word JCHIBLOCK2_SUB, 0
+JCHIBLOCK2_SUB:
+	.word JCHIBLOCK2_IMG
+	.half 115, 43, -1, 2
+JCHIBLOCK3:
+	.word JCHIBLOCK3_SUB, 0
+JCHIBLOCK3_SUB:
+	.word JCHIBLOCK3_IMG
+	.half 113, 43, -1, 0
+JCVICTORY1:
+	.word JCVICTORY1_SUB, 0
+JCVICTORY1_SUB:
+	.word JCVICTORY1_IMG
+	.half 113, 41, -1, 0
+JCVICTORY2:
+	.word JCVICTORY2_SUB, 0
+JCVICTORY2_SUB:
+	.word JCVICTORY2_IMG
+	.half 112, 40, -1, 0
+JCVICTORY3:
+	.word JCVICTORY3_SUB, 0
+JCVICTORY3_SUB:
+	.word JCVICTORY3_IMG
+	.half 112, 40, -1, 0
+JCVICTORY4:
+	.word JCVICTORY4_SUB, 0
+JCVICTORY4_SUB:
+	.word JCVICTORY4_IMG
+	.half 111, 40, -1, -1
+JCVICTORY5:
+	.word JCVICTORY5_SUB, 0
+JCVICTORY5_SUB:
+	.word JCVICTORY5_IMG
+	.half 112, 40, -1, 0
+JCVICTORY6:
+	.word JCVICTORY6_SUB, 0
+JCVICTORY6_SUB:
+	.word JCVICTORY6_IMG
+	.half 111, 40, -1, -1
+JCHIPUNCH1:
+	.word JCHIPUNCH1_SUB, 0
+JCHIPUNCH1_SUB:
+	.word JCHIPUNCH1_IMG
+	.half 111, 46, -1, -1
+JCHIPUNCH2:
+	.word JCHIPUNCH2_SUB, 0
+JCHIPUNCH2_SUB:
+	.word JCHIPUNCH2_IMG
+	.half 112, 54, -1, 0
+JCHIPUNCH3:
+	.word JCHIPUNCH3_SUB, 0
+JCHIPUNCH3_SUB:
+	.word JCHIPUNCH3_IMG
+	.half 109, 78, 3, -3
+JCHIPUNCH4:
+	.word JCHIPUNCH4_SUB, 0
+JCHIPUNCH4_SUB:
+	.word JCHIPUNCH4_IMG
+	.half 111, 68, 1, -1
+JCHIPUNCH5:
+	.word JCHIPUNCH5_SUB, 0
+JCHIPUNCH5_SUB:
+	.word JCHIPUNCH5_IMG
+	.half 111, 65, -1, -1
+JCHIPUNCH6:
+	.word JCHIPUNCH6_SUB, 0
+JCHIPUNCH6_SUB:
+	.word JCHIPUNCH6_IMG
+	.half 111, 78, -1, -1
+JCLOPUNCH5:
+	.word JCLOPUNCH5_SUB, 0
+JCLOPUNCH5_SUB:
+	.word JCLOPUNCH5_IMG
+	.half 111, 58, -1, -1
+JCLOPUNCH2:
+	.word JCLOPUNCH2_SUB, 0
+JCLOPUNCH2_SUB:
+	.word JCLOPUNCH2_IMG
+	.half 111, 53, 0, -1
+JCLOPUNCH1:
+	.word JCLOPUNCH1_SUB, 0
+JCLOPUNCH1_SUB:
+	.word JCLOPUNCH1_IMG
+	.half 111, 46, -1, -1
+JCLOPUNCH3:
+	.word JCLOPUNCH3_SUB, 0
+JCLOPUNCH3_SUB:
+	.word JCLOPUNCH3_IMG
+	.half 107, 80, 2, -5
+JCLOPUNCH4:
+	.word JCLOPUNCH4_SUB, 0
+JCLOPUNCH4_SUB:
+	.word JCLOPUNCH4_IMG
+	.half 109, 68, 1, -3
+JCLOPUNCH6:
+	.word JCLOPUNCH6_SUB, 0
+JCLOPUNCH6_SUB:
+	.word JCLOPUNCH6_IMG
+	.half 109, 78, -1, -3
+JCLOPUNCH7:
+	.word JCLOPUNCH7_SUB, 0
+JCLOPUNCH7_SUB:
+	.word JCLOPUNCH7_IMG
+	.half 111, 61, -1, -1
+JCELBOCOMBO1:
+	.word JCELBOCOMBO1_SUB, 0
+JCELBOCOMBO1_SUB:
+	.word JCELBOCOMBO1_IMG
+	.half 111, 42, -1, -1
+JCELBOCOMBO2:
+	.word JCELBOCOMBO2_SUB, 0
+JCELBOCOMBO2_SUB:
+	.word JCELBOCOMBO2_IMG
+	.half 111, 42, -1, -1
+JCELBOCOMBO3:
+	.word JCELBOCOMBO3_SUB, 0
+JCELBOCOMBO3_SUB:
+	.word JCELBOCOMBO3_IMG
+	.half 113, 52, -1, 0
+JCELBOCOMBO4:
+	.word JCELBOCOMBO4_SUB, 0
+JCELBOCOMBO4_SUB:
+	.word JCELBOCOMBO4_IMG
+	.half 113, 54, -1, 0
+JCELBOCOMBO5:
+	.word JCELBOCOMBO5_SUB, 0
+JCELBOCOMBO5_SUB:
+	.word JCELBOCOMBO5_IMG
+	.half 113, 74, -1, 0
+JCELBOCOMBO6:
+	.word JCELBOCOMBO6_SUB, 0
+JCELBOCOMBO6_SUB:
+	.word JCELBOCOMBO6_IMG
+	.half 116, 50, -1, 3
+JCELBOCOMBO7:
+	.word JCELBOCOMBO7_SUB, 0
+JCELBOCOMBO7_SUB:
+	.word JCELBOCOMBO7_IMG
+	.half 106, 42, -4, -6
+JCELBOCOMBO8:
+	.word JCELBOCOMBO8_SUB, 0
+JCELBOCOMBO8_SUB:
+	.word JCELBOCOMBO8_IMG
+	.half 105, 64, -9, -7
+JCELBOCOMBO9:
+	.word JCELBOCOMBO9_SUB, 0
+JCELBOCOMBO9_SUB:
+	.word JCELBOCOMBO9_IMG
+	.half 109, 70, -4, -3
+JCELBOCOMBO10:
+	.word JCELBOCOMBO10_SUB, 0
+JCELBOCOMBO10_SUB:
+	.word JCELBOCOMBO10_IMG
+	.half 122, 38, -13, 9
+JCLOKICK1:
+	.word JCLOKICK1_SUB, 0
+JCLOKICK1_SUB:
+	.word JCLOKICK1_IMG
+	.half 112, 41, -17, 0
+JCLOKICK2:
+	.word JCLOKICK2_SUB, 0
+JCLOKICK2_SUB:
+	.word JCLOKICK2_IMG
+	.half 111, 42, -25, -1
+JCLOKICK3:
+	.word JCLOKICK3_SUB, 0
+JCLOKICK3_SUB:
+	.word JCLOKICK3_IMG
+	.half 107, 42, -23, -5
+JCLOKICK4:
+	.word JCLOKICK4_SUB, 0
+JCLOKICK4_SUB:
+	.word JCLOKICK4_IMG
+	.half 99, 45, -31, -13
+JCLOKICK5:
+	.word JCLOKICK5_SUB, 0
+JCLOKICK5_SUB:
+	.word JCLOKICK5_IMG
+	.half 102, 68, -32, -10
+JCHIKICK1:
+	.word JCHIKICK1_SUB, 0
+JCHIKICK1_SUB:
+	.word JCHIKICK1_IMG
+	.half 105, 89, -36, -7
+JCLOKICK6:
+	.word JCLOKICK6_SUB, 0
+JCLOKICK6_SUB:
+	.word JCLOKICK6_IMG
+	.half 105, 91, -40, -7
+JCKNEEKICK1:
+	.word JCKNEEKICK1_SUB, 0
+JCKNEEKICK1_SUB:
+	.word JCKNEEKICK1_IMG
+	.half 111, 49, -18, -1
+JCKNEEKICK2:
+	.word JCKNEEKICK2_SUB, 0
+JCKNEEKICK2_SUB:
+	.word JCKNEEKICK2_IMG
+	.half 111, 40, -33, -1
+JCKNEEKICK3:
+	.word JCKNEEKICK3_SUB, 0
+JCKNEEKICK3_SUB:
+	.word JCKNEEKICK3_IMG
+	.half 109, 55, -33, -3
+JCSWEEPKICK1:
+	.word JCSWEEPKICK1_SUB, 0
+JCSWEEPKICK1_SUB:
+	.word JCSWEEPKICK1_IMG
+	.half 67, 50, 1, -45
+JCSWEEPKICK2:
+	.word JCSWEEPKICK2_SUB, 0
+JCSWEEPKICK2_SUB:
+	.word JCSWEEPKICK2_IMG
+	.half 57, 76, 20, -65
+JCSWEEPKICK3:
+	.word JCSWEEPKICK3_SUB, 0
+JCSWEEPKICK3_SUB:
+	.word JCSWEEPKICK3_IMG
+	.half 54, 42, -5, -68
+JCSWEEPKICK4:
+	.word JCSWEEPKICK4_SUB, 0
+JCSWEEPKICK4_SUB:
+	.word JCSWEEPKICK4_IMG
+	.half 60, 70, 0, -62
+JCSWEEPKICK5:
+	.word JCSWEEPKICK5_SUB, 0
+JCSWEEPKICK5_SUB:
+	.word JCSWEEPKICK5_IMG
+	.half 61, 88, -10, -58
+JCSWEEPKICK6:
+	.word JCSWEEPKICK6_SUB, 0
+JCSWEEPKICK6_SUB:
+	.word JCSWEEPKICK6_IMG
+	.half 71, 52, -15, -57
+JCSWEEPKICK7:
+	.word JCSWEEPKICK7_SUB, 0
+JCSWEEPKICK7_SUB:
+	.word JCSWEEPKICK7_IMG
+	.half 64, 77, 7, -60
+JCSWEEPKICK8:
+	.word JCSWEEPKICK8_SUB, 0
+JCSWEEPKICK8_SUB:
+	.word JCSWEEPKICK8_IMG
+	.half 78, 74, 9, -34
+JCROUNDHOUSE1:
+	.word JCROUNDHOUSE1_SUB, 0
+JCROUNDHOUSE1_SUB:
+	.word JCROUNDHOUSE1_IMG
+	.half 108, 46, -12, -4
+JCROUNDHOUSE2:
+	.word JCROUNDHOUSE2_SUB, 0
+JCROUNDHOUSE2_SUB:
+	.word JCROUNDHOUSE2_IMG
+	.half 106, 41, -15, -6
+JCROUNDHOUSE3:
+	.word JCROUNDHOUSE3_SUB, 0
+JCROUNDHOUSE3_SUB:
+	.word JCROUNDHOUSE3_IMG
+	.half 109, 42, -25, -3
+JCROUNDHOUSE4:
+	.word JCROUNDHOUSE4_SUB, 0
+JCROUNDHOUSE4_SUB:
+	.word JCROUNDHOUSE4_IMG
+	.half 111, 47, -22, -1
+JCROUNDHOUSE5:
+	.word JCROUNDHOUSE5_SUB, 0
+JCROUNDHOUSE5_SUB:
+	.word JCROUNDHOUSE5_IMG
+	.half 112, 101, -12, -1
+JCROUNDHOUSE6:
+	.word JCROUNDHOUSE6_SUB, 0
+JCROUNDHOUSE6_SUB:
+	.word JCROUNDHOUSE6_IMG
+	.half 110, 73, -27, -5
+JCROUNDHOUSE7:
+	.word JCROUNDHOUSE7_SUB, 0
+JCROUNDHOUSE7_SUB:
+	.word JCROUNDHOUSE7_IMG
+	.half 113, 36, -31, -3
+JCROUNDHOUSE8:
+	.word JCROUNDHOUSE8_SUB, 0
+JCROUNDHOUSE8_SUB:
+	.word JCROUNDHOUSE8_IMG
+	.half 116, 46, -5, 0
+JCJUMP1:
+	.word JCJUMP1_SUB, 0
+JCJUMP1_SUB:
+	.word JCJUMP1_IMG
+	.half 94, 50, -3, -18
+JCJUMP2:
+	.word JCJUMP2_SUB, 0
+JCJUMP2_SUB:
+	.word JCJUMP2_IMG
+	.half 116, 53, -2, 3
+JCJUMP3:
+	.word JCJUMP3_SUB, 0
+JCJUMP3_SUB:
+	.word JCJUMP3_IMG
+	.half 87, 55, 0, 3
+JCJUMPKICK1:
+	.word JCJUMPKICK1_SUB, 0
+JCJUMPKICK1_SUB:
+	.word JCJUMPKICK1_IMG
+	.half 116, 45, -4, 3
+JCJUMPKICK2:
+	.word JCJUMPKICK2_SUB, 0
+JCJUMPKICK2_SUB:
+	.word JCJUMPKICK2_IMG
+	.half 119, 66, -7, 3
+JCJUMPKICK3:
+	.word JCJUMPKICK3_SUB, 0
+JCJUMPKICK3_SUB:
+	.word JCJUMPKICK3_IMG
+	.half 111, 77, -7, 3
+JCFLIPUNCH1:
+	.word JCFLIPUNCH1_SUB, 0
+JCFLIPUNCH1_SUB:
+	.word JCFLIPUNCH1_IMG
+	.half 72, 40, -10, 1
+JCFLIPUNCH2:
+	.word JCFLIPUNCH2_SUB, 0
+JCFLIPUNCH2_SUB:
+	.word JCFLIPUNCH2_IMG
+	.half 75, 74, 3, 2
+JCFLIPUNCH3:
+	.word JCFLIPUNCH3_SUB, 0
+JCFLIPUNCH3_SUB:
+	.word JCFLIPUNCH3_IMG
+	.half 71, 117, 26, -1
+JCFLIPKICK1:
+	.word JCFLIPKICK1_SUB, 0
+JCFLIPKICK1_SUB:
+	.word JCFLIPKICK1_IMG
+	.half 70, 44, -12, 1
+JCFLIPKICK2:
+	.word JCFLIPKICK2_SUB, 0
+JCFLIPKICK2_SUB:
+	.word JCFLIPKICK2_IMG
+	.half 73, 69, -4, 3
+JCFLIPKICK3:
+	.word JCFLIPKICK3_SUB, 0
+JCFLIPKICK3_SUB:
+	.word JCFLIPKICK3_IMG
+	.half 73, 97, 6, 3
+JCJUMPFLIP1:
+	.word JCJUMPFLIP1_SUB, 0
+JCJUMPFLIP1_SUB:
+	.word JCJUMPFLIP1_IMG
+	.half 122, 49, -14, 3
+JCJUMPFLIP2:
+	.word JCJUMPFLIP2_SUB, 0
+JCJUMPFLIP2_SUB:
+	.word JCJUMPFLIP2_IMG
+	.half 52, 37, -11, -10
+JCJUMPFLIP3:
+	.word JCJUMPFLIP3_SUB, 0
+JCJUMPFLIP3_SUB:
+	.word JCJUMPFLIP3_IMG
+	.half 48, 44, -11, -14
+JCJUMPFLIP4:
+	.word JCJUMPFLIP4_SUB, 0
+JCJUMPFLIP4_SUB:
+	.word JCJUMPFLIP4_IMG
+	.half 37, 52, -2, -18
+JCJUMPFLIP5:
+	.word JCJUMPFLIP5_SUB, 0
+JCJUMPFLIP5_SUB:
+	.word JCJUMPFLIP5_IMG
+	.half 45, 49, -2, -15
+JCJUMPFLIP6:
+	.word JCJUMPFLIP6_SUB, 0
+JCJUMPFLIP6_SUB:
+	.word JCJUMPFLIP6_IMG
+	.half 51, 37, -10, -8
+JCJUMPFLIP7:
+	.word JCJUMPFLIP7_SUB, 0
+JCJUMPFLIP7_SUB:
+	.word JCJUMPFLIP7_IMG
+	.half 52, 44, -6, -7
+JCJUMPFLIP8:
+	.word JCJUMPFLIP8_SUB, 0
+JCJUMPFLIP8_SUB:
+	.word JCJUMPFLIP8_IMG
+	.half 37, 51, -5, -19
+JCHIHIT2:
+	.word JCHIHIT2_SUB, 0
+JCHIHIT2_SUB:
+	.word JCHIHIT2_IMG
+	.half 109, 42, 0, -2
+JCHIHIT3:
+	.word JCHIHIT3_SUB, 0
+JCHIHIT3_SUB:
+	.word JCHIHIT3_IMG
+	.half 105, 44, 1, -6
+JCHIHIT1:
+	.word JCHIHIT1_SUB, 0
+JCHIHIT1_SUB:
+	.word JCHIHIT1_IMG
+	.half 114, 42, 0, 2
+JCLOHIT2:
+	.word JCLOHIT2_SUB, 0
+JCLOHIT2_SUB:
+	.word JCLOHIT2_IMG
+	.half 111, 47, 0, 0
+JCLOHIT3:
+	.word JCLOHIT3_SUB, 0
+JCLOHIT3_SUB:
+	.word JCLOHIT3_IMG
+	.half 110, 48, 0, -1
+JCLOHIT1:
+	.word JCLOHIT1_SUB, 0
+JCLOHIT1_SUB:
+	.word JCLOHIT1_IMG
+	.half 111, 45, -2, 0
+JCKNOCKDOWN1:
+	.word JCKNOCKDOWN1_SUB, 0
+JCKNOCKDOWN1_SUB:
+	.word JCKNOCKDOWN1_IMG
+	.half 108, 48, 17, -4
+JCKNOCKDOWN2:
+	.word JCKNOCKDOWN2_SUB, 0
+JCKNOCKDOWN2_SUB:
+	.word JCKNOCKDOWN2_IMG
+	.half 115, 64, 39, 5
+JCKNOCKDOWN3:
+	.word JCKNOCKDOWN3_SUB, 0
+JCKNOCKDOWN3_SUB:
+	.word JCKNOCKDOWN3_IMG
+	.half 87, 98, 45, 0
+JCKNOCKDOWN4:
+	.word JCKNOCKDOWN4_SUB, 0
+JCKNOCKDOWN4_SUB:
+	.word JCKNOCKDOWN4_IMG
+	.half 56, 92, 45, -19
+JCKNOCKDOWN5:
+	.word JCKNOCKDOWN5_SUB, 0
+JCKNOCKDOWN5_SUB:
+	.word JCKNOCKDOWN5_IMG
+	.half 65, 79, 41, -34
+JCKNOCKDOWN6:
+	.word JCKNOCKDOWN6_SUB, 0
+JCKNOCKDOWN6_SUB:
+	.word JCKNOCKDOWN6_IMG
+	.half 44, 107, 47, -68
+JCKNOCKDOWN7:
+	.word JCKNOCKDOWN7_SUB, 0
+JCKNOCKDOWN7_SUB:
+	.word JCKNOCKDOWN7_IMG
+	.half 20, 104, 38, -92
+JCSWEEPFALL1:
+	.word JCSWEEPFALL1_SUB, 0
+JCSWEEPFALL1_SUB:
+	.word JCSWEEPFALL1_IMG
+	.half 116, 45, 18, 2
+JCSWEEPFALL2:
+	.word JCSWEEPFALL2_SUB, 0
+JCSWEEPFALL2_SUB:
+	.word JCSWEEPFALL2_IMG
+	.half 87, 49, 19, 2
+JCSWEEPFALL3:
+	.word JCSWEEPFALL3_SUB, 0
+JCSWEEPFALL3_SUB:
+	.word JCSWEEPFALL3_IMG
+	.half 51, 50, 18, -7
+JCSWEEPFALL4:
+	.word JCSWEEPFALL4_SUB, 0
+JCSWEEPFALL4_SUB:
+	.word JCSWEEPFALL4_IMG
+	.half 52, 50, 18, -33
+JCSWEEPFALL5:
+	.word JCSWEEPFALL5_SUB, 0
+JCSWEEPFALL5_SUB:
+	.word JCSWEEPFALL5_IMG
+	.half 65, 42, 17, -45
+JCSWEEPFALL6:
+	.word JCSWEEPFALL6_SUB, 0
+JCSWEEPFALL6_SUB:
+	.word JCSWEEPFALL6_IMG
+	.half 42, 46, 18, -70
+JCSTUMBLE1:
+	.word JCSTUMBLE1_SUB, 0
+JCSTUMBLE1_SUB:
+	.word JCSTUMBLE1_IMG
+	.half 120, 47, -9, 7
+JCSTUMBLE2:
+	.word JCSTUMBLE2_SUB, 0
+JCSTUMBLE2_SUB:
+	.word JCSTUMBLE2_IMG
+	.half 117, 68, 5, 4
+JCSTUMBLE3:
+	.word JCSTUMBLE3_SUB, 0
+JCSTUMBLE3_SUB:
+	.word JCSTUMBLE3_IMG
+	.half 112, 63, 9, 0
+JCSTUMBLE4:
+	.word JCSTUMBLE4_SUB, 0
+JCSTUMBLE4_SUB:
+	.word JCSTUMBLE4_IMG
+	.half 117, 46, 0, 4
+JCSTUMBLE5:
+	.word JCSTUMBLE5_SUB, 0
+JCSTUMBLE5_SUB:
+	.word JCSTUMBLE5_IMG
+	.half 108, 48, -4, -4
+JCSTUMBLE6:
+	.word JCSTUMBLE6_SUB, 0
+JCSTUMBLE6_SUB:
+	.word JCSTUMBLE6_IMG
+	.half 106, 53, -3, -6
+JCSTUMBLE7:
+	.word JCSTUMBLE7_SUB, 0
+JCSTUMBLE7_SUB:
+	.word JCSTUMBLE7_IMG
+	.half 108, 49, 5, -4
+JCGETUP1:
+	.word JCGETUP1_SUB, 0
+JCGETUP1_SUB:
+	.word JCGETUP1_IMG
+	.half 37, 81, 26, -73
+JCGETUP2:
+	.word JCGETUP2_SUB, 0
+JCGETUP2_SUB:
+	.word JCGETUP2_IMG
+	.half 55, 64, 32, -55
+JCGETUP3:
+	.word JCGETUP3_SUB, 0
+JCGETUP3_SUB:
+	.word JCGETUP3_IMG
+	.half 64, 41, 25, -48
+JCGETUP4:
+	.word JCGETUP4_SUB, 0
+JCGETUP4_SUB:
+	.word JCGETUP4_IMG
+	.half 70, 40, 22, -42
+JCGETUP5:
+	.word JCGETUP5_SUB, 0
+JCGETUP5_SUB:
+	.word JCGETUP5_IMG
+	.half 79, 54, 14, -33
+JCGETUP6:
+	.word JCGETUP6_SUB, 0
+JCGETUP6_SUB:
+	.word JCGETUP6_IMG
+	.half 103, 42, 11, -9
+JCSWEEPUP1:
+	.word JCSWEEPUP1_SUB, 0
+JCSWEEPUP1_SUB:
+	.word JCSWEEPUP1_IMG
+	.half 42, 46, 18, -70
+JCSWEEPUP2:
+	.word JCSWEEPUP2_SUB, 0
+JCSWEEPUP2_SUB:
+	.word JCSWEEPUP2_IMG
+	.half 60, 44, 17, -52
+JCSWEEPUP3:
+	.word JCSWEEPUP3_SUB, 0
+JCSWEEPUP3_SUB:
+	.word JCSWEEPUP3_IMG
+	.half 43, 44, 16, -69
+JCSWEEPUP4:
+	.word JCSWEEPUP4_SUB, 0
+JCSWEEPUP4_SUB:
+	.word JCSWEEPUP4_IMG
+	.half 71, 50, 19, -41
+JCSWEEPUP5:
+	.word JCSWEEPUP5_SUB, 0
+JCSWEEPUP5_SUB:
+	.word JCSWEEPUP5_IMG
+	.half 87, 62, 21, -25
+JCSWEEPUP6:
+	.word JCSWEEPUP6_SUB, 0
+JCSWEEPUP6_SUB:
+	.word JCSWEEPUP6_IMG
+	.half 114, 58, 17, 1
+JCFLIP1:
+	.word JCFLIP1_SUB, 0
+JCFLIP1_SUB:
+	.word JCFLIP1_IMG
+	.half 107, 67, 0, -5
+JCFLIP2:
+	.word JCFLIP2_SUB, 0
+JCFLIP2_SUB:
+	.word JCFLIP2_IMG
+	.half 104, 83, 0, -8
+JCFLIP3:
+	.word JCFLIP3_SUB, 0
+JCFLIP3_SUB:
+	.word JCFLIP3_IMG
+	.half 97, 80, 11, -15
+JCFLIP4:
+	.word JCFLIP4_SUB, 0
+JCFLIP4_SUB:
+	.word JCFLIP4_IMG
+	.half 111, 62, 7, -1
+JCFLIP5:
+	.word JCFLIP5_SUB, 0
+JCFLIP5_SUB:
+	.word JCFLIP5_IMG
+	.half 111, 60, 6, -1
+JCFLIP6:
+	.word JCFLIP6_SUB, 0
+JCFLIP6_SUB:
+	.word JCFLIP6_IMG
+	.half 75, 90, 36, -39
+JCFLIP7:
+	.word JCFLIP7_SUB, 0
+JCFLIP7_SUB:
+	.word JCFLIP7_IMG
+	.half 59, 96, 42, -57
+JCFLIP8:
+	.word JCFLIP8_SUB, 0
+JCFLIP8_SUB:
+	.word JCFLIP8_IMG
+	.half 57, 86, 31, -59
+JCFLIP9:
+	.word JCFLIP9_SUB, 0
+JCFLIP9_SUB:
+	.word JCFLIP9_IMG
+	.half 85, 64, 9, -27
+JCORBTOSS1:
+	.word JCORBTOSS1_SUB, 0
+JCORBTOSS1_SUB:
+	.word JCORBTOSS1_IMG
+	.half 107, 78, 17, -5
+GREENBALL1:
+	.word GREENBALL1_SUB, 0
+GREENBALL1_SUB:
+	.word GREENBALL1_IMG
+	.half 17, 21, 24, -35
+JCORBTOSS2:
+	.word JCORBTOSS2_SUB, 0
+JCORBTOSS2_SUB:
+	.word JCORBTOSS2_IMG
+	.half 106, 45, -3, -6
+JCORBTOSS3:
+	.word JCORBTOSS3_SUB, 0
+JCORBTOSS3_SUB:
+	.word JCORBTOSS3_IMG
+	.half 106, 72, -7, -6
+JCORBTOSS4:
+	.word JCORBTOSS4_SUB, 0
+JCORBTOSS4_SUB:
+	.word JCORBTOSS4_IMG
+	.half 116, 76, 0, 3
+JCORBTOSS5:
+	.word JCORBTOSS5_SUB, 0
+JCORBTOSS5_SUB:
+	.word JCORBTOSS5_IMG
+	.half 138, 61, 7, 25
+JCORBTOSS6:
+	.word JCORBTOSS6_SUB, 0
+JCORBTOSS6_SUB:
+	.word JCORBTOSS6_IMG
+	.half 136, 49, 1, 24
+JCSTUNNED1:
+	.word JCSTUNNED1_SUB, 0
+JCSTUNNED1_SUB:
+	.word JCSTUNNED1_IMG
+	.half 107, 42, -16, -5
+JCSTUNNED2:
+	.word JCSTUNNED2_SUB, 0
+JCSTUNNED2_SUB:
+	.word JCSTUNNED2_IMG
+	.half 107, 42, -16, -5
+JCSTUNNED3:
+	.word JCSTUNNED3_SUB, 0
+JCSTUNNED3_SUB:
+	.word JCSTUNNED3_IMG
+	.half 109, 43, -15, -3
+JCSTUNNED4:
+	.word JCSTUNNED4_SUB, 0
+JCSTUNNED4_SUB:
+	.word JCSTUNNED4_IMG
+	.half 111, 42, -16, -1
+JCSTUNNED5:
+	.word JCSTUNNED5_SUB, 0
+JCSTUNNED5_SUB:
+	.word JCSTUNNED5_IMG
+	.half 112, 42, -16, 0
+JCSTUNNED6:
+	.word JCSTUNNED6_SUB, 0
+JCSTUNNED6_SUB:
+	.word JCSTUNNED6_IMG
+	.half 112, 42, -16, 0
+JCSTUNNED7:
+	.word JCSTUNNED7_SUB, 0
+JCSTUNNED7_SUB:
+	.word JCSTUNNED7_IMG
+	.half 109, 42, -16, -3
+JCFLIPPED1:
+	.word JCFLIPPED1_SUB, 0
+JCFLIPPED1_SUB:
+	.word JCFLIPPED1_IMG
+	.half 93, 67, -11, -24
+JCFLIPPED2:
+	.word JCFLIPPED2_SUB, 0
+JCFLIPPED2_SUB:
+	.word JCFLIPPED2_IMG
+	.half 73, 72, 3, -24
+JCFLIPPED3:
+	.word JCFLIPPED3_SUB, 0
+JCFLIPPED3_SUB:
+	.word JCFLIPPED3_IMG
+	.half 55, 51, -8, -22
+JCFLIPPED4:
+	.word JCFLIPPED4_SUB, 0
+JCFLIPPED4_SUB:
+	.word JCFLIPPED4_IMG
+	.half 94, 38, -24, 2
+JCFLIPPED5:
+	.word JCFLIPPED5_SUB, 0
+JCFLIPPED5_SUB:
+	.word JCFLIPPED5_IMG
+	.half 96, 45, -15, -16
+GREENBALL2:
+	.word GREENBALL2_SUB, 0
+GREENBALL2_SUB:
+	.word GREENBALL2_IMG
+	.half 20, 31, -19, -67
+GREENBALL3:
+	.word GREENBALL3_SUB, 0
+GREENBALL3_SUB:
+	.word GREENBALL3_IMG
+	.half 23, 26, -65, -36
+GREENBALL4:
+	.word GREENBALL4_SUB, 0
+GREENBALL4_SUB:
+	.word GREENBALL4_IMG
+	.half 9, 9, 4, 4
+GREENBALL5:
+	.word GREENBALL5_SUB, 0
+GREENBALL5_SUB:
+	.word GREENBALL5_IMG
+	.half 12, 12, 6, 6
+GREENBALL6:
+	.word GREENBALL6_SUB, 0
+GREENBALL6_SUB:
+	.word GREENBALL6_IMG
+	.half 14, 14, 6, 7
+GREENBALL7:
+	.word GREENBALL7_SUB, 0
+GREENBALL7_SUB:
+	.word GREENBALL7_IMG
+	.half 16, 14, 6, 8
+GREENBALL8:
+	.word GREENBALL8_SUB, 0
+GREENBALL8_SUB:
+	.word GREENBALL8_IMG
+	.half 18, 17, 8, 9
+GREENBALL9:
+	.word GREENBALL9_SUB, 0
+GREENBALL9_SUB:
+	.word GREENBALL9_IMG
+	.half 20, 18, 9, 9
+GREENBALL10:
+	.word GREENBALL10_SUB, 0
+GREENBALL10_SUB:
+	.word GREENBALL10_IMG
+	.half 24, 22, 10, 11
+GREENBALL11:
+	.word GREENBALL11_SUB, 0
+GREENBALL11_SUB:
+	.word GREENBALL11_IMG
+	.half 59, 26, 0, 45
+GREENBALL12:
+	.word GREENBALL12_SUB, 0
+GREENBALL12_SUB:
+	.word GREENBALL12_IMG
+	.half 74, 42, 6, 55
+GREENBALL13:
+	.word GREENBALL13_SUB, 0
+GREENBALL13_SUB:
+	.word GREENBALL13_IMG
+	.half 115, 65, 13, 84
+GREENBALL14:
+	.word GREENBALL14_SUB, 0
+GREENBALL14_SUB:
+	.word GREENBALL14_IMG
+	.half 124, 74, 16, 93
+GREENBALL15:
+	.word GREENBALL15_SUB, 0
+GREENBALL15_SUB:
+	.word GREENBALL15_IMG
+	.half 140, 78, 19, 107
+GREENBALL16:
+	.word GREENBALL16_SUB, 0
+GREENBALL16_SUB:
+	.word GREENBALL16_IMG
+	.half 152, 86, 21, 116
+JCRUN1:
+	.word JCRUN1_SUB, 0
+JCRUN1_SUB:
+	.word JCRUN1_IMG
+	.half 111, 67, 7, -1
+JCRUN2:
+	.word JCRUN2_SUB, 0
+JCRUN2_SUB:
+	.word JCRUN2_IMG
+	.half 111, 74, 14, -1
+JCRUN3:
+	.word JCRUN3_SUB, 0
+JCRUN3_SUB:
+	.word JCRUN3_IMG
+	.half 112, 75, 14, 0
+JCRUN4:
+	.word JCRUN4_SUB, 0
+JCRUN4_SUB:
+	.word JCRUN4_IMG
+	.half 110, 68, 7, -2
+JCRUN5:
+	.word JCRUN5_SUB, 0
+JCRUN5_SUB:
+	.word JCRUN5_IMG
+	.half 109, 50, -1, -3
+JCRUN6:
+	.word JCRUN6_SUB, 0
+JCRUN6_SUB:
+	.word JCRUN6_IMG
+	.half 112, 54, -4, 0
+JCRUN7:
+	.word JCRUN7_SUB, 0
+JCRUN7_SUB:
+	.word JCRUN7_IMG
+	.half 115, 62, 3, 2
+JCRUN8:
+	.word JCRUN8_SUB, 0
+JCRUN8_SUB:
+	.word JCRUN8_IMG
+	.half 111, 70, 12, -1
+JCRUN9:
+	.word JCRUN9_SUB, 0
+JCRUN9_SUB:
+	.word JCRUN9_IMG
+	.half 111, 77, 18, -1
+JCRUN10:
+	.word JCRUN10_SUB, 0
+JCRUN10_SUB:
+	.word JCRUN10_IMG
+	.half 108, 71, 10, -4
+JCRUN11:
+	.word JCRUN11_SUB, 0
+JCRUN11_SUB:
+	.word JCRUN11_IMG
+	.half 107, 55, -1, -5
+JCRUN12:
+	.word JCRUN12_SUB, 0
+JCRUN12_SUB:
+	.word JCRUN12_IMG
+	.half 110, 49, -10, -2
+JCTHUD1:
+	.word JCTHUD1_SUB, 0
+JCTHUD1_SUB:
+	.word JCTHUD1_IMG
+	.half 113, 25, 9, 0
+JCTHUD2:
+	.word JCTHUD2_SUB, 0
+JCTHUD2_SUB:
+	.word JCTHUD2_IMG
+	.half 112, 32, 15, 0
+JCTHUD3:
+	.word JCTHUD3_SUB, 0
+JCTHUD3_SUB:
+	.word JCTHUD3_IMG
+	.half 109, 46, 29, -3
+JCTHUD4:
+	.word JCTHUD4_SUB, 0
+JCTHUD4_SUB:
+	.word JCTHUD4_IMG
+	.half 103, 60, 42, -9
+JCTHUD5:
+	.word JCTHUD5_SUB, 0
+JCTHUD5_SUB:
+	.word JCTHUD5_IMG
+	.half 90, 76, 59, -22
+JCTHUD6:
+	.word JCTHUD6_SUB, 0
+JCTHUD6_SUB:
+	.word JCTHUD6_IMG
+	.half 69, 92, 76, -43
+JCTHUD7:
+	.word JCTHUD7_SUB, 0
+JCTHUD7_SUB:
+	.word JCTHUD7_IMG
+	.half 38, 104, 94, -74
+JCSCARED3:
+	.word JCSCARED3_SUB, 0
+JCSCARED3_SUB:
+	.word JCSCARED3_IMG
+	.half 120, 31, 16, 7
+JCBACKBROKEN3:
+	.word JCBACKBROKEN3_SUB, 0
+JCBACKBROKEN3_SUB:
+	.word JCBACKBROKEN3_IMG
+	.half 43, 102, 26, -60
+BABJC:
+	.word BABJC_IMG
+	.half 40, 23, 0, 0
+	.word BABJC_P
+BHJC1:
+	.word BHJC1_IMG
+	.half 25, 18, 0, 0
+	.word BHJC_P
+BHJC2:
+	.word BHJC2_IMG
+	.half 30, 26, 3, 3
+	.word BHJC_P
+BHJC3:
+	.word BHJC3_IMG
+	.half 36, 33, 6, 8
+	.word BHJC_P
+BHJC4:
+	.word BHJC4_IMG
+	.half 42, 38, 9, 11
+	.word BHJC_P
+BHJC5:
+	.word BHJC5_IMG
+	.half 57, 52, 15, 17
+	.word BHJC_P
+HALF_JCCUTUP1:
+	.word HALF_JCCUTUP1_SUB, 0
+HALF_JCCUTUP1_SUB:
+	.word 0
+	.half 34, 42, 0, -78
+JCCUTUP1A:
+	.word JCCUTUP1A_IMG
+	.half 20, 11, -19, 0
+	.word JCCUT_P
+JCCUTUP1B:
+	.word JCCUTUP1B_IMG
+	.half 33, 30, -7, -13
+	.word JCCUT_P
+JCCUTUP1C:
+	.word JCCUTUP1C_IMG
+	.half 40, 32, -7, -42
+	.word JCCUT_P
+JCCUTUP1D:
+	.word JCCUTUP1D_IMG
+	.half 34, 42, 0, -78
+	.word JCCUT_P
+JCMOUTH1:
+	.word JCMOUTH1_SUB, 0
+JCMOUTH1_SUB:
+	.word JCMOUTH1_IMG
+	.half 112, 38, 1, 0
+JCMOUTH2:
+	.word JCMOUTH2_SUB, 0
+JCMOUTH2_SUB:
+	.word JCMOUTH2_IMG
+	.half 101, 48, 6, -11
+JCMOUTH3:
+	.word JCMOUTH3_SUB, 0
+JCMOUTH3_SUB:
+	.word JCMOUTH3_IMG
+	.half 94, 53, 10, -15
+JCMOUTH4:
+	.word JCMOUTH4_SUB, 0
+JCMOUTH4_SUB:
+	.word JCMOUTH4_IMG
+	.half 94, 57, 14, -15
+JCMOUTH5:
+	.word JCMOUTH5_SUB, 0
+JCMOUTH5_SUB:
+	.word JCMOUTH5_IMG
+	.half 94, 63, 20, -15
+JCMOUTH6:
+	.word JCMOUTH6_SUB, 0
+JCMOUTH6_SUB:
+	.word JCMOUTH6_IMG
+	.half 64, 87, 37, -46
+JCMOUTH7:
+	.word JCMOUTH7_SUB, 0
+JCMOUTH7_SUB:
+	.word JCMOUTH7_IMG
+	.half 34, 106, 54, -81
+JCMOUTH8:
+	.word JCMOUTH8_SUB, 0
+JCMOUTH8_SUB:
+	.word JCMOUTH8_IMG
+	.half 37, 101, 51, -79
+JCRIP1:
+	.word JCRIP1_SUB, 0
+JCRIP1_SUB:
+	.word JCRIP1_IMG
+	.half 101, 55, 13, -11
+	.word JCBLU_P
+GROJC2:
+	.word GROJC2_SUB, 0
+GROJC2_SUB:
+	.word GROJC2_IMG
+	.half 132, 33, -1, 19
+GROJC4:
+	.word GROJC4_SUB, 0
+GROJC4_SUB:
+	.word GROJC4_IMG
+	.half 147, 30, -3, 34
+GROJC5:
+	.word GROJC5_SUB, 0
+GROJC5_SUB:
+	.word GROJC5_IMG
+	.half 156, 27, -5, 43
+SUKJC1:
+	.word SUKJC1_SUB, 0
+SUKJC1_SUB:
+	.word SUKJC1_IMG
+	.half 103, 83, 0, 0
+SUKJC3:
+	.word SUKJC3_SUB, 0
+SUKJC3_SUB:
+	.word SUKJC3_IMG
+	.half 76, 100, 0, 17
+SUKJC4:
+	.word SUKJC4_SUB, 0
+SUKJC4_SUB:
+	.word SUKJC4_IMG
+	.half 41, 71, 0, 18
+SUKJC5:
+	.word SUKJC5_SUB, 0
+SUKJC5_SUB:
+	.word SUKJC5_IMG
+	.half 27, 52, 0, 15
+SUKJC6:
+	.word SUKJC6_SUB, 0
+SUKJC6_SUB:
+	.word SUKJC6_IMG
+	.half 17, 24, 0, 17
+JCSHADOWELBOW1:
+	.word JCSHADOWELBOW1_SUB, 0
+JCSHADOWELBOW1_SUB:
+	.word JCSHADOWELBOW1_IMG
+	.half 92, 58, 0, -20
+	.word JCGSHAD_P
+JCSHADOWELBOW2:
+	.word JCSHADOWELBOW2_SUB, 0
+JCSHADOWELBOW2_SUB:
+	.word JCSHADOWELBOW2_IMG
+	.half 94, 50, -3, -18
+JCSHADOWELBOW3:
+	.word JCSHADOWELBOW3_SUB, 0
+JCSHADOWELBOW3_SUB:
+	.word JCSHADOWELBOW3_IMG
+	.half 107, 55, -14, -5
+JCSHADOWELBOW4:
+	.word JCSHADOWELBOW4_SUB, 0
+JCSHADOWELBOW4_SUB:
+	.word JCSHADOWELBOW4_IMG
+	.half 123, 46, -29, 10
+JCFRIENDSHIP1:
+	.word JCFRIENDSHIP1_SUB, 0
+JCFRIENDSHIP1_SUB:
+	.word JCFRIENDSHIP1_IMG
+	.half 113, 43, 0, 0
+JCFRIENDSHIP2:
+	.word JCFRIENDSHIP2_SUB, 0
+JCFRIENDSHIP2_SUB:
+	.word JCFRIENDSHIP2_IMG
+	.half 112, 43, 0, 0
+JCFRIENDSHIP3:
+	.word JCFRIENDSHIP3_SUB, 0
+JCFRIENDSHIP3_SUB:
+	.word JCFRIENDSHIP3_IMG
+	.half 112, 43, 0, 0
+JCFRIENDSHIP4:
+	.word JCFRIENDSHIP4_SUB, 0
+JCFRIENDSHIP4_SUB:
+	.word JCFRIENDSHIP4_IMG
+	.half 113, 48, -1, 0
+JCFRIENDSHIP5:
+	.word JCFRIENDSHIP5_SUB, 0
+JCFRIENDSHIP5_SUB:
+	.word JCFRIENDSHIP5_IMG
+	.half 113, 50, 0, 0
+JCFRIENDSHIP6:
+	.word JCFRIENDSHIP6_SUB, 0
+JCFRIENDSHIP6_SUB:
+	.word JCFRIENDSHIP6_IMG
+	.half 113, 47, 3, 0
+JCFRIENDSHIP7:
+	.word JCFRIENDSHIP7_SUB, 0
+JCFRIENDSHIP7_SUB:
+	.word JCFRIENDSHIP7_IMG
+	.half 113, 43, 0, 0
+JCFRIENDSHIP8:
+	.word JCFRIENDSHIP8_SUB, 0
+JCFRIENDSHIP8_SUB:
+	.word JCFRIENDSHIP8_IMG
+	.half 112, 42, -1, 0
+JCFRIENDSHIP9:
+	.word JCFRIENDSHIP9_SUB, 0
+JCFRIENDSHIP9_SUB:
+	.word JCFRIENDSHIP9_IMG
+	.half 113, 42, -1, 0
+JCFRIENDSHIP10:
+	.word JCFRIENDSHIP10_SUB, 0
+JCFRIENDSHIP10_SUB:
+	.word JCFRIENDSHIP10_IMG
+	.half 112, 45, 1, 0

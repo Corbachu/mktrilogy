@@ -1,0 +1,134 @@
+sz_list:
+	.word VSZBLUE1A
+	.word VSZBLUE1B
+	.word VSZBLUE1C
+	.word VSZBLUE1D
+	.word VSZFLESH1A
+	.word VSZFLESH1B
+	.word VSZFLESH1C
+	.word VSZFLESH1D
+	.word VSZFLESH1E
+	.word VSZFLESH1F
+	.word VSZFLESH1G
+	.word VSZFLESH1H
+	.word VSZGREY1A
+	.word VSZGREY1B
+	.word VSZGREY1C
+	.word VSZGREY1D
+	.word VSZGREY1E
+	.word VSZGREY1F
+	.word VSZGREY1G
+VSZBLUE1A:
+	.word SZBLUE1A
+	.word 0
+VSZBLUE1B:
+	.word SZBLUE1B
+	.word 0
+VSZBLUE1C:
+	.word SZBLUE1C
+	.word 0
+VSZBLUE1D:
+	.word SZBLUE1D
+	.word 0
+VSZFLESH1A:
+	.word SZFLESH1A
+	.word 0
+VSZFLESH1B:
+	.word SZFLESH1B
+	.word 0
+VSZFLESH1C:
+	.word SZFLESH1C
+	.word 0
+VSZFLESH1D:
+	.word SZFLESH1D
+	.word 0
+VSZFLESH1E:
+	.word SZFLESH1E
+	.word 0
+VSZFLESH1F:
+	.word SZFLESH1F
+	.word 0
+VSZFLESH1G:
+	.word SZFLESH1G
+	.word 0
+VSZFLESH1H:
+	.word SZFLESH1H
+	.word 0
+VSZGREY1A:
+	.word SZGREY1A
+	.word 0
+VSZGREY1B:
+	.word SZGREY1B
+	.word 0
+VSZGREY1C:
+	.word SZGREY1C
+	.word 0
+VSZGREY1D:
+	.word SZGREY1D
+	.word 0
+VSZGREY1E:
+	.word SZGREY1E
+	.word 0
+VSZGREY1F:
+	.word SZGREY1F
+	.word 0
+VSZGREY1G:
+	.word SZGREY1G
+	.word 0
+SZBLUE1A:
+	.word SZBLUE1A_IMG
+	.half 22, 30, 60, -155
+SZBLUE1B:
+	.word SZBLUE1B_IMG
+	.half 104, 50, 52, -45
+SZBLUE1C:
+	.word SZBLUE1C_IMG
+	.half 40, 8, 2, -47
+SZBLUE1D:
+	.word SZBLUE1D_IMG
+	.half 65, 36, 2, -80
+SZFLESH1A:
+	.word SZFLESH1A_IMG
+	.half 21, 31, 36, -9
+SZFLESH1B:
+	.word SZFLESH1B_IMG
+	.half 28, 28, 34, -120
+SZFLESH1C:
+	.word SZFLESH1C_IMG
+	.half 116, 75, 88, -12
+SZFLESH1D:
+	.word SZFLESH1D_IMG
+	.half 13, 2, 13, -45
+SZFLESH1E:
+	.word SZFLESH1E_IMG
+	.half 32, 15, -62, -121
+SZFLESH1F:
+	.word SZFLESH1F_IMG
+	.half 87, 33, 11, -38
+SZFLESH1G:
+	.word SZFLESH1G_IMG
+	.half 78, 45, -13, -99
+SZFLESH1H:
+	.word SZFLESH1H_IMG
+	.half 54, 29, -21, -29
+SZGREY1A:
+	.word SZGREY1A_IMG
+	.half 34, 51, 83, -11
+SZGREY1B:
+	.word SZGREY1B_IMG
+	.half 60, 38, 94, -117
+SZGREY1C:
+	.word SZGREY1C_IMG
+	.half 131, 54, 56, -47
+SZGREY1D:
+	.word SZGREY1D_IMG
+        .half 51, 46, -4, -13
+SZGREY1E:
+	.word SZGREY1E_IMG
+	.half 20, 6, 2, -67
+SZGREY1F:
+	.word SZGREY1F_IMG
+	.half 61, 36, 2, -83
+SZGREY1G:
+	.word SZGREY1G_IMG
+        .half 36, 46, -24, -141

@@ -1,0 +1,5 @@
+	.align 2
+	.globl WHITEPAL_PAL
+WHITEPAL_PAL:
+	.word 2
+	.half 0x07C0, 0xFFFF

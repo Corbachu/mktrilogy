@@ -1,0 +1,22 @@
+a_icon_list:
+	.word U64GAMEK
+	.word KOMBAT
+	.word U64KONTR
+	.word SOUND
+	.word QUESTION
+	.word 0
+U64GAMEK:
+	.word U64GAMEK_IMG
+	.half 69, 69, 0, 0
+KOMBAT:
+	.word KOMBAT_IMG
+	.half 69, 69, 0, 0
+U64KONTR:
+	.word U64KONTR_IMG
+	.half 69, 69, 0, 0
+SOUND:
+	.word SOUND_IMG
+	.half 69, 69, 0, 0
+QUESTION:
+	.word QUESTION_IMG
+	.half 69, 69, 0, 0

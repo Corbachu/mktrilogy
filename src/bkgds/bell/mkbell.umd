@@ -1,0 +1,281 @@
+	.align 2
+	.globl MKBELL6BMOD
+MKBELL6BMOD:
+	.half   574,   211
+	.word    43, MKBELL6_BLK, MKBELL_HDR, MKBELL_CLT
+
+	.align 2
+	.globl MKBELL6_BLK
+MKBELL6_BLK:
+	.half     9,    10,    64, 0x0100,     1
+	.half     9,    67,    64, 0x0200,     0
+	.half    10,   136,    64, 0x0100,     2
+	.half    23,    10,    64, 0x0100,     3
+	.half    30,    10,    64, 0x0100,     4
+	.half    41,   128,    64, 0x0100,     5
+	.half    46,    10,    64, 0x0100,     6
+	.half    61,    82,    64, 0x0200,     8
+	.half    63,   137,    64, 0x0100,    10
+	.half    63,   178,    64, 0x0100,     9
+	.half    81,    38,    64, 0x0100,    11
+	.half   118,    46,    64, 0x0100,    13
+	.half   118,    92,    64, 0x0200,    14
+	.half   121,   135,    64, 0x0100,    15
+	.half   155,   138,    64, 0x0100,    18
+	.half   156,    55,    64, 0x0100,    19
+	.half   210,    95,    64, 0x0200,    22
+	.half   211,    58,    64, 0x0300,    23
+	.half   212,   114,    64, 0x0300,    24
+	.half   245,   137,    64, 0x0100,    27
+	.half   247,    60,    64, 0x0100,    28
+	.half   285,    60,    64, 0x0100,    34
+	.half   285,   137,    64, 0x0100,    33
+	.half   325,    58,    64, 0x0100,    36
+	.half   327,   132,    64, 0x0100,    37
+	.half   329,   102,    64, 0x0200,    38
+	.half   359,   137,    64, 0x0100,    40
+	.half   360,    55,    64, 0x0110,    19
+	.half   416,    49,    64, 0x0100,    45
+	.half   416,    92,    64, 0x0200,    44
+	.half   417,   137,    64, 0x0100,    46
+	.half   423,   178,    64, 0x0110,     9
+	.half   451,   137,    64, 0x0100,    47
+	.half   454,    41,    64, 0x0100,    48
+	.half   477,   137,    64, 0x0100,    49
+	.half   478,    31,    64, 0x0100,    50
+	.half   490,    10,    64, 0x0100,    51
+	.half   508,    10,    64, 0x0110,     4
+	.half   509,   107,    64, 0x0100,    53
+	.half   512,    11,    64, 0x0100,    54
+	.half   531,    10,    64, 0x0100,    55
+	.half   531,    67,    64, 0x0200,    56
+	.half   531,   137,    64, 0x0100,    57
+
+	.align 2
+	.globl MKBELL1BMOD
+MKBELL1BMOD:
+	.half   562,   199
+	.word     6, MKBELL1_BLK, MKBELL_HDR, MKBELL_CLT
+
+	.align 2
+	.globl MKBELL1_BLK
+MKBELL1_BLK:
+	.half    53,    46,    64, 0x0500,    31
+	.half    55,    13,    64, 0x0500,    32
+	.half   262,    46,    64, 0x0500,    31
+	.half   264,    13,    64, 0x0500,    32
+	.half   506,    46,    64, 0x0500,    31
+	.half   508,    12,    64, 0x0500,    32
+
+	.align 2
+	.globl MKBELL5BMOD
+MKBELL5BMOD:
+	.half   546,    71
+	.word     2, MKBELL5_BLK, MKBELL_HDR, MKBELL_CLT
+
+	.align 2
+	.globl MKBELL5_BLK
+MKBELL5_BLK:
+	.half    35,    16,    64, 0x0500,    20
+	.half   434,    16,    64, 0x0500,    20
+
+	.align 2
+	.globl MKBELL4BMOD
+MKBELL4BMOD:
+	.half   607,   211
+	.word    10, MKBELL4_BLK, MKBELL_HDR, MKBELL_CLT
+
+	.align 2
+	.globl MKBELL4_BLK
+MKBELL4_BLK:
+	.half    50,   181,    64, 0x0400,    16
+	.half   110,   181,    64, 0x0400,    21
+	.half   177,   181,    64, 0x0400,    30
+	.half   239,    23,    64, 0x0400,    35
+	.half   265,   162,    64, 0x0400,    39
+	.half   320,   162,    64, 0x0400,    42
+	.half   378,    23,    64, 0x0410,    35
+	.half   404,   181,    64, 0x0410,    30
+	.half   467,   181,    64, 0x0410,    21
+	.half   535,   181,    64, 0x0410,    16
+
+	.align 2
+	.globl MKBELL3BMOD
+MKBELL3BMOD:
+	.half   644,   244
+	.word    10, MKBELL3_BLK, MKBELL_HDR, MKBELL_CLT
+
+	.align 2
+	.globl MKBELL3_BLK
+MKBELL3_BLK:
+	.half    98,    16,    64, 0x0600,    25
+	.half    98,    46,    64, 0x0600,    25
+	.half    98,   146,    64, 0x0600,    26
+	.half   497,    18,    64, 0x0600,    59
+	.half   498,    46,    64, 0x0600,    60
+	.half   539,    44,    64, 0x0600,    61
+	.half   577,    17,    64, 0x0600,    59
+	.half   618,   146,    64, 0x0600,    62
+	.half   620,    13,    64, 0x0600,    25
+	.half   620,    46,    64, 0x0600,    25
+
+	.align 2
+	.globl MKBELL2BMOD
+MKBELL2BMOD:
+	.half   845,   225
+	.word    10, MKBELL2_BLK, MKBELL_HDR, MKBELL_CLT
+
+	.align 2
+	.globl MKBELL2_BLK
+MKBELL2_BLK:
+	.half    27,   187,    64, 0x0400,    12
+	.half    80,   187,    64, 0x0400,    17
+	.half   186,   187,    64, 0x0400,    29
+	.half   297,    21,    64, 0x0400,    41
+	.half   342,   165,    64, 0x0400,    43
+	.half   426,   166,    64, 0x0400,    52
+	.half   501,    21,    64, 0x0400,    58
+	.half   545,   187,    64, 0x0410,    29
+	.half   655,   187,    64, 0x0410,    17
+	.half   760,   187,    64, 0x0410,    12
+
+	.align 2
+	.globl MKBELL7BMOD
+MKBELL7BMOD:
+	.half    98,    85
+	.word     1, MKBELL7_BLK, MKBELL_HDR, MKBELL_CLT
+
+	.align 2
+	.globl MKBELL7_BLK
+MKBELL7_BLK:
+	.half    20,    10,    64, 0x0000,     7
+
+	.align 2
+	.globl MKBELL_HDR
+MKBELL_HDR:
+	.half    52,    69
+	.word     0
+	.half    16,    59
+	.word  3592
+	.half    32,    67
+	.word  4536
+	.half    24,    57
+	.word  6680
+	.half    32,    14
+	.word  8048
+	.half    24,    75
+	.word  8496
+	.half    36,    80
+	.word 10296
+	.half    72,    64
+	.word 13176
+	.half    60,     9
+	.word 17784
+	.half    88,    25
+	.word 18328
+	.half    60,    41
+	.word 20528
+	.half    40,    45
+	.word 22992
+	.half    56,    26
+	.word 24792
+	.half    40,    46
+	.word 26248
+	.half    40,    44
+	.word 28088
+	.half    36,    43
+	.word 29848
+	.half    60,    24
+	.word 31400
+	.half   108,    26
+	.word 32840
+	.half    60,    40
+	.word 35648
+	.half    56,    41
+	.word 38048
+	.half    72,    46
+	.word 40344
+	.half    68,    24
+	.word 43656
+	.half    12,    43
+	.word 45288
+	.half    36,    56
+	.word 45808
+	.half    36,    64
+	.word 47824
+	.half     8,   100
+	.word 50128
+	.half     8,    85
+	.word 50928
+	.half    40,    41
+	.word 51608
+	.half    40,    37
+	.word 53248
+	.half   112,    26
+	.word 54728
+	.half    64,    24
+	.word 57640
+	.half    12,   135
+	.word 59176
+	.half     8,    50
+	.word 60800
+	.half    44,    41
+	.word 61200
+	.half    40,    37
+	.word 63008
+	.half    28,   182
+	.word 64488
+	.half    36,    44
+	.word 69584
+	.half    32,    46
+	.word 71168
+	.half    28,    30
+	.word 72640
+	.half    56,    43
+	.word 73480
+	.half    60,    41
+	.word 75888
+	.half    48,   192
+	.word 78352
+	.half    60,    43
+	.word 87568
+	.half    84,    48
+	.word 90152
+	.half    36,    45
+	.word 94184
+	.half    40,    43
+	.word 95808
+	.half    36,    41
+	.word 97528
+	.half    28,    41
+	.word 99008
+	.half    24,    51
+	.word 100160
+	.half    32,    42
+	.word 101384
+	.half    36,    59
+	.word 102728
+	.half    24,    21
+	.word 104856
+	.half    76,    47
+	.word 105360
+	.half    24,    96
+	.word 108936
+	.half    20,    97
+	.word 111240
+	.half    32,    57
+	.word 113184
+	.half    32,    70
+	.word 115008
+	.half    32,    66
+	.word 117248
+	.half    48,   192
+	.word 119360
+	.half     8,    30
+	.word 128576
+	.half    44,    68
+	.word 128816
+	.half    48,    70
+	.word 131808
+	.half     8,    55
+	.word 135168

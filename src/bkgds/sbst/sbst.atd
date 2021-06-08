@@ -1,0 +1,117 @@
+sbst_anims:
+	.word a_rail
+	.word a_dark
+	.word a_lite
+	.word a_train
+a_rail:
+	.word BKRAIL1
+	.word FRTRAIL1
+	.word RAILGLEAM
+	.word 0
+a_dark:
+	.word DARK10
+	.word DARK11
+	.word DARK1
+	.word DARK2
+	.word DARK3
+	.word DARK4
+	.word DARK6
+	.word DARK7
+	.word DARK8
+	.word DARK9
+	.word 0
+a_lite:
+	.word LITE1
+	.word LITE10
+	.word LITE11
+	.word LITE2
+	.word LITE3
+	.word LITE4
+	.word LITE6
+	.word LITE7
+	.word LITE8
+	.word LITE9
+	.word 0
+a_train:
+	.word TRAINA
+	.word TRAINB
+	.word TRAINC
+	.word 0
+BKRAIL1:
+	.word BKRAIL1_IMG
+	.half 161, 8, 0, 0
+FRTRAIL1:
+	.word FRTRAIL1_IMG
+	.half 161, 9, 0, 0
+RAILGLEAM:
+	.word RAILGLEAM_IMG
+	.half 103, 1, 0, 0
+DARK10:
+	.word DARK10_IMG
+	.half 58, 5, 31, 20
+DARK11:
+	.word DARK11_IMG
+	.half 25, 31, 29, -25
+DARK1:
+	.word DARK1_IMG
+	.half 88, 10, 94, 31
+DARK2:
+	.word DARK2_IMG
+	.half 90, 10, 6, 31
+DARK3:
+	.word DARK3_IMG
+	.half 6, 92, 83, 27
+DARK4:
+	.word DARK4_IMG
+	.half 6, 90, 83, 27
+DARK6:
+	.word DARK6_IMG
+	.half 87, 11, 94, -56
+DARK7:
+	.word DARK7_IMG
+	.half 90, 11, 7, -56
+DARK8:
+	.word DARK8_IMG
+	.half 90, 11, 94, -56
+DARK9:
+	.word DARK9_IMG
+	.half 60, 5, 34, 20
+LITE1:
+	.word LITE1_IMG
+	.half 88, 10, 94, 31
+LITE10:
+	.word LITE10_IMG
+	.half 58, 5, 34, 20
+LITE11:
+	.word LITE11_IMG
+	.half 25, 31, 29, -25
+LITE2:
+	.word LITE2_IMG
+	.half 90, 10, 6, 31
+LITE3:
+	.word LITE3_IMG
+	.half 6, 91, 83, 27
+LITE4:
+	.word LITE4_IMG
+	.half 6, 90, 83, 27
+LITE6:
+	.word LITE6_IMG
+	.half 87, 11, 94, -56
+LITE7:
+	.word LITE7_IMG
+	.half 90, 11, 7, -56
+LITE8:
+	.word LITE8_IMG
+	.half 90, 11, 94, -56
+LITE9:
+	.word LITE9_IMG
+	.half 60, 5, 34, 20
+TRAINA:
+	.word TRAINA_IMG
+	.half 74, 81, 0, 0
+TRAINB:
+	.word TRAINB_IMG
+	.half 65, 81, 0, 0
+TRAINC:
+	.word TRAINC_IMG
+	.half 80, 81, 0, 0

@@ -1,0 +1,78 @@
+swat_list:
+	.word VCOPBLUE1A
+	.word VCOPBLUE1B
+	.word VCOPBLUE1C
+	.word VCOPFLESH1A
+	.word VCOPFLESH1B
+	.word VCOPFLESH1C
+	.word VCOPFLESH1D
+	.word VCOPGREY1A
+	.word VCOPGREY1B
+	.word VCOPGREY1C
+	.word VCOPGREY1D
+VCOPBLUE1A:
+	.word COPBLUE1A
+	.word 0
+VCOPBLUE1B:
+	.word COPBLUE1B
+	.word 0
+VCOPBLUE1C:
+	.word COPBLUE1C
+	.word 0
+VCOPFLESH1A:
+	.word COPFLESH1A
+	.word 0
+VCOPFLESH1B:
+	.word COPFLESH1B
+	.word 0
+VCOPFLESH1C:
+	.word COPFLESH1C
+	.word 0
+VCOPFLESH1D:
+	.word COPFLESH1D
+	.word 0
+VCOPGREY1A:
+	.word COPGREY1A
+	.word 0
+VCOPGREY1B:
+	.word COPGREY1B
+	.word 0
+VCOPGREY1C:
+	.word COPGREY1C
+	.word 0
+VCOPGREY1D:
+	.word COPGREY1D
+	.word 0
+COPBLUE1A:
+	.word COPBLUE1A_IMG
+	.half 72, 96, 48, -66
+COPBLUE1B:
+	.word COPBLUE1B_IMG
+	.half 9, 10, 42, -150
+COPBLUE1C:
+	.word COPBLUE1C_IMG
+        .half 14, 20, 69, -170
+COPFLESH1A:
+	.word COPFLESH1A_IMG
+	.half 39, 44, -1, -31
+COPFLESH1B:
+	.word COPFLESH1B_IMG
+	.half 35, 55, 69, -97
+COPFLESH1C:
+	.word COPFLESH1C_IMG
+	.half 16, 11, 10, -127
+COPFLESH1D:
+	.word COPFLESH1D_IMG
+	.half 60, 40, -34, -111
+COPGREY1A:
+	.word COPGREY1A_IMG
+        .half 33, 50, 6, -13
+COPGREY1B:
+	.word COPGREY1B_IMG
+	.half 134, 77, 75, -50
+COPGREY1C:
+	.word COPGREY1C_IMG
+	.half 31, 21, -53, -139
+COPGREY1D:
+	.word COPGREY1D_IMG
+	.half 133, 46, -1, -51

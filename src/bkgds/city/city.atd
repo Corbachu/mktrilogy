@@ -1,0 +1,37 @@
+city_anims:
+	.word a_burn
+a_burn:
+	.word BURNING1
+	.word BURNING2
+	.word BURNING3
+	.word BURNING4
+	.word BURNING5
+	.word BURNING6
+	.word BURNING7
+	.word BURNING8
+	.word ani_jump
+	.word a_burn
+BURNING1:
+	.word BURNING1_IMG
+	.half 46, 26, 0, 0
+BURNING2:
+	.word BURNING2_IMG
+	.half 45, 27, -1, 0
+BURNING3:
+	.word BURNING3_IMG
+	.half 45, 26, -1, 0
+BURNING4:
+	.word BURNING4_IMG
+	.half 42, 25, -4, -2
+BURNING5:
+	.word BURNING5_IMG
+	.half 43, 25, -2, -2
+BURNING6:
+	.word BURNING6_IMG
+	.half 42, 26, -3, -1
+BURNING7:
+	.word BURNING7_IMG
+	.half 44, 26, -1, 0
+BURNING8:
+	.word BURNING8_IMG
+	.half 46, 26, 0, 0

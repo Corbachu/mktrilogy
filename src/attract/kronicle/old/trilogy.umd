@@ -1,0 +1,41 @@
+	.align 2
+	.globl plane2BMOD
+plane2BMOD:
+	.half   200,   213
+	.word     2, plane2_BLK, nutril_HDR, nutril_CLT
+
+	.align 2
+	.globl plane2_BLK
+plane2_BLK:
+	.half    22,     4,    65, 0x0100,     2
+	.half    22,   106,    65, 0x0100,     3
+
+	.align 2
+	.globl plane1BMOD
+plane1BMOD:
+	.half   330,   251
+	.word     4, plane1_BLK, nutril_HDR, nutril_CLT
+
+	.align 2
+	.globl plane1_BLK
+plane1_BLK:
+	.half     4,     5,    64, 0x0000,     0
+	.half     4,   125,    64, 0x0000,     1
+	.half   164,     5,    64, 0x0000,     4
+	.half   164,   125,    64, 0x0000,     5
+
+	.align 2
+	.globl nutril_HDR
+nutril_HDR:
+	.half   160,   120
+	.word     0
+	.half   160,   120
+	.word 19200
+	.half   164,   102
+	.word 38400
+	.half   164,   102
+	.word 55128
+	.half   160,   120
+	.word 71856
+	.half   160,   120
+	.word 91056

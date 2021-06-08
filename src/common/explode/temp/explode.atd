@@ -1,0 +1,186 @@
+explode_anims:
+	.word a_puff
+	.word a_dave_explode
+	.word a_ground_explode
+	.word a_small_explode
+a_small_explode:
+	.word SMALLXPD1
+	.word SMALLXPD2
+	.word SMALLXPD3
+	.word SMALLXPD4
+	.word SMALLXPD5
+	.word SMALLXPD6
+	.word SMALLXPD7
+	.word SMALLXPD8
+	.word SMALLXPD9
+	.word SMALLXPD10
+	.word SMALLXPD11
+	.word SMALLXPD12
+	.word SMALLXPD13
+	.word SMALLXPD14
+	.word SMALLXPD15
+	.word 0
+a_ground_explode:
+	.word FLOORXPD1
+	.word FLOORXPD3
+	.word FLOORXPD5
+	.word FLOORXPD7
+	.word FLOORXPD9
+	.word FLOORXPD11
+	.word FLOORXPD13
+	.word FLOORXPD19
+	.word FLOORXPD21
+	.word 0
+a_puff:
+	.word PUFF1
+	.word PUFF2
+	.word PUFF3
+	.word PUFF4
+	.word PUFF5
+	.word 0
+a_dave_explode:
+	.word BIGXPLOD1
+	.word BIGXPLOD3
+	.word BIGXPLOD5
+	.word BIGXPLOD7
+	.word BIGXPLOD9
+	.word BIGXPLOD11
+	.word BIGXPLOD13
+	.word BIGXPLOD15
+	.word 0
+	.word BIGXPLOD15
+	.word BIGXPLOD13
+	.word BIGXPLOD11
+	.word BIGXPLOD9
+	.word BIGXPLOD7
+	.word BIGXPLOD5
+	.word BIGXPLOD3
+	.word BIGXPLOD1
+	.word 0
+PUFF1:
+	.word PUFF1_IMG
+	.half 18, 16, 7, 9
+PUFF2:
+	.word PUFF2_IMG
+	.half 25, 18, 8, 12
+PUFF3:
+	.word PUFF3_IMG
+	.half 30, 24, 11, 15
+PUFF4:
+	.word PUFF4_IMG
+	.half 35, 30, 14, 17
+PUFF5:
+	.word PUFF5_IMG
+	.half 40, 34, 16, 20
+BIGXPLOD1:
+	.word BIGXPLOD1_SUB, 0
+BIGXPLOD1_SUB:
+	.word BIGXPLOD1_IMG
+	.half 51, 60, 30, 25
+BIGXPLOD3:
+	.word BIGXPLOD3_SUB, 0
+BIGXPLOD3_SUB:
+	.word BIGXPLOD3_IMG
+	.half 66, 74, 38, 32
+BIGXPLOD5:
+	.word BIGXPLOD5_SUB, 0
+BIGXPLOD5_SUB:
+	.word BIGXPLOD5_IMG
+	.half 71, 80, 45, 35
+BIGXPLOD7:
+	.word BIGXPLOD7_SUB, 0
+BIGXPLOD7_SUB:
+	.word BIGXPLOD7_IMG
+	.half 65, 82, 48, 30
+BIGXPLOD9:
+	.word BIGXPLOD9_SUB, 0
+BIGXPLOD9_SUB:
+	.word BIGXPLOD9_IMG
+	.half 62, 82, 45, 32
+BIGXPLOD11:
+	.word BIGXPLOD11_SUB, 0
+BIGXPLOD11_SUB:
+	.word BIGXPLOD11_IMG
+	.half 64, 76, 40, 33
+BIGXPLOD13:
+	.word BIGXPLOD13_SUB, 0
+BIGXPLOD13_SUB:
+	.word BIGXPLOD13_IMG
+	.half 63, 69, 42, 35
+BIGXPLOD15:
+	.word BIGXPLOD15_SUB, 0
+BIGXPLOD15_SUB:
+	.word BIGXPLOD15_IMG
+	.half 49, 64, 41, 26
+FLOORXPD1:
+	.word FLOORXPD1_IMG
+	.half 77, 76, 37, 73
+FLOORXPD3:
+	.word FLOORXPD3_IMG
+	.half 88, 83, 39, 84
+FLOORXPD5:
+	.word FLOORXPD5_IMG
+	.half 101, 83, 39, 99
+FLOORXPD7:
+	.word FLOORXPD7_IMG
+	.half 115, 88, 41, 112
+FLOORXPD9:
+	.word FLOORXPD9_IMG
+	.half 126, 94, 42, 123
+FLOORXPD11:
+	.word FLOORXPD11_IMG
+	.half 133, 99, 44, 131
+FLOORXPD13:
+	.word FLOORXPD13_IMG
+	.half 137, 100, 44, 134
+FLOORXPD19:
+	.word FLOORXPD19_IMG
+	.half 43, 47, 25, 41
+FLOORXPD21:
+	.word FLOORXPD21_IMG
+	.half 19, 27, 8, 16
+SMALLXPD1:
+	.word SMALLXPD1_IMG
+	.half 53, 48, 24, 26
+SMALLXPD2:
+	.word SMALLXPD2_IMG
+	.half 58, 54, 26, 28
+SMALLXPD3:
+	.word SMALLXPD3_IMG
+	.half 43, 40, 21, 20
+SMALLXPD4:
+	.word SMALLXPD4_IMG
+	.half 43, 44, 22, 20
+SMALLXPD5:
+	.word SMALLXPD5_IMG
+	.half 43, 40, 22, 20
+SMALLXPD6:
+	.word SMALLXPD6_IMG
+	.half 38, 42, 23, 22
+SMALLXPD7:
+	.word SMALLXPD7_IMG
+	.half 39, 43, 24, 23
+SMALLXPD8:
+	.word SMALLXPD8_IMG
+	.half 40, 45, 26, 24
+SMALLXPD9:
+	.word SMALLXPD9_IMG
+	.half 38, 44, 26, 25
+SMALLXPD10:
+	.word SMALLXPD10_IMG
+	.half 32, 42, 25, 19
+SMALLXPD11:
+	.word SMALLXPD11_IMG
+	.half 32, 31, 13, 19
+SMALLXPD12:
+	.word SMALLXPD12_IMG
+	.half 27, 30, 12, 14
+SMALLXPD13:
+	.word SMALLXPD13_IMG
+	.half 27, 26, 7, 14
+SMALLXPD14:
+	.word SMALLXPD14_IMG
+	.half 24, 24, 6, 13
+SMALLXPD15:
+	.word SMALLXPD15_IMG
+	.half 23, 22, 4, 12

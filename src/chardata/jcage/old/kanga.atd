@@ -1,0 +1,24 @@
+kanga_anims:
+	.word a_kanga
+a_kanga:
+	.word KANGA1
+	.word KANGA2
+	.word KANGA3
+	.word KANGA4
+	.word KANGA5
+	.word 0
+KANGA1:
+	.word KANGA1_IMG
+	.half 87, 101, 0, 0
+KANGA2:
+	.word KANGA2_IMG
+	.half 106, 88, 0, 20
+KANGA3:
+	.word KANGA3_IMG
+	.half 106, 59, 9, 20
+KANGA4:
+	.word KANGA4_IMG
+	.half 107, 79, 11, 21
+KANGA5:
+	.word KANGA5_IMG
+	.half 107, 100, 10, 21

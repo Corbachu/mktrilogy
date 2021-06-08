@@ -1,0 +1,268 @@
+FONTS_anims:
+	.word a_rd7font-FONTS_anims
+a_rd7font:
+	.word FONT7excla-FONTS_anims
+	.word FONT7quote-FONTS_anims
+	.word FONT7pound-FONTS_anims
+	.word FONT7doll-FONTS_anims
+	.word FONT7percen-FONTS_anims
+	.word FONT7and-FONTS_anims
+	.word FONT7apost-FONTS_anims
+	.word FONT7parenl-FONTS_anims
+	.word FONT7parenr-FONTS_anims
+	.word FONT7ast-FONTS_anims
+	.word FONT7plus-FONTS_anims
+	.word FONT7comma-FONTS_anims
+	.word FONT7dash-FONTS_anims
+	.word FONT7period-FONTS_anims
+	.word FONT7forsp-FONTS_anims
+	.word FONT70-FONTS_anims
+	.word FONT71-FONTS_anims
+	.word FONT72-FONTS_anims
+	.word FONT73-FONTS_anims
+	.word FONT74-FONTS_anims
+	.word FONT75-FONTS_anims
+	.word FONT76-FONTS_anims
+	.word FONT77-FONTS_anims
+	.word FONT78-FONTS_anims
+	.word FONT79-FONTS_anims
+	.word FONT7colon-FONTS_anims
+	.word FONT7semicol-FONTS_anims
+	.word FONT7less-FONTS_anims
+	.word FONT7equal-FONTS_anims
+	.word FONT7more-FONTS_anims
+	.word FONT7quest-FONTS_anims
+	.word FONT7line-FONTS_anims
+	.word FONT7A-FONTS_anims
+	.word FONT7B-FONTS_anims
+	.word FONT7C-FONTS_anims
+	.word FONT7D-FONTS_anims
+	.word FONT7E-FONTS_anims
+	.word FONT7F-FONTS_anims
+	.word FONT7G-FONTS_anims
+	.word FONT7H-FONTS_anims
+	.word FONT7I-FONTS_anims
+	.word FONT7J-FONTS_anims
+	.word FONT7K-FONTS_anims
+	.word FONT7L-FONTS_anims
+	.word FONT7M-FONTS_anims
+	.word FONT7N-FONTS_anims
+	.word FONT7O-FONTS_anims
+	.word FONT7P-FONTS_anims
+	.word FONT7Q-FONTS_anims
+	.word FONT7R-FONTS_anims
+	.word FONT7S-FONTS_anims
+	.word FONT7T-FONTS_anims
+	.word FONT7U-FONTS_anims
+	.word FONT7V-FONTS_anims
+	.word FONT7W-FONTS_anims
+	.word FONT7X-FONTS_anims
+	.word FONT7Y-FONTS_anims
+	.word FONT7Z-FONTS_anims
+	.word FONT7excla-FONTS_anims
+	.word FONT7excla-FONTS_anims
+	.word FONT7excla-FONTS_anims
+	.word FONT7excla-FONTS_anims
+	.word FONT7line-FONTS_anims
+	.word FONT7apost-FONTS_anims
+	.word FONT7A-FONTS_anims
+	.word FONT7B-FONTS_anims
+	.word FONT7C-FONTS_anims
+	.word FONT7D-FONTS_anims
+	.word FONT7E-FONTS_anims
+	.word FONT7F-FONTS_anims
+	.word FONT7G-FONTS_anims
+	.word FONT7H-FONTS_anims
+	.word FONT7I-FONTS_anims
+	.word FONT7J-FONTS_anims
+	.word FONT7K-FONTS_anims
+	.word FONT7L-FONTS_anims
+	.word FONT7M-FONTS_anims
+	.word FONT7N-FONTS_anims
+	.word FONT7O-FONTS_anims
+	.word FONT7P-FONTS_anims
+	.word FONT7Q-FONTS_anims
+	.word FONT7R-FONTS_anims
+	.word FONT7S-FONTS_anims
+	.word FONT7T-FONTS_anims
+	.word FONT7U-FONTS_anims
+	.word FONT7V-FONTS_anims
+	.word FONT7W-FONTS_anims
+	.word FONT7X-FONTS_anims
+	.word FONT7Y-FONTS_anims
+	.word FONT7Z-FONTS_anims
+	.word FONT7excla-FONTS_anims
+FONT7excla:
+	.word FONT7excla_IMG-FONTS_anims
+	.half 2, 7, 0, 0
+FONT7quote:
+	.word FONT7quote_IMG-FONTS_anims
+	.half 5, 3, 0, 0
+FONT7pound:
+	.word FONT7pound_IMG-FONTS_anims
+	.half 8, 7, 0, 0
+FONT7doll:
+	.word FONT7doll_IMG-FONTS_anims
+	.half 5, 8, 0, 1
+FONT7percen:
+	.word FONT7percen_IMG-FONTS_anims
+	.half 9, 7, 0, 0
+FONT7and:
+	.word FONT7and_IMG-FONTS_anims
+	.half 6, 7, 0, 0
+FONT7apost:
+	.word FONT7apost_IMG-FONTS_anims
+	.half 2, 3, 0, 0
+FONT7parenl:
+	.word FONT7parenl_IMG-FONTS_anims
+	.half 2, 9, 0, 0
+FONT7parenr:
+	.word FONT7parenr_IMG-FONTS_anims
+	.half 2, 9, 0, 0
+FONT7ast:
+	.word FONT7ast_IMG-FONTS_anims
+	.half 6, 7, 1, 0
+FONT7plus:
+	.word FONT7plus_IMG-FONTS_anims
+	.half 5, 5, 0, -1
+FONT7comma:
+	.word FONT7comma_IMG-FONTS_anims
+	.half 2, 3, 0, -4
+FONT7dash:
+	.word FONT7dash_IMG-FONTS_anims
+	.half 4, 2, 0, -2
+FONT7period:
+	.word FONT7period_IMG-FONTS_anims
+	.half 2, 2, 0, -4
+FONT7forsp:
+	.word FONT7forsp_IMG-FONTS_anims
+	.half 4, 7, 0, 0
+FONT70:
+	.word FONT70_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT71:
+	.word FONT71_IMG-FONTS_anims
+	.half 3, 7, 0, 0
+FONT72:
+	.word FONT72_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT73:
+	.word FONT73_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT74:
+	.word FONT74_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT75:
+	.word FONT75_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT76:
+	.word FONT76_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT77:
+	.word FONT77_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT78:
+	.word FONT78_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT79:
+	.word FONT79_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7colon:
+	.word FONT7colon_IMG-FONTS_anims
+	.half 2, 5, 0, 0
+FONT7semicol:
+	.word FONT7semicol_IMG-FONTS_anims
+	.half 2, 7, 0, 0
+FONT7less:
+	.word FONT7less_IMG-FONTS_anims
+	.half 3, 6, 0, 0
+FONT7equal:
+	.word FONT7equal_IMG-FONTS_anims
+	.half 4, 4, 0, -2
+FONT7more:
+	.word FONT7more_IMG-FONTS_anims
+	.half 3, 6, 0, 0
+FONT7quest:
+	.word FONT7quest_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7line:
+	.word FONT7line_IMG-FONTS_anims
+	.half 5, 2, 0, -4
+FONT7A:
+	.word FONT7A_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7B:
+	.word FONT7B_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7C:
+	.word FONT7C_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7D:
+	.word FONT7D_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7E:
+	.word FONT7E_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7F:
+	.word FONT7F_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7G:
+	.word FONT7G_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7H:
+	.word FONT7H_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7I:
+	.word FONT7I_IMG-FONTS_anims
+	.half 2, 7, 0, 0
+FONT7J:
+	.word FONT7J_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7K:
+	.word FONT7K_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7L:
+	.word FONT7L_IMG-FONTS_anims
+	.half 4, 7, 0, 0
+FONT7M:
+	.word FONT7M_IMG-FONTS_anims
+	.half 8, 7, 0, 0
+FONT7N:
+	.word FONT7N_IMG-FONTS_anims
+	.half 6, 7, 0, 0
+FONT7O:
+	.word FONT7O_IMG-FONTS_anims
+	.half 6, 7, 0, 0
+FONT7P:
+	.word FONT7P_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7Q:
+	.word FONT7Q_IMG-FONTS_anims
+	.half 6, 9, 0, 0
+FONT7R:
+	.word FONT7R_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7S:
+	.word FONT7S_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7T:
+	.word FONT7T_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7U:
+	.word FONT7U_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7V:
+	.word FONT7V_IMG-FONTS_anims
+	.half 6, 7, 0, 0
+FONT7W:
+	.word FONT7W_IMG-FONTS_anims
+	.half 9, 7, 0, 0
+FONT7X:
+	.word FONT7X_IMG-FONTS_anims
+	.half 6, 7, 0, 0
+FONT7Y:
+	.word FONT7Y_IMG-FONTS_anims
+	.half 5, 7, 0, 0
+FONT7Z:
+	.word FONT7Z_IMG-FONTS_anims
+	.half 5, 7, 0, 0

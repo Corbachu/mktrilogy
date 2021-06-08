@@ -1,0 +1,149 @@
+/* spec - Cartridge ROM specification file
+//
+// Author: Steve Ranck
+*/
+
+#include "sys_defs.h"
+
+
+/*==========================================================================================
+// Cartridge ROM kernel segment
+//
+// Loaded by the boot code and always resident
+*/
+
+beginseg
+	name	"kernel"
+	flags	BOOT OBJECT
+	entry	kstart_entry
+	stack	boot_stack + SYS_BOOT_STACKSIZE
+	address	SYS_MEMMAP_KERNEL_K0
+	include	"segkernel.o"
+	include	"$(ROOT)/usr/lib/PR/rspboot.o"
+#if SYS_TURBO
+	include "$(ROOT)/usr/lib/PR/gspTurbo3D.o"
+#endif
+	include "$(ROOT)/usr/lib/PR/gspFast3D.fifo.o"
+	include "$(ROOT)/usr/lib/PR/aspMain.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM zbuf segment
+//
+// Never loaded. Used to reserve DRAM space for the zbuffer in heap1.
+*/
+
+
+beginseg
+	name	"zbuf"
+	flags	OBJECT
+	address	SYS_MEMMAP_ZBUF_K0
+	include	"segzbuf.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM init segment
+//
+// Loaded as an overlay by kernel to initialize the system
+*/
+
+beginseg
+	name	"init"
+	flags	OBJECT
+	after	"zbuf"
+	include	"seginit.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM race segment
+//
+// Loaded as an overlay by kernel
+*/
+
+beginseg
+	name	"race"
+	flags	OBJECT
+	after	"zbuf"
+	include	"segrace.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM wrappers segment
+//
+// Loaded as an overlay by kernel
+*/
+
+beginseg
+	name	"wrappers"
+	flags	OBJECT
+	after	"zbuf"
+	include	"segwrappers.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM obsys segment
+//
+// Loaded as an overlay by kernel
+*/
+
+beginseg
+	name	"obsys"
+	flags	OBJECT
+	address	SYS_MEMMAP_ZBUF_K0
+	include	"segobsys.o"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM objects segment
+//
+// Used by kernel to locate object in ROM
+*/
+
+beginseg
+	name	"obdef"
+	flags	RAW
+	include	"segobjects.raw"
+endseg
+
+
+/*==========================================================================================
+// Cartridge ROM raw audio data segment
+//
+// Used by kernel to locate object in ROM
+*/
+
+beginseg
+	name	"wess_wmd"
+	flags	RAW
+	include	"cusan64.wmd"
+endseg
+
+beginseg
+	name	"wess_dat"
+	flags	RAW
+	include	"cusan64.dat"
+endseg
+
+
+/*==========================================================================================
+// Wave definitions:
+*/
+
+beginwave
+	name	"cusa"
+	include	"kernel"
+	include "zbuf"
+	include "init"
+	include "race"
+	include "wrappers"
+	include "obsys"
+	include "obdef"
+	include "wess_wmd"
+	include "wess_dat"
+endwave

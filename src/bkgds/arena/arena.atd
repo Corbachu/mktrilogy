@@ -1,0 +1,77 @@
+arena_anis:
+	.word a_barakach
+	.word a_raidch
+	.word a_boss
+	.word a_crowd
+a_barakach:
+	.word BCHAIN1
+	.word BCHAIN2
+	.word BCHAIN3
+	.word BCHAIN4
+	.word BCHAIN5
+	.word BCHAIN6
+	.word 0
+a_raidch:
+	.word RCHAIN1
+	.word RCHAIN2
+	.word RCHAIN3
+	.word RCHAIN4
+	.word 0
+a_boss:
+	.word BOSSSIT1
+	.word BOSSSIT2
+	.word BOSSSIT3
+	.word 0
+a_crowd:
+	.word crowd1
+	.word crowd2
+	.word crowd3
+	.word 0
+BCHAIN1:
+	.word BCHAIN1_IMG
+	.half 88, 100, 0, 0
+BCHAIN2:
+	.word BCHAIN2_IMG
+	.half 88, 100, 0, 0
+BCHAIN3:
+	.word BCHAIN3_IMG
+	.half 88, 100, 0, 0
+BCHAIN4:
+	.word BCHAIN4_IMG
+	.half 88, 100, 0, 0
+BCHAIN5:
+	.word BCHAIN5_IMG
+	.half 88, 100, 0, 0
+BCHAIN6:
+	.word BCHAIN6_IMG
+	.half 88, 100, 0, 0
+RCHAIN1:
+	.word RCHAIN1_IMG
+	.half 86, 92, 0, 0
+RCHAIN2:
+	.word RCHAIN2_IMG
+	.half 86, 92, 0, 0
+RCHAIN3:
+	.word RCHAIN3_IMG
+	.half 86, 92, 0, 0
+RCHAIN4:
+	.word RCHAIN4_IMG
+	.half 86, 92, 0, 0
+BOSSSIT1:
+	.word BOSSSIT1_IMG
+	.half 122, 64, 0, 0
+BOSSSIT2:
+	.word BOSSSIT2_IMG
+	.half 123, 63, 0, 0
+BOSSSIT3:
+	.word BOSSSIT3_IMG
+	.half 125, 66, 2, 2
+crowd1:
+	.word crowd1_IMG
+	.half 21, 86, 0, 0
+crowd2:
+	.word crowd2_IMG
+	.half 21, 86, 0, 0
+crowd3:
+	.word crowd3_IMG
+	.half 21, 86, 0, 0

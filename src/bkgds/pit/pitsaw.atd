@@ -1,0 +1,16 @@
+pit_anims:
+	.word a_saw
+a_saw:
+	.word SAW2
+	.word SAW4
+	.word SAW6
+	.word 0
+SAW2:
+	.word SAW2_IMG
+	.half 151, 79, 65, 79
+SAW4:
+	.word SAW4_IMG
+	.half 155, 74, 77, 74
+SAW6:
+	.word SAW6_IMG
+	.half 152, 78, 83, 78

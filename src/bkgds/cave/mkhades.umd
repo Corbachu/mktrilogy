@@ -1,0 +1,148 @@
+	.align 2
+	.globl HADES5BMOD
+HADES5BMOD:
+	.half   342,   133
+	.word     4, HADES5_BLK, MKHADES_HDR, MKHADES_CLT
+
+	.align 2
+	.globl HADES5_BLK
+HADES5_BLK:
+	.half    12,    10,    64, 0x0000,     3
+	.half    12,    85,    64, 0x0000,     2
+	.half   172,    11,    64, 0x0000,    12
+	.half   172,    85,    64, 0x0000,     2
+
+	.align 2
+	.globl HADES4BMOD
+HADES4BMOD:
+	.half   451,   142
+	.word     4, HADES4_BLK, MKHADES_HDR, MKHADES_CLT
+
+	.align 2
+	.globl HADES4_BLK
+HADES4_BLK:
+	.half    22,    18,    64, 0x0100,     8
+	.half   134,    18,    64, 0x0100,    11
+	.half   262,    18,    64, 0x0100,     8
+	.half   389,    18,    64, 0x0100,    11
+
+	.align 2
+	.globl HADES3BMOD
+HADES3BMOD:
+	.half   735,   177
+	.word    10, HADES3_BLK, MKHADES_HDR, MKHADES_CLT
+
+	.align 2
+	.globl HADES3_BLK
+HADES3_BLK:
+	.half    14,   107,    64, 0x0200,     4
+	.half    16,     6,    64, 0x0300,     5
+	.half   173,    11,    64, 0x0300,    13
+	.half   175,   110,    64, 0x0200,    14
+	.half   329,     9,    64, 0x0300,    15
+	.half   337,   107,    64, 0x0200,    16
+	.half   500,    11,    64, 0x0300,    13
+	.half   503,   110,    64, 0x0200,    14
+	.half   661,   107,    64, 0x0200,     4
+	.half   664,     6,    64, 0x0300,     5
+
+	.align 2
+	.globl HADES2BMOD
+HADES2BMOD:
+	.half  1136,   225
+	.word    21, HADES2_BLK, MKHADES_HDR, MKHADES_CLT
+
+	.align 2
+	.globl HADES2_BLK
+HADES2_BLK:
+	.half    33,   173,    64, 0x0400,     6
+	.half    36,    28,    64, 0x0500,     7
+	.half    43,     6,    64, 0x0500,     9
+	.half   233,   173,    64, 0x0400,     6
+	.half   236,    28,    64, 0x0500,     7
+	.half   243,     6,    64, 0x0500,     9
+	.half   431,    27,    64, 0x0500,    17
+	.half   434,     2,    65, 0x0500,    18
+	.half   437,   121,    64, 0x0500,    19
+	.half   440,   172,    64, 0x0400,    20
+	.half   629,    27,    64, 0x0500,    21
+	.half   637,    98,    64, 0x0600,    22
+	.half   640,     5,    65, 0x0610,    23
+	.half   641,   172,    64, 0x0400,    24
+	.half   835,    27,    64, 0x0500,    17
+	.half   838,     2,    65, 0x0500,    18
+	.half   841,   121,    64, 0x0500,    19
+	.half   845,   172,    64, 0x0400,    20
+	.half  1045,   173,    64, 0x0400,     6
+	.half  1048,    28,    64, 0x0500,     7
+	.half  1054,     6,    64, 0x0500,     9
+
+	.align 2
+	.globl HADES1BMOD
+HADES1BMOD:
+	.half  1283,   236
+	.word     6, HADES1_BLK, MKHADES_HDR, MKHADES_CLT
+
+	.align 2
+	.globl HADES1_BLK
+HADES1_BLK:
+	.half    11,    12,    64, 0x0710,     0
+	.half    60,    15,    64, 0x0710,     1
+	.half   116,    35,    64, 0x0710,    10
+	.half   933-88,    35,    64, 0x0700,    10
+	.half   969-88,    15,    64, 0x0700,     1
+	.half  1031-88,    13,    64, 0x0700,     0
+
+	.align 2
+	.globl MKHADES_HDR
+MKHADES_HDR:
+	.half    52,   214
+	.word 79080
+	.half    64,   212
+	.word 90208
+	.half   160,    38
+	.word 103776
+	.half   160,    75
+	.word 109856
+	.half    44,    62
+	.word 121856
+	.half    44,   101
+	.word 124584
+	.half    52,    42
+	.word 129032
+	.half    52,   145
+	.word 131216
+	.half    32,   111
+	.word 138760
+	.half    36,    22
+	.word 142312
+	.half    44,    23
+	.word 143104
+	.half    40,   111
+	.word 144120
+	.half   160,    74
+	.word 148560
+	.half    44,    99
+	.word 160400
+	.half    40,    60
+	.word 164760
+	.half    52,    99
+	.word 167160
+	.half    44,    62
+	.word 172312
+	.half    56,    94
+	.word 175040
+	.half    48,    28
+	.word 180304
+	.half    52,    51
+	.word 181648
+	.half    48,    42
+	.word 184304
+	.half    64,    71
+	.word 186320
+	.half    60,    74
+	.word 190864
+	.half    48,    26
+	.word 195304
+	.half    56,    42
+	.word 196552

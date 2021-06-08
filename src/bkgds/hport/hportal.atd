@@ -1,0 +1,60 @@
+hport_anims:
+	.word a_portal_zap
+a_portal_zap:
+	.word PORTAL01
+	.word PORTAL02
+	.word PORTAL03
+	.word PORTAL04
+	.word PORTAL05
+	.word PORTAL06
+	.word PORTAL07
+	.word PORTAL08
+	.word PORTAL09
+	.word PORTAL11
+	.word PORTAL12
+	.word PORTAL13
+	.word PORTAL14
+	.word PORTAL17
+	.word 0
+PORTAL01:
+	.word PORTAL01_IMG
+	.half 18, 8, 0, 0
+PORTAL02:
+	.word PORTAL02_IMG
+	.half 31, 26, 0, 0
+PORTAL03:
+	.word PORTAL03_IMG
+	.half 30, 26, 0, 0
+PORTAL04:
+	.word PORTAL04_IMG
+	.half 31, 24, 0, -1
+PORTAL05:
+	.word PORTAL05_IMG
+	.half 30, 21, 0, -2
+PORTAL06:
+	.word PORTAL06_IMG
+	.half 25, 17, -1, -5
+PORTAL07:
+	.word PORTAL07_IMG
+	.half 21, 14, -2, -8
+PORTAL08:
+	.word PORTAL08_IMG
+	.half 12, 7, -8, -12
+PORTAL09:
+	.word PORTAL09_IMG
+	.half 9, 9, -10, -9
+PORTAL11:
+	.word PORTAL11_IMG
+	.half 14, 9, -10, -4
+PORTAL12:
+	.word PORTAL12_IMG
+	.half 22, 17, -4, -3
+PORTAL13:
+	.word PORTAL13_IMG
+	.half 18, 15, -5, -5
+PORTAL14:
+	.word PORTAL14_IMG
+	.half 15, 14, -7, -6
+PORTAL17:
+	.word PORTAL17_IMG
+	.half 9, 9, -9, -8

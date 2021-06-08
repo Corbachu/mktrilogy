@@ -1,0 +1,4 @@
+	makeit /usr/proj/mktrilogy/seg/gamecode
+	/usr/bin/cc -xansi     -I/usr/include/PR -I/usr/proj/mktrilogy/include -I/usr/people/davids/cusa -c -g -mips2 -fullwarn -prototypes -Xcpluscomm -non_shared -G 0 -wlint,-f -woff 813,819,826,827,835,852,712,822,825,665  -nostdinc -I/usr/include -O  -MDupdate Makedepend -woff 515,608,658,799 -c u64main.c
+*** Error code 1 (bu21)
+*** Error code 1 (bu21)

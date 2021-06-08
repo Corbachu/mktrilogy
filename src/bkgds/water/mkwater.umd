@@ -1,0 +1,175 @@
+	.align 2
+	.globl water7BMOD
+water7BMOD:
+	.half   442,   112
+	.word     3, water7_BLK, mkwater_HDR, mkwater_CLT
+
+	.align 2
+	.globl water7_BLK
+water7_BLK:
+	.half    16,    26,    64, 0x0000,     0
+	.half   174,    41,    64, 0x0100,    12
+	.half   333,    41,    64, 0x0110,    20
+
+	.align 2
+	.globl water6BMOD
+water6BMOD:
+	.half   450,    43
+	.word     6, water6_BLK, mkwater_HDR, mkwater_CLT
+
+	.align 2
+	.globl water6_BLK
+water6_BLK:
+	.half     9,    10,    64, 0x0200,     6
+	.half    96,    10,    64, 0x0200,    11
+	.half   197,    14,    64, 0x0200,    17
+	.half   276,    10,    64, 0x0210,    11
+	.half   338,    19,    64, 0x0200,    22
+	.half   424,    10,    64, 0x0210,    11
+
+	.align 2
+	.globl water4BMOD
+water4BMOD:
+	.half   653,    35
+	.word    13, water4_BLK, mkwater_HDR, mkwater_CLT
+
+	.align 2
+	.globl water4_BLK
+water4_BLK:
+	.half    14,     8,     1, 0x0600,     1
+	.half    14,     8,     1, 0x0600,     1
+	.half    68,     8,     0, 0x0500,     9
+	.half   152,     8,     1, 0x0600,     1
+	.half   206,     8,     1, 0x0600,     1
+	.half   260,     8,     1, 0x0600,     1
+	.half   314,     8,     1, 0x0600,     1
+	.half   368,     8,     1, 0x0600,     1
+	.half   422,     8,     1, 0x0600,     1
+	.half   476,     8,     1, 0x0600,     1
+	.half   530,     8,     1, 0x0600,     1
+	.half   584,     8,     1, 0x0600,     1
+	.half   595,     8,     1, 0x0600,     1
+
+	.align 2
+	.globl water3BMOD
+water3BMOD:
+	.half   639,    61
+	.word    11, water3_BLK, mkwater_HDR, mkwater_CLT
+
+	.align 2
+	.globl water3_BLK
+water3_BLK:
+	.half    12,     8,    64, 0x0500,     5
+	.half    54,     8,     1, 0x0500,     8
+	.half   198,     8,     2, 0x0600,    15
+	.half   252,     8,     2, 0x0600,    15
+	.half   306,     8,     2, 0x0600,    15
+	.half   360,     8,     2, 0x0600,    15
+	.half   414,     8,     2, 0x0600,    15
+	.half   468,     8,     2, 0x0600,    15
+	.half   522,     8,     2, 0x0600,    15
+	.half   533,     8,     2, 0x0600,    15
+	.half   579,     8,     2, 0x0600,    15
+
+	.align 2
+	.globl water2BMOD
+water2BMOD:
+	.half  1008,   187
+	.word     4, water2_BLK, mkwater_HDR, mkwater_CLT
+
+	.align 2
+	.globl water2_BLK
+water2_BLK:
+	.half    10,     9,    64, 0x0300,     2
+	.half    61,    42,    64, 0x0300,    10
+	.half   911,    42,    64, 0x0310,    10
+	.half   946,     9,    64, 0x0310,     2
+
+	.align 2
+	.globl water1BMOD
+water1BMOD:
+	.half   995,    71
+	.word     8, water1_BLK, mkwater_HDR, mkwater_CLT
+
+	.align 2
+	.globl water1_BLK
+water1_BLK:
+	.half    25,    23,    64, 0x0400,     3
+	.half    51,    26,    64, 0x0400,     7
+	.half   224,    36,    64, 0x0400,    16
+	.half   370,    42,    64, 0x0400,    21
+	.half   511,    43,    64, 0x0400,    23
+	.half   650,    36,    64, 0x0410,    16
+	.half   795,    26,    64, 0x0410,     7
+	.half   969,    23,    64, 0x0410,     3
+
+	.align 2
+	.globl water5BMOD
+water5BMOD:
+	.half   612,    75
+	.word     7, water5_BLK, mkwater_HDR, mkwater_CLT
+
+	.align 2
+	.globl water5_BLK
+water5_BLK:
+	.half    14,     7,    64, 0x0200,     4
+	.half   176,    16,    65, 0x0200,    14
+	.half   176,    17,    64, 0x0200,    13
+	.half   276,    17,    65, 0x0200,    19
+	.half   276,    18,    64, 0x0200,    18
+	.half   374,     7,    64, 0x0210,     4
+	.half   537,    18,    64, 0x0200,    24
+
+	.align 2
+	.globl mkwater_HDR
+mkwater_HDR:
+	.half   160,    77
+	.word     0
+	.half    56,    18
+	.word 12320
+	.half    52,   171
+	.word 13328
+	.half    20,    39
+	.word 22224
+	.half   164,    59
+	.word 23008
+	.half    44,    34
+	.word 32688
+	.half    12,    20
+	.word 34184
+	.half   176,    36
+	.word 34424
+	.half   144,    34
+	.word 40760
+	.half    84,    18
+	.word 45656
+	.half    40,   138
+	.word 47168
+	.half    12,    20
+	.word 52688
+	.half   164,    62
+	.word 52928
+	.half   100,    34
+	.word 63096
+	.half   100,     6
+	.word 66496
+	.half    56,    34
+	.word 67096
+	.half   148,    26
+	.word 69000
+	.half    36,    16
+	.word 72848
+	.half   100,    33
+	.word 73424
+	.half   100,     4
+	.word 76728
+	.half    96,    62
+	.word 77128
+	.half   144,    20
+	.word 83080
+	.half    60,    11
+	.word 85960
+	.half   144,    19
+	.word 86624
+	.half    64,    33
+	.word 89360

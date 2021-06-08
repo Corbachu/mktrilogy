@@ -1,0 +1,329 @@
+	.align 2
+	.globl dun10BMOD
+dun10BMOD:
+	.half   480,    24
+	.word     4, dun10_BLK, goro_HDR, goro_CLT
+
+	.align 2
+	.globl dun10_BLK
+dun10_BLK:
+	.half    19,    12,    64, 0x0410,     2
+	.half   133,    12,    64, 0x0410,     2
+	.half   247,    12,    64, 0x0410,     2
+	.half   362,    12,    64, 0x0400,     2
+
+	.align 2
+	.globl dun9BMOD
+dun9BMOD:
+	.half   577,    24
+	.word     5, dun9_BLK, goro_HDR, goro_CLT
+
+	.align 2
+	.globl dun9_BLK
+dun9_BLK:
+	.half     1,    12,    64, 0x0400,     2
+	.half   114,    12,    64, 0x0400,     2
+	.half   228,    12,    64, 0x0400,     2
+	.half   342,    12,    64, 0x0400,     2
+	.half   456,    12,    64, 0x0400,     2
+
+	.align 2
+	.globl dun8BMOD
+dun8BMOD:
+	.half   702,   187
+	.word    22, dun8_BLK, goro_HDR, goro_CLT
+
+	.align 2
+	.globl dun8_BLK
+dun8_BLK:
+	.half    11,   172,    64, 0x0400,     1
+	.half    21,     6,    64, 0x0100,     3
+	.half    34,    89,    64, 0x0100,     0
+	.half    76,    89,    64, 0x0100,     4
+	.half    92,   131,    64, 0x0100,     5
+	.half   117,     6,    64, 0x0100,     3
+	.half   124,   172,    64, 0x0400,     1
+	.half   164,    89,    64, 0x0100,    11
+	.half   213,     6,    64, 0x0100,     3
+	.half   238,   172,    64, 0x0400,     1
+	.half   282,    89,    64, 0x0100,     4
+	.half   299,   131,    64, 0x0100,     5
+	.half   309,     6,    64, 0x0100,     3
+	.half   352,   172,    64, 0x0400,     1
+	.half   372,    89,    64, 0x0100,    11
+	.half   405,     6,    64, 0x0100,     3
+	.half   466,   172,    64, 0x0400,     1
+	.half   487,    89,    64, 0x0100,     4
+	.half   501,     6,    64, 0x0100,     3
+	.half   504,   131,    64, 0x0100,     5
+	.half   576,    89,    64, 0x0100,     0
+	.half   579,   172,    64, 0x0400,     1
+
+	.align 2
+	.globl dun5BMOD
+dun5BMOD:
+	.half   818,    25
+	.word     7, dun5_BLK, goro_HDR, goro_CLT
+
+	.align 2
+	.globl dun5_BLK
+dun5_BLK:
+	.half    12,     3,    64, 0x0400,    10
+	.half   125,     3,    64, 0x0400,    10
+	.half   239,     3,    64, 0x0400,    10
+	.half   353,     3,    64, 0x0400,    10
+	.half   467,     3,    64, 0x0400,    10
+	.half   581,     3,    64, 0x0400,    10
+	.half   695,     3,    64, 0x0400,    10
+
+	.align 2
+	.globl dun4BMOD
+dun4BMOD:
+	.half  1042,   294
+	.word    80, dun4_BLK, goro_HDR, goro_CLT
+
+	.align 2
+	.globl dun4_BLK
+dun4_BLK:
+	.half     7,   278,    64, 0x0400,     6
+	.half   107,   267,    64, 0x0200,    13
+	.half   109,    12,    64, 0x0500,    14
+	.half   111,    97,    64, 0x0500,    14
+	.half   112,   182,    64, 0x0600,    15
+	.half   121,   278,    64, 0x0400,     6
+	.half   226,    97,    63, 0x0510,    16
+	.half   230,   222,    65, 0x0510,    17
+	.half   235,   278,    64, 0x0400,     6
+	.half   239,    12,    64, 0x0500,    14
+	.half   240,   185,    64, 0x0500,    19
+	.half   242,    98,    65, 0x0500,    20
+	.half   242,   121,    64, 0x0500,    22
+	.half   242,   149,    64, 0x0500,    21
+	.half   250,    97,    64, 0x0510,    16
+	.half   254,   267,    64, 0x0210,    23
+	.half   259,   265,    65, 0x0310,    24
+	.half   295,    97,    64, 0x0500,    25
+	.half   303,   100,    64, 0x0500,    26
+	.half   338,   273,    65, 0x0300,    27
+	.half   349,   278,    64, 0x0400,     6
+	.half   369,    12,    64, 0x0500,    14
+	.half   375,   273,    65, 0x0300,    28
+	.half   434,    98,    64, 0x0510,    20
+	.half   458,   121,    64, 0x0510,    22
+	.half   463,   278,    64, 0x0400,     6
+	.half   466,   149,    64, 0x0510,    21
+	.half   472,   185,    64, 0x0510,    19
+	.half   478,   222,    65, 0x0500,    17
+	.half   483,   266,    64, 0x0200,    23
+	.half   486,   267,    64, 0x0200,    13
+	.half   490,    97,    64, 0x0500,    14
+	.half   491,   182,    64, 0x0500,    14
+	.half   499,    12,    64, 0x0500,    14
+	.half   512,   100,    65, 0x0010,    31
+	.half   515,   101,    67, 0x0300,    32
+	.half   526,   114,    67, 0x0300,    33
+	.half   527,   274,    66, 0x0300,    34
+	.half   532,   124,    67, 0x0300,    35
+	.half   541,   142,    67, 0x0300,    36
+	.half   547,   150,    67, 0x0300,    37
+	.half   559,   156,    67, 0x0300,    38
+	.half   560,   180,    67, 0x0300,    39
+	.half   561,   200,    67, 0x0300,    40
+	.half   562,   140,    67, 0x0300,    41
+	.half   577,   278,    64, 0x0400,     6
+	.half   581,   247,    67, 0x0300,    42
+	.half   583,   143,    67, 0x0300,    43
+	.half   598,   126,    67, 0x0300,    44
+	.half   603,   116,    67, 0x0300,    45
+	.half   607,   182,    64, 0x0500,    46
+	.half   608,   101,    65, 0x0000,    31
+	.half   608,   222,    65, 0x0510,    17
+	.half   609,   102,    67, 0x0310,    32
+	.half   618,   185,    64, 0x0500,    19
+	.half   620,    97,    64, 0x0500,    47
+	.half   621,    98,    64, 0x0500,    20
+	.half   621,   121,    64, 0x0500,    22
+	.half   621,   149,    64, 0x0500,    21
+	.half   629,    12,    64, 0x0500,    14
+	.half   629,    97,    64, 0x0510,    16
+	.half   633,   267,    64, 0x0210,    23
+	.half   681,    97,    64, 0x0500,    25
+	.half   682,    99,    64, 0x0500,    26
+	.half   691,   278,    64, 0x0400,     6
+	.half   712,   276,    65, 0x0310,    27
+	.half   759,    12,    64, 0x0500,    14
+	.half   772,   267,    65, 0x0300,    24
+	.half   805,   278,    64, 0x0400,     6
+	.half   813,    97,    65, 0x0510,    20
+	.half   837,   120,    64, 0x0510,    22
+	.half   845,   148,    64, 0x0510,    21
+	.half   852,   184,    64, 0x0510,    19
+	.half   860,   221,    65, 0x0500,    17
+	.half   864,   266,    64, 0x0200,    23
+	.half   867,   266,    64, 0x0200,    13
+	.half   876,    97,    64, 0x0500,    14
+	.half   877,   182,    64, 0x0600,    15
+	.half   889,    12,    64, 0x0500,    14
+	.half   919,   278,    64, 0x0400,     6
+
+	.align 2
+	.globl dun3BMOD
+dun3BMOD:
+	.half   941,    28
+	.word     8, dun3_BLK, goro_HDR, goro_CLT
+
+	.align 2
+	.globl dun3_BLK
+dun3_BLK:
+	.half     7,     8,    64, 0x0400,     7
+	.half   121,     8,    64, 0x0400,     7
+	.half   235,     8,    64, 0x0400,     7
+	.half   349,     8,    64, 0x0400,     7
+	.half   463,     8,    64, 0x0400,     7
+	.half   577,     8,    64, 0x0400,     7
+	.half   691,     8,    64, 0x0400,     7
+	.half   805,     8,    64, 0x0400,     7
+
+	.align 2
+	.globl dun2BMOD
+dun2BMOD:
+	.half   928,    26
+	.word     8, dun2_BLK, goro_HDR, goro_CLT
+
+	.align 2
+	.globl dun2_BLK
+dun2_BLK:
+	.half     8,     7,    64, 0x0400,     8
+	.half   122,     7,    64, 0x0400,     8
+	.half   236,     7,    64, 0x0400,     8
+	.half   350,     7,    64, 0x0400,     8
+	.half   464,     7,    64, 0x0400,     8
+	.half   578,     7,    64, 0x0400,     8
+	.half   692,     7,    64, 0x0400,     8
+	.half   806,     7,    64, 0x0400,     8
+
+	.align 2
+	.globl dun1BMOD
+dun1BMOD:
+	.half   934,    30
+	.word    16, dun1_BLK, goro_HDR, goro_CLT
+
+	.align 2
+	.globl dun1_BLK
+dun1_BLK:
+	.half    12,     6,    64, 0x0400,     9
+	.half    99,     7,    65, 0x0300,    12
+	.half   126,     6,    64, 0x0400,     9
+	.half   232,     8,    65, 0x0310,    18
+	.half   240,     6,    64, 0x0400,     9
+	.half   354,     6,    64, 0x0400,     9
+	.half   417,     8,    65, 0x0300,    29
+	.half   455,     6,    65, 0x0300,    12
+	.half   468,     6,    64, 0x0400,     9
+	.half   502,    12,    65, 0x0300,    30
+	.half   521,     9,    65, 0x0300,    18
+	.half   582,     6,    64, 0x0400,     9
+	.half   696,     6,    64, 0x0400,     9
+	.half   737,     8,    65, 0x0310,    12
+	.half   787,     9,    65, 0x0310,    29
+	.half   810,     6,    64, 0x0400,     9
+
+	.align 2
+	.globl goro_HDR
+goro_HDR:
+	.half    44,     9
+	.word     0
+	.half   116,     9
+	.word   400
+	.half   116,     4
+	.word  1448
+	.half    96,    84
+	.word  1912
+	.half    92,    43
+	.word  9976
+	.half    56,    42
+	.word 13936
+	.half   116,     9
+	.word 16288
+	.half   116,    12
+	.word 17336
+	.half   116,    14
+	.word 18728
+	.half   116,    16
+	.word 20352
+	.half   116,    15
+	.word 22208
+	.half   128,     9
+	.word 23952
+	.half    48,    18
+	.word 25104
+	.half   148,    14
+	.word 25968
+	.half   132,    85
+	.word 28040
+	.half   132,    85
+	.word 39264
+	.half    52,     9
+	.word 50488
+	.half    32,    45
+	.word 50960
+	.half    48,    20
+	.word 52400
+	.half    28,    37
+	.word 53360
+	.half    64,    24
+	.word 54400
+	.half    32,    36
+	.word 55936
+	.half    40,    28
+	.word 57088
+	.half     4,    14
+	.word 58208
+	.half    40,    18
+	.word 58264
+	.half   196,     9
+	.word 58984
+	.half   136,    21
+	.word 60752
+	.half    32,    12
+	.word 63608
+	.half    32,    11
+	.word 63992
+	.half    32,    19
+	.word 64344
+	.half    44,     8
+	.word 64952
+	.half    20,    51
+	.word 65304
+	.half    16,    14
+	.word 66328
+	.half    16,    10
+	.word 66552
+	.half    28,    12
+	.word 66712
+	.half    16,    18
+	.word 67048
+	.half     8,    10
+	.word 67336
+	.half    16,    13
+	.word 67416
+	.half    28,    23
+	.word 67624
+	.half    28,    20
+	.word 68272
+	.half    24,    58
+	.word 68832
+	.half    16,    18
+	.word 70224
+	.half     8,     6
+	.word 70512
+	.half    20,    19
+	.word 70560
+	.half    16,    17
+	.word 70944
+	.half    16,    13
+	.word 71216
+	.half    16,    85
+	.word 71424
+	.half    16,    85
+	.word 72784

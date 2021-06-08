@@ -1,0 +1,56 @@
+temple_anims:
+	.word a_tflame
+	.word a_candle_flame
+	.word a_kandle
+a_kandle:
+	.word KANDLE1
+	.word 0
+a_tflame:
+	.word SKTORCH1
+	.word SKTORCH2
+	.word SKTORCH3
+	.word SKTORCH4
+	.word SKTORCH5
+	.word SKTORCH6
+	.word ani_jump
+	.word a_tflame
+a_candle_flame:
+	.word wik1
+	.word wik2
+	.word wik3
+	.word wik4
+	.word ani_jump
+	.word a_candle_flame
+SKTORCH1:
+	.word SKTORCH1_IMG
+	.half 21, 42, 6, 42
+SKTORCH2:
+	.word SKTORCH2_IMG
+	.half 22, 43, 7, 43
+SKTORCH3:
+	.word SKTORCH3_IMG
+	.half 21, 45, 6, 45
+SKTORCH4:
+	.word SKTORCH4_IMG
+	.half 22, 41, 7, 41
+SKTORCH5:
+	.word SKTORCH5_IMG
+	.half 22, 37, 7, 37
+SKTORCH6:
+	.word SKTORCH6_IMG
+	.half 21, 37, 6, 37
+wik1:
+	.word wik1_IMG
+	.half 6, 14, 2, 14
+wik2:
+	.word wik2_IMG
+	.half 6, 18, 2, 18
+wik3:
+	.word wik3_IMG
+	.half 6, 18, 2, 17
+wik4:
+	.word wik4_IMG
+	.half 7, 15, 2, 15
+KANDLE1:
+	.word KANDLE1_IMG
+	.half 17, 25, 7, 4

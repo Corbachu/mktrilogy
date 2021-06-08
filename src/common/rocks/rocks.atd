@@ -1,0 +1,224 @@
+rocks_anims:
+	.word a_small_rock
+	.word a_med_rock
+	.word a_large_rock
+	.word a_crumple
+	.word a_break
+a_small_rock:
+	.word SMALL01
+	.word SMALL02
+	.word SMALL03
+	.word SMALL04
+	.word SMALL05
+	.word SMALL06
+a_small_rock2:
+	.word SMALL07
+	.word SMALL08
+	.word SMALL09
+	.word SMALL10
+	.word SMALL11
+	.word SMALL12
+	.word ani_jump
+	.word a_small_rock
+a_med_rock:
+	.word MEDIUM01
+	.word MEDIUM02
+	.word MEDIUM03
+	.word MEDIUM04
+	.word MEDIUM05
+	.word MEDIUM06
+	.word MEDIUM07
+	.word MEDIUM08
+	.word MEDIUM09
+	.word MEDIUM10
+	.word MEDIUM11
+	.word MEDIUM12
+	.word ani_jump
+	.word a_med_rock
+a_large_rock:
+	.word LARGE01
+	.word LARGE02
+	.word LARGE03
+	.word LARGE04
+	.word LARGE05
+	.word LARGE06
+	.word LARGE07
+	.word LARGE08
+	.word LARGE09
+	.word LARGE10
+	.word LARGE11
+	.word LARGE12
+	.word ani_jump
+	.word a_large_rock
+a_crumple:
+	.word XPLODE01
+	.word XPLODE02
+	.word XPLODE03
+	.word XPLODE04
+	.word XPLODE05
+	.word XPLODE06
+	.word XPLODE07
+	.word XPLODE08
+	.word XPLODE09
+	.word XPLODE10
+	.word XPLODE11
+	.word XPLODE12
+	.word 0
+a_break:
+	.word STBREAK1
+	.word STBREAK2
+	.word STBREAK3
+	.word 0
+SMALL01:
+	.word SMALL01_IMG
+	.half 12, 9, 5, 6
+SMALL02:
+	.word SMALL02_IMG
+	.half 12, 7, 4, 6
+SMALL03:
+	.word SMALL03_IMG
+	.half 12, 8, 4, 6
+SMALL04:
+	.word SMALL04_IMG
+	.half 11, 10, 5, 6
+SMALL05:
+	.word SMALL05_IMG
+	.half 12, 10, 5, 6
+SMALL06:
+	.word SMALL06_IMG
+	.half 11, 10, 5, 5
+SMALL07:
+	.word SMALL07_IMG
+	.half 10, 11, 6, 5
+SMALL08:
+	.word SMALL08_IMG
+	.half 13, 12, 6, 7
+SMALL09:
+	.word SMALL09_IMG
+	.half 12, 11, 6, 6
+SMALL10:
+	.word SMALL10_IMG
+	.half 13, 10, 6, 6
+SMALL11:
+	.word SMALL11_IMG
+	.half 13, 9, 5, 6
+SMALL12:
+	.word SMALL12_IMG
+	.half 13, 9, 5, 6
+MEDIUM01:
+	.word MEDIUM01_IMG
+	.half 17, 16, 8, 9
+MEDIUM02:
+	.word MEDIUM02_IMG
+	.half 17, 15, 8, 9
+MEDIUM03:
+	.word MEDIUM03_IMG
+	.half 15, 16, 9, 6
+MEDIUM04:
+	.word MEDIUM04_IMG
+	.half 17, 17, 9, 7
+MEDIUM05:
+	.word MEDIUM05_IMG
+	.half 19, 17, 9, 9
+MEDIUM06:
+	.word MEDIUM06_IMG
+	.half 19, 17, 9, 9
+MEDIUM07:
+	.word MEDIUM07_IMG
+	.half 18, 17, 10, 9
+MEDIUM08:
+	.word MEDIUM08_IMG
+	.half 15, 17, 10, 7
+MEDIUM09:
+	.word MEDIUM09_IMG
+	.half 15, 17, 10, 8
+MEDIUM10:
+	.word MEDIUM10_IMG
+	.half 17, 17, 9, 9
+MEDIUM11:
+	.word MEDIUM11_IMG
+	.half 18, 16, 8, 9
+MEDIUM12:
+	.word MEDIUM12_IMG
+	.half 18, 15, 8, 9
+LARGE01:
+	.word LARGE01_IMG
+	.half 31, 42, 24, 17
+LARGE02:
+	.word LARGE02_IMG
+	.half 30, 46, 25, 16
+LARGE03:
+	.word LARGE03_IMG
+	.half 30, 40, 20, 16
+LARGE04:
+	.word LARGE04_IMG
+	.half 30, 41, 18, 16
+LARGE05:
+	.word LARGE05_IMG
+	.half 30, 34, 13, 16
+LARGE06:
+	.word LARGE06_IMG
+	.half 29, 26, 9, 16
+LARGE07:
+	.word LARGE07_IMG
+	.half 29, 38, 16, 16
+LARGE08:
+	.word LARGE08_IMG
+	.half 29, 45, 22, 16
+LARGE09:
+	.word LARGE09_IMG
+	.half 29, 42, 22, 16
+LARGE10:
+	.word LARGE10_IMG
+	.half 29, 40, 23, 16
+LARGE11:
+	.word LARGE11_IMG
+	.half 30, 38, 25, 17
+LARGE12:
+	.word LARGE12_IMG
+	.half 30, 30, 22, 17
+XPLODE01:
+	.word XPLODE01_IMG
+	.half 10, 7, 3, 9
+XPLODE02:
+	.word XPLODE02_IMG
+	.half 9, 9, 4, 10
+XPLODE03:
+	.word XPLODE03_IMG
+	.half 10, 14, 6, 12
+XPLODE04:
+	.word XPLODE04_IMG
+	.half 11, 20, 9, 12
+XPLODE05:
+	.word XPLODE05_IMG
+	.half 10, 26, 11, 9
+XPLODE06:
+	.word XPLODE06_IMG
+	.half 9, 31, 14, 7
+XPLODE07:
+	.word XPLODE07_IMG
+	.half 8, 35, 15, 5
+XPLODE08:
+	.word XPLODE08_IMG
+	.half 8, 38, 16, 5
+XPLODE09:
+	.word XPLODE09_IMG
+	.half 8, 40, 17, 5
+XPLODE10:
+	.word XPLODE10_IMG
+	.half 7, 42, 18, 4
+XPLODE11:
+	.word XPLODE11_IMG
+	.half 3, 43, 18, 1
+XPLODE12:
+	.word XPLODE12_IMG
+	.half 3, 45, 19, 1
+STBREAK1:
+	.word STBREAK1_IMG
+	.half 54, 74, 0, 0
+STBREAK2:
+	.word STBREAK2_IMG
+	.half 54, 90, -73, 0
+STBREAK3:
+	.word STBREAK3_IMG
+	.half 54, 81, 0, 0

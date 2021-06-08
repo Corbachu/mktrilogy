@@ -1,0 +1,7 @@
+BIGRED 130x90 11880 594 5.000000 dict RLE 32
+scaled = 11880 RLEd + dict = 850 5.000000
+RLE average bytes/frame 850.000000
+max width = 130 BIGRED
+max height = 90 BIGRED
+min width = 130 BIGRED
+min height = 90 BIGRED

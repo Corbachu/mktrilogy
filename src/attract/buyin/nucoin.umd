@@ -1,0 +1,25 @@
+	.align 2
+	.globl coinmodBMOD
+coinmodBMOD:
+	.half   314,   252
+	.word     4, coinmod_BLK, nucoin_HDR, nucoin_CLT
+
+	.align 2
+	.globl coinmod_BLK
+coinmod_BLK:
+	.half     6,     7,    64, 0x0000,     0
+	.half     6,   127,    64, 0x0000,     1
+	.half   156,     7,    64, 0x0000,     2
+	.half   156,   127,    64, 0x0000,     3
+
+	.align 2
+	.globl nucoin_HDR
+nucoin_HDR:
+	.half   152,   120
+	.word     0
+	.half   152,   120
+	.word 18240
+	.half   152,   120
+	.word 36480
+	.half   152,   120
+	.word 54720

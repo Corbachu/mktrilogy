@@ -1,0 +1,25 @@
+	.align 2
+	.globl midmodBMOD
+midmodBMOD:
+	.half   334,   249
+	.word     4, midmod_BLK, midway_HDR, midway_CLT
+
+	.align 2
+	.globl midmod_BLK
+midmod_BLK:
+	.half     6,     5,    64, 0x0000,     0
+	.half     6,   125,    64, 0x0000,     1
+	.half   166,     5,    64, 0x0000,     2
+	.half   166,   125,    64, 0x0000,     3
+
+	.align 2
+	.globl midway_HDR
+midway_HDR:
+	.half   160,   120
+	.word 110256
+	.half   160,   120
+	.word 129456
+	.half   160,   120
+	.word 148656
+	.half   160,   120
+	.word 167856

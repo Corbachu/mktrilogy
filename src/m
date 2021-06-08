@@ -1,0 +1,4 @@
+# Master code makefile
+makeit ../seg/gamecode/
+make
+

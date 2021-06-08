@@ -1,0 +1,33 @@
+	.align 2
+	.globl blumodBMOD
+blumodBMOD:
+	.half   500,   256
+	.word     6, blumod_BLK, gradient_HDR, gradientb_CLT
+
+	.align 2
+	.globl gredmodBMOD
+gredmodBMOD:
+	.half   500,   256
+	.word     6, blumod_BLK, gradient_HDR, gradientr_CLT
+
+	.align 2
+	.globl greenmodBMOD
+greenmodBMOD:
+	.half   500,   256
+	.word     6, blumod_BLK, gradient_HDR, gradientg_CLT
+
+	.align 2
+	.globl blumod_BLK
+blumod_BLK:
+	.half     9,     8,    64, 0x0200,     0
+	.half     9,   128,    64, 0x0220,     0
+	.half   169,     8,    64, 0x0200,     0
+	.half   169,   128,    64, 0x0220,     0
+	.half   329,     8,    64, 0x0200,     0
+	.half   329,   128,    64, 0x0220,     0
+
+	.align 2
+	.globl gradient_HDR
+gradient_HDR:
+	.half   160,   120
+	.word     0

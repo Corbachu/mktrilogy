@@ -1,0 +1,36 @@
+OPTIONBUTTONS_anims:
+	.word a_BUTTONS
+a_BUTTONS:
+	.word A
+	.word B
+	.word L
+	.word R
+	.word YUP
+	.word YLEFT
+	.word YRIGHT
+	.word YDOWN
+	.word 0
+A:
+	.word A_IMG
+	.half 11, 10, 0, 0
+B:
+	.word B_IMG
+	.half 11, 10, 0, 0
+L:
+	.word L_IMG
+	.half 11, 10, 0, 0
+R:
+	.word R_IMG
+	.half 11, 10, 0, 0
+YUP:
+	.word YUP_IMG
+	.half 11, 10, 0, 0
+YLEFT:
+	.word YLEFT_IMG
+	.half 11, 10, 0, 0
+YRIGHT:
+	.word YRIGHT_IMG
+	.half 11, 10, 0, 0
+YDOWN:
+	.word YDOWN_IMG
+	.half 11, 10, 0, 0

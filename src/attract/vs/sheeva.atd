@@ -1,0 +1,141 @@
+sheeva_list:
+	.word VSHFLESH1A
+	.word VSHFLESH1B
+	.word VSHFLESH1C
+	.word VSHFLESH1D
+	.word VSHFLESH1E
+	.word VSHFLESH1F
+	.word VSHFLESH1G
+	.word VSHFLESH1H
+	.word VSHFLESH1I
+	.word VSHGREY1A
+	.word VSHGREY1B
+	.word VSHGREY1C
+	.word VSHGREY1D
+	.word VSHGREY1E
+	.word VSHGREY1F
+	.word VSHGREY1G
+	.word VSHRED1A
+	.word VSHRED1B
+	.word VSHRED1C
+	.word VSHRED1D
+VSHFLESH1A:
+	.word SHFLESH1A
+	.word 0
+VSHFLESH1B:
+	.word SHFLESH1B
+	.word 0
+VSHFLESH1C:
+	.word SHFLESH1C
+	.word 0
+VSHFLESH1D:
+	.word SHFLESH1D
+	.word 0
+VSHFLESH1E:
+	.word SHFLESH1E
+	.word 0
+VSHFLESH1F:
+	.word SHFLESH1F
+	.word 0
+VSHFLESH1G:
+	.word SHFLESH1G
+	.word 0
+VSHFLESH1H:
+	.word SHFLESH1H
+	.word 0
+VSHFLESH1I:
+	.word SHFLESH1I
+	.word 0
+VSHGREY1A:
+	.word SHGREY1A
+	.word 0
+VSHGREY1B:
+	.word SHGREY1B
+	.word 0
+VSHGREY1C:
+	.word SHGREY1C
+	.word 0
+VSHGREY1D:
+	.word SHGREY1D
+	.word 0
+VSHGREY1E:
+	.word SHGREY1E
+	.word 0
+VSHGREY1F:
+	.word SHGREY1F
+	.word 0
+VSHGREY1G:
+	.word SHGREY1G
+	.word 0
+VSHRED1A:
+	.word SHRED1A
+	.word 0
+VSHRED1B:
+	.word SHRED1B
+	.word 0
+VSHRED1C:
+	.word SHRED1C
+	.word 0
+VSHRED1D:
+	.word SHRED1D
+	.word 0
+SHFLESH1A:
+	.word SHFLESH1A_IMG
+	.half 37, 19, 64, -8
+SHFLESH1B:
+	.word SHFLESH1B_IMG
+	.half 60, 31, 82, -64
+SHFLESH1C:
+	.word SHFLESH1C_IMG
+        .half 27, 17, 21, -156
+SHFLESH1D:
+	.word SHFLESH1D_IMG
+	.half 61, 28, -55, -93
+SHFLESH1E:
+	.word SHFLESH1E_IMG
+	.half 64, 56, 51, -15
+SHFLESH1F:
+	.word SHFLESH1F_IMG
+	.half 104, 61, 71, -79
+SHFLESH1G:
+	.word SHFLESH1G_IMG
+        .half 64, 15, 11, -81
+SHFLESH1H:
+	.word SHFLESH1H_IMG
+	.half 84, 24, -39, -94
+SHFLESH1I:
+	.word SHFLESH1I_IMG
+	.half 156, 45, -4, -17
+SHGREY1A:
+	.word SHGREY1A_IMG
+	.half 20, 18, 54, -10
+SHGREY1B:
+	.word SHGREY1B_IMG
+	.half 20, 21, 82, -72
+SHGREY1C:
+	.word SHGREY1C_IMG
+        .half 14, 10, 36, -59
+SHGREY1D:
+	.word SHGREY1D_IMG
+	.half 53, 54, 11, -2
+SHGREY1E:
+	.word SHGREY1E_IMG
+        .half 27, 14, -68, -120
+SHGREY1F:
+	.word SHGREY1F_IMG
+	.half 17, 18, -31, -161
+SHGREY1G:
+	.word SHGREY1G_IMG
+	.half 23, 38, 48, -134
+SHRED1A:
+	.word SHRED1A_IMG
+        .half 32, 18, 32, -151
+SHRED1B:
+	.word SHRED1B_IMG
+        .half 61, 26, -6, -76
+SHRED1C:
+	.word SHRED1C_IMG
+	.half 21, 22, 16, -135
+SHRED1D:
+	.word SHRED1D_IMG
+	.half 94, 44, 30, -52

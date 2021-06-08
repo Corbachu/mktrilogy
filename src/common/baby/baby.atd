@@ -1,0 +1,34 @@
+a_baby_text:
+	.word BABALITY1
+	.word BABALITY2
+	.word BABALITY3
+	.word BABALITY4
+	.word BABALITY5
+	.word BABALITY6
+	.word BABALITY7
+	.word BABALITY8
+	.word 0
+BABALITY1:
+	.word BABALITY1_IMG
+	.half 29, 33, 0, 0
+BABALITY2:
+	.word BABALITY2_IMG
+	.half 29, 31, 0, 0
+BABALITY3:
+	.word BABALITY3_IMG
+	.half 29, 29, 0, 0
+BABALITY4:
+	.word BABALITY4_IMG
+	.half 29, 27, 0, 0
+BABALITY5:
+	.word BABALITY5_IMG
+	.half 29, 28, 0, 0
+BABALITY6:
+	.word BABALITY6_IMG
+	.half 30, 30, 0, 0
+BABALITY7:
+	.word BABALITY7_IMG
+	.half 29, 32, 0, 0
+BABALITY8:
+	.word BABALITY8_IMG
+	.half 29, 34, 0, 0

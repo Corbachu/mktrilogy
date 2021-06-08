@@ -1,0 +1,5 @@
+	.align 2
+	.globl REDPAL_PAL
+REDPAL_PAL:
+	.word 2
+	.half 0x07C0, 0xC801

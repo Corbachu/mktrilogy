@@ -1,0 +1,25 @@
+	.align 2
+	.globl optmodBMOD
+optmodBMOD:
+	.half   329,   246
+	.word     4, optmod_BLK, opttext_HDR, opttext_CLT
+
+	.align 2
+	.globl optmod_BLK
+optmod_BLK:
+	.half     5,     4,    64, 0x0000,     0
+	.half     5,   124,    64, 0x0000,     1
+	.half   165,     4,    64, 0x0000,     2
+	.half   165,   124,    64, 0x0000,     3
+
+	.align 2
+	.globl opttext_HDR
+opttext_HDR:
+	.half   160,   120
+	.word 76800
+	.half   160,   119
+	.word 96000
+	.half   160,   120
+	.word 115040
+	.half   160,   119
+	.word 134240

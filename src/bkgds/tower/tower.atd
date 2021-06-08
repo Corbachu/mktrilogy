@@ -1,0 +1,20 @@
+sktower_anims:
+	.word a_clouds
+a_clouds:
+	.word cloud1a
+	.word cloud1b
+	.word cloud1c
+	.word cloud1d
+	.word 0
+cloud1a:
+	.word cloud1a_IMG
+	.half 69, 84, 0, 0
+cloud1b:
+	.word cloud1b_IMG
+	.half 78, 52, 0, 0
+cloud1c:
+	.word cloud1c_IMG
+	.half 78, 52, 0, 0
+cloud1d:
+	.word cloud1d_IMG
+	.half 69, 84, 0, 0

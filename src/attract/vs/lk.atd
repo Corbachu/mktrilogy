@@ -1,0 +1,92 @@
+lk_list:
+	.word VLKFLESH1A
+	.word VLKFLESH1B
+	.word VLKFLESH1C
+	.word VLKFLESH1D
+	.word VLKFLESH1E
+	.word VLKGREY1A
+	.word VLKGREY1B
+	.word VLKGREY1C
+	.word VLKGREY1D
+	.word VLKGREY1E
+	.word VLKRED1A
+	.word VLKRED1B
+	.word VLKRED1C
+VLKFLESH1A:
+	.word LKFLESH1A
+	.word 0
+VLKFLESH1B:
+	.word LKFLESH1B
+	.word 0
+VLKFLESH1C:
+	.word LKFLESH1C
+	.word 0
+VLKFLESH1D:
+	.word LKFLESH1D
+	.word 0
+VLKFLESH1E:
+	.word LKFLESH1E
+	.word 0
+VLKGREY1A:
+	.word LKGREY1A
+	.word 0
+VLKGREY1B:
+	.word LKGREY1B
+	.word 0
+VLKGREY1C:
+	.word LKGREY1C
+	.word 0
+VLKGREY1D:
+	.word LKGREY1D
+	.word 0
+VLKGREY1E:
+	.word LKGREY1E
+	.word 0
+VLKRED1A:
+	.word LKRED1A
+	.word 0
+VLKRED1B:
+	.word LKRED1B
+	.word 0
+VLKRED1C:
+	.word LKRED1C
+	.word 0
+LKFLESH1A:
+	.word LKFLESH1A_IMG
+	.half 73, 28, 73, -66
+LKFLESH1B:
+	.word LKFLESH1B_IMG
+	.half 98, 35, 45, -57
+LKFLESH1C:
+	.word LKFLESH1C_IMG
+	.half 26, 15, -65, -79
+LKFLESH1D:
+	.word LKFLESH1D_IMG
+	.half 78, 38, -28, -76
+LKFLESH1E:
+	.word LKFLESH1E_IMG
+	.half 124, 38, 10, -28
+LKGREY1A:
+	.word LKGREY1A_IMG
+	.half 80, 28, 18, 0
+LKGREY1B:
+	.word LKGREY1B_IMG
+        .half 67, 18, -10, 0
+LKGREY1C:
+	.word LKGREY1C_IMG
+	.half 36, 22, -54, -98
+LKGREY1D:
+	.word LKGREY1D_IMG
+	.half 48, 51, 56, -121
+LKGREY1E:
+	.word LKGREY1E_IMG
+        .half 18, 11, 5, -151
+LKRED1A:
+	.word LKRED1A_IMG
+	.half 56, 53, 24, -19
+LKRED1B:
+	.word LKRED1B_IMG
+        .half 27, 17, 58, -142
+LKRED1C:
+	.word LKRED1C_IMG
+        .half 23, 51, 39, -146

@@ -1,0 +1,53 @@
+	.align 2
+	.globl bgmodBMOD
+bgmodBMOD:
+	.half   328,   199
+	.word     6, bgmod_BLK, nuselchi_HDR, nuselchi_CLT
+
+	.align 2
+	.globl bgmod_BLK
+bgmod_BLK:
+	.half     4,     3,    64, 0x0000,     0
+	.half     4,     5,    64, 0x0200,     1
+	.half     4,    87,    64, 0x0100,     2
+	.half   164,     3,    64, 0x0000,     4
+	.half   164,     5,    64, 0x0200,     5
+	.half   164,    87,    64, 0x0110,     2
+
+	.align 2
+	.globl diaz1modBMOD
+diaz1modBMOD:
+	.half   106,    69
+	.word     1, diaz1mod_BLK, nuselchi_HDR, nuselchi_CLT
+
+	.align 2
+	.globl diaz1mod_BLK
+diaz1mod_BLK:
+	.half     6,     5,    64, 0x0300,     3
+
+	.align 2
+	.globl diaz2modBMOD
+diaz2modBMOD:
+	.half   105,    67
+	.word     1, diaz2mod_BLK, nuselchi_HDR, nuselchi_CLT
+
+	.align 2
+	.globl diaz2mod_BLK
+diaz2mod_BLK:
+	.half     7,     4,    64, 0x0310,     3
+
+	.align 2
+	.globl nuselchi_HDR
+nuselchi_HDR:
+	.half   160,    64
+	.word 78720
+	.half   160,    86
+	.word 88960
+	.half   160,   108
+	.word 102720
+	.half    92,    59
+	.word 120000
+	.half   160,    64
+	.word 125432
+	.half   160,    86
+	.word 135672

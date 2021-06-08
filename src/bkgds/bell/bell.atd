@@ -1,0 +1,29 @@
+bell_anims:
+	.word a_bellhole1a
+	.word a_bellhole1b
+	.word a_bellhole2
+	.word a_bellspike
+a_bellhole2:
+	.word BELLHOLE2
+	.word 0
+a_bellhole1b:
+	.word BELLHOLE1B
+	.word 0
+a_bellhole1a:
+	.word BELLHOLE1A
+	.word 0
+a_bellspike:
+	.word EJBSPIKE
+	.word 0
+BELLHOLE1A:
+	.word BELLHOLE1A_IMG
+	.half 68, 86, 0, 0
+BELLHOLE1B:
+	.word BELLHOLE1B_IMG
+	.half 68, 83, 0, 0
+BELLHOLE2:
+	.word BELLHOLE2_IMG
+	.half 47, 75, 0, 0
+EJBSPIKE:
+	.word EJBSPIKE_IMG
+	.half 118, 14, 0, 0

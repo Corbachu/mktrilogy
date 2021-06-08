@@ -1,0 +1,59 @@
+top_anims:
+	.word a_top
+	.word a_topout
+a_top:
+	.word TOP1
+	.word TOP2
+	.word TOP3
+	.word TOP4
+	.word TOP5
+	.word TOP6
+	.word 0
+a_topout:
+	.word TOPOUT1
+	.word TOPOUT2
+	.word TOPOUT3
+	.word TOPOUT4
+	.word TOPOUT5
+	.word TOPOUT6
+	.word TOPOUT7
+	.word 0
+TOP1:
+	.word TOP1_IMG
+	.half 110, 56, 28, 0
+TOP2:
+	.word TOP2_IMG
+	.half 110, 57, 28, 0
+TOP3:
+	.word TOP3_IMG
+	.half 110, 56, 29, 0
+TOP4:
+	.word TOP4_IMG
+	.half 110, 56, 29, 0
+TOP5:
+	.word TOP5_IMG
+	.half 110, 56, 29, 0
+TOP6:
+	.word TOP6_IMG
+	.half 110, 55, 28, 0
+TOPOUT1:
+	.word TOPOUT1_IMG
+	.half 104, 54, 29, -8
+TOPOUT2:
+	.word TOPOUT2_IMG
+	.half 86, 55, 29, -25
+TOPOUT3:
+	.word TOPOUT3_IMG
+	.half 76, 54, 28, -36
+TOPOUT4:
+	.word TOPOUT4_IMG
+	.half 65, 56, 30, -46
+TOPOUT5:
+	.word TOPOUT5_IMG
+	.half 54, 56, 31, -59
+TOPOUT6:
+	.word TOPOUT6_IMG
+	.half 48, 51, 29, -71
+TOPOUT7:
+	.word TOPOUT7_IMG
+	.half 17, 47, 26, -101

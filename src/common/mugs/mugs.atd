@@ -1,0 +1,132 @@
+mugs_anims:
+	.word ochar_order_mugs
+ochar_order_mugs:
+	.word HDKANO
+	.word HDBARAKA
+	.word HDRAYDEN
+	.word HDRAIN
+	.word HDNOOB
+	.word HDSONYA
+	.word HDJAX
+	.word HDINDIAN
+	.word HDSUBZERO
+	.word HDSWAT
+	.word HDBRIDE
+	.word HDKETCHUP
+	.word HDMUSTARD
+	.word HDLAO
+	.word HDTUSKAN
+	.word HDSHEGORO
+	.word HDSHANG
+	.word HDLIUKANG
+	.word HDSMOKE
+	.word HDKITANA
+	.word HDJADE
+	.word HDMILEENA
+	.word HDSCORPION
+	.word HDREPTILE
+	.word HDERMAC
+	.word HDCLASSUB
+	.word QUESTION
+	.word HDMOTARO
+	.word HDSHAO
+	.word ENDUR_RED
+	.word NCURSOR
+	.word BOX_01
+	.word 0
+HDKANO:
+	.word HDKANO_IMG
+	.half 50, 38, 0, 0
+HDBARAKA:
+	.word HDBARAKA_IMG
+	.half 50, 38, 0, 0
+HDRAYDEN:
+	.word HDRAYDEN_IMG
+	.half 50, 38, 0, 0
+HDRAIN:
+	.word HDRAIN_IMG
+	.half 50, 38, 0, 0
+HDNOOB:
+	.word HDNOOB_IMG
+	.half 50, 38, 0, 0
+HDSONYA:
+	.word HDSONYA_IMG
+	.half 50, 38, 0, 0
+HDJAX:
+	.word HDJAX_IMG
+	.half 50, 38, 0, 0
+HDINDIAN:
+	.word HDINDIAN_IMG
+	.half 50, 38, 0, 0
+HDSUBZERO:
+	.word HDSUBZERO_IMG
+	.half 50, 38, 0, 0
+HDSWAT:
+	.word HDSWAT_IMG
+	.half 50, 38, 0, 0
+HDBRIDE:
+	.word HDBRIDE_IMG
+	.half 50, 38, 0, 0
+HDKETCHUP:
+	.word HDKETCHUP_IMG
+	.half 50, 38, 0, 0
+HDMUSTARD:
+	.word HDMUSTARD_IMG
+	.half 50, 38, 0, 0
+HDLAO:
+	.word HDLAO_IMG
+	.half 50, 38, 0, 0
+HDTUSKAN:
+	.word HDTUSKAN_IMG
+	.half 50, 38, 0, 0
+HDSHEGORO:
+	.word HDSHEGORO_IMG
+	.half 50, 38, 0, 0
+HDSHANG:
+	.word HDSHANG_IMG
+	.half 50, 38, 0, 0
+HDLIUKANG:
+	.word HDLIUKANG_IMG
+	.half 50, 38, 0, 0
+HDSMOKE:
+	.word HDSMOKE_IMG
+	.half 50, 38, 0, 0
+HDKITANA:
+	.word HDKITANA_IMG
+	.half 50, 38, 0, 0
+HDJADE:
+	.word HDJADE_IMG
+	.half 50, 38, 0, 0
+HDMILEENA:
+	.word HDMILEENA_IMG
+	.half 50, 38, 0, 0
+HDSCORPION:
+	.word HDSCORPION_IMG
+	.half 50, 38, 0, 0
+HDREPTILE:
+	.word HDREPTILE_IMG
+	.half 50, 38, 0, 0
+HDERMAC:
+	.word HDERMAC_IMG
+	.half 50, 38, 0, 0
+HDCLASSUB:
+	.word HDCLASSUB_IMG
+	.half 50, 38, 0, 0
+QUESTION:
+	.word QUESTION_IMG
+	.half 50, 38, 0, 0
+HDMOTARO:
+	.word HDMOTARO_IMG
+	.half 50, 38, 0, 0
+HDSHAO:
+	.word HDSHAO_IMG
+	.half 50, 38, 0, 0
+ENDUR_RED:
+	.word ENDUR_RED_IMG
+	.half 50, 38, 0, 0
+NCURSOR:
+	.word NCURSOR_IMG
+	.half 42, 31, 0, 0
+BOX_01:
+	.word BOX_01_IMG
+	.half 50, 38, 0, 0

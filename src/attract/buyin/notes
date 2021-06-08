@@ -1,0 +1,56 @@
+ATTRACT:
+Coin Mode Screen
+coin_mode_dict-->coin_cursor
+
+Options Screen
+options_dict-->lot of stuff
+
+Select VS Ladder Screens
+*needs one dictionary select_dct
+symbol_dict	-> briefcase stuff
+sdragon_dict -> spinning dragon
+mugs -> none
+vs_dict -> vs_screen dictionary
+
+COMMONS:
+fonts:------> need one dict
+animal_dict:
+baby_dict:
+fatal_dict:
+fight_dict:
+finher_dict:
+finhim_dict:
+friend_dict:
+mercy_dict:
+exlode_dict:
+blood_dict:
+rock_dict:
+control_dict:
+monk_dict:
+storm_dict:
+trash_dict:
+
+BKGDS:
+arena_dict:		<-- correct boss palette
+tomb_dict:
+armory_dict:
+bell_dict:
+cave_dict:
+city_dict:
+dead_dict:
+desert_dict:
+			grave_ need one dict
+hport_dict:
+lost_dict:
+monks_dict:
+			pit need one dict
+sub_dict
+soul_dict
+temple_dict
+tower_dict
+tree_dict
+water_dict
+			
+			
+
+
