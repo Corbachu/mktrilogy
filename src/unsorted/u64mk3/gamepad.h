@@ -21,31 +21,31 @@
 // Public definitions:
 
 struct gamepad {
-	uint32_t	b;	// button bits. See BUTTON_* for details
+	u32		b;			// button bits. See BUTTON_* for details
 
-	float		x;	// 0.0=left, 1.0=right
-	float		y;	// 0.0=down, 1.0=up
-	float		xraw;	// same as x, but without deadzone
-	float		yraw;	// same as y, but without deadzone
+	float	x;			// 0.0=left, 1.0=right
+	float	y;			// 0.0=down, 1.0=up
+	float	xraw;		// same as x, but without deadzone
+	float	yraw;		// same as y, but without deadzone
 };
 
 
-#define BUTTON_START	GLFW_GAMEPAD_BUTTON_START
-#define BUTTON_UP	GLFW_GAMEPAD_BUTTON_DPAD_UP
-#define BUTTON_DOWN	GLFW_GAMEPAD_BUTTON_DPAD_DOWN
-#define BUTTON_LEFT	GLFW_GAMEPAD_BUTTON_DPAD_LEFT
-#define BUTTON_RIGHT	GLFW_GAMEPAD_BUTTON_DPAD_RIGHT
-#define BUTTON_L	GLFW_GAMEPAD_BUTTON_LEFT_BUMPER
-#define BUTTON_R	GLFW_GAMEPAD_BUTTON_RIGHT_BUMPER
-#define BUTTON_A	GLFW_GAMEPAD_BUTTON_A
-#define BUTTON_B	GLFW_GAMEPAD_BUTTON_B
-#define BUTTON_C	GLFW_GAMEPAD_BUTTON_X
-#define BUTTON_D	GLFW_GAMEPAD_BUTTON_Y
-#define BUTTON_E	GLFW_GAMEPAD_BUTTON_LEFT_THUMB
-#define BUTTON_F	GLFW_GAMEPAD_BUTTON_RIGHT_THUMB
-#define BUTTON_BOTTOM	GLFW_GAMEPAD_BUTTON_BACK
+#define BUTTON_START	CONT_START
+#define BUTTON_UP		CONT_UP
+#define BUTTON_DOWN		CONT_DOWN
+#define BUTTON_LEFT		CONT_LEFT
+#define BUTTON_RIGHT	CONT_RIGHT
+#define BUTTON_L		CONT_L
+#define BUTTON_R		CONT_R
+#define BUTTON_A		CONT_A
+#define BUTTON_B		CONT_B
+#define BUTTON_C		CONT_D
+#define BUTTON_D		CONT_C
+#define BUTTON_E		CONT_F
+#define BUTTON_F		CONT_E
+#define BUTTON_BOTTOM	CONT_G
 
-#define BUTTON_AUP	0x00010000		// analog "buttons":
+#define BUTTON_AUP		0x00010000		// analog "buttons":
 #define BUTTON_ADOWN	0x00020000
 #define BUTTON_ALEFT	0x00040000
 #define BUTTON_ARIGHT	0x00080000
@@ -57,13 +57,13 @@ struct gamepad {
 
 #define BUTTON_SELECT	(BUTTON_START|BUTTON_BOTTOM)
 #define BUTTON_ABCDEF	(BUTTON_A|BUTTON_B|BUTTON_C|BUTTON_D|BUTTON_E|BUTTON_F)
-#define BUTTON_DIR	(BUTTON_UP|BUTTON_DOWN|BUTTON_RIGHT|BUTTON_LEFT)
-#define BUTTON_ADIR	(BUTTON_AUP|BUTTON_ADOWN|BUTTON_ARIGHT|BUTTON_ALEFT)
-#define BUTTON_XDIR	(BUTTON_DIR|BUTTON_ADIR)
-#define BUTTON_LR	(BUTTON_L|BUTTON_R)
+#define BUTTON_DIR		(BUTTON_UP|BUTTON_DOWN|BUTTON_RIGHT|BUTTON_LEFT)
+#define BUTTON_ADIR		(BUTTON_AUP|BUTTON_ADOWN|BUTTON_ARIGHT|BUTTON_ALEFT)
+#define BUTTON_XDIR		(BUTTON_DIR|BUTTON_ADIR)
+#define BUTTON_LR		(BUTTON_L|BUTTON_R)
 #define BUTTON_OPTIONS	(BUTTON_ABCDEF|BUTTON_LR)
-#define BUTTON_ALL	(BUTTON_ABCDEF|BUTTON_DIR|BUTTON_ADIR|BUTTON_LR|BUTTON_BOTTOM|BUTTON_START)
-#define BUTTON_XUP	(BUTTON_UP|BUTTON_AUP)
+#define BUTTON_ALL		(BUTTON_ABCDEF|BUTTON_DIR|BUTTON_ADIR|BUTTON_LR|BUTTON_BOTTOM|BUTTON_START)
+#define BUTTON_XUP		(BUTTON_UP|BUTTON_AUP)
 #define BUTTON_XDOWN	(BUTTON_DOWN|BUTTON_ADOWN)
 #define BUTTON_XLEFT	(BUTTON_LEFT|BUTTON_ALEFT)
 #define BUTTON_XRIGHT	(BUTTON_RIGHT|BUTTON_ARIGHT)
@@ -78,7 +78,7 @@ struct gamepad {
 #define REPEAT_MAP_COUNT	4
 
 
-#define FRAME_DIVISOR		2		// (1=30fps,2=60fps)
+#define FRAME_DIVISOR	2			// (1=30fps,2=60fps)
 
 #define GAMEPAD_GREEN_THRESHOLD_US		(4000/FRAME_DIVISOR)
 #define GAMEPAD_GREEN_SLACK_US			(2000/FRAME_DIVISOR)
@@ -99,28 +99,28 @@ struct gamepad {
 //========================================================================================
 // Public variables:
 
-extern OSThread 	gamepad_thread;
-extern uint64_t 	gamepad_stack[ SYS_GAMEPAD_STACKSIZE/8 ];
-extern OSThread 	gamepad_timer_thread;
-extern uint64_t 	gamepad_timer_stack[ SYS_GTIMER_STACKSIZE/8 ];
+extern OSThread gamepad_thread;
+extern u64 gamepad_stack[ SYS_GAMEPAD_STACKSIZE/8 ];
+extern OSThread gamepad_timer_thread;
+extern u64 gamepad_timer_stack[ SYS_GTIMER_STACKSIZE/8 ];
 
-extern OSContStatus	gamepad_status[ MAXCONTROLLERS ];
-extern OSContPad	gamepad_data[ MAXCONTROLLERS ];
-extern uint64_t		gamepad_bit_pattern;	// one bit for each controller
-extern int		gamepad_count;		// number of game controllers
-extern int		gamepad_index[ SYS_NUM_GAMEPADS ];
-extern int		gamepad_system_busy;
-extern float		gamepad_deadzone[ SYS_NUM_GAMEPADS ];
-extern float		gamepad_center[ SYS_NUM_GAMEPADS ][2];	// 2 is for x/y: 0=x, 1=y
+extern OSContStatus		gamepad_status[ MAXCONTROLLERS ];
+extern OSContPad		gamepad_data[ MAXCONTROLLERS ];
+extern u8				gamepad_bit_pattern;	// one bit for each controller
+extern int				gamepad_count;			// number of game controllers
+extern int				gamepad_index[ SYS_NUM_GAMEPADS ];
+extern int				gamepad_system_busy;
+extern float			gamepad_deadzone[ SYS_NUM_GAMEPADS ];
+extern float			gamepad_center[ SYS_NUM_GAMEPADS ][2];	// 2 is for x/y: 0=x, 1=y
 
-extern int		gamepad_rescan_count;
+extern int				gamepad_rescan_count;
 
 extern struct gamepad	pad[ SYS_NUM_GAMEPADS + TOOL_ENABLED ];
 
-extern OSTimer		gamepad_timer[2];
-extern OSTime		gamepad_vbi_to_start_delay;
-extern OSTime		gamepad_vbi_red_start_time;
-extern OSTime		gamepad_vbi_green_start_time;
+extern OSTimer	gamepad_timer[2];
+extern OSTime	gamepad_vbi_to_start_delay;
+extern OSTime	gamepad_vbi_red_start_time;
+extern OSTime	gamepad_vbi_green_start_time;
 
 
 //========================================================================================

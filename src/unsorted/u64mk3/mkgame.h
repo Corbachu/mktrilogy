@@ -697,69 +697,69 @@
  *	MORTAL KOMBAT GAME SPECIFIC RAM
  */
 
-__EXTERN__ int16_t credits;					// # of credits in game
-__EXTERN__ uint16_t f_freeplay;				// set if game is in freeplay
-__EXTERN__ uint16_t f_silotte;
+__EXTERN__ WORD credits;					// # of credits in game
+__EXTERN__ WORD f_freeplay;				// set if game is in freeplay
+__EXTERN__ WORD f_silotte;
 
-__EXTERN__ uint16_t f_special_match;		// (need for q_mercy_req rev1.2)
+__EXTERN__ WORD f_special_match;		// (need for q_mercy_req rev1.2)
 
-__EXTERN__ uint16_t	gstate;					/* game state variable */
-__EXTERN__ uint16_t	switch_escape;
+__EXTERN__ WORD	gstate;					/* game state variable */
+__EXTERN__ WORD	switch_escape;
 
-__EXTERN__ uint16_t coinflag;				/* on coin page, yet */
-__EXTERN__ uint16_t on_hstd;				/* on high score apge on not */
+__EXTERN__ WORD coinflag;				/* on coin page, yet */
+__EXTERN__ WORD on_hstd;				/* on high score apge on not */
 
-__EXTERN__ uint16_t b0;						// emul reg b0
-__EXTERN__ uint16_t b1;						// emul reg b1
+__EXTERN__ WORD b0;						// emul reg b0
+__EXTERN__ WORD b1;						// emul reg b1
 
 /* PLAYER 1 RAM */
-__EXTERN__ uint16_t p3_char;
-__EXTERN__ uint16_t p4_char;
-__EXTERN__ uint16_t p5_char;
-__EXTERN__ uint16_t p6_char;
+__EXTERN__ WORD p3_char;
+__EXTERN__ WORD p4_char;
+__EXTERN__ WORD p5_char;
+__EXTERN__ WORD p6_char;
 
-__EXTERN__ uint16_t	p1_state;				/* player 1 state */
-__EXTERN__ uint16_t p1_heap_char;			/* char # associated with heap */
-__EXTERN__ uint16_t p1_boss_char;			/* origan char before boss activation */
+__EXTERN__ WORD	p1_state;				/* player 1 state */
+__EXTERN__ WORD p1_heap_char;			/* char # associated with heap */
+__EXTERN__ WORD p1_boss_char;			/* origan char before boss activation */
 __EXTERN__ ADDRESS p1_shape;
 __EXTERN__ OBJECT *p1_obj;				/* player 1 object */
-__EXTERN__ uint16_t *p1_button;				/* player 1 button table ptr */
+__EXTERN__ WORD *p1_button;				/* player 1 button table ptr */
 __EXTERN__ PROCESS *p1_proc;			/* player 1 process */
-__EXTERN__ uint16_t p1_char;
-__EXTERN__ uint16_t p1_name_char;
+__EXTERN__ WORD p1_char;
+__EXTERN__ WORD p1_name_char;
 __EXTERN__ POS p1_xvel;				/* player 1 requested xvel */
-__EXTERN__ uint16_t p1_bar;					/* player 1 strength bar */
-__EXTERN__ uint16_t p1_turbo;				/* player 1 turbo bar */
-__EXTERN__ uint16_t p1_perfect;
-__EXTERN__ uint16_t p1_matchw;				/* player 1 wins this match */
+__EXTERN__ WORD p1_bar;					/* player 1 strength bar */
+__EXTERN__ WORD p1_turbo;				/* player 1 turbo bar */
+__EXTERN__ WORD p1_perfect;
+__EXTERN__ WORD p1_matchw;				/* player 1 wins this match */
 __EXTERN__ POS	p1_map;					/* player 1 map position */
-__EXTERN__ uint32_t p1_bcq[SQS+1];			/* player 1 button close queue */
-__EXTERN__ uint32_t p1_jcq[SQS+1];			/* player 1 joystick close queue */
-__EXTERN__ uint32_t p1_boq[SQS+1];			/* player 1 button open queue */
-__EXTERN__ uint32_t p1_joq[SQS+1];			/* player 1 joystick open queue */
-__EXTERN__ uint16_t p1_dont_raise;
+__EXTERN__ LONG p1_bcq[SQS+1];			/* player 1 button close queue */
+__EXTERN__ LONG p1_jcq[SQS+1];			/* player 1 joystick close queue */
+__EXTERN__ LONG p1_boq[SQS+1];			/* player 1 button open queue */
+__EXTERN__ LONG p1_joq[SQS+1];			/* player 1 joystick open queue */
+__EXTERN__ WORD p1_dont_raise;
 
 /* PLAYER 2 RAM */
-__EXTERN__ uint16_t	p2_state;				/* player 2 state */
-__EXTERN__ uint16_t p2_heap_char;			/* char # associated with heap */
-__EXTERN__ uint16_t p2_boss_char;			/* origan char before boss activation */
+__EXTERN__ WORD	p2_state;				/* player 2 state */
+__EXTERN__ WORD p2_heap_char;			/* char # associated with heap */
+__EXTERN__ WORD p2_boss_char;			/* origan char before boss activation */
 __EXTERN__ ADDRESS p2_shape;
 __EXTERN__ OBJECT *p2_obj;				/* player 2 object */
-__EXTERN__ uint16_t *p2_button;			/* player 2 button table ptr */
+__EXTERN__ WORD *p2_button;			/* player 2 button table ptr */
 __EXTERN__ PROCESS *p2_proc;			/* player 2 process */
-__EXTERN__ uint16_t p2_char;
-__EXTERN__ uint16_t p2_name_char;
+__EXTERN__ WORD p2_char;
+__EXTERN__ WORD p2_name_char;
 __EXTERN__ POS p2_xvel;				/* player 2 requested xvel */
-__EXTERN__ uint16_t p2_bar;					/* player 2 strength bar */
-__EXTERN__ uint16_t p2_turbo;			/* player 2 turbo bar */
-__EXTERN__ uint16_t p2_perfect;
-__EXTERN__ uint16_t p2_matchw;				/* player 2 wins this match */
+__EXTERN__ WORD p2_bar;					/* player 2 strength bar */
+__EXTERN__ WORD p2_turbo;			/* player 2 turbo bar */
+__EXTERN__ WORD p2_perfect;
+__EXTERN__ WORD p2_matchw;				/* player 2 wins this match */
 __EXTERN__ POS	p2_map;					/* player 2 map position */
-__EXTERN__ uint32_t p2_bcq[SQS+1];			/* player 2 button close queue */
-__EXTERN__ uint32_t p2_jcq[SQS+1];			/* player 2 joystick close queue */
-__EXTERN__ uint32_t p2_boq[SQS+1];			/* player 2 button open queue */
-__EXTERN__ uint32_t p2_joq[SQS+1];			/* player 2 joystick open queue */
-__EXTERN__ uint16_t p2_dont_raise;
+__EXTERN__ LONG p2_bcq[SQS+1];			/* player 2 button close queue */
+__EXTERN__ LONG p2_jcq[SQS+1];			/* player 2 joystick close queue */
+__EXTERN__ LONG p2_boq[SQS+1];			/* player 2 button open queue */
+__EXTERN__ LONG p2_joq[SQS+1];			/* player 2 joystick open queue */
+__EXTERN__ WORD p2_dont_raise;
 
 /* GAME VARIABLES AND FLAGS */
 #define WINGS_P1_MASK		0x00ff
@@ -767,193 +767,193 @@ __EXTERN__ uint16_t p2_dont_raise;
 #define WINGS_P1_DEC		0x0001
 #define WINGS_P2_DEC		0x0100
 
-__EXTERN__ uint16_t  f_wait_for_wings;		// cant start till wings are outta here
-__EXTERN__ int16_t f_bloody_kombat;		// bloody kombat
-__EXTERN__ int16_t f_auto_combos;			// enable automatic combos
-__EXTERN__ int16_t f_p1_half_damage;		// p1 inflicts half damage
-__EXTERN__ int16_t f_p2_half_damage;		// p2 inflicts half damage
-__EXTERN__ int16_t f_no_special_moves;	// disable speical moves
-__EXTERN__ int16_t f_no_vs;							// disable vs screen coming up
-__EXTERN__ int16_t f_superjumps;			// allow long super jumps
-__EXTERN__ int16_t f_no_combos;			// disable combos
-__EXTERN__ int16_t f_no_clock;				// if set clock disabled
-__EXTERN__ int16_t f_one_win;				/* need only 1 one to move on */
-__EXTERN__ int16_t f_unlim_fatal;			/* infinite time to comit fatalities */
-__EXTERN__ int16_t f_level_select;		/* if set allow level select */
-__EXTERN__ int16_t f_cheat_menu;			/* allow cheat menu features */
-__EXTERN__ int16_t f_pause;				/* flag: TRUE: game paused */
-__EXTERN__ int16_t f_nosound;				/* TRUE, sound disabled */
-__EXTERN__ int16_t f_timeout;				/* flag: round timeout */
-__EXTERN__ int16_t f_doscore;				/* flag: display scores/bars/timer */
-__EXTERN__ int16_t f_doagress;			/* flag: display agressor stuff/agressor stuff active */
-__EXTERN__ int16_t f_death;				/* flag: death blow achieved */
-__EXTERN__ int16_t f_norepell;				/* flag: don't repell players */
-__EXTERN__ int16_t f_start;				/* flag: start fightin' */
-__EXTERN__ int16_t f_auto_erase;			/* flag: do auto erase */
-__EXTERN__ int16_t f_novel;				/* flag: no velocities */
-__EXTERN__ int16_t f_warnsound;			/* flag: warning sound has been made */
-__EXTERN__ int16_t f_nopmsg;				/* flag: dont print player message */
-__EXTERN__ int16_t f_start_pressed;		/* flag: a start button was pressed */
-__EXTERN__ int16_t f_hey;					/* jon hey yell int16_t */
-__EXTERN__ int16_t f_no_blood;				/* flag: no blood */
-__EXTERN__ int16_t f_fatal_demo;			/* flag to overide to blood */
-__EXTERN__ int16_t f_fade;					/* flag: background is faded */
-__EXTERN__ int16_t f_thatsall;				/* flag: thats all, round is over! */
-__EXTERN__ int16_t f_shadows;				/* flag: do shadows */
-__EXTERN__ int16_t f_show_ranking;			/* flag: show rankings */
-__EXTERN__ int16_t f_no_pan;				/* flag: panning on=0,off=1 */
-__EXTERN__ int16_t f_music;			/* flag: music silent=0, quiet=1 rockin=2 kranked=3 */
-__EXTERN__ int16_t f_music_vol;
-__EXTERN__ int16_t f_sfx_vol;
-__EXTERN__ int16_t f_kamel;
-__EXTERN__ int16_t f_oldsm;
-__EXTERN__ int16_t f_shao;
-__EXTERN__ int16_t f_opt_throws;
-__EXTERN__ int16_t f_opt_runs;
-__EXTERN__ int16_t f_opt_agress;
-__EXTERN__ int16_t f_opt_bloody;
-__EXTERN__ int16_t f_opt_combo1;			/* combos player 1 */
-__EXTERN__ int16_t f_opt_combo2;			/* combos player 2 */
+__EXTERN__ WORD  f_wait_for_wings;		// cant start till wings are outta here
+__EXTERN__ short f_bloody_kombat;		// bloody kombat
+__EXTERN__ short f_auto_combos;			// enable automatic combos
+__EXTERN__ short f_p1_half_damage;		// p1 inflicts half damage
+__EXTERN__ short f_p2_half_damage;		// p2 inflicts half damage
+__EXTERN__ short f_no_special_moves;	// disable speical moves
+__EXTERN__ short f_no_vs;							// disable vs screen coming up
+__EXTERN__ short f_superjumps;			// allow long super jumps
+__EXTERN__ short f_no_combos;			// disable combos
+__EXTERN__ short f_no_clock;				// if set clock disabled
+__EXTERN__ short f_one_win;				/* need only 1 one to move on */
+__EXTERN__ short f_unlim_fatal;			/* infinite time to comit fatalities */
+__EXTERN__ short f_level_select;		/* if set allow level select */
+__EXTERN__ short f_cheat_menu;			/* allow cheat menu features */
+__EXTERN__ short f_pause;				/* flag: TRUE: game paused */
+__EXTERN__ short f_nosound;				/* TRUE, sound disabled */
+__EXTERN__ short f_timeout;				/* flag: round timeout */
+__EXTERN__ short f_doscore;				/* flag: display scores/bars/timer */
+__EXTERN__ short f_doagress;			/* flag: display agressor stuff/agressor stuff active */
+__EXTERN__ short f_death;				/* flag: death blow achieved */
+__EXTERN__ short f_norepell;				/* flag: don't repell players */
+__EXTERN__ short f_start;				/* flag: start fightin' */
+__EXTERN__ short f_auto_erase;			/* flag: do auto erase */
+__EXTERN__ short f_novel;				/* flag: no velocities */
+__EXTERN__ short f_warnsound;			/* flag: warning sound has been made */
+__EXTERN__ short f_nopmsg;				/* flag: dont print player message */
+__EXTERN__ short f_start_pressed;		/* flag: a start button was pressed */
+__EXTERN__ short f_hey;					/* jon hey yell short */
+__EXTERN__ short f_no_blood;				/* flag: no blood */
+__EXTERN__ short f_fatal_demo;			/* flag to overide to blood */
+__EXTERN__ short f_fade;					/* flag: background is faded */
+__EXTERN__ short f_thatsall;				/* flag: thats all, round is over! */
+__EXTERN__ short f_shadows;				/* flag: do shadows */
+__EXTERN__ short f_show_ranking;			/* flag: show rankings */
+__EXTERN__ short f_no_pan;				/* flag: panning on=0,off=1 */
+__EXTERN__ short f_music;			/* flag: music silent=0, quiet=1 rockin=2 kranked=3 */
+__EXTERN__ short f_music_vol;
+__EXTERN__ short f_sfx_vol;
+__EXTERN__ short f_kamel;
+__EXTERN__ short f_oldsm;
+__EXTERN__ short f_shao;
+__EXTERN__ short f_opt_throws;
+__EXTERN__ short f_opt_runs;
+__EXTERN__ short f_opt_agress;
+__EXTERN__ short f_opt_bloody;
+__EXTERN__ short f_opt_combo1;			/* combos player 1 */
+__EXTERN__ short f_opt_combo2;			/* combos player 2 */
 
-__EXTERN__ int16_t f_no_sfx;				/* flag: sound effect on=0, off=1*/
-__EXTERN__ int16_t f_stereo;				/* flag: stereo=0, mono=1 */
+__EXTERN__ short f_no_sfx;				/* flag: sound effect on=0, off=1*/
+__EXTERN__ short f_stereo;				/* flag: stereo=0, mono=1 */
 
-__EXTERN__ uint16_t curback;				/* current background */
-__EXTERN__ int16_t cmos_diff;				/* current game difficulty */
-__EXTERN__ int16_t diff;				/* current game difficulty */
-__EXTERN__ int16_t perform;				/* human performance vs drone */
-__EXTERN__ uint16_t round_num;				/* round # */
-__EXTERN__ uint16_t winner_status;			/* 1=player,2=2, 3=finish him */
-__EXTERN__ uint16_t *map_start;				/* ptr to mountain map data to use */
-__EXTERN__ uint16_t map_position;			/* current position in mountain map */
-__EXTERN__ uint16_t battle_num;				/* current battle we are fighting */
-__EXTERN__ uint16_t p1_wiar;				/* player 1 wins in a row */
-__EXTERN__ uint16_t p2_wiar;				/* player 2 wins in a row */
-__EXTERN__ uint16_t p1_rwon;				/* player 1 total rounds won */
-__EXTERN__ uint16_t p2_rwon;				/* player 2 total rounds won */
-__EXTERN__ uint16_t p1_hitq[HQS];				/* player 1 hit queue */
-__EXTERN__ uint16_t p2_hitq[HQS];				/* player 2 hit queue */
-__EXTERN__ uint16_t silhoette;				/* matches sans silhoette */
+__EXTERN__ WORD curback;				/* current background */
+__EXTERN__ short cmos_diff;				/* current game difficulty */
+__EXTERN__ short diff;				/* current game difficulty */
+__EXTERN__ short perform;				/* human performance vs drone */
+__EXTERN__ WORD round_num;				/* round # */
+__EXTERN__ WORD winner_status;			/* 1=player,2=2, 3=finish him */
+__EXTERN__ WORD *map_start;				/* ptr to mountain map data to use */
+__EXTERN__ WORD map_position;			/* current position in mountain map */
+__EXTERN__ WORD battle_num;				/* current battle we are fighting */
+__EXTERN__ WORD p1_wiar;				/* player 1 wins in a row */
+__EXTERN__ WORD p2_wiar;				/* player 2 wins in a row */
+__EXTERN__ WORD p1_rwon;				/* player 1 total rounds won */
+__EXTERN__ WORD p2_rwon;				/* player 2 total rounds won */
+__EXTERN__ WORD p1_hitq[HQS];				/* player 1 hit queue */
+__EXTERN__ WORD p2_hitq[HQS];				/* player 2 hit queue */
+__EXTERN__ WORD silhoette;				/* matches sans silhoette */
 
-__EXTERN__ uint16_t c_three;				/* counter: threes */
-__EXTERN__ uint16_t c_drone_kill;			/* count: drone kill count down */
-__EXTERN__ uint16_t c_amodeloop;			/* counter: attact mode looper */
-__EXTERN__ uint16_t c_amode_bio;			/* counter: attract mode biography */
-__EXTERN__ uint16_t f_secret;
-__EXTERN__ uint16_t toasty_tick;			/* time toasty started */
+__EXTERN__ WORD c_three;				/* counter: threes */
+__EXTERN__ WORD c_drone_kill;			/* count: drone kill count down */
+__EXTERN__ WORD c_amodeloop;			/* counter: attact mode looper */
+__EXTERN__ WORD c_amode_bio;			/* counter: attract mode biography */
+__EXTERN__ WORD f_secret;
+__EXTERN__ WORD toasty_tick;			/* time toasty started */
 
 /*
 * time markers for special events
 */
-__EXTERN__ uint16_t	l_hp[2];					/* p1:p2 last high punch */
-__EXTERN__ uint16_t	l_lp[2];					/* p1:p2 last low punch */
-__EXTERN__ uint16_t	l_block[2];				/* p1:p2 block */
-__EXTERN__ uint16_t	l_hk[2];					/* p1:p2 high kick */
-__EXTERN__ uint16_t	l_lk[2];					/* p1:p2 low kick */
-__EXTERN__ uint16_t	l_up[2];					/* p1:p2 up */
-__EXTERN__ uint16_t	l_down[2];					/* p1:p2 down */
-__EXTERN__ uint16_t	l_left[2];					/* p1:p2 left */
-__EXTERN__ uint16_t	l_right[2];					/* p1:p2 right */
-__EXTERN__ uint16_t	l_run[2];					/* p1:p2 run */
-__EXTERN__ uint16_t	l_warp[2];					/* p1:p2 warp */
-__EXTERN__ uint16_t	l_spin[2];					/* p1:p2 warp */
+__EXTERN__ WORD	l_hp[2];					/* p1:p2 last high punch */
+__EXTERN__ WORD	l_lp[2];					/* p1:p2 last low punch */
+__EXTERN__ WORD	l_block[2];				/* p1:p2 block */
+__EXTERN__ WORD	l_hk[2];					/* p1:p2 high kick */
+__EXTERN__ WORD	l_lk[2];					/* p1:p2 low kick */
+__EXTERN__ WORD	l_up[2];					/* p1:p2 up */
+__EXTERN__ WORD	l_down[2];					/* p1:p2 down */
+__EXTERN__ WORD	l_left[2];					/* p1:p2 left */
+__EXTERN__ WORD	l_right[2];					/* p1:p2 right */
+__EXTERN__ WORD	l_run[2];					/* p1:p2 run */
+__EXTERN__ WORD	l_warp[2];					/* p1:p2 warp */
+__EXTERN__ WORD	l_spin[2];					/* p1:p2 warp */
 
 /* combo timers */
-__EXTERN__ uint16_t	c_hp[2];					/* p1:p2 last high punch */
-__EXTERN__ uint16_t	c_lp[2];					/* p1:p2 last low punch */
-__EXTERN__ uint16_t	c_block[2];				/* p1:p2 block */
-__EXTERN__ uint16_t	c_hk[2];					/* p1:p2 high kick */
-__EXTERN__ uint16_t	c_lk[2];					/* p1:p2 low kick */
-__EXTERN__ uint16_t	c_up[2];					/* p1:p2 up */
-__EXTERN__ uint16_t	c_down[2];					/* p1:p2 down */
-__EXTERN__ uint16_t	c_left[2];					/* p1:p2 left */
-__EXTERN__ uint16_t	c_right[2];					/* p1:p2 right */
-__EXTERN__ uint16_t	c_run[2];					/* p1:p2 run */
+__EXTERN__ WORD	c_hp[2];					/* p1:p2 last high punch */
+__EXTERN__ WORD	c_lp[2];					/* p1:p2 last low punch */
+__EXTERN__ WORD	c_block[2];				/* p1:p2 block */
+__EXTERN__ WORD	c_hk[2];					/* p1:p2 high kick */
+__EXTERN__ WORD	c_lk[2];					/* p1:p2 low kick */
+__EXTERN__ WORD	c_up[2];					/* p1:p2 up */
+__EXTERN__ WORD	c_down[2];					/* p1:p2 down */
+__EXTERN__ WORD	c_left[2];					/* p1:p2 left */
+__EXTERN__ WORD	c_right[2];					/* p1:p2 right */
+__EXTERN__ WORD	c_run[2];					/* p1:p2 run */
 
 
-__EXTERN__ uint16_t	c_p1p2_fastblk[2];		/* p1:p2 fast block counter */
+__EXTERN__ WORD	c_p1p2_fastblk[2];		/* p1:p2 fast block counter */
 
-__EXTERN__ uint16_t	c_kahn_dummy;			/* kahn dummy counter */
-__EXTERN__ uint16_t	c_goro_dummy;			/* goro dummy counter */
-__EXTERN__ uint16_t	c_sk_taunt;				/* sk taunt counter */
-__EXTERN__ uint16_t	f_final_act;			/* flag: death blow achieved */
-__EXTERN__ uint16_t c_1p_tries;				/* counter: 1 player tries */
+__EXTERN__ WORD	c_kahn_dummy;			/* kahn dummy counter */
+__EXTERN__ WORD	c_goro_dummy;			/* goro dummy counter */
+__EXTERN__ WORD	c_sk_taunt;				/* sk taunt counter */
+__EXTERN__ WORD	f_final_act;			/* flag: death blow achieved */
+__EXTERN__ WORD c_1p_tries;				/* counter: 1 player tries */
 
-__EXTERN__ int16_t df_fastrun;
-__EXTERN__ int16_t df_nopower;
-__EXTERN__ int16_t df_p1joy;
-__EXTERN__ int16_t df_p2joy;
-__EXTERN__ int16_t df_quiet;
-__EXTERN__ int16_t df_nodamage;
+__EXTERN__ short df_fastrun;
+__EXTERN__ short df_nopower;
+__EXTERN__ short df_p1joy;
+__EXTERN__ short df_p2joy;
+__EXTERN__ short df_quiet;
+__EXTERN__ short df_nodamage;
 
-__EXTERN__ uint16_t f_colbox;				/* flag: show collision boxes (DEBUGGING) */
+__EXTERN__ WORD f_colbox;				/* flag: show collision boxes (DEBUGGING) */
 
-__EXTERN__ uint16_t f_block;				/* flag: set if strike check detects a block */
+__EXTERN__ WORD f_block;				/* flag: set if strike check detects a block */
 
-__EXTERN__ uint16_t p1_bar_view;			/* bar size viewable */
-__EXTERN__ uint16_t p2_bar_view;			/* bar size viewable */
-__EXTERN__ uint16_t p2_bar_xpos;			/* right justify pos for bars */
+__EXTERN__ WORD p1_bar_view;			/* bar size viewable */
+__EXTERN__ WORD p2_bar_view;			/* bar size viewable */
+__EXTERN__ WORD p2_bar_xpos;			/* right justify pos for bars */
 
-__EXTERN__ uint16_t p1_turbo_view;			/* turbo size viewable */
-__EXTERN__ uint16_t p2_turbo_view;			/* turbo size viewable */
-__EXTERN__ uint16_t p2_turbo_xpos;			/* right justify pos for turbos */
+__EXTERN__ WORD p1_turbo_view;			/* turbo size viewable */
+__EXTERN__ WORD p2_turbo_view;			/* turbo size viewable */
+__EXTERN__ WORD p2_turbo_xpos;			/* right justify pos for turbos */
 
-__EXTERN__ int16_t clk_tens;				/* clock tens digit */
-__EXTERN__ int16_t clk_ones;				/* clock ones digit */
+__EXTERN__ short clk_tens;				/* clock tens digit */
+__EXTERN__ short clk_ones;				/* clock ones digit */
 
-__EXTERN__ int16_t p1_shadadj;				/* player 1 shadow y adjustment ! */
-__EXTERN__ int16_t p2_shadadj;				/* player 2 shadow y adjustment ! */
+__EXTERN__ short p1_shadadj;				/* player 1 shadow y adjustment ! */
+__EXTERN__ short p2_shadadj;				/* player 2 shadow y adjustment ! */
 
-__EXTERN__ uint16_t displayon;				/* display on or off */
+__EXTERN__ WORD displayon;				/* display on or off */
 
-__EXTERN__ uint16_t shadow_clt;				/* clt id for shadows */
+__EXTERN__ WORD shadow_clt;				/* clt id for shadows */
 
 
-__EXTERN__ uint16_t f_sans_throws;			// throwing disabled
-__EXTERN__ int16_t kode_offset;
-__EXTERN__ uint16_t f_sans_block;			// blocking disabled
-__EXTERN__ uint16_t f_mercy;				// mercy
+__EXTERN__ WORD f_sans_throws;			// throwing disabled
+__EXTERN__ short kode_offset;
+__EXTERN__ WORD f_sans_block;			// blocking disabled
+__EXTERN__ WORD f_mercy;				// mercy
 
 /* zeroed every round */
-__EXTERN__ uint16_t l_sz_decoy[2];			/* p1:p2 last subzero decoy freeze */
-__EXTERN__ uint16_t l_morph[2];				/* p1:p2 last morph */
-__EXTERN__ uint16_t l_slide[2];				/* p1:p2 last slide */
+__EXTERN__ WORD l_sz_decoy[2];			/* p1:p2 last subzero decoy freeze */
+__EXTERN__ WORD l_morph[2];				/* p1:p2 last morph */
+__EXTERN__ WORD l_slide[2];				/* p1:p2 last slide */
 
-__EXTERN__ uint16_t l_liazap[2];
-__EXTERN__ uint16_t l_net[2];
-__EXTERN__ uint16_t l_angle[2];
-__EXTERN__ uint16_t f_aabuse;
-__EXTERN__ uint16_t f_upcut_rec;
-__EXTERN__ uint16_t f_unlim_run;
-__EXTERN__ uint16_t lem4[2];
-__EXTERN__ uint16_t l_jaxzap2[2];
-__EXTERN__ uint16_t l_throw_fan[2];
-__EXTERN__ uint16_t l_decoy[2];
-__EXTERN__ uint16_t l_flash[2];
-__EXTERN__ uint16_t l_spear[2];
-__EXTERN__ uint16_t l_block_fk[2];
-__EXTERN__ uint16_t l_mileena_roll[2];
-__EXTERN__ uint16_t l_puddle[2];
-__EXTERN__ uint32_t f_gameflags;
-__EXTERN__ uint16_t l_swat_gun[2];
-__EXTERN__ uint16_t l_ermac_slam[2];
-__EXTERN__ uint16_t l_orb_slow[2];
-__EXTERN__ uint16_t l_orb_fast[2];
-__EXTERN__ uint16_t l_zap[2];
-__EXTERN__ uint16_t l_roundh[2];
-__EXTERN__ uint16_t room8[2];
+__EXTERN__ WORD l_liazap[2];
+__EXTERN__ WORD l_net[2];
+__EXTERN__ WORD l_angle[2];
+__EXTERN__ WORD f_aabuse;
+__EXTERN__ WORD f_upcut_rec;
+__EXTERN__ WORD f_unlim_run;
+__EXTERN__ WORD lem4[2];
+__EXTERN__ WORD l_jaxzap2[2];
+__EXTERN__ WORD l_throw_fan[2];
+__EXTERN__ WORD l_decoy[2];
+__EXTERN__ WORD l_flash[2];
+__EXTERN__ WORD l_spear[2];
+__EXTERN__ WORD l_block_fk[2];
+__EXTERN__ WORD l_mileena_roll[2];
+__EXTERN__ WORD l_puddle[2];
+__EXTERN__ LONG f_gameflags;
+__EXTERN__ WORD l_swat_gun[2];
+__EXTERN__ WORD l_ermac_slam[2];
+__EXTERN__ WORD l_orb_slow[2];
+__EXTERN__ WORD l_orb_fast[2];
+__EXTERN__ WORD l_zap[2];
+__EXTERN__ WORD l_roundh[2];
+__EXTERN__ WORD room8[2];
 
-__EXTERN__ uint16_t f_dark;
-__EXTERN__ uint16_t f_smoke;
+__EXTERN__ WORD f_dark;
+__EXTERN__ WORD f_smoke;
 //round_zero_end,0,1
 
-__EXTERN__ uint16_t mode_of_play;
-__EXTERN__ uint16_t p1_tour[16];			// tournament players (16 slots)
-__EXTERN__ uint16_t twinners[7];			// tounrament winners
-__EXTERN__ uint16_t c_curback;				// counter for current background
+__EXTERN__ WORD mode_of_play;
+__EXTERN__ WORD p1_tour[16];			// tournament players (16 slots)
+__EXTERN__ WORD twinners[7];			// tounrament winners
+__EXTERN__ WORD c_curback;				// counter for current background
 
 
-__EXTERN__ uint16_t comboram[10];			// combination lock ram
+__EXTERN__ WORD comboram[10];			// combination lock ram
 #define combo_1 (comboram[0])			// combination lock ram 1
 #define combo_2 (comboram[1])			// combination lock ram 2
 #define combo_3 (comboram[2])			// combination lock ram 3
