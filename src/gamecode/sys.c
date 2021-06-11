@@ -41,20 +41,20 @@ u64 sys_rcp_stack[SP_DRAM_STACK_SIZE64];
 	char	*tv0, *tv1, *tv2, *tv3, *tv4, *tv5, *tv6, *tv7;
 #endif
 
-u32 sys_ovmemptr;		// overlay pointer: points to next free physical byte of DRAM
-u32 sys_obmemptr;		// object pointer: points to start of last object loaded
+uint32_t sys_ovmemptr;		// overlay pointer: points to next free physical byte of DRAM
+uint32_t sys_obmemptr;		// object pointer: points to start of last object loaded
 
-u32 sys_zbuf_phys;						// physical start address of zbuffer (aligned on a 64-byte boundary)
-u32 sys_fbuf_phys[SYS_NUM_FRAMEBUFS];	// physical start address of frame buffers (aligned on a 64-byte boundary)
-u32 sys_dbuf_phys[SYS_NUM_DLBUFS];		// physical start address of display-list buffers (aligned on an 8-byte boundary)
-u32 sys_mbuf_phys[SYS_NUM_DLBUFS];		// physical start address of matrix buffers (aligned on an 8-byte boundary)
-u32 sys_vbuf_phys[SYS_NUM_DLBUFS];		// physical start address of vertex buffers (aligned on an 8-byte boundary)
-u32 sys_pbuf_phys[SYS_NUM_DLBUFS];		// physical start address of viewport buffers (aligned on an 8-byte boundary)
+uint32_t sys_zbuf_phys;						// physical start address of zbuffer (aligned on a 64-byte boundary)
+uint32_t sys_fbuf_phys[SYS_NUM_FRAMEBUFS];	// physical start address of frame buffers (aligned on a 64-byte boundary)
+uint32_t sys_dbuf_phys[SYS_NUM_DLBUFS];		// physical start address of display-list buffers (aligned on an 8-byte boundary)
+uint32_t sys_mbuf_phys[SYS_NUM_DLBUFS];		// physical start address of matrix buffers (aligned on an 8-byte boundary)
+uint32_t sys_vbuf_phys[SYS_NUM_DLBUFS];		// physical start address of vertex buffers (aligned on an 8-byte boundary)
+uint32_t sys_pbuf_phys[SYS_NUM_DLBUFS];		// physical start address of viewport buffers (aligned on an 8-byte boundary)
 
-u32 sys_heap1_start;	// physical start of heap 1
-u32 sys_heap1_end;		// physical end+1 of heap 1
-u32 sys_heap2_start;	// physical start of heap 2
-u32 sys_heap2_end;		// physical end+1 of heap 2
+uint32_t sys_heap1_start;	// physical start of heap 1
+uint32_t sys_heap1_end;		// physical end+1 of heap 1
+uint32_t sys_heap2_start;	// physical start of heap 2
+uint32_t sys_heap2_end;		// physical end+1 of heap 2
 
 OSMesgQueue	sys_msgque_rsp;	// event message queues:
 OSMesg		sys_msgbuf_rsp;
@@ -88,14 +88,14 @@ static void *have_linker_import_these_from_library[] = {
 //========================================================================================
 // Private variables:
 
-static u32 obsys_ovhandle;
+static uint32_t obsys_ovhandle;
 
 
 //========================================================================================
 // Prototypes:
 
-static int get_overlay_vsize( unsigned int index );
-static void loadoverlay( unsigned int index );
+static int get_overlay_vsize( uint32_t index );
+static void loadoverlay( uint32_t index );
 
 
 //========================================================================================
@@ -121,8 +121,8 @@ static void loadoverlay( unsigned int index );
 //
 // Loads the specified overlay from cartridge ROM into DRAM.
 //////////////////////////////////////////////////////////////////////////////////////////
-void sys_loadoverlay( unsigned int index ) {
-	u32 vsize;
+void sys_loadoverlay( uint32_t index ) {
+	uint32_t vsize;
 
 	vsize = get_overlay_vsize( index );
 
@@ -149,7 +149,7 @@ void sys_loadoverlay( unsigned int index ) {
 // that have been loaded after the overlay specified in this call must have already
 // been unloaded.
 //////////////////////////////////////////////////////////////////////////////////////////
-void sys_unloadoverlay( unsigned int index ) {
+void sys_unloadoverlay( uint32_t index ) {
 	v3printf(( "  >unloading heap1 overlay %d...\n", index ));
 	sys_ovmemptr -= get_overlay_vsize( index );
 	v3printf(( "    overlay unloaded. free mem=%d bytes\n", sys_heap1_end-sys_ovmemptr ));
@@ -166,8 +166,8 @@ void sys_unloadoverlay( unsigned int index ) {
 // The caller of this function must be responsible for reading sys_ovmemptr prior to
 // calling this function and restoring it when the block of memory is no longer needed.
 //////////////////////////////////////////////////////////////////////////////////////////
-u32 sys_alloc_heap1( u32 bytes, u32 align_mask ) {
-	u32 start;
+uint32_t sys_alloc_heap1( uint32_t bytes, uint32_t align_mask ) {
+	uint32_t start;
 
 	start = ALIGN_UP( sys_ovmemptr, align_mask );
 	if( bytes > (sys_heap1_end - start) ) return( 0 );
@@ -181,7 +181,7 @@ u32 sys_alloc_heap1( u32 bytes, u32 align_mask ) {
 // sys_openobsys_z - open the object system for use, loading it into the z-buffer.
 //                   Returns the next available object shell.
 //////////////////////////////////////////////////////////////////////////////////////////
-u32 sys_openobsys_z( void ) {
+uint32_t sys_openobsys_z( void ) {
 	CRITICAL_DEFS;
 	int i;
 
@@ -223,7 +223,7 @@ void sys_closeobsys_z( void ) {
 // The value returned is the number of unused bytes between data object memory and overlay
 // memory.
 //////////////////////////////////////////////////////////////////////////////////////////
-u32 sys_getfreemem( void ) {
+uint32_t sys_getfreemem( void ) {
 	if( sys_obmemptr < sys_heap2_start ) {
 		return( sys_obmemptr - sys_ovmemptr );
 	}
@@ -348,7 +348,7 @@ int sys_random_chance( float chance_of_success ) {
 //////////////////////////////////////////////////////////////////////////////////////////
 // sys_log2 - returns the log (base-2) of n, or zero if n is zero.
 //////////////////////////////////////////////////////////////////////////////////////////
-int sys_log2( unsigned int n ) {
+int sys_log2( uint32_t n ) {
 	int i = 0;
 
 	while( n>>1 ) i++;
@@ -362,7 +362,7 @@ int sys_log2( unsigned int n ) {
 //////////////////////////////////////////////////////////////////////////////////////////
 // get_overlay_vsize - returns the virtual size of the specified overlay.
 //////////////////////////////////////////////////////////////////////////////////////////
-static int get_overlay_vsize( unsigned int index ) {
+static int get_overlay_vsize( uint32_t index ) {
 	return( sys_ovdir[index].vend - sys_ovdir[index].vstart );
 }
 
@@ -370,8 +370,8 @@ static int get_overlay_vsize( unsigned int index ) {
 //////////////////////////////////////////////////////////////////////////////////////////
 // loadoverlay - unconditionally loads the specified overlay.
 //////////////////////////////////////////////////////////////////////////////////////////
-static void loadoverlay( unsigned int index ) {
-	u32 vstart, romstart, romsize, bss_start, bss_size;
+static void loadoverlay( uint32_t index ) {
+	uint32_t vstart, romstart, romsize, bss_start, bss_size;
 
 	v3printf(( "  >loading overlay #%d...\n", index ));
 

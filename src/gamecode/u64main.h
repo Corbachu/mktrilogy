@@ -15,6 +15,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
 #include <ultra64.h>
 #include "sys_defs.h"
 #include "system.h"
@@ -24,29 +26,29 @@
  */
 #define MULTI_ANI_OFF	0			//(1-multi animation texture loads, need to make mods to storm, trash, monk ciode)
 
-typedef unsigned char BYTE;
-typedef unsigned short WORD;
-typedef unsigned int LONG;
-typedef unsigned long ADDRESS;
+typedef uint8_t BYTE;
+typedef uint16_t WORD;
+typedef uint32_t LONG;
+typedef uintptr_t ADDRESS;
 
 /* fixed point 16.16 union */
 typedef union u_pos {
-	long	pos;			/* 16.16 position */
+	int32_t	pos;			/* 16.16 position */
 	struct {
 #if ENDIAN==1
-		short	intpos;		/* integer part */
-		short	fracpos;	/* fractional position */
+		int16_t	intpos;		/* integer part */
+		int16_t	fracpos;	/* fractional position */
 #else
-		short	fracpos;	/* fractional position */
-		short	intpos;		/* integer part */
+		int16_t	fracpos;	/* fractional position */
+		int16_t	intpos;		/* integer part */
 #endif
 	} u;
 } POS;
 
 /* rectangle */
 typedef struct {
-	short x,y;
-	short w,h;
+	int16_t x,y;
+	int16_t w,h;
 } RECT;
 
 #define setRECT(r,_x,_y,_w,_h) \
@@ -68,14 +70,14 @@ typedef union joypad {
 
 /* y:x pos (integer info) */
 typedef union u_xytype {
-	long yx;					/* y:x position */
+	int32_t yx;					/* y:x position */
 	struct {
 #if ENDIAN==1
-		short	ypos;			/* y position */
-		short	xpos;			/* x position */
+		int16_t	ypos;			/* y position */
+		int16_t	xpos;			/* x position */
 #else
-		short	xpos;			/* x position */
-		short	ypos;			/* y position */
+		int16_t	xpos;			/* x position */
+		int16_t	ypos;			/* y position */
 #endif
 	} u;
 } XYTYPE;
@@ -102,7 +104,7 @@ typedef struct o_color {
 typedef struct dgpacket {
 	void *dp_palptr;			// ptr to palette data
 	void *dp_imgptr;			// ptr to bitmap image data
-	short dp_x,dp_y;			// screen coordinate of bitmap (can be neg, we will clip)
+	int16_t dp_x,dp_y;			// screen coordinate of bitmap (can be neg, we will clip)
 	WORD dp_w,dp_h;				// original width, height of bitmap
 	WORD dp_scx,dp_scy;			// scale factors for X & Y (8.8)
 	WORD dp_lclip,dp_rclip;		// clipping values for left and right side of image
@@ -110,8 +112,8 @@ typedef struct dgpacket {
 } DrawPacket;
 
 __EXTERN__ DrawPacket DrawObj;	// current object to draw 
-__EXTERN__ short screen_adj_x;	// x screen adj
-__EXTERN__ short screen_adj_y;	// y_screen adj
+__EXTERN__ int16_t screen_adj_x;	// x screen adj
+__EXTERN__ int16_t screen_adj_y;	// y_screen adj
 
 __EXTERN__ void *tmem_palptr;	// current palette in TMEM
 __EXTERN__ void *tmem_imgptr;	// current image in TMEM
@@ -155,7 +157,7 @@ struct dpipe {
 };
 
 struct vpipe {
-	unsigned short		*fbuf;		// pointer to virtual address of frame buffer
+	uint16_t		*fbuf;		// pointer to virtual address of frame buffer
 	volatile u32		free;		// 1=vpipe is free
 };
 

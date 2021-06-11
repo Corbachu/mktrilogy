@@ -17,7 +17,7 @@
 //========================================================================================
 // Public definitions:
 
-#define CRITICAL_DEFS	u32 imask
+#define CRITICAL_DEFS	uint32_t imask
 #define ENTER_CRITICAL	imask = sys_disable_ints()
 #define LEAVE_CRITICAL	sys_restore_ints( imask )
 
@@ -38,20 +38,20 @@ extern u64 sys_rcp_stack[SP_DRAM_STACK_SIZE64];
 	extern char		*tv0, *tv1, *tv2, *tv3, *tv4, *tv5, *tv6, *tv7;
 #endif
 
-extern u32 sys_ovmemptr;		// overlay pointer: points to next free physical byte of DRAM
-extern u32 sys_obmemptr;		// object pointer: points to start of last object loaded
+extern uint32_t sys_ovmemptr;		// overlay pointer: points to next free physical byte of DRAM
+extern uint32_t sys_obmemptr;		// object pointer: points to start of last object loaded
 
-extern u32 sys_zbuf_phys;						// physical start address of zbuffer (aligned on a 64-byte boundary)
-extern u32 sys_fbuf_phys[SYS_NUM_FRAMEBUFS];	// physical start address of frame buffers (aligned on a 64-byte boundary)
-extern u32 sys_dbuf_phys[SYS_NUM_DLBUFS];		// physical start address of display-list buffers (aligned on an 8-byte boundary)
-extern u32 sys_mbuf_phys[SYS_NUM_DLBUFS];		// physical start address of matrix buffers (aligned on an 8-byte boundary)
-extern u32 sys_vbuf_phys[SYS_NUM_DLBUFS];		// physical start address of vertex buffers (aligned on an 8-byte boundary)
-extern u32 sys_pbuf_phys[SYS_NUM_DLBUFS];		// physical start address of viewport buffers (aligned on an 8-byte boundary)
+extern uint32_t sys_zbuf_phys;						// physical start address of zbuffer (aligned on a 64-byte boundary)
+extern uint32_t sys_fbuf_phys[SYS_NUM_FRAMEBUFS];	// physical start address of frame buffers (aligned on a 64-byte boundary)
+extern uint32_t sys_dbuf_phys[SYS_NUM_DLBUFS];		// physical start address of display-list buffers (aligned on an 8-byte boundary)
+extern uint32_t sys_mbuf_phys[SYS_NUM_DLBUFS];		// physical start address of matrix buffers (aligned on an 8-byte boundary)
+extern uint32_t sys_vbuf_phys[SYS_NUM_DLBUFS];		// physical start address of vertex buffers (aligned on an 8-byte boundary)
+extern uint32_t sys_pbuf_phys[SYS_NUM_DLBUFS];		// physical start address of viewport buffers (aligned on an 8-byte boundary)
 
-extern u32 sys_heap1_start;		// physical start of heap 1
-extern u32 sys_heap1_end;		// physical end+1 of heap 1
-extern u32 sys_heap2_start;		// physical start of heap 2
-extern u32 sys_heap2_end;		// physical end+1 of heap 2
+extern uint32_t sys_heap1_start;		// physical start of heap 1
+extern uint32_t sys_heap1_end;		// physical end+1 of heap 1
+extern uint32_t sys_heap2_start;		// physical start of heap 2
+extern uint32_t sys_heap2_end;		// physical end+1 of heap 2
 
 #if 0
 extern OSMesgQueue	sys_msgque_rsp;	// event message queues:
@@ -72,7 +72,7 @@ extern OSMesg		sys_DummyMsg;
 
 extern int sys_zbuf_stat;
 
-extern unsigned int sys_random_seed;
+extern uint32_t sys_random_seed;
 
 
 //========================================================================================
@@ -92,14 +92,14 @@ extern unsigned int sys_random_seed;
 // sys_disable_ints - disables R4300 CPU interrupts, returning the prior state.  This is
 //                    an assembly function.
 //////////////////////////////////////////////////////////////////////////////////////////
-extern u32 sys_disable_ints( void );
+extern uint32_t sys_disable_ints( void );
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // sys_restore_ints - restores R4300 CPU interrupts to their prior state (passed as the
 //                    parameter). This is an assembly function.
 //////////////////////////////////////////////////////////////////////////////////////////
-extern void sys_restore_ints( u32 prior_state );
+extern void sys_restore_ints( uint32_t prior_state );
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -108,7 +108,7 @@ extern void sys_restore_ints( u32 prior_state );
 // Loads the specified overlay from cartridge ROM into DRAM. Returns 1 if insufficient
 // memory, or 0 if successful.
 //////////////////////////////////////////////////////////////////////////////////////////
-extern void sys_loadoverlay( unsigned int index );
+extern void sys_loadoverlay( uint32_t index );
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -118,7 +118,7 @@ extern void sys_loadoverlay( unsigned int index );
 // that have been loaded after the overlay specified in this call must have already
 // been unloaded.
 //////////////////////////////////////////////////////////////////////////////////////////
-extern void sys_unloadoverlay( unsigned int index );
+extern void sys_unloadoverlay( uint32_t index );
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -131,14 +131,14 @@ extern void sys_unloadoverlay( unsigned int index );
 // The caller of this function must be responsible for reading sys_ovmemptr prior to
 // calling this function and restoring it when the block of memory is no longer needed.
 //////////////////////////////////////////////////////////////////////////////////////////
-extern u32 sys_alloc_heap1( u32 bytes, u32 align_mask );
+extern uint32_t sys_alloc_heap1( uint32_t bytes, uint32_t align_mask );
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // sys_openobsys_z - open the object system for use, loading it into the z-buffer.
 //                   Returns the next available object shell.
 //////////////////////////////////////////////////////////////////////////////////////////
-extern u32 sys_openobsys_z( void );
+extern uint32_t sys_openobsys_z( void );
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -156,7 +156,7 @@ extern void sys_closeobsys_z( void );
 // The value returned is the number of unused bytes between data object memory and overlay
 // memory.
 //////////////////////////////////////////////////////////////////////////////////////////
-extern u32 sys_getfreemem( void );
+extern uint32_t sys_getfreemem( void );
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -200,7 +200,7 @@ extern int *sys_int_blockcopy( int *dest, int *source, int num_ints );
 //////////////////////////////////////////////////////////////////////////////////////////
 // sys_random - returns a random unsigned integer.
 //////////////////////////////////////////////////////////////////////////////////////////
-extern unsigned int sys_random( void );
+extern uint32_t sys_random( void );
 
 
 /************************************************************************/
@@ -231,7 +231,7 @@ extern int sys_random_chance( float chance_of_success );
 //////////////////////////////////////////////////////////////////////////////////////////
 // sys_log2 - returns the log (base-2) of n, or zero if n is zero.
 //////////////////////////////////////////////////////////////////////////////////////////
-extern int sys_log2( unsigned int n );
+extern int sys_log2( uint32_t n );
 
 
 

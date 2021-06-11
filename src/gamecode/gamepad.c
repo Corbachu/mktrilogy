@@ -32,6 +32,8 @@ u64 gamepad_stack[ SYS_GAMEPAD_STACKSIZE/8 ];
 OSThread gamepad_timer_thread;
 u64 gamepad_timer_stack[ SYS_GTIMER_STACKSIZE/8 ];
 
+#define MAXCONTROLLERS GLFW_JOYSTICK_LAST
+
 OSContStatus	gamepad_status[ MAXCONTROLLERS ];
 OSContPad		gamepad_data[ MAXCONTROLLERS ];
 u8				gamepad_bit_pattern;	// one bit for each controller
