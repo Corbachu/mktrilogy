@@ -8,8 +8,6 @@ Other existing platform ports include support only for the MK3
 and Ultimate edition.
 
 1. Dependencies
-    - [CGLM](https://github.com/recp/cglm/)
-    - [SIGIL](http://github.com/simonrad/sigil/)
-    - [miniaudio](https://miniaud.io/)
-
-
+    - [simple2d](https://github.com/simple2d/simple2d)
+    or/and
+    - [sigil](https://github.com/simonrad/sigil)
