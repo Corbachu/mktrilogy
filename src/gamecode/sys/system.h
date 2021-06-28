@@ -17,7 +17,11 @@
 #define SONY_PSX 	0			// working on sony
 #define SONY_CODE	0			// comment block for old sony code
 #define ULTRA_64	1			// working on u64
+
 #define GLFW 		2
+#define OSLIB		3
+#define SIGIL		4
+#define SIMPLE2D	5
 
 /* NOTES:
 SEARCH FOR FOLLOWING

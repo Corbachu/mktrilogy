@@ -1,5 +1,6 @@
+
 cmake_minimum_required(VERSION 3.0)
-project(MortalKombat3Trilogy LANGUAGES C Assembly)
+project(mktrilogy LANGUAGES C)
 
 set(PROJECT_VERSION 1.0)
 set(PROJECT_DESCRIPTION "Mortal Kombat 3 Trilogy source port written in C and
@@ -51,15 +52,12 @@ set(ROMFILE rom)
 set(EMFILE mktrilogy)
 set(SPECFILE spec)
 
-set(TARGETS $(ROMFILE) $(EMFILE)
+set(TARGETS $(ROMFILE) $(EMFILE))
+
+#$(SPECFILE) $(MAKEROM) $(OBJECTS))
 
 set(OBJECTS seggamecode.o)
 
-default:	$(TARGETS) 
-
-
-set($(TARGETS): 
-	$(SPECFILE) $(MAKEROM) $(OBJECTS)
 	set(CFB_SOURCES $(PATH_SEG)/cfb)
 	set(DSTACK_SOURCES $(PATH_SEG)/dstack)
 	set(PHEAP_SOURCES $(PATH_SEG)/pheap)
@@ -128,15 +126,23 @@ set($(TARGETS):
 	set(TOP_SOURCES $(PATH_COMMON)/top)
 	set(LOGO_SOURCES $(PATH_COMMON)/logo)
 
+set(SOURCE_DIR src)
+
+set(SOURCE_FILES
+	${SOURCE_DIR}/gamecode/sys/lib/oslib/oslibmain.c)
+set(INCLUDE_FILES
+	${SOURCE_DIR}/gamecode/sys/lib/oslib/oslibmain.h)
+
 #######
 # 
 #######
-$(MAKEROM) $(MRFLAGS) -r $(ROMFILE) $(SPECFILE) >mapfile
+#add_executable( $(MAKEROM) SHARED $(MAKE
+#$(MRFLAGS) -r $(ROMFILE) $(SPECFILE) >mapfile
+
 set(seggamecode.o $(PATH_SEG)/gamecode)
 
 # MortalKombat3Trilogy game
-add_executable( ${PROJECT_NAME} SHARED ${SOURCE_FILES} ${INCLUDE_FILES} )
-target_compile_options( ${PROJECT_NAME} PUBLIC )
+add_executable( ${PROJECT_NAME} ${SOURCE_FILES} ${INCLUDE_FILES} )
 target_include_directories(${PROJECT_NAME} PUBLIC 
 			$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
 			)
@@ -145,10 +151,6 @@ target_link_libraries( ${PROJECT_NAME} PUBLIC ${CRC_LIBRARIES} )
 set(install_prefix "${CMAKE_INSTALL_PREFIX}")
 set(install_libdir "${CMAKE_INSTALL_LIBDIR}")
 set(install_includedir "${CMAKE_INSTALL_INCLUDEDIR}")
-
-configure_file(lib${PROJECT_NAME}.pc.in ${PROJECT_BINARY_DIR}/lib${PROJECT_NAME}.pc @ONLY)
-
-set(ENV{PKG_CONFIG_PATH} "${PROJECT_BINARY_DIR}:$ENV{PKG_CONFIG_PATH}")
 
 install(TARGETS ${PROJECT_NAME} EXPORT ${PROJECT_NAME}Config
 	LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}

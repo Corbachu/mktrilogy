@@ -110,8 +110,8 @@ static void loadoverlay( uint32_t index );
 	void sys_assertion( int errcode, char *errinfo ) {
 		printf(( "*** SYS_ASSERTION ***\n" ));
 		printf(( "  '%s'\n", errinfo ));
-
-		for( ;; );
+		
+		assert_perror(errcode);
 	}
 #endif
 
@@ -237,28 +237,14 @@ uint32_t sys_getfreemem( void ) {
 //
 // Returns a pointer to the destination string.
 //////////////////////////////////////////////////////////////////////////////////////////
-char *sys_strcpy( char *ds, char *ss ) {
-	int i = 0;
-
-	while( ds[i++] = ss[i] );
-	return( ds );
-}
-
+#define sys_strcpy strcpy
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // sys_strcat - concatinates ss to ds.
 //
 // Returns a pointer to the destination string.
 //////////////////////////////////////////////////////////////////////////////////////////
-char *sys_strcat( char *ds, char *ss ) {
-	int i = 0;
-
-	while( ds[i] ) i++;
-	sys_strcpy( &ds[i], ss );
-
-	return( ds );
-}
-
+#define sys_strcat strcat
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // sys_aligned_memfill - fills the specified virtual memory range with the specified
@@ -296,9 +282,13 @@ int *sys_int_blockcopy( int *dest, int *source, int num_ints ) {
 //////////////////////////////////////////////////////////////////////////////////////////
 // sys_random - returns a random unsigned integer.
 //////////////////////////////////////////////////////////////////////////////////////////
-unsigned int sys_random( void ) {
-	return( sys_random_seed = sys_random_seed*5 + 1 );
+void sys_random_init( void ) {
+	srandom(SYS_RANDOM_SEED);
 }
+
+#define sys_random random
+
+//	return( rand_r( = sys_random_seed*5 + 1 );
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -316,7 +306,7 @@ float sys_randomf( void ) {
 /* sys_random_choice - returns an int in the range 0<=r<choices.        */
 /* 'choices' must be <= 0xffff						*/
 /************************************************************************/
-int sys_random_choice(int c) {
+uint16_t sys_random_choice(uint16_t c) {
 
     return((sys_random()&0xffff)*c>>16);
 }
